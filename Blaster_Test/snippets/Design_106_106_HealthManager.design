@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-106-3 comment="false" x="26" y="40">
+                    <get-val-106-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-106-3>
+                <set-val-106-10 comment="false" x="26" y="65">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-106-10>
+                <if comment="false" x="26" y="90">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="115">
+                            <group eventID="-1" id="-1">
+                                <set-game-att comment="false" x="48" y="165">
+                                    <get-val-106-13 comment="false" id="0" x="0" y="0"/>
+                                    <as-number comment="false" id="1" x="0" y="0">
+                                        <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </set-game-att>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <or comment="false" id="0" x="0" y="0">
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-game-att comment="false" id="0" x="0" y="0">
+                                                <get-val-106-13 comment="false" id="0" x="0" y="0"/>
+                                            </get-game-att>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </lesseq>
+                                    <moreeq comment="false" id="1" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-game-att comment="false" id="0" x="0" y="0">
+                                                <get-val-106-13 comment="false" id="0" x="0" y="0"/>
+                                            </get-game-att>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </or>
+                            </not>
+                        </if>
+                        <else comment="false" x="37" y="207">
+                            <group eventID="-1" id="-1">
+                                <set-val-106-3 comment="false" x="48" y="227">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-game-att comment="false" id="0" x="0" y="0">
+                                            <get-val-106-13 comment="false" id="0" x="0" y="0"/>
+                                        </get-game-att>
+                                    </as-number>
+                                </set-val-106-3>
+                            </group>
+                        </else>
+                        <if comment="false" x="37" y="274">
+                            <group eventID="-1" id="-1">
+                                <comment-short comment="false" x="48" y="304">
+                                    <int id="0" val="Trying to spawn with no health, deal the death blow!"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="324">
+                                    <group eventID="-1" id="-1">
+                                        <die comment="false" x="59" y="354">
+                                            <ACTOR eid="this" id="0"/>
+                                        </die>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-106-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Kill"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="48" y="393">
+                                    <group eventID="-1" id="-1">
+                                        <recycle comment="false" x="59" y="423">
+                                            <ACTOR eid="this" id="0"/>
+                                        </recycle>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-106-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Recycle"/>
+                                    </eq>
+                                </else-if>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </lesseq>
+                        </if>
+                    </group>
+                    <get-val-106-11 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receiver-1-152 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <comment-short comment="false" x="26" y="45">
+                    <int id="0" val="Make sure health doesn&amp;#039;t exceed the maximum amount"/>
+                </comment-short>
+                <set-val-106-3 comment="false" x="26" y="65">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-106-484-1 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                        <get-val-106-2 comment="false" id="2" x="0" y="0"/>
+                    </minmax>
+                </set-val-106-3>
+                <say-this comment="false" x="26" y="108">
+                    <int id="0" val="UpdateGlobalHealth"/>
+                </say-this>
+                <if comment="false" x="26" y="128">
+                    <group eventID="-1" id="-1">
+                        <shout comment="false" x="37" y="161">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-106-4 comment="false" id="1" x="0" y="0"/>
+                        </shout>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="4"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="205">
+                    <group eventID="-1" id="-1">
+                        <play-sound4 comment="false" x="37" y="238">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="16"/>
+                        </play-sound4>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="16"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+            </group>
+            <get-byobval-106-484-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-106-484-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-152>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-2-154 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <comment-short comment="false" x="26" y="45">
+                    <int id="0" val="Don&amp;#039;t take any damage if we&amp;#039;re invincible"/>
+                </comment-short>
+                <if comment="false" x="26" y="65">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="105"/>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <or comment="false" id="0" x="0" y="0">
+                            <get-val-106-8 comment="false" id="0" x="0" y="0"/>
+                            <not comment="false" id="1" x="0" y="0">
+                                <get-val-106-10 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </or>
+                        <lesseq comment="false" id="1" x="0" y="0">
+                            <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </lesseq>
+                    </or>
+                </if>
+                <comment-short comment="false" x="26" y="137">
+                    <int id="0" val="Make sure health doesn&amp;#039;t drop below zero"/>
+                </comment-short>
+                <set-val-106-3 comment="false" x="26" y="157">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-106-484-1 comment="false" id="1" x="0" y="0"/>
+                        </minus>
+                        <int id="2" val="0"/>
+                    </minmax>
+                </set-val-106-3>
+                <say-this comment="false" x="26" y="200">
+                    <int id="0" val="UpdateGlobalHealth"/>
+                </say-this>
+                <comment-short comment="false" x="26" y="220">
+                    <int id="0" val="Check if Actor has depleted its health"/>
+                </comment-short>
+                <if comment="false" x="26" y="240">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="270">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="303">
+                                    <group eventID="-1" id="-1">
+                                        <set-game-att comment="false" x="59" y="336">
+                                            <get-val-106-13 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-106-1 comment="false" id="1" x="0" y="0"/>
+                                        </set-game-att>
+                                    </group>
+                                    <has-snippet comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="Lives Manager"/>
+                                    </has-snippet>
+                                </if>
+                                <shout comment="false" x="48" y="373">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-106-17 comment="false" id="1" x="0" y="0"/>
+                                </shout>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="17"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <if comment="false" x="37" y="417">
+                            <group eventID="-1" id="-1">
+                                <play-sound4 comment="false" x="48" y="450">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="var" id="1" vid="18"/>
+                                </play-sound4>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="18"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <else comment="false" x="26" y="501">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="521">
+                            <group eventID="-1" id="-1">
+                                <shout comment="false" x="48" y="554">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-106-5 comment="false" id="1" x="0" y="0"/>
+                                </shout>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="5"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <if comment="false" x="37" y="598">
+                            <group eventID="-1" id="-1">
+                                <play-sound4 comment="false" x="48" y="631">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="var" id="1" vid="14"/>
+                                </play-sound4>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="14"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <comment-short comment="false" x="37" y="670">
+                            <int id="0" val="Set up a delay so that the Actor can&amp;#039;t be damaged again for this many seconds."/>
+                        </comment-short>
+                        <if comment="false" x="37" y="690">
+                            <group eventID="-1" id="-1">
+                                <set-val-106-10 comment="false" x="48" y="720">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-106-10>
+                                <dolater comment="false" x="48" y="745">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="777">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-106-10 comment="false" x="70" y="810">
+                                                    <true comment="false" id="0" x="0" y="0"/>
+                                                </set-val-106-10>
+                                            </group>
+                                            <isalive comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </isalive>
+                                        </if>
+                                    </group>
+                                    <get-val-106-9 comment="false" id="0" x="0" y="0"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-106-9 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-106-486-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-106-486-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-2-154>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-3-153 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-106-3 comment="false" x="26" y="45">
+                    <get-val-106-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-106-3>
+                <say-this comment="false" x="26" y="70">
+                    <int id="0" val="UpdateGlobalHealth"/>
+                </say-this>
+            </group>
+            <get-byobval-106-487-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-3-153>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-4-148 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-106-488-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-4-148>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-5-147 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <get-val-106-2 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-106-489-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-5-147>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-6-151 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-106-8 comment="false" x="26" y="45">
+                    <get-byobval-106-490-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-106-8>
+            </group>
+            <get-byobval-106-490-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-106-490-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-6-151>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-7-150 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-106-3 comment="false" x="26" y="45">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-byobval-106-491-1 comment="false" id="1" x="0" y="0"/>
+                        <get-val-106-2 comment="false" id="2" x="0" y="0"/>
+                    </minmax>
+                </set-val-106-3>
+                <set-val-106-3 comment="false" x="26" y="83">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <get-byobval-106-491-1 comment="false" id="1" x="0" y="0"/>
+                        <int id="2" val="0"/>
+                    </minmax>
+                </set-val-106-3>
+                <say-this comment="false" x="26" y="121">
+                    <int id="0" val="UpdateGlobalHealth"/>
+                </say-this>
+            </group>
+            <get-byobval-106-491-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-106-491-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-150>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <receiver-8-146 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <get-val-106-8 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-106-492-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-8-146>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-game-att comment="false" x="37" y="65">
+                            <get-val-106-13 comment="false" id="0" x="0" y="0"/>
+                            <as-number comment="false" id="1" x="0" y="0">
+                                <get-val-106-3 comment="false" id="0" x="0" y="0"/>
+                            </as-number>
+                        </set-game-att>
+                    </group>
+                    <get-val-106-11 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val="UpdateGlobalHealth"/>
+        </receive-message>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <receiver-9-149 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-106-10 comment="false" x="26" y="45">
+                    <get-byobval-106-531-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-106-10>
+            </group>
+            <get-byobval-106-531-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-106-531-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-9-149>
+    </group>
+    <group eventID="11" id="-1"/>
+</groups>

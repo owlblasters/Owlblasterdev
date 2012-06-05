@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<step comment="false" x="15" y="88">
+<group id="-1"/>
+</step>
+</group>
+<group id="1">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="2">
+<receive-message comment="false" x="15" y="307">
+<group id="-1">
+<create-actor3 comment="false" x="26" y="332">
+<ACTORTYPE eid="var" id="0" vid="1"/>
+<plus comment="false" id="1" x="0" y="0">
+<getxc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<get-val-35-2 comment="false" id="1" x="0" y="0"/>
+</plus>
+<plus comment="false" id="2" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<get-val-35-3 comment="false" id="1" x="0" y="0"/>
+</plus>
+<int id="3" val="0"/>
+</create-actor3>
+<set-val-35-5 comment="false" x="26" y="377">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-35-5>
+<play-sound3 comment="false" x="26" y="404">
+<SOUND eid="var" id="0" vid="6"/>
+</play-sound3>
+<shake-start comment="false" x="26" y="431">
+<int id="0" val="2"/>
+<int id="1" val=".2"/>
+</shake-start>
+<dolater comment="false" x="26" y="451">
+<group id="-1">
+<die comment="false" x="37" y="476">
+<ACTOR eid="var" id="0" vid="5"/>
+</die>
+</group>
+<get-val-35-4 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<int id="0" val="healthDepleted"/>
+</receive-message>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="234">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="5"/>
+<group id="-1"/>
+</groups>

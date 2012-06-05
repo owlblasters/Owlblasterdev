@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="60" y="40">
+            <group eventID="-1" id="-1"/>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="60" y="150">
+            <group eventID="-1" id="-1"/>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <collide comment="false" x="395" y="111">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="406" y="136">
+                    <group eventID="-1" id="-1">
+                        <play-sound4 comment="false" x="417" y="169">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="1"/>
+                        </play-sound4>
+                        <set-game-val-2 comment="false" x="417" y="196">
+                            <get-val-88-2 comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-2>
+                        <if comment="false" x="417" y="221">
+                            <group eventID="-1" id="-1">
+                                <set-game-val-3 comment="false" x="428" y="251">
+                                    <get-val-88-3 comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-3>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-88-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="417" y="288">
+                            <group eventID="-1" id="-1">
+                                <set-game-val-4 comment="false" x="428" y="318">
+                                    <get-val-88-4 comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-88-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </eq>
+                        </if>
+                        <die comment="false" x="417" y="355">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <collision-type comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-type>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="-1" id="3">
+        <draw comment="false" x="60" y="370">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

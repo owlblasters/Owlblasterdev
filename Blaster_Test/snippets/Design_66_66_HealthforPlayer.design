@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="70"/>
+                    </group>
+                    <get-val-66-10 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="102">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="135"/>
+                    </group>
+                    <collision-type comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="2"/>
+                    </collision-type>
+                </if>
+                <if comment="false" x="26" y="167">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="192"/>
+                    </group>
+                    <get-val-66-9 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="224">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="267"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="7"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <eq2 comment="false" id="1" x="0" y="0">
+                            <get-val-66-7 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcollided" id="0"/>
+                            </actor>
+                        </eq2>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="299">
+                    <group eventID="-1" id="-1">
+                        <set-val-66-2 comment="false" x="37" y="332">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                    <int id="1" val="Inflicts Damage"/>
+                                    <int id="2" val="damage"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-66-2>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcollided" id="0"/>
+                        <int id="1" val="Inflicts Damage"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="382">
+                    <group eventID="-1" id="-1">
+                        <set-val-66-2 comment="false" x="37" y="402">
+                            <get-val-66-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-66-2>
+                    </group>
+                </else>
+                <set-val-66-7 comment="false" x="26" y="439">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </set-val-66-7>
+                <if comment="false" x="26" y="466">
+                    <group eventID="-1" id="-1">
+                        <dolater comment="false" x="37" y="496">
+                            <group eventID="-1" id="-1">
+                                <clear comment="false" x="48" y="528">
+                                    <int id="0" val="7"/>
+                                </clear>
+                            </group>
+                            <get-val-66-12 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-66-12 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <incdec comment="false" x="26" y="579">
+                    <int id="0" val="4"/>
+                    <int id="1" val="1"/>
+                    <get-val-66-2 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <if comment="false" x="26" y="611">
+                    <group eventID="-1" id="-1">
+                        <shout comment="false" x="37" y="641">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="tookDamage"/>
+                        </shout>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-66-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="680">
+                    <group eventID="-1" id="-1">
+                        <set-val-66-10 comment="false" x="37" y="710">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-66-10>
+                        <dolater comment="false" x="37" y="735">
+                            <group eventID="-1" id="-1">
+                                <set-val-66-10 comment="false" x="48" y="767">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-66-10>
+                            </group>
+                            <get-val-66-11 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-66-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-66-4 comment="false" x="37" y="60">
+                            <get-val-66-6 comment="false" id="0" x="0" y="0"/>
+                        </set-val-66-4>
+                    </group>
+                    <int id="0" val=""/>
+                </if>
+                <else comment="false" x="26" y="97">
+                    <group eventID="-1" id="-1">
+                        <set-val-66-4 comment="false" x="37" y="117">
+                            <int id="0" val=""/>
+                        </set-val-66-4>
+                    </group>
+                </else>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <shout comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="healthDepleted"/>
+                        </shout>
+                        <if comment="false" x="37" y="97">
+                            <group eventID="-1" id="-1">
+                                <die comment="false" x="48" y="122">
+                                    <ACTOR eid="this" id="0"/>
+                                </die>
+                            </group>
+                            <get-val-66-8 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-66-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+            <int id="0" val="tookDamage"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
