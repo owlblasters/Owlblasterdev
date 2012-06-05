@@ -107,7 +107,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="105">
-                <prop id="1" list="0" val="3"/>
+                <prop id="1" list="0" val="12"/>
                 <prop id="2" list="0" val="1"/>
                 <prop id="3" list="0" val="1"/>
                 <prop id="4" list="0" val="1"/>
