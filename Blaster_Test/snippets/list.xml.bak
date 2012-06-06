@@ -196,6 +196,8 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_32" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" language="" name="ActorEvents_32" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="3.0" desc="Amount of health to start with." dropdown="" fullname="Starting Health" hidden="false" id="1" name="_StartingHealth" order="0"/>
+        <number default="3.0" desc="Maximum amount of health." dropdown="" fullname="Maximum Health" hidden="false" id="2" name="_MaximumHealth" order="1"/>
         <blocks/>
         <events/>
     </snippet>
