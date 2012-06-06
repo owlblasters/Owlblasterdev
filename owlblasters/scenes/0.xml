@@ -20,15 +20,15 @@
             <prop id="1" list="0" val=""/>
             <prop id="32" list="0" val="32"/>
             <prop id="5" list="0" val="Bar"/>
-            <prop id="9" list="0" val="Default Font"/>
+            <prop id="9" list="0" val="-1"/>
             <prop id="11" list="0" val="Horizontal"/>
             <prop id="13" list="0" val="Screen"/>
-            <prop id="19" list="0" val="255,255,255,255"/>
-            <prop id="18" list="0" val="0"/>
+            <prop id="19" list="0" val="0,0,0,255"/>
+            <prop id="18" list="0" val="2"/>
             <prop id="21" list="0" val="0,255,0,255"/>
-            <prop id="20" list="0" val="0,0,0,255"/>
-            <prop id="23" list="0" val="255,102,0,255"/>
-            <prop id="22" list="0" val="0,255,255,255"/>
+            <prop id="20" list="0" val="255,255,255,255"/>
+            <prop id="23" list="0" val="255,255,0,255"/>
+            <prop id="22" list="0" val="0,255,0,255"/>
             <prop id="25" list="0" val="0"/>
             <prop id="24" list="0" val="255,0,0,255"/>
             <prop id="27" list="0" val="0"/>
