@@ -548,11 +548,11 @@
                 <prop id="10" list="0" val="true"/>
                 <prop id="11" list="0" val="false"/>
                 <prop id="13" list="0" val=""/>
-                <prop id="14" list="0" val="No Sound"/>
+                <prop id="14" list="0" val="-1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val=""/>
-                <prop id="16" list="0" val="No Sound"/>
-                <prop id="18" list="0" val="No Sound"/>
+                <prop id="16" list="0" val="-1"/>
+                <prop id="18" list="0" val="-1"/>
             </s>
             <s enabled="true" id="104">
                 <prop id="1" list="0" val="Horizontal"/>

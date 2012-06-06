@@ -82,9 +82,13 @@
         <group desc="" id="4" name="Projectiles"/>
     </groups>
     <cgroups>
+<<<<<<< HEAD
+=======
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="1" g2="3"/>
+>>>>>>> c5bf12573576d33dfdbfbc0f6b0bf34fe4a99ea8
         <cgroup g1="4" g2="3"/>
         <cgroup g1="3" g2="3"/>
-        <cgroup g1="3" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
