@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-short comment="false" x="26" y="40">
+<int id="0" val="This prevents the enemy from shooting as soon as it comes on screen, since that&amp;#039;s annoying and would cause cheap deaths."/>
+</comment-short>
+<set-val-29-2 comment="false" x="26" y="60">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-29-2>
+<dolater comment="false" x="26" y="85">
+<group id="-1">
+<set-val-29-2 comment="false" x="37" y="110">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-29-2>
+</group>
+<get-val-29-1 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="175">
+<group id="-1">
+<if comment="false" x="26" y="200">
+<group id="-1">
+<set-val-29-2 comment="false" x="37" y="230">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-29-2>
+<create-actor3 comment="false" x="37" y="255">
+<ACTORTYPE eid="484" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<getxc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<int id="1" val="20"/>
+</minus>
+<minus comment="false" id="2" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<int id="1" val="28"/>
+</minus>
+<int id="3" val="2"/>
+</create-actor3>
+<comment-short comment="false" x="37" y="300">
+<int id="0" val="This long math block determines the angle between the firing enemy and the player. The +20 and +12 are so that it shoots more toward the center of the player actor."/>
+</comment-short>
+<setvel comment="false" x="37" y="320">
+<ACTOR eid="lastcreated" id="0"/>
+<to-degrees comment="false" id="1" x="0" y="0">
+<atan2 comment="false" id="0" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<get-game-val-3 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="20"/>
+</plus>
+<gety comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<get-game-val-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="12"/>
+</plus>
+<getx comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+</minus>
+</atan2>
+</to-degrees>
+<get-val-29-4 comment="false" id="2" x="0" y="0"/>
+</setvel>
+<dolater comment="false" x="37" y="375">
+<group id="-1">
+<set-val-29-2 comment="false" x="48" y="400">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-29-2>
+</group>
+<get-val-29-1 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<get-val-29-2 comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="477">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="550">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4"/>
+<group id="5"/>
+<group id="-1"/>
+</groups>

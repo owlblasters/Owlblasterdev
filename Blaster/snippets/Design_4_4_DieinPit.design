@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<if comment="false" x="26" y="113">
+<group id="-1">
+<if comment="false" x="37" y="151">
+<group id="-1">
+<scene-reload comment="false" x="48" y="181">
+<int id="0" val="0"/>
+<get-val-4-1 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="1"/>
+<get-val-4-1 comment="false" id="3" x="0" y="0"/>
+</scene-reload>
+<die comment="false" x="48" y="213">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<is-transitioning comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<getsy comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsy>
+<screenh comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="292">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="365">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="438">
+<group id="-1">
+<if comment="false" x="26" y="463">
+<group id="-1">
+<disable-snippet2 comment="false" x="37" y="496">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Spawn Actor Upon Death"/>
+</disable-snippet2>
+<dolater comment="false" x="37" y="523">
+<group id="-1">
+<scene-reload comment="false" x="48" y="548">
+<int id="0" val="0"/>
+<get-val-4-1 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="1"/>
+<get-val-4-1 comment="false" id="3" x="0" y="0"/>
+</scene-reload>
+</group>
+<get-val-4-2 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<is-snippet-enableda comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Spawn Actor Upon Death"/>
+</is-snippet-enableda>
+</if>
+</group>
+<int id="0" val="healthDepleated"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <set-val-74-2 comment="false" x="26" y="40">
+                    <get-val-74-35 comment="false" id="0" x="0" y="0"/>
+                </set-val-74-2>
+                <set-val-74-27 comment="false" x="26" y="65">
+                    <int id="0" val="100"/>
+                </set-val-74-27>
+                <if comment="false" x="26" y="85">
+                    <group id="-1">
+                        <create-actor3 comment="false" x="37" y="110">
+                            <get-val-74-6 comment="false" id="0" x="0" y="0"/>
+                            <get-val-74-9 comment="false" id="1" x="0" y="0"/>
+                            <get-val-74-10 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-74-7 comment="false" x="37" y="142">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-74-7>
+                        <anchor-screen comment="false" x="37" y="169">
+                            <ACTOR eid="var" id="0" vid="7"/>
+                        </anchor-screen>
+                    </group>
+                    <get-val-74-8 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <dolater comment="false" x="26" y="208">
+                    <group id="-1">
+                        <set-val-74-2 comment="false" x="37" y="243">
+                            <get-val-74-35 comment="false" id="0" x="0" y="0"/>
+                        </set-val-74-2>
+                    </group>
+                    <times comment="false" id="0" x="0" y="0">
+                        <int id="0" val="5.4"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <stepsize comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1000"/>
+                        </div>
+                    </times>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="308">
+            <group id="-1">
+                <say-this comment="false" x="26" y="333">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <set-val-74-5 comment="false" x="26" y="353">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <int id="0" val="100"/>
+                                <get-val-74-2 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                            <get-val-74-1 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </roundnew>
+                </set-val-74-5>
+                <set-val-74-30 comment="false" x="26" y="401">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <get-val-74-29 comment="false" id="0" x="0" y="0"/>
+                                <get-val-74-2 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                            <get-val-74-1 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </roundnew>
+                </set-val-74-30>
+                <tween-number comment="false" x="26" y="449">
+                    <int id="0" val="_DisplayHealth"/>
+                    <get-val-74-30 comment="false" id="1" x="0" y="0"/>
+                    <get-val-74-28 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="3"/>
+                </tween-number>
+                <if comment="false" x="26" y="481">
+                    <group id="-1">
+                        <set-frame comment="false" x="37" y="524">
+                            <get-val-74-7 comment="false" id="0" x="0" y="0"/>
+                            <roundnew comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-74-27 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-frame>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="7"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <get-val-74-7 comment="false" id="0" x="0" y="0"/>
+                        </isalive>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="581">
+                    <int id="0" val="Set max/min health"/>
+                </comment-short>
+                <if comment="false" x="26" y="601">
+                    <group id="-1">
+                        <set-val-74-2 comment="false" x="37" y="631">
+                            <get-val-74-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-74-2>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-74-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-74-1 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="668">
+                    <group id="-1">
+                        <set-val-74-2 comment="false" x="37" y="698">
+                            <int id="0" val="0"/>
+                        </set-val-74-2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-74-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="758">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="831">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receive-message comment="false" x="15" y="904">
+            <group id="-1">
+                <if comment="false" x="26" y="929">
+                    <group id="-1">
+                        <if comment="false" x="37" y="959">
+                            <group id="-1">
+                                <set-val-74-4 comment="false" x="48" y="992">
+                                    <custom-188 comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                                        <get-val-74-24 comment="false" id="2" x="0" y="0"/>
+                                    </custom-188>
+                                </set-val-74-4>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="Damage Type Modifier"/>
+                            </has-snippet>
+                        </if>
+                        <if comment="false" x="37" y="1042">
+                            <group id="-1">
+                                <if comment="false" x="48" y="1077">
+                                    <group id="-1">
+                                        <custom-116 comment="false" x="59" y="1107">
+                                            <ACTOR eid="this" id="0"/>
+                                            <abs comment="false" id="1" x="0" y="0">
+                                                <get-val-74-4 comment="false" id="0" x="0" y="0"/>
+                                            </abs>
+                                        </custom-116>
+                                        <stop comment="false" x="59" y="1144"/>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-val-74-4 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </less>
+                                </if>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <get-val-74-32 comment="false" id="0" x="0" y="0"/>
+                                <contains-item comment="false" id="1" x="0" y="0">
+                                    <get-val-74-33 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-74-24 comment="false" id="1" x="0" y="0"/>
+                                </contains-item>
+                            </and>
+                        </if>
+                        <if comment="false" x="37" y="1188">
+                            <group id="-1">
+                                <set-val-74-4 comment="false" x="48" y="1213">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-74-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-74-11 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </set-val-74-4>
+                            </group>
+                            <get-val-74-25 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="1255">
+                            <group id="-1">
+                                <set-val-74-4 comment="false" x="48" y="1275">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-74-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-74-3 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </set-val-74-4>
+                            </group>
+                        </else>
+                        <if comment="false" x="37" y="1317">
+                            <group id="-1">
+                                <set-val-74-4 comment="false" x="48" y="1347">
+                                    <get-val-74-31 comment="false" id="0" x="0" y="0"/>
+                                </set-val-74-4>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-74-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-74-31 comment="false" id="1" x="0" y="0"/>
+                            </less>
+                        </if>
+                        <if comment="false" x="37" y="1384">
+                            <group id="-1">
+                                <create-actor3 comment="false" x="48" y="1409">
+                                    <get-val-74-12 comment="false" id="0" x="0" y="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-xy>
+                                        <get-val-74-20 comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <get-val-74-21 comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <if comment="false" x="48" y="1454">
+                                    <group id="-1">
+                                        <set-attribute comment="false" x="59" y="1487">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="Display Float Message"/>
+                                            <int id="2" val="_Message"/>
+                                            <tostring comment="false" id="3" x="0" y="0">
+                                                <roundnew comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                                                </roundnew>
+                                            </tostring>
+                                        </set-attribute>
+                                        <if comment="false" x="59" y="1537">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="1562">
+                                                    <group id="-1">
+                                                        <set-attribute comment="false" x="81" y="1595">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_FonttoUse"/>
+                                                            <get-val-74-18 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="1627">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_XPosition"/>
+                                                            <neg comment="false" id="3" x="0" y="0">
+                                                                <div comment="false" id="0" x="0" y="0">
+                                                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                                        <get-val-74-18 comment="false" id="0" x="0" y="0"/>
+                                                                        <tostring comment="false" id="1" x="0" y="0">
+                                                                            <roundnew comment="false" id="0" x="0" y="0">
+                                                                                <int id="0" val="0"/>
+                                                                                <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                                                                            </roundnew>
+                                                                        </tostring>
+                                                                    </get-font-width2-new>
+                                                                    <int id="1" val="2"/>
+                                                                </div>
+                                                            </neg>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="1700">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_YPosition"/>
+                                                            <get-val-74-26 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                    </group>
+                                                    <value comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="18"/>
+                                                        <int id="1" val="0"/>
+                                                    </value>
+                                                </if>
+                                            </group>
+                                            <get-val-74-34 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <else comment="false" x="59" y="1756">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="1776">
+                                                    <group id="-1">
+                                                        <set-attribute comment="false" x="81" y="1809">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_FonttoUse"/>
+                                                            <get-val-74-17 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="1841">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_XPosition"/>
+                                                            <neg comment="false" id="3" x="0" y="0">
+                                                                <div comment="false" id="0" x="0" y="0">
+                                                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                                        <get-val-74-17 comment="false" id="0" x="0" y="0"/>
+                                                                        <tostring comment="false" id="1" x="0" y="0">
+                                                                            <roundnew comment="false" id="0" x="0" y="0">
+                                                                                <int id="0" val="0"/>
+                                                                                <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                                                                            </roundnew>
+                                                                        </tostring>
+                                                                    </get-font-width2-new>
+                                                                    <int id="1" val="2"/>
+                                                                </div>
+                                                            </neg>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="1914">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_YPosition"/>
+                                                            <get-val-74-26 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                    </group>
+                                                    <value comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="17"/>
+                                                        <int id="1" val="0"/>
+                                                    </value>
+                                                </if>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <has-snippet comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="lastcreated" id="0"/>
+                                        <int id="1" val="Display Float Message"/>
+                                    </has-snippet>
+                                </if>
+                            </group>
+                            <get-val-74-15 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <incdec comment="false" x="37" y="1994">
+                            <int id="0" val="2"/>
+                            <int id="1" val="1"/>
+                            <get-val-74-4 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-74-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+            </group>
+            <int id="0" val="InflictDamage"/>
+        </receive-message>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="2066">
+            <group id="-1">
+                <if comment="false" x="26" y="2091">
+                    <group id="-1">
+                        <set-val-74-4 comment="false" x="37" y="2121">
+                            <int id="0" val="1"/>
+                        </set-val-74-4>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-74-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="26" y="2153">
+                    <group id="-1">
+                        <create-actor3 comment="false" x="37" y="2178">
+                            <get-val-74-12 comment="false" id="0" x="0" y="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-74-20 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-74-21 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <if comment="false" x="37" y="2223">
+                            <group id="-1">
+                                <set-attribute comment="false" x="48" y="2256">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_Message"/>
+                                    <tostring comment="false" id="3" x="0" y="0">
+                                        <roundnew comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                                        </roundnew>
+                                    </tostring>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="2306">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_FonttoUse"/>
+                                    <get-val-74-19 comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="2338">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_XPosition"/>
+                                    <neg comment="false" id="3" x="0" y="0">
+                                        <div comment="false" id="0" x="0" y="0">
+                                            <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                <get-val-74-19 comment="false" id="0" x="0" y="0"/>
+                                                <tostring comment="false" id="1" x="0" y="0">
+                                                    <roundnew comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                        <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                                                    </roundnew>
+                                                </tostring>
+                                            </get-font-width2-new>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </neg>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="2411">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_YPosition"/>
+                                    <get-val-74-26 comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="Display Float Message"/>
+                            </has-snippet>
+                        </if>
+                    </group>
+                    <get-val-74-15 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <incdec comment="false" x="26" y="2467">
+                    <int id="0" val="2"/>
+                    <int id="1" val="0"/>
+                    <roundnew comment="false" id="2" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <get-val-74-4 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </incdec>
+            </group>
+            <int id="0" val="Heal"/>
+        </receive-message>
+    </group>
+    <group id="6">
+        <receive-message comment="false" x="15" y="2540">
+            <group id="-1">
+                <if comment="false" x="26" y="2565">
+                    <group id="-1">
+                        <set-val-74-1 comment="false" x="37" y="2598">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Character Status"/>
+                                    <int id="2" val="_Health"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-74-1>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Character Status"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="2648">
+                    <group id="-1">
+                        <set-val-74-3 comment="false" x="37" y="2681">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_Defense"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-74-3>
+                        <set-val-74-11 comment="false" x="37" y="2719">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_MagicDefense"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-74-11>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Combat Statistics"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="2769">
+                    <group id="-1">
+                        <set-val-74-16 comment="false" x="37" y="2802">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Damage Knockback"/>
+                                    <int id="2" val="_Stun"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-74-16>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Damage Knockback"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group id="7">
+        <receive-message comment="false" x="15" y="2880">
+            <group id="-1">
+                <set-val-74-2 comment="false" x="26" y="2905">
+                    <int id="0" val="0"/>
+                </set-val-74-2>
+            </group>
+            <int id="0" val="InstantKill"/>
+        </receive-message>
+    </group>
+    <group id="8">
+        <receive-message comment="false" x="15" y="2953">
+            <group id="-1">
+                <set-val-74-2 comment="false" x="26" y="2978">
+                    <get-val-74-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-74-2>
+            </group>
+            <int id="0" val="FullHeal"/>
+        </receive-message>
+    </group>
+    <group id="9">
+        <receiver-8-116 comment="false" x="15" y="3031">
+            <group id="-1">
+                <if comment="false" x="26" y="3061">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="3099">
+                            <get-byobval-12-185-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_Damage"/>
+                            <get-byobval-12-185-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="3131">
+                            <get-byobval-12-185-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="Heal"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-12-185-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-12-185-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-12-185-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-8-116>
+    </group>
+    <group id="10">
+        <receiver-10-116 comment="false" x="15" y="3203">
+            <group id="-1">
+                <if comment="false" x="26" y="3233">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="3271">
+                            <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_Damage"/>
+                            <get-byobval-12-204-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="3303">
+                            <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_DamageType"/>
+                            <get-byobval-12-204-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="3335">
+                            <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_MagicDamage"/>
+                            <get-byobval-12-204-3 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="3367">
+                            <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_CriticalHit"/>
+                            <get-byobval-12-204-4 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <if comment="false" x="37" y="3399">
+                            <group id="-1">
+                                <shout comment="false" x="48" y="3424">
+                                    <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="InflictDamage"/>
+                                </shout>
+                            </group>
+                            <get-byobval-12-204-5 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="3468">
+                            <group id="-1">
+                                <say comment="false" x="48" y="3488">
+                                    <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="Health"/>
+                                    <int id="2" val="InflictDamage"/>
+                                </say>
+                            </group>
+                        </else>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-12-204-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-12-204-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-12-204-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-12-204-3 comment="false" id="3" x="0" y="0"/>
+            <get-byobval-12-204-4 comment="false" id="4" x="0" y="0"/>
+            <get-byobval-12-204-5 comment="false" id="5" x="0" y="0"/>
+        </receiver-10-116>
+    </group>
+    <group id="-1"/>
+</groups>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group id="-1">
+                        <actors-of-type3 comment="false" x="37" y="60">
+                            <group id="-1">
+                                <set-val-98-1 comment="false" x="48" y="87">
+                                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                </set-val-98-1>
+                            </group>
+                            <ACTORTYPE eid="var" id="0" vid="32"/>
+                        </actors-of-type3>
+                    </group>
+                    <int id="0" val="0.1"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="171">
+            <group id="-1">
+                <if comment="false" x="26" y="196">
+                    <group id="-1">
+                        <set-val-98-25 comment="false" x="37" y="234">
+                            <div comment="false" id="0" x="0" y="0">
+                                <custom-148 comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </custom-148>
+                                <custom-147 comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </custom-147>
+                            </div>
+                        </set-val-98-25>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                        </isalive>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <draw comment="false" x="15" y="312">
+            <group id="-1">
+                <if comment="false" x="26" y="337">
+                    <group id="-1">
+                        <stop comment="false" x="37" y="380"/>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <isalive comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </isalive>
+                        </not>
+                    </or>
+                </if>
+                <if comment="false" x="26" y="412">
+                    <group id="-1">
+                        <to-local-space comment="false" x="37" y="442">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                        </to-local-space>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-98-13 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Actor"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="481">
+                    <group id="-1">
+                        <if comment="false" x="37" y="516">
+                            <group id="-1">
+                                <set-font-new comment="false" x="48" y="549">
+                                    <FONT eid="var" id="0" vid="9"/>
+                                </set-font-new>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="9"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <draw-text comment="false" x="37" y="588">
+                            <custom-148 comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </custom-148>
+                            <get-val-98-28 comment="false" id="1" x="0" y="0"/>
+                            <get-val-98-29 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-98-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Number"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-98-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Both"/>
+                        </eq>
+                    </or>
+                </if>
+                <comment-short comment="false" x="26" y="633">
+                    <int id="0" val="Draw the health bar background and outline"/>
+                </comment-short>
+                <if comment="false" x="26" y="653">
+                    <group id="-1">
+                        <if comment="false" x="37" y="688">
+                            <group id="-1">
+                                <set-color comment="false" x="48" y="718">
+                                    <color id="0" vid="19"/>
+                                </set-color>
+                                <drawfill-rect comment="false" x="48" y="745">
+                                    <int id="0" val="1"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-98-30 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-98-18 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <get-val-98-31 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-98-18 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                    <plus comment="false" id="3" x="0" y="0">
+                                        <get-val-98-26 comment="false" id="0" x="0" y="0"/>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-98-18 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="2"/>
+                                        </times>
+                                    </plus>
+                                    <plus comment="false" id="4" x="0" y="0">
+                                        <get-val-98-27 comment="false" id="0" x="0" y="0"/>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-98-18 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="2"/>
+                                        </times>
+                                    </plus>
+                                </drawfill-rect>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-98-18 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                        <set-color comment="false" x="37" y="799">
+                            <color id="0" vid="20"/>
+                        </set-color>
+                        <drawfill-rect comment="false" x="37" y="826">
+                            <int id="0" val="1"/>
+                            <get-val-98-30 comment="false" id="1" x="0" y="0"/>
+                            <get-val-98-31 comment="false" id="2" x="0" y="0"/>
+                            <get-val-98-26 comment="false" id="3" x="0" y="0"/>
+                            <get-val-98-27 comment="false" id="4" x="0" y="0"/>
+                        </drawfill-rect>
+                        <if comment="false" x="37" y="858">
+                            <group id="-1">
+                                <set-color comment="false" x="48" y="888">
+                                    <color id="0" vid="21"/>
+                                </set-color>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-98-25 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0.75"/>
+                            </more>
+                        </if>
+                        <else-if comment="false" x="37" y="927">
+                            <group id="-1">
+                                <set-color comment="false" x="48" y="957">
+                                    <color id="0" vid="22"/>
+                                </set-color>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-98-25 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0.50"/>
+                            </more>
+                        </else-if>
+                        <else-if comment="false" x="37" y="996">
+                            <group id="-1">
+                                <set-color comment="false" x="48" y="1026">
+                                    <color id="0" vid="23"/>
+                                </set-color>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-98-25 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0.25"/>
+                            </more>
+                        </else-if>
+                        <else comment="false" x="37" y="1065">
+                            <group id="-1">
+                                <set-color comment="false" x="48" y="1085">
+                                    <color id="0" vid="24"/>
+                                </set-color>
+                            </group>
+                        </else>
+                        <comment-short comment="false" x="37" y="1124">
+                            <int id="0" val="Draw the current amount of health"/>
+                        </comment-short>
+                        <if comment="false" x="37" y="1144">
+                            <group id="-1">
+                                <drawfill-rect comment="false" x="48" y="1174">
+                                    <int id="0" val="1"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-val-98-30 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-val-98-31 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                    <minus comment="false" id="3" x="0" y="0">
+                                        <roundnew comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-98-26 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-98-25 comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                        </roundnew>
+                                        <int id="1" val="2"/>
+                                    </minus>
+                                    <minus comment="false" id="4" x="0" y="0">
+                                        <get-val-98-27 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </minus>
+                                </drawfill-rect>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-98-11 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Horizontal"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="1241">
+                            <group id="-1">
+                                <drawfill-rect comment="false" x="48" y="1261">
+                                    <int id="0" val="1"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-val-98-30 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-val-98-31 comment="false" id="0" x="0" y="0"/>
+                                            <roundnew comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <times comment="false" id="1" x="0" y="0">
+                                                    <get-val-98-27 comment="false" id="0" x="0" y="0"/>
+                                                    <minus comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                        <get-val-98-25 comment="false" id="1" x="0" y="0"/>
+                                                    </minus>
+                                                </times>
+                                            </roundnew>
+                                        </plus>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                    <minus comment="false" id="3" x="0" y="0">
+                                        <get-val-98-26 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </minus>
+                                    <minus comment="false" id="4" x="0" y="0">
+                                        <roundnew comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-98-27 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-98-25 comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                        </roundnew>
+                                        <int id="1" val="2"/>
+                                    </minus>
+                                </drawfill-rect>
+                            </group>
+                        </else>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-98-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Bar"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-98-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Both"/>
+                        </eq>
+                    </or>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

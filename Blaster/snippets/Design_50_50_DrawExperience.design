@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<say-this comment="false" x="26" y="113">
+<int id="0" val="Get"/>
+</say-this>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="234">
+<group id="-1">
+<set-alpha comment="false" x="26" y="259">
+<int id="0" val="100"/>
+</set-alpha>
+<if comment="false" x="26" y="279">
+<group id="-1">
+<if comment="false" x="37" y="304">
+<group id="-1">
+<to-local-space comment="false" x="48" y="334">
+<ACTOR eid="this" id="0"/>
+</to-local-space>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-50-5 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="On Actor"/>
+</eq>
+</if>
+<if comment="false" x="37" y="373">
+<group id="-1">
+<to-screen-space comment="false" x="48" y="403"/>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-50-5 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="On Screen"/>
+</eq>
+</if>
+<if comment="false" x="37" y="435">
+<group id="-1">
+<set-color2 comment="false" x="48" y="465">
+<int id="0" val="15"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="492">
+<minus comment="false" id="0" x="0" y="0">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-50-7 comment="false" id="0" x="0" y="0"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<plus comment="false" id="2" x="0" y="0">
+<get-val-50-12 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+<plus comment="false" id="3" x="0" y="0">
+<get-val-50-11 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+</fill-rect>
+<set-color2 comment="false" x="48" y="527">
+<int id="0" val="10"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="554">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-7 comment="false" id="1" x="0" y="0"/>
+<get-val-50-12 comment="false" id="2" x="0" y="0"/>
+<get-val-50-11 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+<set-color2 comment="false" x="48" y="579">
+<int id="0" val="9"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="606">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-50-7 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-50-11 comment="false" id="0" x="0" y="0"/>
+<div comment="false" id="1" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-50-11 comment="false" id="0" x="0" y="0"/>
+<get-val-50-19 comment="false" id="1" x="0" y="0"/>
+</times>
+<int id="1" val="100"/>
+</div>
+</minus>
+</plus>
+<get-val-50-12 comment="false" id="2" x="0" y="0"/>
+<div comment="false" id="3" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-50-11 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-50-2 comment="false" id="0" x="0" y="0"/>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-50-17 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-50-18 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+</get-item-number>
+</minus>
+</times>
+<minus comment="false" id="1" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-50-17 comment="false" id="0" x="0" y="0"/>
+<get-val-50-18 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-50-17 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-50-18 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+</get-item-number>
+</minus>
+</div>
+</fill-rect>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-50-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Vertical Gauge"/>
+</eq>
+</if>
+<if comment="false" x="37" y="668">
+<group id="-1">
+<set-color2 comment="false" x="48" y="698">
+<int id="0" val="15"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="725">
+<minus comment="false" id="0" x="0" y="0">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-50-7 comment="false" id="0" x="0" y="0"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<plus comment="false" id="2" x="0" y="0">
+<get-val-50-12 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+<plus comment="false" id="3" x="0" y="0">
+<get-val-50-11 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+</fill-rect>
+<set-color2 comment="false" x="48" y="760">
+<int id="0" val="10"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="787">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-7 comment="false" id="1" x="0" y="0"/>
+<get-val-50-12 comment="false" id="2" x="0" y="0"/>
+<get-val-50-11 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+<set-color2 comment="false" x="48" y="812">
+<int id="0" val="9"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="839">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-7 comment="false" id="1" x="0" y="0"/>
+<div comment="false" id="2" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-50-12 comment="false" id="0" x="0" y="0"/>
+<get-val-50-19 comment="false" id="1" x="0" y="0"/>
+</times>
+<int id="1" val="100"/>
+</div>
+<get-val-50-11 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-50-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Horizontal Gauge"/>
+</eq>
+</if>
+<if comment="false" x="37" y="886">
+<group id="-1">
+<set-color2 comment="false" x="48" y="916">
+<int id="0" val="15"/>
+</set-color2>
+<fill-circle comment="false" x="48" y="943">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-7 comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-val-50-14 comment="false" id="0" x="0" y="0"/>
+<get-val-50-16 comment="false" id="1" x="0" y="0"/>
+</plus>
+</fill-circle>
+<set-color2 comment="false" x="48" y="973">
+<int id="0" val="10"/>
+</set-color2>
+<fill-circle comment="false" x="48" y="1000">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-7 comment="false" id="1" x="0" y="0"/>
+<get-val-50-14 comment="false" id="2" x="0" y="0"/>
+</fill-circle>
+<set-color2 comment="false" x="48" y="1025">
+<int id="0" val="9"/>
+</set-color2>
+<fill-circle comment="false" x="48" y="1052">
+<get-val-50-6 comment="false" id="0" x="0" y="0"/>
+<get-val-50-7 comment="false" id="1" x="0" y="0"/>
+<div comment="false" id="2" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-50-14 comment="false" id="0" x="0" y="0"/>
+<get-val-50-19 comment="false" id="1" x="0" y="0"/>
+</times>
+<int id="1" val="100"/>
+</div>
+</fill-circle>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-50-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Sphere"/>
+</eq>
+</if>
+<if comment="false" x="37" y="1099">
+<group id="-1">
+<set-font-new comment="false" x="48" y="1129">
+<FONT eid="var" id="0" vid="13"/>
+</set-font-new>
+<draw-text comment="false" x="48" y="1156">
+<str-combine comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-50-2 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</tostring>
+<str-combine comment="false" id="1" x="0" y="0">
+<int id="0" val=" / "/>
+<tostring comment="false" id="1" x="0" y="0">
+<roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-50-17 comment="false" id="0" x="0" y="0"/>
+<get-val-50-18 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</roundnew>
+</tostring>
+</str-combine>
+</str-combine>
+<get-val-50-6 comment="false" id="1" x="0" y="0"/>
+<get-val-50-7 comment="false" id="2" x="0" y="0"/>
+</draw-text>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-50-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Text"/>
+</eq>
+</if>
+</group>
+<get-val-50-1 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="1266">
+<group id="-1">
+<set-val-50-1 comment="false" x="26" y="1291">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-50-1>
+</group>
+<int id="0" val="Activate"/>
+</receive-message>
+</group>
+<group id="5">
+<receive-message comment="false" x="15" y="1344">
+<group id="-1">
+<set-val-50-1 comment="false" x="26" y="1369">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-50-1>
+</group>
+<int id="0" val="Deactivate"/>
+</receive-message>
+</group>
+<group id="6">
+<receive-message comment="false" x="15" y="1422">
+<group id="-1">
+<if comment="false" x="26" y="1447">
+<group id="-1">
+<set-val-50-19 comment="false" x="37" y="1480">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Experience"/>
+<int id="2" val="_EXP"/>
+</get-attribute>
+</as-number>
+                        </set-val-50-19>
+<set-val-50-18 comment="false" x="37" y="1518">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Experience"/>
+<int id="2" val="_CurrentLevel"/>
+</get-attribute>
+</as-number>
+                        </set-val-50-18>
+<set-val-50-2 comment="false" x="37" y="1556">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Experience"/>
+<int id="2" val="_CurrentEXP"/>
+</get-attribute>
+</as-number>
+                        </set-val-50-2>
+<custom-code comment="false" x="37" y="1594">
+<int id="0" val="_RequiredEXP = actor.getValue(&amp;quot;Experience&amp;quot;, &amp;quot;_RequiredEXP&amp;quot;) as Array"/>
+</custom-code>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Experience"/>
+</has-snippet>
+</if>
+</group>
+<int id="0" val="Get"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>
