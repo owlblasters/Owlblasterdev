@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="0" extheight="448" extwidth="704" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="20.0" height="384" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="1" desc="" eventsnippetid="0" extheight="576" extwidth="448" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="20.0" height="512" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="384">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
@@ -12,8 +12,133 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="16" c="false" group="0" id="32" name="Jumper 16" sx="1.0" sy="1.0" x="216" y="0" z="0"/>
-        <actor a="0.0" aid="15" c="false" group="3" id="92" name="Angry Blue Owl 15" sx="1.0" sy="1.0" x="239" y="237" z="0"/>
+        <actor a="0.0" aid="17" c="true" group="3" id="92" name="Angry Blue Owl 17" sx="1.0" sy="1.0" x="286" y="211" z="0">
+            <snippets>
+                <s enabled="true" id="34">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="62">
+                    <prop id="1" list="0" val="32"/>
+                    <prop id="2" list="0" val="32"/>
+                    <prop id="3" list="0" val="16"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="5" list="0" val="false"/>
+                    <prop id="6" list="0" val="false"/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="8" list="0" val="0.0"/>
+                    <prop id="9" list="0" val="10.0"/>
+                    <prop id="10" list="0" val="10"/>
+                    <prop id="11" list="0" val="10"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="105">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val="1"/>
+                    <prop id="3" list="0" val="1"/>
+                    <prop id="4" list="0" val="1"/>
+                    <prop id="5" list="1" val="">
+                        <text order="0" value="Players"/>
+                    </prop>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="16" c="false" group="0" id="32" name="Jumper 16" sx="1.0" sy="1.0" x="175" y="31" z="0"/>
+        <actor a="0.0" aid="19" c="true" group="3" id="92" name="Angry Blue Owl 19" sx="1.0" sy="1.0" x="51" y="449" z="0">
+            <snippets>
+                <s enabled="true" id="34">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="62">
+                    <prop id="1" list="0" val="32"/>
+                    <prop id="2" list="0" val="32"/>
+                    <prop id="3" list="0" val="16"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="5" list="0" val="false"/>
+                    <prop id="6" list="0" val="false"/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="8" list="0" val="0.0"/>
+                    <prop id="9" list="0" val="10.0"/>
+                    <prop id="10" list="0" val="10"/>
+                    <prop id="11" list="0" val="10"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="105">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val="1"/>
+                    <prop id="3" list="0" val="1"/>
+                    <prop id="4" list="0" val="1"/>
+                    <prop id="5" list="1" val="">
+                        <text order="0" value="Players"/>
+                    </prop>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="18" c="true" group="3" id="92" name="Angry Blue Owl 18" sx="1.0" sy="1.0" x="213" y="291" z="0">
+            <snippets>
+                <s enabled="true" id="34">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="62">
+                    <prop id="1" list="0" val="32"/>
+                    <prop id="2" list="0" val="32"/>
+                    <prop id="3" list="0" val="16"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="5" list="0" val="false"/>
+                    <prop id="6" list="0" val="false"/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="8" list="0" val="0.0"/>
+                    <prop id="9" list="0" val="10.0"/>
+                    <prop id="10" list="0" val="10"/>
+                    <prop id="11" list="0" val="10"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="105">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val="1"/>
+                    <prop id="3" list="0" val="1"/>
+                    <prop id="4" list="0" val="1"/>
+                    <prop id="5" list="1" val="">
+                        <text order="0" value="Players"/>
+                    </prop>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="20" c="true" group="3" id="92" name="Angry Blue Owl 20" sx="1.0" sy="1.0" x="135" y="359" z="0">
+            <snippets>
+                <s enabled="true" id="34">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="62">
+                    <prop id="1" list="0" val="32"/>
+                    <prop id="2" list="0" val="32"/>
+                    <prop id="3" list="0" val="16"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="5" list="0" val="false"/>
+                    <prop id="6" list="0" val="false"/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="8" list="0" val="0.0"/>
+                    <prop id="9" list="0" val="10.0"/>
+                    <prop id="10" list="0" val="10"/>
+                    <prop id="11" list="0" val="10"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="105">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val="1"/>
+                    <prop id="3" list="0" val="1"/>
+                    <prop id="4" list="0" val="1"/>
+                    <prop id="5" list="1" val="">
+                        <text order="0" value="Players"/>
+                    </prop>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="23" c="false" group="3" id="160" name="Tree Side 23" sx="1.0" sy="1.0" x="-8" y="-113" z="0"/>
+        <actor a="0.0" aid="24" c="false" group="3" id="160" name="Tree Side 24" sx="1.0" sy="1.0" x="370" y="-86" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="98">
