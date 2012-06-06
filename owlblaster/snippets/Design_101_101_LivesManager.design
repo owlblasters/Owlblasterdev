@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <set-val-101-3 comment="false" x="26" y="40">
+                    <get-val-101-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-101-3>
+                <if comment="false" x="26" y="65">
+                    <group id="-1">
+                        <if comment="false" x="37" y="90">
+                            <group id="-1">
+                                <set-game-att comment="false" x="48" y="140">
+                                    <get-val-101-7 comment="false" id="0" x="0" y="0"/>
+                                    <as-number comment="false" id="1" x="0" y="0">
+                                        <get-val-101-3 comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </set-game-att>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <or comment="false" id="0" x="0" y="0">
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-game-att comment="false" id="0" x="0" y="0">
+                                                <get-val-101-7 comment="false" id="0" x="0" y="0"/>
+                                            </get-game-att>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </lesseq>
+                                    <moreeq comment="false" id="1" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-game-att comment="false" id="0" x="0" y="0">
+                                                <get-val-101-7 comment="false" id="0" x="0" y="0"/>
+                                            </get-game-att>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </or>
+                            </not>
+                        </if>
+                        <else comment="false" x="37" y="182">
+                            <group id="-1">
+                                <set-val-101-3 comment="false" x="48" y="202">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-game-att comment="false" id="0" x="0" y="0">
+                                            <get-val-101-7 comment="false" id="0" x="0" y="0"/>
+                                        </get-game-att>
+                                    </as-number>
+                                </set-val-101-3>
+                            </group>
+                        </else>
+                    </group>
+                    <get-val-101-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="289">
+            <group id="-1"/>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="362">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="435">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receive-message comment="false" x="15" y="508">
+            <group id="-1">
+                <custom-142 comment="false" x="26" y="538">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </custom-142>
+            </group>
+            <get-val-101-8 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="593">
+            <group id="-1">
+                <if comment="false" x="26" y="618">
+                    <group id="-1">
+                        <set-game-att comment="false" x="37" y="643">
+                            <get-val-101-7 comment="false" id="0" x="0" y="0"/>
+                            <get-val-101-3 comment="false" id="1" x="0" y="0"/>
+                        </set-game-att>
+                    </group>
+                    <get-val-101-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val="UpdateGlobalLives"/>
+        </receive-message>
+    </group>
+    <group id="6">
+        <receiver-1-143 comment="false" x="15" y="708">
+            <group id="-1">
+                <set-val-101-3 comment="false" x="26" y="738">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-101-3 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-246-523-1 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                        <get-val-101-1 comment="false" id="2" x="0" y="0"/>
+                    </minmax>
+                </set-val-101-3>
+                <say-this comment="false" x="26" y="781">
+                    <int id="0" val="UpdateGlobalLives"/>
+                </say-this>
+            </group>
+            <get-byobval-246-523-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-246-523-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-143>
+    </group>
+    <group id="7">
+        <receiver-2-143 comment="false" x="15" y="829">
+            <group id="-1">
+                <set-val-101-3 comment="false" x="26" y="859">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <get-val-101-3 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-246-524-1 comment="false" id="1" x="0" y="0"/>
+                        </minus>
+                        <int id="2" val="0"/>
+                    </minmax>
+                </set-val-101-3>
+                <say-this comment="false" x="26" y="902">
+                    <int id="0" val="UpdateGlobalLives"/>
+                </say-this>
+                <if comment="false" x="26" y="922">
+                    <group id="-1">
+                        <shout comment="false" x="37" y="952">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-101-10 comment="false" id="1" x="0" y="0"/>
+                        </shout>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-101-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <else comment="false" x="26" y="996">
+                    <group id="-1">
+                        <shout comment="false" x="37" y="1016">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-101-9 comment="false" id="1" x="0" y="0"/>
+                        </shout>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-246-524-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-246-524-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-2-143>
+    </group>
+    <group id="8">
+        <receiver-3-143 comment="false" x="15" y="1088">
+            <group id="-1">
+                <return comment="false" x="26" y="1118">
+                    <get-val-101-3 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-246-530-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-3-143>
+    </group>
+    <group id="-1"/>
+</groups>

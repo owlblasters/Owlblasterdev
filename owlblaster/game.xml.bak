@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<game accelFramerate="0" adsPosition="0" aheight="384" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="640" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourname.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="0" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="384" kit="false" lockURL="" mochi="" multitouch="true" name="Blaster" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="640">
+    <folders>
+        <group desc="" id="0" name="Actions" type="snippet">
+            <r id="1"/>
+            <r id="18"/>
+            <r id="39"/>
+            <r id="23"/>
+            <r id="63"/>
+            <r id="28"/>
+        </group>
+        <group desc="" id="1" name="Other" type="snippet">
+            <r id="2"/>
+            <r id="3"/>
+            <r id="4"/>
+            <r id="36"/>
+            <r id="24"/>
+            <r id="61"/>
+            <r id="15"/>
+        </group>
+        <group desc="" id="2" name="Motion" type="snippet">
+            <r id="5"/>
+            <r id="6"/>
+            <r id="8"/>
+            <r id="10"/>
+            <r id="11"/>
+            <r id="30"/>
+        </group>
+        <group desc="" id="3" name="GUI" type="snippet">
+            <r id="69"/>
+            <r id="70"/>
+            <r id="65"/>
+            <r id="67"/>
+            <r id="82"/>
+            <r id="73"/>
+            <r id="60"/>
+        </group>
+        <group desc="" id="4" name="Health" type="snippet">
+            <r id="68"/>
+            <r id="35"/>
+            <r id="71"/>
+            <r id="81"/>
+            <r id="37"/>
+            <r id="9"/>
+            <r id="27"/>
+            <r id="72"/>
+            <r id="31"/>
+            <r id="14"/>
+            <r id="74"/>
+        </group>
+        <group desc="" id="5" name="Eye Candy" type="snippet">
+            <r id="32"/>
+            <r id="12"/>
+        </group>
+        <group desc="" id="6" name="Collisions" type="snippet">
+            <r id="34"/>
+            <r id="87"/>
+            <r id="25"/>
+        </group>
+        <group desc="" id="7" name="AI" type="snippet">
+            <r id="29"/>
+            <r id="62"/>
+        </group>
+        <group desc="" id="8" name="Saving" type="snippet">
+            <r id="75"/>
+        </group>
+        <group desc="" id="9" name="Stats" type="snippet">
+            <r id="80"/>
+            <r id="76"/>
+            <r id="77"/>
+            <r id="78"/>
+            <r id="79"/>
+        </group>
+    </folders>
+    <packs>
+        <pack desc="" id="0" name="Jetpack" oid="-1" resources="" snippets="19,20"/>
+        <pack desc="" id="1" name="Shooter pack" oid="-1" resources="59,58,57,56" snippets="34,35,32,36,37,23,25,24,27,29,28,31,30"/>
+        <pack desc="" id="3" name="RPG Elements" oid="-1" resources="" snippets="68,69,70,71,67,76,77,78,79,72,73,74,75,81,80,82"/>
+        <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health Manager to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="4" name="Enhanced Health Pack" oid="32904" resources="" snippets="102,103,100,101,98,99,96,97,106,107,104,105"/>
+    </packs>
+    <groups>
+        <group desc="" id="4" name="Projectiles"/>
+    </groups>
+    <cgroups>
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="4" g2="3"/>
+        <cgroup g1="3" g2="3"/>
+    </cgroups>
+    <input>
+        <key id="0" keyname="UP" name="up" vk="38"/>
+        <key id="1" keyname="DOWN" name="down" vk="40"/>
+        <key id="2" keyname="LEFT" name="left" vk="37"/>
+        <key id="3" keyname="RIGHT" name="right" vk="39"/>
+        <key id="4" keyname="Z" name="action1" vk="90"/>
+        <key id="5" keyname="X" name="action2" vk="88"/>
+        <key id="6" keyname="ENTER" name="enter" vk="10"/>
+        <key id="7" keyname="SPACE" name="Space" vk="32"/>
+    </input>
+    <attcats>
+        <cat id="-1" name="Default"/>
+    </attcats>
+    <props/>
+    <attributes/>
+    <collisions>
+        <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="2" name="Tri 45R" pts="0.0,0.0#0.0,1.0#1.0,1.0"/>
+        <poly id="3" name="Tri 45L" pts="1.0,0.0#0.0,1.0#1.0,1.0"/>
+        <poly id="4" name="Tri 45R Inv" pts="0.0,0.0#0.0,1.0#1.0,0.0"/>
+        <poly id="5" name="Tri 45L Inv" pts="0.0,0.0#1.0,1.0#1.0,0.0"/>
+        <poly id="6" name="Tri 30R" pts="0.0,1.0#1.0,1.0#1.0,0.5"/>
+        <poly id="7" name="Tri 30L" pts="0.0,0.5#0.0,1.0#1.0,1.0"/>
+        <poly id="8" name="Tri 30-2R" pts="0.0,0.5#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="9" name="Tri 30-2L" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.5"/>
+        <poly id="10" name="Tri 30R Inv" pts="0.0,0.0#1.0,0.5#1.0,0.0"/>
+        <poly id="11" name="Tri 30L Inv" pts="0.0,0.0#0.0,0.5#1.0,0.0"/>
+        <poly id="12" name="Tri 30-2R Inv" pts="0.0,0.0#0.0,0.5#1.0,1.0#1.0,0.0"/>
+        <poly id="13" name="Tri 30-2L Inv" pts="0.0,0.0#0.0,1.0#1.0,0.5#1.0,0.0"/>
+        <poly id="14" name="Tri 60R" pts="0.5,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="15" name="Tri 60L" pts="0.0,0.0#0.0,1.0#0.5,1.0"/>
+        <poly id="17" name="Tri 60-2L" pts="0.0,0.0#0.0,1.0#1.0,1.0#0.5,0.0"/>
+        <poly id="16" name="Tri 60-2R" pts="0.5,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="19" name="Tri 60L Inv" pts="0.0,0.0#0.0,1.0#0.5,0.0"/>
+        <poly id="18" name="Tri 60R Inv" pts="0.5,0.0#1.0,1.0#1.0,0.0"/>
+        <poly id="21" name="Tri 60-2L Inv" pts="0.0,0.0#0.0,1.0#0.5,1.0#1.0,0.0"/>
+        <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
+    </collisions>
+    <atlases>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,0,34,35" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="4" members="" name="Atlas 5" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="5" members="" name="Atlas 6" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="6" members="" name="Atlas 7" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="7" members="" name="Atlas 8" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="8" members="" name="Atlas 9" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="9" members="" name="Atlas 10" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="10" members="" name="Atlas 11" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="11" members="" name="Atlas 12" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="12" members="" name="Atlas 13" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="13" members="" name="Atlas 14" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="14" members="" name="Atlas 15" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="15" members="" name="Atlas 16" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="17" members="" name="Atlas 18" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="16" members="" name="Atlas 17" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="19" members="" name="Atlas 20" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="18" members="" name="Atlas 19" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="21" members="" name="Atlas 22" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="20" members="" name="Atlas 21" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="23" members="" name="Atlas 24" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="22" members="" name="Atlas 23" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="25" members="" name="Atlas 26" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="24" members="" name="Atlas 25" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="27" members="" name="Atlas 28" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="26" members="" name="Atlas 27" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="29" members="" name="Atlas 30" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="28" members="" name="Atlas 29" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="31" members="" name="Atlas 32" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="30" members="" name="Atlas 31" pvr="false" resize="0" start="true" target="0"/>
+    </atlases>
+    <libraries/>
+</game>

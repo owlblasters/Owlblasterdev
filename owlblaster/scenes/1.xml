@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="108" extheight="448" extwidth="704" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="384" id="1" name="Title Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors/>
+    <snippets>
+        <s enabled="true" id="109">
+            <prop id="5" list="0" val="false"/>
+            <prop id="6" list="0" val="Default Font"/>
+            <prop id="7" list="0" val="0.0"/>
+            <prop id="8" list="0" val="0.0"/>
+            <prop id="10" list="0" val=""/>
+            <prop id="11" list="0" val="0.0"/>
+            <prop id="12" list="0" val="false"/>
+            <prop id="13" list="0" val="0.0"/>
+            <prop id="14" list="0" val="0,0,0,255"/>
+            <prop id="15" list="0" val="0,0,0,255"/>
+            <prop id="17" list="0" val="0.0"/>
+            <prop id="16" list="0" val="0.0"/>
+            <prop id="19" list="0" val="Up"/>
+            <prop id="18" list="0" val="0"/>
+        </s>
+    </snippets>
+    <terrain/>
+</scene>

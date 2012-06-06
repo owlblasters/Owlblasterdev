@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <set-val-68-6 comment="false" x="26" y="40">
+                    <get-val-68-22 comment="false" id="0" x="0" y="0"/>
+                </set-val-68-6>
+                <if comment="false" x="26" y="65">
+                    <group id="-1">
+                        <create-actor3 comment="false" x="37" y="90">
+                            <ACTORTYPE eid="var" id="0" vid="2"/>
+                            <get-val-68-4 comment="false" id="1" x="0" y="0"/>
+                            <get-val-68-5 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-68-3 comment="false" x="37" y="122">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-68-3>
+                        <anchor-screen comment="false" x="37" y="149">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                        </anchor-screen>
+                    </group>
+                    <get-val-68-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <dolater comment="false" x="26" y="188">
+                    <group id="-1">
+                        <set-val-68-6 comment="false" x="37" y="223">
+                            <get-val-68-22 comment="false" id="0" x="0" y="0"/>
+                        </set-val-68-6>
+                    </group>
+                    <times comment="false" id="0" x="0" y="0">
+                        <int id="0" val="5.5"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <stepsize comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1000"/>
+                        </div>
+                    </times>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="288">
+            <group id="-1">
+                <say-this comment="false" x="26" y="313">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <set-val-68-8 comment="false" x="26" y="333">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <int id="0" val="100"/>
+                                <get-val-68-6 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                            <get-val-68-7 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </roundnew>
+                </set-val-68-8>
+                <set-val-68-21 comment="false" x="26" y="381">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <get-val-68-20 comment="false" id="0" x="0" y="0"/>
+                                <get-val-68-6 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                            <get-val-68-7 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </roundnew>
+                </set-val-68-21>
+                <tween-number comment="false" x="26" y="429">
+                    <int id="0" val="_DisplayEnergy"/>
+                    <get-val-68-21 comment="false" id="1" x="0" y="0"/>
+                    <get-val-68-18 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="3"/>
+                </tween-number>
+                <if comment="false" x="26" y="461">
+                    <group id="-1">
+                        <set-frame comment="false" x="37" y="504">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <get-val-68-19 comment="false" id="1" x="0" y="0"/>
+                        </set-frame>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="3"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <get-val-68-3 comment="false" id="0" x="0" y="0"/>
+                        </isalive>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="548">
+                    <group id="-1">
+                        <set-val-68-6 comment="false" x="37" y="578">
+                            <get-val-68-7 comment="false" id="0" x="0" y="0"/>
+                        </set-val-68-6>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-68-6 comment="false" id="0" x="0" y="0"/>
+                        <get-val-68-7 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="615">
+                    <group id="-1">
+                        <set-val-68-6 comment="false" x="37" y="645">
+                            <int id="0" val="0"/>
+                        </set-val-68-6>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-68-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="705">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="778">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receive-message comment="false" x="15" y="851">
+            <group id="-1">
+                <if comment="false" x="26" y="876">
+                    <group id="-1">
+                        <set-val-68-7 comment="false" x="37" y="909">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Character Status"/>
+                                    <int id="2" val="_Energy"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-68-7>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Character Status"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="987">
+            <group id="-1">
+                <if comment="false" x="26" y="1012">
+                    <group id="-1">
+                        <set-val-68-6 comment="false" x="37" y="1047">
+                            <int id="0" val="0"/>
+                        </set-val-68-6>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-val-68-6 comment="false" id="0" x="0" y="0"/>
+                            <get-val-68-9 comment="false" id="1" x="0" y="0"/>
+                        </minus>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <else comment="false" x="26" y="1079">
+                    <group id="-1">
+                        <incdec comment="false" x="37" y="1099">
+                            <int id="0" val="6"/>
+                            <int id="1" val="1"/>
+                            <get-val-68-9 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="UseEnergy"/>
+        </receive-message>
+    </group>
+    <group id="6">
+        <receive-message comment="false" x="15" y="1171">
+            <group id="-1">
+                <if comment="false" x="26" y="1196">
+                    <group id="-1">
+                        <set-val-68-9 comment="false" x="37" y="1226">
+                            <int id="0" val="1"/>
+                        </set-val-68-9>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-68-9 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="26" y="1258">
+                    <group id="-1">
+                        <create-actor3 comment="false" x="37" y="1283">
+                            <get-val-68-12 comment="false" id="0" x="0" y="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-68-14 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-68-15 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <if comment="false" x="37" y="1328">
+                            <group id="-1">
+                                <set-attribute comment="false" x="48" y="1361">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_Message"/>
+                                    <tostring comment="false" id="3" x="0" y="0">
+                                        <roundnew comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <get-val-68-9 comment="false" id="1" x="0" y="0"/>
+                                        </roundnew>
+                                    </tostring>
+                                </set-attribute>
+                                <if comment="false" x="48" y="1411">
+                                    <group id="-1">
+                                        <set-attribute comment="false" x="59" y="1444">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="Display Float Message"/>
+                                            <int id="2" val="_FonttoUse"/>
+                                            <get-val-68-13 comment="false" id="3" x="0" y="0"/>
+                                        </set-attribute>
+                                    </group>
+                                    <value comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="13"/>
+                                        <int id="1" val="0"/>
+                                    </value>
+                                </if>
+                                <set-attribute comment="false" x="48" y="1488">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_XPosition"/>
+                                    <neg comment="false" id="3" x="0" y="0">
+                                        <div comment="false" id="0" x="0" y="0">
+                                            <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                <get-val-68-13 comment="false" id="0" x="0" y="0"/>
+                                                <tostring comment="false" id="1" x="0" y="0">
+                                                    <roundnew comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                        <get-val-68-9 comment="false" id="1" x="0" y="0"/>
+                                                    </roundnew>
+                                                </tostring>
+                                            </get-font-width2-new>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </neg>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="1561">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_YPosition"/>
+                                    <get-val-68-16 comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="Display Float Message"/>
+                            </has-snippet>
+                        </if>
+                    </group>
+                    <get-val-68-11 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <incdec comment="false" x="26" y="1617">
+                    <int id="0" val="6"/>
+                    <int id="1" val="0"/>
+                    <roundnew comment="false" id="2" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <get-val-68-9 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </incdec>
+            </group>
+            <int id="0" val="RecoverEnergy"/>
+        </receive-message>
+    </group>
+    <group id="7">
+        <receiver-1-106 comment="false" x="15" y="1690">
+            <group id="-1">
+                <if comment="false" x="26" y="1720">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="1758">
+                            <get-byobval-35-116-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Energy"/>
+                            <int id="2" val="_EnergyCost"/>
+                            <get-byobval-35-116-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="1790">
+                            <get-byobval-35-116-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Energy"/>
+                            <int id="2" val="UseEnergy"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-35-116-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Energy"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-35-116-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-35-116-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-106>
+    </group>
+    <group id="8">
+        <receiver-2-106 comment="false" x="15" y="1862">
+            <group id="-1">
+                <if comment="false" x="26" y="1892">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="1930">
+                            <get-byobval-35-117-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Energy"/>
+                            <int id="2" val="_EnergyCost"/>
+                            <get-byobval-35-117-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="1962">
+                            <get-byobval-35-117-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Energy"/>
+                            <int id="2" val="RecoverEnergy"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-35-117-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Energy"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-35-117-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-35-117-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-2-106>
+    </group>
+    <group id="9">
+        <receive-message comment="false" x="15" y="2034">
+            <group id="-1">
+                <set-val-68-6 comment="false" x="26" y="2059">
+                    <get-val-68-7 comment="false" id="0" x="0" y="0"/>
+                </set-val-68-6>
+            </group>
+            <int id="0" val="FullHeal"/>
+        </receive-message>
+    </group>
+    <group id="-1"/>
+</groups>
