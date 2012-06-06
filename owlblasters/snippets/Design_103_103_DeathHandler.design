@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1"/>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="161">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="234">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receive-message comment="false" x="15" y="307">
+            <group id="-1">
+                <if comment="false" x="26" y="337">
+                    <group id="-1">
+                        <die comment="false" x="37" y="367">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Kill"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="406">
+                    <group id="-1">
+                        <recycle comment="false" x="37" y="436">
+                            <ACTOR eid="this" id="0"/>
+                        </recycle>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Recycle"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="475">
+                    <group id="-1">
+                        <scene-change3 comment="false" x="37" y="505">
+                            <SCENE eid="var" id="0" vid="5"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="1"/>
+                            <int id="4" val="1"/>
+                        </scene-change3>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Switch"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="544">
+                    <group id="-1">
+                        <scene-reload comment="false" x="37" y="574">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="1"/>
+                        </scene-reload>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Reload"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="613">
+                    <group id="-1"/>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="RespawnCP"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="675">
+                    <group id="-1"/>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="ReloadCP"/>
+                    </eq>
+                </else-if>
+            </group>
+            <get-val-103-1 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="19" y="781">
+            <group id="-1">
+                <if comment="false" x="30" y="811">
+                    <group id="-1">
+                        <die comment="false" x="41" y="841">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Kill"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="30" y="880">
+                    <group id="-1">
+                        <recycle comment="false" x="41" y="910">
+                            <ACTOR eid="this" id="0"/>
+                        </recycle>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Recycle"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="30" y="949">
+                    <group id="-1">
+                        <scene-change3 comment="false" x="41" y="979">
+                            <SCENE eid="var" id="0" vid="6"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="1"/>
+                            <int id="4" val="1"/>
+                        </scene-change3>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Switch"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="30" y="1018">
+                    <group id="-1">
+                        <scene-reload comment="false" x="41" y="1048">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="1"/>
+                        </scene-reload>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-103-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Reload"/>
+                    </eq>
+                </else-if>
+            </group>
+            <get-val-103-2 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group id="-1"/>
+</groups>

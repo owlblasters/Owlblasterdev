@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1"/>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="161">
+            <group id="-1">
+                <if comment="false" x="26" y="186">
+                    <group id="-1">
+                        <shout comment="false" x="37" y="219">
+                            <ACTOR eid="lastcollided" id="0"/>
+                            <int id="1" val="healSelf"/>
+                        </shout>
+                    </group>
+                    <collision-type comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-type>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="279">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

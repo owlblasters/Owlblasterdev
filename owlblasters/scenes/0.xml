@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="0" extheight="448" extwidth="704" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="20.0" height="384" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="0"/>
+    <backgrounds>
+        <ref id="35"/>
+    </backgrounds>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="16" c="false" group="0" id="32" name="Jumper 16" sx="1.0" sy="1.0" x="216" y="0" z="0"/>
+        <actor a="0.0" aid="15" c="false" group="3" id="92" name="Angry Blue Owl 15" sx="1.0" sy="1.0" x="239" y="237" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="98">
+            <prop id="1" list="0" val=""/>
+            <prop id="32" list="0" val="32"/>
+            <prop id="5" list="0" val="Bar"/>
+            <prop id="9" list="0" val="Default Font"/>
+            <prop id="11" list="0" val="Horizontal"/>
+            <prop id="13" list="0" val="Screen"/>
+            <prop id="19" list="0" val="255,255,255,255"/>
+            <prop id="18" list="0" val="0"/>
+            <prop id="21" list="0" val="0,255,0,255"/>
+            <prop id="20" list="0" val="0,0,0,255"/>
+            <prop id="23" list="0" val="255,102,0,255"/>
+            <prop id="22" list="0" val="0,255,255,255"/>
+            <prop id="25" list="0" val="0"/>
+            <prop id="24" list="0" val="255,0,0,255"/>
+            <prop id="27" list="0" val="0"/>
+            <prop id="26" list="0" val="0"/>
+            <prop id="29" list="0" val="0"/>
+            <prop id="28" list="0" val="0"/>
+            <prop id="31" list="0" val="0"/>
+            <prop id="30" list="0" val="0"/>
+        </s>
+    </snippets>
+    <terrain/>
+</scene>

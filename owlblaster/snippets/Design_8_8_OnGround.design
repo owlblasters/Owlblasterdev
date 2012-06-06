@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<actor-set-prop comment="false" x="26" y="113">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+<get-val-8-1 comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+<set-val-8-1 comment="false" x="26" y="145">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-8-1>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="198">
+<group id="-1">
+<if comment="false" x="26" y="223">
+<group id="-1">
+<stop comment="false" x="37" y="256"/>
+</group>
+<collision-sensor comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-sensor>
+</if>
+<if comment="false" x="26" y="288">
+<group id="-1">
+<stop comment="false" x="37" y="331"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-8-2 comment="false" id="0" x="0" y="0"/>
+<not comment="false" id="1" x="0" y="0">
+<collision-tile comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-tile>
+</not>
+</and>
+</if>
+<if comment="false" x="26" y="363">
+<group id="-1">
+<for-each comment="false" x="37" y="398">
+<group id="-1">
+<if comment="false" x="48" y="423">
+<group id="-1">
+<stop comment="false" x="59" y="458"/>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<tostring comment="false" id="1" x="0" y="0">
+<collision-shape-group comment="false" id="0" x="0" y="0"/>
+</tostring>
+</eq>
+</if>
+</group>
+<get-val-8-3 comment="false" id="0" x="0" y="0"/>
+</for-each>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-8-3 comment="false" id="0" x="0" y="0"/>
+</length-list>
+<int id="1" val="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="514">
+<group id="-1">
+<set-val-8-1 comment="false" x="37" y="547">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-8-1>
+<stop comment="false" x="37" y="572"/>
+</group>
+<collision-bottom comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-bottom>
+</if>
+</group>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="632">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<if comment="false" x="854" y="487">
+<group id="-1">
+<play-sound3 comment="false" x="865" y="517">
+<SOUND eid="439" id="0"/>
+</play-sound3>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<get-val-8-1 comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+</group>
+<group id="5">
+<print comment="false" x="608" y="569">
+<int id="0" val="hhhh"/>
+</print>
+</group>
+<group id="6">
+<collision-foreach comment="false" x="728" y="272">
+<group id="-1">
+<if comment="false" x="739" y="292">
+<group id="-1">
+<set-val-8-1 comment="false" x="750" y="327">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-8-1>
+<stop comment="false" x="750" y="352"/>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<abs comment="false" id="0" x="0" y="0">
+<collision-ny comment="false" id="0" x="0" y="0"/>
+</abs>
+<int id="1" val="0.1"/>
+</more>
+</if>
+</group>
+</collision-foreach>
+</group>
+<group id="-1"/>
+</groups>

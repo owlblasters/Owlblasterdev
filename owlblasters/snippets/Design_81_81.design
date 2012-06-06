@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <set-val-81-62 comment="false" x="26" y="40">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Stop"/>
+                        <get-val-81-61 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                </set-val-81-62>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="98">
+            <group id="-1">
+                <say-this comment="false" x="26" y="123">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <comment-short comment="false" x="26" y="143">
+                    <int id="0" val="Handle Timer. For the custom blocks only."/>
+                </comment-short>
+                <repeat comment="false" x="26" y="163">
+                    <group id="-1">
+                        <if comment="false" x="37" y="193">
+                            <group id="-1">
+                                <if comment="false" x="48" y="233">
+                                    <group id="-1">
+                                        <replace-list comment="false" x="59" y="268">
+                                            <get-val-81-56 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-81-56 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-81-56 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-81-55 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="315">
+                                    <group id="-1">
+                                        <remove-index comment="false" x="59" y="335">
+                                            <get-val-81-54 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="360">
+                                            <get-val-81-55 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="385">
+                                            <get-val-81-56 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-81-55 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-81-55 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="446">
+                    <int id="0" val="Total Resistance."/>
+                </comment-short>
+                <for-each comment="false" x="26" y="466">
+                    <group id="-1">
+                        <if comment="false" x="37" y="491">
+                            <group id="-1">
+                                <incdec comment="false" x="48" y="531">
+                                    <int id="0" val="57"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-81-54 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-81-58 comment="false" x="26" y="592">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-81-33 comment="false" id="0" x="0" y="0"/>
+                        <get-val-81-57 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-val-81-58>
+                <if comment="false" x="26" y="622">
+                    <group id="-1">
+                        <set-val-81-58 comment="false" x="37" y="652">
+                            <int id="0" val="100"/>
+                        </set-val-81-58>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-81-58 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="100"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="684">
+                    <group id="-1">
+                        <set-val-81-58 comment="false" x="37" y="714">
+                            <int id="0" val="0"/>
+                        </set-val-81-58>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-81-58 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-81-57 comment="false" x="26" y="746">
+                    <int id="0" val="0"/>
+                </set-val-81-57>
+                <comment-short comment="false" x="26" y="766">
+                    <int id="0" val="Handle Status"/>
+                </comment-short>
+                <if comment="false" x="26" y="786">
+                    <group id="-1">
+                        <if comment="false" x="37" y="816">
+                            <group id="-1">
+                                <comment-short comment="false" x="48" y="841">
+                                    <int id="0" val="Your status condition logic should start here..."/>
+                                </comment-short>
+                                <comment-short comment="false" x="48" y="861">
+                                    <int id="0" val="And end here."/>
+                                </comment-short>
+                                <if comment="false" x="48" y="881">
+                                    <group id="-1">
+                                        <set-val-81-29 comment="false" x="59" y="911">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-81-29>
+                                        <if comment="false" x="59" y="936">
+                                            <group id="-1">
+                                                <comment-short comment="false" x="70" y="961">
+                                                    <int id="0" val="Creating the display."/>
+                                                </comment-short>
+                                                <create-actor3 comment="false" x="70" y="981">
+                                                    <ACTORTYPE eid="var" id="0" vid="37"/>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="0"/>
+                                                        </get-xy>
+                                                        <get-val-81-39 comment="false" id="1" x="0" y="0"/>
+                                                    </plus>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="1"/>
+                                                        </get-xy>
+                                                        <get-val-81-40 comment="false" id="1" x="0" y="0"/>
+                                                    </plus>
+                                                    <int id="3" val="0"/>
+                                                </create-actor3>
+                                                <set-val-81-38 comment="false" x="70" y="1026">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                </set-val-81-38>
+                                            </group>
+                                            <get-val-81-53 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <dolater comment="false" x="59" y="1065">
+                                            <group id="-1">
+                                                <comment-short comment="false" x="70" y="1090">
+                                                    <int id="0" val="Ending the condition after a time."/>
+                                                </comment-short>
+                                                <set-val-81-27 comment="false" x="70" y="1110">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-81-27>
+                                                <set-val-81-29 comment="false" x="70" y="1135">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-81-29>
+                                            </group>
+                                            <get-val-81-28 comment="false" id="0" x="0" y="0"/>
+                                        </dolater>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <get-val-81-29 comment="false" id="0" x="0" y="0"/>
+                                    </not>
+                                </if>
+                                <if comment="false" x="48" y="1184">
+                                    <group id="-1">
+                                        <comment-short comment="false" x="59" y="1222">
+                                            <int id="0" val="Set status icon position."/>
+                                        </comment-short>
+                                        <set-xy comment="false" x="59" y="1242">
+                                            <ACTOR eid="var" id="0" vid="38"/>
+                                            <int id="1" val="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-81-39 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                        </set-xy>
+                                        <set-xy comment="false" x="59" y="1287">
+                                            <ACTOR eid="var" id="0" vid="38"/>
+                                            <int id="1" val="1"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-81-40 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                        </set-xy>
+                                        <if comment="false" x="59" y="1332">
+                                            <group id="-1">
+                                                <die comment="false" x="70" y="1362">
+                                                    <ACTOR eid="var" id="0" vid="38"/>
+                                                </die>
+                                            </group>
+                                            <lesseq comment="false" id="0" x="0" y="0">
+                                                <get-val-81-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="0"/>
+                                            </lesseq>
+                                        </if>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <value comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="38"/>
+                                            <int id="1" val="0"/>
+                                        </value>
+                                        <isalive comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="38"/>
+                                        </isalive>
+                                    </and>
+                                </if>
+                            </group>
+                            <get-val-81-27 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="1425">
+                            <group id="-1">
+                                <if comment="false" x="48" y="1445">
+                                    <group id="-1">
+                                        <die comment="false" x="59" y="1483">
+                                            <ACTOR eid="var" id="0" vid="38"/>
+                                        </die>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <value comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="38"/>
+                                            <int id="1" val="0"/>
+                                        </value>
+                                        <isalive comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="38"/>
+                                        </isalive>
+                                    </and>
+                                </if>
+                            </group>
+                        </else>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-81-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <else comment="false" x="26" y="1546">
+                    <group id="-1">
+                        <set-val-81-27 comment="false" x="37" y="1566">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-81-27>
+                        <if comment="false" x="37" y="1591">
+                            <group id="-1">
+                                <die comment="false" x="48" y="1629">
+                                    <ACTOR eid="var" id="0" vid="38"/>
+                                </die>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="38"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                                <isalive comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="38"/>
+                                </isalive>
+                            </and>
+                        </if>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="1708">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="1781">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receive-message comment="false" x="15" y="1854">
+            <group id="-1">
+                <if comment="false" x="26" y="1879">
+                    <group id="-1">
+                        <set-val-81-3 comment="false" x="37" y="1912">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Health"/>
+                                    <int id="2" val="_CurrentHealth"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-81-3>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Health"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="1990">
+            <group id="-1">
+                <if comment="false" x="26" y="2020">
+                    <group id="-1">
+                        <set-val-81-27 comment="false" x="37" y="2050">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-81-27>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="100"/>
+                        </randint>
+                        <get-val-81-58 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+            </group>
+            <get-val-81-61 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group id="6">
+        <receive-message comment="false" x="15" y="2115">
+            <group id="-1">
+                <set-val-81-27 comment="false" x="26" y="2145">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-81-27>
+            </group>
+            <get-val-81-62 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group id="7">
+        <receive-message comment="false" x="15" y="2198">
+            <group id="-1">
+                <replace-list comment="false" x="26" y="2223">
+                    <get-val-81-54 comment="false" id="0" x="0" y="0"/>
+                    <get-val-81-59 comment="false" id="1" x="0" y="0"/>
+                    <get-val-81-60 comment="false" id="2" x="0" y="0"/>
+                </replace-list>
+            </group>
+            <int id="0" val="AddStatusResistanceModifier"/>
+        </receive-message>
+    </group>
+    <group id="8">
+        <receive-message comment="false" x="15" y="2276">
+            <group id="-1">
+                <replace-list comment="false" x="26" y="2301">
+                    <get-val-81-55 comment="false" id="0" x="0" y="0"/>
+                    <get-val-81-59 comment="false" id="1" x="0" y="0"/>
+                    <get-val-81-60 comment="false" id="2" x="0" y="0"/>
+                </replace-list>
+                <replace-list comment="false" x="26" y="2326">
+                    <get-val-81-56 comment="false" id="0" x="0" y="0"/>
+                    <get-val-81-59 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="0"/>
+                </replace-list>
+            </group>
+            <int id="0" val="AddStatusResistanceTimer"/>
+        </receive-message>
+    </group>
+    <group id="9">
+        <receive-message comment="false" x="15" y="2379">
+            <group id="-1">
+                <remove-index comment="false" x="26" y="2404">
+                    <get-val-81-54 comment="false" id="0" x="0" y="0"/>
+                    <get-val-81-59 comment="false" id="1" x="0" y="0"/>
+                </remove-index>
+                <remove-index comment="false" x="26" y="2429">
+                    <get-val-81-55 comment="false" id="0" x="0" y="0"/>
+                    <get-val-81-59 comment="false" id="1" x="0" y="0"/>
+                </remove-index>
+                <remove-index comment="false" x="26" y="2454">
+                    <get-val-81-56 comment="false" id="0" x="0" y="0"/>
+                    <get-val-81-59 comment="false" id="1" x="0" y="0"/>
+                </remove-index>
+            </group>
+            <int id="0" val="RemoveStatusResistanceModifier"/>
+        </receive-message>
+    </group>
+    <group id="-1"/>
+</groups>

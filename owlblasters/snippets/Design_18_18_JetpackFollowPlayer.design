@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <ignore-screen-tolerance comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+                <if comment="false" x="26" y="67">
+                    <group eventID="-1" id="-1">
+                        <actors-of-type3 comment="false" x="37" y="97">
+                            <group eventID="-1" id="-1">
+                                <set-val-18-8 comment="false" x="48" y="129">
+                                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                </set-val-18-8>
+                            </group>
+                            <ACTORTYPE eid="var" id="0" vid="7"/>
+                        </actors-of-type3>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-18-14 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <say-this comment="false" x="37" y="78">
+                            <int id="0" val="SyncWithPlayer"/>
+                        </say-this>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="8"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="8"/>
+                        </isalive>
+                    </and>
+                </if>
+                <set-val-18-13 comment="false" x="26" y="110">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-18-13>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-xy comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="8"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-18-11 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="123">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="8"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-18-12 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <if comment="false" x="37" y="168">
+                            <group eventID="-1" id="-1">
+                                <setanim comment="false" x="48" y="193">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-18-6 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                            <get-val-18-15 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else-if comment="false" x="37" y="237">
+                            <group eventID="-1" id="-1">
+                                <setanim comment="false" x="48" y="262">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-18-3 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                            <get-val-18-13 comment="false" id="0" x="0" y="0"/>
+                        </else-if>
+                        <else comment="false" x="37" y="306">
+                            <group eventID="-1" id="-1">
+                                <setanim comment="false" x="48" y="326">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-18-1 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                        </else>
+                    </group>
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="8"/>
+                            <int id="1" val="Facing Right?"/>
+                        </actor-get-prop>
+                    </as-boolean>
+                </if>
+                <else comment="false" x="26" y="382">
+                    <group eventID="-1" id="-1">
+                        <set-xy comment="false" x="37" y="402">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="8"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-18-9 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="447">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="8"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-18-10 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <if comment="false" x="37" y="492">
+                            <group eventID="-1" id="-1">
+                                <setanim comment="false" x="48" y="517">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-18-5 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                            <get-val-18-15 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else-if comment="false" x="37" y="561">
+                            <group eventID="-1" id="-1">
+                                <setanim comment="false" x="48" y="586">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-18-4 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                            <get-val-18-13 comment="false" id="0" x="0" y="0"/>
+                        </else-if>
+                        <else comment="false" x="37" y="630">
+                            <group eventID="-1" id="-1">
+                                <setanim comment="false" x="48" y="650">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-18-2 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                        </else>
+                    </group>
+                </else>
+                <set-dxy comment="false" x="26" y="706">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <get-dxy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="8"/>
+                        <int id="1" val="0"/>
+                    </get-dxy>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="746">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <get-dxy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="8"/>
+                        <int id="1" val="1"/>
+                    </get-dxy>
+                </set-dxy>
+            </group>
+            <int id="0" val="SyncWithPlayer"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-1-45 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-18-8 comment="false" x="26" y="45">
+                    <get-byobval-18-438-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-18-8>
+            </group>
+            <get-byobval-18-438-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-18-438-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-45>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-18-13 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-18-13>
+                <set-val-18-15 comment="false" x="26" y="65">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-18-15>
+            </group>
+            <int id="0" val="JetsActive"/>
+        </receive-message>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-18-13 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-18-13>
+                <set-val-18-15 comment="false" x="26" y="65">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-18-15>
+            </group>
+            <int id="0" val="JetsIdle"/>
+        </receive-message>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-18-13 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-18-13>
+                <set-val-18-15 comment="false" x="26" y="65">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-18-15>
+            </group>
+            <int id="0" val="JetsEmpty"/>
+        </receive-message>
+    </group>
+    <group eventID="7" id="-1"/>
+</groups>

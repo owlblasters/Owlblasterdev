@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="83">
+                            <group eventID="-1" id="-1">
+                                <set-val-65-1 comment="false" x="48" y="113">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-65-1>
+                                <set-color comment="false" x="48" y="138">
+                                    <color b="255" g="255" id="0" r="255"/>
+                                </set-color>
+                                <dolater comment="false" x="48" y="165">
+                                    <group eventID="-1" id="-1">
+                                        <set-color comment="false" x="59" y="192">
+                                            <color b="255" g="0" id="0" r="255"/>
+                                        </set-color>
+                                        <dolater comment="false" x="59" y="219">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-65-1 comment="false" x="70" y="246">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-65-1>
+                                            </group>
+                                            <int id="0" val=".2"/>
+                                            <ACTOR eid="this" id="2"/>
+                                        </dolater>
+                                    </group>
+                                    <int id="0" val=".2"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-65-1 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="hitPoints"/>
+                            </actor-get-prop>
+                        </as-number>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="319">
+                    <group eventID="-1" id="-1">
+                        <set-color comment="false" x="37" y="339">
+                            <color b="0" g="255" id="0" r="0"/>
+                        </set-color>
+                    </group>
+                </else>
+                <drawfill-rect comment="false" x="26" y="378">
+                    <int id="0" val="1"/>
+                    <int id="1" val="44"/>
+                    <int id="2" val="0"/>
+                    <times comment="false" id="3" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="hitPoints"/>
+                            </actor-get-prop>
+                        </as-number>
+                        <int id="1" val="8"/>
+                    </times>
+                    <int id="4" val="4"/>
+                </drawfill-rect>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

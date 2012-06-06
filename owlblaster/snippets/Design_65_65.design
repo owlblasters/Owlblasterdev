@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="234">
+<group id="-1">
+<if comment="false" x="26" y="259">
+<group id="-1">
+<if comment="false" x="37" y="302">
+<group id="-1">
+<set-val-65-1 comment="false" x="48" y="332">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-65-1>
+<set-color comment="false" x="48" y="357">
+<color b="255" g="255" id="0" r="255"/>
+</set-color>
+<dolater comment="false" x="48" y="377">
+<group id="-1">
+<set-color comment="false" x="59" y="397">
+<color b="255" g="0" id="0" r="255"/>
+</set-color>
+<dolater comment="false" x="59" y="417">
+<group id="-1">
+<set-val-65-1 comment="false" x="70" y="437">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-65-1>
+</group>
+<int id="0" val=".2"/>
+</dolater>
+</group>
+<int id="0" val=".2"/>
+</dolater>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<get-val-65-1 comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="hitPoints"/>
+</actor-get-prop>
+</as-number>
+<int id="1" val="1"/>
+</eq>
+</if>
+<else comment="false" x="26" y="510">
+<group id="-1">
+<set-color comment="false" x="37" y="530">
+<color b="0" g="255" id="0" r="0"/>
+</set-color>
+</group>
+</else>
+<fill-rect comment="false" x="26" y="562">
+<int id="0" val="44"/>
+<int id="1" val="0"/>
+<times comment="false" id="2" x="0" y="0">
+<as-number comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="hitPoints"/>
+</actor-get-prop>
+</as-number>
+<int id="1" val="8"/>
+</times>
+<int id="3" val="4"/>
+</fill-rect>
+</group>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

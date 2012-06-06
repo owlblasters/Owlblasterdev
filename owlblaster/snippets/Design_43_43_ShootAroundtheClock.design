@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-43-21 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-43-21>
+            </group>
+            <int id="0" val="FireBullet"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="9" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <do-flash comment="false" x="37" y="73">
+                            <group eventID="9" id="-1">
+                                <if comment="false" x="48" y="93">
+                                    <group eventID="9" id="-1">
+                                        <set-val-43-21 comment="false" x="59" y="118">
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <get-val-43-21 comment="false" id="0" x="0" y="0"/>
+                                                <mousestate comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                </mousestate>
+                                            </or>
+                                        </set-val-43-21>
+                                    </group>
+                                    <get-val-43-17 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                            </group>
+                        </do-flash>
+                        <if comment="false" x="37" y="180">
+                            <group eventID="9" id="-1">
+                                <set-val-43-21 comment="false" x="48" y="205">
+                                    <or comment="false" id="0" x="0" y="0">
+                                        <get-val-43-21 comment="false" id="0" x="0" y="0"/>
+                                        <keystate comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <CONTROL eid="var" id="1" vid="13"/>
+                                        </keystate>
+                                    </or>
+                                </set-val-43-21>
+                            </group>
+                            <get-val-43-16 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <if comment="false" x="37" y="255">
+                            <group eventID="9" id="-1">
+                                <set-val-43-21 comment="false" x="48" y="280">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-43-21>
+                                <if comment="false" x="48" y="305">
+                                    <group eventID="6" id="-1">
+                                        <set-val-43-20 comment="false" x="59" y="330">
+                                            <int id="0" val="0"/>
+                                        </set-val-43-20>
+                                        <actors-of-type3 comment="false" x="59" y="350">
+                                            <group eventID="6" id="-1">
+                                                <if comment="false" x="70" y="382">
+                                                    <group eventID="6" id="-1">
+                                                        <incdec comment="false" x="81" y="425">
+                                                            <int id="0" val="20"/>
+                                                            <int id="1" val="0"/>
+                                                            <int id="2" val="1"/>
+                                                        </incdec>
+                                                        <if comment="false" x="81" y="452">
+                                                            <group eventID="6" id="-1">
+                                                                <stop comment="false" x="92" y="482"/>
+                                                            </group>
+                                                            <moreeq comment="false" id="0" x="0" y="0">
+                                                                <get-val-43-20 comment="false" id="0" x="0" y="0"/>
+                                                                <get-val-43-19 comment="false" id="1" x="0" y="0"/>
+                                                            </moreeq>
+                                                        </if>
+                                                    </group>
+                                                    <eq comment="false" id="0" x="0" y="0">
+                                                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                                                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="FireBullet_Creator"/>
+                                                        </actor-get-prop>
+                                                        <actor comment="false" id="1" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                        </actor>
+                                                    </eq>
+                                                </if>
+                                            </group>
+                                            <ACTORTYPE eid="var" id="0" vid="4"/>
+                                        </actors-of-type3>
+                                    </group>
+                                    <get-val-43-18 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <if comment="false" x="48" y="550">
+                                    <group eventID="-1" id="-1">
+                                        <set-val-43-22 comment="false" x="59" y="590">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-43-22>
+                                        <dolater comment="false" x="59" y="615">
+                                            <group eventID="-1" id="-1">
+                                                <if comment="false" x="70" y="652">
+                                                    <group eventID="-1" id="-1">
+                                                        <set-val-43-22 comment="false" x="81" y="685">
+                                                            <false comment="false" id="0" x="0" y="0"/>
+                                                        </set-val-43-22>
+                                                    </group>
+                                                    <isalive comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                    </isalive>
+                                                </if>
+                                            </group>
+                                            <div comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <get-val-43-23 comment="false" id="1" x="0" y="0"/>
+                                            </div>
+                                            <ACTOR eid="this" id="2"/>
+                                        </dolater>
+                                        <repeat comment="false" x="59" y="734">
+                                            <group eventID="9" id="-1">
+                                                <if comment="false" x="70" y="759">
+                                                    <group eventID="-1" id="-1">
+                                                        <create-recycled-actor comment="false" x="81" y="784">
+                                                            <ACTORTYPE eid="var" id="0" vid="4"/>
+                                                            <int id="1" val="0"/>
+                                                            <int id="2" val="0"/>
+                                                            <int id="3" val="0"/>
+                                                        </create-recycled-actor>
+                                                    </group>
+                                                    <get-val-43-12 comment="false" id="0" x="0" y="0"/>
+                                                </if>
+                                                <else comment="false" x="70" y="823">
+                                                    <group eventID="-1" id="-1">
+                                                        <create-actor3 comment="false" x="81" y="843">
+                                                            <ACTORTYPE eid="var" id="0" vid="4"/>
+                                                            <int id="1" val="0"/>
+                                                            <int id="2" val="0"/>
+                                                            <int id="3" val="0"/>
+                                                        </create-actor3>
+                                                        <play-sound4 comment="false" x="81" y="870">
+                                                            <int id="0" val="0"/>
+                                                            <SOUND eid="59" id="1"/>
+                                                        </play-sound4>
+                                                    </group>
+                                                </else>
+                                                <set-val-43-30 comment="false" x="70" y="909">
+                                                    <div comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="360"/>
+                                                        <get-val-43-27 comment="false" id="1" x="0" y="0"/>
+                                                    </div>
+                                                </set-val-43-30>
+                                                <set-val-43-15 comment="false" x="70" y="939">
+                                                    <times comment="false" id="0" x="0" y="0">
+                                                        <loopindex comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-43-30 comment="false" id="1" x="0" y="0"/>
+                                                    </times>
+                                                </set-val-43-15>
+                                                <if comment="false" x="70" y="969">
+                                                    <group eventID="6" id="-1">
+                                                        <incdec comment="false" x="81" y="999">
+                                                            <int id="0" val="15"/>
+                                                            <int id="1" val="0"/>
+                                                            <getdir comment="false" id="2" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                            </getdir>
+                                                        </incdec>
+                                                    </group>
+                                                    <not comment="false" id="0" x="0" y="0">
+                                                        <get-val-43-14 comment="false" id="0" x="0" y="0"/>
+                                                    </not>
+                                                </if>
+                                                <if comment="false" x="70" y="1051">
+                                                    <group eventID="9" id="-1">
+                                                        <incdec comment="false" x="81" y="1076">
+                                                            <int id="0" val="25"/>
+                                                            <int id="1" val="1"/>
+                                                            <int id="2" val="1"/>
+                                                        </incdec>
+                                                    </group>
+                                                    <get-val-43-26 comment="false" id="0" x="0" y="0"/>
+                                                </if>
+                                                <set-xy comment="false" x="70" y="1115">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <minus comment="false" id="0" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="2"/>
+                                                            </get-xy>
+                                                            <get-wh comment="false" id="1" x="0" y="0">
+                                                                <ACTOR eid="lastcreated" id="0"/>
+                                                                <int id="1" val="2"/>
+                                                            </get-wh>
+                                                        </minus>
+                                                        <times comment="false" id="1" x="0" y="0">
+                                                            <get-val-43-9 comment="false" id="0" x="0" y="0"/>
+                                                            <trig-master comment="false" id="1" x="0" y="0">
+                                                                <int id="0" val="1"/>
+                                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                                    <int id="0" val="1"/>
+                                                                    <get-val-43-15 comment="false" id="1" x="0" y="0"/>
+                                                                </to-degreesradians>
+                                                            </trig-master>
+                                                        </times>
+                                                    </plus>
+                                                </set-xy>
+                                                <set-xy comment="false" x="70" y="1183">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <minus comment="false" id="0" x="0" y="0">
+                                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                                <int id="1" val="3"/>
+                                                            </get-xy>
+                                                            <get-wh comment="false" id="1" x="0" y="0">
+                                                                <ACTOR eid="lastcreated" id="0"/>
+                                                                <int id="1" val="3"/>
+                                                            </get-wh>
+                                                        </minus>
+                                                        <times comment="false" id="1" x="0" y="0">
+                                                            <get-val-43-9 comment="false" id="0" x="0" y="0"/>
+                                                            <trig-master comment="false" id="1" x="0" y="0">
+                                                                <int id="0" val="0"/>
+                                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                                    <int id="0" val="1"/>
+                                                                    <get-val-43-15 comment="false" id="1" x="0" y="0"/>
+                                                                </to-degreesradians>
+                                                            </trig-master>
+                                                        </times>
+                                                    </plus>
+                                                </set-xy>
+                                                <setvel comment="false" x="70" y="1251">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                    <get-val-43-15 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-43-2 comment="false" id="2" x="0" y="0"/>
+                                                </setvel>
+                                                <actor-set-prop comment="false" x="70" y="1283">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                    <int id="1" val="FireBullet_Creator"/>
+                                                    <actor comment="false" id="2" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                    </actor>
+                                                </actor-set-prop>
+                                            </group>
+                                            <get-val-43-27 comment="false" id="0" x="0" y="0"/>
+                                        </repeat>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <not comment="false" id="0" x="0" y="0">
+                                            <get-val-43-22 comment="false" id="0" x="0" y="0"/>
+                                        </not>
+                                        <or comment="false" id="1" x="0" y="0">
+                                            <not comment="false" id="0" x="0" y="0">
+                                                <get-val-43-26 comment="false" id="0" x="0" y="0"/>
+                                            </not>
+                                            <more comment="false" id="1" x="0" y="0">
+                                                <get-val-43-25 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="0"/>
+                                            </more>
+                                        </or>
+                                    </and>
+                                </if>
+                            </group>
+                            <get-val-43-21 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="4"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <set-val-43-25 comment="false" x="26" y="40">
+                    <get-val-43-24 comment="false" id="0" x="0" y="0"/>
+                </set-val-43-25>
+            </group>
+            <int id="0" val="Reload"/>
+        </event-custom>
+    </group>
+    <group eventID="10" id="-1"/>
+</groups>

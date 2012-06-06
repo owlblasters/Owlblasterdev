@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<say-this comment="false" x="26" y="113">
+<int id="0" val="Get"/>
+</say-this>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="234">
+<group id="-1">
+<set-alpha comment="false" x="26" y="259">
+<int id="0" val="100"/>
+</set-alpha>
+<if comment="false" x="26" y="279">
+<group id="-1">
+<if comment="false" x="37" y="304">
+<group id="-1">
+<to-local-space comment="false" x="48" y="334">
+<ACTOR eid="this" id="0"/>
+</to-local-space>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-5 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="On Actor"/>
+</eq>
+</if>
+<if comment="false" x="37" y="373">
+<group id="-1">
+<to-screen-space comment="false" x="48" y="403"/>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-5 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="On Screen"/>
+</eq>
+</if>
+<if comment="false" x="37" y="435">
+<group id="-1">
+<set-color2 comment="false" x="48" y="465">
+<int id="0" val="15"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="492">
+<minus comment="false" id="0" x="0" y="0">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<plus comment="false" id="2" x="0" y="0">
+<get-val-70-12 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+<plus comment="false" id="3" x="0" y="0">
+<get-val-70-11 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+</fill-rect>
+<set-color2 comment="false" x="48" y="527">
+<int id="0" val="10"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="554">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+<get-val-70-12 comment="false" id="2" x="0" y="0"/>
+<get-val-70-11 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+<set-color2 comment="false" x="48" y="579">
+<int id="0" val="9"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="606">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-70-11 comment="false" id="0" x="0" y="0"/>
+<div comment="false" id="1" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-70-11 comment="false" id="0" x="0" y="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</times>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</div>
+</minus>
+</plus>
+<get-val-70-12 comment="false" id="2" x="0" y="0"/>
+<div comment="false" id="3" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-70-11 comment="false" id="0" x="0" y="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</times>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</div>
+</fill-rect>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Vertical Gauge"/>
+</eq>
+</if>
+<if comment="false" x="37" y="663">
+<group id="-1">
+<set-color2 comment="false" x="48" y="693">
+<int id="0" val="15"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="720">
+<minus comment="false" id="0" x="0" y="0">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<minus comment="false" id="1" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</minus>
+<plus comment="false" id="2" x="0" y="0">
+<get-val-70-12 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+<plus comment="false" id="3" x="0" y="0">
+<get-val-70-11 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<int id="0" val="2"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</times>
+</plus>
+</fill-rect>
+<set-color2 comment="false" x="48" y="755">
+<int id="0" val="10"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="782">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+<get-val-70-12 comment="false" id="2" x="0" y="0"/>
+<get-val-70-11 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+<set-color2 comment="false" x="48" y="807">
+<int id="0" val="9"/>
+</set-color2>
+<fill-rect comment="false" x="48" y="834">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+<div comment="false" id="2" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-70-12 comment="false" id="0" x="0" y="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</times>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</div>
+<get-val-70-11 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Horizontal Gauge"/>
+</eq>
+</if>
+<if comment="false" x="37" y="881">
+<group id="-1">
+<set-color2 comment="false" x="48" y="911">
+<int id="0" val="15"/>
+</set-color2>
+<fill-circle comment="false" x="48" y="938">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-val-70-14 comment="false" id="0" x="0" y="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+</plus>
+</fill-circle>
+<set-color2 comment="false" x="48" y="968">
+<int id="0" val="10"/>
+</set-color2>
+<fill-circle comment="false" x="48" y="995">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+<get-val-70-14 comment="false" id="2" x="0" y="0"/>
+</fill-circle>
+<set-color2 comment="false" x="48" y="1020">
+<int id="0" val="9"/>
+</set-color2>
+<fill-circle comment="false" x="48" y="1047">
+<get-val-70-6 comment="false" id="0" x="0" y="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+<div comment="false" id="2" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-70-14 comment="false" id="0" x="0" y="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</times>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</div>
+</fill-circle>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Sphere"/>
+</eq>
+</if>
+<if comment="false" x="37" y="1094">
+<group id="-1">
+<set-font-new comment="false" x="48" y="1124">
+<FONT eid="var" id="0" vid="13"/>
+</set-font-new>
+<draw-text comment="false" x="48" y="1151">
+<str-combine comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</tostring>
+<str-combine comment="false" id="1" x="0" y="0">
+<int id="0" val=" / "/>
+<tostring comment="false" id="1" x="0" y="0">
+<roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</tostring>
+</str-combine>
+</str-combine>
+<get-val-70-6 comment="false" id="1" x="0" y="0"/>
+<get-val-70-7 comment="false" id="2" x="0" y="0"/>
+</draw-text>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Text"/>
+</eq>
+</if>
+</group>
+<get-val-70-1 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="1256">
+<group id="-1">
+<set-val-70-1 comment="false" x="26" y="1281">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-70-1>
+</group>
+<int id="0" val="Activate"/>
+</receive-message>
+</group>
+<group id="5">
+<receive-message comment="false" x="15" y="1334">
+<group id="-1">
+<set-val-70-1 comment="false" x="26" y="1359">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-70-1>
+</group>
+<int id="0" val="Deactivate"/>
+</receive-message>
+</group>
+<group id="6">
+<receive-message comment="false" x="15" y="1412">
+<group id="-1">
+<if comment="false" x="26" y="1437">
+<group id="-1">
+<set-val-70-2 comment="false" x="37" y="1470">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Energy"/>
+<int id="2" val="_CurrentEnergy"/>
+</get-attribute>
+</as-number>
+                        </set-val-70-2>
+<set-val-70-3 comment="false" x="37" y="1508">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Energy"/>
+<int id="2" val="_MaxEnergy"/>
+</get-attribute>
+</as-number>
+                        </set-val-70-3>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Energy"/>
+</has-snippet>
+</if>
+</group>
+<int id="0" val="Get"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

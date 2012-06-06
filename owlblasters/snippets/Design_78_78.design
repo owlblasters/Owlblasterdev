@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1">
+                <comment-short comment="false" x="26" y="113">
+                    <int id="0" val="Create and switch weapon actor"/>
+                </comment-short>
+                <if comment="false" x="26" y="133">
+                    <group id="-1">
+                        <clear-list comment="false" x="37" y="168">
+                            <get-val-78-14 comment="false" id="0" x="0" y="0"/>
+                        </clear-list>
+                        <set-val-78-13 comment="false" x="37" y="193">
+                            <get-val-78-4 comment="false" id="0" x="0" y="0"/>
+                        </set-val-78-13>
+                        <if comment="false" x="37" y="218">
+                            <group id="-1">
+                                <if comment="false" x="48" y="243">
+                                    <group id="-1">
+                                        <die comment="false" x="59" y="286">
+                                            <get-val-78-11 comment="false" id="0" x="0" y="0"/>
+                                        </die>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <value comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="11"/>
+                                            <int id="1" val="0"/>
+                                        </value>
+                                        <isalive comment="false" id="1" x="0" y="0">
+                                            <get-val-78-11 comment="false" id="0" x="0" y="0"/>
+                                        </isalive>
+                                    </and>
+                                </if>
+                                <clear comment="false" x="48" y="330">
+                                    <int id="0" val="11"/>
+                                </clear>
+                                <if comment="false" x="48" y="357">
+                                    <group id="-1">
+                                        <custom-code comment="false" x="59" y="390">
+                                            <int id="0" val="_Type = getActorTypeByName(_Name);"/>
+                                        </custom-code>
+                                        <if comment="false" x="59" y="410">
+                                            <group id="-1">
+                                                <create-actor3 comment="false" x="70" y="443">
+                                                    <get-val-78-12 comment="false" id="0" x="0" y="0"/>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="0"/>
+                                                        </get-xy>
+                                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                                            <get-val-78-8 comment="false" id="0" x="0" y="0"/>
+                                                            <custom-148 comment="false" id="1" x="0" y="0">
+                                                                <get-val-78-4 comment="false" id="0" x="0" y="0"/>
+                                                                <get-val-78-6 comment="false" id="1" x="0" y="0"/>
+                                                            </custom-148>
+                                                        </get-item-number>
+                                                    </plus>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="1"/>
+                                                        </get-xy>
+                                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                                            <get-val-78-9 comment="false" id="0" x="0" y="0"/>
+                                                            <custom-148 comment="false" id="1" x="0" y="0">
+                                                                <get-val-78-4 comment="false" id="0" x="0" y="0"/>
+                                                                <get-val-78-6 comment="false" id="1" x="0" y="0"/>
+                                                            </custom-148>
+                                                        </get-item-number>
+                                                    </plus>
+                                                    <int id="3" val="0"/>
+                                                </create-actor3>
+                                                <set-val-78-11 comment="false" x="70" y="490">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                </set-val-78-11>
+                                            </group>
+                                            <value comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="12"/>
+                                                <int id="1" val="0"/>
+                                            </value>
+                                        </if>
+                                    </group>
+                                    <value comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="11"/>
+                                        <int id="1" val="1"/>
+                                    </value>
+                                </if>
+                            </group>
+                            <get-val-78-7 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-78-13 comment="false" id="0" x="0" y="0"/>
+                            <get-val-78-4 comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                    </not>
+                </if>
+                <comment-short comment="false" x="26" y="565">
+                    <int id="0" val="Weapon Actor Position"/>
+                </comment-short>
+                <if comment="false" x="26" y="585">
+                    <group id="-1">
+                        <setanim comment="false" x="37" y="628">
+                            <get-val-78-11 comment="false" id="0" x="0" y="0"/>
+                            <getanim comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                            </getanim>
+                        </setanim>
+                        <set-xy comment="false" x="37" y="668">
+                            <get-val-78-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-item-number comment="false" id="1" x="0" y="0">
+                                    <get-val-78-8 comment="false" id="0" x="0" y="0"/>
+                                    <custom-148 comment="false" id="1" x="0" y="0">
+                                        <get-val-78-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-78-6 comment="false" id="1" x="0" y="0"/>
+                                    </custom-148>
+                                </get-item-number>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="715">
+                            <get-val-78-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-item-number comment="false" id="1" x="0" y="0">
+                                    <get-val-78-9 comment="false" id="0" x="0" y="0"/>
+                                    <custom-148 comment="false" id="1" x="0" y="0">
+                                        <get-val-78-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-78-6 comment="false" id="1" x="0" y="0"/>
+                                    </custom-148>
+                                </get-item-number>
+                            </plus>
+                        </set-xy>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="11"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <get-val-78-11 comment="false" id="0" x="0" y="0"/>
+                        </isalive>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="774">
+                    <int id="0" val="Set Weapon Properties"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="794">
+                    <group id="-1">
+                        <if comment="false" x="37" y="824">
+                            <group id="-1">
+                                <if comment="false" x="48" y="864">
+                                    <group id="-1">
+                                        <set-val-78-1 comment="false" x="59" y="904">
+                                            <as-number comment="false" id="0" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </as-number>
+                                        </set-val-78-1>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="MinDamage="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <if comment="false" x="48" y="966">
+                                    <group id="-1">
+                                        <set-val-78-2 comment="false" x="59" y="1006">
+                                            <as-number comment="false" id="0" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </as-number>
+                                        </set-val-78-2>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="MaxDamage="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <if comment="false" x="48" y="1068">
+                                    <group id="-1">
+                                        <set-val-78-3 comment="false" x="59" y="1108">
+                                            <tostring comment="false" id="0" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </tostring>
+                                        </set-val-78-3>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="DamageType="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <if comment="false" x="48" y="1170">
+                                    <group id="-1">
+                                        <set-val-78-5 comment="false" x="59" y="1210">
+                                            <tostring comment="false" id="0" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </tostring>
+                                        </set-val-78-5>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="WeaponType="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="1272">
+                                    <int id="0" val="Critical Rate"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="1292">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="1332">
+                                            <group id="-1">
+                                                <set-val-78-17 comment="false" x="70" y="1372">
+                                                    <as-number comment="false" id="0" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <int id="1" val="+"/>
+                                                                </str-indexof>
+                                                                <int id="1" val="1"/>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                </set-val-78-17>
+                                            </group>
+                                            <moreeq comment="false" id="0" x="0" y="0">
+                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val="+"/>
+                                                </str-indexof>
+                                                <int id="1" val="0"/>
+                                            </moreeq>
+                                        </if>
+                                        <if comment="false" x="59" y="1434">
+                                            <group id="-1">
+                                                <set-val-78-17 comment="false" x="70" y="1474">
+                                                    <as-number comment="false" id="0" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <int id="1" val="-"/>
+                                                                </str-indexof>
+                                                                <int id="1" val="1"/>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                </set-val-78-17>
+                                            </group>
+                                            <moreeq comment="false" id="0" x="0" y="0">
+                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val="-"/>
+                                                </str-indexof>
+                                                <int id="1" val="0"/>
+                                            </moreeq>
+                                        </if>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="Critical Rate"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <else comment="false" x="48" y="1548">
+                                    <group id="-1">
+                                        <set-val-78-17 comment="false" x="59" y="1568">
+                                            <int id="0" val="0"/>
+                                        </set-val-78-17>
+                                    </group>
+                                </else>
+                                <comment-short comment="false" x="48" y="1600">
+                                    <int id="0" val="Status Modifier"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="1620">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="1660">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="1705">
+                                                    <group id="-1">
+                                                        <set-val-78-16 comment="false" x="81" y="1745">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="+"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-78-16>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="+"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <if comment="false" x="70" y="1807">
+                                                    <group id="-1">
+                                                        <set-val-78-16 comment="false" x="81" y="1847">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="-"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-78-16>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="-"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <custom-174 comment="false" x="70" y="1909">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <as-number comment="false" id="1" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <get-val-78-16 comment="false" id="1" x="0" y="0"/>
+                                                                </str-indexof>
+                                                                <str-length comment="false" id="1" x="0" y="0">
+                                                                    <get-val-78-16 comment="false" id="0" x="0" y="0"/>
+                                                                </str-length>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                    <get-val-78-16 comment="false" id="2" x="0" y="0"/>
+                                                    <get-val-78-15 comment="false" id="3" x="0" y="0"/>
+                                                </custom-174>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <moreeq comment="false" id="0" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="+"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                                <moreeq comment="false" id="1" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="-"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                            </or>
+                                        </if>
+                                        <else comment="false" x="59" y="1978">
+                                            <group id="-1">
+                                                <custom-176 comment="false" x="70" y="1998">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-78-15 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-78-16 comment="false" id="2" x="0" y="0"/>
+                                                </custom-176>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="[Attribute]"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="2054">
+                                    <int id="0" val="Damage Type Modifier"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="2074">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="2114">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="2159">
+                                                    <group id="-1">
+                                                        <set-val-78-16 comment="false" x="81" y="2199">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="+"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-78-16>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="+"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <if comment="false" x="70" y="2261">
+                                                    <group id="-1">
+                                                        <set-val-78-16 comment="false" x="81" y="2301">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="-"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-78-16>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="-"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <custom-210 comment="false" x="70" y="2363">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <as-number comment="false" id="1" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <get-val-78-16 comment="false" id="1" x="0" y="0"/>
+                                                                </str-indexof>
+                                                                <str-length comment="false" id="1" x="0" y="0">
+                                                                    <get-val-78-16 comment="false" id="0" x="0" y="0"/>
+                                                                </str-length>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                    <get-val-78-16 comment="false" id="2" x="0" y="0"/>
+                                                    <get-val-78-15 comment="false" id="3" x="0" y="0"/>
+                                                </custom-210>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <moreeq comment="false" id="0" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="+"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                                <moreeq comment="false" id="1" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="-"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                            </or>
+                                        </if>
+                                        <else comment="false" x="59" y="2432">
+                                            <group id="-1">
+                                                <custom-212 comment="false" x="70" y="2452">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-78-15 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-78-16 comment="false" id="2" x="0" y="0"/>
+                                                </custom-212>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="[Damage Type]"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="2508">
+                                    <int id="0" val="Status Resistance"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="2528">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="2568">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="2613">
+                                                    <group id="-1">
+                                                        <set-val-78-16 comment="false" x="81" y="2653">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="+"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-78-16>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="+"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <if comment="false" x="70" y="2715">
+                                                    <group id="-1">
+                                                        <set-val-78-16 comment="false" x="81" y="2755">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="-"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-78-16>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="-"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <custom-198 comment="false" x="70" y="2817">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-78-15 comment="false" id="1" x="0" y="0"/>
+                                                    <as-number comment="false" id="2" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <get-val-78-16 comment="false" id="1" x="0" y="0"/>
+                                                                </str-indexof>
+                                                                <str-length comment="false" id="1" x="0" y="0">
+                                                                    <get-val-78-16 comment="false" id="0" x="0" y="0"/>
+                                                                </str-length>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                    <get-val-78-16 comment="false" id="3" x="0" y="0"/>
+                                                </custom-198>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <moreeq comment="false" id="0" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="+"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                                <moreeq comment="false" id="1" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="-"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                            </or>
+                                        </if>
+                                        <else comment="false" x="59" y="2886">
+                                            <group id="-1">
+                                                <custom-200 comment="false" x="70" y="2906">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-78-15 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-78-16 comment="false" id="2" x="0" y="0"/>
+                                                </custom-200>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="[Status Resistance]"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="2962">
+                                    <int id="0" val="Status Condition"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="2982">
+                                    <group id="-1">
+                                        <add-list comment="false" x="59" y="3022">
+                                            <get-val-78-14 comment="false" id="0" x="0" y="0"/>
+                                            <tostring comment="false" id="1" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </tostring>
+                                        </add-list>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="Status="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <else comment="false" x="48" y="3084">
+                                    <group id="-1">
+                                        <clear-list comment="false" x="59" y="3104">
+                                            <get-val-78-14 comment="false" id="0" x="0" y="0"/>
+                                        </clear-list>
+                                    </group>
+                                </else>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <str-indexof comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <str-combine comment="false" id="1" x="0" y="0">
+                                        <get-val-78-4 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val=":"/>
+                                    </str-combine>
+                                </str-indexof>
+                                <int id="1" val="0"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-78-10 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="3165">
+                    <int id="0" val="Apply Status"/>
+                </comment-short>
+                <if comment="false" x="26" y="3185">
+                    <group id="-1">
+                        <for-each comment="false" x="37" y="3218">
+                            <group id="-1">
+                                <set-attribute comment="false" x="48" y="3256">
+                                    <ACTOR eid="this" id="0"/>
+                                    <tostring comment="false" id="1" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="2" val="_StatustoAddList"/>
+                                    <get-val-78-14 comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                                <say comment="false" x="48" y="3293">
+                                    <ACTOR eid="this" id="0"/>
+                                    <tostring comment="false" id="1" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="2" val="AddEffect"/>
+                                </say>
+                                <shout comment="false" x="48" y="3330">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="AddEffect"/>
+                                </shout>
+                            </group>
+                            <custom-180 comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Attack Behaviors Lists"/>
+                                    <int id="2" val="_AttackBehaviors"/>
+                                </get-attribute>
+                            </custom-180>
+                        </for-each>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Attack Behaviors Lists"/>
+                    </has-snippet>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="3429">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="3502">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

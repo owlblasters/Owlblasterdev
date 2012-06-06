@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group id="-1">
+                        <actors-of-type3 comment="false" x="37" y="60">
+                            <group id="-1">
+                                <set-val-96-4 comment="false" x="48" y="87">
+                                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                </set-val-96-4>
+                            </group>
+                            <ACTORTYPE eid="var" id="0" vid="5"/>
+                        </actors-of-type3>
+                        <if comment="false" x="37" y="131">
+                            <group id="-1">
+                                <set-val-96-2 comment="false" x="48" y="164">
+                                    <custom-530 comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="4"/>
+                                    </custom-530>
+                                </set-val-96-2>
+                                <if comment="false" x="48" y="197">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="227">
+                                            <group id="-1">
+                                                <create-actor3 comment="false" x="70" y="262">
+                                                    <ACTORTYPE eid="var" id="0" vid="1"/>
+                                                    <get-val-96-12 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-96-13 comment="false" id="2" x="0" y="0"/>
+                                                    <int id="3" val="0"/>
+                                                </create-actor3>
+                                                <set-val-96-3 comment="false" x="70" y="294">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                </set-val-96-3>
+                                                <anchor-screen comment="false" x="70" y="321">
+                                                    <ACTOR eid="var" id="0" vid="3"/>
+                                                </anchor-screen>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <eq comment="false" id="0" x="0" y="0">
+                                                    <get-val-96-6 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="Image"/>
+                                                </eq>
+                                                <eq comment="false" id="1" x="0" y="0">
+                                                    <get-val-96-6 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="Both"/>
+                                                </eq>
+                                            </or>
+                                        </if>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <get-val-96-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </more>
+                                </if>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="4"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                    </group>
+                    <int id="0" val="0.1"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="424">
+            <group id="-1">
+                <if comment="false" x="26" y="449">
+                    <group id="-1">
+                        <if comment="false" x="37" y="482">
+                            <group id="-1">
+                                <toggle-image comment="false" x="48" y="512">
+                                    <ACTOR eid="var" id="0" vid="3"/>
+                                    <int id="1" val="1"/>
+                                </toggle-image>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-96-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </lesseq>
+                        </if>
+                        <else comment="false" x="37" y="551">
+                            <group id="-1">
+                                <toggle-image comment="false" x="48" y="571">
+                                    <ACTOR eid="var" id="0" vid="3"/>
+                                    <int id="1" val="0"/>
+                                </toggle-image>
+                            </group>
+                        </else>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="3"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <draw comment="false" x="15" y="646">
+            <group id="-1">
+                <if comment="false" x="26" y="671">
+                    <group id="-1">
+                        <draw-transtoby comment="false" x="37" y="704">
+                            <int id="0" val="1"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="3"/>
+                                <int id="1" val="4"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="3"/>
+                                <int id="1" val="5"/>
+                            </get-xy>
+                        </draw-transtoby>
+                        <repeat comment="false" x="37" y="744">
+                            <group id="-1">
+                                <if comment="false" x="48" y="774">
+                                    <group id="-1">
+                                        <draw-transtoby comment="false" x="59" y="804">
+                                            <int id="0" val="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-wh comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="var" id="0" vid="3"/>
+                                                    <int id="1" val="0"/>
+                                                </get-wh>
+                                                <get-val-96-10 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="2" val="0"/>
+                                        </draw-transtoby>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-96-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Horizontal"/>
+                                    </eq>
+                                </if>
+                                <else comment="false" x="48" y="861">
+                                    <group id="-1">
+                                        <draw-transtoby comment="false" x="59" y="881">
+                                            <int id="0" val="0"/>
+                                            <int id="1" val="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-wh comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="var" id="0" vid="3"/>
+                                                    <int id="1" val="1"/>
+                                                </get-wh>
+                                                <get-val-96-10 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                        </draw-transtoby>
+                                    </group>
+                                </else>
+                                <draw-image-actor comment="false" x="48" y="938">
+                                    <ACTOR eid="var" id="0" vid="3"/>
+                                </draw-image-actor>
+                            </group>
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-96-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </repeat>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="3"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="989">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1024">
+                            <group id="-1">
+                                <set-font-new comment="false" x="48" y="1057">
+                                    <FONT eid="var" id="0" vid="11"/>
+                                </set-font-new>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="11"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <draw-text comment="false" x="37" y="1096">
+                            <get-val-96-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-96-14 comment="false" id="1" x="0" y="0"/>
+                            <get-val-96-15 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-96-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Number"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-96-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Both"/>
+                        </eq>
+                    </or>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

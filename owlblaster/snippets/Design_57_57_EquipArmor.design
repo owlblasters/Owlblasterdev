@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1">
+                <comment-short comment="false" x="26" y="113">
+                    <int id="0" val="Create and switch armors"/>
+                </comment-short>
+                <if comment="false" x="26" y="133">
+                    <group id="-1">
+                        <if comment="false" x="37" y="158">
+                            <group id="-1">
+                                <if comment="false" x="48" y="193">
+                                    <group id="-1">
+                                        <die comment="false" x="59" y="236">
+                                            <get-val-57-11 comment="false" id="0" x="0" y="0"/>
+                                        </die>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <value comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="11"/>
+                                            <int id="1" val="0"/>
+                                        </value>
+                                        <isalive comment="false" id="1" x="0" y="0">
+                                            <get-val-57-11 comment="false" id="0" x="0" y="0"/>
+                                        </isalive>
+                                    </and>
+                                </if>
+                                <clear comment="false" x="48" y="280">
+                                    <int id="0" val="11"/>
+                                </clear>
+                                <set-val-57-7 comment="false" x="48" y="307">
+                                    <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                                </set-val-57-7>
+                                <if comment="false" x="48" y="332">
+                                    <group id="-1">
+                                        <custom-code comment="false" x="59" y="365">
+                                            <int id="0" val="_Type = getActorTypeByName(_Name);"/>
+                                        </custom-code>
+                                        <if comment="false" x="59" y="385">
+                                            <group id="-1">
+                                                <create-actor3 comment="false" x="70" y="418">
+                                                    <get-val-57-6 comment="false" id="0" x="0" y="0"/>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="0"/>
+                                                        </get-xy>
+                                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                                            <get-val-57-8 comment="false" id="0" x="0" y="0"/>
+                                                            <custom-70 comment="false" id="1" x="0" y="0">
+                                                                <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                                                                <get-val-57-4 comment="false" id="1" x="0" y="0"/>
+                                                            </custom-70>
+                                                        </get-item-number>
+                                                    </plus>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <get-xy comment="false" id="0" x="0" y="0">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="1"/>
+                                                        </get-xy>
+                                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                                            <get-val-57-9 comment="false" id="0" x="0" y="0"/>
+                                                            <custom-70 comment="false" id="1" x="0" y="0">
+                                                                <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                                                                <get-val-57-4 comment="false" id="1" x="0" y="0"/>
+                                                            </custom-70>
+                                                        </get-item-number>
+                                                    </plus>
+                                                    <int id="3" val="0"/>
+                                                </create-actor3>
+                                                <set-val-57-11 comment="false" x="70" y="465">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                </set-val-57-11>
+                                            </group>
+                                            <value comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="6"/>
+                                                <int id="1" val="0"/>
+                                            </value>
+                                        </if>
+                                    </group>
+                                    <value comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="11"/>
+                                        <int id="1" val="1"/>
+                                    </value>
+                                </if>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-val-57-7 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-57-1 comment="false" id="1" x="0" y="0"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-57-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <comment-short comment="false" x="26" y="540">
+                    <int id="0" val="Armor Position"/>
+                </comment-short>
+                <if comment="false" x="26" y="560">
+                    <group id="-1">
+                        <setanim comment="false" x="37" y="603">
+                            <get-val-57-11 comment="false" id="0" x="0" y="0"/>
+                            <getanim comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                            </getanim>
+                        </setanim>
+                        <set-xy comment="false" x="37" y="643">
+                            <get-val-57-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-item-number comment="false" id="1" x="0" y="0">
+                                    <get-val-57-8 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-57-4 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </get-item-number>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="690">
+                            <get-val-57-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-item-number comment="false" id="1" x="0" y="0">
+                                    <get-val-57-9 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-57-4 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </get-item-number>
+                            </plus>
+                        </set-xy>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="11"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <get-val-57-11 comment="false" id="0" x="0" y="0"/>
+                        </isalive>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="749">
+                    <int id="0" val="Set armor properties"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="769">
+                    <group id="-1">
+                        <if comment="false" x="37" y="799">
+                            <group id="-1">
+                                <comment-short comment="false" x="48" y="839">
+                                    <int id="0" val="Set armor"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="859">
+                                    <group id="-1">
+                                        <set-val-57-2 comment="false" x="59" y="899">
+                                            <as-number comment="false" id="0" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </as-number>
+                                        </set-val-57-2>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="Armor="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="961">
+                                    <int id="0" val="Set magic armor"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="981">
+                                    <group id="-1">
+                                        <set-val-57-3 comment="false" x="59" y="1021">
+                                            <as-number comment="false" id="0" x="0" y="0">
+                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="="/>
+                                                        </str-indexof>
+                                                        <int id="1" val="1"/>
+                                                    </plus>
+                                                    <str-length comment="false" id="2" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                    </str-length>
+                                                </str-substring>
+                                            </as-number>
+                                        </set-val-57-3>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="Magic Armor="/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="1083">
+                                    <int id="0" val="Status Modifier"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="1103">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="1143">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="1188">
+                                                    <group id="-1">
+                                                        <set-val-57-13 comment="false" x="81" y="1228">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="+"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-57-13>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="+"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <if comment="false" x="70" y="1290">
+                                                    <group id="-1">
+                                                        <set-val-57-13 comment="false" x="81" y="1330">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="-"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-57-13>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="-"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <custom-89 comment="false" x="70" y="1392">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <as-number comment="false" id="1" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <tostring comment="false" id="1" x="0" y="0">
+                                                                        <get-val-57-13 comment="false" id="0" x="0" y="0"/>
+                                                                    </tostring>
+                                                                </str-indexof>
+                                                                <str-length comment="false" id="1" x="0" y="0">
+                                                                    <get-val-57-13 comment="false" id="0" x="0" y="0"/>
+                                                                </str-length>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                    <get-val-57-13 comment="false" id="2" x="0" y="0"/>
+                                                    <get-val-57-12 comment="false" id="3" x="0" y="0"/>
+                                                </custom-89>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <moreeq comment="false" id="0" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="+"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                                <moreeq comment="false" id="1" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="-"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                            </or>
+                                        </if>
+                                        <else comment="false" x="59" y="1461">
+                                            <group id="-1">
+                                                <custom-90 comment="false" x="70" y="1481">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-57-12 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-57-13 comment="false" id="2" x="0" y="0"/>
+                                                </custom-90>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="[Attribute]"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="1537">
+                                    <int id="0" val="Damage Type Modifier"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="1557">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="1597">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="1642">
+                                                    <group id="-1">
+                                                        <set-val-57-13 comment="false" x="81" y="1682">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="+"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-57-13>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="+"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <if comment="false" x="70" y="1744">
+                                                    <group id="-1">
+                                                        <set-val-57-13 comment="false" x="81" y="1784">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="-"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-57-13>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="-"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <custom-79 comment="false" x="70" y="1846">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <as-number comment="false" id="1" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <tostring comment="false" id="1" x="0" y="0">
+                                                                        <get-val-57-13 comment="false" id="0" x="0" y="0"/>
+                                                                    </tostring>
+                                                                </str-indexof>
+                                                                <str-length comment="false" id="1" x="0" y="0">
+                                                                    <get-val-57-13 comment="false" id="0" x="0" y="0"/>
+                                                                </str-length>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                    <get-val-57-13 comment="false" id="2" x="0" y="0"/>
+                                                    <get-val-57-12 comment="false" id="3" x="0" y="0"/>
+                                                </custom-79>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <moreeq comment="false" id="0" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="+"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                                <moreeq comment="false" id="1" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="-"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                            </or>
+                                        </if>
+                                        <else comment="false" x="59" y="1915">
+                                            <group id="-1">
+                                                <custom-78 comment="false" x="70" y="1935">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-57-12 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-57-13 comment="false" id="2" x="0" y="0"/>
+                                                </custom-78>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="[Damage Type]"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                                <comment-short comment="false" x="48" y="1991">
+                                    <int id="0" val="Status Resistance"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="2011">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="2051">
+                                            <group id="-1">
+                                                <if comment="false" x="70" y="2096">
+                                                    <group id="-1">
+                                                        <set-val-57-13 comment="false" x="81" y="2136">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="+"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-57-13>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="+"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <if comment="false" x="70" y="2198">
+                                                    <group id="-1">
+                                                        <set-val-57-13 comment="false" x="81" y="2238">
+                                                            <tostring comment="false" id="0" x="0" y="0">
+                                                                <str-substring comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <plus comment="false" id="1" x="0" y="0">
+                                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                            </get-item-text>
+                                                                            <int id="1" val="]"/>
+                                                                        </str-indexof>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                    <str-indexof comment="false" id="2" x="0" y="0">
+                                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item-text>
+                                                                        <int id="1" val="-"/>
+                                                                    </str-indexof>
+                                                                </str-substring>
+                                                            </tostring>
+                                                        </set-val-57-13>
+                                                    </group>
+                                                    <moreeq comment="false" id="0" x="0" y="0">
+                                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val="-"/>
+                                                        </str-indexof>
+                                                        <int id="1" val="0"/>
+                                                    </moreeq>
+                                                </if>
+                                                <custom-84 comment="false" x="70" y="2300">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-57-12 comment="false" id="1" x="0" y="0"/>
+                                                    <as-number comment="false" id="2" x="0" y="0">
+                                                        <str-substring comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <str-indexof comment="false" id="0" x="0" y="0">
+                                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                    </get-item-text>
+                                                                    <tostring comment="false" id="1" x="0" y="0">
+                                                                        <get-val-57-13 comment="false" id="0" x="0" y="0"/>
+                                                                    </tostring>
+                                                                </str-indexof>
+                                                                <str-length comment="false" id="1" x="0" y="0">
+                                                                    <get-val-57-13 comment="false" id="0" x="0" y="0"/>
+                                                                </str-length>
+                                                            </plus>
+                                                            <str-length comment="false" id="2" x="0" y="0">
+                                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                                    <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                                </get-item-text>
+                                                            </str-length>
+                                                        </str-substring>
+                                                    </as-number>
+                                                    <get-val-57-13 comment="false" id="3" x="0" y="0"/>
+                                                </custom-84>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <moreeq comment="false" id="0" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="+"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                                <moreeq comment="false" id="1" x="0" y="0">
+                                                    <str-indexof comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val="-"/>
+                                                    </str-indexof>
+                                                    <int id="1" val="0"/>
+                                                </moreeq>
+                                            </or>
+                                        </if>
+                                        <else comment="false" x="59" y="2369">
+                                            <group id="-1">
+                                                <custom-82 comment="false" x="70" y="2389">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-57-12 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-57-13 comment="false" id="2" x="0" y="0"/>
+                                                </custom-82>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <str-indexof comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="[Status Resistance]"/>
+                                        </str-indexof>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </if>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <str-indexof comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <str-combine comment="false" id="1" x="0" y="0">
+                                        <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val=":"/>
+                                    </str-combine>
+                                </str-indexof>
+                                <int id="1" val="0"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-57-10 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="2517">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="2590">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

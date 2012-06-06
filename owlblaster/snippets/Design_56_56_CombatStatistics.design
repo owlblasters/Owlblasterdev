@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<say-this comment="false" x="26" y="113">
+<int id="0" val="Get"/>
+</say-this>
+<set-val-56-13 comment="false" x="26" y="133">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-val-56-1 comment="false" id="0" x="0" y="0"/>
+<get-val-56-7 comment="false" id="1" x="0" y="0"/>
+</plus>
+                </set-val-56-13>
+<if comment="false" x="26" y="163">
+<group id="-1">
+<set-val-56-13 comment="false" x="37" y="193">
+                            <int id="0" val="0"/>
+                        </set-val-56-13>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-13 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-56-12 comment="false" x="26" y="225">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-val-56-1 comment="false" id="0" x="0" y="0"/>
+<get-val-56-6 comment="false" id="1" x="0" y="0"/>
+</plus>
+                </set-val-56-12>
+<if comment="false" x="26" y="255">
+<group id="-1">
+<set-val-56-12 comment="false" x="37" y="285">
+                            <int id="0" val="0"/>
+                        </set-val-56-12>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-12 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-56-8 comment="false" x="26" y="317">
+                    <div comment="false" id="0" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<get-val-56-13 comment="false" id="0" x="0" y="0"/>
+<get-val-56-12 comment="false" id="1" x="0" y="0"/>
+</plus>
+<int id="1" val="2"/>
+</div>
+                </set-val-56-8>
+<if comment="false" x="26" y="352">
+<group id="-1">
+<set-val-56-8 comment="false" x="37" y="382">
+                            <int id="0" val="0"/>
+                        </set-val-56-8>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-8 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-56-9 comment="false" x="26" y="414">
+                    <times comment="false" id="0" x="0" y="0">
+<get-val-56-3 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</times>
+                </set-val-56-9>
+<if comment="false" x="26" y="444">
+<group id="-1">
+<set-val-56-9 comment="false" x="37" y="474">
+                            <int id="0" val="0"/>
+                        </set-val-56-9>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-9 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-56-10 comment="false" x="26" y="506">
+                    <plus comment="false" id="0" x="0" y="0">
+<div comment="false" id="0" x="0" y="0">
+<get-val-56-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+<get-val-56-14 comment="false" id="1" x="0" y="0"/>
+</plus>
+                </set-val-56-10>
+<if comment="false" x="26" y="541">
+<group id="-1">
+<set-val-56-10 comment="false" x="37" y="571">
+                            <int id="0" val="0"/>
+                        </set-val-56-10>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-10 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-56-11 comment="false" x="26" y="603">
+                    <plus comment="false" id="0" x="0" y="0">
+<div comment="false" id="0" x="0" y="0">
+<get-val-56-4 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+<get-val-56-15 comment="false" id="1" x="0" y="0"/>
+</plus>
+                </set-val-56-11>
+<if comment="false" x="26" y="638">
+<group id="-1">
+<set-val-56-11 comment="false" x="37" y="668">
+                            <int id="0" val="0"/>
+                        </set-val-56-11>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-11 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-56-16 comment="false" x="26" y="700">
+                    <plus comment="false" id="0" x="0" y="0">
+<div comment="false" id="0" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<int id="0" val="100"/>
+<get-val-56-5 comment="false" id="1" x="0" y="0"/>
+</times>
+<get-val-56-17 comment="false" id="1" x="0" y="0"/>
+</div>
+<get-val-56-18 comment="false" id="1" x="0" y="0"/>
+</plus>
+                </set-val-56-16>
+<if comment="false" x="26" y="740">
+<group id="-1">
+<set-val-56-16 comment="false" x="37" y="770">
+                            <int id="0" val="100"/>
+                        </set-val-56-16>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-56-16 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="100"/>
+</more>
+</if>
+<if comment="false" x="26" y="802">
+<group id="-1">
+<set-val-56-16 comment="false" x="37" y="832">
+                            <int id="0" val="0"/>
+                        </set-val-56-16>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-56-16 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="892">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="965">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="1038">
+<group id="-1">
+<if comment="false" x="26" y="1063">
+<group id="-1">
+<set-val-56-14 comment="false" x="37" y="1096">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Armor"/>
+<int id="2" val="_Armor"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-14>
+<set-val-56-15 comment="false" x="37" y="1134">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Armor"/>
+<int id="2" val="_MagicArmor"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-15>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Armor"/>
+</has-snippet>
+</if>
+<if comment="false" x="26" y="1184">
+<group id="-1">
+<set-val-56-7 comment="false" x="37" y="1217">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Weapon"/>
+<int id="2" val="_MaximumDamage"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-7>
+<set-val-56-6 comment="false" x="37" y="1255">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Weapon"/>
+<int id="2" val="_MinimumDamage"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-6>
+<set-val-56-18 comment="false" x="37" y="1293">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Weapon"/>
+<int id="2" val="_WeaponCriticalRateBonus"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-18>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Equip Weapon"/>
+</has-snippet>
+</if>
+<if comment="false" x="26" y="1343">
+<group id="-1">
+<set-val-56-17 comment="false" x="37" y="1376">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_MaximumValue"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-17>
+<set-val-56-1 comment="false" x="37" y="1414">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Strength"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-1>
+<set-val-56-2 comment="false" x="37" y="1452">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Vitality"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-2>
+<set-val-56-3 comment="false" x="37" y="1490">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Inteligence"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-3>
+<set-val-56-4 comment="false" x="37" y="1528">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Wisdom"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-4>
+<set-val-56-5 comment="false" x="37" y="1566">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Luck"/>
+</get-attribute>
+</as-number>
+                        </set-val-56-5>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Character Status"/>
+</has-snippet>
+</if>
+</group>
+<int id="0" val="Get"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

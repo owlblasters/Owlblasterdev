@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<dolater comment="false" x="26" y="40">
+<group id="-1">
+<fadeOut comment="false" x="37" y="65">
+<ACTOR eid="this" id="0"/>
+<get-val-31-2 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</fadeOut>
+<dolater comment="false" x="37" y="97">
+<group id="-1">
+<recycle comment="false" x="48" y="122">
+<ACTOR eid="this" id="0"/>
+</recycle>
+</group>
+<get-val-31-2 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<get-val-31-1 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="201">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="274">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="347">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<say-this comment="false" x="26" y="113">
+<int id="0" val="Get"/>
+</say-this>
+<comment-short comment="false" x="26" y="133">
+<int id="0" val="Strength"/>
+</comment-short>
+<comment-short comment="false" x="26" y="153">
+<int id="0" val="Temporary Strength Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="173">
+<group id="-1">
+<if comment="false" x="37" y="203">
+<group id="-1">
+<if comment="false" x="48" y="243">
+<group id="-1">
+<replace-list comment="false" x="59" y="278">
+<get-val-53-31 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-31 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-31 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-30 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="325">
+<group id="-1">
+<remove-index comment="false" x="59" y="345">
+<get-val-53-30 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="370">
+<get-val-53-31 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="395">
+<get-val-53-29 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-30 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-30 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="456">
+<int id="0" val="Add all temporary strength modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="476">
+<group id="-1">
+<if comment="false" x="37" y="501">
+<group id="-1">
+<increment comment="false" x="48" y="541">
+<int id="0" val="28"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-29 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-2 comment="false" x="26" y="602">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-3 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-4 comment="false" id="0" x="0" y="0"/>
+<get-val-53-28 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+                </set-val-53-2>
+<if comment="false" x="26" y="637">
+<group id="-1">
+<set-val-53-2 comment="false" x="37" y="667">
+                            <get-val-53-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-2>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-2 comment="false" id="0" x="0" y="0"/>
+<get-val-53-60 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="704">
+<group id="-1">
+<set-val-53-2 comment="false" x="37" y="734">
+                            <int id="0" val="0"/>
+                        </set-val-53-2>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-28 comment="false" x="26" y="766">
+                    <int id="0" val="0"/>
+                </set-val-53-28>
+<comment-short comment="false" x="26" y="786">
+<int id="0" val="Vitality"/>
+</comment-short>
+<comment-short comment="false" x="26" y="806">
+<int id="0" val="Temporary Vitality Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="826">
+<group id="-1">
+<if comment="false" x="37" y="856">
+<group id="-1">
+<if comment="false" x="48" y="896">
+<group id="-1">
+<replace-list comment="false" x="59" y="931">
+<get-val-53-38 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-38 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-38 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-37 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="978">
+<group id="-1">
+<remove-index comment="false" x="59" y="998">
+<get-val-53-37 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="1023">
+<get-val-53-38 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="1048">
+<get-val-53-36 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-37 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-37 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="1109">
+<int id="0" val="Add all temporary vitality modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="1129">
+<group id="-1">
+<if comment="false" x="37" y="1154">
+<group id="-1">
+<increment comment="false" x="48" y="1194">
+<int id="0" val="35"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-36 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-7 comment="false" x="26" y="1255">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-9 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-8 comment="false" id="0" x="0" y="0"/>
+<get-val-53-35 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+                </set-val-53-7>
+<if comment="false" x="26" y="1290">
+<group id="-1">
+<set-val-53-7 comment="false" x="37" y="1320">
+                            <get-val-53-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-7>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-7 comment="false" id="0" x="0" y="0"/>
+<get-val-53-60 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="1357">
+<group id="-1">
+<set-val-53-7 comment="false" x="37" y="1387">
+                            <int id="0" val="0"/>
+                        </set-val-53-7>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-35 comment="false" x="26" y="1419">
+                    <int id="0" val="0"/>
+                </set-val-53-35>
+<comment-short comment="false" x="26" y="1439">
+<int id="0" val="Inteligence"/>
+</comment-short>
+<comment-short comment="false" x="26" y="1459">
+<int id="0" val="Temporary Inteligence Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="1479">
+<group id="-1">
+<if comment="false" x="37" y="1509">
+<group id="-1">
+<if comment="false" x="48" y="1549">
+<group id="-1">
+<replace-list comment="false" x="59" y="1584">
+<get-val-53-42 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-42 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-42 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-41 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="1631">
+<group id="-1">
+<remove-index comment="false" x="59" y="1651">
+<get-val-53-41 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="1676">
+<get-val-53-42 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="1701">
+<get-val-53-40 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-41 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-41 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="1762">
+<int id="0" val="Add all temporary inteligence modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="1782">
+<group id="-1">
+<if comment="false" x="37" y="1807">
+<group id="-1">
+<increment comment="false" x="48" y="1847">
+<int id="0" val="39"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-40 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-10 comment="false" x="26" y="1908">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-12 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-11 comment="false" id="0" x="0" y="0"/>
+<get-val-53-39 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+                </set-val-53-10>
+<if comment="false" x="26" y="1943">
+<group id="-1">
+<set-val-53-10 comment="false" x="37" y="1973">
+                            <get-val-53-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-10>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-10 comment="false" id="0" x="0" y="0"/>
+<get-val-53-60 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="2010">
+<group id="-1">
+<set-val-53-10 comment="false" x="37" y="2040">
+                            <int id="0" val="0"/>
+                        </set-val-53-10>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-10 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-39 comment="false" x="26" y="2072">
+                    <int id="0" val="0"/>
+                </set-val-53-39>
+<comment-short comment="false" x="26" y="2092">
+<int id="0" val="Wisdom"/>
+</comment-short>
+<comment-short comment="false" x="26" y="2112">
+<int id="0" val="Temporary Wisdom Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="2132">
+<group id="-1">
+<if comment="false" x="37" y="2162">
+<group id="-1">
+<if comment="false" x="48" y="2202">
+<group id="-1">
+<replace-list comment="false" x="59" y="2237">
+<get-val-53-46 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-46 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-46 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-45 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="2284">
+<group id="-1">
+<remove-index comment="false" x="59" y="2304">
+<get-val-53-45 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="2329">
+<get-val-53-46 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="2354">
+<get-val-53-44 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-45 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-45 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="2415">
+<int id="0" val="Add all temporary wisdom modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="2435">
+<group id="-1">
+<if comment="false" x="37" y="2460">
+<group id="-1">
+<increment comment="false" x="48" y="2500">
+<int id="0" val="43"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-44 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-13 comment="false" x="26" y="2561">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-15 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-14 comment="false" id="0" x="0" y="0"/>
+<get-val-53-43 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+                </set-val-53-13>
+<if comment="false" x="26" y="2596">
+<group id="-1">
+<set-val-53-13 comment="false" x="37" y="2626">
+                            <get-val-53-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-13>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-13 comment="false" id="0" x="0" y="0"/>
+<get-val-53-60 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="2663">
+<group id="-1">
+<set-val-53-13 comment="false" x="37" y="2693">
+                            <int id="0" val="0"/>
+                        </set-val-53-13>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-13 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-43 comment="false" x="26" y="2725">
+                    <int id="0" val="0"/>
+                </set-val-53-43>
+<comment-short comment="false" x="26" y="2745">
+<int id="0" val="Luck"/>
+</comment-short>
+<comment-short comment="false" x="26" y="2765">
+<int id="0" val="Temporary Luck Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="2785">
+<group id="-1">
+<if comment="false" x="37" y="2815">
+<group id="-1">
+<if comment="false" x="48" y="2855">
+<group id="-1">
+<replace-list comment="false" x="59" y="2890">
+<get-val-53-50 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-50 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-50 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-49 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="2937">
+<group id="-1">
+<remove-index comment="false" x="59" y="2957">
+<get-val-53-49 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="2982">
+<get-val-53-50 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="3007">
+<get-val-53-48 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-49 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-49 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="3068">
+<int id="0" val="Add all temporary strength modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="3088">
+<group id="-1">
+<if comment="false" x="37" y="3113">
+<group id="-1">
+<increment comment="false" x="48" y="3153">
+<int id="0" val="47"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-48 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-16 comment="false" x="26" y="3214">
+                    <plus comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-18 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-17 comment="false" id="0" x="0" y="0"/>
+<get-val-53-47 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+                </set-val-53-16>
+<if comment="false" x="26" y="3249">
+<group id="-1">
+<set-val-53-16 comment="false" x="37" y="3279">
+                            <get-val-53-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-16>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-16 comment="false" id="0" x="0" y="0"/>
+<get-val-53-60 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="3316">
+<group id="-1">
+<set-val-53-16 comment="false" x="37" y="3346">
+                            <int id="0" val="0"/>
+                        </set-val-53-16>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-16 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-47 comment="false" x="26" y="3378">
+                    <int id="0" val="0"/>
+                </set-val-53-47>
+<comment-short comment="false" x="26" y="3398">
+<int id="0" val="Health"/>
+</comment-short>
+<comment-short comment="false" x="26" y="3418">
+<int id="0" val="Temporary Health Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="3438">
+<group id="-1">
+<if comment="false" x="37" y="3468">
+<group id="-1">
+<if comment="false" x="48" y="3508">
+<group id="-1">
+<replace-list comment="false" x="59" y="3543">
+<get-val-53-54 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-54 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-54 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-55 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="3590">
+<group id="-1">
+<remove-index comment="false" x="59" y="3610">
+<get-val-53-55 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="3635">
+<get-val-53-54 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="3660">
+<get-val-53-52 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-55 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-55 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="3721">
+<int id="0" val="Add all temporary health modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="3741">
+<group id="-1">
+<if comment="false" x="37" y="3766">
+<group id="-1">
+<increment comment="false" x="48" y="3806">
+<int id="0" val="51"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-52 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-19 comment="false" x="26" y="3867">
+                    <roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-21 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-20 comment="false" id="0" x="0" y="0"/>
+<get-val-53-51 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+</roundnew>
+                </set-val-53-19>
+<if comment="false" x="26" y="3915">
+<group id="-1">
+<set-val-53-19 comment="false" x="37" y="3945">
+                            <get-val-53-61 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-19>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-19 comment="false" id="0" x="0" y="0"/>
+<get-val-53-61 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="3982">
+<group id="-1">
+<set-val-53-19 comment="false" x="37" y="4012">
+                            <int id="0" val="0"/>
+                        </set-val-53-19>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-19 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-51 comment="false" x="26" y="4044">
+                    <int id="0" val="0"/>
+                </set-val-53-51>
+<comment-short comment="false" x="26" y="4064">
+<int id="0" val="Energy"/>
+</comment-short>
+<comment-short comment="false" x="26" y="4084">
+<int id="0" val="Temporary Energy Timers"/>
+</comment-short>
+<repeat comment="false" x="26" y="4104">
+<group id="-1">
+<if comment="false" x="37" y="4134">
+<group id="-1">
+<if comment="false" x="48" y="4174">
+<group id="-1">
+<replace-list comment="false" x="59" y="4209">
+<get-val-53-59 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+<plus comment="false" id="2" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-59 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<div comment="false" id="1" x="0" y="0">
+<stepsize comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</div>
+</plus>
+</replace-list>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-59 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<get-item-number comment="false" id="1" x="0" y="0">
+<get-val-53-58 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+</lesseq>
+</if>
+<else comment="false" x="48" y="4256">
+<group id="-1">
+<remove-index comment="false" x="59" y="4276">
+<get-val-53-58 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="4301">
+<get-val-53-59 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="59" y="4326">
+<get-val-53-57 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+</else>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<get-item-text comment="false" id="0" x="0" y="0">
+<get-val-53-58 comment="false" id="0" x="0" y="0"/>
+<loopindex comment="false" id="1" x="0" y="0"/>
+</get-item-text>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<length-list comment="false" id="0" x="0" y="0">
+<get-val-53-58 comment="false" id="0" x="0" y="0"/>
+</length-list>
+</repeat>
+<comment-short comment="false" x="26" y="4387">
+<int id="0" val="Add all temporary energy modifiers"/>
+</comment-short>
+<for-each comment="false" x="26" y="4407">
+<group id="-1">
+<if comment="false" x="37" y="4432">
+<group id="-1">
+<increment comment="false" x="48" y="4472">
+<int id="0" val="56"/>
+<as-number comment="false" id="1" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</as-number>
+</increment>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<eq comment="false" id="0" x="0" y="0">
+<tostring comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+</tostring>
+<int id="1" val="undefined"/>
+</eq>
+</not>
+</if>
+</group>
+<get-val-53-57 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<set-val-53-22 comment="false" x="26" y="4533">
+                    <roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<get-item-number comment="false" id="0" x="0" y="0">
+<get-val-53-24 comment="false" id="0" x="0" y="0"/>
+<get-val-53-1 comment="false" id="1" x="0" y="0"/>
+</get-item-number>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-53-23 comment="false" id="0" x="0" y="0"/>
+<get-val-53-56 comment="false" id="1" x="0" y="0"/>
+</plus>
+</plus>
+</roundnew>
+                </set-val-53-22>
+<if comment="false" x="26" y="4581">
+<group id="-1">
+<set-val-53-22 comment="false" x="37" y="4611">
+                            <get-val-53-62 comment="false" id="0" x="0" y="0"/>
+                        </set-val-53-22>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-53-22 comment="false" id="0" x="0" y="0"/>
+<get-val-53-62 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="4648">
+<group id="-1">
+<set-val-53-22 comment="false" x="37" y="4678">
+                            <int id="0" val="0"/>
+                        </set-val-53-22>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-53-22 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</less>
+</if>
+<set-val-53-56 comment="false" x="26" y="4710">
+                    <int id="0" val="0"/>
+                </set-val-53-56>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="4758">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="4831">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="4904">
+<group id="-1">
+<if comment="false" x="26" y="4929">
+<group id="-1">
+<set-val-53-1 comment="false" x="37" y="4962">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Experience"/>
+<int id="2" val="_CurrentLevel"/>
+</get-attribute>
+</as-number>
+                        </set-val-53-1>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Experience"/>
+</has-snippet>
+</if>
+</group>
+<int id="0" val="Get"/>
+</receive-message>
+</group>
+<group id="5">
+<receive-message comment="false" x="15" y="5040">
+<group id="-1">
+<if comment="false" x="26" y="5065">
+<group id="-1">
+<increment comment="false" x="37" y="5095">
+<int id="0" val="4"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Strength"/>
+</eq>
+</if>
+<if comment="false" x="26" y="5139">
+<group id="-1">
+<increment comment="false" x="37" y="5169">
+<int id="0" val="8"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Vitality"/>
+</eq>
+</if>
+<if comment="false" x="26" y="5213">
+<group id="-1">
+<increment comment="false" x="37" y="5243">
+<int id="0" val="11"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Inteligence"/>
+</eq>
+</if>
+<if comment="false" x="26" y="5287">
+<group id="-1">
+<increment comment="false" x="37" y="5317">
+<int id="0" val="14"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Wisdom"/>
+</eq>
+</if>
+<if comment="false" x="26" y="5361">
+<group id="-1">
+<increment comment="false" x="37" y="5391">
+<int id="0" val="17"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Luck"/>
+</eq>
+</if>
+<if comment="false" x="26" y="5435">
+<group id="-1">
+<increment comment="false" x="37" y="5465">
+<int id="0" val="20"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Health"/>
+</eq>
+</if>
+<if comment="false" x="26" y="5509">
+<group id="-1">
+<increment comment="false" x="37" y="5539">
+<int id="0" val="23"/>
+<get-val-53-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Energy"/>
+</eq>
+</if>
+</group>
+<int id="0" val="AddBonus"/>
+</receive-message>
+</group>
+<group id="6">
+<receiver-1-90 comment="false" x="15" y="5611">
+            <group id="-1">
+<set-attribute comment="false" x="26" y="5641">
+<get-byobval-13-155-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Statustoincrease"/>
+<get-byobval-13-155-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="5673">
+<get-byobval-13-155-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_BonusToAdd"/>
+<get-byobval-13-155-2 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<say comment="false" x="26" y="5705">
+<get-byobval-13-155-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="AddBonus"/>
+</say>
+</group>
+            <get-byobval-13-155-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-13-155-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-13-155-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-1-90>
+</group>
+<group id="7">
+<receiver-3-90 comment="false" x="15" y="5765">
+            <group id="-1">
+<if comment="false" x="26" y="5795">
+<group id="-1">
+<set-attribute comment="false" x="37" y="5833">
+<get-byobval-13-174-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Statustoincrease"/>
+<get-byobval-13-174-2 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="5865">
+<get-byobval-13-174-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_BonusToAdd"/>
+<get-byobval-13-174-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="5897">
+<get-byobval-13-174-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Index"/>
+<get-byobval-13-174-3 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<say comment="false" x="37" y="5929">
+<get-byobval-13-174-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="AddModifier"/>
+</say>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<get-byobval-13-174-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+</has-snippet>
+</if>
+</group>
+            <get-byobval-13-174-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-13-174-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-13-174-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-13-174-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-3-90>
+</group>
+<group id="8">
+<receive-message comment="false" x="15" y="6001">
+<group id="-1">
+<if comment="false" x="26" y="6026">
+<group id="-1">
+<replace-list comment="false" x="37" y="6056">
+<get-val-53-29 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Strength"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6093">
+<group id="-1">
+<replace-list comment="false" x="37" y="6123">
+<get-val-53-36 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Vitality"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6160">
+<group id="-1">
+<replace-list comment="false" x="37" y="6190">
+<get-val-53-40 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Inteligence"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6227">
+<group id="-1">
+<replace-list comment="false" x="37" y="6257">
+<get-val-53-44 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Wisdom"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6294">
+<group id="-1">
+<replace-list comment="false" x="37" y="6324">
+<get-val-53-48 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Luck"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6361">
+<group id="-1">
+<replace-list comment="false" x="37" y="6391">
+<get-val-53-52 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Health"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6428">
+<group id="-1">
+<replace-list comment="false" x="37" y="6458">
+<get-val-53-57 comment="false" id="0" x="0" y="0"/>
+<get-val-53-32 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Energy"/>
+</eq>
+</if>
+</group>
+<int id="0" val="AddModifier"/>
+</receive-message>
+</group>
+<group id="9">
+<receive-message comment="false" x="15" y="6523">
+<group id="-1">
+<if comment="false" x="26" y="6548">
+<group id="-1">
+<replace-list comment="false" x="37" y="6578">
+<get-val-53-30 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="6603">
+<get-val-53-31 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Strength"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6640">
+<group id="-1">
+<replace-list comment="false" x="37" y="6670">
+<get-val-53-37 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="6695">
+<get-val-53-38 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Vitality"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6732">
+<group id="-1">
+<replace-list comment="false" x="37" y="6762">
+<get-val-53-41 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="6787">
+<get-val-53-42 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Inteligence"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6824">
+<group id="-1">
+<replace-list comment="false" x="37" y="6854">
+<get-val-53-45 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="6879">
+<get-val-53-46 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Wisdom"/>
+</eq>
+</if>
+<if comment="false" x="26" y="6916">
+<group id="-1">
+<replace-list comment="false" x="37" y="6946">
+<get-val-53-49 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="6971">
+<get-val-53-50 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Luck"/>
+</eq>
+</if>
+<if comment="false" x="26" y="7008">
+<group id="-1">
+<replace-list comment="false" x="37" y="7038">
+<get-val-53-55 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="7063">
+<get-val-53-54 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Health"/>
+</eq>
+</if>
+<if comment="false" x="26" y="7100">
+<group id="-1">
+<replace-list comment="false" x="37" y="7130">
+<get-val-53-58 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<get-val-53-5 comment="false" id="2" x="0" y="0"/>
+</replace-list>
+<replace-list comment="false" x="37" y="7155">
+<get-val-53-59 comment="false" id="0" x="0" y="0"/>
+<get-val-53-34 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="0"/>
+</replace-list>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Energy"/>
+</eq>
+</if>
+</group>
+<int id="0" val="AddTimer"/>
+</receive-message>
+</group>
+<group id="10">
+<receiver-4-90 comment="false" x="15" y="7220">
+            <group id="-1">
+<if comment="false" x="26" y="7250">
+<group id="-1">
+<set-attribute comment="false" x="37" y="7288">
+<get-byobval-13-175-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Statustoincrease"/>
+<get-byobval-13-175-3 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="7320">
+<get-byobval-13-175-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_BonusToAdd"/>
+<get-byobval-13-175-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="7352">
+<get-byobval-13-175-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_TimeIndex"/>
+<get-byobval-13-175-2 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<say comment="false" x="37" y="7384">
+<get-byobval-13-175-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="AddTimer"/>
+</say>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<get-byobval-13-175-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+</has-snippet>
+</if>
+</group>
+            <get-byobval-13-175-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-13-175-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-13-175-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-13-175-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-4-90>
+</group>
+<group id="11">
+<receive-message comment="false" x="15" y="7456">
+<group id="-1">
+<if comment="false" x="26" y="7481">
+<group id="-1">
+<remove-index comment="false" x="37" y="7511">
+<get-val-53-30 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7536">
+<get-val-53-31 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7561">
+<get-val-53-29 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Strength"/>
+</eq>
+</if>
+<if comment="false" x="26" y="7598">
+<group id="-1">
+<remove-index comment="false" x="37" y="7628">
+<get-val-53-37 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7653">
+<get-val-53-38 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7678">
+<get-val-53-36 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Vitality"/>
+</eq>
+</if>
+<if comment="false" x="26" y="7715">
+<group id="-1">
+<remove-index comment="false" x="37" y="7745">
+<get-val-53-41 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7770">
+<get-val-53-42 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7795">
+<get-val-53-40 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Inteligence"/>
+</eq>
+</if>
+<if comment="false" x="26" y="7832">
+<group id="-1">
+<remove-index comment="false" x="37" y="7862">
+<get-val-53-45 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7887">
+<get-val-53-46 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="7912">
+<get-val-53-44 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Wisdom"/>
+</eq>
+</if>
+<if comment="false" x="26" y="7949">
+<group id="-1">
+<remove-index comment="false" x="37" y="7979">
+<get-val-53-49 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="8004">
+<get-val-53-50 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="8029">
+<get-val-53-48 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Luck"/>
+</eq>
+</if>
+<if comment="false" x="26" y="8066">
+<group id="-1">
+<remove-index comment="false" x="37" y="8096">
+<get-val-53-55 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="8121">
+<get-val-53-54 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="8146">
+<get-val-53-52 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Health"/>
+</eq>
+</if>
+<if comment="false" x="26" y="8183">
+<group id="-1">
+<remove-index comment="false" x="37" y="8213">
+<get-val-53-58 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="8238">
+<get-val-53-59 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+<remove-index comment="false" x="37" y="8263">
+<get-val-53-57 comment="false" id="0" x="0" y="0"/>
+<get-val-53-33 comment="false" id="1" x="0" y="0"/>
+</remove-index>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-53-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Energy"/>
+</eq>
+</if>
+</group>
+<int id="0" val="RemoveModifier"/>
+</receive-message>
+</group>
+<group id="12">
+<receiver-5-90 comment="false" x="15" y="8328">
+            <group id="-1">
+<if comment="false" x="26" y="8358">
+<group id="-1">
+<set-attribute comment="false" x="37" y="8396">
+<get-byobval-13-176-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_Statustoincrease"/>
+<get-byobval-13-176-2 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="8428">
+<get-byobval-13-176-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="_RemoveIndex"/>
+<get-byobval-13-176-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<say comment="false" x="37" y="8460">
+<get-byobval-13-176-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+<int id="2" val="RemoveModifier"/>
+</say>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<get-byobval-13-176-0 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Character Status"/>
+</has-snippet>
+</if>
+</group>
+            <get-byobval-13-176-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-13-176-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-13-176-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-5-90>
+</group>
+<group id="-1"/>
+</groups>

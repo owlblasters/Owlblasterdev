@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1">
+                <say-this comment="false" x="26" y="40">
+                    <int id="0" val="InitCheckpoint"/>
+                </say-this>
+                <if comment="false" x="26" y="60">
+                    <group id="-1">
+                        <create-actor3 comment="false" x="37" y="85">
+                            <ACTORTYPE eid="var" id="0" vid="7"/>
+                            <get-val-97-5 comment="false" id="1" x="0" y="0"/>
+                            <get-val-97-6 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                    </group>
+                    <get-val-97-10 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <code-long comment="false" x="26" y="129">
+                    <int id="0" val="//Get all &amp;quot;Checkpoint&amp;quot; regions &#10;//in the scene&#10;var tempRegList:Array = getAllRegions();&#10;for each(var oneReg:Region in tempRegList)&#10;{&#10;&#9;if(oneReg.getName().substring(0,2) != &amp;quot;CP&amp;quot;)&#10;&#9;{&#10;&#9;&#9;continue;&#9;&#10;&#9;}&#10;&#10;&#9;_RegionList.push(oneReg);&#10;}"/>
+                </code-long>
+            </group>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="347">
+            <group id="-1">
+                <custom-code comment="false" x="26" y="372">
+                    <int id="0" val="for each(_CurrentRegion in _RegionList) {"/>
+                </custom-code>
+                <actors-in-region comment="false" x="26" y="392">
+                    <group id="-1">
+                        <if comment="false" x="37" y="419">
+                            <group id="-1">
+                                <custom-code comment="false" x="48" y="462">
+                                    <int id="0" val="_RegionName = _CurrentRegion.getName();"/>
+                                </custom-code>
+                                <set-val-97-8 comment="false" x="48" y="482">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <str-split comment="false" id="0" x="0" y="0">
+                                                <get-val-97-9 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="_"/>
+                                            </str-split>
+                                            <int id="1" val="1"/>
+                                        </get-item>
+                                    </as-number>
+                                </set-val-97-8>
+                                <if comment="false" x="48" y="522">
+                                    <group id="-1">
+                                        <custom-code comment="false" x="59" y="552">
+                                            <int id="0" val="continue;"/>
+                                        </custom-code>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-val-97-8 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-97-4 comment="false" id="1" x="0" y="0"/>
+                                    </lesseq>
+                                </if>
+                                <say-this comment="false" x="48" y="584">
+                                    <int id="0" val="UpdateFlags"/>
+                                </say-this>
+                                <set-val-97-4 comment="false" x="48" y="604">
+                                    <get-val-97-8 comment="false" id="0" x="0" y="0"/>
+                                </set-val-97-4>
+                                <set-val-97-5 comment="false" x="48" y="629">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <str-split comment="false" id="0" x="0" y="0">
+                                                <get-val-97-9 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="_"/>
+                                            </str-split>
+                                            <int id="1" val="2"/>
+                                        </get-item>
+                                    </as-number>
+                                </set-val-97-5>
+                                <set-val-97-6 comment="false" x="48" y="669">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <str-split comment="false" id="0" x="0" y="0">
+                                                <get-val-97-9 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="_"/>
+                                            </str-split>
+                                            <int id="1" val="3"/>
+                                        </get-item>
+                                    </as-number>
+                                </set-val-97-6>
+                                <set-game-att comment="false" x="48" y="709">
+                                    <int id="0" val="CPS_SpawnX"/>
+                                    <get-val-97-5 comment="false" id="1" x="0" y="0"/>
+                                </set-game-att>
+                                <set-game-att comment="false" x="48" y="734">
+                                    <int id="0" val="CPS_SpawnY"/>
+                                    <get-val-97-6 comment="false" id="1" x="0" y="0"/>
+                                </set-game-att>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <getatype comment="false" id="0" x="0" y="0">
+                                    <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                </getatype>
+                                <get-val-97-7 comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <REGION eid="var" id="0" vid="3"/>
+                </actors-in-region>
+                <custom-code comment="false" x="26" y="783">
+                    <int id="0" val="}"/>
+                </custom-code>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <draw comment="false" x="15" y="831">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="3">
+        <receiver-1-140 comment="false" x="15" y="904">
+            <group id="-1">
+                <return comment="false" x="26" y="929">
+                    <get-val-97-5 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-1-140>
+    </group>
+    <group id="4">
+        <receiver-2-140 comment="false" x="15" y="982">
+            <group id="-1">
+                <return comment="false" x="26" y="1007">
+                    <get-val-97-6 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-2-140>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="1060">
+            <group id="-1">
+                <custom-code comment="false" x="26" y="1085">
+                    <int id="0" val="_SceneID = scene.scene.getID();"/>
+                </custom-code>
+                <if comment="false" x="26" y="1105">
+                    <group id="-1">
+                        <custom-code comment="false" x="37" y="1150">
+                            <int id="0" val="setGameAttribute(&amp;quot;CPS_SceneID&amp;quot;, _SceneID);           //current Scene ID"/>
+                        </custom-code>
+                        <set-val-97-5 comment="false" x="37" y="1170">
+                            <get-val-97-11 comment="false" id="0" x="0" y="0"/>
+                        </set-val-97-5>
+                        <set-val-97-6 comment="false" x="37" y="1195">
+                            <get-val-97-12 comment="false" id="0" x="0" y="0"/>
+                        </set-val-97-6>
+                        <set-game-att comment="false" x="37" y="1220">
+                            <int id="0" val="CPS_SpawnX"/>
+                            <get-val-97-5 comment="false" id="1" x="0" y="0"/>
+                        </set-game-att>
+                        <set-game-att comment="false" x="37" y="1245">
+                            <int id="0" val="CPS_SpawnY"/>
+                            <get-val-97-6 comment="false" id="1" x="0" y="0"/>
+                        </set-game-att>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <or comment="false" id="0" x="0" y="0">
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-game-att comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="CPS_SceneID"/>
+                                    </get-game-att>
+                                </as-number>
+                                <int id="1" val="0"/>
+                            </lesseq>
+                            <moreeq comment="false" id="1" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-game-att comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="CPS_SceneID"/>
+                                    </get-game-att>
+                                </as-number>
+                                <int id="1" val="0"/>
+                            </moreeq>
+                        </or>
+                    </not>
+                </if>
+                <else comment="false" x="26" y="1282">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1302">
+                            <group id="-1">
+                                <set-game-att comment="false" x="48" y="1337">
+                                    <int id="0" val="CPS_SceneID"/>
+                                    <get-val-97-13 comment="false" id="1" x="0" y="0"/>
+                                </set-game-att>
+                                <set-val-97-5 comment="false" x="48" y="1362">
+                                    <get-val-97-11 comment="false" id="0" x="0" y="0"/>
+                                </set-val-97-5>
+                                <set-val-97-6 comment="false" x="48" y="1387">
+                                    <get-val-97-12 comment="false" id="0" x="0" y="0"/>
+                                </set-val-97-6>
+                                <set-game-att comment="false" x="48" y="1412">
+                                    <int id="0" val="CPS_SpawnX"/>
+                                    <get-val-97-5 comment="false" id="1" x="0" y="0"/>
+                                </set-game-att>
+                                <set-game-att comment="false" x="48" y="1437">
+                                    <int id="0" val="CPS_SpawnY"/>
+                                    <get-val-97-6 comment="false" id="1" x="0" y="0"/>
+                                </set-game-att>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-game-att comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="CPS_SceneID"/>
+                                    </get-game-att>
+                                </as-number>
+                                <get-val-97-13 comment="false" id="1" x="0" y="0"/>
+                            </noteq>
+                        </if>
+                        <else comment="false" x="37" y="1474">
+                            <group id="-1">
+                                <set-val-97-5 comment="false" x="48" y="1494">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-game-att comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="CPS_SpawnX"/>
+                                        </get-game-att>
+                                    </as-number>
+                                </set-val-97-5>
+                                <set-val-97-6 comment="false" x="48" y="1524">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-game-att comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="CPS_SpawnY"/>
+                                        </get-game-att>
+                                    </as-number>
+                                </set-val-97-6>
+                            </group>
+                        </else>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="InitCheckpoint"/>
+        </receive-message>
+    </group>
+    <group id="6">
+        <receive-message comment="false" x="15" y="1606">
+            <group id="-1">
+                <if comment="false" x="26" y="1631">
+                    <group id="-1">
+                        <actors-in-group comment="false" x="37" y="1656">
+                            <group id="-1">
+                                <setanim comment="false" x="48" y="1683">
+                                    <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                        <get-val-97-15 comment="false" id="0" x="0" y="0"/>
+                                    </string-to-anim>
+                                </setanim>
+                            </group>
+                            <GROUP eid="var" id="0" vid="14"/>
+                        </actors-in-group>
+                        <actors-in-region comment="false" x="37" y="1732">
+                            <group id="-1">
+                                <if comment="false" x="48" y="1759">
+                                    <group id="-1">
+                                        <setanim comment="false" x="59" y="1802">
+                                            <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-97-16 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getgroup comment="false" id="0" x="0" y="0">
+                                            <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                        </getgroup>
+                                        <get-val-97-14 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                            </group>
+                            <REGION eid="var" id="0" vid="3"/>
+                        </actors-in-region>
+                    </group>
+                    <get-val-97-17 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val="UpdateFlags"/>
+        </receive-message>
+    </group>
+    <group id="-1"/>
+</groups>

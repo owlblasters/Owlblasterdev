@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<ignore-screen-tolerance comment="false" x="26" y="40">
+<ACTOR eid="this" id="0"/>
+</ignore-screen-tolerance>
+<if comment="false" x="26" y="67">
+<group id="-1">
+<actors-of-type3 comment="false" x="37" y="97">
+<group id="-1">
+<set-val-39-8 comment="false" x="48" y="124">
+                                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                </set-val-39-8>
+</group>
+<ACTORTYPE eid="var" id="0" vid="7"/>
+</actors-of-type3>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<get-val-39-14 comment="false" id="0" x="0" y="0"/>
+</not>
+</if>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="208">
+<group id="-1">
+<if comment="false" x="26" y="233">
+<group id="-1">
+<say-this comment="false" x="37" y="271">
+<int id="0" val="SyncWithPlayer"/>
+</say-this>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="8"/>
+</hasvalue>
+<isalive comment="false" id="1" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</isalive>
+</and>
+</if>
+<set-val-39-13 comment="false" x="26" y="303">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-39-13>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="356">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="429">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="502">
+<group id="-1">
+<if comment="false" x="26" y="527">
+<group id="-1">
+<setx comment="false" x="37" y="565">
+<ACTOR eid="this" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</getx>
+<get-val-39-11 comment="false" id="1" x="0" y="0"/>
+</plus>
+</setx>
+<sety comment="false" x="37" y="610">
+<ACTOR eid="this" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</gety>
+<get-val-39-12 comment="false" id="1" x="0" y="0"/>
+</plus>
+</sety>
+<if comment="false" x="37" y="655">
+<group id="-1">
+<setanim comment="false" x="48" y="680">
+<ACTOR eid="this" id="0"/>
+<get-val-39-6 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+<get-val-39-15 comment="false" id="0" x="0" y="0"/>
+</if>
+<else-if comment="false" x="37" y="724">
+<group id="-1">
+<setanim comment="false" x="48" y="749">
+<ACTOR eid="this" id="0"/>
+<get-val-39-3 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+<get-val-39-13 comment="false" id="0" x="0" y="0"/>
+</else-if>
+<else comment="false" x="37" y="793">
+<group id="-1">
+<setanim comment="false" x="48" y="813">
+<ACTOR eid="this" id="0"/>
+<get-val-39-1 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+</else>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="26" y="869">
+<group id="-1">
+<setx comment="false" x="37" y="889">
+<ACTOR eid="this" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</getx>
+<get-val-39-9 comment="false" id="1" x="0" y="0"/>
+</plus>
+</setx>
+<sety comment="false" x="37" y="934">
+<ACTOR eid="this" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</gety>
+<get-val-39-10 comment="false" id="1" x="0" y="0"/>
+</plus>
+</sety>
+<if comment="false" x="37" y="979">
+<group id="-1">
+<setanim comment="false" x="48" y="1004">
+<ACTOR eid="this" id="0"/>
+<get-val-39-5 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+<get-val-39-15 comment="false" id="0" x="0" y="0"/>
+</if>
+<else-if comment="false" x="37" y="1048">
+<group id="-1">
+<setanim comment="false" x="48" y="1073">
+<ACTOR eid="this" id="0"/>
+<get-val-39-4 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+<get-val-39-13 comment="false" id="0" x="0" y="0"/>
+</else-if>
+<else comment="false" x="37" y="1117">
+<group id="-1">
+<setanim comment="false" x="48" y="1137">
+<ACTOR eid="this" id="0"/>
+<get-val-39-2 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+</else>
+</group>
+</else>
+<setdx comment="false" x="26" y="1193">
+<ACTOR eid="this" id="0"/>
+<getdx comment="false" id="1" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</getdx>
+</setdx>
+<setdy comment="false" x="26" y="1233">
+<ACTOR eid="this" id="0"/>
+<getdy comment="false" id="1" x="0" y="0">
+<ACTOR eid="var" id="0" vid="8"/>
+</getdy>
+</setdy>
+</group>
+<int id="0" val="SyncWithPlayer"/>
+</receive-message>
+</group>
+<group id="5">
+<receiver-1-63 comment="false" x="15" y="1301">
+            <group id="-1">
+<set-val-39-8 comment="false" x="26" y="1331">
+                    <get-byobval-209-438-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-39-8>
+</group>
+            <get-byobval-209-438-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-209-438-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-63>
+</group>
+<group id="6">
+<receive-message comment="false" x="15" y="1391">
+<group id="-1">
+<set-val-39-13 comment="false" x="26" y="1416">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-39-13>
+<set-val-39-15 comment="false" x="26" y="1441">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-39-15>
+</group>
+<int id="0" val="JetsActive"/>
+</receive-message>
+</group>
+<group id="7">
+<receive-message comment="false" x="15" y="1494">
+<group id="-1">
+<set-val-39-13 comment="false" x="26" y="1519">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-39-13>
+<set-val-39-15 comment="false" x="26" y="1544">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-39-15>
+</group>
+<int id="0" val="JetsIdle"/>
+</receive-message>
+</group>
+<group id="8">
+<receive-message comment="false" x="15" y="1597">
+<group id="-1">
+<set-val-39-13 comment="false" x="26" y="1622">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-39-13>
+<set-val-39-15 comment="false" x="26" y="1647">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-39-15>
+</group>
+<int id="0" val="JetsEmpty"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

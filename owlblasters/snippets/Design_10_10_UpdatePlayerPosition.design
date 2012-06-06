@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<set-game-val-3 comment="false" x="26" y="113">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</set-game-val-3>
+<set-game-val-2 comment="false" x="26" y="146">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+</set-game-val-2>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="207">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="280">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>
