@@ -384,8 +384,8 @@
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
-                <prop id="15" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="false"/>
             </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -397,11 +397,11 @@
         <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,41,16,73,16,73,64,41,64" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
-            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
-        </anim>
         <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
+            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="3" loop="true" name="walk-r" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -431,88 +431,6 @@
                 <prop id="8" list="0" val="HealthDepleted"/>
                 <prop id="9" list="0" val="LifeLost"/>
                 <prop id="10" list="0" val="Death"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="42">
-                <prop id="34" list="0" val="right"/>
-                <prop id="33" list="0" val="left"/>
-                <prop id="38" list="0" val="true"/>
-                <prop id="39" list="0" val="false"/>
-                <prop id="37" list="0" val="0"/>
-                <prop id="42" list="0" val="jump-l"/>
-                <prop id="43" list="0" val="idle-r"/>
-                <prop id="40" list="0" val="0.0"/>
-                <prop id="11" list="0" val="20"/>
-                <prop id="41" list="0" val="idle-l"/>
-                <prop id="46" list="0" val="false"/>
-                <prop id="44" list="0" val="jump-r"/>
-                <prop id="45" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="43">
-                <prop id="2" list="0" val="50.0"/>
-                <prop id="4" list="0" val="60"/>
-                <prop id="9" list="0" val="0.0"/>
-                <prop id="12" list="0" val="false"/>
-                <prop id="13" list="0" val="Space"/>
-                <prop id="14" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="15" list="0" val="0"/>
-                <prop id="17" list="0" val="false"/>
-                <prop id="16" list="0" val="true"/>
-                <prop id="19" list="0" val="1.0"/>
-                <prop id="18" list="0" val="false"/>
-                <prop id="21" list="0" val="false"/>
-                <prop id="20" list="0" val="0"/>
-                <prop id="23" list="0" val="3.0"/>
-                <prop id="22" list="0" val="false"/>
-                <prop id="25" list="0" val="5.0"/>
-                <prop id="24" list="0" val="5.0"/>
-                <prop id="27" list="0" val="12.0"/>
-                <prop id="26" list="0" val="false"/>
-                <prop id="30" list="0" val="30.0"/>
-            </s>
-            <s enabled="true" id="10">
-                <prop id="1" list="0" val=".05"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="106">
-                <prop id="1" list="0" val="3"/>
-                <prop id="2" list="0" val="3"/>
-                <prop id="3" list="0" val="3"/>
-                <prop id="4" list="0" val="Healed"/>
-                <prop id="5" list="0" val="Damaged"/>
-                <prop id="7" list="0" val="Kill"/>
-                <prop id="8" list="0" val="false"/>
-                <prop id="9" list="0" val="0.5"/>
-                <prop id="10" list="0" val="true"/>
-                <prop id="11" list="0" val="false"/>
-                <prop id="13" list="0" val=""/>
-                <prop id="14" list="0" val="No Sound"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="17" list="0" val=""/>
-                <prop id="16" list="0" val="No Sound"/>
-                <prop id="18" list="0" val="No Sound"/>
-            </s>
-            <s enabled="true" id="104">
-                <prop id="1" list="0" val="Horizontal"/>
-                <prop id="2" list="0" val="100.0"/>
-                <prop id="3" list="0" val="5"/>
-                <prop id="4" list="0" val="0.0"/>
-                <prop id="5" list="0" val="0.0"/>
-                <prop id="6" list="0" val="Actor"/>
-                <prop id="7" list="0" val="0,255,0,255"/>
-                <prop id="8" list="0" val="0,255,255,255"/>
-                <prop id="9" list="0" val="255,102,0,255"/>
-                <prop id="10" list="0" val="255,0,0,255"/>
-                <prop id="11" list="0" val="0"/>
-                <prop id="12" list="0" val="0,0,0,255"/>
-                <prop id="13" list="0" val="255,255,255,255"/>
-                <prop id="14" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="20">
@@ -566,9 +484,94 @@
                 <prop id="24" list="0" val="5.0"/>
                 <prop id="26" list="0" val="false"/>
             </s>
+            <s enabled="true" id="93">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="42">
+                <prop id="34" list="0" val="right"/>
+                <prop id="33" list="0" val="left"/>
+                <prop id="38" list="0" val="true"/>
+                <prop id="39" list="0" val="false"/>
+                <prop id="37" list="0" val="0"/>
+                <prop id="42" list="0" val="jump-l"/>
+                <prop id="43" list="0" val="idle-r"/>
+                <prop id="40" list="0" val="0.0"/>
+                <prop id="11" list="0" val="20"/>
+                <prop id="41" list="0" val="idle-l"/>
+                <prop id="46" list="0" val="false"/>
+                <prop id="44" list="0" val="jump-r"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="45" list="0" val="true"/>
+            </s>
             <s enabled="true" id="92">
                 <prop id="3" list="0" val="16.0"/>
                 <prop id="4" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="43">
+                <prop id="2" list="0" val="50.0"/>
+                <prop id="4" list="0" val="60"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="12" list="0" val="false"/>
+                <prop id="13" list="0" val="Space"/>
+                <prop id="14" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="16" list="0" val="true"/>
+                <prop id="19" list="0" val="1.0"/>
+                <prop id="18" list="0" val="false"/>
+                <prop id="21" list="0" val="false"/>
+                <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="3.0"/>
+                <prop id="22" list="0" val="false"/>
+                <prop id="25" list="0" val="5.0"/>
+                <prop id="24" list="0" val="5.0"/>
+                <prop id="27" list="0" val="12.0"/>
+                <prop id="26" list="0" val="false"/>
+                <prop id="30" list="0" val="30.0"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="1" list="0" val=".05"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="106">
+                <prop id="1" list="0" val="3"/>
+                <prop id="2" list="0" val="3"/>
+                <prop id="3" list="0" val="3"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Kill"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val="-1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="17" list="0" val=""/>
+                <prop id="16" list="0" val="-1"/>
+                <prop id="18" list="0" val="-1"/>
+            </s>
+            <s enabled="true" id="104">
+                <prop id="1" list="0" val="Horizontal"/>
+                <prop id="2" list="0" val="100.0"/>
+                <prop id="3" list="0" val="5"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="Actor"/>
+                <prop id="7" list="0" val="0,255,0,255"/>
+                <prop id="8" list="0" val="0,255,255,255"/>
+                <prop id="9" list="0" val="255,102,0,255"/>
+                <prop id="10" list="0" val="255,0,0,255"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="0,0,0,255"/>
+                <prop id="13" list="0" val="255,255,255,255"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
