@@ -462,28 +462,6 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0.75"/>
             </s>
-            <s enabled="true" id="22">
-                <prop id="2" list="0" val="50.0"/>
-                <prop id="4" list="0" val="60"/>
-                <prop id="5" list="0" val="90"/>
-                <prop id="9" list="0" val="0.0"/>
-                <prop id="12" list="0" val="false"/>
-                <prop id="13" list="0" val="Space"/>
-                <prop id="14" list="0" val="false"/>
-                <prop id="15" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="17" list="0" val="false"/>
-                <prop id="16" list="0" val="true"/>
-                <prop id="19" list="0" val="1.0"/>
-                <prop id="18" list="0" val="false"/>
-                <prop id="21" list="0" val="false"/>
-                <prop id="20" list="0" val="0.0"/>
-                <prop id="23" list="0" val="3.0"/>
-                <prop id="22" list="0" val="false"/>
-                <prop id="25" list="0" val="5.0"/>
-                <prop id="24" list="0" val="5.0"/>
-                <prop id="26" list="0" val="false"/>
-            </s>
             <s enabled="true" id="93">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
