@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="83"/>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <isalive comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </isalive>
+                        </not>
+                    </or>
+                </if>
+                <set-val-60-9 comment="false" x="26" y="115">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-60-4 comment="false" id="0" x="0" y="0"/>
+                        <times comment="false" id="1" x="0" y="0">
+                            <get-val-60-2 comment="false" id="0" x="0" y="0"/>
+                            <div comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <scene-wh comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </scene-wh>
+                            </div>
+                        </times>
+                    </plus>
+                </set-val-60-9>
+                <set-val-60-10 comment="false" x="26" y="163">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-60-5 comment="false" id="0" x="0" y="0"/>
+                        <times comment="false" id="1" x="0" y="0">
+                            <get-val-60-3 comment="false" id="0" x="0" y="0"/>
+                            <div comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <scene-wh comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </scene-wh>
+                            </div>
+                        </times>
+                    </plus>
+                </set-val-60-10>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-thickness comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-thickness>
+                <set-color comment="false" x="26" y="60">
+                    <color id="0" vid="7"/>
+                </set-color>
+                <set-alpha comment="false" x="26" y="87">
+                    <get-val-60-6 comment="false" id="0" x="0" y="0"/>
+                </set-alpha>
+                <drawfill-rect comment="false" x="26" y="112">
+                    <int id="0" val="1"/>
+                    <get-val-60-4 comment="false" id="1" x="0" y="0"/>
+                    <get-val-60-5 comment="false" id="2" x="0" y="0"/>
+                    <get-val-60-2 comment="false" id="3" x="0" y="0"/>
+                    <get-val-60-3 comment="false" id="4" x="0" y="0"/>
+                </drawfill-rect>
+                <set-color comment="false" x="26" y="144">
+                    <color id="0" vid="8"/>
+                </set-color>
+                <set-alpha comment="false" x="26" y="171">
+                    <int id="0" val="100"/>
+                </set-alpha>
+                <drawfill-circle comment="false" x="26" y="191">
+                    <int id="0" val="1"/>
+                    <get-val-60-9 comment="false" id="1" x="0" y="0"/>
+                    <get-val-60-10 comment="false" id="2" x="0" y="0"/>
+                    <get-val-60-11 comment="false" id="3" x="0" y="0"/>
+                </drawfill-circle>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

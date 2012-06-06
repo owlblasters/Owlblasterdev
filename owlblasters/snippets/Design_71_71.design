@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1">
+                <comment-short comment="false" x="26" y="113">
+                    <int id="0" val="CheckTimer"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="133">
+                    <group id="-1">
+                        <repeat comment="false" x="37" y="158">
+                            <group id="-1">
+                                <if comment="false" x="48" y="198">
+                                    <group id="-1">
+                                        <comment-short comment="false" x="59" y="243">
+                                            <int id="0" val="Set dummy Ticks"/>
+                                        </comment-short>
+                                        <if comment="false" x="59" y="263">
+                                            <group id="-1">
+                                                <replace-list comment="false" x="70" y="303">
+                                                    <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                                    <custom-148 comment="false" id="1" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-71-33 comment="false" id="1" x="0" y="0"/>
+                                                    </custom-148>
+                                                    <create-list comment="false" id="2" x="0" y="0"/>
+                                                </replace-list>
+                                            </group>
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                                    <custom-148 comment="false" id="1" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-71-33 comment="false" id="1" x="0" y="0"/>
+                                                    </custom-148>
+                                                </get-item-text>
+                                                <int id="1" val="undefined"/>
+                                            </eq>
+                                        </if>
+                                        <set-val-71-46 comment="false" x="59" y="345">
+                                            <custom-180 comment="false" id="0" x="0" y="0">
+                                                <get-item comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                                    <custom-148 comment="false" id="1" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-71-33 comment="false" id="1" x="0" y="0"/>
+                                                    </custom-148>
+                                                </get-item>
+                                            </custom-180>
+                                        </set-val-71-46>
+                                        <if comment="false" x="59" y="385">
+                                            <group id="-1">
+                                                <replace-list comment="false" x="70" y="420">
+                                                    <get-val-71-46 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    <int id="2" val="0"/>
+                                                </replace-list>
+                                            </group>
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-46 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-text>
+                                                <int id="1" val="undefined"/>
+                                            </eq>
+                                        </if>
+                                        <comment-short comment="false" x="59" y="457">
+                                            <int id="0" val="Increment ticks"/>
+                                        </comment-short>
+                                        <if comment="false" x="59" y="477">
+                                            <group id="-1">
+                                                <replace-list comment="false" x="70" y="522">
+                                                    <get-val-71-46 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                                            <get-val-71-46 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-number>
+                                                        <div comment="false" id="1" x="0" y="0">
+                                                            <stepsize comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="1000"/>
+                                                        </div>
+                                                    </plus>
+                                                </replace-list>
+                                            </group>
+                                            <lesseq comment="false" id="0" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-46 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <get-item-number comment="false" id="1" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <tostring comment="false" id="0" x="0" y="0">
+                                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        </tostring>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                            </lesseq>
+                                        </if>
+                                        <else comment="false" x="59" y="569">
+                                            <group id="-1">
+                                                <comment-short comment="false" x="70" y="589">
+                                                    <int id="0" val="Remove when ticks &amp;gt; time"/>
+                                                </comment-short>
+                                                <custom-108 comment="false" x="70" y="609">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    <get-item-text comment="false" id="2" x="0" y="0">
+                                                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                                        <custom-148 comment="false" id="1" x="0" y="0">
+                                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                            <get-val-71-33 comment="false" id="1" x="0" y="0"/>
+                                                        </custom-148>
+                                                    </get-item-text>
+                                                </custom-108>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <str-split comment="false" id="0" x="0" y="0">
+                                                <tostring comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                </tostring>
+                                                <int id="1" val=","/>
+                                            </str-split>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <int id="1" val="0"/>
+                                    </more>
+                                </if>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <str-split comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val=","/>
+                                </str-split>
+                            </length-list>
+                        </repeat>
+                    </group>
+                    <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <comment-short comment="false" x="26" y="699">
+                    <int id="0" val="Set total temporary modifiers"/>
+                </comment-short>
+                <set-val-71-45 comment="false" x="26" y="719">
+                    <int id="0" val="0"/>
+                </set-val-71-45>
+                <for-each comment="false" x="26" y="739">
+                    <group id="-1">
+                        <repeat comment="false" x="37" y="764">
+                            <group id="-1">
+                                <if comment="false" x="48" y="804">
+                                    <group id="-1">
+                                        <replace-list comment="false" x="59" y="844">
+                                            <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-71-45 comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                                                    <get-val-71-45 comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <get-item-number comment="false" id="1" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <tostring comment="false" id="0" x="0" y="0">
+                                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        </tostring>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <eq comment="false" id="0" x="0" y="0">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-71-45 comment="false" id="1" x="0" y="0"/>
+                                            </get-item-text>
+                                            <int id="1" val="undefined"/>
+                                        </eq>
+                                    </not>
+                                </if>
+                                <else comment="false" x="48" y="901">
+                                    <group id="-1">
+                                        <replace-list comment="false" x="59" y="921">
+                                            <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-71-45 comment="false" id="1" x="0" y="0"/>
+                                            <get-item-number comment="false" id="2" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <tostring comment="false" id="0" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    </tostring>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-number>
+                                        </replace-list>
+                                    </group>
+                                </else>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <str-split comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val=","/>
+                                </str-split>
+                            </length-list>
+                        </repeat>
+                        <incdec comment="false" x="37" y="985">
+                            <int id="0" val="45"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                    <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <comment-short comment="false" x="26" y="1024">
+                    <int id="0" val="Set total damage resistance"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="1044">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1074">
+                            <group id="-1">
+                                <replace-list comment="false" x="48" y="1114">
+                                    <get-val-71-42 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-71-23 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </plus>
+                                </replace-list>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                        <else comment="false" x="37" y="1161">
+                            <group id="-1">
+                                <replace-list comment="false" x="48" y="1181">
+                                    <get-val-71-42 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <get-item-number comment="false" id="2" x="0" y="0">
+                                        <get-val-71-23 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-number>
+                                </replace-list>
+                            </group>
+                        </else>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <clear-list comment="false" x="26" y="1235">
+                    <get-val-71-43 comment="false" id="0" x="0" y="0"/>
+                </clear-list>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="1288">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="1361">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receiver-7-110 comment="false" x="15" y="1434">
+            <group id="-1">
+                <repeat comment="false" x="26" y="1464">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1494">
+                            <group id="-1">
+                                <return comment="false" x="48" y="1529">
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <get-byobval-110-188-1 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <get-item-number comment="false" id="0" x="0" y="0">
+                                                <get-val-71-42 comment="false" id="0" x="0" y="0"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </get-item-number>
+                                            <int id="1" val="100"/>
+                                        </div>
+                                    </times>
+                                </return>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-byobval-110-188-2 comment="false" id="0" x="0" y="0"/>
+                                <get-item-text comment="false" id="1" x="0" y="0">
+                                    <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                </get-item-text>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <return comment="false" x="26" y="1593">
+                    <get-byobval-110-188-1 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <int id="0" val=""/>
+            <get-byobval-110-188-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-110-188-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-7-110>
+    </group>
+    <group id="5">
+        <receiver-11-110 comment="false" x="15" y="1646">
+            <group id="-1">
+                <repeat comment="false" x="26" y="1676">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1706">
+                            <group id="-1">
+                                <return comment="false" x="48" y="1741">
+                                    <get-item-number comment="false" id="0" x="0" y="0">
+                                        <get-val-71-42 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-number>
+                                </return>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-byobval-110-194-1 comment="false" id="0" x="0" y="0"/>
+                                <get-item-text comment="false" id="1" x="0" y="0">
+                                    <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                </get-item-text>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <return comment="false" x="26" y="1795">
+                    <int id="0" val="100"/>
+                </return>
+            </group>
+            <get-byobval-110-194-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-110-194-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-11-110>
+    </group>
+    <group id="6">
+        <receiver-12-110 comment="false" x="15" y="1843">
+            <group id="-1">
+                <if comment="false" x="26" y="1873">
+                    <group id="-1">
+                        <repeat comment="false" x="37" y="1903">
+                            <group id="-1">
+                                <if comment="false" x="48" y="1933">
+                                    <group id="-1">
+                                        <if comment="false" x="59" y="1968">
+                                            <group id="-1">
+                                                <replace-list comment="false" x="70" y="2008">
+                                                    <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    <create-list comment="false" id="2" x="0" y="0"/>
+                                                </replace-list>
+                                            </group>
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <tostring comment="false" id="0" x="0" y="0">
+                                                    <get-item comment="false" id="0" x="0" y="0">
+                                                        <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item>
+                                                </tostring>
+                                                <int id="1" val="undefined"/>
+                                            </eq>
+                                        </if>
+                                        <set-val-71-44 comment="false" x="59" y="2045">
+                                            <custom-180 comment="false" id="0" x="0" y="0">
+                                                <get-item comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item>
+                                            </custom-180>
+                                        </set-val-71-44>
+                                        <replace-list comment="false" x="59" y="2080">
+                                            <get-val-71-44 comment="false" id="0" x="0" y="0"/>
+                                            <get-byobval-110-210-3 comment="false" id="1" x="0" y="0"/>
+                                            <get-byobval-110-210-1 comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                        <replace-list comment="false" x="59" y="2105">
+                                            <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <create-list comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                        <replace-list comment="false" x="59" y="2130">
+                                            <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <get-val-71-44 comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                            <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-text>
+                                        <get-byobval-110-210-2 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                        </repeat>
+                    </group>
+                    <contains-item comment="false" id="0" x="0" y="0">
+                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                        <get-byobval-110-210-2 comment="false" id="1" x="0" y="0"/>
+                    </contains-item>
+                </if>
+                <else comment="false" x="26" y="2191">
+                    <group id="-1">
+                        <add-list comment="false" x="37" y="2211">
+                            <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-110-210-2 comment="false" id="1" x="0" y="0"/>
+                        </add-list>
+                        <add-list comment="false" x="37" y="2236">
+                            <get-val-71-23 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="100"/>
+                        </add-list>
+                        <repeat comment="false" x="37" y="2261">
+                            <group id="-1">
+                                <if comment="false" x="48" y="2291">
+                                    <group id="-1">
+                                        <replace-list comment="false" x="59" y="2326">
+                                            <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <create-list comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                        <set-val-71-44 comment="false" x="59" y="2351">
+                                            <custom-180 comment="false" id="0" x="0" y="0">
+                                                <get-item comment="false" id="0" x="0" y="0">
+                                                    <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item>
+                                            </custom-180>
+                                        </set-val-71-44>
+                                        <add-list comment="false" x="59" y="2386">
+                                            <get-val-71-44 comment="false" id="0" x="0" y="0"/>
+                                            <get-byobval-110-210-1 comment="false" id="1" x="0" y="0"/>
+                                        </add-list>
+                                        <replace-list comment="false" x="59" y="2411">
+                                            <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <create-list comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                        <replace-list comment="false" x="59" y="2436">
+                                            <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <get-val-71-44 comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-byobval-110-210-2 comment="false" id="0" x="0" y="0"/>
+                                        <get-item-text comment="false" id="1" x="0" y="0">
+                                            <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-text>
+                                    </eq>
+                                </if>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                        </repeat>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-110-210-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-110-210-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-110-210-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-110-210-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-12-110>
+    </group>
+    <group id="7">
+        <receiver-13-110 comment="false" x="15" y="2525">
+            <group id="-1">
+                <repeat comment="false" x="26" y="2555">
+                    <group id="-1">
+                        <if comment="false" x="37" y="2585">
+                            <group id="-1">
+                                <comment-short comment="false" x="48" y="2620">
+                                    <int id="0" val="Timer"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="2640">
+                                    <group id="-1">
+                                        <replace-list comment="false" x="59" y="2675">
+                                            <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <create-list comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                            <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-text>
+                                        <int id="1" val="undefined"/>
+                                    </eq>
+                                </if>
+                                <set-val-71-44 comment="false" x="48" y="2712">
+                                    <custom-180 comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item>
+                                    </custom-180>
+                                </set-val-71-44>
+                                <replace-list comment="false" x="48" y="2747">
+                                    <get-val-71-44 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-110-211-3 comment="false" id="1" x="0" y="0"/>
+                                    <get-byobval-110-211-1 comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                                <replace-list comment="false" x="48" y="2772">
+                                    <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <create-list comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                                <replace-list comment="false" x="48" y="2797">
+                                    <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <get-val-71-44 comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                                <comment-short comment="false" x="48" y="2822">
+                                    <int id="0" val="Reset Ticks"/>
+                                </comment-short>
+                                <if comment="false" x="48" y="2842">
+                                    <group id="-1">
+                                        <replace-list comment="false" x="59" y="2877">
+                                            <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <create-list comment="false" id="2" x="0" y="0"/>
+                                        </replace-list>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                            <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-text>
+                                        <int id="1" val="undefined"/>
+                                    </eq>
+                                </if>
+                                <set-val-71-44 comment="false" x="48" y="2914">
+                                    <custom-180 comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item>
+                                    </custom-180>
+                                </set-val-71-44>
+                                <replace-list comment="false" x="48" y="2949">
+                                    <get-val-71-44 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-110-211-3 comment="false" id="1" x="0" y="0"/>
+                                    <int id="2" val="0"/>
+                                </replace-list>
+                                <replace-list comment="false" x="48" y="2974">
+                                    <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <create-list comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                                <replace-list comment="false" x="48" y="2999">
+                                    <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <get-val-71-44 comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-byobval-110-211-2 comment="false" id="0" x="0" y="0"/>
+                                <get-item-text comment="false" id="1" x="0" y="0">
+                                    <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                </get-item-text>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+            </group>
+            <get-byobval-110-211-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-110-211-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-110-211-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-110-211-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-13-110>
+    </group>
+    <group id="8">
+        <receiver-14-110 comment="false" x="15" y="3076">
+            <group id="-1">
+                <repeat comment="false" x="26" y="3106">
+                    <group id="-1">
+                        <if comment="false" x="37" y="3136">
+                            <group id="-1">
+                                <comment-short comment="false" x="48" y="3171">
+                                    <int id="0" val="Modifier"/>
+                                </comment-short>
+                                <set-val-71-49 comment="false" x="48" y="3191">
+                                    <custom-180 comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item>
+                                    </custom-180>
+                                </set-val-71-49>
+                                <remove-index comment="false" x="48" y="3226">
+                                    <get-val-71-49 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-110-212-1 comment="false" id="1" x="0" y="0"/>
+                                </remove-index>
+                                <replace-list comment="false" x="48" y="3251">
+                                    <get-val-71-37 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <get-val-71-49 comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                                <comment-short comment="false" x="48" y="3276">
+                                    <int id="0" val="Timer"/>
+                                </comment-short>
+                                <set-val-71-48 comment="false" x="48" y="3296">
+                                    <custom-180 comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item>
+                                    </custom-180>
+                                </set-val-71-48>
+                                <remove-index comment="false" x="48" y="3331">
+                                    <get-val-71-48 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-110-212-1 comment="false" id="1" x="0" y="0"/>
+                                </remove-index>
+                                <replace-list comment="false" x="48" y="3356">
+                                    <get-val-71-33 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <get-val-71-48 comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                                <comment-short comment="false" x="48" y="3381">
+                                    <int id="0" val="Ticks"/>
+                                </comment-short>
+                                <set-val-71-47 comment="false" x="48" y="3401">
+                                    <custom-180 comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item>
+                                    </custom-180>
+                                </set-val-71-47>
+                                <remove-index comment="false" x="48" y="3436">
+                                    <get-val-71-47 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-110-212-1 comment="false" id="1" x="0" y="0"/>
+                                </remove-index>
+                                <replace-list comment="false" x="48" y="3461">
+                                    <get-val-71-34 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                    <get-val-71-47 comment="false" id="2" x="0" y="0"/>
+                                </replace-list>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-byobval-110-212-2 comment="false" id="0" x="0" y="0"/>
+                                <get-item-text comment="false" id="1" x="0" y="0">
+                                    <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                </get-item-text>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-71-22 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+            </group>
+            <get-byobval-110-212-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-110-212-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-110-212-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-14-110>
+    </group>
+    <group id="-1"/>
+</groups>

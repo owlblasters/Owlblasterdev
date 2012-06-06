@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<set-val-32-3 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-32-3>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="93">
+<group id="-1">
+<if comment="false" x="26" y="118">
+<group id="-1">
+<set-val-32-2 comment="false" x="37" y="171">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-32-2>
+<dolater comment="false" x="37" y="196">
+<group id="-1">
+<if comment="false" x="48" y="221">
+<group id="-1">
+<if comment="false" x="59" y="254">
+<group id="-1">
+<create-recycled-actor comment="false" x="70" y="292">
+<ACTORTYPE eid="472" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<getxc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<int id="1" val="-24"/>
+</plus>
+<plus comment="false" id="2" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<int id="1" val="28"/>
+</plus>
+<int id="3" val="2"/>
+</create-recycled-actor>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="59" y="349">
+<group id="-1">
+<create-recycled-actor comment="false" x="70" y="369">
+<ACTORTYPE eid="472" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<getxc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<int id="1" val="14"/>
+</plus>
+<plus comment="false" id="2" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<int id="1" val="28"/>
+</plus>
+<int id="3" val="2"/>
+</create-recycled-actor>
+</group>
+</else>
+<setdy comment="false" x="59" y="426">
+<ACTOR eid="lastcreated" id="0"/>
+<randint comment="false" id="1" x="0" y="0">
+<int id="0" val="-15"/>
+<int id="1" val="-20"/>
+</randint>
+</setdy>
+<set-val-32-2 comment="false" x="59" y="458">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-32-2>
+</group>
+<isalive comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isalive>
+</if>
+</group>
+<get-val-32-1 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<and comment="false" id="0" x="0" y="0">
+<and comment="false" id="0" x="0" y="0">
+<not comment="false" id="0" x="0" y="0">
+<get-val-32-2 comment="false" id="0" x="0" y="0"/>
+</not>
+<get-val-32-3 comment="false" id="1" x="0" y="0"/>
+</and>
+<more comment="false" id="1" x="0" y="0">
+<abs comment="false" id="0" x="0" y="0">
+<getdx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdx>
+</abs>
+<int id="1" val="1"/>
+</more>
+</and>
+<as-boolean comment="false" id="1" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</and>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="537">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="610">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="683">
+<group id="-1">
+<set-val-32-3 comment="false" x="26" y="708">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-32-3>
+</group>
+<int id="0" val="Trace"/>
+</receive-message>
+</group>
+<group id="5">
+<receive-message comment="false" x="15" y="761">
+<group id="-1">
+<set-val-32-3 comment="false" x="26" y="786">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-32-3>
+</group>
+<int id="0" val="StopTrace"/>
+</receive-message>
+</group>
+<group id="6">
+<as-boolean comment="false" x="556" y="631">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</group>
+<group id="7"/>
+<group id="8"/>
+<group id="9">
+<as-boolean comment="false" x="389" y="749">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="On Ground?"/>
+</actor-get-prop>
+</as-boolean>
+</group>
+<group id="-1"/>
+</groups>

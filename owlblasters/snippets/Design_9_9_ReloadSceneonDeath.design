@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="234">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="307">
+<group id="-1">
+<dolater comment="false" x="26" y="332">
+<group id="-1">
+<scene-reload comment="false" x="37" y="357">
+<int id="0" val="0"/>
+<get-val-9-2 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="1"/>
+<get-val-9-3 comment="false" id="3" x="0" y="0"/>
+</scene-reload>
+</group>
+<get-val-9-1 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<int id="0" val="healthDepleted"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

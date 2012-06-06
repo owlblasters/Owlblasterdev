@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <say-this comment="false" x="26" y="40">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <comment-short comment="false" x="26" y="60">
+                    <int id="0" val="Strength"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="80">
+                    <int id="0" val="Temporary Strength Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="100">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="130">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="170">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="205">
+                                            <get-val-76-31 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-31 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-31 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-30 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="252">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="272">
+                                            <get-val-76-30 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="297">
+                                            <get-val-76-31 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="322">
+                                            <get-val-76-29 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-30 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-30 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="383">
+                    <int id="0" val="Add all temporary strength modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="403">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="428">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="468">
+                                    <int id="0" val="28"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-29 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-2 comment="false" x="26" y="529">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-val-76-3 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                        </get-item-number>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-76-4 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-28 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </plus>
+                </set-val-76-2>
+                <if comment="false" x="26" y="564">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-2 comment="false" x="37" y="594">
+                            <get-val-76-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-2>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-60 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="631">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-2 comment="false" x="37" y="661">
+                            <int id="0" val="0"/>
+                        </set-val-76-2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-28 comment="false" x="26" y="693">
+                    <int id="0" val="0"/>
+                </set-val-76-28>
+                <comment-short comment="false" x="26" y="713">
+                    <int id="0" val="Vitality"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="733">
+                    <int id="0" val="Temporary Vitality Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="753">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="783">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="823">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="858">
+                                            <get-val-76-38 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-38 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-38 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="905">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="925">
+                                            <get-val-76-37 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="950">
+                                            <get-val-76-38 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="975">
+                                            <get-val-76-36 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-37 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-37 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="1036">
+                    <int id="0" val="Add all temporary vitality modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="1056">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="1081">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="1121">
+                                    <int id="0" val="35"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-36 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-7 comment="false" x="26" y="1182">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-val-76-9 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                        </get-item-number>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-76-8 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-35 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </plus>
+                </set-val-76-7>
+                <if comment="false" x="26" y="1217">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-7 comment="false" x="37" y="1247">
+                            <get-val-76-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-7>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-7 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-60 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="1284">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-7 comment="false" x="37" y="1314">
+                            <int id="0" val="0"/>
+                        </set-val-76-7>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-35 comment="false" x="26" y="1346">
+                    <int id="0" val="0"/>
+                </set-val-76-35>
+                <comment-short comment="false" x="26" y="1366">
+                    <int id="0" val="Inteligence"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="1386">
+                    <int id="0" val="Temporary Inteligence Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="1406">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="1436">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="1476">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="1511">
+                                            <get-val-76-42 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-42 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-42 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-41 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="1558">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="1578">
+                                            <get-val-76-41 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="1603">
+                                            <get-val-76-42 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="1628">
+                                            <get-val-76-40 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-41 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-41 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="1689">
+                    <int id="0" val="Add all temporary inteligence modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="1709">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="1734">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="1774">
+                                    <int id="0" val="39"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-40 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-10 comment="false" x="26" y="1835">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-val-76-12 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                        </get-item-number>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-76-11 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-39 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </plus>
+                </set-val-76-10>
+                <if comment="false" x="26" y="1870">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-10 comment="false" x="37" y="1900">
+                            <get-val-76-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-10>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-10 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-60 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="1937">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-10 comment="false" x="37" y="1967">
+                            <int id="0" val="0"/>
+                        </set-val-76-10>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-10 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-39 comment="false" x="26" y="1999">
+                    <int id="0" val="0"/>
+                </set-val-76-39>
+                <comment-short comment="false" x="26" y="2019">
+                    <int id="0" val="Wisdom"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="2039">
+                    <int id="0" val="Temporary Wisdom Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="2059">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="2089">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="2129">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="2164">
+                                            <get-val-76-46 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-46 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-46 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-45 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="2211">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="2231">
+                                            <get-val-76-45 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="2256">
+                                            <get-val-76-46 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="2281">
+                                            <get-val-76-44 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-45 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-45 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="2342">
+                    <int id="0" val="Add all temporary wisdom modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="2362">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="2387">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="2427">
+                                    <int id="0" val="43"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-44 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-13 comment="false" x="26" y="2488">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-val-76-15 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                        </get-item-number>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-76-14 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-43 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </plus>
+                </set-val-76-13>
+                <if comment="false" x="26" y="2523">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-13 comment="false" x="37" y="2553">
+                            <get-val-76-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-13>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-13 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-60 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="2590">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-13 comment="false" x="37" y="2620">
+                            <int id="0" val="0"/>
+                        </set-val-76-13>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-13 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-43 comment="false" x="26" y="2652">
+                    <int id="0" val="0"/>
+                </set-val-76-43>
+                <comment-short comment="false" x="26" y="2672">
+                    <int id="0" val="Luck"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="2692">
+                    <int id="0" val="Temporary Luck Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="2712">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="2742">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="2782">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="2817">
+                                            <get-val-76-50 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-50 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-50 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-49 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="2864">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="2884">
+                                            <get-val-76-49 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="2909">
+                                            <get-val-76-50 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="2934">
+                                            <get-val-76-48 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-49 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-49 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="2995">
+                    <int id="0" val="Add all temporary strength modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="3015">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="3040">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="3080">
+                                    <int id="0" val="47"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-48 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-16 comment="false" x="26" y="3141">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-val-76-18 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                        </get-item-number>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-76-17 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-47 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </plus>
+                </set-val-76-16>
+                <if comment="false" x="26" y="3176">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-16 comment="false" x="37" y="3206">
+                            <get-val-76-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-16>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-16 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-60 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="3243">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-16 comment="false" x="37" y="3273">
+                            <int id="0" val="0"/>
+                        </set-val-76-16>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-16 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-47 comment="false" x="26" y="3305">
+                    <int id="0" val="0"/>
+                </set-val-76-47>
+                <comment-short comment="false" x="26" y="3325">
+                    <int id="0" val="Health"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="3345">
+                    <int id="0" val="Temporary Health Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="3365">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="3395">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="3435">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="3470">
+                                            <get-val-76-54 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-54 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-54 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-55 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="3517">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="3537">
+                                            <get-val-76-55 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="3562">
+                                            <get-val-76-54 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="3587">
+                                            <get-val-76-52 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-55 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-55 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="3648">
+                    <int id="0" val="Add all temporary health modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="3668">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="3693">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="3733">
+                                    <int id="0" val="51"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-52 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-19 comment="false" x="26" y="3794">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-val-76-21 comment="false" id="0" x="0" y="0"/>
+                                <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                            </get-item-number>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-76-20 comment="false" id="0" x="0" y="0"/>
+                                <get-val-76-51 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </plus>
+                    </roundnew>
+                </set-val-76-19>
+                <if comment="false" x="26" y="3842">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-19 comment="false" x="37" y="3872">
+                            <get-val-76-61 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-19>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-19 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-61 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="3909">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-19 comment="false" x="37" y="3939">
+                            <int id="0" val="0"/>
+                        </set-val-76-19>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-19 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-51 comment="false" x="26" y="3971">
+                    <int id="0" val="0"/>
+                </set-val-76-51>
+                <comment-short comment="false" x="26" y="3991">
+                    <int id="0" val="Energy"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="4011">
+                    <int id="0" val="Temporary Energy Timers"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="4031">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="4061">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="4101">
+                                    <group eventID="-1" id="-1">
+                                        <replace-list comment="false" x="59" y="4136">
+                                            <get-val-76-59 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-item-number comment="false" id="0" x="0" y="0">
+                                                    <get-val-76-59 comment="false" id="0" x="0" y="0"/>
+                                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                                </get-item-number>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </plus>
+                                        </replace-list>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <get-val-76-59 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                        <get-item-number comment="false" id="1" x="0" y="0">
+                                            <get-val-76-58 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item-number>
+                                    </lesseq>
+                                </if>
+                                <else comment="false" x="48" y="4183">
+                                    <group eventID="-1" id="-1">
+                                        <remove-index comment="false" x="59" y="4203">
+                                            <get-val-76-58 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="4228">
+                                            <get-val-76-59 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                        <remove-index comment="false" x="59" y="4253">
+                                            <get-val-76-57 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </remove-index>
+                                    </group>
+                                </else>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                        <get-val-76-58 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-76-58 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="4314">
+                    <int id="0" val="Add all temporary energy modifiers"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="4334">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="4359">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="4399">
+                                    <int id="0" val="56"/>
+                                    <int id="1" val="0"/>
+                                    <as-number comment="false" id="2" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                    <int id="1" val="undefined"/>
+                                </eq>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-76-57 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-76-22 comment="false" x="26" y="4460">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-val-76-24 comment="false" id="0" x="0" y="0"/>
+                                <get-val-76-1 comment="false" id="1" x="0" y="0"/>
+                            </get-item-number>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-76-23 comment="false" id="0" x="0" y="0"/>
+                                <get-val-76-56 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </plus>
+                    </roundnew>
+                </set-val-76-22>
+                <if comment="false" x="26" y="4508">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-22 comment="false" x="37" y="4538">
+                            <get-val-76-62 comment="false" id="0" x="0" y="0"/>
+                        </set-val-76-22>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-76-22 comment="false" id="0" x="0" y="0"/>
+                        <get-val-76-62 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="4575">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-22 comment="false" x="37" y="4605">
+                            <int id="0" val="0"/>
+                        </set-val-76-22>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-76-22 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <set-val-76-56 comment="false" x="26" y="4637">
+                    <int id="0" val="0"/>
+                </set-val-76-56>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-76-1 comment="false" x="37" y="73">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Experience"/>
+                                    <int id="2" val="_CurrentLevel"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-76-1>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Experience"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="70">
+                            <int id="0" val="4"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Strength"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="114">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="144">
+                            <int id="0" val="8"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Vitality"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="188">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="218">
+                            <int id="0" val="11"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inteligence"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="262">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="292">
+                            <int id="0" val="14"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Wisdom"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="336">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="366">
+                            <int id="0" val="17"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Luck"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="410">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="440">
+                            <int id="0" val="20"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="484">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="514">
+                            <int id="0" val="23"/>
+                            <int id="1" val="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Energy"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="AddBonus"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-1-117 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="45">
+                    <get-byobval-76-155-0 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Character Status"/>
+                    <int id="2" val="_Statustoincrease"/>
+                    <get-byobval-76-155-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="77">
+                    <get-byobval-76-155-0 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Character Status"/>
+                    <int id="2" val="_BonusToAdd"/>
+                    <get-byobval-76-155-2 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <say comment="false" x="26" y="109">
+                    <get-byobval-76-155-0 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Character Status"/>
+                    <int id="2" val="AddBonus"/>
+                </say>
+            </group>
+            <get-byobval-76-155-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-76-155-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-76-155-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-1-117>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-3-119 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="83">
+                            <get-byobval-76-174-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_Statustoincrease"/>
+                            <get-byobval-76-174-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="115">
+                            <get-byobval-76-174-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_BonusToAdd"/>
+                            <get-byobval-76-174-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="147">
+                            <get-byobval-76-174-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_Index"/>
+                            <get-byobval-76-174-3 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="179">
+                            <get-byobval-76-174-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="AddModifier"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-76-174-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Character Status"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-76-174-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-76-174-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-76-174-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-76-174-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-3-119>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="70">
+                            <get-val-76-29 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Strength"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="107">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="137">
+                            <get-val-76-36 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Vitality"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="174">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="204">
+                            <get-val-76-40 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inteligence"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="241">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="271">
+                            <get-val-76-44 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Wisdom"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="308">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="338">
+                            <get-val-76-48 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Luck"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="375">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="405">
+                            <get-val-76-52 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="442">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="472">
+                            <get-val-76-57 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-32 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Energy"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="AddModifier"/>
+        </receive-message>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="70">
+                            <get-val-76-30 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="95">
+                            <get-val-76-31 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Strength"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="132">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="162">
+                            <get-val-76-37 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="187">
+                            <get-val-76-38 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Vitality"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="224">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="254">
+                            <get-val-76-41 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="279">
+                            <get-val-76-42 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inteligence"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="316">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="346">
+                            <get-val-76-45 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="371">
+                            <get-val-76-46 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Wisdom"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="408">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="438">
+                            <get-val-76-49 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="463">
+                            <get-val-76-50 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Luck"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="500">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="530">
+                            <get-val-76-55 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="555">
+                            <get-val-76-54 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="592">
+                    <group eventID="-1" id="-1">
+                        <replace-list comment="false" x="37" y="622">
+                            <get-val-76-58 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <get-val-76-5 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                        <replace-list comment="false" x="37" y="647">
+                            <get-val-76-59 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-34 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </replace-list>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Energy"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="AddTimer"/>
+        </receive-message>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-4-118 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="83">
+                            <get-byobval-76-175-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_Statustoincrease"/>
+                            <get-byobval-76-175-3 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="115">
+                            <get-byobval-76-175-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_BonusToAdd"/>
+                            <get-byobval-76-175-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="147">
+                            <get-byobval-76-175-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_TimeIndex"/>
+                            <get-byobval-76-175-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="179">
+                            <get-byobval-76-175-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="AddTimer"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-76-175-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Character Status"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-76-175-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-76-175-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-76-175-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-76-175-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-4-118>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="70">
+                            <get-val-76-30 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="95">
+                            <get-val-76-31 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="120">
+                            <get-val-76-29 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Strength"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="157">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="187">
+                            <get-val-76-37 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="212">
+                            <get-val-76-38 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="237">
+                            <get-val-76-36 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Vitality"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="274">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="304">
+                            <get-val-76-41 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="329">
+                            <get-val-76-42 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="354">
+                            <get-val-76-40 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inteligence"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="391">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="421">
+                            <get-val-76-45 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="446">
+                            <get-val-76-46 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="471">
+                            <get-val-76-44 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Wisdom"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="508">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="538">
+                            <get-val-76-49 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="563">
+                            <get-val-76-50 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="588">
+                            <get-val-76-48 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Luck"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="625">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="655">
+                            <get-val-76-55 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="680">
+                            <get-val-76-54 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="705">
+                            <get-val-76-52 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="742">
+                    <group eventID="-1" id="-1">
+                        <remove-index comment="false" x="37" y="772">
+                            <get-val-76-58 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="797">
+                            <get-val-76-59 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="822">
+                            <get-val-76-57 comment="false" id="0" x="0" y="0"/>
+                            <get-val-76-33 comment="false" id="1" x="0" y="0"/>
+                        </remove-index>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-76-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Energy"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="RemoveModifier"/>
+        </receive-message>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <receiver-5-120 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="83">
+                            <get-byobval-76-176-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_Statustoincrease"/>
+                            <get-byobval-76-176-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="115">
+                            <get-byobval-76-176-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="_RemoveIndex"/>
+                            <get-byobval-76-176-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="147">
+                            <get-byobval-76-176-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Character Status"/>
+                            <int id="2" val="RemoveModifier"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-76-176-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Character Status"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-76-176-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-76-176-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-76-176-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-5-120>
+    </group>
+    <group eventID="10" id="-1"/>
+</groups>

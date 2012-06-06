@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <actors-of-type3 comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-62-3 comment="false" x="37" y="72">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </set-val-62-3>
+                    </group>
+                    <get-val-62-1 comment="false" id="0" x="0" y="0"/>
+                </actors-of-type3>
+                <comment-short comment="false" x="26" y="116">
+                    <int id="0" val="This is for identifying the actor that will have the Region on them"/>
+                </comment-short>
+                <set-val-62-6 comment="false" x="26" y="136">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-62-6>
+                <actors-of-type3 comment="false" x="26" y="161">
+                    <group eventID="-1" id="-1">
+                        <set-val-62-7 comment="false" x="37" y="193">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </set-val-62-7>
+                    </group>
+                    <get-val-62-2 comment="false" id="0" x="0" y="0"/>
+                </actors-of-type3>
+                <comment-short comment="false" x="26" y="237">
+                    <int id="0" val="This is to define the actor to follow."/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="257">
+                    <int id="0" val="at some point I need to combine the two above into one attribute."/>
+                </comment-short>
+                <create-region comment="false" x="26" y="277">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <get-val-62-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <get-val-62-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <get-val-62-11 comment="false" id="2" x="0" y="0"/>
+                    <get-val-62-10 comment="false" id="3" x="0" y="0"/>
+                </create-region>
+                <set-val-62-4 comment="false" x="26" y="315">
+                    <REGION eid="lastcreated" id="0"/>
+                </set-val-62-4>
+                <comment-short comment="false" x="26" y="342">
+                    <int id="0" val="This set&amp;#039;s the region aroud the Type to follow target, adjust the size to best fit your actor."/>
+                </comment-short>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <follow-region comment="false" x="26" y="40">
+                    <get-val-62-4 comment="false" id="0" x="0" y="0"/>
+                    <get-val-62-3 comment="false" id="1" x="0" y="0"/>
+                </follow-region>
+                <set-val-62-5 comment="false" x="26" y="72">
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-62-6 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </set-val-62-5>
+                <comment-short comment="false" x="26" y="102">
+                    <int id="0" val="Makes the &amp;quot;DetectRange&amp;quot; Region Attribute Follow the actor in the &amp;quot;Target&amp;quot; actor attribute."/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="122">
+                    <int id="0" val="Which should be the player."/>
+                </comment-short>
+                <set-val-62-8 comment="false" x="26" y="142">
+                    <atan2 comment="false" id="0" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <get-val-62-7 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </minus>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <get-val-62-7 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                        </minus>
+                    </atan2>
+                </set-val-62-8>
+                <if comment="false" x="26" y="190">
+                    <group eventID="-1" id="-1">
+                        <set-val-62-5 comment="false" x="37" y="228">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-62-5>
+                    </group>
+                    <is-in-region comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <get-val-62-4 comment="false" id="1" x="0" y="0"/>
+                    </is-in-region>
+                </if>
+                <if comment="false" x="26" y="265">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="298">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="323">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="371">
+                                            <int id="0" val="Left/West"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="391">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-62-9 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="428">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-5"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="5"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="467">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="515">
+                                            <int id="0" val="Upper Left/Northwest"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="535">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-62-9 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="572">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-62-9 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="6"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="89"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="621">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="669">
+                                            <int id="0" val="Up/North"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="689">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="716">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-62-9 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="90"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="95"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="765">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="813">
+                                            <int id="0" val="Upper Right/Northeast"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="833">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="865">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-62-9 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="96"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="175"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="914">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="962">
+                                            <int id="0" val="Right/East"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="982">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="1014">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="176"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="180"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="1053">
+                                    <group eventID="-1" id="-1">
+                                        <comment-long comment="false" x="59" y="1101">
+                                            <int id="0" val="This is a second Right/East one because at this point it becomes -179 to 0 on the lower half circle.&#10;also note that these numbers are backwards because a -50 has more value than a -70. being"/>
+                                        </comment-long>
+                                        <comment-short comment="false" x="59" y="1181">
+                                            <int id="0" val="Below 0 and all."/>
+                                        </comment-short>
+                                        <comment-short comment="false" x="59" y="1201">
+                                            <int id="0" val="Right/East"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="1221">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="1253">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-179"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-170"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="1292">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="1340">
+                                            <int id="0" val="Lower Right/Southeast"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="1360">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="1392">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-169"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-96"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="1436">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="1484">
+                                            <int id="0" val="Down/South"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="1504">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="1531">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-95"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-87"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <if comment="false" x="48" y="1575">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="1623">
+                                            <int id="0" val="Lower Left/Southwest"/>
+                                        </comment-short>
+                                        <set-dxy comment="false" x="59" y="1643">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-62-9 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="1680">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <get-val-62-9 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <moreeq comment="false" id="0" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-86"/>
+                                        </moreeq>
+                                        <lesseq comment="false" id="1" x="0" y="0">
+                                            <to-degreesradians comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <get-val-62-8 comment="false" id="1" x="0" y="0"/>
+                                            </to-degreesradians>
+                                            <int id="1" val="-6"/>
+                                        </lesseq>
+                                    </and>
+                                </if>
+                                <set-val-62-6 comment="false" x="48" y="1724">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-62-6>
+                            </group>
+                            <get-val-62-5 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="3"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="1773">
+                    <group eventID="-1" id="-1">
+                        <set-dxy comment="false" x="37" y="1803">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="1830">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <comment-long comment="false" x="37" y="1857">
+                            <int id="0" val="Stops once it is within range of the Target Actor&amp;#039;s region."/>
+                        </comment-long>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-62-5 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

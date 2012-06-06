@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1"/>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="161">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="234">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receive-message comment="false" x="15" y="307">
+            <group id="-1">
+                <if comment="false" x="26" y="332">
+                    <group id="-1">
+                        <stop comment="false" x="37" y="372"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-44-14 comment="false" id="0" x="0" y="0"/>
+                        <moreeq comment="false" id="1" x="0" y="0">
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                            <get-val-44-15 comment="false" id="1" x="0" y="0"/>
+                        </moreeq>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="404">
+                    <group id="-1">
+                        <replace-list comment="false" x="37" y="434">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </get-item-number>
+                                <get-val-44-7 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </replace-list>
+                    </group>
+                    <contains-item comment="false" id="0" x="0" y="0">
+                        <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                        <get-val-44-4 comment="false" id="1" x="0" y="0"/>
+                    </contains-item>
+                </if>
+                <else comment="false" x="26" y="486">
+                    <group id="-1">
+                        <add-list comment="false" x="37" y="506">
+                            <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                            <get-val-44-4 comment="false" id="1" x="0" y="0"/>
+                        </add-list>
+                        <add-list comment="false" x="37" y="531">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <get-val-44-7 comment="false" id="1" x="0" y="0"/>
+                        </add-list>
+                    </group>
+                </else>
+                <comment-short comment="false" x="26" y="568">
+                    <int id="0" val="Check the maximum amount"/>
+                </comment-short>
+                <if comment="false" x="26" y="588">
+                    <group id="-1">
+                        <replace-list comment="false" x="37" y="628">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                            <get-item-number comment="false" id="2" x="0" y="0">
+                                <get-val-44-13 comment="false" id="0" x="0" y="0"/>
+                                <custom-70 comment="false" id="1" x="0" y="0">
+                                    <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-44-16 comment="false" id="1" x="0" y="0"/>
+                                </custom-70>
+                            </get-item-number>
+                        </replace-list>
+                        <stop comment="false" x="37" y="663"/>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                        </get-item-number>
+                        <get-item-number comment="false" id="1" x="0" y="0">
+                            <get-val-44-13 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-16 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                        </get-item-number>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="695">
+                    <group id="-1">
+                        <replace-list comment="false" x="37" y="740">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                            <get-val-44-12 comment="false" id="2" x="0" y="0"/>
+                        </replace-list>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-44-11 comment="false" id="0" x="0" y="0"/>
+                        <more comment="false" id="1" x="0" y="0">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                                <custom-70 comment="false" id="1" x="0" y="0">
+                                    <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                                </custom-70>
+                            </get-item-number>
+                            <get-val-44-12 comment="false" id="1" x="0" y="0"/>
+                        </more>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="AddItem"/>
+        </receive-message>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="810">
+            <group id="-1">
+                <if comment="false" x="26" y="835">
+                    <group id="-1">
+                        <replace-list comment="false" x="37" y="865">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </get-item-number>
+                                <get-val-44-7 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                        </replace-list>
+                        <if comment="false" x="37" y="905">
+                            <group id="-1">
+                                <remove-index comment="false" x="48" y="945">
+                                    <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </remove-index>
+                                <remove-index comment="false" x="48" y="975">
+                                    <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </remove-index>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                                    <custom-70 comment="false" id="1" x="0" y="0">
+                                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                                    </custom-70>
+                                </get-item-number>
+                                <int id="1" val="0"/>
+                            </lesseq>
+                        </if>
+                    </group>
+                    <contains-item comment="false" id="0" x="0" y="0">
+                        <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                        <get-val-44-4 comment="false" id="1" x="0" y="0"/>
+                    </contains-item>
+                </if>
+            </group>
+            <int id="0" val="RemoveItem"/>
+        </receive-message>
+    </group>
+    <group id="6">
+        <receive-message comment="false" x="15" y="1057">
+            <group id="-1">
+                <if comment="false" x="26" y="1082">
+                    <group id="-1">
+                        <remove-index comment="false" x="37" y="1112">
+                            <get-val-44-6 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                        </remove-index>
+                        <remove-index comment="false" x="37" y="1142">
+                            <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                            <custom-70 comment="false" id="1" x="0" y="0">
+                                <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-44-5 comment="false" id="1" x="0" y="0"/>
+                            </custom-70>
+                        </remove-index>
+                    </group>
+                    <contains-item comment="false" id="0" x="0" y="0">
+                        <get-val-44-5 comment="false" id="0" x="0" y="0"/>
+                        <get-val-44-4 comment="false" id="1" x="0" y="0"/>
+                    </contains-item>
+                </if>
+            </group>
+            <int id="0" val="EraseItem"/>
+        </receive-message>
+    </group>
+    <group id="7">
+        <receiver-35-74 comment="false" x="15" y="1212">
+            <group id="-1">
+                <if comment="false" x="26" y="1242">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="1280">
+                            <get-byobval-68-150-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="_ItemtoAdd"/>
+                            <get-byobval-68-150-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="1312">
+                            <get-byobval-68-150-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="_AmounttoAdd"/>
+                            <get-byobval-68-150-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="1344">
+                            <get-byobval-68-150-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="AddItem"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-150-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-68-150-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-150-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-68-150-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-35-74>
+    </group>
+    <group id="8">
+        <receiver-33-74 comment="false" x="15" y="1416">
+            <group id="-1">
+                <repeat comment="false" x="26" y="1446">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1476">
+                            <group id="-1">
+                                <return comment="false" x="48" y="1511">
+                                    <loopindex comment="false" id="0" x="0" y="0"/>
+                                </return>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-item comment="false" id="0" x="0" y="0">
+                                    <get-byobval-68-148-1 comment="false" id="0" x="0" y="0"/>
+                                    <loopindex comment="false" id="1" x="0" y="0"/>
+                                </get-item>
+                                <get-byobval-68-148-0 comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-148-1 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <return comment="false" x="26" y="1560">
+                    <int id="0" val="-1"/>
+                </return>
+            </group>
+            <get-byobval-68-148-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-148-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-33-74>
+    </group>
+    <group id="9">
+        <receiver-37-74 comment="false" x="15" y="1608">
+            <group id="-1">
+                <if comment="false" x="26" y="1638">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="1676">
+                            <get-byobval-68-152-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="_ItemtoAdd"/>
+                            <get-byobval-68-152-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="1708">
+                            <get-byobval-68-152-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="_AmounttoAdd"/>
+                            <get-byobval-68-152-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="1740">
+                            <get-byobval-68-152-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="RemoveItem"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-152-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-68-152-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-152-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-68-152-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-37-74>
+    </group>
+    <group id="10">
+        <receiver-36-74 comment="false" x="15" y="1812">
+            <group id="-1">
+                <if comment="false" x="26" y="1842">
+                    <group id="-1">
+                        <if comment="false" x="37" y="1880">
+                            <group id="-1">
+                                <return comment="false" x="48" y="1928">
+                                    <get-item-number comment="false" id="0" x="0" y="0">
+                                        <custom-73 comment="false" id="0" x="0" y="0">
+                                            <get-attribute comment="false" id="0" x="0" y="0">
+                                                <get-byobval-68-151-0 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Inventory"/>
+                                                <int id="2" val="_AmountList"/>
+                                            </get-attribute>
+                                        </custom-73>
+                                        <custom-70 comment="false" id="1" x="0" y="0">
+                                            <get-byobval-68-151-1 comment="false" id="0" x="0" y="0"/>
+                                            <custom-73 comment="false" id="1" x="0" y="0">
+                                                <get-attribute comment="false" id="0" x="0" y="0">
+                                                    <get-byobval-68-151-0 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="Inventory"/>
+                                                    <int id="2" val="_Inventory"/>
+                                                </get-attribute>
+                                            </custom-73>
+                                        </custom-70>
+                                    </get-item-number>
+                                </return>
+                            </group>
+                            <contains-item comment="false" id="0" x="0" y="0">
+                                <custom-73 comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <get-byobval-68-151-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Inventory"/>
+                                        <int id="2" val="_Inventory"/>
+                                    </get-attribute>
+                                </custom-73>
+                                <get-byobval-68-151-1 comment="false" id="1" x="0" y="0"/>
+                            </contains-item>
+                        </if>
+                        <else comment="false" x="37" y="1993">
+                            <group id="-1">
+                                <return comment="false" x="48" y="2013">
+                                    <int id="0" val="0"/>
+                                </return>
+                            </group>
+                        </else>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-151-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="2057">
+                    <group id="-1">
+                        <return comment="false" x="37" y="2077">
+                            <int id="0" val="0"/>
+                        </return>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-68-151-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-151-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-36-74>
+    </group>
+    <group id="11">
+        <receiver-39-74 comment="false" x="15" y="2137">
+            <group id="-1">
+                <if comment="false" x="26" y="2167">
+                    <group id="-1">
+                        <if comment="false" x="37" y="2205">
+                            <group id="-1">
+                                <return comment="false" x="48" y="2273">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </return>
+                            </group>
+                            <or comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-item-number comment="false" id="0" x="0" y="0">
+                                        <custom-73 comment="false" id="0" x="0" y="0">
+                                            <get-attribute comment="false" id="0" x="0" y="0">
+                                                <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Inventory"/>
+                                                <int id="2" val="_AmountList"/>
+                                            </get-attribute>
+                                        </custom-73>
+                                        <custom-70 comment="false" id="1" x="0" y="0">
+                                            <get-byobval-68-154-1 comment="false" id="0" x="0" y="0"/>
+                                            <custom-73 comment="false" id="1" x="0" y="0">
+                                                <get-attribute comment="false" id="0" x="0" y="0">
+                                                    <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="Inventory"/>
+                                                    <int id="2" val="_Inventory"/>
+                                                </get-attribute>
+                                            </custom-73>
+                                        </custom-70>
+                                    </get-item-number>
+                                    <get-item-number comment="false" id="1" x="0" y="0">
+                                        <custom-73 comment="false" id="0" x="0" y="0">
+                                            <get-attribute comment="false" id="0" x="0" y="0">
+                                                <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Inventory"/>
+                                                <int id="2" val="_MaximumAmountList"/>
+                                            </get-attribute>
+                                        </custom-73>
+                                        <custom-70 comment="false" id="1" x="0" y="0">
+                                            <get-byobval-68-154-1 comment="false" id="0" x="0" y="0"/>
+                                            <custom-73 comment="false" id="1" x="0" y="0">
+                                                <get-attribute comment="false" id="0" x="0" y="0">
+                                                    <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="Inventory"/>
+                                                    <int id="2" val="_ItemName"/>
+                                                </get-attribute>
+                                            </custom-73>
+                                        </custom-70>
+                                    </get-item-number>
+                                </eq>
+                                <and comment="false" id="1" x="0" y="0">
+                                    <as-boolean comment="false" id="0" x="0" y="0">
+                                        <get-attribute comment="false" id="0" x="0" y="0">
+                                            <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="Inventory"/>
+                                            <int id="2" val="_LimitAmountofItems"/>
+                                        </get-attribute>
+                                    </as-boolean>
+                                    <eq comment="false" id="1" x="0" y="0">
+                                        <get-item-number comment="false" id="0" x="0" y="0">
+                                            <custom-73 comment="false" id="0" x="0" y="0">
+                                                <get-attribute comment="false" id="0" x="0" y="0">
+                                                    <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="Inventory"/>
+                                                    <int id="2" val="_AmountList"/>
+                                                </get-attribute>
+                                            </custom-73>
+                                            <custom-70 comment="false" id="1" x="0" y="0">
+                                                <get-byobval-68-154-1 comment="false" id="0" x="0" y="0"/>
+                                                <custom-73 comment="false" id="1" x="0" y="0">
+                                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                                        <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="Inventory"/>
+                                                        <int id="2" val="_Inventory"/>
+                                                    </get-attribute>
+                                                </custom-73>
+                                            </custom-70>
+                                        </get-item-number>
+                                        <as-number comment="false" id="1" x="0" y="0">
+                                            <get-attribute comment="false" id="0" x="0" y="0">
+                                                <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Inventory"/>
+                                                <int id="2" val="_MaximumAmount"/>
+                                            </get-attribute>
+                                        </as-number>
+                                    </eq>
+                                </and>
+                            </or>
+                        </if>
+                        <else comment="false" x="37" y="2310">
+                            <group id="-1">
+                                <return comment="false" x="48" y="2330">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </return>
+                            </group>
+                        </else>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="2379">
+                    <group id="-1">
+                        <return comment="false" x="37" y="2399">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </return>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-68-154-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-154-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-39-74>
+    </group>
+    <group id="12">
+        <receiver-38-74 comment="false" x="15" y="2464">
+            <group id="-1">
+                <if comment="false" x="26" y="2494">
+                    <group id="-1">
+                        <set-attribute comment="false" x="37" y="2532">
+                            <get-byobval-68-153-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="_ItemtoAdd"/>
+                            <get-byobval-68-153-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="2564">
+                            <get-byobval-68-153-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Inventory"/>
+                            <int id="2" val="EraseItem"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-153-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-68-153-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-153-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-38-74>
+    </group>
+    <group id="13">
+        <receiver-40-74 comment="false" x="15" y="2636">
+            <group id="-1">
+                <custom-code comment="false" x="26" y="2666">
+                    <int id="0" val="return __Value as Array;"/>
+                </custom-code>
+            </group>
+            <get-byobval-68-180-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-40-74>
+    </group>
+    <group id="14">
+        <receiver-41-74 comment="false" x="15" y="2714">
+            <group id="-1">
+                <if comment="false" x="26" y="2744">
+                    <group id="-1">
+                        <return comment="false" x="37" y="2782">
+                            <get-item-text comment="false" id="0" x="0" y="0">
+                                <custom-73 comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <get-byobval-68-192-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Inventory"/>
+                                        <int id="2" val="_Inventory"/>
+                                    </get-attribute>
+                                </custom-73>
+                                <get-byobval-68-192-1 comment="false" id="1" x="0" y="0"/>
+                            </get-item-text>
+                        </return>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-192-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="2842">
+                    <group id="-1">
+                        <return comment="false" x="37" y="2862">
+                            <int id="0" val="null"/>
+                        </return>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-68-192-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-68-192-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-41-74>
+    </group>
+    <group id="15">
+        <receiver-43-74 comment="false" x="15" y="2922">
+            <group id="-1">
+                <if comment="false" x="26" y="2952">
+                    <group id="-1">
+                        <if comment="false" x="37" y="2990">
+                            <group id="-1">
+                                <return comment="false" x="48" y="3048">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </return>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <as-boolean comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <get-byobval-68-197-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Inventory"/>
+                                        <int id="2" val="_LimitInventorySlots"/>
+                                    </get-attribute>
+                                </as-boolean>
+                                <moreeq comment="false" id="1" x="0" y="0">
+                                    <length-list comment="false" id="0" x="0" y="0">
+                                        <custom-73 comment="false" id="0" x="0" y="0">
+                                            <get-attribute comment="false" id="0" x="0" y="0">
+                                                <get-byobval-68-197-0 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Inventory"/>
+                                                <int id="2" val="_Inventory"/>
+                                            </get-attribute>
+                                        </custom-73>
+                                    </length-list>
+                                    <as-number comment="false" id="1" x="0" y="0">
+                                        <get-attribute comment="false" id="0" x="0" y="0">
+                                            <get-byobval-68-197-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="Inventory"/>
+                                            <int id="2" val="_MaximumSlots"/>
+                                        </get-attribute>
+                                    </as-number>
+                                </moreeq>
+                            </and>
+                        </if>
+                        <else comment="false" x="37" y="3085">
+                            <group id="-1">
+                                <return comment="false" x="48" y="3105">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </return>
+                            </group>
+                        </else>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-68-197-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Inventory"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="3154">
+                    <group id="-1">
+                        <return comment="false" x="37" y="3174">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </return>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-68-197-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-43-74>
+    </group>
+    <group id="-1"/>
+</groups>
