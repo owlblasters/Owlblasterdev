@@ -30,8 +30,8 @@
             <r id="69"/>
             <r id="70"/>
             <r id="65"/>
-            <r id="82"/>
             <r id="67"/>
+            <r id="82"/>
             <r id="73"/>
             <r id="60"/>
         </group>
@@ -44,9 +44,9 @@
             <r id="9"/>
             <r id="27"/>
             <r id="72"/>
-            <r id="74"/>
-            <r id="14"/>
             <r id="31"/>
+            <r id="14"/>
+            <r id="74"/>
         </group>
         <group desc="" id="5" name="Eye Candy" type="snippet">
             <r id="32"/>
@@ -82,11 +82,11 @@
         <group desc="" id="4" name="Projectiles"/>
     </groups>
     <cgroups>
-        <cgroup g1="1" g2="0"/>
         <cgroup g1="1" g2="3"/>
+        <cgroup g1="1" g2="0"/>
         <cgroup g1="4" g2="3"/>
-        <cgroup g1="0" g2="3"/>
         <cgroup g1="3" g2="3"/>
+        <cgroup g1="3" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
