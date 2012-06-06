@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<draw comment="false" x="15" y="234">
+<group id="-1"/>
+</draw>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-short comment="false" x="26" y="40">
+<int id="0" val="Damage is specified by an attribute, which the Health snippet asks for."/>
+</comment-short>
+</group>
+</init>
+</group>
+<group id="3">
+<collide comment="false" x="15" y="161">
+<group id="-1"/>
+</collide>
+</group>
+<group id="-1"/>
+</groups>

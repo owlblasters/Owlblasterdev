@@ -196,6 +196,8 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_32" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" language="" name="ActorEvents_32" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="3.0" desc="Amount of health to start with." dropdown="" fullname="Starting Health" hidden="false" id="1" name="_StartingHealth" order="0"/>
+        <number default="3.0" desc="Maximum amount of health." dropdown="" fullname="Maximum Health" hidden="false" id="2" name="_MaximumHealth" order="1"/>
         <blocks/>
         <events/>
     </snippet>
@@ -214,8 +216,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="46" id="1"/>
         </blocks>
@@ -236,8 +238,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="45" id="1"/>
         </blocks>
@@ -421,8 +423,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="63" id="1"/>
         </blocks>
@@ -452,8 +454,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -571,8 +573,8 @@
         <number default="0.0" desc="- Put the X position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what X position?" hidden="false" id="12" name="_XTeleport" order="10"/>
         <number default="0.0" desc="- Put the Y position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what Y position?" hidden="false" id="13" name="_YTeleport" order="11"/>
         <boolean default="false" desc="- If the object hit the sides it will be slowed down completely (0 speed) &#10;*If you choosed number 2 or 3." dropdown="" fullname="When the object hit the sides of screen, slow down its speed to 0?" hidden="false" id="14" name="_SlowDown0" order="12"/>
-        <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
         <blocks>
             <receiver blockID="482" id="1"/>
             <ureceiver blockID="0" id="2"/>
@@ -615,8 +617,8 @@
         <actortype default="87" desc="" dropdown="" fullname="Display Type" hidden="false" id="12" name="_DisplayType" order="14"/>
         <font default="" desc="" dropdown="" fullname="Recover Energy Font" hidden="false" id="13" name="_RecoverEnergyFont" order="18"/>
         <number default="0" desc="" dropdown="" fullname="Recover Display X Offset" hidden="false" id="14" name="_RecoverDisplayXOffset" order="15"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Recover Display Y Offset" hidden="false" id="15" name="_RecoverDisplayYOffset" order="16"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="Y Offset of the energy recover display based on the Display Type actor's position." dropdown="" fullname="Message Y Offset" hidden="false" id="16" name="_MessageYOffset" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Display Energy%" hidden="true" id="19" name="_DisplayEnergy" order="19"/>
         <number default="0" desc="Time required for the display to slide from the current energy to the new amount after spending or recovering energy." dropdown="" fullname="Energy Display Slide Time" hidden="false" id="18" name="_EnergyDisplaySlideTime" order="7"/>
@@ -643,8 +645,8 @@
         <number default="0" desc="Width of the Gauge" dropdown="" fullname="Gauge Width" hidden="false" id="12" name="_GaugeWidth" order="15"/>
         <font default="" desc="Font of the text." dropdown="" fullname="Font" hidden="false" id="13" name="_Font" order="18"/>
         <number default="0" desc="Radius of the sphere." dropdown="" fullname="Sphere Radius" hidden="false" id="14" name="_SphereRadius" order="16"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <color default="" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="13"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <color default="255,255,0,255" desc="Color to use if the current health is less than 50%." dropdown="" fullname="Color if &lt; 50%" hidden="false" id="17" name="_Colorif50" order="10"/>
         <number default="0" desc="Ammount of stroke effect, in pixels." dropdown="" fullname="Stroke" hidden="false" id="16" name="_Stroke" order="17"/>
         <color default="0,255,0,255" desc="Color to use if the current health is greater than 50%." dropdown="" fullname="Color if &gt; 50%" hidden="false" id="19" name="_Colorif502" order="9"/>
@@ -666,8 +668,8 @@
         <number default="0" desc="Width of the Gauge" dropdown="" fullname="Gauge Width" hidden="false" id="12" name="_GaugeWidth" order="12"/>
         <font default="" desc="Font of the text." dropdown="" fullname="Font" hidden="false" id="13" name="_Font" order="15"/>
         <number default="0" desc="Radius of the sphere." dropdown="" fullname="Sphere Radius" hidden="false" id="14" name="_SphereRadius" order="13"/>
-        <color default="0,0,0,255" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="10"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <color default="0,0,0,255" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="10"/>
         <number default="0" desc="Ammount of stroke effect, in pixels." dropdown="" fullname="Stroke" hidden="false" id="16" name="_Stroke" order="14"/>
         <blocks/>
         <events/>
@@ -728,8 +730,8 @@
         <number default="0.0" desc="Maximum amount of items." dropdown="" fullname="Maximum Amount" hidden="false" id="12" name="_MaximumAmount" order="8"/>
         <list default="list" desc="This list holds specific maximum amounts for different items. This independs if the &quot;Limit Amount of Items?&quot; attribute is checked or not, and this list also has priority over the &quot;Maximum Amount&quot; attribute." dropdown="" fullname="Maximum Amount List" hidden="false" id="13" name="_MaximumAmountList" order="10"/>
         <boolean default="false" desc="If checked, the actor will only be able to carry a certain number of item types." dropdown="" fullname="Limit Inventory Slots?" hidden="false" id="14" name="_LimitInventorySlots" order="5"/>
-        <number default="0.0" desc="Maximum amount of slots for item types in the inventory." dropdown="" fullname="Maximum Slots" hidden="false" id="15" name="_MaximumSlots" order="6"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" desc="Maximum amount of slots for item types in the inventory." dropdown="" fullname="Maximum Slots" hidden="false" id="15" name="_MaximumSlots" order="6"/>
         <blocks>
             <receiver blockID="103" id="1"/>
             <receiver blockID="104" id="2"/>
@@ -807,13 +809,13 @@
         </list>
         <number default="0" desc="" dropdown="" fullname="Wisdom" hidden="true" id="13" name="_Wisdom" order="29"/>
         <number default="0" desc="" dropdown="" fullname="Wisdom Bonus" hidden="true" id="14" name="_WisdomBonus" order="30"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <list default="list" desc="Used for magic defense.&lt;br&gt;&lt;br&gt;&#10;&#10;Index 0 isn't used, because the minimum level is 1. The index represent the current level.&lt;br&gt;&lt;br&gt;&#10;Example:&lt;br&gt;&#10;Current Level = 1; Wisdom will be index 1 of the list." dropdown="" fullname="Wisdom Progression" hidden="false" id="15" name="_WisdomProgression" order="31">
             <number order="0" value="1.0"/>
             <number order="1" value="2.0"/>
             <number order="2" value="3.0"/>
             <number order="3" value="4.0"/>
         </list>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Luck Bonus" hidden="true" id="17" name="_LuckBonus" order="37"/>
         <number default="0" desc="" dropdown="" fullname="Luck" hidden="true" id="16" name="_Luck" order="36"/>
         <number default="0.0" desc="" dropdown="" fullname="Health" hidden="true" id="19" name="_Health" order="43"/>
@@ -963,8 +965,8 @@
         <actortype default="" desc="" dropdown="" fullname="Type" hidden="true" id="12" name="_Type" order="8"/>
         <text default="" desc="" dropdown="" fullname="Name" hidden="true" id="13" name="_Name" order="7"/>
         <list default="list" desc="" dropdown="" fullname="Status to Add List" hidden="true" id="14" name="_StatustoAddList" order="16"/>
-        <number default="0.0" desc="The index of the attribute modifier, for weapons that have this parameter.&lt;br&gt;&lt;br&gt; Modifications for attributes that uses the same index are overwritten, that's why you need different indexes if you want to stack different modifiers for the attributes." dropdown="" fullname="Attribute Modifier Index" hidden="false" id="15" name="_AttributeModifierIndex" order="17"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" desc="The index of the attribute modifier, for weapons that have this parameter.&lt;br&gt;&lt;br&gt; Modifications for attributes that uses the same index are overwritten, that's why you need different indexes if you want to stack different modifiers for the attributes." dropdown="" fullname="Attribute Modifier Index" hidden="false" id="15" name="_AttributeModifierIndex" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Weapon Critical Rate Bonus" hidden="true" id="17" name="_WeaponCriticalRateBonus" order="10"/>
         <text default="" desc="" dropdown="" fullname="Attribute" hidden="true" id="16" name="_Attribute" order="9"/>
         <blocks/>
@@ -985,8 +987,8 @@
         <number default="0" desc="" dropdown="" fullname="Minimum Attack" hidden="true" id="12" name="_MinimumAttack" order="13"/>
         <number default="0" desc="" dropdown="" fullname="Maximum Attack" hidden="true" id="13" name="_MaximumAttack" order="14"/>
         <number default="0" desc="" dropdown="" fullname="Armor" hidden="true" id="14" name="_Armor" order="15"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Magic Armor" hidden="true" id="15" name="_MagicArmor" order="16"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Maximum Value" hidden="true" id="17" name="_MaximumValue" order="1"/>
         <number default="0" desc="" dropdown="" fullname="Critical Rate" hidden="true" id="16" name="_CriticalRate" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Weapon Critical Rate Bonus" hidden="true" id="18" name="_WeaponCriticalRateBonus" order="18"/>
@@ -1041,8 +1043,8 @@
         <number default="0.0" desc="Width of the Gauge" dropdown="" fullname="Gauge Width" hidden="false" id="12" name="_GaugeWidth" order="14"/>
         <font default="" desc="Font of the text." dropdown="" fullname="Font" hidden="false" id="13" name="_Font" order="17"/>
         <number default="0" desc="Radius of the sphere." dropdown="" fullname="Sphere Radius" hidden="false" id="14" name="_SphereRadius" order="15"/>
-        <color default="0,0,0,255" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="12"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <color default="0,0,0,255" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="12"/>
         <list default="list" desc="" dropdown="" fullname="Required EXP" hidden="true" id="17" name="_RequiredEXP" order="2"/>
         <number default="0" desc="Ammount of stroke effect, in pixels." dropdown="" fullname="Stroke" hidden="false" id="16" name="_Stroke" order="16"/>
         <number default="0" desc="" dropdown="" fullname="EXP%" hidden="true" id="19" name="_EXP" order="18"/>
@@ -1098,8 +1100,8 @@
         <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_75_75_SaveStatus" desc="This behavior will automaticaly save a list of actor attributes when the scene is in transition, and load these attributes when the actor is created.&lt;br&gt;&#10;&lt;br&gt;&#10;If the actor has the behavior Health, the attributes will only be saved if the Current Health is greater than 0." description="This behavior will automaticaly save a list of actor attributes when the scene is in transition, and load these attributes when the actor is created.&lt;br&gt;&#10;&lt;br&gt;&#10;If the actor has the behavior Health, the attributes will only be saved if the Current Health is greater than 0." design="true" drawOrder="0" id="75" language="" name="Save Status" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <text default="" desc="" dropdown="" fullname="Dummy Behavior" hidden="true" id="16" name="_DummyBehavior" order="10"/>
         <game-attribute default="" desc="A Game Attribute of the type List to hold all the actor attributes you want to save." dropdown="" fullname="Character Information List" hidden="false" id="1" name="_CharacterInformationList" order="2"/>
+        <text default="" desc="" dropdown="" fullname="Dummy Behavior" hidden="true" id="16" name="_DummyBehavior" order="10"/>
         <list default="list" desc="" dropdown="" fullname="Character Information" hidden="true" id="2" name="_CharacterInformation" order="3"/>
         <boolean default="false" desc="" dropdown="" fullname="Initialized" hidden="true" id="9" name="_Initialized" order="1"/>
         <boolean default="false" desc="" dropdown="" fullname="Loaded" hidden="true" id="10" name="_Loaded" order="4"/>
@@ -1149,8 +1151,8 @@
             <text order="19" value="Inventory"/>
         </list>
         <list default="list" desc="" dropdown="" fullname="Dummy List" hidden="true" id="14" name="_DummyList" order="8"/>
-        <text default="" desc="" dropdown="" fullname="Dummy Attribute" hidden="true" id="15" name="_DummyAttribute" order="9"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <text default="" desc="" dropdown="" fullname="Dummy Attribute" hidden="true" id="15" name="_DummyAttribute" order="9"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
@@ -1198,12 +1200,12 @@
         <boolean default="false" desc="If checked, will create an actor that will act as an icon." dropdown="" fullname="Display Status?" hidden="false" id="53" name="_DisplayStatus" order="7"/>
         <number default="0" desc="" dropdown="" fullname="Index" hidden="true" id="59" name="_Index" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Total Resistance" hidden="true" id="58" name="_TotalResistance" order="16"/>
-        <boolean default="false" desc="If true, the actor will start with this status." dropdown="" fullname="Inflicted Status" hidden="false" id="27" name="_InflictedStatus" order="3"/>
         <number default="0" desc="" dropdown="" fullname="Total Modifier" hidden="true" id="57" name="_TotalModifier" order="15"/>
+        <boolean default="false" desc="If true, the actor will start with this status." dropdown="" fullname="Inflicted Status" hidden="false" id="27" name="_InflictedStatus" order="3"/>
         <list default="list" desc="" dropdown="" fullname="Temporary Ticks" hidden="true" id="56" name="_TemporaryTicks" order="14"/>
         <boolean default="false" desc="" dropdown="" fullname="Handle Status" hidden="true" id="29" name="_HandleStatus" order="6"/>
-        <text default="" desc="" dropdown="" fullname="Stop Status Message" hidden="true" id="62" name="_StopStatusMessage" order="19"/>
         <number default="0.0" desc="Duration of the status." dropdown="" fullname="Status Duration" hidden="false" id="28" name="_StatusDuration" order="5"/>
+        <text default="" desc="" dropdown="" fullname="Stop Status Message" hidden="true" id="62" name="_StopStatusMessage" order="19"/>
         <text default="" desc="Name of the status condition. The commands to inflict and stop the status condition will be:&lt;br&gt;&#10;[Status Condition Name]: inflict status.&#10;Stop[Status Condition Name: stop status.&lt;br&gt;&lt;br&gt;&#10;Example:&lt;br&gt;&#10;Paralyze&lt;br&gt;&#10;StopParalyze" dropdown="" fullname="Status Condition Name" hidden="false" id="61" name="_StatusConditionName" order="2"/>
         <number default="0" desc="" dropdown="" fullname="Modifier" hidden="true" id="60" name="_Modifier" order="18"/>
         <blocks/>

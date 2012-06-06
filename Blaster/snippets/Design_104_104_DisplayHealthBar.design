@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1">
+                <set-val-104-11 comment="false" x="26" y="113">
+                    <div comment="false" id="0" x="0" y="0">
+                        <custom-148 comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-148>
+                        <custom-147 comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-147>
+                    </div>
+                </set-val-104-11>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="179">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="252">
+            <group id="-1">
+                <if comment="false" x="26" y="277">
+                    <group id="-1">
+                        <to-screen-space comment="false" x="37" y="307"/>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-104-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Screen"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="339">
+                    <int id="0" val="Draw the health bar background and outline"/>
+                </comment-short>
+                <if comment="false" x="26" y="359">
+                    <group id="-1">
+                        <set-color comment="false" x="37" y="389">
+                            <color id="0" vid="13"/>
+                        </set-color>
+                        <drawfill-rect comment="false" x="37" y="416">
+                            <int id="0" val="1"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-val-104-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-104-14 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-val-104-5 comment="false" id="0" x="0" y="0"/>
+                                <get-val-104-14 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <plus comment="false" id="3" x="0" y="0">
+                                <get-val-104-2 comment="false" id="0" x="0" y="0"/>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <get-val-104-14 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </times>
+                            </plus>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <get-val-104-3 comment="false" id="0" x="0" y="0"/>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <get-val-104-14 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </times>
+                            </plus>
+                        </drawfill-rect>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-104-14 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <set-color comment="false" x="26" y="470">
+                    <color id="0" vid="12"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="497">
+                    <int id="0" val="1"/>
+                    <get-val-104-4 comment="false" id="1" x="0" y="0"/>
+                    <get-val-104-5 comment="false" id="2" x="0" y="0"/>
+                    <get-val-104-2 comment="false" id="3" x="0" y="0"/>
+                    <get-val-104-3 comment="false" id="4" x="0" y="0"/>
+                </drawfill-rect>
+                <if comment="false" x="26" y="529">
+                    <group id="-1">
+                        <set-color comment="false" x="37" y="559">
+                            <color id="0" vid="7"/>
+                        </set-color>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-104-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.75"/>
+                    </more>
+                </if>
+                <else-if comment="false" x="26" y="598">
+                    <group id="-1">
+                        <set-color comment="false" x="37" y="628">
+                            <color id="0" vid="8"/>
+                        </set-color>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-104-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.50"/>
+                    </more>
+                </else-if>
+                <else-if comment="false" x="26" y="667">
+                    <group id="-1">
+                        <set-color comment="false" x="37" y="697">
+                            <color id="0" vid="9"/>
+                        </set-color>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-104-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.25"/>
+                    </more>
+                </else-if>
+                <else comment="false" x="26" y="736">
+                    <group id="-1">
+                        <set-color comment="false" x="37" y="756">
+                            <color id="0" vid="10"/>
+                        </set-color>
+                    </group>
+                </else>
+                <comment-short comment="false" x="26" y="795">
+                    <int id="0" val="Draw the current amount of health"/>
+                </comment-short>
+                <if comment="false" x="26" y="815">
+                    <group id="-1">
+                        <drawfill-rect comment="false" x="37" y="845">
+                            <int id="0" val="1"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-104-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-val-104-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                            <minus comment="false" id="3" x="0" y="0">
+                                <roundnew comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <times comment="false" id="1" x="0" y="0">
+                                        <get-val-104-2 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-104-11 comment="false" id="1" x="0" y="0"/>
+                                    </times>
+                                </roundnew>
+                                <int id="1" val="2"/>
+                            </minus>
+                            <minus comment="false" id="4" x="0" y="0">
+                                <get-val-104-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </minus>
+                        </drawfill-rect>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-104-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Horizontal"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="912">
+                    <group id="-1">
+                        <drawfill-rect comment="false" x="37" y="932">
+                            <int id="0" val="1"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-104-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <get-val-104-5 comment="false" id="0" x="0" y="0"/>
+                                    <roundnew comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-104-3 comment="false" id="0" x="0" y="0"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <get-val-104-11 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                        </times>
+                                    </roundnew>
+                                </plus>
+                                <int id="1" val="1"/>
+                            </plus>
+                            <minus comment="false" id="3" x="0" y="0">
+                                <get-val-104-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </minus>
+                            <minus comment="false" id="4" x="0" y="0">
+                                <roundnew comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <times comment="false" id="1" x="0" y="0">
+                                        <get-val-104-3 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-104-11 comment="false" id="1" x="0" y="0"/>
+                                    </times>
+                                </roundnew>
+                                <int id="1" val="2"/>
+                            </minus>
+                        </drawfill-rect>
+                    </group>
+                </else>
+            </group>
+        </draw>
+    </group>
+    <group id="-1"/>
+</groups>

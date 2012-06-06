@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group id="0">
+        <init comment="false" x="15" y="15">
+            <group id="-1"/>
+        </init>
+    </group>
+    <group id="1">
+        <step comment="false" x="15" y="88">
+            <group id="-1">
+                <if comment="false" x="26" y="113">
+                    <group id="-1">
+                        <clear-filter comment="false" x="37" y="143">
+                            <ACTOR eid="this" id="0"/>
+                        </clear-filter>
+                        <set-val-102-3 comment="false" x="37" y="170">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-102-3>
+                        <set-val-102-2 comment="false" x="37" y="195">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-102-2>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-102-3 comment="false" id="0" x="0" y="0"/>
+                        <get-val-102-2 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group id="2">
+        <collide comment="false" x="15" y="260">
+            <group id="-1"/>
+        </collide>
+    </group>
+    <group id="3">
+        <draw comment="false" x="15" y="333">
+            <group id="-1"/>
+        </draw>
+    </group>
+    <group id="4">
+        <receiver-1-144 comment="false" x="15" y="406">
+            <group id="-1">
+                <if comment="false" x="26" y="436">
+                    <group id="-1">
+                        <stop comment="false" x="37" y="461"/>
+                    </group>
+                    <get-val-102-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-val-102-3 comment="false" x="26" y="493">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-102-3>
+                <apply-filter comment="false" x="26" y="518">
+                    <ACTOR eid="this" id="0"/>
+                    <filter-negative comment="false" id="1" x="0" y="0"/>
+                </apply-filter>
+                <dolater comment="false" x="26" y="550">
+                    <group id="-1">
+                        <set-val-102-2 comment="false" x="37" y="575">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-102-2>
+                    </group>
+                    <get-val-102-1 comment="false" id="0" x="0" y="0"/>
+                </dolater>
+            </group>
+            <get-byobval-230-36-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-144>
+    </group>
+    <group id="5">
+        <receive-message comment="false" x="15" y="640">
+            <group id="-1">
+                <custom-144 comment="false" x="26" y="670">
+                    <ACTOR eid="this" id="0"/>
+                </custom-144>
+            </group>
+            <get-val-102-4 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group id="-1"/>
+</groups>

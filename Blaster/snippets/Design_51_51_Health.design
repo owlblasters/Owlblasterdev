@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-51-2 comment="false" x="26" y="40">
+                    <get-val-51-35 comment="false" id="0" x="0" y="0"/>
+                </set-val-51-2>
+                <set-val-51-27 comment="false" x="26" y="65">
+                    <int id="0" val="100"/>
+                </set-val-51-27>
+                <if comment="false" x="26" y="85">
+                    <group eventID="-1" id="-1">
+                        <create-actor3 comment="false" x="37" y="110">
+                            <get-val-51-6 comment="false" id="0" x="0" y="0"/>
+                            <get-val-51-9 comment="false" id="1" x="0" y="0"/>
+                            <get-val-51-10 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-51-7 comment="false" x="37" y="142">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-51-7>
+                        <anchor-screen comment="false" x="37" y="169">
+                            <ACTOR eid="var" id="0" vid="7"/>
+                        </anchor-screen>
+                    </group>
+                    <get-val-51-8 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <dolater comment="false" x="26" y="208">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-2 comment="false" x="37" y="250">
+                            <get-val-51-35 comment="false" id="0" x="0" y="0"/>
+                        </set-val-51-2>
+                    </group>
+                    <times comment="false" id="0" x="0" y="0">
+                        <int id="0" val="5.4"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <stepsize comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1000"/>
+                        </div>
+                    </times>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <say-this comment="false" x="26" y="40">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <set-val-51-5 comment="false" x="26" y="60">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <int id="0" val="100"/>
+                                <get-val-51-2 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                            <get-val-51-1 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </roundnew>
+                </set-val-51-5>
+                <set-val-51-30 comment="false" x="26" y="108">
+                    <roundnew comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <get-val-51-29 comment="false" id="0" x="0" y="0"/>
+                                <get-val-51-2 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                            <get-val-51-1 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </roundnew>
+                </set-val-51-30>
+                <tween-number comment="false" x="26" y="156">
+                    <int id="0" val="_DisplayHealth"/>
+                    <get-val-51-30 comment="false" id="1" x="0" y="0"/>
+                    <get-val-51-28 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="3"/>
+                </tween-number>
+                <if comment="false" x="26" y="188">
+                    <group eventID="-1" id="-1">
+                        <set-frame comment="false" x="37" y="231">
+                            <get-val-51-7 comment="false" id="0" x="0" y="0"/>
+                            <roundnew comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-51-27 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-frame>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="7"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <get-val-51-7 comment="false" id="0" x="0" y="0"/>
+                        </isalive>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="288">
+                    <int id="0" val="Set max/min health"/>
+                </comment-short>
+                <if comment="false" x="26" y="308">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-2 comment="false" x="37" y="338">
+                            <get-val-51-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-51-2>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-51-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-51-1 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="375">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-2 comment="false" x="37" y="405">
+                            <int id="0" val="0"/>
+                        </set-val-51-2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-51-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="-1" id="-1">
+                                <set-val-51-4 comment="false" x="48" y="103">
+                                    <custom-77 comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                                        <get-val-51-24 comment="false" id="2" x="0" y="0"/>
+                                    </custom-77>
+                                </set-val-51-4>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="Damage Type Modifier"/>
+                            </has-snippet>
+                        </if>
+                        <if comment="false" x="37" y="153">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="188">
+                                    <group eventID="-1" id="-1">
+                                        <custom-86 comment="false" x="59" y="218">
+                                            <ACTOR eid="this" id="0"/>
+                                            <abs comment="false" id="1" x="0" y="0">
+                                                <get-val-51-4 comment="false" id="0" x="0" y="0"/>
+                                            </abs>
+                                        </custom-86>
+                                        <stop comment="false" x="59" y="255"/>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-val-51-4 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </less>
+                                </if>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <get-val-51-32 comment="false" id="0" x="0" y="0"/>
+                                <contains-item comment="false" id="1" x="0" y="0">
+                                    <get-val-51-33 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-51-24 comment="false" id="1" x="0" y="0"/>
+                                </contains-item>
+                            </and>
+                        </if>
+                        <if comment="false" x="37" y="299">
+                            <group eventID="-1" id="-1">
+                                <set-val-51-4 comment="false" x="48" y="324">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-51-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-51-11 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </set-val-51-4>
+                            </group>
+                            <get-val-51-25 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="366">
+                            <group eventID="-1" id="-1">
+                                <set-val-51-4 comment="false" x="48" y="386">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-51-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-51-3 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </set-val-51-4>
+                            </group>
+                        </else>
+                        <if comment="false" x="37" y="428">
+                            <group eventID="-1" id="-1">
+                                <set-val-51-4 comment="false" x="48" y="458">
+                                    <get-val-51-31 comment="false" id="0" x="0" y="0"/>
+                                </set-val-51-4>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-51-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-51-31 comment="false" id="1" x="0" y="0"/>
+                            </less>
+                        </if>
+                        <if comment="false" x="37" y="495">
+                            <group eventID="-1" id="-1">
+                                <create-actor3 comment="false" x="48" y="520">
+                                    <get-val-51-12 comment="false" id="0" x="0" y="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-xy>
+                                        <get-val-51-20 comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <get-val-51-21 comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <if comment="false" x="48" y="565">
+                                    <group eventID="-1" id="-1">
+                                        <set-attribute comment="false" x="59" y="598">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="Display Float Message"/>
+                                            <int id="2" val="_Message"/>
+                                            <tostring comment="false" id="3" x="0" y="0">
+                                                <roundnew comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                                                </roundnew>
+                                            </tostring>
+                                        </set-attribute>
+                                        <if comment="false" x="59" y="648">
+                                            <group eventID="-1" id="-1">
+                                                <if comment="false" x="70" y="673">
+                                                    <group eventID="-1" id="-1">
+                                                        <set-attribute comment="false" x="81" y="706">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_FonttoUse"/>
+                                                            <get-val-51-18 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="738">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_XPosition"/>
+                                                            <neg comment="false" id="3" x="0" y="0">
+                                                                <div comment="false" id="0" x="0" y="0">
+                                                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                                        <get-val-51-18 comment="false" id="0" x="0" y="0"/>
+                                                                        <tostring comment="false" id="1" x="0" y="0">
+                                                                            <roundnew comment="false" id="0" x="0" y="0">
+                                                                                <int id="0" val="0"/>
+                                                                                <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                                                                            </roundnew>
+                                                                        </tostring>
+                                                                    </get-font-width2-new>
+                                                                    <int id="1" val="2"/>
+                                                                </div>
+                                                            </neg>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="811">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_YPosition"/>
+                                                            <get-val-51-26 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                    </group>
+                                                    <value comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="18"/>
+                                                        <int id="1" val="0"/>
+                                                    </value>
+                                                </if>
+                                            </group>
+                                            <get-val-51-34 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <else comment="false" x="59" y="867">
+                                            <group eventID="-1" id="-1">
+                                                <if comment="false" x="70" y="887">
+                                                    <group eventID="-1" id="-1">
+                                                        <set-attribute comment="false" x="81" y="920">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_FonttoUse"/>
+                                                            <get-val-51-17 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="952">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_XPosition"/>
+                                                            <neg comment="false" id="3" x="0" y="0">
+                                                                <div comment="false" id="0" x="0" y="0">
+                                                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                                        <get-val-51-17 comment="false" id="0" x="0" y="0"/>
+                                                                        <tostring comment="false" id="1" x="0" y="0">
+                                                                            <roundnew comment="false" id="0" x="0" y="0">
+                                                                                <int id="0" val="0"/>
+                                                                                <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                                                                            </roundnew>
+                                                                        </tostring>
+                                                                    </get-font-width2-new>
+                                                                    <int id="1" val="2"/>
+                                                                </div>
+                                                            </neg>
+                                                        </set-attribute>
+                                                        <set-attribute comment="false" x="81" y="1025">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                            <int id="1" val="Display Float Message"/>
+                                                            <int id="2" val="_YPosition"/>
+                                                            <get-val-51-26 comment="false" id="3" x="0" y="0"/>
+                                                        </set-attribute>
+                                                    </group>
+                                                    <value comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="17"/>
+                                                        <int id="1" val="0"/>
+                                                    </value>
+                                                </if>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <has-snippet comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="lastcreated" id="0"/>
+                                        <int id="1" val="Display Float Message"/>
+                                    </has-snippet>
+                                </if>
+                            </group>
+                            <get-val-51-15 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <incdec comment="false" x="37" y="1105">
+                            <int id="0" val="2"/>
+                            <int id="1" val="1"/>
+                            <get-val-51-4 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-51-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+            </group>
+            <int id="0" val="InflictDamage"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-4 comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                        </set-val-51-4>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-51-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="26" y="102">
+                    <group eventID="-1" id="-1">
+                        <create-actor3 comment="false" x="37" y="127">
+                            <get-val-51-12 comment="false" id="0" x="0" y="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-51-20 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-51-21 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <if comment="false" x="37" y="172">
+                            <group eventID="-1" id="-1">
+                                <set-attribute comment="false" x="48" y="205">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_Message"/>
+                                    <tostring comment="false" id="3" x="0" y="0">
+                                        <roundnew comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                                        </roundnew>
+                                    </tostring>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="255">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_FonttoUse"/>
+                                    <get-val-51-19 comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="287">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_XPosition"/>
+                                    <neg comment="false" id="3" x="0" y="0">
+                                        <div comment="false" id="0" x="0" y="0">
+                                            <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                                <get-val-51-19 comment="false" id="0" x="0" y="0"/>
+                                                <tostring comment="false" id="1" x="0" y="0">
+                                                    <roundnew comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                        <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                                                    </roundnew>
+                                                </tostring>
+                                            </get-font-width2-new>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </neg>
+                                </set-attribute>
+                                <set-attribute comment="false" x="48" y="360">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="Display Float Message"/>
+                                    <int id="2" val="_YPosition"/>
+                                    <get-val-51-26 comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="Display Float Message"/>
+                            </has-snippet>
+                        </if>
+                    </group>
+                    <get-val-51-15 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <incdec comment="false" x="26" y="416">
+                    <int id="0" val="2"/>
+                    <int id="1" val="0"/>
+                    <roundnew comment="false" id="2" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <get-val-51-4 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </incdec>
+            </group>
+            <int id="0" val="Heal"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-1 comment="false" x="37" y="73">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Character Status"/>
+                                    <int id="2" val="_Health"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-51-1>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Character Status"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="123">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-3 comment="false" x="37" y="156">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_Defense"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-51-3>
+                        <set-val-51-11 comment="false" x="37" y="194">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_MagicDefense"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-51-11>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Combat Statistics"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="244">
+                    <group eventID="-1" id="-1">
+                        <set-val-51-16 comment="false" x="37" y="277">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Damage Knockback"/>
+                                    <int id="2" val="_Stun"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-51-16>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Damage Knockback"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-51-2 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-val-51-2>
+            </group>
+            <int id="0" val="InstantKill"/>
+        </receive-message>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-51-2 comment="false" x="26" y="40">
+                    <get-val-51-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-51-2>
+            </group>
+            <int id="0" val="FullHeal"/>
+        </receive-message>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-8-86 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="83">
+                            <get-byobval-51-185-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_Damage"/>
+                            <get-byobval-51-185-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <say comment="false" x="37" y="115">
+                            <get-byobval-51-185-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="Heal"/>
+                        </say>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-51-185-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-51-185-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-51-185-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-8-86>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <receiver-10-85 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="83">
+                            <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_Damage"/>
+                            <get-byobval-51-204-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="115">
+                            <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_DamageType"/>
+                            <get-byobval-51-204-2 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="147">
+                            <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_MagicDamage"/>
+                            <get-byobval-51-204-3 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="179">
+                            <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Health"/>
+                            <int id="2" val="_CriticalHit"/>
+                            <get-byobval-51-204-4 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <if comment="false" x="37" y="211">
+                            <group eventID="-1" id="-1">
+                                <shout comment="false" x="48" y="236">
+                                    <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="InflictDamage"/>
+                                </shout>
+                            </group>
+                            <get-byobval-51-204-5 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="280">
+                            <group eventID="-1" id="-1">
+                                <say comment="false" x="48" y="300">
+                                    <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="Health"/>
+                                    <int id="2" val="InflictDamage"/>
+                                </say>
+                            </group>
+                        </else>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Health"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-51-204-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-51-204-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-51-204-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-51-204-3 comment="false" id="3" x="0" y="0"/>
+            <get-byobval-51-204-4 comment="false" id="4" x="0" y="0"/>
+            <get-byobval-51-204-5 comment="false" id="5" x="0" y="0"/>
+        </receiver-10-85>
+    </group>
+    <group eventID="9" id="-1"/>
+</groups>

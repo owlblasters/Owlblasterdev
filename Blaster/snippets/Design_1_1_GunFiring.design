@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-1-2 comment="false" x="37" y="78">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-1-2>
+                        <if comment="false" x="37" y="103">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="141">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="184">
+                                            <int id="0" val="Fire Weapon 0 Right"/>
+                                        </comment-short>
+                                        <create-actor3 comment="false" x="59" y="204">
+                                            <ACTORTYPE eid="435" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="96"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="12"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="249">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-1-4 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="Weapon"/>
+                                            </actor-get-prop>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </eq>
+                                </if>
+                                <else comment="false" x="48" y="293">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="313">
+                                            <int id="0" val="Fire Weapon 1 Right"/>
+                                        </comment-short>
+                                        <create-actor3 comment="false" x="59" y="333">
+                                            <ACTORTYPE eid="480" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="88"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="20"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="378">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-1-4 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="410">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="5"/>
+                                        </set-dxy>
+                                        <create-actor3 comment="false" x="59" y="437">
+                                            <ACTORTYPE eid="480" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="88"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="20"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="482">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-1-4 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <create-actor3 comment="false" x="59" y="514">
+                                            <ACTORTYPE eid="480" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="88"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="20"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="559">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-1-4 comment="false" id="2" x="0" y="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="591">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="-5"/>
+                                        </set-dxy>
+                                    </group>
+                                </else>
+                            </group>
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <actor-get-prop comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Facing Right?"/>
+                                </actor-get-prop>
+                            </as-boolean>
+                        </if>
+                        <else comment="false" x="37" y="642">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="662">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="705">
+                                            <int id="0" val="Fire Weapon 0 Left"/>
+                                        </comment-short>
+                                        <create-actor3 comment="false" x="59" y="725">
+                                            <ACTORTYPE eid="435" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="-8"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="12"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="770">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="Weapon"/>
+                                            </actor-get-prop>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </eq>
+                                </if>
+                                <else comment="false" x="48" y="819">
+                                    <group eventID="-1" id="-1">
+                                        <comment-short comment="false" x="59" y="839">
+                                            <int id="0" val="Fire Weapon 1 Left"/>
+                                        </comment-short>
+                                        <create-actor3 comment="false" x="59" y="859">
+                                            <ACTORTYPE eid="480" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="-8"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="20"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="904">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="941">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="5"/>
+                                        </set-dxy>
+                                        <create-actor3 comment="false" x="59" y="968">
+                                            <ACTORTYPE eid="480" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="-8"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="20"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="1013">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                        <create-actor3 comment="false" x="59" y="1050">
+                                            <ACTORTYPE eid="480" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <int id="1" val="-8"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <int id="1" val="20"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                        <set-dxy comment="false" x="59" y="1095">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <neg comment="false" id="2" x="0" y="0">
+                                                <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="1132">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="-5"/>
+                                        </set-dxy>
+                                    </group>
+                                </else>
+                            </group>
+                        </else>
+                        <play-sound4 comment="false" x="37" y="1183">
+                            <int id="0" val="0"/>
+                            <SOUND eid="var" id="1" vid="5"/>
+                        </play-sound4>
+                        <dolater comment="false" x="37" y="1210">
+                            <group eventID="-1" id="-1">
+                                <set-val-1-2 comment="false" x="48" y="1242">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-1-2>
+                            </group>
+                            <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <CONTROL eid="3" id="1"/>
+                        </keystate>
+                        <get-val-1-2 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="73">
+                            <group eventID="-1" id="-1">
+                                <set-val-1-1 comment="false" x="48" y="111">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-1-1>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Walking"/>
+                                    <int id="2" val="_InitiallyFacingRight"/>
+                                </get-attribute>
+                                <true comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="148">
+                            <group eventID="-1" id="-1">
+                                <set-val-1-1 comment="false" x="48" y="168">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-1-1>
+                            </group>
+                        </else>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Walking"/>
+                    </has-snippet>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

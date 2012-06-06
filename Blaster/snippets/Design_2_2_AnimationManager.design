@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<if comment="false" x="26" y="113">
+<group id="-1">
+<if comment="false" x="37" y="138">
+<group id="-1">
+<set-val-2-1 comment="false" x="48" y="176">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-2-1>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<is-anim comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</is-anim>
+</not>
+</if>
+<else comment="false" x="37" y="213">
+<group id="-1">
+<stop comment="false" x="48" y="233"/>
+</group>
+</else>
+</group>
+<get-val-2-1 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="277">
+<group id="-1">
+<if comment="false" x="37" y="310">
+<group id="-1">
+<setanim comment="false" x="48" y="348">
+<ACTOR eid="this" id="0"/>
+<get-val-2-3 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="37" y="392">
+<group id="-1">
+<setanim comment="false" x="48" y="412">
+<ACTOR eid="this" id="0"/>
+<get-val-2-4 comment="false" id="1" x="0" y="0"/>
+</setanim>
+</group>
+</else>
+<stop comment="false" x="37" y="456"/>
+</group>
+<hasnovalue comment="false" id="0" x="0" y="0">
+<int id="0" val="2"/>
+</hasnovalue>
+</if>
+<say-this comment="false" x="26" y="488">
+<int id="0" val="CheckCurrent"/>
+</say-this>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="484">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="557">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="630">
+<group id="-1">
+<if comment="false" x="26" y="655">
+<group id="-1">
+<if comment="false" x="37" y="685">
+<group id="-1">
+<clear comment="false" x="48" y="728">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Running?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Running"/>
+</eq>
+</if>
+<if comment="false" x="26" y="779">
+<group id="-1">
+<if comment="false" x="37" y="809">
+<group id="-1">
+<clear comment="false" x="48" y="852">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Jumping?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Jumping"/>
+</eq>
+</if>
+<if comment="false" x="26" y="903">
+<group id="-1">
+<if comment="false" x="37" y="933">
+<group id="-1">
+<clear comment="false" x="48" y="981">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Ducking?"/>
+</actor-get-prop>
+</as-boolean>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Ducking"/>
+</eq>
+</if>
+<if comment="false" x="26" y="1032">
+<group id="-1">
+<if comment="false" x="37" y="1062">
+<group id="-1">
+<clear comment="false" x="48" y="1105">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Climbing?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Climbing"/>
+</eq>
+</if>
+<if comment="false" x="26" y="1156">
+<group id="-1">
+<if comment="false" x="37" y="1186">
+<group id="-1">
+<clear comment="false" x="48" y="1229">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Sliding?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Wall Sliding"/>
+</eq>
+</if>
+<if comment="false" x="26" y="1280">
+<group id="-1">
+<if comment="false" x="37" y="1310">
+<group id="-1">
+<clear comment="false" x="48" y="1353">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Wall Jumping?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Wall Jumping"/>
+</eq>
+</if>
+<if comment="false" x="26" y="1404">
+<group id="-1">
+<if comment="false" x="37" y="1434">
+<group id="-1">
+<clear comment="false" x="48" y="1477">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Falling?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Falling"/>
+</eq>
+</if>
+<if comment="false" x="26" y="1528">
+<group id="-1">
+<if comment="false" x="37" y="1558">
+<group id="-1">
+<clear comment="false" x="48" y="1601">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Underwater?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Swimming"/>
+</eq>
+</if>
+<if comment="false" x="26" y="1652">
+<group id="-1">
+<if comment="false" x="37" y="1682">
+<group id="-1">
+<clear comment="false" x="48" y="1725">
+<int id="0" val="2"/>
+</clear>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Is Ground Pounding?"/>
+</actor-get-prop>
+</as-boolean>
+</not>
+</if>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-2-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="Ground Pounding"/>
+</eq>
+</if>
+</group>
+<int id="0" val="CheckCurrent"/>
+</receive-message>
+</group>
+<group id="5">
+<receiver-1-4 comment="false" x="15" y="1804">
+            <group id="-1">
+<setanim comment="false" x="26" y="1834">
+<ACTOR eid="this" id="0"/>
+<get-byobval-169-12-1 comment="false" id="1" x="0" y="0"/>
+</setanim>
+<set-val-2-1 comment="false" x="26" y="1866">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-2-1>
+</group>
+            <get-byobval-169-12-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-169-12-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-4>
+</group>
+<group id="6">
+<receiver-2-4 comment="false" x="15" y="1919">
+            <group id="-1">
+<if comment="false" x="26" y="1949">
+<group id="-1">
+<stop comment="false" x="37" y="1974"/>
+</group>
+<get-val-2-1 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="2006">
+<group id="-1">
+<set-val-2-2 comment="false" x="37" y="2039">
+                            <get-byobval-169-13-2 comment="false" id="0" x="0" y="0"/>
+                        </set-val-2-2>
+</group>
+<hasnovalue comment="false" id="0" x="0" y="0">
+<int id="0" val="2"/>
+</hasnovalue>
+</if>
+<set-val-2-6 comment="false" x="26" y="2076">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-6>
+<set-val-2-7 comment="false" x="26" y="2101">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-7>
+<for-each comment="false" x="26" y="2126">
+<group id="-1">
+<if comment="false" x="37" y="2151">
+<group id="-1">
+<set-val-2-7 comment="false" x="48" y="2181">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-2-7>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+<get-byobval-169-13-2 comment="false" id="1" x="0" y="0"/>
+</eq>
+</if>
+<if comment="false" x="37" y="2218">
+<group id="-1">
+<set-val-2-6 comment="false" x="48" y="2248">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-2-6>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<for-each-item comment="false" id="0" x="0" y="0"/>
+<get-val-2-2 comment="false" id="1" x="0" y="0"/>
+</eq>
+</if>
+<if comment="false" x="37" y="2285">
+<group id="-1">
+<stop comment="false" x="48" y="2320"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<get-val-2-6 comment="false" id="0" x="0" y="0"/>
+<not comment="false" id="1" x="0" y="0">
+<get-val-2-7 comment="false" id="0" x="0" y="0"/>
+</not>
+</and>
+</if>
+</group>
+<get-val-2-5 comment="false" id="0" x="0" y="0"/>
+</for-each>
+<setanim comment="false" x="26" y="2364">
+<ACTOR eid="this" id="0"/>
+<get-byobval-169-13-1 comment="false" id="1" x="0" y="0"/>
+</setanim>
+<set-val-2-2 comment="false" x="26" y="2396">
+                    <get-byobval-169-13-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-2-2>
+</group>
+            <get-byobval-169-13-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-169-13-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-169-13-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-2-4>
+</group>
+<group id="-1"/>
+</groups>
