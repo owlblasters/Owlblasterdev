@@ -30,8 +30,8 @@
             <r id="69"/>
             <r id="70"/>
             <r id="65"/>
-            <r id="67"/>
             <r id="82"/>
+            <r id="67"/>
             <r id="73"/>
             <r id="60"/>
         </group>
@@ -44,9 +44,9 @@
             <r id="9"/>
             <r id="27"/>
             <r id="72"/>
-            <r id="31"/>
-            <r id="14"/>
             <r id="74"/>
+            <r id="14"/>
+            <r id="31"/>
         </group>
         <group desc="" id="5" name="Eye Candy" type="snippet">
             <r id="32"/>
@@ -82,8 +82,6 @@
         <group desc="" id="4" name="Projectiles"/>
     </groups>
     <cgroups>
-        <cgroup g1="1" g2="3"/>
-        <cgroup g1="1" g2="0"/>
         <cgroup g1="4" g2="3"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="3" g2="0"/>
@@ -127,7 +125,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,0,34,35" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,160,0,34,35" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
