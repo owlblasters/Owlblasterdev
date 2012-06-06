@@ -107,7 +107,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="105">
-                <prop id="1" list="0" val="12"/>
+                <prop id="1" list="0" val="1"/>
                 <prop id="2" list="0" val="1"/>
                 <prop id="3" list="0" val="1"/>
                 <prop id="4" list="0" val="1"/>
@@ -220,6 +220,9 @@
     </custom-block>
     <music desc="" id="58" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music desc="" id="56" loop="true" name="Explode Player" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <custom-block blocktag="custom-156" blocktype="ACTION" code="sayToScene(&quot;Intro Title&quot;, &quot;FireShell&quot;, ~);" desc="" global="false" gui="fire shell" id="156" message="FireShell" name="FireShell" oid="-1" return="VOID" shared="false" snippetID="109">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-100.0" height="220" id="34" name="First Background" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="461" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-144" blocktype="ACTION" code="~.say(&quot;Flicker On Damage&quot;, &quot;Flicker&quot;);" desc="" global="false" gui="Flicker Image for %0" id="144" message="Flicker" name="Flicker" oid="-1" return="VOID" shared="false" snippetID="102">
         <blank name="Self" order="0" type="ACTOR"/>
@@ -327,6 +330,9 @@
         <blank name="ItemName" order="0" type="OBJECT"/>
         <blank name="List" order="1" type="LIST"/>
     </custom-block>
+    <custom-block blocktag="custom-157" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreX&quot;)))" desc="The center-x position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre X" id="157" message="IntroTitleCentreX" name="IntroTitleCentreX" oid="-1" return="NUMBER" shared="false" snippetID="109"/>
+    <custom-block blocktag="custom-158" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreY&quot;)))" desc="The center-y position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre Y" id="158" message="IntroTitleCentreY" name="IntroTitleCentreY" oid="-1" return="NUMBER" shared="false" snippetID="109"/>
+    <custom-block blocktag="custom-159" blocktype="NORMAL" code="String((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleText&quot;)))" desc="The text, whether custom or simply the current scene's name, that is being used in the intro title." global="false" gui="Intro Title Text" id="159" message="IntroTitleText" name="IntroTitleText" oid="-1" return="TEXT" shared="false" snippetID="109"/>
     <custom-block blocktag="custom-99" blocktype="NORMAL" code="Boolean((scripts.Design_67_67_Inventory.InventoryFull(~)))" desc="Returns true if the inventory of the given actor is full." global="true" gui="Inventory of %0 is full" id="99" message="InventoryFull" name="InventoryFull" oid="-1" return="BOOLEAN" shared="false" snippetID="67">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
     </custom-block>
@@ -381,7 +387,7 @@
                 <prop id="15" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="93">
+            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -427,11 +433,6 @@
                 <prop id="10" list="0" val="Death"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="4">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="42">
                 <prop id="34" list="0" val="right"/>
                 <prop id="33" list="0" val="left"/>
@@ -471,20 +472,14 @@
                 <prop id="26" list="0" val="false"/>
                 <prop id="30" list="0" val="30.0"/>
             </s>
-            <s enabled="true" id="9">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2" list="0" val="1"/>
-                <prop id="3" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="10">
                 <prop id="1" list="0" val=".05"/>
                 <prop id="2" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="106">
-                <prop id="1" list="0" val="4"/>
-                <prop id="2" list="0" val="4"/>
+                <prop id="1" list="0" val="3"/>
+                <prop id="2" list="0" val="3"/>
                 <prop id="3" list="0" val="3"/>
                 <prop id="4" list="0" val="Healed"/>
                 <prop id="5" list="0" val="Damaged"/>
@@ -494,39 +489,30 @@
                 <prop id="10" list="0" val="true"/>
                 <prop id="11" list="0" val="false"/>
                 <prop id="13" list="0" val=""/>
-                <prop id="14" list="0" val="58"/>
+                <prop id="14" list="0" val="No Sound"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val=""/>
-                <prop id="16" list="0" val="-1"/>
-                <prop id="18" list="0" val="-1"/>
+                <prop id="16" list="0" val="No Sound"/>
+                <prop id="18" list="0" val="No Sound"/>
             </s>
             <s enabled="true" id="104">
                 <prop id="1" list="0" val="Horizontal"/>
-                <prop id="2" list="0" val="70"/>
+                <prop id="2" list="0" val="100.0"/>
                 <prop id="3" list="0" val="5"/>
                 <prop id="4" list="0" val="0.0"/>
                 <prop id="5" list="0" val="0.0"/>
                 <prop id="6" list="0" val="Actor"/>
                 <prop id="7" list="0" val="0,255,0,255"/>
-                <prop id="8" list="0" val="0,255,0,255"/>
-                <prop id="9" list="0" val="255,255,0,255"/>
+                <prop id="8" list="0" val="0,255,255,255"/>
+                <prop id="9" list="0" val="255,102,0,255"/>
                 <prop id="10" list="0" val="255,0,0,255"/>
                 <prop id="11" list="0" val="0"/>
                 <prop id="12" list="0" val="0,0,0,255"/>
-                <prop id="13" list="0" val="0,0,0,255"/>
-                <prop id="14" list="0" val="2"/>
+                <prop id="13" list="0" val="255,255,255,255"/>
+                <prop id="14" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="14">
-                <prop id="1" list="0" val="-1"/>
-                <prop id="2" list="0" val="0"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="4" list="0" val="2"/>
-                <prop id="5" list="0" val=""/>
-                <prop id="6" list="0" val="-1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="15">
+            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="20">
@@ -580,21 +566,9 @@
                 <prop id="24" list="0" val="5.0"/>
                 <prop id="26" list="0" val="false"/>
             </s>
-            <s enabled="true" id="93">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="92">
+            <s enabled="true" id="92">
                 <prop id="3" list="0" val="16.0"/>
                 <prop id="4" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="95">
-                <prop id="3" list="0" val="16.0"/>
-                <prop id="4" list="0" val="16.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="94">
-                <prop id="2" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
