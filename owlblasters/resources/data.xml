@@ -150,7 +150,7 @@
     </actor>
     <custom-block blocktag="custom-140" blocktype="NORMAL" code="Number((sayToScene(&quot;Checkpoint System&quot;, &quot;CheckpointX&quot;)))" desc="" global="false" gui="Checkpoint X" id="140" message="CheckpointX" name="CheckpointX" oid="-1" return="NUMBER" shared="false" snippetID="97"/>
     <custom-block blocktag="custom-139" blocktype="NORMAL" code="Number((sayToScene(&quot;Checkpoint System&quot;, &quot;CheckpointY&quot;)))" desc="" global="false" gui="Checkpoint Y" id="139" message="CheckpointY" name="CheckpointY" oid="-1" return="NUMBER" shared="false" snippetID="97"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-100.0" height="1024" id="35" name="Cloudy Sky" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-20.0" height="1024" id="35" name="Cloudy Sky" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-154" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Damage&quot;, ~);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="154" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="106">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
@@ -462,7 +462,7 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0.75"/>
             </s>
-            <s enabled="false" id="22">
+            <s enabled="true" id="22">
                 <prop id="2" list="0" val="50.0"/>
                 <prop id="4" list="0" val="60"/>
                 <prop id="5" list="0" val="90"/>
@@ -508,7 +508,7 @@
                 <prop id="4" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="43">
+            <s enabled="false" id="43">
                 <prop id="2" list="0" val="50.0"/>
                 <prop id="4" list="0" val="60"/>
                 <prop id="9" list="0" val="0.0"/>
@@ -537,8 +537,8 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="106">
-                <prop id="1" list="0" val="3"/>
-                <prop id="2" list="0" val="3"/>
+                <prop id="1" list="0" val="5"/>
+                <prop id="2" list="0" val="5"/>
                 <prop id="3" list="0" val="3"/>
                 <prop id="4" list="0" val="Healed"/>
                 <prop id="5" list="0" val="Damaged"/>
@@ -562,13 +562,13 @@
                 <prop id="5" list="0" val="0.0"/>
                 <prop id="6" list="0" val="Actor"/>
                 <prop id="7" list="0" val="0,255,0,255"/>
-                <prop id="8" list="0" val="0,255,255,255"/>
-                <prop id="9" list="0" val="255,102,0,255"/>
+                <prop id="8" list="0" val="0,255,0,255"/>
+                <prop id="9" list="0" val="255,255,0,255"/>
                 <prop id="10" list="0" val="255,0,0,255"/>
                 <prop id="11" list="0" val="0"/>
-                <prop id="12" list="0" val="0,0,0,255"/>
-                <prop id="13" list="0" val="255,255,255,255"/>
-                <prop id="14" list="0" val="0.0"/>
+                <prop id="12" list="0" val="255,0,0,255"/>
+                <prop id="13" list="0" val="0,0,0,255"/>
+                <prop id="14" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="15">
@@ -768,6 +768,14 @@
         <blank name="Player" order="1" type="ACTOR"/>
     </custom-block>
     <music desc="A happy theme, suitable to be used as title screen music.&lt;br&gt;http://creativecommons.org/licenses/by-nc-nd/3.0/ &lt;br&gt;&lt;br&gt;Music composed, produced and published by MetalRenard Music.&lt;br&gt; http://metalrenardmusic.com &lt;br&gt;http://facebook.com/metalrenardmusic" id="155" loop="true" name="Title Theme Happy" oid="24447" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="110" fixedrot="true" fric="0.5" gid="3" id="160" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Tree Side" oid="-1" pausable="true" rest="0.17" shared="false" sprite="161" static="true" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="650" id="161" name="Tree Side" shared="false" width="25">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="650" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="96" width="25">
+            <poly data="4,2,2,24,2,24,1302,2,1302" density="0.1" fric="0.2" gid="-2" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <custom-block blocktag="custom-14" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;WalkAccel&quot;, ~);" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="14" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="11">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Accel" order="1" type="NUMBER"/>
