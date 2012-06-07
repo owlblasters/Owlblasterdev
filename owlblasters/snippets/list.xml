@@ -2,9 +2,26 @@
 <pack>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
         <boolean default="false" desc="" dropdown="" fullname="First" hidden="false" id="1" name="_First" order="0"/>
-        <blocks/>
+        <actor default="" desc="" dropdown="" fullname="Get_Tree_Width" hidden="false" id="2" name="_GetTreeWidth" order="1"/>
+        <blocks>
+            <receiver blockID="208" id="1"/>
+            <receiver blockID="209" id="2"/>
+            <receiver blockID="210" id="3"/>
+            <receiver blockID="211" id="4"/>
+            <receiver blockID="212" id="5"/>
+            <receiver blockID="213" id="6"/>
+            <receiver blockID="214" id="7"/>
+            <receiver blockID="215" id="8"/>
+            <receiver blockID="216" id="9"/>
+            <receiver blockID="218" id="10"/>
+        </blocks>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
+            <event displayName="actortype height" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="actortype width" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_GunFiring" desc="" description="" design="true" drawOrder="0" id="1" language="" name="Gun Firing" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -416,7 +433,9 @@
         <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_42_42_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="42" language="" name="2 Way Horizontal Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <control default="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="5"/>
@@ -802,6 +821,12 @@
             <event displayName="Intro Title Centre Y" enabled="true" id="9" name="event-custom-block" order="6" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_206" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="119" language="" name="ActorEvents_206" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_202" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="118" language="" name="ActorEvents_202" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
@@ -889,6 +914,14 @@
             <event displayName="setHealth" enabled="true" id="10" name="event-custom-block" order="10" repeats="true"/>
             <event displayName="Actor - Any" enabled="true" id="11" name="collide" order="11" repeats="true"/>
             <event displayName="healSelf" enabled="true" id="12" name="event-custom" order="12" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_120_120_TakeBranchDamage" desc="" description="" design="true" drawOrder="0" id="120" language="" name="Take_Branch_Damage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="" dropdown="" fullname="Damage_Taken" hidden="false" id="1" name="_DamageTaken" order="1"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Group" enabled="true" id="2" name="event-collide-actortogroup" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-collide-actortogroup comment="false" x="1" y="1">
+            <group eventID="2" id="-1"/>
+            <ACTOR eid="this" id="0"/>
+            <GROUP eid="5" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

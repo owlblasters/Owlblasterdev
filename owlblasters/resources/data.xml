@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <custom-block blocktag="custom-217" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;&quot;);" desc="" global="false" gui="Missing" id="217" message="" name="" oid="-1" return="VOID" shared="false" snippetID="0"/>
     <sprite atlasID="0" default="0" desc="" height="48" id="123" name="a" shared="false" width="48">
         <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="24" width="48">
             <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <custom-block blocktag="custom-216" blocktype="NORMAL" code="Number((sayToScene(&quot;SceneEvents_0&quot;, &quot;actortypeheight&quot;, ~)))" desc="get actortype height" global="false" gui="height of %0" id="216" message="actortypeheight" name="actortypeheight" oid="-1" return="NUMBER" shared="false" snippetID="0">
+        <blank name="actortype" order="0" type="ACTORTYPE"/>
+    </custom-block>
     <custom-block blocktag="custom-182" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddDamageModifier&quot;, ~,~,~);" desc="Add a damage resistance modifier in the index of the given actor." global="false" gui="Add damage modifier %1 for damage type %2 at index %3 for %0" id="182" message="AddDamageModifier" name="AddDamageModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="DamageResistanceModifier" order="1" type="NUMBER"/>
@@ -128,7 +132,7 @@
         <blank name="Attribute" order="2" type="TEXT"/>
         <blank name="Index" order="3" type="NUMBER"/>
     </custom-block>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="64" fixedrot="false" fric="0.5" gid="3" id="92" ignoreg="false" inertia="1.5" ldamp="0.501" lw="false" mass="1.0" name="Angry Blue Owl" oid="-1" pausable="true" rest="0.1" shared="false" sprite="93" static="false" touchable="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="64" fixedrot="false" fric="0.5" gid="6" id="92" ignoreg="false" inertia="1.5" ldamp="0.501" lw="false" mass="1.0" name="Angry Blue Owl" oid="-1" pausable="true" rest="0.1" shared="false" sprite="93" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="34">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -146,16 +150,19 @@
                 <prop id="6" list="0" val="false"/>
                 <prop id="7" list="0" val=""/>
                 <prop id="8" list="0" val="0.0"/>
-                <prop id="9" list="0" val="10.0"/>
-                <prop id="10" list="0" val="10"/>
-                <prop id="11" list="0" val="10"/>
+                <prop id="9" list="0" val="20.0"/>
+                <prop id="10" list="0" val="1"/>
+                <prop id="11" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="45" id="93" name="Angry Blue Owl" shared="false" width="65">
         <anim across="3" atlasID="-1" down="1" durations="100,100,100" height="45" id="0" loop="true" name="Flying" numframes="3" originx="32" originy="22" width="195">
-            <poly data="4,0,0,73,0,73,50,0,50" density="0.1" fric="0.2" gid="3" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,73,0,73,50,0,50" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-145" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="145" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
@@ -880,6 +887,19 @@
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="104" id="205" name="Tech" offsets="0|0|0|,12|0|12,28|0|28,44|0|44,44|0|44,44|0|44,44|0|44,44|0|44,58|0|58,58|0|58,58|0|58,82|0|82,109|0|109,124|0|124,144|0|144,158|0|158,191|0|191,219|0|219,244|0|244,272|0|272,300|0|300,330|0|330,358|0|358,386|0|386,414|0|414,442|0|442,470|0|470,484|0|484,499|0|499,499|0|499,523|0|523,523|0|523,552|0|552,585|0|585,615|0|615,645|0|645,675|0|675,705|0|705,735|0|735,765|0|765,795|0|795,827|0|827,846|0|846,871|0|871,903|0|903,933|0|933,965|0|965,997|0|997,1027|0|1027,1057|0|1057,1088|0|1088,1120|0|1120,1149|0|1149,1179|0|1179,1212|0|1212,1244|0|1244,1276|0|1276,1309|0|1309,1342|0|1342,1373|0|1373,1373|0|1373,1406|0|1406,1406|0|1406,1406|0|1406,1430|0|1430,1430|0|1430,1462|0|1462,1494|0|1494,1524|0|1524,1556|0|1556,1588|0|1588,1613|0|1613,1645|0|1645,1677|0|1677,1696|0|1696,1718|0|1718,1750|0|1750,1767|0|1767,1799|0|1799,1831|0|1831,1861|0|1861,1893|0|1893,1925|0|1925,1949|0|1949,1980|0|1980,2002|0|2002,2034|0|2034,2066|0|2066,2098|0|2098,2130|0|2130,2162|0|2162,2195|0|2195,2195|0|2195,2195|0|2195,2195|0|2195,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2224|0|2224,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2238|0|2238,2267|0|2267,2267|0|2267,2267|0|2267,2267|0|2267,2267|0|2267,2267|0|2267,2267|0|2267,2267|0|2267,2267|0|2267,2299|0|2299,2331|0|2331,2363|0|2363,2395|0|2395,2427|0|2427,2459|0|2459,2506|0|2506,2536|0|2536,2568|0|2568,2600|0|2600,2632|0|2632,2664|0|2664,2685|0|2685,2705|0|2705,2725|0|2725,2744|0|2744,2744|0|2744,2776|0|2776,2806|0|2806,2836|0|2836,0|52|2866,30|52|2896,60|52|2926,60|52|2926,90|52|2956,122|52|2988,154|52|3020,186|52|3052" oid="-1" rowHeight="52" shared="false"/>
     <music desc="A happy theme, suitable to be used as title screen music.&lt;br&gt;http://creativecommons.org/licenses/by-nc-nd/3.0/ &lt;br&gt;&lt;br&gt;Music composed, produced and published by MetalRenard Music.&lt;br&gt; http://metalrenardmusic.com &lt;br&gt;http://facebook.com/metalrenardmusic" id="155" loop="true" name="Title Theme Happy" oid="24447" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="119" fixedrot="false" fric="0.2" gid="5" id="206" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="tree branch" oid="-1" pausable="true" rest="0.0" shared="false" sprite="207" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="37">
+                <prop id="1" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="22" id="207" name="tree branch" shared="false" width="242">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="22" id="0" loop="true" name="Animation 0" numframes="1" originx="121" originy="11" width="242">
+            <poly data="4,0,0,242,0,242,22,0,22" density="0.1" fric="0.2" gid="5" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="110" fixedrot="true" fric="0.5" gid="3" id="160" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Tree Side" oid="-1" pausable="true" rest="0.17" shared="false" sprite="161" static="true" touchable="true">
         <snippets/>
     </actor>
@@ -907,4 +927,7 @@
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="All weapons are stored in this actor. It represents the graphical display for weapons. All the actual code for what projectiles are being fired is contained in the &quot;Gun Firing&quot; behavior attached to the &quot;Jumper&quot; actor." eventsnippetid="86" fixedrot="true" fric="0.2" gid="3" id="124" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Weapons" oid="-1" pausable="true" rest="0.0" shared="false" sprite="125" static="false" touchable="true">
         <snippets/>
     </actor>
+    <custom-block blocktag="custom-218" blocktype="NORMAL" code="Number((sayToScene(&quot;SceneEvents_0&quot;, &quot;width_of_actortype&quot;, ~)))" desc="width of the default for actortype" global="false" gui="width of %0" id="218" message="width_of_actortype" name="width_of_actortype" oid="-1" return="NUMBER" shared="false" snippetID="0">
+        <blank name="actortype" order="0" type="ACTORTYPE"/>
+    </custom-block>
 </pack>
