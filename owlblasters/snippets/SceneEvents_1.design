@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="205" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="Owl"/>
+                    <int id="1" val="150"/>
+                    <int id="2" val="50"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="Blasters"/>
+                    <int id="1" val="80"/>
+                    <int id="2" val="100"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
