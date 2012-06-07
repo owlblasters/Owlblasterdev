@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups>    <group eventID="1" id="0">        <event-actor-create-kill comment="false" x="15" y="15">            <group eventID="1" id="-1">                <scene-reload-new comment="false" x="26" y="47">                    <int id="0" val="0"/>                    <get-val-114-2 comment="false" id="1" x="0" y="0"/>                    <int id="2" val="0"/>                    <get-val-114-3 comment="false" id="3" x="0" y="0"/>                </scene-reload-new>            </group>            <int id="0" val="1"/>            <get-val-114-1 comment="false" id="1" x="0" y="0"/>        </event-actor-create-kill>    </group>    <group eventID="1" id="-1"/>
+<groups>
+    <group eventID="1" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <stop-sounds comment="false" x="26" y="47"/>
+                <scene-reload-new comment="false" x="26" y="67">
+                    <int id="0" val="0"/>
+                    <get-val-114-2 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="0"/>
+                    <get-val-114-3 comment="false" id="3" x="0" y="0"/>
+                </scene-reload-new>
+            </group>
+            <int id="0" val="1"/>
+            <get-val-114-1 comment="false" id="1" x="0" y="0"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="1" id="-1"/>
 </groups>

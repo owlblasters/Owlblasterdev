@@ -11,12 +11,12 @@
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-65-1>
                                 <set-color comment="false" x="48" y="138">
-                                    <color b="255" g="255" id="0" r="255"/>
+                                    <color b="240" g="240" id="0" r="240"/>
                                 </set-color>
                                 <dolater comment="false" x="48" y="165">
                                     <group eventID="-1" id="-1">
                                         <set-color comment="false" x="59" y="192">
-                                            <color b="255" g="0" id="0" r="255"/>
+                                            <color b="51" g="51" id="0" r="255"/>
                                         </set-color>
                                         <dolater comment="false" x="59" y="219">
                                             <group eventID="-1" id="-1">
@@ -56,7 +56,7 @@
                 </else>
                 <drawfill-rect comment="false" x="26" y="378">
                     <int id="0" val="1"/>
-                    <int id="1" val="44"/>
+                    <int id="1" val="50"/>
                     <int id="2" val="0"/>
                     <times comment="false" id="3" x="0" y="0">
                         <as-number comment="false" id="0" x="0" y="0">
@@ -65,9 +65,9 @@
                                 <int id="1" val="hitPoints"/>
                             </actor-get-prop>
                         </as-number>
-                        <int id="1" val="8"/>
+                        <int id="1" val="15"/>
                     </times>
-                    <int id="4" val="4"/>
+                    <int id="4" val="5"/>
                 </drawfill-rect>
             </group>
         </draw>

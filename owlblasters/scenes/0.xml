@@ -12,10 +12,10 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="34" c="false" group="0" id="32" name="Jumper 34" sx="1.0" sy="1.0" x="132" y="35" z="0"/>
+        <actor a="0.0" aid="35" c="false" group="0" id="32" name="Jumper 35" sx="1.0" sy="1.0" x="175" y="41" z="0"/>
         <actor a="0.0" aid="32" c="false" group="3" id="92" name="Angry Blue Owl 32" sx="1.0" sy="1.0" x="287" y="413" z="0"/>
         <actor a="0.0" aid="33" c="false" group="3" id="92" name="Angry Blue Owl 33" sx="1.0" sy="1.0" x="29" y="448" z="0"/>
-        <actor a="0.0" aid="23" c="false" group="3" id="160" name="Tree Side 23" sx="1.0" sy="1.0" x="-8" y="-113" z="0"/>
+        <actor a="0.0" aid="23" c="false" group="3" id="160" name="Tree Side 23" sx="1.0" sy="1.0" x="-5" y="-66" z="0"/>
         <actor a="0.0" aid="25" c="false" group="3" id="92" name="Angry Blue Owl 25" sx="1.0" sy="1.0" x="73" y="397" z="0"/>
         <actor a="0.0" aid="24" c="false" group="3" id="160" name="Tree Side 24" sx="1.0" sy="1.0" x="370" y="-86" z="0"/>
         <actor a="0.0" aid="27" c="false" group="3" id="92" name="Angry Blue Owl 27" sx="1.0" sy="1.0" x="202" y="417" z="0"/>
@@ -27,24 +27,9 @@
     </actors>
     <snippets>
         <s enabled="true" id="114">
-            <prop id="1" list="0" val="34"/>
-            <prop id="2" list="0" val=".5"/>
-            <prop id="3" list="0" val=".5"/>
-        </s>
-        <s enabled="true" id="96">
-            <prop id="1" list="0" val="127"/>
-            <prop id="2" list="0" val="0.0"/>
-            <prop id="3" list="0" val=""/>
-            <prop id="4" list="0" val=""/>
-            <prop id="5" list="0" val="32"/>
-            <prop id="6" list="0" val="Image"/>
-            <prop id="7" list="0" val="Horizontal"/>
-            <prop id="10" list="0" val="1"/>
-            <prop id="11" list="0" val="Default Font"/>
-            <prop id="12" list="0" val="50"/>
-            <prop id="13" list="0" val="50"/>
-            <prop id="14" list="0" val="20"/>
-            <prop id="15" list="0" val="20"/>
+            <prop id="1" list="0" val="35"/>
+            <prop id="2" list="0" val="1"/>
+            <prop id="3" list="0" val="1"/>
         </s>
     </snippets>
     <terrain/>

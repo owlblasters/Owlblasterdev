@@ -4,16 +4,13 @@
         <group desc="" id="0" name="Actions" type="snippet">
             <r id="1"/>
             <r id="18"/>
-            <r id="39"/>
             <r id="23"/>
             <r id="63"/>
             <r id="28"/>
         </group>
         <group desc="" id="1" name="Other" type="snippet">
             <r id="2"/>
-            <r id="3"/>
             <r id="4"/>
-            <r id="36"/>
             <r id="24"/>
             <r id="61"/>
             <r id="15"/>
@@ -27,29 +24,19 @@
             <r id="30"/>
         </group>
         <group desc="" id="3" name="GUI" type="snippet">
-            <r id="70"/>
             <r id="65"/>
-            <r id="113"/>
-            <r id="67"/>
-            <r id="82"/>
-            <r id="73"/>
             <r id="60"/>
         </group>
         <group desc="" id="4" name="Health" type="snippet">
-            <r id="68"/>
             <r id="35"/>
-            <r id="71"/>
-            <r id="81"/>
             <r id="112"/>
             <r id="37"/>
             <r id="9"/>
             <r id="27"/>
-            <r id="72"/>
             <r id="31"/>
             <r id="14"/>
         </group>
         <group desc="" id="5" name="Eye Candy" type="snippet">
-            <r id="32"/>
             <r id="12"/>
         </group>
         <group desc="" id="6" name="Collisions" type="snippet">
@@ -61,33 +48,24 @@
             <r id="29"/>
             <r id="62"/>
         </group>
-        <group desc="" id="8" name="Saving" type="snippet">
-            <r id="75"/>
-        </group>
-        <group desc="" id="9" name="Stats" type="snippet">
-            <r id="80"/>
-            <r id="76"/>
-            <r id="77"/>
-            <r id="78"/>
-            <r id="79"/>
-        </group>
+        <group desc="" id="8" name="Saving" type="snippet"/>
+        <group desc="" id="9" name="Stats" type="snippet"/>
         <group desc="" id="10" name="Drawing" type="snippet">
             <r id="111"/>
         </group>
     </folders>
     <packs>
         <pack desc="" id="0" name="Jetpack" oid="-1" resources="" snippets="19,20"/>
-        <pack desc="" id="1" name="Shooter pack" oid="-1" resources="59,58,57,56" snippets="34,35,32,36,37,23,25,24,27,29,28,31,30"/>
-        <pack desc="" id="3" name="RPG Elements" oid="-1" resources="" snippets="68,70,71,67,76,77,78,79,72,73,75,81,80,82"/>
+        <pack desc="" id="1" name="Shooter pack" oid="-1" resources="59,58,57,56" snippets="34,35,23,37,25,24,27,29,28,31,30"/>
         <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health Manager to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="4" name="Enhanced Health Pack" oid="32904" resources="" snippets="102,103,100,101,98,99,96,97,106,107,104,105"/>
     </packs>
     <groups>
         <group desc="" id="4" name="Projectiles"/>
     </groups>
     <cgroups>
-        <cgroup g1="0" g2="3"/>
-        <cgroup g1="3" g2="4"/>
+        <cgroup g1="4" g2="3"/>
         <cgroup g1="4" g2="1"/>
+        <cgroup g1="3" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>

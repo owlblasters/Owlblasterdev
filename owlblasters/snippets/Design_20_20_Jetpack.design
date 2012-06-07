@@ -32,21 +32,21 @@
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <step comment="false" x="15" y="15">
+        <step comment="false" x="29" y="29">
             <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="40">
+                <if comment="false" x="40" y="54">
                     <group eventID="-1" id="-1">
-                        <set-val-20-22 comment="false" x="37" y="73">
+                        <set-val-20-22 comment="false" x="51" y="87">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-20-22>
-                        <if comment="false" x="37" y="98">
+                        <if comment="false" x="51" y="112">
                             <group eventID="-1" id="-1">
-                                <comment-short comment="false" x="48" y="128">
+                                <comment-short comment="false" x="62" y="142">
                                     <int id="0" val="Jetpack key is down, and we have fuel - so fire boosters as long as we&amp;#039;re not past max speed. "/>
                                 </comment-short>
-                                <if comment="false" x="48" y="148">
+                                <if comment="false" x="62" y="162">
                                     <group eventID="-1" id="-1">
-                                        <push-shove2 comment="false" x="59" y="191">
+                                        <push-shove2 comment="false" x="73" y="205">
                                             <ACTOR eid="this" id="0"/>
                                             <int id="1" val="1"/>
                                             <get-val-20-17 comment="false" id="2" x="0" y="0"/>
@@ -65,9 +65,9 @@
                                         </less>
                                     </not>
                                 </if>
-                                <if comment="false" x="48" y="235">
+                                <if comment="false" x="62" y="249">
                                     <group eventID="-1" id="-1">
-                                        <say comment="false" x="59" y="268">
+                                        <say comment="false" x="73" y="282">
                                             <ACTOR eid="var" id="0" vid="27"/>
                                             <int id="1" val="Jetpack Follow Player"/>
                                             <int id="2" val="JetsActive"/>
@@ -78,18 +78,18 @@
                                         <int id="1" val="0"/>
                                     </value>
                                 </if>
-                                <comment-short comment="false" x="48" y="307">
+                                <comment-short comment="false" x="62" y="321">
                                     <int id="0" val="Use up some fuel"/>
                                 </comment-short>
-                                <incdec comment="false" x="48" y="327">
+                                <incdec comment="false" x="62" y="341">
                                     <int id="0" val="1"/>
                                     <int id="1" val="1"/>
                                     <get-val-20-3 comment="false" id="2" x="0" y="0"/>
                                 </incdec>
-                                <comment-short comment="false" x="48" y="359">
+                                <comment-short comment="false" x="62" y="373">
                                     <int id="0" val="Set the animation of the player"/>
                                 </comment-short>
-                                <say-this comment="false" x="48" y="379">
+                                <say-this comment="false" x="62" y="393">
                                     <int id="0" val="SetPlayerAnimation"/>
                                 </say-this>
                             </group>
@@ -98,15 +98,15 @@
                                 <int id="1" val="0"/>
                             </more>
                         </if>
-                        <else comment="false" x="37" y="411">
+                        <else comment="false" x="51" y="425">
                             <group eventID="-1" id="-1">
-                                <push-shove2 comment="false" x="48" y="431">
+                                <push-shove2 comment="false" x="62" y="445">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="1"/>
                                     <get-val-20-17 comment="false" id="2" x="0" y="0"/>
                                     <get-val-20-28 comment="false" id="3" x="0" y="0"/>
                                 </push-shove2>
-                                <say comment="false" x="48" y="463">
+                                <say comment="false" x="62" y="477">
                                     <ACTOR eid="var" id="0" vid="27"/>
                                     <int id="1" val="Jetpack Follow Player"/>
                                     <int id="2" val="JetsEmpty"/>
@@ -119,14 +119,14 @@
                         <CONTROL eid="var" id="1" vid="18"/>
                     </keystate>
                 </if>
-                <else comment="false" x="26" y="514">
+                <else comment="false" x="40" y="528">
                     <group eventID="-1" id="-1">
-                        <set-val-20-22 comment="false" x="37" y="534">
+                        <set-val-20-22 comment="false" x="51" y="548">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-20-22>
-                        <if comment="false" x="37" y="559">
+                        <if comment="false" x="51" y="573">
                             <group eventID="-1" id="-1">
-                                <say comment="false" x="48" y="592">
+                                <say comment="false" x="62" y="606">
                                     <ACTOR eid="var" id="0" vid="27"/>
                                     <int id="1" val="Jetpack Follow Player"/>
                                     <int id="2" val="JetsIdle"/>
@@ -137,12 +137,12 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <comment-short comment="false" x="37" y="631">
+                        <comment-short comment="false" x="51" y="645">
                             <int id="0" val="If we need fuel, replenish it now"/>
                         </comment-short>
-                        <if comment="false" x="37" y="651">
+                        <if comment="false" x="51" y="665">
                             <group eventID="-1" id="-1">
-                                <incdec comment="false" x="48" y="681">
+                                <incdec comment="false" x="62" y="695">
                                     <int id="0" val="1"/>
                                     <int id="1" val="0"/>
                                     <get-val-20-13 comment="false" id="2" x="0" y="0"/>
@@ -153,10 +153,10 @@
                                 <get-val-20-2 comment="false" id="1" x="0" y="0"/>
                             </less>
                         </if>
-                        <comment-short comment="false" x="37" y="725">
+                        <comment-short comment="false" x="51" y="739">
                             <int id="0" val="If we were using the jetpack, clear it out so another animation can play"/>
                         </comment-short>
-                        <if comment="false" x="37" y="745">
+                        <if comment="false" x="51" y="759">
                             <group eventID="-1" id="-1"/>
                             <eq comment="false" id="0" x="0" y="0">
                                 <int id="0" val=""/>
@@ -165,10 +165,10 @@
                         </if>
                     </group>
                 </else>
-                <comment-short comment="false" x="26" y="814">
+                <comment-short comment="false" x="40" y="828">
                     <int id="0" val="Update our fuel percentage so we can display the fuel bar"/>
                 </comment-short>
-                <set-val-20-12 comment="false" x="26" y="834">
+                <set-val-20-12 comment="false" x="40" y="848">
                     <div comment="false" id="0" x="0" y="0">
                         <get-val-20-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-20-2 comment="false" id="1" x="0" y="0"/>

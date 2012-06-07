@@ -4,7 +4,7 @@
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
                 <play-sound4 comment="false" x="26" y="40">
-                    <int id="0" val="1"/>
+                    <int id="0" val="0"/>
                     <SOUND eid="155" id="1"/>
                 </play-sound4>
             </group>

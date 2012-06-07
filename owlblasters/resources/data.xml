@@ -5,7 +5,13 @@
             <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <custom-block blocktag="custom-109" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddDamageModifier&quot;, ~,~,~);" desc="Add a damage resistance modifier in the index of the given actor." global="false" gui="Add damage modifier %1 for damage type %2 at index %3 for %0" id="109" message="AddDamageModifier" name="AddDamageModifier" oid="-1" return="VOID" shared="false" snippetID="71">
+    <custom-block blocktag="custom-182" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddDamageModifier&quot;, ~,~,~);" desc="Add a damage resistance modifier in the index of the given actor." global="false" gui="Add damage modifier %1 for damage type %2 at index %3 for %0" id="182" message="AddDamageModifier" name="AddDamageModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="DamageResistanceModifier" order="1" type="NUMBER"/>
+        <blank name="DamageType" order="2" type="TEXT"/>
+        <blank name="Index" order="3" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-109" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddDamageModifier&quot;, ~,~,~);" desc="Add a damage resistance modifier in the index of the given actor." global="false" gui="Add damage modifier %1 for damage type %2 at index %3 for %0" id="109" message="AddDamageModifier" name="AddDamageModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="DamageResistanceModifier" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
@@ -17,7 +23,12 @@
         <blank name="DamageType" order="2" type="TEXT"/>
         <blank name="Index" order="3" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-102" blocktype="ACTION" code="scripts.Design_67_67_Inventory.AddItemtoInventory(~,~,~);" desc="Add an item to the inventory of the given actor." global="true" gui="Add %1 %2 to the inventory of %0" id="102" message="AddItemtoInventory" name="AddItemtoInventory" oid="-1" return="VOID" shared="false" snippetID="67">
+    <custom-block blocktag="custom-175" blocktype="ACTION" code="scripts.Design_115_115_Inventory.AddItemtoInventory(~,~,~);" desc="Add an item to the inventory of the given actor." global="true" gui="Add %1 %2 to the inventory of %0" id="175" message="AddItemtoInventory" name="AddItemtoInventory" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+        <blank name="Amount" order="1" type="NUMBER"/>
+        <blank name="ItemName" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-102" blocktype="ACTION" code="scripts.Design_67_67_Inventory.AddItemtoInventory(~,~,~);" desc="Add an item to the inventory of the given actor." global="true" gui="Add %1 %2 to the inventory of %0" id="102" message="AddItemtoInventory" name="AddItemtoInventory" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="ItemName" order="2" type="TEXT"/>
@@ -27,7 +38,13 @@
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="ItemName" order="2" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-118" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;AddModifierTimer&quot;, ~,~,~);" desc="Adds a timer to an attribute modifier." global="false" gui="Add timer %1 to attribute %3 in index %2 for %0" id="118" message="AddModifierTimer" name="AddModifierTimer" oid="-1" return="VOID" shared="false" snippetID="76">
+    <custom-block blocktag="custom-191" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;AddModifierTimer&quot;, ~,~,~);" desc="Adds a timer to an attribute modifier." global="false" gui="Add timer %1 to attribute %3 in index %2 for %0" id="191" message="AddModifierTimer" name="AddModifierTimer" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Time" order="1" type="NUMBER"/>
+        <blank name="Index" order="2" type="NUMBER"/>
+        <blank name="Attribute" order="3" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-118" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;AddModifierTimer&quot;, ~,~,~);" desc="Adds a timer to an attribute modifier." global="false" gui="Add timer %1 to attribute %3 in index %2 for %0" id="118" message="AddModifierTimer" name="AddModifierTimer" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Time" order="1" type="NUMBER"/>
         <blank name="Index" order="2" type="NUMBER"/>
@@ -39,7 +56,13 @@
         <blank name="Index" order="2" type="NUMBER"/>
         <blank name="Attribute" order="3" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-110" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddResistanceTimer&quot;, ~,~,~);" desc="Adds a timer to a damage type resistance index for the given actor." global="false" gui="Add timer %1 to %2 damage resistance in index %3 for %0" id="110" message="AddResistanceTimer" name="AddResistanceTimer" oid="-1" return="VOID" shared="false" snippetID="71">
+    <custom-block blocktag="custom-183" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddResistanceTimer&quot;, ~,~,~);" desc="Adds a timer to a damage type resistance index for the given actor." global="false" gui="Add timer %1 to %2 damage resistance in index %3 for %0" id="183" message="AddResistanceTimer" name="AddResistanceTimer" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Time" order="1" type="NUMBER"/>
+        <blank name="DamageType" order="2" type="TEXT"/>
+        <blank name="Index" order="3" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-110" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;AddResistanceTimer&quot;, ~,~,~);" desc="Adds a timer to a damage type resistance index for the given actor." global="false" gui="Add timer %1 to %2 damage resistance in index %3 for %0" id="110" message="AddResistanceTimer" name="AddResistanceTimer" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Time" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
@@ -51,7 +74,13 @@
         <blank name="DamageType" order="2" type="TEXT"/>
         <blank name="Index" order="3" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-114" blocktype="ACTION" code="scripts.Design_72_72_StatusConditionPoison.AddStatusModifier(~,~,~,~);" desc="Adds a modifier to a status resistance at the given index for the actor." global="true" gui="Add status resistance modifier %2 at index %1 for %0 in behavior %3" id="114" message="AddStatusModifier" name="AddStatusModifier" oid="-1" return="VOID" shared="false" snippetID="72">
+    <custom-block blocktag="custom-187" blocktype="ACTION" code="scripts.Design_120_120_StatusConditionPoison.AddStatusModifier(~,~,~,~);" desc="Adds a modifier to a status resistance at the given index for the actor." global="true" gui="Add status resistance modifier %2 at index %1 for %0 in behavior %3" id="187" message="AddStatusModifier" name="AddStatusModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="StatusActor" order="0" type="ACTOR"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+        <blank name="Modifier" order="2" type="NUMBER"/>
+        <blank name="Behavior" order="3" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-114" blocktype="ACTION" code="scripts.Design_72_72_StatusConditionPoison.AddStatusModifier(~,~,~,~);" desc="Adds a modifier to a status resistance at the given index for the actor." global="true" gui="Add status resistance modifier %2 at index %1 for %0 in behavior %3" id="114" message="AddStatusModifier" name="AddStatusModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="StatusActor" order="0" type="ACTOR"/>
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="Modifier" order="2" type="NUMBER"/>
@@ -63,7 +92,13 @@
         <blank name="Modifier" order="2" type="NUMBER"/>
         <blank name="Behavior" order="3" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-113" blocktype="ACTION" code="scripts.Design_72_72_StatusConditionPoison.AddStatusTimer(~,~,~,~);" desc="Add a timer for a status resistance modifier at the given index for the actor." global="true" gui="Add timer %2 at index %1 for %0 in behavior %3" id="113" message="AddStatusTimer" name="AddStatusTimer" oid="-1" return="VOID" shared="false" snippetID="72">
+    <custom-block blocktag="custom-186" blocktype="ACTION" code="scripts.Design_120_120_StatusConditionPoison.AddStatusTimer(~,~,~,~);" desc="Add a timer for a status resistance modifier at the given index for the actor." global="true" gui="Add timer %2 at index %1 for %0 in behavior %3" id="186" message="AddStatusTimer" name="AddStatusTimer" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="StatusActor" order="0" type="ACTOR"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+        <blank name="Time" order="2" type="NUMBER"/>
+        <blank name="Behavior" order="3" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-113" blocktype="ACTION" code="scripts.Design_72_72_StatusConditionPoison.AddStatusTimer(~,~,~,~);" desc="Add a timer for a status resistance modifier at the given index for the actor." global="true" gui="Add timer %2 at index %1 for %0 in behavior %3" id="113" message="AddStatusTimer" name="AddStatusTimer" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="StatusActor" order="0" type="ACTOR"/>
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="Time" order="2" type="NUMBER"/>
@@ -75,7 +110,13 @@
         <blank name="Time" order="2" type="NUMBER"/>
         <blank name="Behavior" order="3" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-119" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;AddTemporaryStatusBoost&quot;, ~,~,~);" desc="Adds a modifier for the given character status of the actor. This modifier can be removed." global="false" gui="Add modifier %1 to attribute %2 in index %3 for %0" id="119" message="AddTemporaryStatusBoost" name="AddTemporaryStatusBoost" oid="-1" return="VOID" shared="false" snippetID="76">
+    <custom-block blocktag="custom-192" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;AddTemporaryStatusBoost&quot;, ~,~,~);" desc="Adds a modifier for the given character status of the actor. This modifier can be removed." global="false" gui="Add modifier %1 to attribute %2 in index %3 for %0" id="192" message="AddTemporaryStatusBoost" name="AddTemporaryStatusBoost" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Modifier" order="1" type="NUMBER"/>
+        <blank name="Attribute" order="2" type="TEXT"/>
+        <blank name="Index" order="3" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-119" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;AddTemporaryStatusBoost&quot;, ~,~,~);" desc="Adds a modifier for the given character status of the actor. This modifier can be removed." global="false" gui="Add modifier %1 to attribute %2 in index %3 for %0" id="119" message="AddTemporaryStatusBoost" name="AddTemporaryStatusBoost" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Modifier" order="1" type="NUMBER"/>
         <blank name="Attribute" order="2" type="TEXT"/>
@@ -122,7 +163,10 @@
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-103" blocktype="NORMAL" code="((scripts.Design_67_67_Inventory.AsArray(~)) as Array)" desc="Returns the value as a list." global="true" gui="%0 as list" id="103" message="AsArray" name="AsArray" oid="-1" return="LIST" shared="false" snippetID="67">
+    <custom-block blocktag="custom-176" blocktype="NORMAL" code="((scripts.Design_115_115_Inventory.AsArray(~)) as Array)" desc="Returns the value as a list." global="true" gui="%0 as list" id="176" message="AsArray" name="AsArray" oid="-1" return="LIST" shared="false" snippetID="-1">
+        <blank name="Value" order="0" type="OBJECT"/>
+    </custom-block>
+    <custom-block blocktag="custom-103" blocktype="NORMAL" code="((scripts.Design_67_67_Inventory.AsArray(~)) as Array)" desc="Returns the value as a list." global="true" gui="%0 as list" id="103" message="AsArray" name="AsArray" oid="-1" return="LIST" shared="false" snippetID="-1">
         <blank name="Value" order="0" type="OBJECT"/>
     </custom-block>
     <custom-block blocktag="custom-73" blocktype="NORMAL" code="((scripts.Design_44_44_Inventory.AsArray(~)) as Array)" desc="Returns the value as a list." global="true" gui="%0 as list" id="73" message="AsArray" name="AsArray" oid="-1" return="LIST" shared="false" snippetID="-1">
@@ -131,7 +175,11 @@
     <custom-block blocktag="custom-16" blocktype="NORMAL" code="Boolean((~.say(&quot;Walking&quot;, &quot;AtMaxWalkingSpeed&quot;)))" desc="" global="false" gui="%0 At Max Walking Speed" id="16" message="AtMaxWalkingSpeed" name="AtMaxWalkingSpeed" oid="-1" return="BOOLEAN" shared="false" snippetID="11">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-121" blocktype="ACTION" code="scripts.Design_77_77_Experience.AwardExperience(~,~);" desc="Increase experience for the given actor." global="true" gui="Increase experience by %1 for %0" id="121" message="AwardExperience" name="AwardExperience" oid="-1" return="VOID" shared="false" snippetID="77">
+    <custom-block blocktag="custom-194" blocktype="ACTION" code="scripts.Design_125_125_Experience.AwardExperience(~,~);" desc="Increase experience for the given actor." global="true" gui="Increase experience by %1 for %0" id="194" message="AwardExperience" name="AwardExperience" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="EXPActor" order="0" type="ACTOR"/>
+        <blank name="EXPAward" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-121" blocktype="ACTION" code="scripts.Design_77_77_Experience.AwardExperience(~,~);" desc="Increase experience for the given actor." global="true" gui="Increase experience by %1 for %0" id="121" message="AwardExperience" name="AwardExperience" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="EXPActor" order="0" type="ACTOR"/>
         <blank name="EXPAward" order="1" type="NUMBER"/>
     </custom-block>
@@ -165,7 +213,15 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-115" blocktype="ACTION" code="scripts.Design_74_74_Health.DealDamage(~,~,~,~,~,~);" desc="Inflict damage to the actor." global="true" gui="Inflict Damage: Damage %1 Damage Type %2 Magic Damage %3 Critical Hit %4 Stun %5 for %0" id="115" message="DealDamage" name="DealDamage" oid="-1" return="VOID" shared="false" snippetID="74">
+    <custom-block blocktag="custom-188" blocktype="ACTION" code="scripts.Design_122_122_Health.DealDamage(~,~,~,~,~,~);" desc="Inflict damage to the actor." global="true" gui="Inflict Damage: Damage %1 Damage Type %2 Magic Damage %3 Critical Hit %4 Stun %5 for %0" id="188" message="DealDamage" name="DealDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="DamagedActor" order="0" type="ACTOR"/>
+        <blank name="DamageAmount" order="1" type="NUMBER"/>
+        <blank name="DamageType" order="2" type="TEXT"/>
+        <blank name="MagicDamage" order="3" type="BOOLEAN"/>
+        <blank name="CriticalHit" order="4" type="BOOLEAN"/>
+        <blank name="Stun" order="5" type="BOOLEAN"/>
+    </custom-block>
+    <custom-block blocktag="custom-115" blocktype="ACTION" code="scripts.Design_74_74_Health.DealDamage(~,~,~,~,~,~);" desc="Inflict damage to the actor." global="true" gui="Inflict Damage: Damage %1 Damage Type %2 Magic Damage %3 Critical Hit %4 Stun %5 for %0" id="115" message="DealDamage" name="DealDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="DamagedActor" order="0" type="ACTOR"/>
         <blank name="DamageAmount" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
@@ -208,7 +264,11 @@
             <circle data="6,10,10" density="0.1" fric="0.2" gid="4" id="0" name="Circle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <custom-block blocktag="custom-97" blocktype="ACTION" code="scripts.Design_67_67_Inventory.EraseItemfromInventory(~,~);" desc="Erase an item from the actor's inventory." global="true" gui="Erase %1 from the inventory of %0" id="97" message="EraseItemfromInventory" name="EraseItemfromInventory" oid="-1" return="VOID" shared="false" snippetID="67">
+    <custom-block blocktag="custom-170" blocktype="ACTION" code="scripts.Design_115_115_Inventory.EraseItemfromInventory(~,~);" desc="Erase an item from the actor's inventory." global="true" gui="Erase %1 from the inventory of %0" id="170" message="EraseItemfromInventory" name="EraseItemfromInventory" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+        <blank name="ItemName" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-97" blocktype="ACTION" code="scripts.Design_67_67_Inventory.EraseItemfromInventory(~,~);" desc="Erase an item from the actor's inventory." global="true" gui="Erase %1 from the inventory of %0" id="97" message="EraseItemfromInventory" name="EraseItemfromInventory" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="ItemName" order="1" type="TEXT"/>
     </custom-block>
@@ -231,7 +291,11 @@
     <custom-block blocktag="custom-131" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="131" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="90">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-104" blocktype="NORMAL" code="Number((scripts.Design_67_67_Inventory.GetAmountofItem(~,~)))" desc="Returns the amount of an item in the actor's inventory." global="true" gui="Get amount of %1 in the inventory of %0" id="104" message="GetAmountofItem" name="GetAmountofItem" oid="-1" return="NUMBER" shared="false" snippetID="67">
+    <custom-block blocktag="custom-177" blocktype="NORMAL" code="Number((scripts.Design_115_115_Inventory.GetAmountofItem(~,~)))" desc="Returns the amount of an item in the actor's inventory." global="true" gui="Get amount of %1 in the inventory of %0" id="177" message="GetAmountofItem" name="GetAmountofItem" oid="-1" return="NUMBER" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+        <blank name="ItemName" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-104" blocktype="NORMAL" code="Number((scripts.Design_67_67_Inventory.GetAmountofItem(~,~)))" desc="Returns the amount of an item in the actor's inventory." global="true" gui="Get amount of %1 in the inventory of %0" id="104" message="GetAmountofItem" name="GetAmountofItem" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="ItemName" order="1" type="TEXT"/>
     </custom-block>
@@ -261,7 +325,11 @@
     <custom-block blocktag="custom-134" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="134" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="90">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-101" blocktype="NORMAL" code="String((scripts.Design_67_67_Inventory.GetItematIndex(~,~)))" desc="Returns the item at the given index for the actor." global="true" gui="Get item at index %1 from the inventory of %0" id="101" message="GetItematIndex" name="GetItematIndex" oid="-1" return="TEXT" shared="false" snippetID="67">
+    <custom-block blocktag="custom-174" blocktype="NORMAL" code="String((scripts.Design_115_115_Inventory.GetItematIndex(~,~)))" desc="Returns the item at the given index for the actor." global="true" gui="Get item at index %1 from the inventory of %0" id="174" message="GetItematIndex" name="GetItematIndex" oid="-1" return="TEXT" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-101" blocktype="NORMAL" code="String((scripts.Design_67_67_Inventory.GetItematIndex(~,~)))" desc="Returns the item at the given index for the actor." global="true" gui="Get item at index %1 from the inventory of %0" id="101" message="GetItematIndex" name="GetItematIndex" oid="-1" return="TEXT" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="Index" order="1" type="NUMBER"/>
     </custom-block>
@@ -327,7 +395,11 @@
     <custom-block blocktag="custom-41" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;IncrementScore&quot;, ~);" desc="" global="false" gui="Increment Score By %0" id="41" message="IncrementScore" name="IncrementScore" oid="-1" return="VOID" shared="false" snippetID="17">
         <blank name="Amount" order="0" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-100" blocktype="NORMAL" code="Number((scripts.Design_67_67_Inventory.IndexofItem(~,~)))" desc="Returns the index of an item in the list." global="true" gui="Index of %0 in list %1" id="100" message="IndexofItem" name="IndexofItem" oid="-1" return="NUMBER" shared="false" snippetID="67">
+    <custom-block blocktag="custom-173" blocktype="NORMAL" code="Number((scripts.Design_115_115_Inventory.IndexofItem(~,~)))" desc="Returns the index of an item in the list." global="true" gui="Index of %0 in list %1" id="173" message="IndexofItem" name="IndexofItem" oid="-1" return="NUMBER" shared="false" snippetID="-1">
+        <blank name="ItemName" order="0" type="OBJECT"/>
+        <blank name="List" order="1" type="LIST"/>
+    </custom-block>
+    <custom-block blocktag="custom-100" blocktype="NORMAL" code="Number((scripts.Design_67_67_Inventory.IndexofItem(~,~)))" desc="Returns the index of an item in the list." global="true" gui="Index of %0 in list %1" id="100" message="IndexofItem" name="IndexofItem" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="ItemName" order="0" type="OBJECT"/>
         <blank name="List" order="1" type="LIST"/>
     </custom-block>
@@ -338,13 +410,20 @@
     <custom-block blocktag="custom-157" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreX&quot;)))" desc="The center-x position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre X" id="157" message="IntroTitleCentreX" name="IntroTitleCentreX" oid="-1" return="NUMBER" shared="false" snippetID="109"/>
     <custom-block blocktag="custom-158" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreY&quot;)))" desc="The center-y position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre Y" id="158" message="IntroTitleCentreY" name="IntroTitleCentreY" oid="-1" return="NUMBER" shared="false" snippetID="109"/>
     <custom-block blocktag="custom-159" blocktype="NORMAL" code="String((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleText&quot;)))" desc="The text, whether custom or simply the current scene's name, that is being used in the intro title." global="false" gui="Intro Title Text" id="159" message="IntroTitleText" name="IntroTitleText" oid="-1" return="TEXT" shared="false" snippetID="109"/>
-    <custom-block blocktag="custom-99" blocktype="NORMAL" code="Boolean((scripts.Design_67_67_Inventory.InventoryFull(~)))" desc="Returns true if the inventory of the given actor is full." global="true" gui="Inventory of %0 is full" id="99" message="InventoryFull" name="InventoryFull" oid="-1" return="BOOLEAN" shared="false" snippetID="67">
+    <custom-block blocktag="custom-172" blocktype="NORMAL" code="Boolean((scripts.Design_115_115_Inventory.InventoryFull(~)))" desc="Returns true if the inventory of the given actor is full." global="true" gui="Inventory of %0 is full" id="172" message="InventoryFull" name="InventoryFull" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-99" blocktype="NORMAL" code="Boolean((scripts.Design_67_67_Inventory.InventoryFull(~)))" desc="Returns true if the inventory of the given actor is full." global="true" gui="Inventory of %0 is full" id="99" message="InventoryFull" name="InventoryFull" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-69" blocktype="NORMAL" code="Boolean((scripts.Design_44_44_Inventory.InventoryFull(~)))" desc="Returns true if the inventory of the given actor is full." global="true" gui="Inventory of %0 is full" id="69" message="InventoryFull" name="InventoryFull" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-98" blocktype="NORMAL" code="Boolean((scripts.Design_67_67_Inventory.ItematMaximumAmount(~,~)))" desc="Returns a boolean if the item in the actor's inventory is at maximum capacity or not." global="true" gui="%1 is at maximum amount in the inventory of %0" id="98" message="ItematMaximumAmount" name="ItematMaximumAmount" oid="-1" return="BOOLEAN" shared="false" snippetID="67">
+    <custom-block blocktag="custom-171" blocktype="NORMAL" code="Boolean((scripts.Design_115_115_Inventory.ItematMaximumAmount(~,~)))" desc="Returns a boolean if the item in the actor's inventory is at maximum capacity or not." global="true" gui="%1 is at maximum amount in the inventory of %0" id="171" message="ItematMaximumAmount" name="ItematMaximumAmount" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+        <blank name="ItemName" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-98" blocktype="NORMAL" code="Boolean((scripts.Design_67_67_Inventory.ItematMaximumAmount(~,~)))" desc="Returns a boolean if the item in the actor's inventory is at maximum capacity or not." global="true" gui="%1 is at maximum amount in the inventory of %0" id="98" message="ItematMaximumAmount" name="ItematMaximumAmount" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="ItemName" order="1" type="TEXT"/>
     </custom-block>
@@ -374,18 +453,18 @@
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="40" fixedrot="false" fric="0.0" gid="2" id="64" ignoreg="false" inertia="0.01" ldamp="0.0" lw="true" mass="2.0" name="Jets" oid="-1" pausable="true" rest="0.0" shared="false" sprite="65" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="39">
+            <s enabled="true" id="18">
                 <prop id="1" list="0" val="idle-r"/>
                 <prop id="2" list="0" val="idle-l"/>
                 <prop id="3" list="0" val="active-r"/>
                 <prop id="4" list="0" val="active-l"/>
                 <prop id="5" list="0" val="sputter-l"/>
                 <prop id="6" list="0" val="sputter-r"/>
-                <prop id="7" list="0" val="64"/>
+                <prop id="7" list="0" val="32"/>
                 <prop id="8" list="0" val=""/>
                 <prop id="9" list="0" val="50"/>
                 <prop id="10" list="0" val="30"/>
-                <prop id="11" list="0" val="0"/>
+                <prop id="11" list="0" val="50"/>
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
@@ -420,17 +499,6 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="16" fixedrot="true" fric="0.5" gid="0" id="32" ignoreg="false" inertia="0.01" ldamp="0.499" lw="false" mass="5.0" name="Jumper" oid="19264" pausable="true" rest="0.1" shared="true" sprite="33" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="101">
-                <prop id="1" list="0" val="3"/>
-                <prop id="2" list="0" val="3"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="5" list="0" val="false"/>
-                <prop id="7" list="0" val=""/>
-                <prop id="8" list="0" val="HealthDepleted"/>
-                <prop id="9" list="0" val="LifeLost"/>
-                <prop id="10" list="0" val="Death"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="20">
                 <prop id="1" list="0" val="10000000"/>
                 <prop id="2" list="0" val="10000000"/>
@@ -460,14 +528,14 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0.75"/>
             </s>
-            <s enabled="true" id="113">
+            <s enabled="true" id="65">
                 <prop id="1" list="0" val="true"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="112">
                 <prop id="1" list="0" val="1"/>
-                <prop id="2" list="0" val="0"/>
-                <prop id="4" list="0" val="0"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="4" list="0" val="3"/>
                 <prop id="5" list="0" val="3"/>
                 <prop id="6" list="0" val="3"/>
                 <prop id="7" list="0" val=""/>
@@ -521,18 +589,7 @@
                 <prop id="26" list="0" val="false"/>
                 <prop id="30" list="0" val="30.0"/>
             </s>
-            <s enabled="true" id="27">
-                <prop id="1" list="0" val="0"/>
-                <prop id="2" list="0" val="0"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="10">
-                <prop id="1" list="0" val=".05"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="15">
+            <s enabled="true" id="30">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -569,7 +626,12 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="MaxSpeed" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-107" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ModifyDamage&quot;, ~,~)))" desc="Modify the received damage of a specific type for the actor." global="false" gui="Modify damage %1 of type %2 using %0 resistance" id="107" message="ModifyDamage" name="ModifyDamage" oid="-1" return="NUMBER" shared="false" snippetID="71">
+    <custom-block blocktag="custom-180" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ModifyDamage&quot;, ~,~)))" desc="Modify the received damage of a specific type for the actor." global="false" gui="Modify damage %1 of type %2 using %0 resistance" id="180" message="ModifyDamage" name="ModifyDamage" oid="-1" return="NUMBER" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Damage" order="1" type="NUMBER"/>
+        <blank name="DamageType" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-107" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ModifyDamage&quot;, ~,~)))" desc="Modify the received damage of a specific type for the actor." global="false" gui="Modify damage %1 of type %2 using %0 resistance" id="107" message="ModifyDamage" name="ModifyDamage" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Damage" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
@@ -579,7 +641,12 @@
         <blank name="Damage" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-117" blocktype="ACTION" code="scripts.Design_76_76_CharacterStatus.ModifyStatus(~,~,~);" desc="Adds a permanent modifier to the actor's status." global="true" gui="Add permanent modifier %2 to status %1 by for %0" id="117" message="ModifyStatus" name="ModifyStatus" oid="-1" return="VOID" shared="false" snippetID="76">
+    <custom-block blocktag="custom-190" blocktype="ACTION" code="scripts.Design_124_124_CharacterStatus.ModifyStatus(~,~,~);" desc="Adds a permanent modifier to the actor's status." global="true" gui="Add permanent modifier %2 to status %1 by for %0" id="190" message="ModifyStatus" name="ModifyStatus" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Character" order="0" type="ACTOR"/>
+        <blank name="Status to Increase" order="1" type="TEXT"/>
+        <blank name="Bonus" order="2" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-117" blocktype="ACTION" code="scripts.Design_76_76_CharacterStatus.ModifyStatus(~,~,~);" desc="Adds a permanent modifier to the actor's status." global="true" gui="Add permanent modifier %2 to status %1 by for %0" id="117" message="ModifyStatus" name="ModifyStatus" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Character" order="0" type="ACTOR"/>
         <blank name="Status to Increase" order="1" type="TEXT"/>
         <blank name="Bonus" order="2" type="NUMBER"/>
@@ -597,7 +664,11 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-105" blocktype="ACTION" code="scripts.Design_68_68_Energy.RecoverEnergyAmmount(~,~);" desc="Recover energy of the given actor." global="true" gui="Recover %1 energy for %0" id="105" message="RecoverEnergyAmmount" name="RecoverEnergyAmmount" oid="-1" return="VOID" shared="false" snippetID="68">
+    <custom-block blocktag="custom-178" blocktype="ACTION" code="scripts.Design_116_116_Energy.RecoverEnergyAmmount(~,~);" desc="Recover energy of the given actor." global="true" gui="Recover %1 energy for %0" id="178" message="RecoverEnergyAmmount" name="RecoverEnergyAmmount" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="EnergyActor" order="0" type="ACTOR"/>
+        <blank name="EnergyAmmount" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-105" blocktype="ACTION" code="scripts.Design_68_68_Energy.RecoverEnergyAmmount(~,~);" desc="Recover energy of the given actor." global="true" gui="Recover %1 energy for %0" id="105" message="RecoverEnergyAmmount" name="RecoverEnergyAmmount" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="EnergyActor" order="0" type="ACTOR"/>
         <blank name="EnergyAmmount" order="1" type="NUMBER"/>
     </custom-block>
@@ -605,7 +676,11 @@
         <blank name="EnergyActor" order="0" type="ACTOR"/>
         <blank name="EnergyAmmount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-116" blocktype="ACTION" code="scripts.Design_74_74_Health.RecoverHealth(~,~);" desc="Recover health for the given actor." global="true" gui="Recover %1 health for %0" id="116" message="RecoverHealth" name="RecoverHealth" oid="-1" return="VOID" shared="false" snippetID="74">
+    <custom-block blocktag="custom-189" blocktype="ACTION" code="scripts.Design_122_122_Health.RecoverHealth(~,~);" desc="Recover health for the given actor." global="true" gui="Recover %1 health for %0" id="189" message="RecoverHealth" name="RecoverHealth" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="RecoveredActor" order="0" type="ACTOR"/>
+        <blank name="RecoverAmount" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-116" blocktype="ACTION" code="scripts.Design_74_74_Health.RecoverHealth(~,~);" desc="Recover health for the given actor." global="true" gui="Recover %1 health for %0" id="116" message="RecoverHealth" name="RecoverHealth" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="RecoveredActor" order="0" type="ACTOR"/>
         <blank name="RecoverAmount" order="1" type="NUMBER"/>
     </custom-block>
@@ -613,7 +688,12 @@
         <blank name="RecoveredActor" order="0" type="ACTOR"/>
         <blank name="RecoverAmount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-96" blocktype="ACTION" code="scripts.Design_67_67_Inventory.RemoveItemfromInventory(~,~,~);" desc="Removes an amount of an item from the actor's inventory." global="true" gui="Remove %1 %2 from the inventory of %0" id="96" message="RemoveItemfromInventory" name="RemoveItemfromInventory" oid="-1" return="VOID" shared="false" snippetID="67">
+    <custom-block blocktag="custom-169" blocktype="ACTION" code="scripts.Design_115_115_Inventory.RemoveItemfromInventory(~,~,~);" desc="Removes an amount of an item from the actor's inventory." global="true" gui="Remove %1 %2 from the inventory of %0" id="169" message="RemoveItemfromInventory" name="RemoveItemfromInventory" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="InventoryOwner" order="0" type="ACTOR"/>
+        <blank name="Amount" order="1" type="NUMBER"/>
+        <blank name="ItemName" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-96" blocktype="ACTION" code="scripts.Design_67_67_Inventory.RemoveItemfromInventory(~,~,~);" desc="Removes an amount of an item from the actor's inventory." global="true" gui="Remove %1 %2 from the inventory of %0" id="96" message="RemoveItemfromInventory" name="RemoveItemfromInventory" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="ItemName" order="2" type="TEXT"/>
@@ -623,7 +703,12 @@
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="ItemName" order="2" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-108" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;RemoveResistanceIndex&quot;, ~,~);" desc="Removes a index in the damage resistance temporary modifiers list." global="false" gui="Remove index %1 in %2 damage type resistance modifier for %0" id="108" message="RemoveResistanceIndex" name="RemoveResistanceIndex" oid="-1" return="VOID" shared="false" snippetID="71">
+    <custom-block blocktag="custom-181" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;RemoveResistanceIndex&quot;, ~,~);" desc="Removes a index in the damage resistance temporary modifiers list." global="false" gui="Remove index %1 in %2 damage type resistance modifier for %0" id="181" message="RemoveResistanceIndex" name="RemoveResistanceIndex" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+        <blank name="DamageType" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-108" blocktype="ACTION" code="~.say(&quot;Damage Type Modifier&quot;, &quot;RemoveResistanceIndex&quot;, ~,~);" desc="Removes a index in the damage resistance temporary modifiers list." global="false" gui="Remove index %1 in %2 damage type resistance modifier for %0" id="108" message="RemoveResistanceIndex" name="RemoveResistanceIndex" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
@@ -633,7 +718,12 @@
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="DamageType" order="2" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-112" blocktype="ACTION" code="scripts.Design_72_72_StatusConditionPoison.RemoveStatusModifier(~,~,~);" desc="Removes an index of status resistance modifier for the actor." global="true" gui="Remove status resistance index %1 for %0 in behavior %2" id="112" message="RemoveStatusModifier" name="RemoveStatusModifier" oid="-1" return="VOID" shared="false" snippetID="72">
+    <custom-block blocktag="custom-185" blocktype="ACTION" code="scripts.Design_120_120_StatusConditionPoison.RemoveStatusModifier(~,~,~);" desc="Removes an index of status resistance modifier for the actor." global="true" gui="Remove status resistance index %1 for %0 in behavior %2" id="185" message="RemoveStatusModifier" name="RemoveStatusModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="StatusActor" order="0" type="ACTOR"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+        <blank name="Behavior" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-112" blocktype="ACTION" code="scripts.Design_72_72_StatusConditionPoison.RemoveStatusModifier(~,~,~);" desc="Removes an index of status resistance modifier for the actor." global="true" gui="Remove status resistance index %1 for %0 in behavior %2" id="112" message="RemoveStatusModifier" name="RemoveStatusModifier" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="StatusActor" order="0" type="ACTOR"/>
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="Behavior" order="2" type="TEXT"/>
@@ -643,7 +733,12 @@
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="Behavior" order="2" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-120" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;RemoveTemporaryModifiers&quot;, ~,~);" desc="Remove an index of the temporary modifiers." global="false" gui="Remove modifier index %1 for attribute %2 for %0" id="120" message="RemoveTemporaryModifiers" name="RemoveTemporaryModifiers" oid="-1" return="VOID" shared="false" snippetID="76">
+    <custom-block blocktag="custom-193" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;RemoveTemporaryModifiers&quot;, ~,~);" desc="Remove an index of the temporary modifiers." global="false" gui="Remove modifier index %1 for attribute %2 for %0" id="193" message="RemoveTemporaryModifiers" name="RemoveTemporaryModifiers" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Index" order="1" type="NUMBER"/>
+        <blank name="Attribute" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-120" blocktype="ACTION" code="~.say(&quot;Character Status&quot;, &quot;RemoveTemporaryModifiers&quot;, ~,~);" desc="Remove an index of the temporary modifiers." global="false" gui="Remove modifier index %1 for attribute %2 for %0" id="120" message="RemoveTemporaryModifiers" name="RemoveTemporaryModifiers" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="Attribute" order="2" type="TEXT"/>
@@ -662,7 +757,11 @@
     <custom-block blocktag="custom-23" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;restore&quot;);" desc="Restores to maximum health." global="false" gui="restore %0 to max health" id="23" message="restore" name="restore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-111" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ReturnTotalDamageModifier&quot;, ~)))" desc="Returns the total damage modifier for a given damage type." global="false" gui="Total %1 damage modifier for %0" id="111" message="ReturnTotalDamageModifier" name="ReturnTotalDamageModifier" oid="-1" return="NUMBER" shared="false" snippetID="71">
+    <custom-block blocktag="custom-184" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ReturnTotalDamageModifier&quot;, ~)))" desc="Returns the total damage modifier for a given damage type." global="false" gui="Total %1 damage modifier for %0" id="184" message="ReturnTotalDamageModifier" name="ReturnTotalDamageModifier" oid="-1" return="NUMBER" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="DamageType" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-111" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ReturnTotalDamageModifier&quot;, ~)))" desc="Returns the total damage modifier for a given damage type." global="false" gui="Total %1 damage modifier for %0" id="111" message="ReturnTotalDamageModifier" name="ReturnTotalDamageModifier" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="DamageType" order="1" type="TEXT"/>
     </custom-block>
@@ -721,7 +820,11 @@
         <anim across="2" atlasID="-1" down="1" durations="100,100" height="64" id="0" loop="false" name="Right" numframes="2" originx="48" originy="32" width="192"/>
         <anim across="2" atlasID="-1" down="1" durations="100,100" height="64" id="1" loop="false" name="Left" numframes="2" originx="48" originy="32" width="192"/>
     </sprite>
-    <custom-block blocktag="custom-106" blocktype="ACTION" code="scripts.Design_68_68_Energy.SpendEnergy(~,~);" desc="Spend energy of the given actor." global="true" gui="Use %1 energy for %0" id="106" message="SpendEnergy" name="SpendEnergy" oid="-1" return="VOID" shared="false" snippetID="68">
+    <custom-block blocktag="custom-179" blocktype="ACTION" code="scripts.Design_116_116_Energy.SpendEnergy(~,~);" desc="Spend energy of the given actor." global="true" gui="Use %1 energy for %0" id="179" message="SpendEnergy" name="SpendEnergy" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="EnergyActor" order="0" type="ACTOR"/>
+        <blank name="EnergyAmmount" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-106" blocktype="ACTION" code="scripts.Design_68_68_Energy.SpendEnergy(~,~);" desc="Spend energy of the given actor." global="true" gui="Use %1 energy for %0" id="106" message="SpendEnergy" name="SpendEnergy" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="EnergyActor" order="0" type="ACTOR"/>
         <blank name="EnergyAmmount" order="1" type="NUMBER"/>
     </custom-block>
@@ -729,7 +832,7 @@
         <blank name="EnergyActor" order="0" type="ACTOR"/>
         <blank name="EnergyAmmount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-63" blocktype="ACTION" code="~.say(&quot;Jetpack Follow Player&quot;, &quot;Sync&quot;, ~);" desc="" global="false" gui="%0 Sync With Actor %1" id="63" message="Sync" name="Sync" oid="-1" return="VOID" shared="false" snippetID="39">
+    <custom-block blocktag="custom-63" blocktype="ACTION" code="~.say(&quot;Jetpack Follow Player&quot;, &quot;Sync&quot;, ~);" desc="" global="false" gui="%0 Sync With Actor %1" id="63" message="Sync" name="Sync" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Player" order="1" type="ACTOR"/>
     </custom-block>
@@ -747,7 +850,7 @@
     </actor>
     <sprite atlasID="0" default="0" desc="" height="650" id="161" name="Tree Side" shared="false" width="25">
         <anim across="1" atlasID="-1" down="1" durations="100" height="650" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="96" width="25">
-            <poly data="4,2,2,24,2,24,1302,2,1302" density="0.1" fric="0.2" gid="-2" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,2,2,24,2,24,1302,2,1302" density="0.1" fric="0.2" gid="1" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-14" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;WalkAccel&quot;, ~);" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="14" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="11">
