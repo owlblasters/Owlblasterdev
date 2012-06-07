@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-117-3 comment="false" x="37" y="60">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-117-3>
+                        <set-val-117-1 comment="false" x="37" y="87">
+                            <int id="0" val=""/>
+                        </set-val-117-1>
+                    </group>
+                    <int id="0" val=""/>
+                </if>
+                <else comment="false" x="26" y="119">
+                    <group eventID="-1" id="-1">
+                        <set-val-117-3 comment="false" x="37" y="139">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-117-3>
+                        <set-val-117-1 comment="false" x="37" y="166">
+                            <get-val-117-2 comment="false" id="0" x="0" y="0"/>
+                        </set-val-117-1>
+                    </group>
+                </else>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <say comment="false" x="37" y="97">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <int id="1" val="Respawn on Death"/>
+                            <int id="2" val="respawn"/>
+                        </say>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-117-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="136">
+                    <group eventID="-1" id="-1">
+                        <scene-reload-new comment="false" x="37" y="166">
+                            <int id="0" val="0"/>
+                            <int id="1" val=".5"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="1"/>
+                        </scene-reload-new>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-117-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+            <int id="0" val="loseLife"/>
+        </receive-message>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-117-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-117-2 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+                <if comment="false" x="26" y="109">
+                    <group eventID="-1" id="-1"/>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-117-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-117-2 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+            </group>
+            <int id="0" val="gainLife"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

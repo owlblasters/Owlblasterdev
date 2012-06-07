@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <create-actor3 comment="false" x="37" y="65">
+                            <ACTORTYPE eid="var" id="0" vid="1"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <screen-xy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-xy>
+                                <get-val-119-2 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <screen-xy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-xy>
+                                <get-val-119-3 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <scene-shout comment="false" x="37" y="110">
+                            <int id="0" val="respawn"/>
+                        </scene-shout>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <int id="0" val=""/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="142">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="167"/>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <int id="0" val=""/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="healthDepleted"/>
+        </receive-message>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

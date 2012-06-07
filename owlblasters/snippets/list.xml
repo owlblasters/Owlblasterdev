@@ -748,132 +748,6 @@
             <event displayName="Death" enabled="true" id="18" name="event-custom" order="15" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_102_102_FlickerOnDamage" desc="Add this Behavior along with the &quot;Health Manager&quot; Behavior to have the Actor draw with a negative effect when damaged, for the specified duration." description="Add this Behavior along with the &quot;Health Manager&quot; Behavior to have the Actor draw with a negative effect when damaged, for the specified duration." design="true" drawOrder="0" id="102" language="" name="Flicker On Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0.30" desc="How long should the flicker last?" dropdown="" fullname="Duration" hidden="false" id="1" name="_Duration" order="2"/>
-        <boolean default="false" desc="" dropdown="" fullname="Stop Flicker?" hidden="true" id="2" name="_StopFlicker" order="3"/>
-        <boolean default="false" desc="" dropdown="" fullname="Flickering?" hidden="true" id="3" name="_Flickering" order="4"/>
-        <text default="Damaged" desc="Listen for this message from the &quot;Health Manager&quot; Behavior, to apply flicker." dropdown="" fullname="Damaged Message" hidden="false" id="4" name="_DamagedMessage" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks>
-            <receiver blockID="144" id="1"/>
-        </blocks>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_103_103_DeathHandler" desc="Add this behavior to an Actor that can die.  This will determine what happens after death." description="Add this behavior to an Actor that can die.  This will determine what happens after death." design="true" drawOrder="0" id="103" language="" name="Death Handler" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <text default="LifeLost" desc="Listen for this message indicating that a life has been lost, but the Actor still has more lives left." dropdown="" fullname="Listen Life Lost Message" hidden="false" id="1" name="_ListenLifeLostMessage" order="1"/>
-        <text default="Death" desc="Listen for this message indicating that a life has been lost, and the Actor has no remaining lives." dropdown="" fullname="Listen Death Message" hidden="false" id="2" name="_ListenDeathMessage" order="2"/>
-        <text default="" desc="What should happen when a life is lost?" dropdown="Kill Actor=Kill&#10;Recycle Actor=Recycle&#10;Switch Scene=Switch&#10;Reload Scene=Reload&#10;Respawn At Checkpoint=RespawnCP&#10;Reload Scene at Checkpoint=CheckpointCP&#10;" fullname="Life Lost Action" hidden="false" id="3" name="_LifeLostAction" order="3"/>
-        <text default="" desc="What should happen when the Actor dies and there are no lives left?" dropdown="Kill Actor=Kill&#10;Recycle Actor=Recycle&#10;Switch Scene=Switch&#10;Reload Scene=Reload&#10;Respawn At Checkpoint=Respawn&#10;Reload Scene at Checkpoint=Checkpoint&#10;" fullname="Death Action" hidden="false" id="4" name="_DeathAction" order="4"/>
-        <scene default="" desc="If switching scenes based on a lost life, switch to this scene." dropdown="" fullname="Life Lost Scene" hidden="false" id="5" name="_LifeLostScene" order="5"/>
-        <scene default="" desc="If switching scenes based on the Actor dying, switch to this scene." dropdown="" fullname="Death Scene" hidden="false" id="6" name="_DeathScene" order="6"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_100_100_DieinPit" desc="If the Actor falls off the bottom of the screen, deal a large amount of damage to kill the Actor." description="If the Actor falls off the bottom of the screen, deal a large amount of damage to kill the Actor." design="true" drawOrder="0" id="100" language="" name="Die in Pit" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="Set the amount of time the screen will fade after falling in. In and Out will be the same." dropdown="" fullname="Fade Time" hidden="false" id="1" name="_FadeTime" order="1"/>
-        <number default="0" desc="Set this to how long you wish to wait before reloading the scene.&lt;br&gt;Useful for displaying a Spawned Actor on Death animation so it completes before the reload." dropdown="" fullname="Time Before Reload" hidden="false" id="2" name="_TimeBeforeReload" order="2"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_101_101_LivesManager" desc="Attach this to an Actor that will have multiple lives.  This will allow you to specify the number of lives, increase/decrease the lives, and decide what to do when lives reaches 0." description="Attach this to an Actor that will have multiple lives.  This will allow you to specify the number of lives, increase/decrease the lives, and decide what to do when lives reaches 0." design="true" drawOrder="0" id="101" language="" name="Lives Manager" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="The maximum number of lives this Actor can have" dropdown="" fullname="Maximum Lives" hidden="false" id="1" name="_MaximumLives" order="3"/>
-        <number default="0" desc="The number of lives the Actor will start with" dropdown="" fullname="Starting Lives" hidden="false" id="2" name="_StartingLives" order="2"/>
-        <number default="0" desc="The current number of Lives the Actor has" dropdown="" fullname="Current Lives" hidden="true" id="3" name="_CurrentLives" order="1"/>
-        <boolean default="false" desc="Check this box if the Actor's lives should persist from scene to scene.  &#10;&lt;br&gt;&lt;br&gt;&#10;&lt;b&gt;Note: &lt;/b&gt;If this option is checked, you must specify a &lt;font color=&quot;WHITE&quot;&gt;Lives Identifier&lt;/font&gt; in the option below.&lt;br&gt;  The value &lt;b&gt;must be unique&lt;/b&gt; to this Actor otherwise the functionality&lt;br&gt; may be adversely affected." dropdown="" fullname="Persistent Lives?" hidden="false" id="5" name="_PersistentLives" order="4"/>
-        <text default="" desc="&lt;b&gt;Note:&lt;/b&gt; This option is only used if the &lt;b&gt;Persistent Lives?&lt;/b&gt; box is checked.&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;Enter in a free text name that will be unique to this Actor.  Behind the scenes, this will be used as the name of a Game Attribute to track the current number of Lives." dropdown="" fullname="Lives Identifier" hidden="false" id="7" name="_LivesIdentifier" order="5"/>
-        <text default="HealthDepleted" desc="Listen for this message, indicating that the Actor's health has been depleted." dropdown="" fullname="Health Depleted Message" hidden="false" id="8" name="_HealthDepletedMessage" order="6"/>
-        <text default="LifeLost" desc="Send this message when a life is lost." dropdown="" fullname="Send Lost Life Message" hidden="false" id="9" name="_SendLostLifeMessage" order="7"/>
-        <text default="Death" desc="Send this message when a life is lost and there are no lives left." dropdown="" fullname="Send Death Message" hidden="false" id="10" name="_SendDeathMessage" order="8"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks>
-            <receiver blockID="143" id="1"/>
-            <receiver blockID="142" id="2"/>
-            <receiver blockID="141" id="3"/>
-        </blocks>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
-            <event displayName="UpdateGlobalLives" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
-            <event displayName="IncrementLives" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
-            <event displayName="DecrementLives" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
-            <event displayName="GetRemainingLives" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_98_98_HealthHUD" desc="Attach this behavior to a Scene to display the health of one of your Actors in the Scene.  The selected Actor must have the Health Manager behavior attached." description="Attach this behavior to a Scene to display the health of one of your Actors in the Scene.  The selected Actor must have the Health Manager behavior attached." design="true" drawOrder="0" id="98" language="" name="Health HUD" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <actor default="" desc="Select the player Actor whose health you want to display to the screen." dropdown="" fullname="Player" hidden="true" id="1" name="_Player" order="0"/>
-        <actortype default="" desc="Select the Actor Type whose health you want to display on the screen." dropdown="" fullname="Player Type" hidden="false" id="32" name="_PlayerType" order="1"/>
-        <text default="" desc="1. Health Bar&#10;2. Number&#10;3. Both" dropdown="Health Bar=Bar&#10;Number=Number&#10;Both=Both" fullname="Health Display Type" hidden="false" id="5" name="_HealthDisplayType" order="2"/>
-        <font default="" desc="If displaying the font using numbers, specify the font to use. " dropdown="" fullname="Health Font" hidden="false" id="9" name="_HealthFont" order="3"/>
-        <text default="" desc="Draw the health bar horizontally or vertically?" dropdown="Horizontal=Horizontal&#10;Vertical=Vertical" fullname="Health Orientation" hidden="false" id="11" name="_HealthOrientation" order="5"/>
-        <text default="" desc="Actor space (relative to upper left coordinate of Actor), or Screen Space (where 0,0 is upper left of screen)?" dropdown="Screen Space=Screen&#10;Actor Space=Actor" fullname="Health Drawing Location" hidden="false" id="13" name="_HealthDrawingLocation" order="4"/>
-        <color default="255,255,255,255" desc="Enter an outline color that will display around the background of the health bar" dropdown="" fullname="Health Bar Outline Color" hidden="false" id="19" name="_HealthBarOutlineColor" order="13"/>
-        <number default="0" desc="How many pixels should the outline be?  Set to 0 to prevent an outline from drawing." dropdown="" fullname="Health Bar Outline Size" hidden="false" id="18" name="_HealthBarOutlineSize" order="12"/>
-        <color default="0,255,0,255" desc="Color of the health bar when the health is over 75%." dropdown="" fullname="Over 75 Percent" hidden="false" id="21" name="_Over75Percent" order="15"/>
-        <color default="" desc="Background color of the health bar." dropdown="" fullname="Health Bar Background Color" hidden="false" id="20" name="_HealthBarBackgroundColor" order="14"/>
-        <color default="255,102,0,255" desc="Color of the health bar when the health is over 25%." dropdown="" fullname="Over 25 Percent" hidden="false" id="23" name="_Over25Percent" order="17"/>
-        <color default="0,255,255,255" desc="Color of the health bar when the health is over 50%." dropdown="" fullname="Over 50 Percent" hidden="false" id="22" name="_Over50Percent" order="16"/>
-        <number default="0" desc="" dropdown="" fullname="Percent Left" hidden="true" id="25" name="_PercentLeft" order="19"/>
-        <color default="255,0,0,255" desc="Color of the health bar when the health is under 25%." dropdown="" fullname="Under 25 Percent" hidden="false" id="24" name="_Under25Percent" order="18"/>
-        <number default="0" desc="Height of the health bar" dropdown="" fullname="Health Bar Height" hidden="false" id="27" name="_HealthBarHeight" order="11"/>
-        <number default="0" desc="Width of the health bar" dropdown="" fullname="Health Bar Width" hidden="false" id="26" name="_HealthBarWidth" order="10"/>
-        <number default="0" desc="If using a number to display the health, enter the vertical offset here." dropdown="" fullname="Health Number Y Offset" hidden="false" id="29" name="_HealthNumberYOffset" order="7"/>
-        <number default="0" desc="If using a number to display the health, enter the horizontal offset here." dropdown="" fullname="Health Number X Offset" hidden="false" id="28" name="_HealthNumberXOffset" order="6"/>
-        <number default="0" desc="If using a health bar to display the health, enter the vertical offset here." dropdown="" fullname="Health Bar Y Offset" hidden="false" id="31" name="_HealthBarYOffset" order="9"/>
-        <number default="0" desc="If using a health bar to display the health, enter the horizontal offset here." dropdown="" fullname="Health Bar X Offset" hidden="false" id="30" name="_HealthBarXOffset" order="8"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_99_99_HealOnCollision" desc="Add this to an Actor to create a health pick-up.  The colliding Actor will be healed by the specified Amount." description="Add this to an Actor to create a health pick-up.  The colliding Actor will be healed by the specified Amount." design="true" drawOrder="0" id="99" language="" name="Heal On Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="Add this amount of health to the colliding Actor." dropdown="" fullname="Health Amount" hidden="false" id="1" name="_HealthAmount" order="2"/>
-        <boolean default="false" desc="" dropdown="" fullname="Healed?" hidden="true" id="2" name="_Healed" order="1"/>
-        <list default="list" desc="Only heal Actors in these Actor Groups.  Leave blank to heal Actors from any Actor Group." dropdown="" fullname="Heal Actor Groups" hidden="false" id="3" name="_HealActorGroups" order="3"/>
-        <text default="" desc="1. Kill Self&lt;br&gt;&#10;2. Recycle Self&lt;br&gt;&#10;3. Do Nothing&lt;br&gt;" dropdown="Kill Self=Kill&#10;Recycle Self=Recycle&#10;Do Nothing=Do Nothing" fullname="Post Heal Action" hidden="false" id="4" name="_PostHealAction" order="4"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_96_96_LivesHUD" desc="" description="" design="true" drawOrder="0" id="96" language="" name="Lives HUD" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <actortype default="" desc="The default animation for this Actor type will be used to display the remaining lives." dropdown="" fullname="Lives Actor Type" hidden="false" id="1" name="_LivesActorType" order="5"/>
-        <number default="0.0" desc="" dropdown="" fullname="Remaining Lives" hidden="true" id="2" name="_RemainingLives" order="6"/>
-        <actor default="" desc="" dropdown="" fullname="Lives Actor" hidden="true" id="3" name="_LivesActor" order="7"/>
-        <actor default="" desc="Display the remaining lives for this Actor." dropdown="" fullname="Player" hidden="true" id="4" name="_Player" order="3"/>
-        <actortype default="" desc="Display the remaining lives for this Actor Type." dropdown="" fullname="Player Type" hidden="false" id="5" name="_PlayerType" order="0"/>
-        <text default="" desc="Image, Number, or Both?" dropdown="Image=Image&#10;Number=Number&#10;Both=Both" fullname="Lives Display Type" hidden="false" id="6" name="_LivesDisplayType" order="1"/>
-        <text default="" desc="Horizonal, or Vertical? Applicable when using images to display remaining lives." dropdown="Horizontal=Horizontal&#10;Vertical=Vertical" fullname="Display Orientation" hidden="false" id="7" name="_DisplayOrientation" order="2"/>
-        <number default="0.0" desc="If drawing images, this is the amount of space that will be added between subsequent images" dropdown="" fullname="Spacing" hidden="false" id="10" name="_Spacing" order="12"/>
-        <font default="" desc="If displaying the number of lives using numbers, select the font here." dropdown="" fullname="Number Font" hidden="false" id="11" name="_NumberFont" order="4"/>
-        <number default="0" desc="Horizontal offset to start drawing the first image" dropdown="" fullname="Image X Offset" hidden="false" id="12" name="_ImageXOffset" order="10"/>
-        <number default="0" desc="Vertical offset to start drawing the first image" dropdown="" fullname="Image Y Offset" hidden="false" id="13" name="_ImageYOffset" order="11"/>
-        <number default="0" desc="Horizontal offset to start drawing the number of lives remaining" dropdown="" fullname="Number X Offset" hidden="false" id="14" name="_NumberXOffset" order="13"/>
-        <number default="0" desc="Vertical offset to start drawing the number of lives remaining" dropdown="" fullname="Number Y Offset" hidden="false" id="15" name="_NumberYOffset" order="14"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_97_97_CheckpointSystem" desc="Add this behavior to an Actor (usually a Player) to record checkpoints.  Each scene should have checkpoint regions created and named using the following scheme:&lt;br&gt;&lt;br&gt;&#10;CP_#_X_Y&#10;&lt;br&gt;&lt;br&gt;&#10;Where # is the checkpoint number, and X and Y are numeric values indicating the position that the Actor should be spawned in when respawning at the checkpoint." description="Add this behavior to an Actor (usually a Player) to record checkpoints.  Each scene should have checkpoint regions created and named using the following scheme:&lt;br&gt;&lt;br&gt;&#10;CP_#_X_Y&#10;&lt;br&gt;&lt;br&gt;&#10;Where # is the checkpoint number, and X and Y are numeric values indicating the position that the Actor should be spawned in when respawning at the checkpoint." design="true" drawOrder="0" id="97" language="" name="Checkpoint System" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <list default="list" desc="" dropdown="" fullname="RegionList" hidden="true" id="2" name="_RegionList" order="0"/>
-        <region default="" desc="" dropdown="" fullname="CurrentRegion" hidden="true" id="3" name="_CurrentRegion" order="1"/>
-        <number default="0" desc="" dropdown="" fullname="Current Checkpoint" hidden="true" id="4" name="_CurrentCheckpoint" order="2"/>
-        <number default="0" desc="" dropdown="" fullname="Checkpoint X" hidden="true" id="5" name="_CheckpointX" order="3"/>
-        <number default="0" desc="" dropdown="" fullname="Checkpoint Y" hidden="true" id="6" name="_CheckpointY" order="4"/>
-        <actortype default="" desc="Checkpoints will be triggered by this Actor Type." dropdown="" fullname="Player Type" hidden="false" id="7" name="_PlayerType" order="7"/>
-        <number default="0" desc="" dropdown="" fullname="Checkpoint Number" hidden="true" id="8" name="_CheckpointNumber" order="5"/>
-        <text default="" desc="" dropdown="" fullname="RegionName" hidden="true" id="9" name="_RegionName" order="6"/>
-        <boolean default="false" desc="Check this box to spawn the Actor Type when the scene is loaded." dropdown="" fullname="Spawn Actor?" hidden="false" id="10" name="_SpawnActor" order="8"/>
-        <number default="0" desc="This is the default x location that the Actor will be spawned at, if the current checkpoint is not in this scene - or if no checkpoints are defined." dropdown="" fullname="Spawn X Location" hidden="false" id="11" name="_SpawnXLocation" order="9"/>
-        <number default="0" desc="This is the default y location that the Actor will be spawned at, if the current checkpoint is not in this scene - or if no checkpoints are defined." dropdown="" fullname="Spawn Y Location" hidden="false" id="12" name="_SpawnYLocation" order="10"/>
-        <number default="0" desc="" dropdown="" fullname="SceneID" hidden="true" id="13" name="_SceneID" order="11"/>
-        <actorgroup default="" desc="If using a visual indicator for checkpoints, enter the Actor Group here." dropdown="" fullname="Checkpoint Group" hidden="false" id="14" name="_CheckpointGroup" order="13"/>
-        <text default="" desc="If using a visual indicator for checkpoints, enter the name of the non-flagged animation." dropdown="" fullname="Checkpoint Non Flagged Animation" hidden="false" id="15" name="_CheckpointNonFlaggedAnimation" order="14"/>
-        <boolean default="true" desc="If this option is selected, add checkpoint Actors to your scene - and make sure they're within the checkpoint regions.  Give them an animation for when flagged and unflagged and specify those in the fields below." dropdown="" fullname="Use Visual Checkpoint Indicator?" hidden="false" id="17" name="_UseVisualCheckpointIndicator" order="12"/>
-        <text default="" desc="If using a visual indicator for checkpoints, enter the name of the flagged animation." dropdown="" fullname="Checkpoint Flagged Animation" hidden="false" id="16" name="_CheckpointFlaggedAnimation" order="15"/>
-        <blocks>
-            <receiver blockID="140" id="1"/>
-            <receiver blockID="139" id="2"/>
-        </blocks>
-        <events/>
-    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_160" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="110" language="" name="ActorEvents_160" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
@@ -926,93 +800,27 @@
             <event displayName="Intro Title Centre Y" enabled="true" id="9" name="event-custom-block" order="6" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_106_106_HealthManager" desc="The Health Manager will track the Actor's current health, as well as provide blocks for healing and damaging the Actor.  It can also send messages to other behaviors to allow for a wide range of functionality." description="The Health Manager will track the Actor's current health, as well as provide blocks for healing and damaging the Actor.  It can also send messages to other behaviors to allow for a wide range of functionality." design="true" drawOrder="0" id="106" language="" name="Health Manager" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="3" desc="Amount of health to start with." dropdown="" fullname="Starting Health" hidden="false" id="1" name="_StartingHealth" order="4"/>
-        <number default="3" desc="Maximum amount of health." dropdown="" fullname="Maximum Health" hidden="false" id="2" name="_MaximumHealth" order="5"/>
-        <number default="3" desc="HIDDEN - Tracks the current amount of health." dropdown="" fullname="Current Health" hidden="true" id="3" name="_CurrentHealth" order="1"/>
-        <text default="Healed" desc="Send this message to all behaviors when the Actor is healed by any amount.  Remove value to prevent a message from being sent." dropdown="" fullname="Healed Message" hidden="false" id="4" name="_HealedMessage" order="10"/>
-        <text default="Damaged" desc="Send this message to all behaviors when the Actor is damaged by any amount.  Remove the value to prevent a message from being sent." dropdown="" fullname="Damaged Message" hidden="false" id="5" name="_DamagedMessage" order="11"/>
-        <text default="" desc="If a scene is trying to spawn an Actor that uses persistent health - and the health is 0, what should we do?&lt;br&gt;&#10;1. Kill Actor&lt;br&gt;&#10;2. Recycle Actor&lt;br&gt;&#10;3. Do Nothing&lt;br&gt;" dropdown="Kill Actor=Kill&#10;Recycle Actor=Recycle&#10;Do Nothing=Nothing" fullname="Zero Health Action" hidden="false" id="7" name="_ZeroHealthAction" order="9"/>
-        <boolean default="false" desc="" dropdown="" fullname="Invincible?" hidden="true" id="8" name="_Invincible" order="3"/>
-        <number default="0.5" desc="How long should the Actor become temporarily invincible after being damaged?" dropdown="" fullname="Delay Between Damage" hidden="false" id="9" name="_DelayBetweenDamage" order="8"/>
-        <boolean default="true" desc="" dropdown="" fullname="Can Be Damaged?" hidden="true" id="10" name="_CanBeDamaged" order="2"/>
-        <boolean default="false" desc="Check this box if the Actor's health should persist from scene to scene.  &#10;&lt;br&gt;&lt;br&gt;&#10;&lt;b&gt;Note: &lt;/b&gt;If this option is checked, you must specify a &lt;font color=&quot;WHITE&quot;&gt;Game Attribute&lt;/font&gt; in the option below.&lt;br&gt;  The Game Attribute selected &lt;b&gt;must be unique&lt;/b&gt; to this Actor otherwise the functionality&lt;br&gt; may be adversely affected." dropdown="" fullname="Persistent Health?" hidden="false" id="11" name="_PersistentHealth" order="6"/>
-        <text default="" desc="&lt;b&gt;Note:&lt;/b&gt; This field is only used if the &lt;b&gt;Persistent Health?&lt;/b&gt; box is checked.&#10;&lt;br&gt;&lt;br&gt;&#10;Enter in any text value.  This will be used to track the health of this particular Actor." dropdown="" fullname="Health Identifier" hidden="false" id="13" name="_HealthIdentifier" order="7"/>
-        <sound default="" desc="Play this sound when the Actor is damaged." dropdown="" fullname="Damage Sound" hidden="false" id="14" name="_DamageSound" order="13"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <text default="" desc="Send this message to all behaviors when the Actor's health reaches zero.  Remove the value to prevent a message from being sent." dropdown="" fullname="Health Depleted Message" hidden="false" id="17" name="_HealthDepletedMessage" order="12"/>
-        <sound default="" desc="Play this sound when the Actor is healed." dropdown="" fullname="Heal Sound" hidden="false" id="16" name="_HealSound" order="15"/>
-        <sound default="" desc="Play this sound when the Actor's health is depleted." dropdown="" fullname="Health Depleted Sound" hidden="false" id="18" name="_HealthDepletedSound" order="14"/>
-        <blocks>
-            <receiver blockID="152" id="1"/>
-            <receiver blockID="154" id="2"/>
-            <receiver blockID="153" id="3"/>
-            <receiver blockID="148" id="4"/>
-            <receiver blockID="147" id="5"/>
-            <receiver blockID="151" id="6"/>
-            <receiver blockID="150" id="7"/>
-            <receiver blockID="146" id="8"/>
-            <receiver blockID="149" id="9"/>
-        </blocks>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Heal" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
-            <event displayName="Damage" enabled="true" id="3" name="event-custom-block" order="3" repeats="true"/>
-            <event displayName="FullRestore" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
-            <event displayName="GetCurrentHealth" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
-            <event displayName="GetMaxHealth" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="SetInvincibility" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
-            <event displayName="SetHealth" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
-            <event displayName="GetInvincibility" enabled="true" id="9" name="event-custom-block" order="9" repeats="true"/>
-            <event displayName="UpdateGlobalHealth" enabled="true" id="10" name="event-custom" order="10" repeats="true"/>
-            <event displayName="SetCanDamage" enabled="true" id="11" name="event-custom-block" order="11" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_107_107_SpawnActoruponDeath" desc="Spawns the Actor type of your choice when this Actor dies. You can specify the X and Y offset relative to the main Actor and the lifetime of the spawned Actor before it dies. Useful for death animations." description="Spawns the Actor type of your choice when this Actor dies. You can specify the X and Y offset relative to the main Actor and the lifetime of the spawned Actor before it dies. Useful for death animations." design="true" drawOrder="0" id="107" language="" name="Spawn Actor upon Death" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <actortype default="" desc="" dropdown="" fullname="Actor Type to Spawn" hidden="false" id="1" name="actTypeToSpawn" order="2"/>
-        <number default="0.0" desc="Horizontal offset from the original Actor" dropdown="" fullname="X Offset" hidden="false" id="2" name="xOffset" order="4"/>
-        <number default="0.0" desc="Vertical offset from the original Actor" dropdown="" fullname="Y Offset" hidden="false" id="3" name="yOffset" order="5"/>
-        <number default="0.0" desc="How long should the actor stay alive before disappearing?  Leave at 0, to prevent the Actor from being removed." dropdown="" fullname="Lifespan" hidden="false" id="4" name="lifespan" order="3"/>
-        <text default="Death" desc="Listen for this message from the &quot;Health Manager&quot; Behavior to invoke the spawn action." dropdown="" fullname="Death Message" hidden="false" id="5" name="_DeathMessage" order="0"/>
-        <text default="" desc="Normal or recycled?" dropdown="Normal=Normal&#10;Recycled=Recycled" fullname="Spawn Type" hidden="false" id="6" name="_SpawnType" order="1"/>
-        <actor default="" desc="" dropdown="" fullname="Spawned Actor" hidden="true" id="7" name="_SpawnedActor" order="7"/>
-        <boolean default="false" desc="" dropdown="" fullname="Spawned?" hidden="true" id="8" name="_Spawned" order="8"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="6"/>
+    <snippet attachedevent="false" class="scripts.Design_116_116_HealthMonitorHUDv2" desc="Displays the health of the chosen actor in the top left corner. Use whenever you want to have the scene &quot;know&quot; the health of a particular actor. Designed to work with the Lives Counter and Lives Detector Behaviors." description="Displays the health of the chosen actor in the top left corner. Use whenever you want to have the scene &quot;know&quot; the health of a particular actor. Designed to work with the Lives Counter and Lives Detector Behaviors." design="true" drawOrder="0" id="116" language="" name="Health Monitor HUD v2" oid="-1" package="" scenespecific="false" shared="false" type="scene">
+        <number default="0" desc="" dropdown="" fullname="cachedHealth" hidden="true" id="1" name="cachedHealth" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="maxHealth" hidden="true" id="2" name="maxHealth" order="1"/>
+        <actor default="" desc="Pick the actor whose health you want to monitor." dropdown="" fullname="Actor to Monitor" hidden="true" id="3" name="actor" order="0"/>
+        <font default="" desc="The font to use." dropdown="" fullname="Font to Use" hidden="false" id="4" name="FonttoUse" order="3"/>
+        <actortype default="" desc="This should the the ship/Actor you want to the player to control." dropdown="" fullname="Player Actor" hidden="false" id="5" name="_PlayerActor" order="4"/>
         <blocks/>
         <events>
-            <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_104_104_DisplayHealthBar" desc="Add this Behavior to an Actor that has the &quot;Health Manager&quot; Behavior to display a graphical representation of the remaining health." description="Add this Behavior to an Actor that has the &quot;Health Manager&quot; Behavior to display a graphical representation of the remaining health." design="true" drawOrder="0" id="104" language="" name="Display Health Bar" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <text default="" desc="Horizontal or Vertical?" dropdown="Horizontal=Horizontal&#10;Vertical=Vertical" fullname="Health Bar Orientation" hidden="false" id="1" name="_HealthBarOrientation" order="2"/>
-        <number default="100.0" desc="In pixels" dropdown="" fullname="Health Bar Width" hidden="false" id="2" name="_HealthBarWidth" order="3"/>
-        <number default="5" desc="In pixels" dropdown="" fullname="Health Bar Height" hidden="false" id="3" name="_HealthBarHeight" order="4"/>
-        <number default="0.0" desc="Horizontal offset in pixels" dropdown="" fullname="Health Bar X Offset" hidden="false" id="4" name="_HealthBarXOffset" order="5"/>
-        <number default="0.0" desc="Vertical offset in pixels" dropdown="" fullname="Health Bar Y Offset" hidden="false" id="5" name="_HealthBarYOffset" order="6"/>
-        <text default="" desc="Actor space (relative to upper left coordinate of Actor), or Screen Space (where 0,0 is upper left of screen)?" dropdown="Actor Space=Actor&#10;Screen Space=Screen" fullname="Drawing Location" hidden="false" id="6" name="_DrawingLocation" order="1"/>
-        <color default="0,255,0,255" desc="Color of the health bar when the health is over 75%." dropdown="" fullname="Color Over 75 Percent" hidden="false" id="7" name="_ColorOver75Percent" order="10"/>
-        <color default="0,255,255,255" desc="Color of the health bar when the health is over 50%." dropdown="" fullname="Color Over 50 Percent" hidden="false" id="8" name="_ColorOver50Percent" order="11"/>
-        <color default="255,102,0,255" desc="Color of the health bar when the health is over 25%." dropdown="" fullname="Color Over 25 Percent" hidden="false" id="9" name="_ColorOver25Percent" order="12"/>
-        <color default="255,0,0,255" desc="Color of the health bar when the health is below 25%." dropdown="" fullname="Color Under 25 Percent" hidden="false" id="10" name="_ColorUnder25Percent" order="13"/>
-        <number default="0" desc="" dropdown="" fullname="Percent Left" hidden="true" id="11" name="_PercentLeft" order="14"/>
-        <color default="" desc="Background color of the health bar." dropdown="" fullname="Health Bar Background Color" hidden="false" id="12" name="_HealthBarBackgroundColor" order="9"/>
-        <color default="255,255,255,255" desc="Enter an outline color that will display around the background of the health bar" dropdown="" fullname="Health Bar Outline Color" hidden="false" id="13" name="_HealthBarOutlineColor" order="8"/>
-        <number default="0.0" desc="How many pixels should the outline be?  Set to 0 to prevent an outline from drawing." dropdown="" fullname="Health Bar Outline Size" hidden="false" id="14" name="_HealthBarOutlineSize" order="7"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+    <snippet attachedevent="false" class="scripts.Design_115_115_SwitchSceneonClickorTouch" desc="Switch scene when the user clicks or touches the screen." description="Switch scene when the user clicks or touches the screen." design="true" drawOrder="0" id="115" language="" name="Switch Scene on Click or Touch" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <scene default="" desc="The scene to switch to." dropdown="" fullname="Next Scene" hidden="false" id="2" name="_NextScene" order="2"/>
+        <number default="0.5" desc="The time to fade out, in seconds." dropdown="" fullname="Fade Out Time" hidden="false" id="5" name="_FadeOutTime" order="3"/>
+        <number default="0.5" desc="The time to fade in, in seconds." dropdown="" fullname="Fade In Time" hidden="false" id="6" name="_FadeInTime" order="4"/>
         <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_105_105_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="105" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
-        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
-        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
-        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
-        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks>
-            <receiver blockID="145" id="1"/>
-        </blocks>
-        <events/>
+        <events>
+            <event displayName="Click" enabled="true" id="2" name="event-mouse-press-release" order="2" repeats="true"/>
+            <event displayName="Touch" enabled="true" id="3" name="event-device-touch" order="3" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_114_114_ReloadSceneOnActorDeath" desc="Reload the scene when a particular actor dies." description="Reload the scene when a particular actor dies." design="true" drawOrder="0" id="114" language="" name="Reload Scene On Actor Death" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <actor default="" desc="The actor to monitor." dropdown="" fullname="Actor" hidden="false" id="1" name="_Actor" order="0"/>

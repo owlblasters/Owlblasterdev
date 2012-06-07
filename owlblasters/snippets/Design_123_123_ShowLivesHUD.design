@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-123-2 comment="false" x="37" y="65">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Lives Counter"/>
+                                    <int id="1" val="CurrentLives"/>
+                                </scene-get-attribute>
+                            </as-number>
+                        </set-val-123-2>
+                        <set-val-123-3 comment="false" x="37" y="95">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Lives Counter"/>
+                                    <int id="1" val="MaxLives"/>
+                                </scene-get-attribute>
+                            </as-number>
+                        </set-val-123-3>
+                    </group>
+                    <scene-has-snippet comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Lives Counter"/>
+                    </scene-has-snippet>
+                </if>
+                <if comment="false" x="26" y="137">
+                    <group eventID="-1" id="-1">
+                        <set-val-123-3 comment="false" x="37" y="167">
+                            <int id="0" val="1"/>
+                        </set-val-123-3>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-123-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-123-2 comment="false" x="26" y="40">
+                    <as-number comment="false" id="0" x="0" y="0">
+                        <scene-get-attribute comment="false" id="0" x="0" y="0">
+                            <int id="0" val="Lives Counter"/>
+                            <int id="1" val="CurrentLives"/>
+                        </scene-get-attribute>
+                    </as-number>
+                </set-val-123-2>
+                <set-font-new comment="false" x="26" y="70">
+                    <FONT eid="var" id="0" vid="4"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="97">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <tostring comment="false" id="0" x="0" y="0">
+                            <roundnew comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-123-2 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </tostring>
+                        <str-combine comment="false" id="1" x="0" y="0">
+                            <int id="0" val="/"/>
+                            <tostring comment="false" id="1" x="0" y="0">
+                                <roundnew comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <get-val-123-3 comment="false" id="1" x="0" y="0"/>
+                                </roundnew>
+                            </tostring>
+                        </str-combine>
+                    </str-combine>
+                    <get-val-123-5 comment="false" id="1" x="0" y="0"/>
+                    <get-val-123-6 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="150">
+                    <int id="0" val="Lives:"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <get-val-123-5 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="80"/>
+                    </minus>
+                    <get-val-123-6 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
