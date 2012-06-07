@@ -92,6 +92,10 @@
             <s enabled="true" id="34">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="37">
+                <prop id="1" list="0" val="1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="62">
                 <prop id="1" list="0" val="32"/>
                 <prop id="2" list="0" val="32"/>
@@ -102,18 +106,8 @@
                 <prop id="7" list="0" val=""/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="10.0"/>
-                <prop id="10" list="0" val="200"/>
-                <prop id="11" list="0" val="200"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="105">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2" list="0" val="1"/>
-                <prop id="3" list="0" val="1"/>
-                <prop id="4" list="0" val="1"/>
-                <prop id="5" list="1" val="">
-                    <text order="0" value="Players"/>
-                </prop>
+                <prop id="10" list="0" val="10"/>
+                <prop id="11" list="0" val="10"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -151,6 +145,10 @@
     <custom-block blocktag="custom-140" blocktype="NORMAL" code="Number((sayToScene(&quot;Checkpoint System&quot;, &quot;CheckpointX&quot;)))" desc="" global="false" gui="Checkpoint X" id="140" message="CheckpointX" name="CheckpointX" oid="-1" return="NUMBER" shared="false" snippetID="97"/>
     <custom-block blocktag="custom-139" blocktype="NORMAL" code="Number((sayToScene(&quot;Checkpoint System&quot;, &quot;CheckpointY&quot;)))" desc="" global="false" gui="Checkpoint Y" id="139" message="CheckpointY" name="CheckpointY" oid="-1" return="NUMBER" shared="false" snippetID="97"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-20.0" height="1024" id="35" name="Cloudy Sky" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <custom-block blocktag="custom-167" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;damage&quot;, ~);" desc="Inflicts the given amount of damage." global="false" gui="inflict %1 damage on %0" id="167" message="damage" name="damage" oid="-1" return="VOID" shared="false" snippetID="112">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="amount" order="1" type="NUMBER"/>
+    </custom-block>
     <custom-block blocktag="custom-154" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Damage&quot;, ~);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="154" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="106">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
@@ -248,6 +246,9 @@
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-44" blocktype="NORMAL" code="((sayToScene(&quot;Score Manager&quot;, &quot;GetFont&quot;)) as Font)" desc="Get the font used. Use for if you are setting up labels to retain consistency across Flash and other platforms." global="false" gui="Get Font" id="44" message="GetFont" name="GetFont" oid="-1" return="FONT" shared="false" snippetID="17"/>
+    <custom-block blocktag="custom-164" blocktype="NORMAL" code="Number((~.say(&quot;Health&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="164" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="112">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-51" blocktype="NORMAL" code="Number((~.say(&quot;Health&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="51" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -287,6 +288,10 @@
     <custom-block blocktag="custom-39" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetXOffset&quot;)))" desc="" global="false" gui="Get Score Drawing X Offset" id="39" message="GetXOffset" name="GetXOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
     <custom-block blocktag="custom-40" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetYOffset&quot;)))" desc="" global="false" gui="Get Score Drawing Y Offset" id="40" message="GetYOffset" name="GetYOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
     <music desc="" id="59" loop="true" name="Gun Fire" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <custom-block blocktag="custom-166" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;heal&quot;, ~);" desc="Restores given amount of HP." global="false" gui="heal %0 by %1 health" id="166" message="heal" name="heal" oid="-1" return="VOID" shared="false" snippetID="112">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="amount" order="1" type="NUMBER"/>
+    </custom-block>
     <custom-block blocktag="custom-152" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Heal&quot;, ~);" desc="Adds a specific amount of health to the Actor." global="false" gui="Heal %0 By %1" id="152" message="Heal" name="Heal" oid="-1" return="VOID" shared="false" snippetID="106">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
@@ -384,8 +389,8 @@
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -397,11 +402,11 @@
         <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,41,16,73,16,73,64,41,64" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
-            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
-        </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
+            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="3" loop="true" name="walk-r" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -415,13 +420,6 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="16" fixedrot="true" fric="0.5" gid="0" id="32" ignoreg="false" inertia="0.01" ldamp="0.499" lw="false" mass="5.0" name="Jumper" oid="19264" pausable="true" rest="0.1" shared="true" sprite="33" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="102">
-                <prop id="1" list="0" val="0.30"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="false"/>
-                <prop id="4" list="0" val="Damaged"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="101">
                 <prop id="1" list="0" val="3"/>
                 <prop id="2" list="0" val="3"/>
@@ -462,7 +460,23 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0.75"/>
             </s>
-            <s enabled="true" id="93">
+            <s enabled="true" id="113">
+                <prop id="1" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="112">
+                <prop id="1" list="0" val="1"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="3"/>
+                <prop id="6" list="0" val="3"/>
+                <prop id="7" list="0" val=""/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val="false"/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="0"/>
+                <prop id="13" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="42">
@@ -478,12 +492,10 @@
                 <prop id="41" list="0" val="idle-l"/>
                 <prop id="46" list="0" val="false"/>
                 <prop id="44" list="0" val="jump-r"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="45" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="92">
-                <prop id="3" list="0" val="16.0"/>
-                <prop id="4" list="0" val="0"/>
+            <s enabled="true" id="93">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="false" id="43">
@@ -509,44 +521,15 @@
                 <prop id="26" list="0" val="false"/>
                 <prop id="30" list="0" val="30.0"/>
             </s>
+            <s enabled="true" id="27">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="3" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="10">
                 <prop id="1" list="0" val=".05"/>
                 <prop id="2" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="106">
-                <prop id="1" list="0" val="5"/>
-                <prop id="2" list="0" val="5"/>
-                <prop id="3" list="0" val="3"/>
-                <prop id="4" list="0" val="Healed"/>
-                <prop id="5" list="0" val="Damaged"/>
-                <prop id="7" list="0" val="Kill"/>
-                <prop id="8" list="0" val="false"/>
-                <prop id="9" list="0" val="0.5"/>
-                <prop id="10" list="0" val="true"/>
-                <prop id="11" list="0" val="false"/>
-                <prop id="13" list="0" val=""/>
-                <prop id="14" list="0" val="-1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="17" list="0" val=""/>
-                <prop id="16" list="0" val="-1"/>
-                <prop id="18" list="0" val="-1"/>
-            </s>
-            <s enabled="true" id="104">
-                <prop id="1" list="0" val="Horizontal"/>
-                <prop id="2" list="0" val="100.0"/>
-                <prop id="3" list="0" val="5"/>
-                <prop id="4" list="0" val="0.0"/>
-                <prop id="5" list="0" val="0.0"/>
-                <prop id="6" list="0" val="Actor"/>
-                <prop id="7" list="0" val="0,255,0,255"/>
-                <prop id="8" list="0" val="0,255,0,255"/>
-                <prop id="9" list="0" val="255,255,0,255"/>
-                <prop id="10" list="0" val="255,0,0,255"/>
-                <prop id="11" list="0" val="0"/>
-                <prop id="12" list="0" val="255,0,0,255"/>
-                <prop id="13" list="0" val="0,0,0,255"/>
-                <prop id="14" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="15">
@@ -563,10 +546,16 @@
         <blank name="Animation" order="1" type="ANIMATION"/>
         <blank name="Category" order="2" type="TEXT"/>
     </custom-block>
+    <custom-block blocktag="custom-168" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeInvincible&quot;);" desc="" global="false" gui="make %0 invincible" id="168" message="makeInvincible" name="makeInvincible" oid="-1" return="VOID" shared="false" snippetID="112">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-55" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeInvincible&quot;);" desc="" global="false" gui="make %0 invincible" id="55" message="makeInvincible" name="makeInvincible" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-29" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeInvincible&quot;);" desc="" global="false" gui="make %0 invincible" id="29" message="makeInvincible" name="makeInvincible" oid="-1" return="VOID" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-163" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeVulnerable&quot;);" desc="" global="false" gui="make %0 not invincible" id="163" message="makeVulnerable" name="makeVulnerable" oid="-1" return="VOID" shared="false" snippetID="112">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-50" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeVulnerable&quot;);" desc="" global="false" gui="make %0 not invincible" id="50" message="makeVulnerable" name="makeVulnerable" oid="-1" return="VOID" shared="false" snippetID="-1">
@@ -664,6 +653,9 @@
         <blank name="Index" order="1" type="NUMBER"/>
         <blank name="Attribute" order="2" type="TEXT"/>
     </custom-block>
+    <custom-block blocktag="custom-162" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;restore&quot;);" desc="Restores to maximum health." global="false" gui="restore %0 to max health" id="162" message="restore" name="restore" oid="-1" return="VOID" shared="false" snippetID="112">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-49" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;restore&quot;);" desc="Restores to maximum health." global="false" gui="restore %0 to max health" id="49" message="restore" name="restore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -685,6 +677,10 @@
     <custom-block blocktag="custom-38" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetDrawOffset&quot;, ~,~);" desc="" global="false" gui="Set Score Drawing Offset to X %0 Y %1" id="38" message="SetDrawOffset" name="SetDrawOffset" oid="-1" return="VOID" shared="false" snippetID="17">
         <blank name="Horizontal" order="0" type="NUMBER"/>
         <blank name="Vertical" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-165" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;setHealth&quot;, ~);" desc="Set health - cannot exceed max HP." global="false" gui="set health for %0 to %1" id="165" message="setHealth" name="setHealth" oid="-1" return="VOID" shared="false" snippetID="112">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="amount" order="1" type="NUMBER"/>
     </custom-block>
     <custom-block blocktag="custom-150" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetHealth&quot;, ~);" desc="" global="false" gui="Set Health For %0 To %1" id="150" message="SetHealth" name="SetHealth" oid="-1" return="VOID" shared="false" snippetID="106">
         <blank name="Self" order="0" type="ACTOR"/>

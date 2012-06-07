@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="var" id="0" vid="1"/>
+                    <get-val-111-5 comment="false" id="1" x="0" y="0"/>
+                    <get-val-111-6 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-111-4 comment="false" x="26" y="72">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-111-4>
+                <anchor-screen comment="false" x="26" y="99">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                </anchor-screen>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <setanim comment="false" x="26" y="40">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                    <string-to-anim comment="false" id="1" x="0" y="0">
+                        <int id="0" val=""/>
+                    </string-to-anim>
+                </setanim>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -66,7 +66,22 @@
                 </if>
                 <else comment="false" x="31" y="190">
                     <group eventID="1" id="-1">
-                        <push-shove comment="false" x="42" y="210">
+                        <create-recycled-actor comment="false" x="42" y="210">
+                            <ACTORTYPE eid="60" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="2"/>
+                            </get-xy>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <int id="1" val="0"/>
+                            </plus>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                        <push-shove comment="false" x="42" y="255">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -91,21 +106,6 @@
                             </minus>
                             <int id="4" val="5"/>
                         </push-shove>
-                        <create-recycled-actor comment="false" x="42" y="255">
-                            <ACTORTYPE eid="60" id="0"/>
-                            <get-xy comment="false" id="1" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="2"/>
-                            </get-xy>
-                            <plus comment="false" id="2" x="0" y="0">
-                                <get-xy comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="3"/>
-                                </get-xy>
-                                <int id="1" val="0"/>
-                            </plus>
-                            <int id="3" val="0"/>
-                        </create-recycled-actor>
                     </group>
                 </else>
             </group>

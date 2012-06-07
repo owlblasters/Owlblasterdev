@@ -200,10 +200,15 @@
         <number default="3.0" desc="Maximum amount of health." dropdown="" fullname="Maximum Health" hidden="false" id="2" name="_MaximumHealth" order="1"/>
         <animation default="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="3" name="_LeftAnimation" order="2"/>
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="4" name="_LeftAnimationIdle" order="3"/>
+        <number default="3.0" desc="HIDDEN - Tracks the current amount of health." dropdown="" fullname="Current Health" hidden="false" id="5" name="_CurrentHealth" order="4"/>
+        <boolean default="true" desc="" dropdown="" fullname="Can Be Damaged?" hidden="false" id="6" name="_CanBeDamaged" order="5"/>
+        <text default="" desc="&lt;b&gt;Note:&lt;/b&gt; This field is only used if the &lt;b&gt;Persistent Health?&lt;/b&gt; box is checked.&#10;&lt;br&gt;&lt;br&gt;&#10;Enter in any text value.  This will be used to track the health of this particular Actor." dropdown="" fullname="Health Identifier" hidden="false" id="7" name="_HealthIdentifier" order="6"/>
+        <text default="" desc="If a scene is trying to spawn an Actor that uses persistent health - and the health is 0, what should we do?&lt;br&gt;&#10;1. Kill Actor&lt;br&gt;&#10;2. Recycle Actor&lt;br&gt;&#10;3. Do Nothing&lt;br&gt;" dropdown="Kill Actor=Kill&#10;Recycle Actor=Recycle&#10;Do Nothing=Nothing" fullname="Zero Health Action" hidden="false" id="8" name="_ZeroHealthAction" order="7"/>
+        <boolean default="false" desc="Check this box if the Actor's health should persist from scene to scene.  &#10;&lt;br&gt;&lt;br&gt;&#10;&lt;b&gt;Note: &lt;/b&gt;If this option is checked, you must specify a &lt;font color=&quot;WHITE&quot;&gt;Game Attribute&lt;/font&gt; in the option below.&lt;br&gt;  The Game Attribute selected &lt;b&gt;must be unique&lt;/b&gt; to this Actor otherwise the functionality&lt;br&gt; may be adversely affected." dropdown="" fullname="Persistent Health?" hidden="false" id="9" name="_PersistentHealth" order="8"/>
         <blocks/>
         <events>
             <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
-            <event displayName="Touch" enabled="true" id="2" name="event-device-touch" order="2" repeats="true"/>
+            <event displayName="Touch" enabled="true" id="2" name="event-device-touch" order="2" repeats="false"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_19_19_JetpackFollowPlayer" desc="Attach this to your jetpack Actor (not the player)" description="Attach this to your jetpack Actor (not the player)" design="true" drawOrder="0" id="19" language="" name="Jetpack Follow Player" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -221,8 +226,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="46" id="1"/>
         </blocks>
@@ -243,8 +248,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="45" id="1"/>
         </blocks>
@@ -428,8 +433,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="63" id="1"/>
         </blocks>
@@ -459,8 +464,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -499,6 +504,9 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_64" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="40" language="" name="ActorEvents_64" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="" dropdown="" fullname="cacheDmg" hidden="true" id="1" name="cacheDmg" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="beingHit" hidden="true" id="2" name="_beingHit" order="1"/>
+        <number default="0.0" desc="Current health of this actor." dropdown="" fullname="currHealth" hidden="false" id="3" name="currHealth" order="2"/>
         <blocks/>
         <events/>
     </snippet>
@@ -578,8 +586,8 @@
         <number default="0.0" desc="- Put the X position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what X position?" hidden="false" id="12" name="_XTeleport" order="10"/>
         <number default="0.0" desc="- Put the Y position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what Y position?" hidden="false" id="13" name="_YTeleport" order="11"/>
         <boolean default="false" desc="- If the object hit the sides it will be slowed down completely (0 speed) &#10;*If you choosed number 2 or 3." dropdown="" fullname="When the object hit the sides of screen, slow down its speed to 0?" hidden="false" id="14" name="_SlowDown0" order="12"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="482" id="1"/>
             <ureceiver blockID="0" id="2"/>
@@ -622,8 +630,8 @@
         <actortype default="87" desc="" dropdown="" fullname="Display Type" hidden="false" id="12" name="_DisplayType" order="14"/>
         <font default="" desc="" dropdown="" fullname="Recover Energy Font" hidden="false" id="13" name="_RecoverEnergyFont" order="18"/>
         <number default="0" desc="" dropdown="" fullname="Recover Display X Offset" hidden="false" id="14" name="_RecoverDisplayXOffset" order="15"/>
-        <number default="0" desc="" dropdown="" fullname="Recover Display Y Offset" hidden="false" id="15" name="_RecoverDisplayYOffset" order="16"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" desc="" dropdown="" fullname="Recover Display Y Offset" hidden="false" id="15" name="_RecoverDisplayYOffset" order="16"/>
         <number default="0" desc="Y Offset of the energy recover display based on the Display Type actor's position." dropdown="" fullname="Message Y Offset" hidden="false" id="16" name="_MessageYOffset" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Display Energy%" hidden="true" id="19" name="_DisplayEnergy" order="19"/>
         <number default="0" desc="Time required for the display to slide from the current energy to the new amount after spending or recovering energy." dropdown="" fullname="Energy Display Slide Time" hidden="false" id="18" name="_EnergyDisplaySlideTime" order="7"/>
@@ -634,29 +642,6 @@
             <receiver blockID="106" id="1"/>
             <receiver blockID="105" id="2"/>
         </blocks>
-        <events/>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_69_69_DrawHealth" desc="This behavior will use the draw functions to draw Health on screen.&lt;br&gt;&lt;br&gt;&#10;&#10;You can tell this behavior to Activate or Deactivate, to draw or stop drawing.&lt;br&gt;&lt;br&gt;&#10;&#10;Requires the following behaviors:&lt;br&gt;&#10;- Health&lt;br&gt;" description="This behavior will use the draw functions to draw Health on screen.&lt;br&gt;&lt;br&gt;&#10;&#10;You can tell this behavior to Activate or Deactivate, to draw or stop drawing.&lt;br&gt;&lt;br&gt;&#10;&#10;Requires the following behaviors:&lt;br&gt;&#10;- Health&lt;br&gt;" design="true" drawOrder="0" id="69" language="" name="Draw Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <boolean default="true" desc="If checked, will enable drawing." dropdown="" fullname="Activate" hidden="false" id="1" name="_Activate" order="1"/>
-        <number default="0" desc="" dropdown="" fullname="Current Health" hidden="true" id="2" name="_CurrentHealth" order="2"/>
-        <number default="0" desc="" dropdown="" fullname="Max Health" hidden="true" id="3" name="_MaxHealth" order="3"/>
-        <text default="" desc="On Actor: Draw relative to the actor.&lt;br&gt;&#10;On Screen: Draw relative to the screen." dropdown="On Actor=On Actor&#10;On Screen=On Screen" fullname="Draw Position" hidden="false" id="5" name="_DrawPosition" order="4"/>
-        <number default="0" desc="The drawing X position" dropdown="" fullname="X Offset" hidden="false" id="6" name="_XOffset" order="5"/>
-        <number default="0" desc="The drawing Y position" dropdown="" fullname="Y Offset" hidden="false" id="7" name="_YOffset" order="6"/>
-        <text default="" desc="Vertical Gauge: Draw a vertical gauge.&lt;br&gt;&#10;Horizontal Gaug: Draw an horizontal gauge.&lt;br&gt;&#10;Sphere: Draw a sphere.&lt;br&gt;&#10;Text: Draw as text." dropdown="Vertical Gauge=Vertical Gauge&#10;Horizontal Gauge=Horizontal Gauge&#10;Sphere=Sphere&#10;Text=Text" fullname="Draw Type" hidden="false" id="8" name="_DrawType" order="7"/>
-        <color default="0,255,0,255" desc="Color of the gauge or sphere." dropdown="" fullname="Gauge Color" hidden="true" id="9" name="_GaugeColor" order="8"/>
-        <color default="128,0,0,255" desc="Color of the background gauge or sphere." dropdown="" fullname="Gauge Background Color" hidden="false" id="10" name="_GaugeBackgroundColor" order="12"/>
-        <number default="0" desc="Height of the gauge." dropdown="" fullname="Gauge Height" hidden="false" id="11" name="_GaugeHeight" order="14"/>
-        <number default="0" desc="Width of the Gauge" dropdown="" fullname="Gauge Width" hidden="false" id="12" name="_GaugeWidth" order="15"/>
-        <font default="" desc="Font of the text." dropdown="" fullname="Font" hidden="false" id="13" name="_Font" order="18"/>
-        <number default="0" desc="Radius of the sphere." dropdown="" fullname="Sphere Radius" hidden="false" id="14" name="_SphereRadius" order="16"/>
-        <color default="" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="13"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <color default="255,255,0,255" desc="Color to use if the current health is less than 50%." dropdown="" fullname="Color if &lt; 50%" hidden="false" id="17" name="_Colorif50" order="10"/>
-        <number default="0" desc="Ammount of stroke effect, in pixels." dropdown="" fullname="Stroke" hidden="false" id="16" name="_Stroke" order="17"/>
-        <color default="0,255,0,255" desc="Color to use if the current health is greater than 50%." dropdown="" fullname="Color if &gt; 50%" hidden="false" id="19" name="_Colorif502" order="9"/>
-        <color default="255,0,0,255" desc="Color to use if the current health is less than 25%." dropdown="" fullname="Color if &lt; 25%" hidden="false" id="18" name="_Colorif25" order="11"/>
-        <blocks/>
         <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_70_70_DrawEnergy" desc="This behavior will use the draw functions to draw Energy on screen.&lt;br&gt;&lt;br&gt;&#10;&#10;You can tell this behavior to Activate or Deactivate, to draw or stop drawing.&lt;br&gt;&lt;br&gt;&#10;&#10;Requires the following behaviors:&lt;br&gt;&#10;- Energy&lt;br&gt;" description="This behavior will use the draw functions to draw Energy on screen.&lt;br&gt;&lt;br&gt;&#10;&#10;You can tell this behavior to Activate or Deactivate, to draw or stop drawing.&lt;br&gt;&lt;br&gt;&#10;&#10;Requires the following behaviors:&lt;br&gt;&#10;- Energy&lt;br&gt;" design="true" drawOrder="0" id="70" language="" name="Draw Energy" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -673,8 +658,8 @@
         <number default="0" desc="Width of the Gauge" dropdown="" fullname="Gauge Width" hidden="false" id="12" name="_GaugeWidth" order="12"/>
         <font default="" desc="Font of the text." dropdown="" fullname="Font" hidden="false" id="13" name="_Font" order="15"/>
         <number default="0" desc="Radius of the sphere." dropdown="" fullname="Sphere Radius" hidden="false" id="14" name="_SphereRadius" order="13"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <color default="0,0,0,255" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="10"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="Ammount of stroke effect, in pixels." dropdown="" fullname="Stroke" hidden="false" id="16" name="_Stroke" order="14"/>
         <blocks/>
         <events/>
@@ -735,8 +720,8 @@
         <number default="0.0" desc="Maximum amount of items." dropdown="" fullname="Maximum Amount" hidden="false" id="12" name="_MaximumAmount" order="8"/>
         <list default="list" desc="This list holds specific maximum amounts for different items. This independs if the &quot;Limit Amount of Items?&quot; attribute is checked or not, and this list also has priority over the &quot;Maximum Amount&quot; attribute." dropdown="" fullname="Maximum Amount List" hidden="false" id="13" name="_MaximumAmountList" order="10"/>
         <boolean default="false" desc="If checked, the actor will only be able to carry a certain number of item types." dropdown="" fullname="Limit Inventory Slots?" hidden="false" id="14" name="_LimitInventorySlots" order="5"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0.0" desc="Maximum amount of slots for item types in the inventory." dropdown="" fullname="Maximum Slots" hidden="false" id="15" name="_MaximumSlots" order="6"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="103" id="1"/>
             <receiver blockID="104" id="2"/>
@@ -814,13 +799,13 @@
         </list>
         <number default="0" desc="" dropdown="" fullname="Wisdom" hidden="true" id="13" name="_Wisdom" order="29"/>
         <number default="0" desc="" dropdown="" fullname="Wisdom Bonus" hidden="true" id="14" name="_WisdomBonus" order="30"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <list default="list" desc="Used for magic defense.&lt;br&gt;&lt;br&gt;&#10;&#10;Index 0 isn't used, because the minimum level is 1. The index represent the current level.&lt;br&gt;&lt;br&gt;&#10;Example:&lt;br&gt;&#10;Current Level = 1; Wisdom will be index 1 of the list." dropdown="" fullname="Wisdom Progression" hidden="false" id="15" name="_WisdomProgression" order="31">
             <number order="0" value="1.0"/>
             <number order="1" value="2.0"/>
             <number order="2" value="3.0"/>
             <number order="3" value="4.0"/>
         </list>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Luck Bonus" hidden="true" id="17" name="_LuckBonus" order="37"/>
         <number default="0" desc="" dropdown="" fullname="Luck" hidden="true" id="16" name="_Luck" order="36"/>
         <number default="0.0" desc="" dropdown="" fullname="Health" hidden="true" id="19" name="_Health" order="43"/>
@@ -970,8 +955,8 @@
         <actortype default="" desc="" dropdown="" fullname="Type" hidden="true" id="12" name="_Type" order="8"/>
         <text default="" desc="" dropdown="" fullname="Name" hidden="true" id="13" name="_Name" order="7"/>
         <list default="list" desc="" dropdown="" fullname="Status to Add List" hidden="true" id="14" name="_StatustoAddList" order="16"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0.0" desc="The index of the attribute modifier, for weapons that have this parameter.&lt;br&gt;&lt;br&gt; Modifications for attributes that uses the same index are overwritten, that's why you need different indexes if you want to stack different modifiers for the attributes." dropdown="" fullname="Attribute Modifier Index" hidden="false" id="15" name="_AttributeModifierIndex" order="17"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Weapon Critical Rate Bonus" hidden="true" id="17" name="_WeaponCriticalRateBonus" order="10"/>
         <text default="" desc="" dropdown="" fullname="Attribute" hidden="true" id="16" name="_Attribute" order="9"/>
         <blocks/>
@@ -992,8 +977,8 @@
         <number default="0" desc="" dropdown="" fullname="Minimum Attack" hidden="true" id="12" name="_MinimumAttack" order="13"/>
         <number default="0" desc="" dropdown="" fullname="Maximum Attack" hidden="true" id="13" name="_MaximumAttack" order="14"/>
         <number default="0" desc="" dropdown="" fullname="Armor" hidden="true" id="14" name="_Armor" order="15"/>
-        <number default="0" desc="" dropdown="" fullname="Magic Armor" hidden="true" id="15" name="_MagicArmor" order="16"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" desc="" dropdown="" fullname="Magic Armor" hidden="true" id="15" name="_MagicArmor" order="16"/>
         <number default="0" desc="" dropdown="" fullname="Maximum Value" hidden="true" id="17" name="_MaximumValue" order="1"/>
         <number default="0" desc="" dropdown="" fullname="Critical Rate" hidden="true" id="16" name="_CriticalRate" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Weapon Critical Rate Bonus" hidden="true" id="18" name="_WeaponCriticalRateBonus" order="18"/>
@@ -1048,8 +1033,8 @@
         <number default="0.0" desc="Width of the Gauge" dropdown="" fullname="Gauge Width" hidden="false" id="12" name="_GaugeWidth" order="14"/>
         <font default="" desc="Font of the text." dropdown="" fullname="Font" hidden="false" id="13" name="_Font" order="17"/>
         <number default="0" desc="Radius of the sphere." dropdown="" fullname="Sphere Radius" hidden="false" id="14" name="_SphereRadius" order="15"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <color default="0,0,0,255" desc="Color of the stroke effect." dropdown="" fullname="Stroke Color" hidden="false" id="15" name="_StrokeColor" order="12"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <list default="list" desc="" dropdown="" fullname="Required EXP" hidden="true" id="17" name="_RequiredEXP" order="2"/>
         <number default="0" desc="Ammount of stroke effect, in pixels." dropdown="" fullname="Stroke" hidden="false" id="16" name="_Stroke" order="16"/>
         <number default="0" desc="" dropdown="" fullname="EXP%" hidden="true" id="19" name="_EXP" order="18"/>
@@ -1057,56 +1042,9 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_74_74_Health" desc="This behavior will keep track of the health of the actor, as well as handling damaged received and damage type weakness.&lt;br&gt;&#10;&lt;br&gt;&#10;Commands:&lt;br&gt;&#10;- InflictDamage: Inflict damage versus the defense or magic defense of the actor.&lt;br&gt;&#10;- Heal: Recover the actor's health.&lt;br&gt;&#10;- InstantKill: Set the actor's health to 0.&lt;br&gt;&#10;- FullHeal: Fully heal the actor." description="This behavior will keep track of the health of the actor, as well as handling damaged received and damage type weakness.&lt;br&gt;&#10;&lt;br&gt;&#10;Commands:&lt;br&gt;&#10;- InflictDamage: Inflict damage versus the defense or magic defense of the actor.&lt;br&gt;&#10;- Heal: Recover the actor's health.&lt;br&gt;&#10;- InstantKill: Set the actor's health to 0.&lt;br&gt;&#10;- FullHeal: Fully heal the actor." design="true" drawOrder="0" id="74" language="" name="Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="" dropdown="" fullname="Max Health" hidden="false" id="1" name="_MaxHealth" order="2"/>
-        <number default="1" desc="" dropdown="" fullname="Current Health" hidden="true" id="2" name="_CurrentHealth" order="3"/>
-        <number default="0.0" desc="" dropdown="" fullname="Defense" hidden="false" id="3" name="_Defense" order="4"/>
-        <number default="0.0" desc="" dropdown="" fullname="Damage" hidden="true" id="4" name="_Damage" order="7"/>
-        <number default="0.0" desc="" dropdown="" fullname="Health%" hidden="true" id="5" name="_Health" order="8"/>
-        <actortype default="" desc="Actor type that will be used as the health gauge." dropdown="" fullname="Health Gauge Type" hidden="false" id="6" name="_HealthGaugeType" order="10"/>
-        <actor default="" desc="" dropdown="" fullname="Health Gauge" hidden="true" id="7" name="_HealthGauge" order="11"/>
-        <boolean default="false" desc="If checked, will create an actor that will act as a health gauge." dropdown="" fullname="Display Gauge" hidden="false" id="8" name="_DisplayGauge" order="9"/>
-        <number default="0.0" desc="Guage X Position on screen." dropdown="" fullname="X Position" hidden="false" id="9" name="_XPosition" order="14"/>
-        <number default="0.0" desc="Guage Y Position on screen." dropdown="" fullname="Y Position" hidden="false" id="10" name="_YPosition" order="15"/>
-        <number default="0.0" desc="" dropdown="" fullname="Magic Defense" hidden="false" id="11" name="_MagicDefense" order="5"/>
-        <actortype default="87" desc="" dropdown="" fullname="Damage Displayer" hidden="false" id="12" name="_DamageDisplayer" order="17"/>
-        <boolean default="true" desc="If checked, will create an actor that will display the damage received and recovered.  Has extra logic if the display actor has the Display Float Message behavior." dropdown="" fullname="Display Damage" hidden="false" id="15" name="_DisplayDamage" order="16"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <font default="" desc="" dropdown="" fullname="Normal Damage Font" hidden="false" id="17" name="_NormalDamageFont" order="24"/>
-        <boolean default="false" desc="" dropdown="" fullname="Stun" hidden="true" id="16" name="_Stun" order="18"/>
-        <font default="" desc="" dropdown="" fullname="Heal Font" hidden="false" id="19" name="_HealFont" order="26"/>
-        <font default="" desc="" dropdown="" fullname="Critical Damage Font" hidden="false" id="18" name="_CriticalDamageFont" order="25"/>
-        <number default="0.0" desc="" dropdown="" fullname="Damage Display Y Offset" hidden="false" id="21" name="_DamageDisplayYOffset" order="22"/>
-        <number default="0.0" desc="" dropdown="" fullname="Damage Display X Offset" hidden="false" id="20" name="_DamageDisplayXOffset" order="21"/>
-        <boolean default="false" desc="" dropdown="" fullname="Magic Damage" hidden="true" id="25" name="_MagicDamage" order="19"/>
-        <text default="" desc="" dropdown="" fullname="Damage Type" hidden="true" id="24" name="_DamageType" order="20"/>
-        <number default="0" desc="" dropdown="" fullname="Display Health%" hidden="true" id="27" name="_DisplayHealth" order="27"/>
-        <number default="0.0" desc="Y Offset of the damage display based on the Damage Displayer position." dropdown="" fullname="Message Y Offset" hidden="false" id="26" name="_MessageYOffset" order="23"/>
-        <number default="0" desc="The Health Gauge actor must have one animation, with a number of frames from 0 to [Number of Frames]. Frame 0 will be when the gauge is empty, Frame [Number of Frames] will be when the gauge is full.&lt;br&gt;&lt;br&gt;&#10;Number of Frames should be the last frame of the Health Gauge's animation." dropdown="" fullname="Number of Frames" hidden="false" id="29" name="_NumberofFrames" order="12"/>
-        <number default="0" desc="Time required for the display to slide from the current health to the new amount after receiving damage or healing." dropdown="" fullname="Health Display Slide Time" hidden="false" id="28" name="_HealthDisplaySlideTime" order="13"/>
-        <number default="0" desc="The smallest amount of damage this actor can received when attacked." dropdown="" fullname="Minimum Damage" hidden="false" id="31" name="_MinimumDamage" order="6"/>
-        <number default="0" desc="" dropdown="" fullname="Display%" hidden="true" id="30" name="_Display" order="28"/>
-        <boolean default="false" desc="" dropdown="" fullname="Critical Hit" hidden="true" id="34" name="_CriticalHit" order="31"/>
-        <number default="0" desc="" dropdown="" fullname="Starting Health" hidden="false" id="35" name="_StartingHealth" order="1"/>
-        <boolean default="false" desc="If checked, will absorb the damage from a specific type when, after applying damage resistance, the damage is negative. Requires the behavior Damage Type Modifier.&lt;br&gt;&lt;br&gt;&#10;Damage will only be absorbed if the damage modifier is negative." dropdown="" fullname="Absorb Damage?" hidden="false" id="32" name="_AbsorbDamage" order="29"/>
-        <list default="list" desc="" dropdown="" fullname="Damage Type to Absorb" hidden="false" id="33" name="_DamageTypetoAbsorb" order="30"/>
-        <blocks>
-            <receiver blockID="118" id="1"/>
-            <ureceiver blockID="0" id="2"/>
-            <receiver blockID="120" id="3"/>
-            <receiver blockID="179" id="4"/>
-            <ureceiver blockID="0" id="5"/>
-            <receiver blockID="182" id="6"/>
-            <receiver blockID="183" id="7"/>
-            <receiver blockID="116" id="8"/>
-            <receiver blockID="184" id="9"/>
-            <receiver blockID="115" id="10"/>
-        </blocks>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_75_75_SaveStatus" desc="This behavior will automaticaly save a list of actor attributes when the scene is in transition, and load these attributes when the actor is created.&lt;br&gt;&#10;&lt;br&gt;&#10;If the actor has the behavior Health, the attributes will only be saved if the Current Health is greater than 0." description="This behavior will automaticaly save a list of actor attributes when the scene is in transition, and load these attributes when the actor is created.&lt;br&gt;&#10;&lt;br&gt;&#10;If the actor has the behavior Health, the attributes will only be saved if the Current Health is greater than 0." design="true" drawOrder="0" id="75" language="" name="Save Status" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <game-attribute default="" desc="A Game Attribute of the type List to hold all the actor attributes you want to save." dropdown="" fullname="Character Information List" hidden="false" id="1" name="_CharacterInformationList" order="2"/>
         <text default="" desc="" dropdown="" fullname="Dummy Behavior" hidden="true" id="16" name="_DummyBehavior" order="10"/>
+        <game-attribute default="" desc="A Game Attribute of the type List to hold all the actor attributes you want to save." dropdown="" fullname="Character Information List" hidden="false" id="1" name="_CharacterInformationList" order="2"/>
         <list default="list" desc="" dropdown="" fullname="Character Information" hidden="true" id="2" name="_CharacterInformation" order="3"/>
         <boolean default="false" desc="" dropdown="" fullname="Initialized" hidden="true" id="9" name="_Initialized" order="1"/>
         <boolean default="false" desc="" dropdown="" fullname="Loaded" hidden="true" id="10" name="_Loaded" order="4"/>
@@ -1156,8 +1094,8 @@
             <text order="19" value="Inventory"/>
         </list>
         <list default="list" desc="" dropdown="" fullname="Dummy List" hidden="true" id="14" name="_DummyList" order="8"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <text default="" desc="" dropdown="" fullname="Dummy Attribute" hidden="true" id="15" name="_DummyAttribute" order="9"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
@@ -1205,12 +1143,12 @@
         <boolean default="false" desc="If checked, will create an actor that will act as an icon." dropdown="" fullname="Display Status?" hidden="false" id="53" name="_DisplayStatus" order="7"/>
         <number default="0" desc="" dropdown="" fullname="Index" hidden="true" id="59" name="_Index" order="17"/>
         <number default="0" desc="" dropdown="" fullname="Total Resistance" hidden="true" id="58" name="_TotalResistance" order="16"/>
-        <number default="0" desc="" dropdown="" fullname="Total Modifier" hidden="true" id="57" name="_TotalModifier" order="15"/>
         <boolean default="false" desc="If true, the actor will start with this status." dropdown="" fullname="Inflicted Status" hidden="false" id="27" name="_InflictedStatus" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="Total Modifier" hidden="true" id="57" name="_TotalModifier" order="15"/>
         <list default="list" desc="" dropdown="" fullname="Temporary Ticks" hidden="true" id="56" name="_TemporaryTicks" order="14"/>
         <boolean default="false" desc="" dropdown="" fullname="Handle Status" hidden="true" id="29" name="_HandleStatus" order="6"/>
-        <number default="0.0" desc="Duration of the status." dropdown="" fullname="Status Duration" hidden="false" id="28" name="_StatusDuration" order="5"/>
         <text default="" desc="" dropdown="" fullname="Stop Status Message" hidden="true" id="62" name="_StopStatusMessage" order="19"/>
+        <number default="0.0" desc="Duration of the status." dropdown="" fullname="Status Duration" hidden="false" id="28" name="_StatusDuration" order="5"/>
         <text default="" desc="Name of the status condition. The commands to inflict and stop the status condition will be:&lt;br&gt;&#10;[Status Condition Name]: inflict status.&#10;Stop[Status Condition Name: stop status.&lt;br&gt;&lt;br&gt;&#10;Example:&lt;br&gt;&#10;Paralyze&lt;br&gt;&#10;StopParalyze" dropdown="" fullname="Status Condition Name" hidden="false" id="61" name="_StatusConditionName" order="2"/>
         <number default="0" desc="" dropdown="" fullname="Modifier" hidden="true" id="60" name="_Modifier" order="18"/>
         <blocks/>
@@ -1517,6 +1455,18 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_111_111_DisplayHealth" desc="" description="" design="true" drawOrder="0" id="111" language="" name="Display Health" oid="-1" package="" scenespecific="false" shared="false" type="scene">
+        <actortype default="" desc="Name the animations according to how much health they represent." dropdown="" fullname="Health Actor Type" hidden="false" id="1" name="_HealthActorType" order="0"/>
+        <actor default="" desc="" dropdown="" fullname="Player" hidden="true" id="3" name="_Player" order="2"/>
+        <actor default="" desc="" dropdown="" fullname="Health Actor" hidden="true" id="4" name="_HealthActor" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="X Position" hidden="false" id="5" name="_XPosition" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="Y Position" hidden="false" id="6" name="_YPosition" order="5"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="108" language="" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
@@ -1638,5 +1588,60 @@
             <receiver blockID="145" id="1"/>
         </blocks>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_114_114_ReloadSceneOnActorDeath" desc="Reload the scene when a particular actor dies." description="Reload the scene when a particular actor dies." design="true" drawOrder="0" id="114" language="" name="Reload Scene On Actor Death" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <actor default="" desc="The actor to monitor." dropdown="" fullname="Actor" hidden="false" id="1" name="_Actor" order="0"/>
+        <number default="0" desc="The time, in seconds, to fade out for." dropdown="" fullname="Fade Out Time" hidden="false" id="2" name="_FadeOutTime" order="1"/>
+        <number default="0" desc="The time, in seconds, to fade in for." dropdown="" fullname="Fade In Time" hidden="false" id="3" name="_FadeInTime" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor Dies" enabled="true" id="1" name="event-actor-create-kill" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_113_113_DrawHealth" desc="" description="" design="true" drawOrder="0" id="113" language="" name="Draw Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Blinking" hidden="false" id="1" name="_Blinking" order="1"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_112_112_Health" desc="Gives actor the notion of Health." description="Gives actor the notion of Health." design="true" drawOrder="0" id="112" language="" name="Health" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Decrements by this amount if the colliding actor did not specify a damage amount." dropdown="" fullname="Default Damage" hidden="false" id="1" name="defaultDmg" order="7"/>
+        <number default="0.0" desc="" dropdown="" fullname="cacheDmg" hidden="false" id="2" name="cacheDmg" order="4"/>
+        <number default="0.0" desc="Current health of this actor." dropdown="" fullname="currHealth" hidden="false" id="4" name="currHealth" order="3"/>
+        <number default="0.0" desc="Upper bound for health." dropdown="" fullname="Max Health" hidden="false" id="5" name="maxHealth" order="6"/>
+        <number default="0.0" desc="Starting amount of health. Can't exceed max health." dropdown="" fullname="Initial Health" hidden="false" id="6" name="initHealth" order="5"/>
+        <actor default="" desc="Don't let the same actor cause multiple damages to happen." dropdown="" fullname="actorCache" hidden="false" id="7" name="actorCache" order="2"/>
+        <boolean default="true" desc="Make this actor die when its health reaches or falls below 0." dropdown="" fullname="Die When Health is Depleted?" hidden="false" id="8" name="dieOnDepletedHealth" order="8"/>
+        <boolean default="false" desc="" dropdown="" fullname="Is Invincible?" hidden="false" id="9" name="isInvincible" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Temporarily Invulnerable?" hidden="false" id="10" name="isTempInvulnerable" order="0"/>
+        <number default="0" desc="The amount of time the Actor will be invulnerable after being hit.&#10;&lt;br&gt;&lt;br&gt;&#10;Value of 0 (zero) means that the Actor will never become invulnerable.&#10;&lt;br&gt;&#10;Value &gt; 0 means that the Actor will be invulernable for that many seconds." dropdown="" fullname="Temporary Invulnerability Time" hidden="false" id="11" name="tempInvulnerabilityTime" order="9"/>
+        <number default="0" desc="The amount of time to wait before the Actor can be hit by the same Actor it just collided with. &lt;br&gt;&lt;br&gt;&#10;Value of 0 (zero) means that the Actor can't collide with the same actor twice, unless it collides with another actor first.&#10;&lt;br&gt;&#10;Value &gt; 0 means that a collision with the same Actor can not occur for that many seconds." dropdown="" fullname="Collide With Same Actor After" hidden="false" id="12" name="sameActorCollideAfter" order="10"/>
+        <boolean default="false" desc="" dropdown="" fullname="beingHit" hidden="true" id="13" name="_beingHit" order="12"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="11"/>
+        <blocks>
+            <receiver blockID="163" id="1"/>
+            <receiver blockID="168" id="2"/>
+            <receiver blockID="162" id="3"/>
+            <receiver blockID="166" id="4"/>
+            <receiver blockID="167" id="5"/>
+            <receiver blockID="164" id="6"/>
+            <receiver blockID="165" id="7"/>
+        </blocks>
+        <events>
+            <event displayName="makeInvincible" enabled="true" id="1" name="event-custom-block" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="tookDamage" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+            <event displayName="heal" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
+            <event displayName="restore" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="Created" enabled="true" id="6" name="init" order="6" repeats="true"/>
+            <event displayName="getHealth" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="damage" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="makeVulnerable" enabled="true" id="9" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="setHealth" enabled="true" id="10" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="11" name="collide" order="11" repeats="true"/>
+            <event displayName="healSelf" enabled="true" id="12" name="event-custom" order="12" repeats="true"/>
+        </events>
     </snippet>
 </pack>
