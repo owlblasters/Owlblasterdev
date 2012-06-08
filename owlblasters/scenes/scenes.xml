@@ -3,4 +3,11 @@
     <scene desc="" format="1.0" id="0" name="First Scene"/>
     <scene desc="" format="1.0" id="1" name="Title Scene"/>
     <scene desc="" format="1.0" id="2" name="Gun Shop"/>
+    <scene desc="" format="1.0" id="4" name="Respawn Scene"/>
+    <scene desc="" format="1.0" id="5" name="Level Select"/>
+    <scene desc="" format="1.0" id="6" name="Menu"/>
+    <scene desc="" format="1.0" id="7" name="Scythe Upgrade Scene"/>
+    <scene desc="" format="1.0" id="8" name="Gun Select Scene"/>
+    <scene desc="" format="1.0" id="9" name="Instructions Scene"/>
+    <scene desc="" format="1.0" id="10" name="Credits"/>
 </scenes>

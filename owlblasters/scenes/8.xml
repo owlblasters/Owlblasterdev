@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="239" extheight="576" extwidth="480" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="512" id="8" name="Gun Select Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="416">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds>
+        <ref id="338"/>
+    </backgrounds>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="0" id="32" name="Jumper 1" sx="1.0" sy="1.0" x="133" y="25" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="0" id="127" name="Weapon 2" sx="0.5625" sy="0.6875" x="197" y="49" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+</scene>
