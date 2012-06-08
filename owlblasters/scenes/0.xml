@@ -12,8 +12,8 @@
     <regions/>
     <terrainRegions/>
     <actors>
+        <actor a="0.0" aid="39" c="false" group="0" id="32" name="Jumper 39" sx="1.0" sy="1.0" x="167" y="34" z="0"/>
         <actor a="0.0" aid="23" c="false" group="3" id="160" name="Tree Side 23" sx="1.0" sy="1.0" x="-5" y="-66" z="0"/>
-        <actor a="0.0" aid="37" c="false" group="0" id="32" name="Jumper 37" sx="1.0" sy="1.0" x="177" y="35" z="0"/>
         <actor a="0.0" aid="24" c="false" group="3" id="160" name="Tree Side 24" sx="1.0" sy="1.0" x="370" y="-86" z="0"/>
     </actors>
     <snippets>
