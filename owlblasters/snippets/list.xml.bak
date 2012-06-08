@@ -18,8 +18,8 @@
         </blocks>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="3" repeats="true"/>
+            <event displayName="Spawn trees" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
+            <event displayName="spawn owls" enabled="true" id="3" name="event-periodic" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
             <event displayName="actortype height" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
             <event displayName="actortype width" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
@@ -225,6 +225,8 @@
         <text default="" desc="&lt;b&gt;Note:&lt;/b&gt; This field is only used if the &lt;b&gt;Persistent Health?&lt;/b&gt; box is checked.&#10;&lt;br&gt;&lt;br&gt;&#10;Enter in any text value.  This will be used to track the health of this particular Actor." dropdown="" fullname="Health Identifier" hidden="false" id="7" name="_HealthIdentifier" order="6"/>
         <text default="" desc="If a scene is trying to spawn an Actor that uses persistent health - and the health is 0, what should we do?&lt;br&gt;&#10;1. Kill Actor&lt;br&gt;&#10;2. Recycle Actor&lt;br&gt;&#10;3. Do Nothing&lt;br&gt;" dropdown="Kill Actor=Kill&#10;Recycle Actor=Recycle&#10;Do Nothing=Nothing" fullname="Zero Health Action" hidden="false" id="8" name="_ZeroHealthAction" order="7"/>
         <boolean default="false" desc="Check this box if the Actor's health should persist from scene to scene.  &#10;&lt;br&gt;&lt;br&gt;&#10;&lt;b&gt;Note: &lt;/b&gt;If this option is checked, you must specify a &lt;font color=&quot;WHITE&quot;&gt;Game Attribute&lt;/font&gt; in the option below.&lt;br&gt;  The Game Attribute selected &lt;b&gt;must be unique&lt;/b&gt; to this Actor otherwise the functionality&lt;br&gt; may be adversely affected." dropdown="" fullname="Persistent Health?" hidden="false" id="9" name="_PersistentHealth" order="8"/>
+        <number default="0" desc="" dropdown="" fullname="xoffset" hidden="false" id="10" name="_xoffset" order="9"/>
+        <number default="0" desc="" dropdown="" fullname="yoffset" hidden="false" id="11" name="_yoffset" order="10"/>
         <blocks/>
         <events>
             <event displayName="Click" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
@@ -1015,10 +1017,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_246" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="130" language="" name="ActorEvents_246" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_133_133_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="133" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
         <blocks/>
@@ -1141,10 +1139,6 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_171_171_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="171" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_285" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="170" language="" name="ActorEvents_285" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
@@ -1506,6 +1500,10 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_211_211_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="211" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_349" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="233" language="" name="ActorEvents_349" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>

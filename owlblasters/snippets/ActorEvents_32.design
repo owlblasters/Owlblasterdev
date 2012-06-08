@@ -27,31 +27,6 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="42" y="160">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                            <minus comment="false" id="2" x="0" y="0">
-                                <mousexy comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="0"/>
-                                </mousexy>
-                                <get-xy comment="false" id="1" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="2"/>
-                                </get-xy>
-                            </minus>
-                            <minus comment="false" id="3" x="0" y="0">
-                                <mousexy comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="1"/>
-                                </mousexy>
-                                <get-xy comment="false" id="1" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="3"/>
-                                </get-xy>
-                            </minus>
-                            <int id="4" val="5"/>
-                        </push-shove>
                     </group>
                     <or comment="false" id="0" x="0" y="0">
                         <eq comment="false" id="0" x="0" y="0">
@@ -68,9 +43,9 @@
                         </eq>
                     </or>
                 </if>
-                <else comment="false" x="31" y="217">
+                <else comment="false" x="31" y="172">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="42" y="237">
+                        <create-recycled-actor comment="false" x="42" y="192">
                             <ACTORTYPE eid="60" id="0"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -85,33 +60,39 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="42" y="282">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                            <minus comment="false" id="2" x="0" y="0">
-                                <mousexy comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="0"/>
-                                </mousexy>
-                                <get-xy comment="false" id="1" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="2"/>
-                                </get-xy>
-                            </minus>
-                            <minus comment="false" id="3" x="0" y="0">
-                                <mousexy comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="1"/>
-                                </mousexy>
-                                <get-xy comment="false" id="1" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="3"/>
-                                </get-xy>
-                            </minus>
-                            <int id="4" val="5"/>
-                        </push-shove>
                     </group>
                 </else>
+                <set-val-16-10 comment="false" x="31" y="249">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </mousexy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                    </minus>
+                </set-val-16-10>
+                <set-val-16-11 comment="false" x="31" y="287">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </mousexy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                    </minus>
+                </set-val-16-11>
+                <push-shove comment="false" x="31" y="325">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <get-val-16-10 comment="false" id="2" x="0" y="0"/>
+                    <get-val-16-11 comment="false" id="3" x="0" y="0"/>
+                    <int id="4" val="5"/>
+                </push-shove>
             </group>
             <int id="0" val="0"/>
         </event-mouse-press-release>

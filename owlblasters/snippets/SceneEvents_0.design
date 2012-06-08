@@ -167,7 +167,7 @@
                 <if comment="false" x="26" y="479">
                     <group eventID="3" id="-1">
                         <create-recycled-actor comment="false" x="37" y="509">
-                            <ACTORTYPE eid="92" id="0"/>
+                            <ACTORTYPE eid="349" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <screen-wh comment="false" id="0" x="0" y="0">
                                     <int id="0" val="0"/>
@@ -194,7 +194,7 @@
                 <else comment="false" x="26" y="566">
                     <group eventID="3" id="-1">
                         <create-recycled-actor comment="false" x="37" y="586">
-                            <ACTORTYPE eid="92" id="0"/>
+                            <ACTORTYPE eid="349" id="0"/>
                             <int id="1" val="50"/>
                             <minus comment="false" id="2" x="0" y="0">
                                 <screen-wh comment="false" id="0" x="0" y="0">
