@@ -16,6 +16,14 @@
                     <int id="1" val="80"/>
                     <int id="2" val="100"/>
                 </draw-text>
+                <set-font-new comment="false" x="26" y="107">
+                    <FONT eid="232" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="134">
+                    <int id="0" val="Beta"/>
+                    <int id="1" val="75"/>
+                    <int id="2" val="150"/>
+                </draw-text>
             </group>
         </draw>
     </group>

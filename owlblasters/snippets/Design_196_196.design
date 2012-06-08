@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1"/>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="15" y="88">
+            <group eventID="-1" id="-1"/>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <collide comment="false" x="15" y="161">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="186">
+                    <group eventID="-1" id="-1">
+                        <custom-296 comment="false" x="37" y="219">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-196-1 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-296>
+                    </group>
+                    <collision-top comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </collision-top>
+                </if>
+                <if comment="false" x="26" y="263">
+                    <group eventID="-1" id="-1">
+                        <custom-296 comment="false" x="37" y="296">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-196-2 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-296>
+                    </group>
+                    <collision-bottom comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </collision-bottom>
+                </if>
+                <if comment="false" x="26" y="340">
+                    <group eventID="-1" id="-1">
+                        <custom-296 comment="false" x="37" y="373">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-196-3 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-296>
+                    </group>
+                    <collision-right comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </collision-right>
+                </if>
+                <if comment="false" x="26" y="417">
+                    <group eventID="-1" id="-1">
+                        <custom-296 comment="false" x="37" y="450">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-196-4 comment="false" id="1" x="0" y="0"/>
+                            <ACTOR eid="lastcollided" id="2"/>
+                        </custom-296>
+                    </group>
+                    <collision-left comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </collision-left>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="-1" id="3">
+        <draw comment="false" x="15" y="522">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group eventID="-1" id="4">
+        <receiver-1-296 comment="false" x="15" y="595">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="625">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="655"/>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-byobval-16-493-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="687">
+                    <group eventID="-1" id="-1">
+                        <custom-24 comment="false" x="37" y="717">
+                            <get-byobval-16-493-2 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-16-493-1 comment="false" id="1" x="0" y="0"/>
+                        </custom-24>
+                        <stop comment="false" x="37" y="749"/>
+                    </group>
+                    <is-empty comment="false" id="0" x="0" y="0">
+                        <get-val-196-5 comment="false" id="0" x="0" y="0"/>
+                    </is-empty>
+                </if>
+                <comment-short comment="false" x="26" y="781">
+                    <int id="0" val="Make sure our target is in an Actor Group we want to damage."/>
+                </comment-short>
+                <if comment="false" x="26" y="801">
+                    <group eventID="-1" id="-1">
+                        <custom-24 comment="false" x="37" y="844">
+                            <get-byobval-16-493-2 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-16-493-1 comment="false" id="1" x="0" y="0"/>
+                        </custom-24>
+                    </group>
+                    <contains-item comment="false" id="0" x="0" y="0">
+                        <get-val-196-5 comment="false" id="0" x="0" y="0"/>
+                        <getgroup comment="false" id="1" x="0" y="0">
+                            <get-byobval-16-493-2 comment="false" id="0" x="0" y="0"/>
+                        </getgroup>
+                    </contains-item>
+                </if>
+            </group>
+            <int id="0" val=""/>
+            <get-byobval-16-493-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-16-493-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-1-296>
+    </group>
+    <group id="-1"/>
+</groups>

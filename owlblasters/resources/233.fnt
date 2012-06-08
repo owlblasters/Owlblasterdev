@@ -1,0 +1,18 @@
+#
+#Thu Jun 07 19:23:12 EDT 2012
+monospace=false
+monospace.numerals=false
+style=bold
+tracking=0
+stroke.color=\#00ffff
+color=\#0000ff
+shadow.y=0
+family=Monospaced
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=2
+shadow.blur=0
+gradient.color=\#ffffff
+stroke.size=1
+antialias=true
+size=35

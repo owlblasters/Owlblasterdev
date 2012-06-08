@@ -245,8 +245,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="46" id="1"/>
         </blocks>
@@ -267,8 +267,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="45" id="1"/>
         </blocks>
@@ -450,8 +450,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -572,8 +572,8 @@
         <number default="0.0" desc="- Put the X position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what X position?" hidden="false" id="12" name="_XTeleport" order="10"/>
         <number default="0.0" desc="- Put the Y position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what Y position?" hidden="false" id="13" name="_YTeleport" order="11"/>
         <boolean default="false" desc="- If the object hit the sides it will be slowed down completely (0 speed) &#10;*If you choosed number 2 or 3." dropdown="" fullname="When the object hit the sides of screen, slow down its speed to 0?" hidden="false" id="14" name="_SlowDown0" order="12"/>
-        <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
         <blocks>
             <receiver blockID="482" id="1"/>
             <ureceiver blockID="0" id="2"/>
@@ -916,6 +916,37 @@
             <event displayName="healSelf" enabled="true" id="12" name="event-custom" order="12" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_127_127_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="127" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_126_126_PickupWeapon" desc="" description="" design="true" drawOrder="0" id="126" language="" name="Pick up Weapon" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <sound default="" desc="" dropdown="" fullname="Sound" hidden="false" id="1" name="_Sound" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="Number" hidden="false" id="2" name="_Number" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="Gun" hidden="false" id="3" name="_Gun" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="Sword" hidden="false" id="4" name="_Sword" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="Weapons" hidden="false" id="5" name="_Weapons" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_238" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="124" language="" name="ActorEvents_238" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_236" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="123" language="" name="ActorEvents_236" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_234" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="122" language="" name="ActorEvents_234" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_219" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="121" language="" name="ActorEvents_219" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_120_120_TakeBranchDamage" desc="" description="" design="true" drawOrder="0" id="120" language="" name="Take_Branch_Damage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="1" desc="" dropdown="" fullname="Damage_Taken" hidden="false" id="1" name="_DamageTaken" order="1"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
@@ -923,5 +954,632 @@
         <events>
             <event displayName="Actor - Group" enabled="true" id="2" name="event-collide-actortogroup" order="2" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_137_137_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="137" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_136_136_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="136" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_139_139_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="139" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_138_138_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="138" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_141_141_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="141" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_140_140_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="140" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_143_143_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="143" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_142_142_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="142" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_129_129_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="129" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_128_128_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="128" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_131_131_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="131" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_246" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="130" language="" name="ActorEvents_246" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_133_133_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="133" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_132_132_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="132" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_252" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="135" language="" name="ActorEvents_252" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_134_134_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="134" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_152_152_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="152" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_153_153_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="153" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_154_154_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="154" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_262" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="155" language="" name="ActorEvents_262" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_156_156_FadeOutandDieafterTime" desc="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." description="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." design="true" drawOrder="0" id="156" language="" name="Fade Out and Die after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_157_157_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="157" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="266" id="1"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_158_158_FadeOutandDieafterTime" desc="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." description="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." design="true" drawOrder="0" id="158" language="" name="Fade Out and Die after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_159_159_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="159" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="269" id="1"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_144_144_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="144" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_145_145_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="145" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_146_146_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="146" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_147_147_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="147" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_148_148_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="148" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_149_149_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="149" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_150_150_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="150" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_257" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="151" language="" name="ActorEvents_257" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_171_171_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="171" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_285" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="170" language="" name="ActorEvents_285" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_169_169_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="169" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="284" id="1"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_168_168_FadeOutandDieafterTime" desc="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." description="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." design="true" drawOrder="0" id="168" language="" name="Fade Out and Die after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_175_175_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="175" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_174_174_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="174" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_173_173_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="173" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_172_172_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="172" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_163_163_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="163" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="275" id="1"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_162_162_FadeOutandDieafterTime" desc="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." description="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." design="true" drawOrder="0" id="162" language="" name="Fade Out and Die after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_271" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="161" language="" name="ActorEvents_271" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_160_160_DieAfterTime" desc="Make the actor die after a certain time. Good for transient (temporary) actors." description="Make the actor die after a certain time. Good for transient (temporary) actors." design="true" drawOrder="0" id="160" language="" name="Die After Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1.0" desc="In seconds." dropdown="" fullname="Time Before Death" hidden="false" id="1" name="time" order="0"/>
+        <boolean default="false" desc="The actor can optionally fade out before it dies." dropdown="" fullname="Fade Out?" hidden="false" id="2" name="fadeOut" order="1"/>
+        <number default="0" desc="If fading out, specifies the duration of the fade in seconds." dropdown="" fullname="Fade Duration" hidden="false" id="3" name="fadeDuration" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_280" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="167" language="" name="ActorEvents_280" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_166_166_DieAfterTime" desc="Make the actor die after a certain time. Good for transient (temporary) actors." description="Make the actor die after a certain time. Good for transient (temporary) actors." design="true" drawOrder="0" id="166" language="" name="Die After Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1.0" desc="In seconds." dropdown="" fullname="Time Before Death" hidden="false" id="1" name="time" order="0"/>
+        <boolean default="false" desc="The actor can optionally fade out before it dies." dropdown="" fullname="Fade Out?" hidden="false" id="2" name="fadeOut" order="1"/>
+        <number default="0" desc="If fading out, specifies the duration of the fade in seconds." dropdown="" fullname="Fade Duration" hidden="false" id="3" name="fadeDuration" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_165_165_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="165" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="278" id="1"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_164_164_FadeOutandDieafterTime" desc="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." description="Fades out the actor and kills it after a specified time.&#10;&#10;You can also set the fade time to zero and have no fade." design="true" drawOrder="0" id="164" language="" name="Fade Out and Die after Time" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="The time in seconds it takes for the actor to begin fading out.&#10;&lt;p&gt;&#10;Default: 1" dropdown="" fullname="Start Fading After" hidden="false" id="1" name="_StartFadingAfter" order="1"/>
+        <number default="3" desc="The amount of time in seconds it takes the actor to fade all the way out and die.&#10;&lt;p&gt;&#10;Default: 3" dropdown="" fullname="Fade Time" hidden="false" id="2" name="_FadeTime" order="2"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_186_186_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="186" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_187_187_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="187" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_184_184_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="184" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_185_185_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="185" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_190_190_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="190" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_191_191_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="191" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_188_188_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="188" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_189_189_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="189" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_178_178_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="178" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_179_179_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="179" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_176_176_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="176" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_293" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="177" language="" name="ActorEvents_293" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_182_182_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="182" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_183_183_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="183" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_180_180_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="180" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_181_181_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="181" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_205_205_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="205" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_204_204_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="204" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_207_207_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="207" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_206_206_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="206" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_201_201_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="201" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_203_203_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="203" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_202_202_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="202" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_197_197_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="197" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_196_196_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="196" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="296" id="1"/>
+        </blocks>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_199_199_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="199" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_198_198_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="198" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_193_193_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="193" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_192_192_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="192" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_195_195_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="195" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_194_194_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="194" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_220_220_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="220" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_221_221_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="221" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_222_222_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="222" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_223_223_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="223" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_216_216_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="216" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_217_217_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="217" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_218_218_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="218" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_219_219_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="219" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_212_212_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="212" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_213_213_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="213" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_214_214_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="214" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_215_215_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="215" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_208_208_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="208" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_312" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="209" language="" name="ActorEvents_312" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_210_210_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="210" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_211_211_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="211" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_336" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="232" language="" name="ActorEvents_336" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_334" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_334" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_230_230_PickupWeapon" desc="" description="" design="true" drawOrder="0" id="230" language="" name="Pick up Weapon" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <sound default="" desc="" dropdown="" fullname="Sound" hidden="false" id="1" name="_Sound" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="Number" hidden="false" id="2" name="_Number" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="Gun" hidden="false" id="3" name="_Gun" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="Sword" hidden="false" id="4" name="_Sword" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="Weapons" hidden="false" id="5" name="_Weapons" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_229_229_PickupWeapon" desc="" description="" design="true" drawOrder="0" id="229" language="" name="Pick up Weapon" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <sound default="" desc="" dropdown="" fullname="Sound" hidden="false" id="1" name="_Sound" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="Number" hidden="false" id="2" name="_Number" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="Gun" hidden="false" id="3" name="_Gun" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="Sword" hidden="false" id="4" name="_Sword" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="Weapons" hidden="false" id="5" name="_Weapons" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="228" language="" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" scenespecific="true" shared="false" type="scene">
+        <list default="list" desc="Checks for the Guns that have been bought" dropdown="" fullname="Guns" hidden="false" id="1" name="_Guns" order="0">
+            <number order="0" value="0.0"/>
+            <number order="1" value="0.0"/>
+            <number order="2" value="0.0"/>
+            <number order="3" value="0.0"/>
+            <number order="4" value="0.0"/>
+            <number order="5" value="0.0"/>
+            <number order="6" value="0.0"/>
+            <number order="7" value="0.0"/>
+        </list>
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="4" name="event-device-touch-actor" order="4" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="6" name="event-device-touch-actor" order="6" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="7" name="draw" order="10" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="9" name="event-device-touch-actor" order="9" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="10" name="event-mouse-enter-exit-actor" order="8" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_227_227_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="227" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_226_226_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="226" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_225_225_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="225" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_224_224_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="224" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
     </snippet>
 </pack>

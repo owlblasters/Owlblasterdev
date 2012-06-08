@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="2">
+<init x="60" y="40">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step x="60" y="150">
+<group id="-1"/>
+</step>
+</group>
+<group id="3">
+<collide x="60" y="260">
+<group id="-1"/>
+</collide>
+</group>
+<group id="0">
+<draw x="60" y="370">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>
