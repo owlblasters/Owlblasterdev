@@ -3,9 +3,13 @@
     <group eventID="1" id="0">
         <event-mouse-press-release comment="false" x="20" y="18">
             <group eventID="1" id="-1">
-                <if comment="false" x="31" y="45">
+                <play-sound4 comment="false" x="31" y="45">
+                    <int id="0" val="0"/>
+                    <SOUND eid="339" id="1"/>
+                </play-sound4>
+                <if comment="false" x="31" y="72">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="42" y="88">
+                        <create-recycled-actor comment="false" x="42" y="115">
                             <ACTORTYPE eid="60" id="0"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -23,7 +27,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="42" y="133">
+                        <push-shove comment="false" x="42" y="160">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -64,9 +68,9 @@
                         </eq>
                     </or>
                 </if>
-                <else comment="false" x="31" y="190">
+                <else comment="false" x="31" y="217">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="42" y="210">
+                        <create-recycled-actor comment="false" x="42" y="237">
                             <ACTORTYPE eid="60" id="0"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -81,7 +85,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="42" y="255">
+                        <push-shove comment="false" x="42" y="282">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -116,9 +120,13 @@
     <group eventID="2" id="0">
         <event-device-touch comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <if comment="false" x="26" y="42">
+                <play-sound4 comment="false" x="26" y="42">
+                    <int id="0" val="0"/>
+                    <SOUND id="1"/>
+                </play-sound4>
+                <if comment="false" x="26" y="69">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="85">
+                        <create-recycled-actor comment="false" x="37" y="112">
                             <ACTORTYPE eid="60" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -136,7 +144,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="37" y="130">
+                        <push-shove comment="false" x="37" y="157">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -177,9 +185,9 @@
                         </eq>
                     </or>
                 </if>
-                <else comment="false" x="26" y="187">
+                <else comment="false" x="26" y="214">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="207">
+                        <create-recycled-actor comment="false" x="37" y="234">
                             <ACTORTYPE eid="60" id="0"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -194,7 +202,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="37" y="252">
+                        <push-shove comment="false" x="37" y="279">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">

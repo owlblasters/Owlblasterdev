@@ -3,7 +3,7 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <grad-bg b1="255" b2="0" g1="255" g2="0" r1="255" r2="0"/>
+    <grad-bg b1="0" b2="255" g1="255" g2="0" r1="0" r2="0"/>
     <backgrounds>
         <ref id="338"/>
     </backgrounds>
@@ -12,13 +12,13 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="124" name="Weapons 1" sx="0.7708333" sy="0.59375" x="259" y="170" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="236" name="Claw 3" sx="1.0" sy="1.0" x="168" y="116" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="238" name="Scythe 4" sx="1.0" sy="1.0" x="217" y="187" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="0" id="127" name="Weapon 6" sx="1.0" sy="1.0" x="293" y="114" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="3" id="336" name="Gun 7" sx="1.0" sy="1.0" x="117" y="116" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="6" id="334" name="Gun2 8" sx="1.0" sy="1.0" x="117" y="183" z="0"/>
-        <actor a="0.0" aid="9" c="false" group="3" id="234" name="ShotGun Icon 9" sx="1.9166666" sy="1.25" x="224" y="121" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="3" id="124" name="Weapons 1" sx="0.7708333" sy="0.59375" x="215" y="207" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="236" name="Claw 3" sx="1.0" sy="1.0" x="148" y="113" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="238" name="Scythe 4" sx="1.0" sy="1.0" x="144" y="218" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="0" id="127" name="Weapon 6" sx="1.0" sy="1.0" x="245" y="116" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="336" name="Gun 7" sx="1.0" sy="1.0" x="57" y="109" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="6" id="334" name="Gun2 8" sx="1.0" sy="1.0" x="327" y="115" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="234" name="ShotGun Icon 9" sx="1.9166666" sy="1.25" x="60" y="223" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
