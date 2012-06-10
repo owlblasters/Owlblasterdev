@@ -12,8 +12,21 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="32" name="Jumper 1" sx="1.0" sy="1.0" x="133" y="25" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="0" id="127" name="Weapon 2" sx="0.5625" sy="0.6875" x="197" y="49" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="0" id="32" name="Jumper 1" sx="1.0" sy="1.0" x="152" y="24" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="336" name="Gun 3" sx="1.0" sy="1.0" x="56" y="141" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="238" name="Scythe 4" sx="1.0" sy="1.0" x="129" y="251" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="236" name="Claw 5" sx="1.0" sy="1.0" x="142" y="138" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="0" id="127" name="Weapon 6" sx="1.0" sy="1.0" x="224" y="137" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="6" id="334" name="Gun2 7" sx="1.0" sy="1.0" x="56" y="250" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="234" name="ShotGun Icon 8" sx="1.0" sy="1.0" x="314" y="140" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="124" name="Weapons 9" sx="1.0" sy="1.0" x="190" y="235" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="202" name="Button 10" sx="1.0" sy="1.0" x="22" y="175" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="202" name="Button 11" sx="1.0" sy="1.0" x="97" y="175" z="0"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="202" name="Button 12" sx="1.0" sy="1.0" x="182" y="174" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="202" name="Button 13" sx="1.0" sy="1.0" x="268" y="172" z="0"/>
+        <actor a="0.0" aid="14" c="false" group="3" id="202" name="Button 14" sx="1.0" sy="1.0" x="188" y="291" z="0"/>
+        <actor a="0.0" aid="15" c="false" group="3" id="202" name="Button 15" sx="1.0" sy="1.0" x="108" y="291" z="0"/>
+        <actor a="0.0" aid="16" c="false" group="3" id="202" name="Button 16" sx="1.0" sy="1.0" x="33" y="291" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

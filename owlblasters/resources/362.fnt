@@ -1,0 +1,18 @@
+#
+#Sat Jun 09 19:35:23 EDT 2012
+monospace=false
+monospace.numerals=false
+style=plain
+tracking=0
+stroke.color=\#000000
+color=\#ff0000
+shadow.y=4
+family=Serif
+shadow.x=2
+shadow.color=\#000000
+gradient.offset=1
+shadow.blur=2
+gradient.color=\#ffff00
+stroke.size=0
+antialias=true
+size=45

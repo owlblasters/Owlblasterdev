@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="362" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="Credits"/>
+                    <int id="1" val="100"/>
+                    <get-val-241-1 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="92">
+                    <FONT eid="359" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="119">
+                    <int id="0" val=""/>
+                    <int id="1" val="100"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <int id="0" val=""/>
+                        <int id="1" val=""/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="144">
+                    <int id="0" val=""/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="164">
+                    <int id="0" val=""/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="184">
+                    <int id="0" val=""/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="204">
+                    <int id="0" val=""/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="224">
+                    <int id="0" val=""/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="244">
+                    <int id="0" val=""/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-241-1 comment="false" x="26" y="40">
+                    <int id="0" val="700"/>
+                </set-val-241-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="1"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="10"/>
+                </incdec>
+            </group>
+            <int id="0" val=".1"/>
+        </event-periodic>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

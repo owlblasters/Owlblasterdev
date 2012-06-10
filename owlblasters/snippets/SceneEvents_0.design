@@ -70,17 +70,17 @@
         </event-periodic>
     </group>
     <group eventID="2" id="-1">
-        <get-wh comment="false" x="632" y="268">
+        <get-wh comment="false" x="444" y="341">
             <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="1"/>
+            <int id="1" val="0"/>
         </get-wh>
         <get-wh comment="false" x="480" y="234">
             <ACTOR eid="lastcreated" id="0"/>
             <int id="1" val="1"/>
         </get-wh>
-        <get-wh comment="false" x="444" y="341">
+        <get-wh comment="false" x="632" y="268">
             <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="0"/>
+            <int id="1" val="1"/>
         </get-wh>
     </group>
     <group eventID="3" id="0">
