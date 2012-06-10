@@ -1,0 +1,19 @@
+#
+#Sun Jun 10 03:39:34 EDT 2012
+monospace=false
+monospace.numerals=false
+style=plain
+tracking=0
+stroke.color=\#000000
+color=\#ffffff
+shadow.y=0
+family=FEASFBI_.ttf
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=0
+shadow.blur=1
+chars=A-z
+gradient.color=\#ffffff
+stroke.size=1
+antialias=true
+size=35

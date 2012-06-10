@@ -1,0 +1,18 @@
+#
+#Sun Jun 10 02:21:31 EDT 2012
+monospace=false
+monospace.numerals=false
+style=bold
+tracking=0
+stroke.color=\#000000
+color=\#000000
+shadow.y=4
+family=bad_bold_college_Regular.ttf
+shadow.x=4
+shadow.color=\#000000
+gradient.offset=2
+shadow.blur=1
+gradient.color=\#ff0066
+stroke.size=2
+antialias=true
+size=32

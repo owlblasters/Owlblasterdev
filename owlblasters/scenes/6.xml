@@ -71,6 +71,28 @@
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
+                    <prop id="2" list="0" val="10"/>
+                    <prop id="3" list="0" val="Credits"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="true" group="3" id="202" name="Button 7" sx="1.0" sy="1.0" x="96" y="379" z="0">
+            <snippets>
+                <s enabled="true" id="117">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2" list="0" val="11"/>
+                    <prop id="3" list="0" val="About"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="8" c="true" group="3" id="202" name="Button 8" sx="1.0" sy="1.0" x="229" y="379" z="0">
+            <snippets>
+                <s enabled="true" id="117">
+                    <prop id="1" list="0" val="false"/>
                     <prop id="2" list="0" val="1"/>
                     <prop id="3" list="0" val="Back"/>
                     <prop id="4" list="0" val=""/>

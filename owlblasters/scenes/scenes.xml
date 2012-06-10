@@ -10,4 +10,6 @@
     <scene desc="" format="1.0" id="8" name="Gun Select Scene"/>
     <scene desc="" format="1.0" id="9" name="Instructions Scene"/>
     <scene desc="" format="1.0" id="10" name="Credits"/>
+    <scene desc="" format="1.0" id="11" name="About Scene"/>
+    <scene desc="" format="1.0" id="12" name="Options Scene"/>
 </scenes>

@@ -1623,6 +1623,14 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_11" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="244" language="" name="SceneEvents_11" oid="-1" package="scripts." sceneid="11" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_12" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="245" language="" name="SceneEvents_12" oid="-1" package="scripts." sceneid="12" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_242_242_ExplodeOnDeath" desc="Spawn an explosion and fragments when the actor dies." description="Spawn an explosion and fragments when the actor dies." design="true" drawOrder="0" id="242" language="" name="Explode On Death" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="10.0" desc="The maximum speed at which the fragments fly away." dropdown="" fullname="Maximum Speed" hidden="false" id="17" name="_MaximumSpeed" order="6"/>
         <number default="5.0" desc="The number of fragments to create." dropdown="" fullname="Number of Fragments" hidden="false" id="23" name="_NumberofFragments" order="4"/>
@@ -1649,6 +1657,7 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_10" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="241" language="" name="SceneEvents_10" oid="-1" package="scripts." sceneid="10" scenespecific="true" shared="false" type="scene">
         <number default="0.0" desc="Y coordinate moving" dropdown="" fullname="Y" hidden="false" id="1" name="_Y" order="0"/>
+        <number default="0" desc="X coordinate" dropdown="" fullname="X" hidden="false" id="2" name="_X" order="1"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>

@@ -4,66 +4,183 @@
         <draw comment="false" x="15" y="15">
             <group eventID="1" id="-1">
                 <set-font-new comment="false" x="26" y="40">
-                    <FONT eid="362" id="0"/>
+                    <FONT eid="205" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
-                    <int id="0" val="Credits"/>
-                    <int id="1" val="100"/>
-                    <get-val-241-1 comment="false" id="2" x="0" y="0"/>
+                    <int id="0" val="Owl Blaster"/>
+                    <int id="1" val="5"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="500"/>
+                    </minus>
                 </draw-text>
-                <set-font-new comment="false" x="26" y="92">
+                <draw-text comment="false" x="26" y="97">
+                    <int id="0" val="Development"/>
+                    <int id="1" val="5"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="450"/>
+                    </minus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="127">
+                    <FONT eid="362" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="154">
+                    <int id="0" val="Credits"/>
+                    <int id="1" val="5"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="400"/>
+                    </minus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="184">
+                    <FONT eid="365" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="211">
+                    <int id="0" val="Developers"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="50"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="241">
                     <FONT eid="359" id="0"/>
                 </set-font-new>
+                <draw-text comment="false" x="26" y="268">
+                    <int id="0" val="Jonathan Wu"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="100"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="298">
+                    <int id="0" val="David Silin"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="150"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="328">
+                    <FONT eid="233" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="355">
+                    <int id="0" val="Artists"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="200"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="385">
+                    <FONT eid="359" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="412">
+                    <int id="0" val="Ceric"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="250"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="442">
+                    <int id="0" val="Kapu"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="280"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="472">
+                    <int id="0" val="Sunrisekingdom"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="310"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="502">
+                    <int id="0" val="IWonderZero"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="340"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="532">
+                    <int id="0" val="Luyren"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="370"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="562">
+                    <int id="0" val="Micro Mister"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="400"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="592">
+                    <FONT eid="364" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="619">
+                    <int id="0" val="Music and Sounds"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="500"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="649">
+                    <FONT eid="359" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="676">
+                    <int id="0" val="Metal Renard"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="530"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="706">
+                    <int id="0" val="Stencyl"/>
+                    <int id="1" val="5"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="560"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="736">
+                    <FONT eid="362" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="763">
+                    <int id="0" val="Thanks For"/>
+                    <get-val-241-2 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="200"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="788">
+                    <int id="0" val="Playing!"/>
+                    <get-val-241-2 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="250"/>
+                </draw-text>
             </group>
         </draw>
-    </group>
-    <group eventID="1" id="1">
-        <draw-text comment="false" x="4" y="210">
-            <int id="0" val="Jonathan Wu"/>
-            <int id="1" val="100"/>
-            <plus comment="false" id="2" x="0" y="0">
-                <int id="0" val=""/>
-                <int id="1" val=""/>
-            </plus>
-        </draw-text>
-        <draw-text comment="false" x="4" y="235">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-        </draw-text>
-        <draw-text comment="false" x="4" y="255">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-        </draw-text>
-        <draw-text comment="false" x="4" y="275">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-        </draw-text>
-        <draw-text comment="false" x="4" y="295">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-        </draw-text>
-        <draw-text comment="false" x="4" y="315">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-        </draw-text>
-        <draw-text comment="false" x="4" y="335">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-        </draw-text>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <set-val-241-1 comment="false" x="26" y="40">
-                    <int id="0" val="700"/>
+                    <int id="0" val="600"/>
                 </set-val-241-1>
+                <set-val-241-2 comment="false" x="26" y="60">
+                    <int id="0" val="500"/>
+                </set-val-241-2>
             </group>
         </init>
     </group>
@@ -71,13 +188,46 @@
     <group eventID="3" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <incdec comment="false" x="26" y="40">
+                <dolater comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="37" y="67">
+                            <group eventID="3" id="-1">
+                                <incdec comment="false" x="48" y="97">
+                                    <int id="0" val="1"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val=".7"/>
+                                </incdec>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-val-241-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="-600"/>
+                            </moreeq>
+                        </if>
+                    </group>
                     <int id="0" val="1"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="10"/>
-                </incdec>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="148">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="37" y="175">
+                            <group eventID="4" id="-1">
+                                <incdec comment="false" x="48" y="205">
+                                    <int id="0" val="2"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="1"/>
+                                </incdec>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-val-241-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="5"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <int id="0" val="12"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
             </group>
-            <int id="0" val=".1"/>
+            <int id="0" val="0.01"/>
         </event-periodic>
     </group>
     <group eventID="3" id="-1"/>
