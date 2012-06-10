@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <init comment="false" x="15" y="15">
+        <init comment="false" x="4" y="2">
             <group eventID="1" id="-1">
-                <play-sound4 comment="false" x="26" y="40">
-                    <int id="0" val="1"/>
-                    <SOUND eid="227" id="1"/>
-                </play-sound4>
+                <if comment="false" x="15" y="27">
+                    <group eventID="1" id="-1">
+                        <play-sound4 comment="false" x="26" y="57">
+                            <int id="0" val="1"/>
+                            <SOUND eid="227" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
             </group>
         </init>
     </group>
@@ -94,79 +102,87 @@
                 </set-val-0-3>
                 <if comment="false" x="26" y="65">
                     <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="95">
-                            <int id="0" val="0"/>
-                            <SOUND eid="342" id="1"/>
-                        </play-sound4>
+                        <if comment="false" x="37" y="95">
+                            <group eventID="3" id="-1">
+                                <play-sound4 comment="false" x="48" y="125">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="342" id="1"/>
+                                </play-sound4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="164">
+                            <group eventID="3" id="-1">
+                                <play-sound4 comment="false" x="48" y="194">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="344" id="1"/>
+                                </play-sound4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="233">
+                            <group eventID="3" id="-1">
+                                <play-sound4 comment="false" x="48" y="263">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="345" id="1"/>
+                                </play-sound4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="302">
+                            <group eventID="3" id="-1">
+                                <play-sound4 comment="false" x="48" y="332">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="346" id="1"/>
+                                </play-sound4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="371">
+                            <group eventID="3" id="-1">
+                                <play-sound4 comment="false" x="48" y="401">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="347" id="1"/>
+                                </play-sound4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="4"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="440">
+                            <group eventID="3" id="-1">
+                                <play-sound4 comment="false" x="48" y="470">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="348" id="1"/>
+                                </play-sound4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="5"/>
+                            </eq>
+                        </if>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="0"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="134">
-                    <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="164">
-                            <int id="0" val="0"/>
-                            <SOUND eid="344" id="1"/>
-                        </play-sound4>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="203">
+                <if comment="false" x="26" y="521">
                     <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="233">
-                            <int id="0" val="0"/>
-                            <SOUND eid="345" id="1"/>
-                        </play-sound4>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="2"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="272">
-                    <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="302">
-                            <int id="0" val="0"/>
-                            <SOUND eid="346" id="1"/>
-                        </play-sound4>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="3"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="341">
-                    <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="371">
-                            <int id="0" val="0"/>
-                            <SOUND eid="347" id="1"/>
-                        </play-sound4>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="4"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="410">
-                    <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="440">
-                            <int id="0" val="0"/>
-                            <SOUND eid="348" id="1"/>
-                        </play-sound4>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="5"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="479">
-                    <group eventID="3" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="509">
+                        <create-recycled-actor comment="false" x="37" y="551">
                             <ACTORTYPE eid="349" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <screen-wh comment="false" id="0" x="0" y="0">
@@ -191,9 +207,9 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <else comment="false" x="26" y="566">
+                <else comment="false" x="26" y="608">
                     <group eventID="3" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="586">
+                        <create-recycled-actor comment="false" x="37" y="628">
                             <ACTORTYPE eid="349" id="0"/>
                             <int id="1" val="50"/>
                             <minus comment="false" id="2" x="0" y="0">

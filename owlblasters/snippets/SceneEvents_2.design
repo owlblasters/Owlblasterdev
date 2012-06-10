@@ -171,10 +171,18 @@
     <group eventID="11" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="11" id="-1">
-                <play-sound4 comment="false" x="26" y="40">
-                    <int id="0" val="1"/>
-                    <SOUND eid="221" id="1"/>
-                </play-sound4>
+                <if comment="false" x="26" y="40">
+                    <group eventID="11" id="-1">
+                        <play-sound4 comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <SOUND eid="221" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
             </group>
         </init>
     </group>

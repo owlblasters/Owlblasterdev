@@ -3,13 +3,21 @@
     <group eventID="1" id="0">
         <event-mouse-press-release comment="false" x="20" y="18">
             <group eventID="1" id="-1">
-                <play-sound4 comment="false" x="31" y="45">
-                    <int id="0" val="0"/>
-                    <SOUND eid="339" id="1"/>
-                </play-sound4>
-                <if comment="false" x="31" y="72">
+                <if comment="false" x="31" y="45">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="42" y="115">
+                        <play-sound4 comment="false" x="42" y="75">
+                            <int id="0" val="0"/>
+                            <SOUND eid="339" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <if comment="false" x="31" y="114">
+                    <group eventID="1" id="-1">
+                        <create-recycled-actor comment="false" x="42" y="157">
                             <ACTORTYPE eid="60" id="0"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -43,9 +51,9 @@
                         </eq>
                     </or>
                 </if>
-                <else comment="false" x="31" y="172">
+                <else comment="false" x="31" y="214">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="42" y="192">
+                        <create-recycled-actor comment="false" x="42" y="234">
                             <ACTORTYPE eid="60" id="0"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -62,7 +70,7 @@
                         </create-recycled-actor>
                     </group>
                 </else>
-                <set-val-16-10 comment="false" x="31" y="249">
+                <set-val-16-10 comment="false" x="31" y="291">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -74,7 +82,7 @@
                         </get-xy>
                     </minus>
                 </set-val-16-10>
-                <set-val-16-11 comment="false" x="31" y="287">
+                <set-val-16-11 comment="false" x="31" y="329">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -86,7 +94,7 @@
                         </get-xy>
                     </minus>
                 </set-val-16-11>
-                <push-shove comment="false" x="31" y="325">
+                <push-shove comment="false" x="31" y="367">
                     <ACTOR eid="lastcreated" id="0"/>
                     <int id="1" val="1"/>
                     <get-val-16-10 comment="false" id="2" x="0" y="0"/>
@@ -99,15 +107,23 @@
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <event-device-touch comment="false" x="15" y="15">
+        <event-device-touch comment="false" x="20" y="16">
             <group eventID="2" id="-1">
-                <play-sound4 comment="false" x="26" y="42">
-                    <int id="0" val="0"/>
-                    <SOUND id="1"/>
-                </play-sound4>
-                <if comment="false" x="26" y="69">
+                <if comment="false" x="31" y="43">
+                    <group eventID="2" id="-1">
+                        <play-sound4 comment="false" x="42" y="73">
+                            <int id="0" val="0"/>
+                            <SOUND id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <if comment="false" x="31" y="112">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="112">
+                        <create-recycled-actor comment="false" x="42" y="155">
                             <ACTORTYPE eid="60" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -125,7 +141,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="37" y="157">
+                        <push-shove comment="false" x="42" y="200">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -166,9 +182,9 @@
                         </eq>
                     </or>
                 </if>
-                <else comment="false" x="26" y="214">
+                <else comment="false" x="31" y="257">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="234">
+                        <create-recycled-actor comment="false" x="42" y="277">
                             <ACTORTYPE eid="60" id="0"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -183,7 +199,7 @@
                             </plus>
                             <int id="3" val="0"/>
                         </create-recycled-actor>
-                        <push-shove comment="false" x="37" y="279">
+                        <push-shove comment="false" x="42" y="322">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
