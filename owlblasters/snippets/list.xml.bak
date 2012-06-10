@@ -248,8 +248,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="46" id="1"/>
         </blocks>
@@ -270,8 +270,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="45" id="1"/>
         </blocks>
@@ -453,8 +453,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -555,11 +555,14 @@
         <number default="10.0" desc="How fast this Actor will follow the player or target." dropdown="" fullname="Follow Speed" hidden="false" id="9" name="_FollowSpeed" order="9"/>
         <number default="40.0" desc="The height of the Target's detection region." dropdown="" fullname="Target Region Height" hidden="false" id="10" name="_TargetRegionHeight" order="10"/>
         <number default="40.0" desc="the width of the Target's detection region." dropdown="" fullname="Target Region Width" hidden="false" id="11" name="_TargetRegionWidth" order="11"/>
+        <boolean default="false" desc="" dropdown="" fullname="isSwooping" hidden="false" id="12" name="_isSwooping" order="12"/>
+        <number default="0" desc="" dropdown="" fullname="SwoopXSpeed" hidden="false" id="13" name="_SwoopXSpeed" order="13"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_61_61_AlwaysonScreen" desc="This behavior will cause the actor that it is attached on to never leave the screen, then when the camera moves it will not be left behind.&#10;Very useful for things like HUDs, Inventory, or anything that must be on the screen.&#10;&#10;FUNCTIONS: &#10;Fixed on screen: Always on the screen, and in a fixed point.&#10;Move Free: Always in the screen, but can move freely.&#10;- Bounce: Bounce on the sides of the screen&#10;- Teleport: Teleported back when tries to leave the screen&#10;- Cant Exit: The object cant pass the sides of the screen, like if they were glass walls and when the camera moves its pushed by the screen&#10;&#10;=VERY CUSTOMISABLE=" description="This behavior will cause the actor that it is attached on to never leave the screen, then when the camera moves it will not be left behind.&#10;Very useful for things like HUDs, Inventory, or anything that must be on the screen.&#10;&#10;FUNCTIONS: &#10;Fixed on screen: Always on the screen, and in a fixed point.&#10;Move Free: Always in the screen, but can move freely.&#10;- Bounce: Bounce on the sides of the screen&#10;- Teleport: Teleported back when tries to leave the screen&#10;- Cant Exit: The object cant pass the sides of the screen, like if they were glass walls and when the camera moves its pushed by the screen&#10;&#10;=VERY CUSTOMISABLE=" design="true" drawOrder="0" id="61" language="" name="Always on Screen" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -575,8 +578,8 @@
         <number default="0.0" desc="- Put the X position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what X position?" hidden="false" id="12" name="_XTeleport" order="10"/>
         <number default="0.0" desc="- Put the Y position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what Y position?" hidden="false" id="13" name="_YTeleport" order="11"/>
         <boolean default="false" desc="- If the object hit the sides it will be slowed down completely (0 speed) &#10;*If you choosed number 2 or 3." dropdown="" fullname="When the object hit the sides of screen, slow down its speed to 0?" hidden="false" id="14" name="_SlowDown0" order="12"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="482" id="1"/>
             <ureceiver blockID="0" id="2"/>
