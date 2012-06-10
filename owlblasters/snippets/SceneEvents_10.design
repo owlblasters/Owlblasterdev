@@ -14,46 +14,48 @@
                 <set-font-new comment="false" x="26" y="92">
                     <FONT eid="359" id="0"/>
                 </set-font-new>
-                <draw-text comment="false" x="26" y="119">
-                    <int id="0" val=""/>
-                    <int id="1" val="100"/>
-                    <plus comment="false" id="2" x="0" y="0">
-                        <int id="0" val=""/>
-                        <int id="1" val=""/>
-                    </plus>
-                </draw-text>
-                <draw-text comment="false" x="26" y="144">
-                    <int id="0" val=""/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="164">
-                    <int id="0" val=""/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="184">
-                    <int id="0" val=""/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="204">
-                    <int id="0" val=""/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="224">
-                    <int id="0" val=""/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="244">
-                    <int id="0" val=""/>
-                    <int id="1" val=""/>
-                    <int id="2" val=""/>
-                </draw-text>
             </group>
         </draw>
+    </group>
+    <group eventID="1" id="1">
+        <draw-text comment="false" x="4" y="210">
+            <int id="0" val="Jonathan Wu"/>
+            <int id="1" val="100"/>
+            <plus comment="false" id="2" x="0" y="0">
+                <int id="0" val=""/>
+                <int id="1" val=""/>
+            </plus>
+        </draw-text>
+        <draw-text comment="false" x="4" y="235">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
+        <draw-text comment="false" x="4" y="255">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
+        <draw-text comment="false" x="4" y="275">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
+        <draw-text comment="false" x="4" y="295">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
+        <draw-text comment="false" x="4" y="315">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
+        <draw-text comment="false" x="4" y="335">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
