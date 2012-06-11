@@ -717,8 +717,8 @@
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
-                <prop id="15" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="false"/>
             </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -730,11 +730,11 @@
         <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,41,16,73,16,73,64,41,64" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
-            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
-        </anim>
         <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
+            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="3" loop="true" name="walk-r" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -748,6 +748,10 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="16" fixedrot="true" fric="0.5" gid="0" id="32" ignoreg="false" inertia="0.01" ldamp="0.499" lw="false" mass="5.0" name="Jumper" oid="19264" pausable="true" rest="0.1" shared="true" sprite="33" static="false" touchable="true">
         <snippets>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="20">
                 <prop id="1" list="0" val="10000000"/>
                 <prop id="2" list="0" val="10000000"/>
@@ -777,10 +781,6 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0.75"/>
             </s>
-            <s enabled="true" id="65">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="112">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="1"/>
@@ -796,6 +796,9 @@
                 <prop id="13" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="93">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="42">
                 <prop id="34" list="0" val="right"/>
                 <prop id="33" list="0" val="left"/>
@@ -809,11 +812,8 @@
                 <prop id="41" list="0" val="idle-l"/>
                 <prop id="46" list="0" val="false"/>
                 <prop id="44" list="0" val="jump-r"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="45" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="93">
-                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="false" id="43">
                 <prop id="2" list="0" val="50.0"/>
@@ -839,6 +839,13 @@
                 <prop id="30" list="0" val="30.0"/>
             </s>
             <s enabled="true" id="30">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="110" fixedrot="true" fric="0.5" gid="3" id="160" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Left Tree Side" oid="-1" pausable="true" rest="0.17" shared="false" sprite="161" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -1038,6 +1045,18 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="DamageType" order="1" type="TEXT"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="255" fixedrot="true" fric="0.2" gid="3" id="372" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Right Tree Side" oid="-1" pausable="true" rest="0.0" shared="false" sprite="373" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="15">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="241" id="373" name="Right Tree Side" shared="false" width="135">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="241" id="0" loop="true" name="Animation 0" numframes="1" originx="67" originy="120" width="135">
+            <poly data="4,0,0,135,0,135,241,0,241" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="118" fixedrot="false" fric="0.2" gid="3" id="202" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="SceneButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="203" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="117">
@@ -1197,12 +1216,9 @@
             <poly data="4,0,0,242,0,242,22,0,22" density="0.1" fric="0.2" gid="5" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="110" fixedrot="true" fric="0.5" gid="3" id="160" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Tree Side" oid="-1" pausable="true" rest="0.17" shared="false" sprite="161" static="true" touchable="true">
-        <snippets/>
-    </actor>
-    <sprite atlasID="0" default="0" desc="" height="650" id="161" name="Tree Side" shared="false" width="25">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="650" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="96" width="25">
-            <poly data="4,2,2,24,2,24,1302,2,1302" density="0.1" fric="0.2" gid="1" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" desc="" height="241" id="161" name="Tree Side" shared="false" width="135">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="241" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="96" width="135">
+            <poly data="4,0,0,135,0,135,241,0,241" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="249" fixedrot="false" fric="0.2" gid="3" id="369" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="varButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="370" static="false" touchable="true">
