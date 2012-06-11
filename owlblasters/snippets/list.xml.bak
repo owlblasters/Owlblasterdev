@@ -23,6 +23,7 @@
             <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
             <event displayName="actortype height" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
             <event displayName="actortype width" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="9" name="draw" order="9" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_GunFiring" desc="" description="" design="true" drawOrder="0" id="1" language="" name="Gun Firing" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -793,6 +794,7 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_109_109_IntroTitle" desc="Shows an Intro Title, which slides away after the specified time." description="Shows an Intro Title, which slides away after the specified time." design="true" drawOrder="0" id="109" language="" name="Intro Title" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
@@ -1439,7 +1441,9 @@
     <snippet attachedevent="false" class="scripts.Design_222_222_DieuponCollision" desc="" description="" design="true" drawOrder="0" id="222" language="" name="Die upon Collision" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_223_223_AlwaysSimulate" desc="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." description="Allow the player to simulate even when going off screen.  This prevents the player from freezing when leaving the screen." design="true" drawOrder="0" id="223" language="" name="Always Simulate" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -1512,18 +1516,8 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_8" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="239" language="" name="SceneEvents_8" oid="-1" package="scripts." sceneid="8" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="4" name="event-device-touch-actor" order="4" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="6" name="event-device-touch-actor" order="6" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="7" name="event-mouse-enter-exit-actor" order="7" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="8" name="event-device-touch-actor" order="8" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="9" name="event-mouse-enter-exit-actor" order="9" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="10" name="event-device-touch-actor" order="10" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="11" name="event-mouse-enter-exit-actor" order="11" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="12" name="event-device-touch-actor" order="12" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="13" name="draw" order="13" repeats="true"/>
+            <event displayName="Created" enabled="true" id="14" name="init" order="14" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="238" language="" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" scenespecific="true" shared="false" type="scene">
@@ -1534,6 +1528,7 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="236" language="" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" scenespecific="true" shared="false" type="scene">
@@ -1577,16 +1572,6 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="228" language="" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" scenespecific="true" shared="false" type="scene">
-        <list default="list" desc="Checks for the Guns that have been bought" dropdown="" fullname="Guns" hidden="false" id="1" name="_Guns" order="0">
-            <number order="0" value="0.0"/>
-            <number order="1" value="0.0"/>
-            <number order="2" value="0.0"/>
-            <number order="3" value="0.0"/>
-            <number order="4" value="0.0"/>
-            <number order="5" value="0.0"/>
-            <number order="6" value="0.0"/>
-            <number order="7" value="0.0"/>
-        </list>
         <blocks/>
         <events>
             <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
@@ -1666,6 +1651,7 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_242_242_ExplodeOnDeath" desc="Spawn an explosion and fragments when the actor dies." description="Spawn an explosion and fragments when the actor dies." design="true" drawOrder="0" id="242" language="" name="Explode On Death" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">

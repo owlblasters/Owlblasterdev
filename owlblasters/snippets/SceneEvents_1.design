@@ -28,4 +28,17 @@
         </draw>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <load-game comment="false" x="26" y="40">
+                    <group eventID="2" id="-1"/>
+                </load-game>
+                <save-game comment="false" x="26" y="97">
+                    <group eventID="2" id="-1"/>
+                </save-game>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

@@ -15,9 +15,9 @@
                         <scene-change-new comment="false" x="37" y="119">
                             <get-val-117-2 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="1"/>
+                            <int id="2" val=".5"/>
                             <int id="3" val="0"/>
-                            <int id="4" val="1"/>
+                            <int id="4" val=".5"/>
                         </scene-change-new>
                     </group>
                     <get-val-117-1 comment="false" id="0" x="0" y="0"/>
@@ -111,9 +111,9 @@
                         <scene-change-new comment="false" x="37" y="119">
                             <SCENE eid="var" id="0" vid="2"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="1"/>
+                            <int id="2" val=".5"/>
                             <int id="3" val="0"/>
-                            <int id="4" val="1"/>
+                            <int id="4" val=".5"/>
                         </scene-change-new>
                     </group>
                     <get-val-117-1 comment="false" id="0" x="0" y="0"/>

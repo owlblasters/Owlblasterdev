@@ -3,9 +3,12 @@
     <group eventID="1" id="0">
         <init comment="false" x="4" y="2">
             <group eventID="1" id="-1">
-                <if comment="false" x="15" y="27">
+                <save-game comment="false" x="15" y="27">
+                    <group eventID="1" id="-1"/>
+                </save-game>
+                <if comment="false" x="15" y="84">
                     <group eventID="1" id="-1">
-                        <play-sound4 comment="false" x="26" y="57">
+                        <play-sound4 comment="false" x="26" y="114">
                             <int id="0" val="1"/>
                             <SOUND eid="227" id="1"/>
                         </play-sound4>
@@ -259,4 +262,19 @@
         </receiver-10-218>
     </group>
     <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="364" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="20"/>
+                    <int id="2" val="1"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>
