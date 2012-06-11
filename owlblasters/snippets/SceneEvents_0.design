@@ -346,4 +346,15 @@
         </init>
     </group>
     <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <save-game comment="false" x="26" y="40">
+                    <group eventID="12" id="-1"/>
+                </save-game>
+            </group>
+            <int id="0" val="10"/>
+        </event-periodic>
+    </group>
+    <group eventID="12" id="-1"/>
 </groups>

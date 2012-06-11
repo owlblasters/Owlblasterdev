@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="1" id="-1"/>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <create-actor3 comment="false" x="26" y="42">
+                    <ACTORTYPE eid="202" id="0"/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <create-actor3 comment="false" x="26" y="69">
+                    <ACTORTYPE eid="202" id="0"/>
+                    <int id="1" val=""/>
+                    <int id="2" val=""/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

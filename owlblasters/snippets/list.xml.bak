@@ -25,6 +25,7 @@
             <event displayName="Drawing" enabled="true" id="9" name="draw" order="9" repeats="true"/>
             <event displayName="Draw Tree sides" enabled="true" id="10" name="event-periodic" order="10" repeats="true"/>
             <event displayName="Created" enabled="true" id="11" name="init" order="11" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="12" name="event-periodic" order="12" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_GunFiring" desc="" description="" design="true" drawOrder="0" id="1" language="" name="Gun Firing" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -1519,8 +1520,10 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_8" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="239" language="" name="SceneEvents_8" oid="-1" package="scripts." sceneid="8" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events>
+            <event displayName="Touch Actor" enabled="true" id="16" name="event-device-touch-actor" order="16" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="13" name="draw" order="13" repeats="true"/>
             <event displayName="Created" enabled="true" id="14" name="init" order="14" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="15" name="event-mouse-enter-exit-actor" order="15" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="238" language="" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" scenespecific="true" shared="false" type="scene">
@@ -1717,6 +1720,17 @@
             <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="3" repeats="true"/>
             <event displayName="Click" enabled="true" id="5" name="event-mouse-press-release" order="5" repeats="true"/>
             <event displayName="Touch" enabled="true" id="6" name="event-device-touch" order="6" repeats="false"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_19" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="256" language="" name="SceneEvents_19" oid="-1" package="scripts." sceneid="19" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_374" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="257" language="" name="ActorEvents_374" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>

@@ -17,5 +17,6 @@
     <scene desc="" format="1.0" id="15" name="Pistol Upgrade Scene"/>
     <scene desc="" format="1.0" id="17" name="Shotgun Upgrade Scene"/>
     <scene desc="" format="1.0" id="16" name="Revolver Upgrade Scene"/>
+    <scene desc="" format="1.0" id="19" name="Character Upgrade Scene"/>
     <scene desc="" format="1.0" id="18" name="Laser Pistol Upgrade"/>
 </scenes>

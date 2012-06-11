@@ -23,7 +23,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="2" c="true" group="3" id="202" name="Button 2" sx="1.0" sy="1.0" x="230" y="99" z="0">
+        <actor a="0.0" aid="2" c="true" group="3" id="202" name="Button 2" sx="1.0" sy="1.0" x="230" y="100" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
@@ -34,24 +34,24 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="3" c="true" group="3" id="202" name="Button 3" sx="1.0" sy="1.0" x="80" y="200" z="0">
+        <actor a="0.0" aid="3" c="true" group="3" id="202" name="Button 3" sx="1.0" sy="1.0" x="82" y="200" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
                     <prop id="2" list="0" val="8"/>
                     <prop id="3" list="0" val="Gun"/>
-                    <prop id="4" list="0" val="Select"/>
+                    <prop id="4" list="0" val="Shop"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="4" c="true" group="3" id="202" name="Button 4" sx="1.0" sy="1.0" x="230" y="200" z="0">
+        <actor a="0.0" aid="4" c="true" group="3" id="202" name="Button 4" sx="1.0" sy="1.0" x="231" y="200" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
                     <prop id="2" list="0" val="2"/>
-                    <prop id="3" list="0" val="Gun"/>
-                    <prop id="4" list="0" val="Shop"/>
+                    <prop id="3" list="0" val="Player"/>
+                    <prop id="4" list="0" val="Upgrades"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
@@ -89,7 +89,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="8" c="true" group="3" id="202" name="Button 8" sx="1.0" sy="1.0" x="230" y="400" z="0">
+        <actor a="0.0" aid="8" c="true" group="3" id="202" name="Button 8" sx="1.0" sy="1.0" x="229" y="399" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
