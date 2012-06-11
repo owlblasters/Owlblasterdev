@@ -3,8 +3,10 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <color-bg blue="255" green="255" red="255"/>
-    <backgrounds/>
+    <color-bg blue="51" green="51" red="51"/>
+    <backgrounds>
+        <ref id="338"/>
+    </backgrounds>
     <foregrounds/>
     <joints/>
     <regions/>
@@ -12,10 +14,6 @@
     <actors>
         <actor a="0.0" aid="1" c="true" group="0" id="32" name="Jumper 1" sx="1.0" sy="1.0" x="132" y="63" z="0">
             <snippets>
-                <s enabled="false" id="65">
-                    <prop id="1" list="0" val="false"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
                 <s enabled="false" id="20">
                     <prop id="1" list="0" val="10000000"/>
                     <prop id="2" list="0" val="10000000"/>
@@ -45,6 +43,10 @@
                     <prop id="26" list="0" val="64"/>
                     <prop id="28" list="0" val="0.75"/>
                 </s>
+                <s enabled="false" id="65">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
                 <s enabled="false" id="112">
                     <prop id="1" list="0" val="0.0"/>
                     <prop id="2" list="0" val="1"/>
@@ -60,9 +62,6 @@
                     <prop id="13" list="0" val="false"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
-                <s enabled="true" id="93">
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
                 <s enabled="false" id="42">
                     <prop id="34" list="0" val="right"/>
                     <prop id="33" list="0" val="left"/>
@@ -76,7 +75,10 @@
                     <prop id="41" list="0" val="idle-l"/>
                     <prop id="46" list="0" val="false"/>
                     <prop id="44" list="0" val="jump-r"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="45" list="0" val="true"/>
+                </s>
+                <s enabled="true" id="93">
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="false" id="43">
