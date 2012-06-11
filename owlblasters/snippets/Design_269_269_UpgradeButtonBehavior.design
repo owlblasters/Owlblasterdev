@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <set-val-269-1 comment="false" x="26" y="69">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-269-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <if comment="false" x="26" y="69">
+                    <group eventID="6" id="-1">
+                        <set-val-269-1 comment="false" x="37" y="94">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-269-1>
+                        <if comment="false" x="37" y="119">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="48" y="154">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="184">
+                                            <SCENE eid="15" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="48" y="223">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="253">
+                                            <SCENE eid="14" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="292">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="322">
+                                            <SCENE eid="16" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="361">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="391">
+                                            <SCENE eid="17" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="430">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="460">
+                                            <SCENE eid="18" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="4"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="499">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="529">
+                                            <SCENE eid="7" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="5"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="568">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="598">
+                                            <SCENE eid="20" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="6"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="637">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="59" y="667">
+                                            <SCENE eid="21" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="7"/>
+                                    </eq>
+                                </else-if>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                    <get-game-val-7 comment="false" id="1" x="0" y="0"/>
+                                </get-item-number>
+                                <int id="1" val="1"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <get-val-269-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-269-1 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-269-1>
+                <setanim comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Pressed"/>
+                </setanim>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Pressed"/>
+                </setanim>
+                <set-val-269-1 comment="false" x="26" y="69">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-269-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <set-val-269-1 comment="false" x="26" y="69">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-269-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="14" y="15">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="25" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <if comment="false" x="25" y="69">
+                    <group eventID="6" id="-1">
+                        <set-val-269-1 comment="false" x="36" y="94">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-269-1>
+                        <if comment="false" x="36" y="119">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="47" y="154">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="184">
+                                            <SCENE eid="15" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="47" y="223">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="253">
+                                            <SCENE eid="14" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="47" y="292">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="322">
+                                            <SCENE eid="16" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="47" y="361">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="391">
+                                            <SCENE eid="17" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="47" y="430">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="460">
+                                            <SCENE eid="18" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="4"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="47" y="499">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="529">
+                                            <SCENE eid="7" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="5"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="47" y="568">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="598">
+                                            <SCENE eid="20" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="6"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="47" y="637">
+                                    <group eventID="3" id="-1">
+                                        <scene-change-new comment="false" x="58" y="667">
+                                            <SCENE eid="21" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val=".25"/>
+                                            <int id="3" val="2"/>
+                                            <int id="4" val=".25"/>
+                                        </scene-change-new>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="7"/>
+                                    </eq>
+                                </else-if>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                    <get-game-val-7 comment="false" id="1" x="0" y="0"/>
+                                </get-item-number>
+                                <int id="1" val="1"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <get-val-269-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="359" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <get-val-269-2 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="10"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="92">
+                    <get-val-269-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="30"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

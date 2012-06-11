@@ -223,8 +223,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="46" id="1"/>
         </blocks>
@@ -245,8 +245,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="45" id="1"/>
         </blocks>
@@ -428,8 +428,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -553,8 +553,8 @@
         <number default="0.0" desc="- Put the X position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what X position?" hidden="false" id="12" name="_XTeleport" order="10"/>
         <number default="0.0" desc="- Put the Y position to where the object will be teleported.&#10;*If you choosed number 2." dropdown="" fullname="If not to the center, to what Y position?" hidden="false" id="13" name="_YTeleport" order="11"/>
         <boolean default="false" desc="- If the object hit the sides it will be slowed down completely (0 speed) &#10;*If you choosed number 2 or 3." dropdown="" fullname="When the object hit the sides of screen, slow down its speed to 0?" hidden="false" id="14" name="_SlowDown0" order="12"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="5" desc="*If you choosed number 3." dropdown="" fullname="When the object hit the screen it will be placed how much pixels back?" hidden="false" id="15" name="_PixelsBack" order="13"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="482" id="1"/>
             <ureceiver blockID="0" id="2"/>
@@ -1690,16 +1690,73 @@
             <event displayName="Touch" enabled="true" id="6" name="event-device-touch" order="6" repeats="false"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_392" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="275" language="" name="ActorEvents_392" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_390" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="274" language="" name="ActorEvents_390" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_388" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="273" language="" name="ActorEvents_388" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_272_272_EquipBehavior" desc="" description="" design="true" drawOrder="0" id="272" language="" name="EquipBehavior" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="1"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="2"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="4" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="6" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="7" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="6" name="event-device-touch-actor" order="3" repeats="false"/>
+            <event displayName="Touch Actor" enabled="true" id="7" name="event-device-touch-actor" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_396" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="277" language="" name="ActorEvents_396" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_394" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="276" language="" name="ActorEvents_394" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_376" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="258" language="" name="ActorEvents_376" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_378" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="259" language="" name="ActorEvents_378" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
         <blocks/>
-        <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
-            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_19" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="256" language="" name="SceneEvents_19" oid="-1" package="scripts." sceneid="19" scenespecific="true" shared="false" type="scene">
         <blocks/>
@@ -1711,10 +1768,6 @@
             <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
             <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_20" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="262" language="" name="SceneEvents_20" oid="-1" package="scripts." sceneid="20" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_263_263_weaponoptionchange" desc="" description="" design="true" drawOrder="0" id="263" language="" name="weaponoption_change" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -1779,6 +1832,26 @@
             <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_267_267_GunButtonBehavior" desc="" description="" design="true" drawOrder="0" id="267" language="" name="Gun_Button_Behavior" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <scene default="" desc="" dropdown="" fullname="thisScene" hidden="false" id="1" name="_thisScene" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="NumberInGunList" hidden="false" id="2" name="_NumberInGunList" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="thisPrice" hidden="false" id="3" name="_thisPrice" order="3"/>
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="4" name="_ispressed" order="4"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="5" name="_changeto" order="5"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="6" name="_TextDescription" order="6"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="7" name="_TextSecondrow" order="7"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="4" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="5" name="draw" order="5" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="6" name="event-device-touch-actor" order="6" repeats="false"/>
+            <event displayName="Touch Actor" enabled="true" id="7" name="event-device-touch-actor" order="7" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="8" name="event-device-touch-actor" order="8" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_382" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="264" language="" name="ActorEvents_382" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
         <text default="" desc="" dropdown="" fullname="SetThisVar" hidden="false" id="2" name="_SetThisVar" order="1"/>
@@ -1816,6 +1889,47 @@
             <event displayName="Touch Actor" enabled="true" id="7" name="event-device-touch-actor" order="8" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="8" name="draw" order="9" repeats="true"/>
             <event displayName="On Actor" enabled="true" id="9" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_20" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="270" language="" name="SceneEvents_20" oid="-1" package="scripts." sceneid="20" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_21" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="271" language="" name="SceneEvents_21" oid="-1" package="scripts." sceneid="21" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_268_268_BuyButtonBehavior" desc="" description="" design="true" drawOrder="0" id="268" language="" name="BuyButtonBehavior" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="1"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="2" name="_changeto" order="2"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="3" name="_TextDescription" order="3"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="4" name="_TextSecondrow" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="3" name="event-device-touch-actor" order="3" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="4" name="event-device-touch-actor" order="4" repeats="false"/>
+            <event displayName="On Actor" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="6" name="event-mouse-enter-exit-actor" order="6" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="7" name="event-mouse-enter-exit-actor" order="7" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_269_269_UpgradeButtonBehavior" desc="" description="" design="true" drawOrder="0" id="269" language="" name="UpgradeButtonBehavior" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="1"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="2"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Touch Actor" enabled="true" id="2" name="event-device-touch-actor" order="2" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="3" name="event-device-touch-actor" order="3" repeats="true"/>
+            <event displayName="Touch Actor" enabled="true" id="4" name="event-device-touch-actor" order="4" repeats="false"/>
+            <event displayName="On Actor" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="6" name="event-mouse-enter-exit-actor" order="6" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="7" name="event-mouse-enter-exit-actor" order="7" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
         </events>
     </snippet>
 </pack>
