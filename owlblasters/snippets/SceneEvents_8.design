@@ -124,7 +124,11 @@
                 <save-game comment="false" x="26" y="40">
                     <group eventID="14" id="-1"/>
                 </save-game>
-                <if comment="false" x="26" y="97">
+                <set-game-att comment="false" x="26" y="97">
+                    <int id="0" val="changeto"/>
+                    <int id="1" val="Pistol Upgrade Scene"/>
+                </set-game-att>
+                <if comment="false" x="26" y="117">
                     <group eventID="13" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-item-number comment="false" id="0" x="0" y="0">
@@ -134,7 +138,7 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="164">
+                <if comment="false" x="26" y="184">
                     <group eventID="13" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-item-number comment="false" id="0" x="0" y="0">
@@ -144,7 +148,7 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="231">
+                <if comment="false" x="26" y="251">
                     <group eventID="13" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-item-number comment="false" id="0" x="0" y="0">
@@ -154,7 +158,7 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="298">
+                <if comment="false" x="26" y="318">
                     <group eventID="13" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-item-number comment="false" id="0" x="0" y="0">
@@ -164,7 +168,7 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="365">
+                <if comment="false" x="26" y="385">
                     <group eventID="13" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-item-number comment="false" id="0" x="0" y="0">
@@ -174,7 +178,7 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="432">
+                <if comment="false" x="26" y="452">
                     <group eventID="13" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-item-number comment="false" id="0" x="0" y="0">
@@ -203,10 +207,7 @@
                                 <int id="1" val="1000"/>
                             </minus>
                         </set-game-val-1>
-                        <die comment="false" x="37" y="129">
-                            <ACTOR eid="7" id="0"/>
-                        </die>
-                        <replace-list comment="false" x="37" y="156">
+                        <replace-list comment="false" x="37" y="129">
                             <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="1"/>
@@ -217,9 +218,9 @@
                         <int id="1" val="1000"/>
                     </moreeq>
                 </if>
-                <else comment="false" x="26" y="193">
+                <else comment="false" x="26" y="166">
                     <group eventID="14" id="-1">
-                        <play-sound4 comment="false" x="37" y="213">
+                        <play-sound4 comment="false" x="37" y="186">
                             <int id="0" val="0"/>
                             <SOUND eid="371" id="1"/>
                         </play-sound4>

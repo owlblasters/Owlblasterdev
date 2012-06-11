@@ -12,12 +12,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="4" c="false" group="3" id="238" name="Scythe 4" sx="1.0" sy="1.0" x="32" y="250" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="236" name="Claw 5" sx="1.0" sy="1.0" x="35" y="123" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="0" id="127" name="Weapon 6" sx="1.0" sy="1.0" x="33" y="168" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="6" id="334" name="Gun2 7" sx="1.0" sy="1.0" x="38" y="299" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="3" id="234" name="ShotGun Icon 8" sx="1.0" sy="1.0" x="35" y="215" z="0"/>
-        <actor a="0.0" aid="17" c="true" group="3" id="202" name="SceneButton 17" sx="1.0" sy="1.0" x="143" y="410" z="0">
+        <actor a="0.0" aid="17" c="true" group="3" id="202" name="SceneButton 17" sx="1.0" sy="1.0" x="142" y="415" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
@@ -28,17 +23,10 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="19" c="false" group="3" id="374" name="Option Button 19" sx="0.5" sy="0.5" x="-2" y="108" z="0"/>
-        <actor a="0.0" aid="18" c="true" group="3" id="374" name="Option Button 18" sx="0.5" sy="0.5" x="-5" y="66" z="0">
-            <snippets/>
-        </actor>
-        <actor a="0.0" aid="21" c="false" group="3" id="374" name="Option Button 21" sx="0.5" sy="0.5" x="-7" y="191" z="0"/>
-        <actor a="0.0" aid="20" c="false" group="3" id="374" name="Option Button 20" sx="0.5" sy="0.5" x="-3" y="150" z="0"/>
-        <actor a="0.0" aid="23" c="false" group="3" id="374" name="Option Button 23" sx="0.44230768" sy="0.2777778" x="110" y="212" z="0"/>
-        <actor a="0.0" aid="22" c="false" group="3" id="374" name="Option Button 22" sx="1.1346154" sy="0.2" x="265" y="259" z="0"/>
-        <actor a="0.0" aid="25" c="false" group="3" id="374" name="Option Button 25" sx="1.0" sy="1.0" x="186" y="140" z="0"/>
-        <actor a="0.0" aid="24" c="false" group="3" id="374" name="Option Button 24" sx="1.0" sy="1.0" x="106" y="261" z="0"/>
-        <actor a="0.0" aid="26" c="false" group="3" id="336" name="Gun 26" sx="1.0" sy="1.0" x="37" y="84" z="0"/>
+        <actor a="0.0" aid="19" c="false" group="3" id="382" name="EquipButton 19" sx="1.0" sy="1.0" x="290" y="300" z="0"/>
+        <actor a="0.0" aid="18" c="false" group="3" id="378" name="PistolButton 18" sx="1.0" sy="1.0" x="24" y="80" z="0"/>
+        <actor a="0.0" aid="21" c="false" group="3" id="384" name="UpgradeButton 21" sx="1.0" sy="1.0" x="195" y="300" z="0"/>
+        <actor a="0.0" aid="20" c="false" group="3" id="386" name="BuyButton 20" sx="1.0" sy="1.0" x="100" y="300" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
