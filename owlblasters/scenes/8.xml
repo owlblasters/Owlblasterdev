@@ -14,6 +14,10 @@
     <actors>
         <actor a="0.0" aid="1" c="true" group="0" id="32" name="Jumper 1" sx="1.0" sy="1.0" x="132" y="63" z="0">
             <snippets>
+                <s enabled="false" id="65">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
                 <s enabled="false" id="20">
                     <prop id="1" list="0" val="10000000"/>
                     <prop id="2" list="0" val="10000000"/>
@@ -43,10 +47,6 @@
                     <prop id="26" list="0" val="64"/>
                     <prop id="28" list="0" val="0.75"/>
                 </s>
-                <s enabled="false" id="65">
-                    <prop id="1" list="0" val="false"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
                 <s enabled="false" id="112">
                     <prop id="1" list="0" val="0.0"/>
                     <prop id="2" list="0" val="1"/>
@@ -62,6 +62,9 @@
                     <prop id="13" list="0" val="false"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
+                <s enabled="true" id="93">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
                 <s enabled="false" id="42">
                     <prop id="34" list="0" val="right"/>
                     <prop id="33" list="0" val="left"/>
@@ -75,10 +78,7 @@
                     <prop id="41" list="0" val="idle-l"/>
                     <prop id="46" list="0" val="false"/>
                     <prop id="44" list="0" val="jump-r"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="45" list="0" val="true"/>
-                </s>
-                <s enabled="true" id="93">
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="false" id="43">
@@ -127,7 +127,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="11" c="true" group="3" id="202" name="Button 11" sx="0.75" sy="0.75" x="100" y="180" z="0">
+        <actor a="0.0" aid="11" c="true" group="3" id="202" name="Button 11" sx="0.75" sy="0.75" x="100" y="179" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
@@ -149,7 +149,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="13" c="true" group="3" id="202" name="Button 13" sx="0.75" sy="0.75" x="280" y="180" z="0">
+        <actor a="0.0" aid="13" c="true" group="3" id="202" name="Button 13" sx="0.75" sy="0.75" x="280" y="179" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>

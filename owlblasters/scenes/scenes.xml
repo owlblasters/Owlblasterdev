@@ -13,4 +13,9 @@
     <scene desc="" format="1.0" id="11" name="About Scene"/>
     <scene desc="" format="1.0" id="12" name="Options Scene"/>
     <scene desc="" format="1.0" id="13" name="Cloudy Sky Intro"/>
+    <scene desc="" format="1.0" id="14" name="Claw Upgrade Scene"/>
+    <scene desc="" format="1.0" id="15" name="Pistol Upgrade Scene"/>
+    <scene desc="" format="1.0" id="17" name="Shotgun Upgrade Scene"/>
+    <scene desc="" format="1.0" id="16" name="Revolver Upgrade Scene"/>
+    <scene desc="" format="1.0" id="18" name="Laser Pistol Upgrade"/>
 </scenes>

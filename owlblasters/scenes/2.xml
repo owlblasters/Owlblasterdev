@@ -12,13 +12,13 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="124" name="Weapons 1" sx="0.7708333" sy="0.59375" x="208" y="253" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="236" name="Claw 3" sx="1.0" sy="1.0" x="148" y="113" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="238" name="Scythe 4" sx="1.0" sy="1.0" x="139" y="268" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="0" id="127" name="Weapon 6" sx="1.0" sy="1.0" x="245" y="116" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="3" id="336" name="Gun 7" sx="1.0" sy="1.0" x="58" y="112" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="6" id="334" name="Gun2 8" sx="1.0" sy="1.0" x="54" y="270" z="0"/>
-        <actor a="0.0" aid="9" c="false" group="3" id="234" name="ShotGun Icon 9" sx="1.9166666" sy="1.25" x="329" y="119" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="3" id="124" name="Weapons 1" sx="0.7708333" sy="0.59375" x="210" y="240" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="236" name="Claw 3" sx="1.0" sy="1.0" x="140" y="110" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="238" name="Scythe 4" sx="1.0" sy="1.0" x="139" y="250" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="0" id="127" name="Weapon 6" sx="1.0" sy="1.0" x="240" y="110" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="336" name="Gun 7" sx="1.0" sy="1.0" x="50" y="110" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="6" id="334" name="Gun2 8" sx="1.0" sy="1.0" x="50" y="250" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="234" name="ShotGun Icon 9" sx="1.9166666" sy="1.25" x="330" y="110" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
