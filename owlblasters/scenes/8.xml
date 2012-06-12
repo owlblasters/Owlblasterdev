@@ -23,15 +23,121 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="19" c="false" group="3" id="382" name="EquipButton 19" sx="1.0" sy="1.0" x="290" y="300" z="0"/>
-        <actor a="0.0" aid="21" c="false" group="3" id="384" name="UpgradeButton 21" sx="1.0" sy="1.0" x="195" y="300" z="0"/>
-        <actor a="0.0" aid="20" c="false" group="3" id="386" name="BuyButton 20" sx="1.0" sy="1.0" x="100" y="300" z="0"/>
-        <actor a="0.0" aid="23" c="false" group="3" id="388" name="ClawButton 23" sx="1.0" sy="1.0" x="4" y="148" z="0"/>
-        <actor a="0.0" aid="22" c="false" group="3" id="378" name="PistolButton 22" sx="1.0" sy="1.0" x="5" y="108" z="0"/>
-        <actor a="0.0" aid="25" c="false" group="3" id="392" name="ShotgunButton 25" sx="1.0" sy="1.0" x="15" y="226" z="0"/>
-        <actor a="0.0" aid="24" c="false" group="3" id="390" name="RevolverButton 24" sx="1.0" sy="1.0" x="15" y="188" z="0"/>
-        <actor a="0.0" aid="27" c="false" group="3" id="396" name="ScytheButton 27" sx="1.0" sy="1.0" x="14" y="305" z="0"/>
-        <actor a="0.0" aid="26" c="false" group="3" id="394" name="LaserPistolButton 26" sx="1.0" sy="1.0" x="14" y="265" z="0"/>
+        <actor a="0.0" aid="23" c="true" group="3" id="388" name="ClawButton 23" sx="1.0" sy="1.0" x="15" y="100" z="0">
+            <snippets>
+                <s enabled="true" id="267">
+                    <prop id="1" list="0" val="14"/>
+                    <prop id="2" list="0" val="1"/>
+                    <prop id="3" list="0" val="500"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="-1"/>
+                    <prop id="6" list="0" val=""/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="22" c="true" group="3" id="378" name="PistolButton 22" sx="1.0" sy="1.0" x="15" y="60" z="0">
+            <snippets>
+                <s enabled="true" id="267">
+                    <prop id="1" list="0" val="15"/>
+                    <prop id="2" list="0" val="0"/>
+                    <prop id="3" list="0" val="0"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="-1"/>
+                    <prop id="6" list="0" val=""/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="25" c="true" group="3" id="392" name="ShotgunButton 25" sx="1.0" sy="1.0" x="15" y="180" z="0">
+            <snippets>
+                <s enabled="true" id="267">
+                    <prop id="1" list="0" val="17"/>
+                    <prop id="2" list="0" val="3"/>
+                    <prop id="3" list="0" val="5000"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="-1"/>
+                    <prop id="6" list="0" val=""/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="24" c="true" group="3" id="390" name="RevolverButton 24" sx="1.0" sy="1.0" x="15" y="140" z="0">
+            <snippets>
+                <s enabled="true" id="267">
+                    <prop id="1" list="0" val="16"/>
+                    <prop id="2" list="0" val="2"/>
+                    <prop id="3" list="0" val="1500"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="-1"/>
+                    <prop id="6" list="0" val=""/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="27" c="true" group="3" id="396" name="ScytheButton 27" sx="1.0" sy="1.0" x="15" y="260" z="0">
+            <snippets>
+                <s enabled="true" id="267">
+                    <prop id="1" list="0" val="7"/>
+                    <prop id="2" list="0" val="5"/>
+                    <prop id="3" list="0" val="25000"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="-1"/>
+                    <prop id="6" list="0" val=""/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="26" c="true" group="3" id="394" name="LaserPistolButton 26" sx="1.0" sy="1.0" x="15" y="220" z="0">
+            <snippets>
+                <s enabled="true" id="267">
+                    <prop id="1" list="0" val="18"/>
+                    <prop id="2" list="0" val="4"/>
+                    <prop id="3" list="0" val="10000"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="-1"/>
+                    <prop id="6" list="0" val=""/>
+                    <prop id="7" list="0" val=""/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="29" c="true" group="3" id="382" name="EquipButton 29" sx="1.0" sy="1.0" x="280" y="300" z="0">
+            <snippets>
+                <s enabled="true" id="272">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2" list="0" val="Equip"/>
+                    <prop id="3" list="0" val="Gun"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="28" c="true" group="3" id="386" name="BuyButton 28" sx="1.0" sy="1.0" x="100" y="300" z="0">
+            <snippets>
+                <s enabled="true" id="268">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2" list="0" val="-1"/>
+                    <prop id="3" list="0" val="Buy"/>
+                    <prop id="4" list="0" val="Gun"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="30" c="true" group="3" id="384" name="UpgradeButton 30" sx="1.0" sy="1.0" x="190" y="300" z="0">
+            <snippets>
+                <s enabled="true" id="269">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2" list="0" val="Upgrade"/>
+                    <prop id="3" list="0" val="Gun"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
     </actors>
     <snippets/>
     <terrain/>

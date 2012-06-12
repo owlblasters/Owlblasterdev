@@ -1,48 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="16" id="0">
-        <event-device-touch-actor comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
-                <if comment="false" x="26" y="42">
-                    <group eventID="14" id="-1">
-                        <play-sound4 comment="false" x="37" y="72">
-                            <int id="0" val="0"/>
-                            <SOUND eid="228" id="1"/>
-                        </play-sound4>
-                        <set-game-val-1 comment="false" x="37" y="99">
-                            <minus comment="false" id="0" x="0" y="0">
-                                <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="1000"/>
-                            </minus>
-                        </set-game-val-1>
-                        <die comment="false" x="37" y="129">
-                            <ACTOR eid="7" id="0"/>
-                        </die>
-                        <replace-list comment="false" x="37" y="156">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="1"/>
-                        </replace-list>
-                    </group>
-                    <moreeq comment="false" id="0" x="0" y="0">
-                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1000"/>
-                    </moreeq>
-                </if>
-                <else comment="false" x="26" y="193">
-                    <group eventID="14" id="-1">
-                        <play-sound4 comment="false" x="37" y="213">
-                            <int id="0" val="0"/>
-                            <SOUND eid="371" id="1"/>
-                        </play-sound4>
-                    </group>
-                </else>
-            </group>
-            <ACTOR eid="7" id="0"/>
-            <int id="1" val="0"/>
-        </event-device-touch-actor>
-    </group>
-    <group eventID="16" id="-1"/>
     <group eventID="13" id="0">
         <draw comment="false" x="7" y="0">
             <group eventID="13" id="-1">
@@ -54,64 +11,246 @@
                     <int id="1" val="10"/>
                     <int id="2" val="10"/>
                 </draw-text>
-                <if comment="false" x="18" y="72">
-                    <group eventID="13" id="-1"/>
+                <set-font-new comment="false" x="18" y="72">
+                    <FONT eid="410" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="18" y="99">
+                    <int id="0" val="Cost:"/>
+                    <int id="1" val="70"/>
+                    <int id="2" val="100"/>
+                </draw-text>
+                <draw-text comment="false" x="18" y="119">
+                    <int id="0" val="DMG"/>
+                    <int id="1" val="70"/>
+                    <int id="2" val="125"/>
+                </draw-text>
+                <draw-text comment="false" x="18" y="139">
+                    <int id="0" val="ROF"/>
+                    <int id="1" val="70"/>
+                    <int id="2" val="150"/>
+                </draw-text>
+                <draw-text comment="false" x="18" y="159">
+                    <int id="0" val="PEN"/>
+                    <int id="1" val="70"/>
+                    <int id="2" val="175"/>
+                </draw-text>
+                <set-font-new comment="false" x="18" y="179">
+                    <FONT eid="410" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="18" y="206">
+                    <int id="0" val="Credits:"/>
+                    <int id="1" val="70"/>
+                    <int id="2" val="210"/>
+                </draw-text>
+                <set-font-new comment="false" x="18" y="226">
+                    <FONT eid="364" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="18" y="253">
+                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="170"/>
+                    <int id="2" val="210"/>
+                </draw-text>
+                <set-font-new comment="false" x="18" y="278">
+                    <FONT eid="233" id="0"/>
+                </set-font-new>
+                <if comment="false" x="18" y="305">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="335">
+                            <int id="0" val="Pistol"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="355">
+                            <FONT eid="364" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="382">
+                            <int id="0" val="Owned"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                        <if comment="false" x="29" y="402">
+                            <group eventID="13" id="-1">
+                                <draw-text comment="false" x="40" y="437">
+                                    <int id="0" val="Owned"/>
+                                    <int id="1" val="70"/>
+                                    <int id="2" val="240"/>
+                                </draw-text>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                </get-item-number>
+                                <int id="1" val="1"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="29" y="469">
+                            <group eventID="13" id="-1">
+                                <draw-text comment="false" x="40" y="504">
+                                    <int id="0" val="Equipped"/>
+                                    <int id="1" val="70"/>
+                                    <int id="2" val="240"/>
+                                </draw-text>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-item-number comment="false" id="0" x="0" y="0">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                </get-item-number>
+                                <int id="1" val="2"/>
+                            </eq>
+                        </if>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-item-number comment="false" id="0" x="0" y="0">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="1"/>
-                        </get-item-number>
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="139">
-                    <group eventID="13" id="-1"/>
+                <if comment="false" x="18" y="548">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="578">
+                            <int id="0" val="Claws"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="598">
+                            <FONT eid="364" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="625">
+                            <int id="0" val="500"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-item-number comment="false" id="0" x="0" y="0">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="2"/>
-                        </get-item-number>
-                        <int id="1" val="0"/>
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="206">
-                    <group eventID="13" id="-1"/>
+                <if comment="false" x="18" y="657">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="687">
+                            <int id="0" val="Revolver"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="707">
+                            <FONT eid="409" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="734">
+                            <int id="0" val="1500"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-item-number comment="false" id="0" x="0" y="0">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="3"/>
-                        </get-item-number>
-                        <int id="1" val="0"/>
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="273">
-                    <group eventID="13" id="-1"/>
+                <if comment="false" x="18" y="766">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="796">
+                            <int id="0" val="Shotgun"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="816">
+                            <FONT eid="409" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="843">
+                            <int id="0" val="5000"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-item-number comment="false" id="0" x="0" y="0">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="4"/>
-                        </get-item-number>
-                        <int id="1" val="0"/>
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="340">
-                    <group eventID="13" id="-1"/>
+                <if comment="false" x="18" y="875">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="905">
+                            <int id="0" val="Laser Pistol"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="925">
+                            <FONT eid="409" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="952">
+                            <int id="0" val="10000"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-item-number comment="false" id="0" x="0" y="0">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="5"/>
-                        </get-item-number>
-                        <int id="1" val="0"/>
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="407">
-                    <group eventID="13" id="-1"/>
+                <if comment="false" x="18" y="984">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="1014">
+                            <int id="0" val="Scythe"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="1034">
+                            <FONT eid="409" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="1061">
+                            <int id="0" val="20000"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-item-number comment="false" id="0" x="0" y="0">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="6"/>
-                        </get-item-number>
-                        <int id="1" val="0"/>
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="5"/>
+                    </eq>
+                </if>
+                <if comment="false" x="18" y="1093">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="1123">
+                            <int id="0" val="Thumper"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="1143">
+                            <FONT eid="409" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="1170">
+                            <int id="0" val="50000"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </eq>
+                </if>
+                <if comment="false" x="18" y="1202">
+                    <group eventID="13" id="-1">
+                        <draw-text comment="false" x="29" y="1232">
+                            <int id="0" val="Laser Rifle"/>
+                            <int id="1" val="70"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="29" y="1252">
+                            <FONT eid="409" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="29" y="1279">
+                            <int id="0" val="100000"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="7"/>
                     </eq>
                 </if>
             </group>
@@ -192,44 +331,4 @@
         </init>
     </group>
     <group eventID="14" id="-1"/>
-    <group eventID="15" id="0">
-        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <if comment="false" x="26" y="42">
-                    <group eventID="14" id="-1">
-                        <play-sound4 comment="false" x="37" y="72">
-                            <int id="0" val="0"/>
-                            <SOUND eid="228" id="1"/>
-                        </play-sound4>
-                        <set-game-val-1 comment="false" x="37" y="99">
-                            <minus comment="false" id="0" x="0" y="0">
-                                <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="1000"/>
-                            </minus>
-                        </set-game-val-1>
-                        <replace-list comment="false" x="37" y="129">
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="1"/>
-                        </replace-list>
-                    </group>
-                    <moreeq comment="false" id="0" x="0" y="0">
-                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1000"/>
-                    </moreeq>
-                </if>
-                <else comment="false" x="26" y="166">
-                    <group eventID="14" id="-1">
-                        <play-sound4 comment="false" x="37" y="186">
-                            <int id="0" val="0"/>
-                            <SOUND eid="371" id="1"/>
-                        </play-sound4>
-                    </group>
-                </else>
-            </group>
-            <ACTOR eid="7" id="0"/>
-            <int id="1" val="2"/>
-        </event-mouse-enter-exit-actor>
-    </group>
-    <group eventID="15" id="-1"/>
 </groups>

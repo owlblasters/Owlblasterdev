@@ -12,7 +12,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="true" group="3" id="369" name="varButton 1" sx="1.0" sy="1.0" x="225" y="160" z="0">
+        <actor a="0.0" aid="1" c="true" group="3" id="369" name="varButton 1" sx="1.0" sy="1.0" x="210" y="160" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -24,7 +24,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="2" c="true" group="3" id="369" name="varButton 2" sx="1.0" sy="1.0" x="110" y="160" z="0">
+        <actor a="0.0" aid="2" c="true" group="3" id="369" name="varButton 2" sx="1.0" sy="1.0" x="90" y="160" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -36,7 +36,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="3" c="true" group="3" id="369" name="varButton 3" sx="1.0" sy="1.0" x="225" y="301" z="0">
+        <actor a="0.0" aid="3" c="true" group="3" id="369" name="varButton 3" sx="1.0" sy="1.0" x="210" y="300" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -48,7 +48,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="4" c="true" group="3" id="369" name="varButton 4" sx="1.0" sy="1.0" x="110" y="297" z="0">
+        <actor a="0.0" aid="4" c="true" group="3" id="369" name="varButton 4" sx="1.0" sy="1.0" x="90" y="300" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -61,11 +61,11 @@
             </snippets>
         </actor>
         <actor a="0.0" aid="5" c="false" group="3" id="234" name="ShotGun Icon 5" sx="1.0" sy="1.0" x="594" y="72" z="0"/>
-        <actor a="0.0" aid="6" c="true" group="3" id="202" name="SceneButton 6" sx="0.63461536" sy="0.63461536" x="161" y="404" z="0">
+        <actor a="0.0" aid="6" c="true" group="3" id="202" name="SceneButton 6" sx="0.75" sy="0.75" x="145" y="400" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
-                    <prop id="2" list="0" val="1"/>
+                    <prop id="2" list="0" val="6"/>
                     <prop id="3" list="0" val="Back"/>
                     <prop id="4" list="0" val=""/>
                     <prop id="2147483647" list="0" val="thisactor"/>

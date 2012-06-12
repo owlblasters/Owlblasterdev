@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="-1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <anchor-screen comment="false" x="37" y="65">
+                            <ACTOR eid="this" id="0"/>
+                        </anchor-screen>
+                    </group>
+                    <get-val-278-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <do-ios comment="false" x="26" y="104">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="124">
+                            <int id="0" val="[mActor attachLabel];&#10;[mActor setLabelFont:_someFont];&#10;[mActor setLabelText:_someText];&#10;&#10;if(_Alignment == 0)&#10;{&#10;&#9;[mActor setLabelToCenter];&#10;}&#10;&#10;if(_Alignment == 1)&#10;{&#10;&#9;[mActor setLabelToLeft];&#10;}&#10;&#10;if(_Alignment == 2)&#10;{&#10;&#9;[mActor setLabelToRight];&#10;}&#10;"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+        </init>
+    </group>
+    <group eventID="-1" id="1">
+        <step comment="false" x="15" y="324">
+            <group eventID="-1" id="-1"/>
+        </step>
+    </group>
+    <group eventID="-1" id="2">
+        <collide comment="false" x="15" y="397">
+            <group eventID="-1" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="-1" id="3">
+        <draw comment="false" x="15" y="470">
+            <group eventID="-1" id="-1"/>
+        </draw>
+    </group>
+    <group eventID="-1" id="4">
+        <receiver-1-403 comment="false" x="15" y="543">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="573">
+                    <group eventID="-1" id="-1">
+                        <set-val-278-2 comment="false" x="37" y="593">
+                            <get-byobval-1-25-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-278-2>
+                        <code-long comment="false" x="37" y="618">
+                            <int id="0" val="[mActor setLabelText:_someText];"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+            <get-byobval-1-25-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-25-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-403>
+    </group>
+    <group eventID="-1" id="5">
+        <receiver-2-403 comment="false" x="15" y="818">
+            <group eventID="-1" id="-1">
+                <set-val-278-1 comment="false" x="26" y="848">
+                    <get-byobval-1-26-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-278-1>
+                <do-ios comment="false" x="26" y="880">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="900">
+                            <int id="0" val="[mActor setLabelFont:_someFont];"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+            <get-byobval-1-26-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-26-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-2-403>
+    </group>
+    <group eventID="-1" id="6">
+        <receiver-4-403 comment="false" x="15" y="1100">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="1130">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="1150">
+                            <int id="0" val="[mActor setLabelToCenter];"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+            <get-byobval-1-9-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-4-403>
+    </group>
+    <group eventID="-1" id="7">
+        <receiver-5-403 comment="false" x="15" y="1350">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="1380">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="1400">
+                            <int id="0" val="[mActor setLabelToLeft];"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+            <get-byobval-1-10-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-5-403>
+    </group>
+    <group eventID="-1" id="8">
+        <receiver-6-403 comment="false" x="15" y="1600">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="1630">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="1650">
+                            <int id="0" val="[mActor setLabelToRight];"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+            <get-byobval-1-11-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-403>
+    </group>
+    <group eventID="-1" id="9">
+        <receiver-7-403 comment="false" x="15" y="1850">
+            <group eventID="-1" id="-1">
+                <do-ios comment="false" x="26" y="1880">
+                    <group eventID="-1" id="-1">
+                        <code-long comment="false" x="37" y="1900">
+                            <int id="0" val="[mActor setLabelWidth:__width];"/>
+                        </code-long>
+                    </group>
+                </do-ios>
+            </group>
+            <get-byobval-1-12-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-12-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-403>
+    </group>
+    <group id="-1"/>
+</groups>

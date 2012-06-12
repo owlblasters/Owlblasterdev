@@ -1,0 +1,17 @@
+#
+#Mon Jun 11 23:56:11 EDT 2012
+monospace=false
+monospace.numerals=false
+style=plain
+tracking=0
+stroke.color=\#00ff00
+color=\#000000
+shadow.y=0
+family=SansSerif
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=0
+shadow.blur=2
+stroke.size=1
+antialias=true
+size=22
