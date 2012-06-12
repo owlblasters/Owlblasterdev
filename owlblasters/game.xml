@@ -129,11 +129,12 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
-        <cgroup g1="0" g2="6"/>
-        <cgroup g1="0" g2="5"/>
-        <cgroup g1="0" g2="3"/>
-        <cgroup g1="4" g2="6"/>
         <cgroup g1="1" g2="3"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="5" g2="0"/>
+        <cgroup g1="4" g2="6"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="0" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -196,7 +197,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,0,34,35,338,351,352,353,354,355,356,357,358,205,232,233,359,362,364,365,366,407,409,410,413" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,0,34,35,338,351,352,353,354,355,356,357,358,205,232,233,359,362,364,365,366,407,409,410,413,417,418,419,420,421" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
