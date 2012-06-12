@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <custom-block blocktag="custom-414" blocktype="ACTION" code="~.say(&quot;ActorEvents_206&quot;, &quot;&quot;, ~);" desc="" global="false" gui="Missing" id="414" message="" name="" oid="-1" return="VOID" shared="false" snippetID="119">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="actortype" order="1" type="ACTORTYPE"/>
+    </custom-block>
     <custom-block blocktag="custom-217" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;&quot;);" desc="" global="false" gui="Missing" id="217" message="" name="" oid="-1" return="VOID" shared="false" snippetID="-1"/>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="20" id="359" name="28 Days Later" offsets="0|0|0|,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,25|0|25,25|0|25,25|0|25,25|0|25,25|0|25,25|0|25,34|0|34,39|0|39,48|0|48,57|0|57,66|0|66,76|0|76,86|0|86,97|0|97,107|0|107,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,128|0|128,138|0|138,148|0|148,158|0|158,166|0|166,175|0|175,184|0|184,194|0|194,198|0|198,207|0|207,218|0|218,228|0|228,241|0|241,252|0|252,262|0|262,272|0|272,283|0|283,293|0|293,303|0|303,312|0|312,322|0|322,334|0|334,349|0|349,363|0|363,376|0|376,386|0|386,386|0|386,386|0|386,386|0|386,386|0|386,386|0|386,386|0|386,397|0|397,406|0|406,415|0|415,424|0|424,432|0|432,440|0|440,449|0|449,459|0|459,463|0|463,472|0|472,482|0|482,491|0|491,503|0|503,513|0|513,522|0|522,531|0|531,541|0|541,551|0|551,560|0|560,568|0|568,577|0|577,588|0|588,601|0|601,613|0|613,624|0|624" oid="-1" rowHeight="20" shared="false"/>
     <sprite atlasID="0" default="0" desc="" height="48" id="123" name="a" shared="false" width="48">
@@ -704,6 +708,9 @@
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-36" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetScore&quot;)))" desc="" global="false" gui="Get Current Score" id="36" message="GetScore" name="GetScore" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
+    <custom-block blocktag="custom-416" blocktype="NORMAL" code="Number((sayToScene(&quot;SceneEvents_0&quot;, &quot;getTheWidthOfActortype&quot;, ~)))" desc="get the width of an actortype" global="false" gui="get the width of %0" id="416" message="getTheWidthOfActortype" name="getTheWidthOfActortype" oid="-1" return="NUMBER" shared="false" snippetID="280">
+        <blank name="actortype" order="0" type="ACTORTYPE"/>
+    </custom-block>
     <custom-block blocktag="custom-20" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetWalkAccel&quot;)))" desc="" global="false" gui="Get Walk Accel for %0" id="20" message="GetWalkAccel" name="GetWalkAccel" oid="-1" return="NUMBER" shared="false" snippetID="11">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>

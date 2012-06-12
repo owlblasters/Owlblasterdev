@@ -7,8 +7,179 @@
                     <int id="0" val="1"/>
                     <SOUND eid="155" id="1"/>
                 </play-sound4>
+                <create-recycled-actor comment="false" x="26" y="67">
+                    <ACTORTYPE eid="372" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </screen-wh>
+                        <int id="1" val="30"/>
+                    </minus>
+                    <screen-wh comment="false" id="2" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </screen-wh>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <create-recycled-actor comment="false" x="26" y="112">
+                    <ACTORTYPE eid="160" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <int id="0" val="30"/>
+                        <custom-416 comment="false" id="1" x="0" y="0">
+                            <ACTORTYPE eid="160" id="0"/>
+                        </custom-416>
+                    </minus>
+                    <screen-wh comment="false" id="2" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </screen-wh>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
             </group>
         </init>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="70">
+                            <ACTORTYPE eid="206" id="0"/>
+                            <int id="1" val="0"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="50"/>
+                            </minus>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </randint>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="127">
+                    <group eventID="2" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="147">
+                            <ACTORTYPE eid="206" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <custom-416 comment="false" id="1" x="0" y="0">
+                                    <ACTORTYPE eid="206" id="0"/>
+                                </custom-416>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="50"/>
+                            </minus>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="3"/>
+        </event-periodic>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-2-416 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <code-long comment="false" x="26" y="45">
+                    <int id="0" val="return Assets.get().resources[__actortype.spriteID].width;"/>
+                </code-long>
+            </group>
+            <get-byobval-280-416-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-2-416>
+    </group>
+    <group eventID="3" id="-1">
+        <get-byobval-280-416-0 comment="false" x="0" y="0"/>
+    </group>
+    <group eventID="4" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="4" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="70">
+                            <ACTORTYPE eid="349" id="0"/>
+                            <int id="1" val="0"/>
+                            <screen-wh comment="false" id="2" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <randint comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </randint>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="122">
+                    <group eventID="4" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="142">
+                            <ACTORTYPE eid="349" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <custom-416 comment="false" id="1" x="0" y="0">
+                                    <ACTORTYPE eid="349" id="0"/>
+                                </custom-416>
+                            </minus>
+                            <screen-wh comment="false" id="2" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="3"/>
+        </event-periodic>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="6" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <create-recycled-actor comment="false" x="26" y="40">
+                    <ACTORTYPE eid="372" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </screen-wh>
+                        <int id="1" val="30"/>
+                    </minus>
+                    <screen-wh comment="false" id="2" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </screen-wh>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <create-recycled-actor comment="false" x="26" y="85">
+                    <ACTORTYPE eid="160" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <int id="0" val="30"/>
+                        <custom-416 comment="false" id="1" x="0" y="0">
+                            <ACTORTYPE eid="160" id="0"/>
+                        </custom-416>
+                    </minus>
+                    <screen-wh comment="false" id="2" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </screen-wh>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+            </group>
+            <int id="0" val="1"/>
+        </event-periodic>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>
