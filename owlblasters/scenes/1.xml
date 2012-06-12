@@ -11,19 +11,7 @@
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors>
-        <actor a="0.0" aid="3" c="true" group="3" id="202" name="SceneButton 3" sx="1.0" sy="1.0" x="134" y="301" z="0">
-            <snippets>
-                <s enabled="true" id="117">
-                    <prop id="1" list="0" val="false"/>
-                    <prop id="2" list="0" val="6"/>
-                    <prop id="3" list="0" val="Start"/>
-                    <prop id="4" list="0" val=""/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
-            </snippets>
-        </actor>
-    </actors>
+    <actors/>
     <snippets/>
     <terrain/>
 </scene>

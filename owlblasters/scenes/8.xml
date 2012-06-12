@@ -51,7 +51,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="25" c="true" group="3" id="392" name="ShotgunButton 25" sx="1.0" sy="1.0" x="15" y="180" z="0">
+        <actor a="0.0" aid="25" c="true" group="3" id="392" name="ShotgunButton 25" sx="1.0" sy="1.0" x="15" y="178" z="0">
             <snippets>
                 <s enabled="true" id="267">
                     <prop id="1" list="0" val="17"/>
@@ -93,7 +93,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="26" c="true" group="3" id="394" name="LaserPistolButton 26" sx="1.0" sy="1.0" x="15" y="220" z="0">
+        <actor a="0.0" aid="26" c="true" group="3" id="394" name="LaserPistolButton 26" sx="1.0" sy="1.0" x="17" y="217" z="0">
             <snippets>
                 <s enabled="true" id="267">
                     <prop id="1" list="0" val="18"/>
