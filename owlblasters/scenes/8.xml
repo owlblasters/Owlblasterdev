@@ -4,15 +4,13 @@
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
     <color-bg blue="51" green="51" red="51"/>
-    <backgrounds>
-        <ref id="338"/>
-    </backgrounds>
+    <backgrounds/>
     <foregrounds/>
     <joints/>
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="17" c="true" group="3" id="202" name="SceneButton 17" sx="1.0" sy="1.0" x="142" y="415" z="0">
+        <actor a="0.0" aid="17" c="true" group="3" id="202" name="SceneButton 17" sx="1.0" sy="1.0" x="176" y="417" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>
@@ -107,7 +105,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="29" c="true" group="3" id="382" name="EquipButton 29" sx="1.0" sy="1.0" x="280" y="300" z="0">
+        <actor a="0.0" aid="29" c="true" group="3" id="382" name="EquipButton 29" sx="1.0" sy="1.0" x="280" y="350" z="0">
             <snippets>
                 <s enabled="true" id="272">
                     <prop id="1" list="0" val="false"/>
@@ -117,7 +115,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="28" c="true" group="3" id="386" name="BuyButton 28" sx="1.0" sy="1.0" x="100" y="300" z="0">
+        <actor a="0.0" aid="28" c="true" group="3" id="386" name="BuyButton 28" sx="1.0" sy="1.0" x="100" y="350" z="0">
             <snippets>
                 <s enabled="true" id="268">
                     <prop id="1" list="0" val="false"/>
@@ -128,7 +126,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="30" c="true" group="3" id="384" name="UpgradeButton 30" sx="1.0" sy="1.0" x="190" y="300" z="0">
+        <actor a="0.0" aid="30" c="true" group="3" id="384" name="UpgradeButton 30" sx="1.0" sy="1.0" x="190" y="350" z="0">
             <snippets>
                 <s enabled="true" id="269">
                     <prop id="1" list="0" val="false"/>

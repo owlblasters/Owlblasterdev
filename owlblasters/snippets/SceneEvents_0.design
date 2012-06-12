@@ -33,6 +33,9 @@
                     </screen-wh>
                     <int id="3" val="0"/>
                 </create-recycled-actor>
+                <save-game comment="false" x="26" y="157">
+                    <group eventID="1" id="-1"/>
+                </save-game>
             </group>
         </init>
     </group>
@@ -291,4 +294,15 @@
         </event-delay>
     </group>
     <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <save-game comment="false" x="26" y="40">
+                    <group eventID="9" id="-1"/>
+                </save-game>
+            </group>
+            <int id="0" val="10"/>
+        </event-periodic>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>
