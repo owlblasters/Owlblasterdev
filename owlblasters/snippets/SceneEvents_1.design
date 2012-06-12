@@ -34,6 +34,70 @@
                 <load-game comment="false" x="26" y="40">
                     <group eventID="2" id="-1"/>
                 </load-game>
+                <if comment="false" x="26" y="97">
+                    <group eventID="2" id="-1">
+                        <save-game comment="false" x="37" y="132">
+                            <group eventID="2" id="-1"/>
+                        </save-game>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-item comment="false" id="0" x="0" y="0">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </get-item>
+                        <int id="1" val="1"/>
+                    </moreeq>
+                </if>
+                <else comment="false" x="26" y="201">
+                    <group eventID="2" id="-1">
+                        <clear-list comment="false" x="37" y="221">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        </clear-list>
+                        <insert-list comment="false" x="37" y="246">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="2"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="271">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="296">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="321">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="3"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="346">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="4"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="371">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="396">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="6"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="421">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="7"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <save-game comment="false" x="37" y="446">
+                            <group eventID="2" id="-1"/>
+                        </save-game>
+                    </group>
+                </else>
             </group>
         </init>
     </group>
