@@ -129,11 +129,12 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
-        <cgroup g1="3" g2="0"/>
-        <cgroup g1="6" g2="0"/>
-        <cgroup g1="6" g2="4"/>
-        <cgroup g1="5" g2="0"/>
+        <cgroup g1="1" g2="3"/>
         <cgroup g1="1" g2="0"/>
+        <cgroup g1="4" g2="6"/>
+        <cgroup g1="6" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="5" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -151,26 +152,26 @@
         <cat id="0" name="player stuff"/>
         <cat id="1" name="Sound variables"/>
         <cat id="2" name="Gunshop"/>
+        <cat id="3" name="weaponStats"/>
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
     <attributes>
+        <list cid="3" id="15" name="grenadeLauncherStats" save="true" val="list"/>
         <number cid="0" id="2" name="Player_Health" save="true" value="0.0"/>
+        <list cid="3" id="13" name="laserPistolStats" save="true" val="list"/>
         <number cid="0" id="1" name="Credits" save="true" value="0.0"/>
         <number cid="1" id="4" name="BackgroundMscOn" save="true" value="1.0"/>
-        <list cid="0" id="0" name="Player's guns" save="true" val="list">
-            <number order="0" value="2.0"/>
-            <number order="1" value="-1.0"/>
-            <number order="2" value="-1.0"/>
-            <number order="3" value="-1.0"/>
-            <number order="4" value="-1.0"/>
-            <number order="5" value="-1.0"/>
-            <number order="6" value="-1.0"/>
-            <number order="7" value="-1.0"/>
-        </list>
         <number cid="2" id="5" name="CreditsNeeded" save="true" value="0.0"/>
+        <list cid="3" id="9" name="clawStats" save="true" val="list"/>
+        <list cid="3" id="10" name="revolverStats" save="true" val="list"/>
+        <list cid="3" id="16" name="laserRifleStats" save="true" val="list"/>
+        <list cid="3" id="11" name="shotgunStats" save="true" val="list"/>
+        <list cid="0" id="0" name="Player's guns" save="true" val="list"/>
         <number cid="2" id="7" name="GunListLoc" save="true" value="0.0"/>
+        <list cid="3" id="12" name="pistolStats" save="true" val="list"/>
         <number cid="1" id="3" name="SoundEffectsOn" save="true" value="1.0"/>
+        <list cid="3" id="14" name="scytheStats" save="true" val="list"/>
     </attributes>
     <collisions>
         <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
