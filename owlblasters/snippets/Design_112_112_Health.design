@@ -19,6 +19,11 @@
                     <int id="1" val="hitPoints"/>
                     <get-val-112-4 comment="false" id="2" x="0" y="0"/>
                 </actor-set-prop>
+                <actor-set-prop comment="false" x="26" y="72">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="maxHealth"/>
+                    <get-val-112-5 comment="false" id="2" x="0" y="0"/>
+                </actor-set-prop>
             </group>
         </step>
     </group>
