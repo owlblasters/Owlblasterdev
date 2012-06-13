@@ -56,13 +56,28 @@
                     </lesseq>
                 </if>
                 <else comment="false" x="26" y="324">
-                    <group eventID="-1" id="-1">
-                        <set-color comment="false" x="37" y="344">
-                            <color b="0" g="255" id="0" r="0"/>
-                        </set-color>
-                    </group>
+                    <group eventID="-1" id="-1"/>
                 </else>
-                <drawfill-rect comment="false" x="26" y="383">
+                <set-stroke-color comment="false" x="26" y="376">
+                    <color b="0" g="0" id="0" r="0"/>
+                </set-stroke-color>
+                <set-thickness comment="false" x="26" y="403">
+                    <int id="0" val="2"/>
+                </set-thickness>
+                <set-color comment="false" x="26" y="423">
+                    <color b="0" g="0" id="0" r="255"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="450">
+                    <int id="0" val="1"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="30"/>
+                    <int id="4" val="5"/>
+                </drawfill-rect>
+                <set-color comment="false" x="26" y="477">
+                    <color b="0" g="255" id="0" r="0"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="504">
                     <int id="0" val="1"/>
                     <int id="1" val="50"/>
                     <int id="2" val="0"/>
