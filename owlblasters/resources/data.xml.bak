@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <custom-block blocktag="custom-422" blocktype="ACTION" code="~.say(&quot;gunFollowPlayer&quot;, &quot;&quot;);" desc="" global="false" gui="Missing" id="422" message="" name="" oid="-1" return="VOID" shared="false" snippetID="282">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-414" blocktype="ACTION" code="~.say(&quot;ActorEvents_206&quot;, &quot;&quot;, ~);" desc="" global="false" gui="Missing" id="414" message="" name="" oid="-1" return="VOID" shared="false" snippetID="119">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="actortype" order="1" type="ACTORTYPE"/>
@@ -720,8 +723,25 @@
     <custom-block blocktag="custom-39" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetXOffset&quot;)))" desc="" global="false" gui="Get Score Drawing X Offset" id="39" message="GetXOffset" name="GetXOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
     <custom-block blocktag="custom-40" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetYOffset&quot;)))" desc="" global="false" gui="Get Score Drawing Y Offset" id="40" message="GetYOffset" name="GetYOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
     <background atlasID="0" desc="Gives a doodle-like feel to a scene." durations="100" dx="5.0" dy="5.0" height="796" id="354" name="Graph Paper" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="232" fixedrot="false" fric="0.2" gid="3" id="336" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Gun" oid="-1" pausable="true" rest="0.0" shared="false" sprite="337" static="false" touchable="true">
-        <snippets/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="232" fixedrot="false" fric="0.2" gid="3" id="336" ignoreg="false" inertia="1.0" ldamp="0.0" lw="true" mass="1.0" name="Gun" oid="-1" pausable="true" rest="0.0" shared="false" sprite="337" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="282">
+                <prop id="1" list="0" val=""/>
+                <prop id="3" list="0" val="32"/>
+                <prop id="4" list="0" val="60"/>
+                <prop id="5" list="0" val="30"/>
+                <prop id="8" list="0" val="Animation 0"/>
+                <prop id="9" list="0" val="false"/>
+                <prop id="10" list="0" val="Animation 0"/>
+                <prop id="11" list="0" val="20"/>
+                <prop id="12" list="0" val="30"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="Animation 0"/>
+            </s>
+            <s enabled="true" id="211">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="337" name="Gun" shared="false" width="32">
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" width="32">
@@ -955,6 +975,11 @@
                 <prop id="11" list="0" val="0"/>
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="283">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="336"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="42">
@@ -1435,6 +1460,10 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <custom-block blocktag="custom-423" blocktype="ACTION" code="~.say(&quot;gunFollowPlayer&quot;, &quot;Sync&quot;, ~);" desc="not sure what it does at this point" global="false" gui="%0 sync with Actor %1" id="423" message="Sync" name="Sync" oid="-1" return="VOID" shared="false" snippetID="282">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Player" order="1" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-63" blocktype="ACTION" code="~.say(&quot;Jetpack Follow Player&quot;, &quot;Sync&quot;, ~);" desc="" global="false" gui="%0 Sync With Actor %1" id="63" message="Sync" name="Sync" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Player" order="1" type="ACTOR"/>

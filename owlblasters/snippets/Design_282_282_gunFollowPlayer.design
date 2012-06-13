@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <ignore-screen-tolerance comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+                <actors-of-type3 comment="false" x="26" y="67">
+                    <group eventID="-1" id="-1">
+                        <set-val-282-1 comment="false" x="37" y="99">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </set-val-282-1>
+                    </group>
+                    <ACTORTYPE eid="var" id="0" vid="3"/>
+                </actors-of-type3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <setanim comment="false" x="37" y="83">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-282-10 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <set-xy comment="false" x="37" y="115">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-282-4 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="160">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-282-5 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <getanim comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </getanim>
+                            <int id="1" val="idle-r"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <int id="0" val="jump-r"/>
+                            <getanim comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </getanim>
+                        </eq>
+                    </or>
+                </if>
+                <else comment="false" x="26" y="217">
+                    <group eventID="-1" id="-1">
+                        <setanim comment="false" x="37" y="237">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-282-15 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <set-xy comment="false" x="37" y="269">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-282-11 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="314">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-282-12 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                    </group>
+                </else>
+                <set-dxy comment="false" x="26" y="371">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <get-dxy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                        <int id="1" val="0"/>
+                    </get-dxy>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="411">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <get-dxy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                        <int id="1" val="1"/>
+                    </get-dxy>
+                </set-dxy>
+            </group>
+            <int id="0" val="SyncWithPlayer1"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <say-this comment="false" x="37" y="78">
+                            <int id="0" val="SyncWithPlayer1"/>
+                        </say-this>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                        </isalive>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-1-423 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-282-1 comment="false" x="26" y="45">
+                    <get-byobval-282-423-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-282-1>
+            </group>
+            <get-byobval-282-423-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-282-423-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-423>
+    </group>
+    <group eventID="5" id="-1">
+        <get-byobval-282-423-0 comment="false" x="0" y="0"/>
+        <get-byobval-282-423-1 comment="false" x="0" y="0"/>
+    </group>
+</groups>
