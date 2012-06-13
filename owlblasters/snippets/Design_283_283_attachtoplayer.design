@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <init comment="false" x="0" y="46">
+        <init comment="false" x="1" y="46">
             <group eventID="1" id="-1">
-                <if comment="false" x="11" y="71">
+                <if comment="false" x="12" y="71">
                     <group eventID="1" id="-1">
-                        <set-val-283-2 comment="false" x="22" y="106">
+                        <set-val-283-2 comment="false" x="23" y="106">
                             <int id="0" val="336"/>
                         </set-val-283-2>
                     </group>
@@ -17,9 +17,9 @@
                         <int id="1" val="2"/>
                     </eq>
                 </if>
-                <if comment="false" x="11" y="145">
+                <if comment="false" x="12" y="145">
                     <group eventID="1" id="-1">
-                        <set-val-283-2 comment="false" x="22" y="180">
+                        <set-val-283-2 comment="false" x="23" y="180">
                             <int id="0" val="236"/>
                         </set-val-283-2>
                     </group>
@@ -31,7 +31,7 @@
                         <int id="1" val="2"/>
                     </eq>
                 </if>
-                <create-actor3 comment="false" x="11" y="219">
+                <create-actor3 comment="false" x="12" y="219">
                     <ACTORTYPE eid="var" id="0" vid="2"/>
                     <get-xy comment="false" id="1" x="0" y="0">
                         <ACTOR eid="this" id="0"/>
@@ -43,10 +43,10 @@
                     </get-xy>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-283-3 comment="false" x="11" y="259">
+                <set-val-283-3 comment="false" x="12" y="259">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-283-3>
-                <custom-423 comment="false" x="11" y="286">
+                <custom-423 comment="false" x="12" y="286">
                     <ACTOR eid="var" id="0" vid="3"/>
                     <ACTOR eid="this" id="1"/>
                 </custom-423>
@@ -54,4 +54,23 @@
         </init>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="70">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <get-game-val-17 comment="false" id="1" x="0" y="0"/>
+                        </setangle>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-game-val-17 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </noteq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>
