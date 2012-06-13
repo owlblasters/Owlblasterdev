@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <init comment="false" x="15" y="15">
+        <init comment="false" x="0" y="46">
             <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
+                <if comment="false" x="11" y="71">
+                    <group eventID="1" id="-1">
+                        <set-val-283-2 comment="false" x="22" y="106">
+                            <int id="0" val="336"/>
+                        </set-val-283-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </get-item-number>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+                <if comment="false" x="11" y="145">
+                    <group eventID="1" id="-1">
+                        <set-val-283-2 comment="false" x="22" y="180">
+                            <int id="0" val="236"/>
+                        </set-val-283-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-item-number comment="false" id="0" x="0" y="0">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </get-item-number>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+                <create-actor3 comment="false" x="11" y="219">
                     <ACTORTYPE eid="var" id="0" vid="2"/>
                     <get-xy comment="false" id="1" x="0" y="0">
                         <ACTOR eid="this" id="0"/>
@@ -15,10 +43,10 @@
                     </get-xy>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-283-3 comment="false" x="26" y="80">
+                <set-val-283-3 comment="false" x="11" y="259">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-283-3>
-                <custom-423 comment="false" x="26" y="107">
+                <custom-423 comment="false" x="11" y="286">
                     <ACTOR eid="var" id="0" vid="3"/>
                     <ACTOR eid="this" id="1"/>
                 </custom-423>
