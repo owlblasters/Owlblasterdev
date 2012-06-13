@@ -68,12 +68,36 @@
                             <int id="1" val="150"/>
                             <int id="2" val="95"/>
                         </draw-text>
-                        <repeat comment="false" x="29" y="402">
+                        <draw-text comment="false" x="29" y="402">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="432">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="462">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="492">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="432">
+                                <set-color comment="false" x="40" y="522">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="459">
+                                <drawfill-rect comment="false" x="40" y="549">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -92,12 +116,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="513">
+                        <repeat comment="false" x="29" y="603">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="543">
+                                <set-color comment="false" x="40" y="633">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="570">
+                                <drawfill-rect comment="false" x="40" y="660">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -116,12 +140,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="624">
+                        <repeat comment="false" x="29" y="714">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="654">
+                                <set-color comment="false" x="40" y="744">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="681">
+                                <drawfill-rect comment="false" x="40" y="771">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -140,9 +164,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="735">
+                        <if comment="false" x="29" y="825">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="770">
+                                <draw-text comment="false" x="40" y="860">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -156,9 +180,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="802">
+                        <if comment="false" x="29" y="892">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="837">
+                                <draw-text comment="false" x="40" y="927">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -178,22 +202,46 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="881">
+                <if comment="false" x="18" y="971">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="911">
+                        <draw-text comment="false" x="29" y="1001">
                             <int id="0" val="Claws"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="931">
+                        <set-font-new comment="false" x="29" y="1021">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="958">
+                        <draw-text comment="false" x="29" y="1048">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="1078">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="1108">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="1138">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="988">
+                                <set-color comment="false" x="40" y="1168">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="1015">
+                                <drawfill-rect comment="false" x="40" y="1195">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -212,12 +260,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="1069">
+                        <repeat comment="false" x="29" y="1249">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="1099">
+                                <set-color comment="false" x="40" y="1279">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="1126">
+                                <drawfill-rect comment="false" x="40" y="1306">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -236,12 +284,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="1180">
+                        <repeat comment="false" x="29" y="1360">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="1210">
+                                <set-color comment="false" x="40" y="1390">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="1237">
+                                <drawfill-rect comment="false" x="40" y="1417">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -260,9 +308,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="1291">
+                        <if comment="false" x="29" y="1471">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="1326">
+                                <draw-text comment="false" x="40" y="1506">
                                     <int id="0" val="500"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -276,9 +324,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="1358">
+                        <if comment="false" x="29" y="1538">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="1393">
+                                <draw-text comment="false" x="40" y="1573">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -292,9 +340,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="1425">
+                        <if comment="false" x="29" y="1605">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="1460">
+                                <draw-text comment="false" x="40" y="1640">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -314,22 +362,46 @@
                         <int id="1" val="1"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="1504">
+                <if comment="false" x="18" y="1684">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="1534">
+                        <draw-text comment="false" x="29" y="1714">
                             <int id="0" val="Revolver"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="1554">
+                        <set-font-new comment="false" x="29" y="1734">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="1581">
+                        <draw-text comment="false" x="29" y="1761">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="1791">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="1821">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="1851">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="1611">
+                                <set-color comment="false" x="40" y="1881">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="1638">
+                                <drawfill-rect comment="false" x="40" y="1908">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -348,12 +420,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="1692">
+                        <repeat comment="false" x="29" y="1962">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="1722">
+                                <set-color comment="false" x="40" y="1992">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="1749">
+                                <drawfill-rect comment="false" x="40" y="2019">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -372,12 +444,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="1803">
+                        <repeat comment="false" x="29" y="2073">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="1833">
+                                <set-color comment="false" x="40" y="2103">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="1860">
+                                <drawfill-rect comment="false" x="40" y="2130">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -396,9 +468,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="1914">
+                        <if comment="false" x="29" y="2184">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="1949">
+                                <draw-text comment="false" x="40" y="2219">
                                     <int id="0" val="1500"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -412,9 +484,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="1981">
+                        <if comment="false" x="29" y="2251">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="2016">
+                                <draw-text comment="false" x="40" y="2286">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -428,9 +500,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="2048">
+                        <if comment="false" x="29" y="2318">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="2083">
+                                <draw-text comment="false" x="40" y="2353">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -450,22 +522,46 @@
                         <int id="1" val="2"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="2127">
+                <if comment="false" x="18" y="2397">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="2157">
+                        <draw-text comment="false" x="29" y="2427">
                             <int id="0" val="Shotgun"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="2177">
+                        <set-font-new comment="false" x="29" y="2447">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="2204">
+                        <draw-text comment="false" x="29" y="2474">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="2504">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="2534">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="2564">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="2234">
+                                <set-color comment="false" x="40" y="2594">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="2261">
+                                <drawfill-rect comment="false" x="40" y="2621">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -484,12 +580,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="2315">
+                        <repeat comment="false" x="29" y="2675">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="2345">
+                                <set-color comment="false" x="40" y="2705">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="2372">
+                                <drawfill-rect comment="false" x="40" y="2732">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -508,12 +604,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="2426">
+                        <repeat comment="false" x="29" y="2786">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="2456">
+                                <set-color comment="false" x="40" y="2816">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="2483">
+                                <drawfill-rect comment="false" x="40" y="2843">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -532,9 +628,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="2537">
+                        <if comment="false" x="29" y="2897">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="2572">
+                                <draw-text comment="false" x="40" y="2932">
                                     <int id="0" val="5000"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -548,9 +644,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="2604">
+                        <if comment="false" x="29" y="2964">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="2639">
+                                <draw-text comment="false" x="40" y="2999">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -564,9 +660,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="2671">
+                        <if comment="false" x="29" y="3031">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="2706">
+                                <draw-text comment="false" x="40" y="3066">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -586,22 +682,46 @@
                         <int id="1" val="3"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="2750">
+                <if comment="false" x="18" y="3110">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="2780">
+                        <draw-text comment="false" x="29" y="3140">
                             <int id="0" val="Laser Pistol"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="2800">
+                        <set-font-new comment="false" x="29" y="3160">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="2827">
+                        <draw-text comment="false" x="29" y="3187">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="3217">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="3247">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="3277">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="2857">
+                                <set-color comment="false" x="40" y="3307">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="2884">
+                                <drawfill-rect comment="false" x="40" y="3334">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -620,12 +740,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="2938">
+                        <repeat comment="false" x="29" y="3388">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="2968">
+                                <set-color comment="false" x="40" y="3418">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="2995">
+                                <drawfill-rect comment="false" x="40" y="3445">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -644,12 +764,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="3049">
+                        <repeat comment="false" x="29" y="3499">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="3079">
+                                <set-color comment="false" x="40" y="3529">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="3106">
+                                <drawfill-rect comment="false" x="40" y="3556">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -668,9 +788,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="3160">
+                        <if comment="false" x="29" y="3610">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="3195">
+                                <draw-text comment="false" x="40" y="3645">
                                     <int id="0" val="10000"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -684,9 +804,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="3227">
+                        <if comment="false" x="29" y="3677">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="3262">
+                                <draw-text comment="false" x="40" y="3712">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -700,9 +820,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="3294">
+                        <if comment="false" x="29" y="3744">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="3329">
+                                <draw-text comment="false" x="40" y="3779">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -722,22 +842,46 @@
                         <int id="1" val="4"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="3373">
+                <if comment="false" x="18" y="3823">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="3403">
+                        <draw-text comment="false" x="29" y="3853">
                             <int id="0" val="Scythe"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="3423">
+                        <set-font-new comment="false" x="29" y="3873">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="3450">
+                        <draw-text comment="false" x="29" y="3900">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="3930">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="3960">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="3990">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="3480">
+                                <set-color comment="false" x="40" y="4020">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="3507">
+                                <drawfill-rect comment="false" x="40" y="4047">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -756,12 +900,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="3561">
+                        <repeat comment="false" x="29" y="4101">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="3591">
+                                <set-color comment="false" x="40" y="4131">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="3618">
+                                <drawfill-rect comment="false" x="40" y="4158">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -780,12 +924,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="3672">
+                        <repeat comment="false" x="29" y="4212">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="3702">
+                                <set-color comment="false" x="40" y="4242">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="3729">
+                                <drawfill-rect comment="false" x="40" y="4269">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -804,9 +948,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="3783">
+                        <if comment="false" x="29" y="4323">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="3818">
+                                <draw-text comment="false" x="40" y="4358">
                                     <int id="0" val="25000"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -820,9 +964,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="3850">
+                        <if comment="false" x="29" y="4390">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="3885">
+                                <draw-text comment="false" x="40" y="4425">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -836,9 +980,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="3917">
+                        <if comment="false" x="29" y="4457">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="3952">
+                                <draw-text comment="false" x="40" y="4492">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -858,22 +1002,46 @@
                         <int id="1" val="5"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="3996">
+                <if comment="false" x="18" y="4536">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="4026">
+                        <draw-text comment="false" x="29" y="4566">
                             <int id="0" val="Thumper"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="4046">
+                        <set-font-new comment="false" x="29" y="4586">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="4073">
+                        <draw-text comment="false" x="29" y="4613">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="4643">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="4673">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="4703">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="4103">
+                                <set-color comment="false" x="40" y="4733">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="4130">
+                                <drawfill-rect comment="false" x="40" y="4760">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -892,12 +1060,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="4184">
+                        <repeat comment="false" x="29" y="4814">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="4214">
+                                <set-color comment="false" x="40" y="4844">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="4241">
+                                <drawfill-rect comment="false" x="40" y="4871">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -916,12 +1084,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="4295">
+                        <repeat comment="false" x="29" y="4925">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="4325">
+                                <set-color comment="false" x="40" y="4955">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="4352">
+                                <drawfill-rect comment="false" x="40" y="4982">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -940,9 +1108,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="4406">
+                        <if comment="false" x="29" y="5036">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="4441">
+                                <draw-text comment="false" x="40" y="5071">
                                     <int id="0" val="50000"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -956,9 +1124,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="4473">
+                        <if comment="false" x="29" y="5103">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="4508">
+                                <draw-text comment="false" x="40" y="5138">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -972,9 +1140,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="4540">
+                        <if comment="false" x="29" y="5170">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="4575">
+                                <draw-text comment="false" x="40" y="5205">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -994,22 +1162,46 @@
                         <int id="1" val="6"/>
                     </eq>
                 </if>
-                <if comment="false" x="18" y="4619">
+                <if comment="false" x="18" y="5249">
                     <group eventID="13" id="-1">
-                        <draw-text comment="false" x="29" y="4649">
+                        <draw-text comment="false" x="29" y="5279">
                             <int id="0" val="Laser Rifle"/>
                             <int id="1" val="70"/>
                             <int id="2" val="50"/>
                         </draw-text>
-                        <set-font-new comment="false" x="29" y="4669">
+                        <set-font-new comment="false" x="29" y="5299">
                             <FONT eid="364" id="0"/>
                         </set-font-new>
-                        <repeat comment="false" x="29" y="4696">
+                        <draw-text comment="false" x="29" y="5326">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="5356">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="29" y="5386">
+                            <get-item-number comment="false" id="0" x="0" y="0">
+                                <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </get-item-number>
+                            <int id="1" val="350"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                        <repeat comment="false" x="29" y="5416">
                             <group eventID="2" id="-1">
-                                <set-color comment="false" x="40" y="4726">
+                                <set-color comment="false" x="40" y="5446">
                                     <color b="0" g="0" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="4753">
+                                <drawfill-rect comment="false" x="40" y="5473">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -1028,12 +1220,12 @@
                                 <int id="1" val="0"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="4807">
+                        <repeat comment="false" x="29" y="5527">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="4837">
+                                <set-color comment="false" x="40" y="5557">
                                     <color b="0" g="255" id="0" r="255"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="4864">
+                                <drawfill-rect comment="false" x="40" y="5584">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -1052,12 +1244,12 @@
                                 <int id="1" val="1"/>
                             </get-item-number>
                         </repeat>
-                        <repeat comment="false" x="29" y="4918">
+                        <repeat comment="false" x="29" y="5638">
                             <group eventID="1" id="-1">
-                                <set-color comment="false" x="40" y="4948">
+                                <set-color comment="false" x="40" y="5668">
                                     <color b="0" g="255" id="0" r="51"/>
                                 </set-color>
-                                <drawfill-rect comment="false" x="40" y="4975">
+                                <drawfill-rect comment="false" x="40" y="5695">
                                     <int id="0" val="1"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <int id="0" val="120"/>
@@ -1076,9 +1268,9 @@
                                 <int id="1" val="2"/>
                             </get-item-number>
                         </repeat>
-                        <if comment="false" x="29" y="5029">
+                        <if comment="false" x="29" y="5749">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="5064">
+                                <draw-text comment="false" x="40" y="5784">
                                     <int id="0" val="100000"/>
                                     <int id="1" val="150"/>
                                     <int id="2" val="100"/>
@@ -1092,9 +1284,9 @@
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="5096">
+                        <if comment="false" x="29" y="5816">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="5131">
+                                <draw-text comment="false" x="40" y="5851">
                                     <int id="0" val="Owned"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>
@@ -1108,9 +1300,9 @@
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <if comment="false" x="29" y="5163">
+                        <if comment="false" x="29" y="5883">
                             <group eventID="13" id="-1">
-                                <draw-text comment="false" x="40" y="5198">
+                                <draw-text comment="false" x="40" y="5918">
                                     <int id="0" val="Equipped"/>
                                     <int id="1" val="70"/>
                                     <int id="2" val="240"/>

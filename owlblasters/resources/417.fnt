@@ -1,16 +1,18 @@
 #
-#Tue Jun 12 17:41:36 EDT 2012
+#Tue Jun 12 22:10:38 EDT 2012
 monospace=false
 monospace.numerals=false
 style=plain
 tracking=0
-color=\#000000
+stroke.color=\#00ff00
+color=\#999999
 shadow.y=0
 family=Comica BD.ttf
 shadow.x=0
 shadow.color=\#000000
-gradient.offset=0
+gradient.offset=10
 shadow.blur=0
+gradient.color=\#ff0000
 stroke.size=0
 antialias=true
-size=16
+size=30

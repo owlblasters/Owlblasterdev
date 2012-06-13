@@ -1,5 +1,5 @@
 #
-#Tue Jun 12 17:41:35 EDT 2012
+#Tue Jun 12 22:06:16 EDT 2012
 monospace=false
 monospace.numerals=false
 style=plain
@@ -13,4 +13,4 @@ gradient.offset=0
 shadow.blur=0
 stroke.size=0
 antialias=true
-size=16
+size=32

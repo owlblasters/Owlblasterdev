@@ -13,7 +13,7 @@
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
                     <int id="0" val="Blasters"/>
-                    <int id="1" val="90"/>
+                    <int id="1" val="60"/>
                     <int id="2" val="75"/>
                 </draw-text>
                 <set-font-new comment="false" x="26" y="107">
@@ -24,6 +24,27 @@
                     <int id="1" val="75"/>
                     <int id="2" val="150"/>
                 </draw-text>
+                <set-font-new comment="false" x="26" y="154">
+                    <FONT eid="420" id="0"/>
+                </set-font-new>
+                <do-ios comment="false" x="26" y="181">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="201">
+                            <int id="0" val="Tap to Begin"/>
+                            <int id="1" val="80"/>
+                            <int id="2" val="400"/>
+                        </draw-text>
+                    </group>
+                </do-ios>
+                <do-flash comment="false" x="26" y="233">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="253">
+                            <int id="0" val="Click to Begin"/>
+                            <int id="1" val="80"/>
+                            <int id="2" val="400"/>
+                        </draw-text>
+                    </group>
+                </do-flash>
             </group>
         </draw>
     </group>
@@ -234,7 +255,7 @@
                     <SCENE eid="6" id="0"/>
                     <int id="1" val="3"/>
                     <int id="2" val=".25"/>
-                    <int id="3" val="3"/>
+                    <int id="3" val="5"/>
                     <int id="4" val=".25"/>
                 </scene-change-new>
             </group>
@@ -249,7 +270,7 @@
                     <SCENE eid="6" id="0"/>
                     <int id="1" val="3"/>
                     <int id="2" val=".25"/>
-                    <int id="3" val="3"/>
+                    <int id="3" val="5"/>
                     <int id="4" val=".25"/>
                 </scene-change-new>
             </group>
