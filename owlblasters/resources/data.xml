@@ -998,20 +998,10 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
 <<<<<<< HEAD
-<<<<<<< HEAD
             <s enabled="true" id="283">
                 <prop id="1" list="0" val=""/>
                 <prop id="2" list="0" val="236"/>
                 <prop id="3" list="0" val=""/>
-||||||| merged common ancestors
-            <s enabled="true" id="93">
-=======
-            <s enabled="true" id="283">
-                <prop id="1" list="0" val=""/>
-                <prop id="2" list="0" val="236"/>
-                <prop id="3" list="0" val=""/>
-                <prop id="4" list="0" val="0"/>
->>>>>>> 321513c04e296f2e52840d48eee9d892cf8b91eb
 ||||||| merged common ancestors
             <s enabled="true" id="93">
 =======
