@@ -1764,10 +1764,12 @@
         <actor default="" desc="" dropdown="" fullname="Jetpack Actor" hidden="true" id="1" name="_JetpackActor" order="1"/>
         <actortype default="" desc="" dropdown="" fullname="gunActorType" hidden="false" id="2" name="_gunActorType" order="2"/>
         <actor default="" desc="" dropdown="" fullname="gunActor" hidden="false" id="3" name="_gunActor" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="currentangle" hidden="false" id="4" name="_currentangle" order="4"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_282_282_gunFollowPlayer" desc="" description="" design="true" drawOrder="0" id="282" language="" name="gunFollowPlayer" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">

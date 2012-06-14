@@ -129,11 +129,28 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
+<<<<<<< HEAD
         <cgroup g1="4" g2="6"/>
         <cgroup g1="3" g2="0"/>
         <cgroup g1="5" g2="0"/>
+||||||| merged common ancestors
+        <cgroup g1="4" g2="6"/>
+        <cgroup g1="6" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="5" g2="0"/>
+=======
+>>>>>>> 321513c04e296f2e52840d48eee9d892cf8b91eb
         <cgroup g1="1" g2="0"/>
+<<<<<<< HEAD
         <cgroup g1="0" g2="6"/>
+||||||| merged common ancestors
+=======
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="0" g2="5"/>
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="4" g2="6"/>
+>>>>>>> 321513c04e296f2e52840d48eee9d892cf8b91eb
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -162,6 +179,7 @@
         <number cid="0" id="1" name="Credits" save="true" value="0.0"/>
         <number cid="1" id="4" name="BackgroundMscOn" save="true" value="1.0"/>
         <number cid="2" id="5" name="CreditsNeeded" save="true" value="0.0"/>
+        <number cid="0" id="17" name="gunDirection" save="true" value="0.0"/>
         <list cid="3" id="9" name="clawStats" save="true" val="list"/>
         <list cid="3" id="10" name="revolverStats" save="true" val="list"/>
         <list cid="3" id="16" name="laserRifleStats" save="true" val="list"/>
@@ -169,6 +187,7 @@
         <list cid="0" id="0" name="Player's guns" save="true" val="list"/>
         <number cid="2" id="7" name="GunListLoc" save="true" value="0.0"/>
         <list cid="3" id="12" name="pistolStats" save="true" val="list"/>
+        <bool cid="0" id="18" name="curDirIsRight" save="true" value="true"/>
         <number cid="1" id="3" name="SoundEffectsOn" save="true" value="1.0"/>
         <list cid="3" id="14" name="scytheStats" save="true" val="list"/>
     </attributes>

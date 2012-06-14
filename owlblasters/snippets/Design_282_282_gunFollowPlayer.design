@@ -150,8 +150,5 @@
             <get-byobval-282-423-1 comment="false" id="1" x="0" y="0"/>
         </receiver-1-423>
     </group>
-    <group eventID="5" id="-1">
-        <get-byobval-282-423-0 comment="false" x="0" y="0"/>
-        <get-byobval-282-423-1 comment="false" x="0" y="0"/>
-    </group>
+    <group eventID="5" id="-1"/>
 </groups>
