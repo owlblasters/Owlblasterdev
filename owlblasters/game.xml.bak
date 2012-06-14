@@ -130,6 +130,7 @@
     </groups>
     <cgroups>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <cgroup g1="4" g2="6"/>
         <cgroup g1="3" g2="0"/>
         <cgroup g1="5" g2="0"/>
@@ -140,9 +141,25 @@
         <cgroup g1="5" g2="0"/>
 =======
 >>>>>>> 321513c04e296f2e52840d48eee9d892cf8b91eb
+||||||| merged common ancestors
+        <cgroup g1="4" g2="6"/>
+        <cgroup g1="6" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="5" g2="0"/>
+=======
+>>>>>>> 321513c04e296f2e52840d48eee9d892cf8b91eb
         <cgroup g1="1" g2="0"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <cgroup g1="0" g2="6"/>
+||||||| merged common ancestors
+=======
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="0" g2="5"/>
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="4" g2="6"/>
+>>>>>>> 321513c04e296f2e52840d48eee9d892cf8b91eb
 ||||||| merged common ancestors
 =======
         <cgroup g1="1" g2="3"/>
