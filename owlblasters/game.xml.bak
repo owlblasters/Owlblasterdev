@@ -130,15 +130,21 @@
     </groups>
     <cgroups>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <cgroup g1="0" g2="6"/>
         <cgroup g1="0" g2="5"/>
         <cgroup g1="0" g2="3"/>
         <cgroup g1="4" g2="6"/>
 =======
+=======
+>>>>>>> 3bbbd51bfd24a27d6de1f72df8036c1e137a044d
         <cgroup g1="5" g2="0"/>
         <cgroup g1="4" g2="6"/>
         <cgroup g1="0" g2="6"/>
         <cgroup g1="0" g2="3"/>
+<<<<<<< HEAD
+>>>>>>> 3bbbd51bfd24a27d6de1f72df8036c1e137a044d
+=======
 >>>>>>> 3bbbd51bfd24a27d6de1f72df8036c1e137a044d
         <cgroup g1="1" g2="3"/>
     </cgroups>
