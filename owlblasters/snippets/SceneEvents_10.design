@@ -78,7 +78,7 @@
                     <FONT eid="359" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="412">
-                    <int id="0" val="Marlon Antunez"/>
+                    <int id="0" val="Ceric"/>
                     <int id="1" val="5"/>
                     <plus comment="false" id="2" x="0" y="0">
                         <get-val-241-1 comment="false" id="0" x="0" y="0"/>
@@ -110,7 +110,7 @@
                     </plus>
                 </draw-text>
                 <draw-text comment="false" x="26" y="532">
-                    <int id="0" val="Micro Mister"/>
+                    <int id="0" val="Luyren"/>
                     <int id="1" val="5"/>
                     <plus comment="false" id="2" x="0" y="0">
                         <get-val-241-1 comment="false" id="0" x="0" y="0"/>
@@ -118,7 +118,7 @@
                     </plus>
                 </draw-text>
                 <draw-text comment="false" x="26" y="562">
-                    <int id="0" val="Ceric"/>
+                    <int id="0" val="Micro Mister"/>
                     <int id="1" val="5"/>
                     <plus comment="false" id="2" x="0" y="0">
                         <get-val-241-1 comment="false" id="0" x="0" y="0"/>

@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="240" extheight="576" extwidth="448" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="512" id="9" name="Instructions Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="384">
+<scene depth="1" desc="" eventsnippetid="240" extheight="576" extwidth="480" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="512" id="9" name="Instructions Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="416">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
     <color-bg blue="255" green="255" red="255"/>
-    <backgrounds>
-        <ref id="354"/>
-    </backgrounds>
+    <backgrounds/>
     <foregrounds/>
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors>
-        <actor a="0.0" aid="1" c="true" group="3" id="202" name="SceneButton 1" sx="1.0" sy="1.0" x="150" y="430" z="0">
-            <snippets>
-                <s enabled="true" id="117">
-                    <prop id="1" list="0" val="false"/>
-                    <prop id="2" list="0" val="6"/>
-                    <prop id="3" list="0" val="Back"/>
-                    <prop id="4" list="0" val=""/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
-            </snippets>
-        </actor>
-        <actor a="0.0" aid="2" c="false" group="0" id="32" name="Jumper 2" sx="1.0" sy="1.0" x="247" y="282" z="0"/>
-    </actors>
+    <actors/>
     <snippets/>
     <terrain/>
 </scene>

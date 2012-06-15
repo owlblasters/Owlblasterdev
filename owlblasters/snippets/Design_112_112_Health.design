@@ -19,11 +19,6 @@
                     <int id="1" val="hitPoints"/>
                     <get-val-112-4 comment="false" id="2" x="0" y="0"/>
                 </actor-set-prop>
-                <actor-set-prop comment="false" x="26" y="72">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="maxHealth"/>
-                    <get-val-112-5 comment="false" id="2" x="0" y="0"/>
-                </actor-set-prop>
             </group>
         </step>
     </group>
@@ -143,24 +138,17 @@
     <group eventID="8" id="0">
         <receiver-5-167 comment="false" x="15" y="15">
             <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="45">
-                    <group eventID="8" id="-1">
-                        <set-val-112-2 comment="false" x="37" y="75">
-                            <get-byobval-112-29-1 comment="false" id="0" x="0" y="0"/>
-                        </set-val-112-2>
-                        <incdec comment="false" x="37" y="100">
-                            <int id="0" val="4"/>
-                            <int id="1" val="1"/>
-                            <get-val-112-2 comment="false" id="2" x="0" y="0"/>
-                        </incdec>
-                        <say-this comment="false" x="37" y="132">
-                            <int id="0" val="tookDamage"/>
-                        </say-this>
-                    </group>
-                    <not comment="false" id="0" x="0" y="0">
-                        <get-val-112-9 comment="false" id="0" x="0" y="0"/>
-                    </not>
-                </if>
+                <set-val-112-2 comment="false" x="26" y="45">
+                    <get-byobval-112-29-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-112-2>
+                <incdec comment="false" x="26" y="70">
+                    <int id="0" val="4"/>
+                    <int id="1" val="1"/>
+                    <get-val-112-2 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <say-this comment="false" x="26" y="102">
+                    <int id="0" val="tookDamage"/>
+                </say-this>
             </group>
             <get-byobval-112-29-0 comment="false" id="0" x="0" y="0"/>
             <get-byobval-112-29-1 comment="false" id="1" x="0" y="0"/>

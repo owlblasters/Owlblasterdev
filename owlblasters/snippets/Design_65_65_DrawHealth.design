@@ -5,22 +5,22 @@
             <group eventID="-1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="-1" id="-1">
-                        <if comment="false" x="37" y="88">
+                        <if comment="false" x="37" y="83">
                             <group eventID="-1" id="-1">
-                                <set-val-65-1 comment="false" x="48" y="118">
+                                <set-val-65-1 comment="false" x="48" y="113">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-65-1>
-                                <set-color comment="false" x="48" y="143">
+                                <set-color comment="false" x="48" y="138">
                                     <color b="240" g="240" id="0" r="240"/>
                                 </set-color>
-                                <dolater comment="false" x="48" y="170">
+                                <dolater comment="false" x="48" y="165">
                                     <group eventID="-1" id="-1">
-                                        <set-color comment="false" x="59" y="197">
+                                        <set-color comment="false" x="59" y="192">
                                             <color b="51" g="51" id="0" r="255"/>
                                         </set-color>
-                                        <dolater comment="false" x="59" y="224">
+                                        <dolater comment="false" x="59" y="219">
                                             <group eventID="-1" id="-1">
-                                                <set-val-65-1 comment="false" x="70" y="251">
+                                                <set-val-65-1 comment="false" x="70" y="246">
                                                     <false comment="false" id="0" x="0" y="0"/>
                                                 </set-val-65-1>
                                             </group>
@@ -37,66 +37,35 @@
                             </not>
                         </if>
                     </group>
-                    <lesseq comment="false" id="0" x="0" y="0">
+                    <eq comment="false" id="0" x="0" y="0">
                         <as-number comment="false" id="0" x="0" y="0">
                             <actor-get-prop comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
                                 <int id="1" val="hitPoints"/>
                             </actor-get-prop>
                         </as-number>
-                        <div comment="false" id="1" x="0" y="0">
-                            <as-number comment="false" id="0" x="0" y="0">
-                                <actor-get-prop comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="maxHealth"/>
-                                </actor-get-prop>
-                            </as-number>
-                            <int id="1" val="3"/>
-                        </div>
-                    </lesseq>
+                        <int id="1" val="1"/>
+                    </eq>
                 </if>
-                <else comment="false" x="26" y="324">
-                    <group eventID="-1" id="-1"/>
+                <else comment="false" x="26" y="319">
+                    <group eventID="-1" id="-1">
+                        <set-color comment="false" x="37" y="339">
+                            <color b="0" g="255" id="0" r="0"/>
+                        </set-color>
+                    </group>
                 </else>
-                <set-stroke-color comment="false" x="26" y="376">
-                    <color b="0" g="0" id="0" r="0"/>
-                </set-stroke-color>
-                <set-thickness comment="false" x="26" y="403">
-                    <int id="0" val="2"/>
-                </set-thickness>
-                <set-color comment="false" x="26" y="423">
-                    <color b="0" g="0" id="0" r="255"/>
-                </set-color>
-                <drawfill-rect comment="false" x="26" y="450">
-                    <int id="0" val="1"/>
-                    <int id="1" val="50"/>
-                    <int id="2" val="0"/>
-                    <int id="3" val="30"/>
-                    <int id="4" val="5"/>
-                </drawfill-rect>
-                <set-color comment="false" x="26" y="477">
-                    <color b="0" g="255" id="0" r="0"/>
-                </set-color>
-                <drawfill-rect comment="false" x="26" y="504">
+                <drawfill-rect comment="false" x="26" y="378">
                     <int id="0" val="1"/>
                     <int id="1" val="50"/>
                     <int id="2" val="0"/>
                     <times comment="false" id="3" x="0" y="0">
-                        <div comment="false" id="0" x="0" y="0">
-                            <as-number comment="false" id="0" x="0" y="0">
-                                <actor-get-prop comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="hitPoints"/>
-                                </actor-get-prop>
-                            </as-number>
-                            <as-number comment="false" id="1" x="0" y="0">
-                                <actor-get-prop comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="maxHealth"/>
-                                </actor-get-prop>
-                            </as-number>
-                        </div>
-                        <int id="1" val="30"/>
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="hitPoints"/>
+                            </actor-get-prop>
+                        </as-number>
+                        <int id="1" val="15"/>
                     </times>
                     <int id="4" val="5"/>
                 </drawfill-rect>
