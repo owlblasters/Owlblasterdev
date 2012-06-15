@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="30" adsPosition="0" aheight="512" airCert="" airPass="" appName="My Game" appType="3" author="" authorURL="" autoRotate="false" awidth="385" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourname.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="512" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="385">
+<game accelFramerate="30" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.yourname.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
     <folders>
         <group desc="" id="0" name="Actions" type="snippet">
             <r id="1"/>
-            <r id="272"/>
             <r id="18"/>
+            <r id="272"/>
             <r id="23"/>
             <r id="160"/>
             <r id="63"/>
@@ -23,11 +23,11 @@
             <r id="153"/>
             <r id="223"/>
             <r id="185"/>
-            <r id="191"/>
             <r id="217"/>
+            <r id="191"/>
             <r id="188"/>
-            <r id="179"/>
             <r id="24"/>
+            <r id="179"/>
             <r id="214"/>
             <r id="182"/>
             <r id="61"/>
@@ -50,15 +50,15 @@
             <r id="129"/>
             <r id="9"/>
             <r id="192"/>
-            <r id="195"/>
             <r id="14"/>
+            <r id="195"/>
             <r id="134"/>
             <r id="221"/>
             <r id="154"/>
             <r id="156"/>
             <r id="157"/>
-            <r id="158"/>
             <r id="218"/>
+            <r id="158"/>
             <r id="159"/>
             <r id="212"/>
             <r id="27"/>
@@ -72,12 +72,12 @@
             <r id="162"/>
             <r id="227"/>
             <r id="165"/>
-            <r id="164"/>
             <r id="224"/>
+            <r id="164"/>
             <r id="186"/>
             <r id="116"/>
-            <r id="189"/>
             <r id="112"/>
+            <r id="189"/>
             <r id="183"/>
             <r id="180"/>
         </group>
@@ -97,14 +97,14 @@
             <r id="222"/>
             <r id="87"/>
             <r id="184"/>
-            <r id="190"/>
             <r id="216"/>
+            <r id="190"/>
             <r id="219"/>
-            <r id="178"/>
-            <r id="25"/>
             <r id="127"/>
-            <r id="126"/>
+            <r id="25"/>
+            <r id="178"/>
             <r id="213"/>
+            <r id="126"/>
             <r id="210"/>
             <r id="181"/>
         </group>
@@ -129,12 +129,11 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
-        <cgroup g1="4" g2="6"/>
-        <cgroup g1="1" g2="3"/>
-        <cgroup g1="1" g2="0"/>
-        <cgroup g1="6" g2="0"/>
-        <cgroup g1="3" g2="0"/>
         <cgroup g1="5" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="4" g2="6"/>
+        <cgroup g1="0" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -152,26 +151,30 @@
         <cat id="0" name="player stuff"/>
         <cat id="1" name="Sound variables"/>
         <cat id="2" name="Gunshop"/>
+        <cat id="3" name="weaponStats"/>
+        <cat id="4" name="currentLevel"/>
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
     <attributes>
+        <list cid="3" id="15" name="grenadeLauncherStats" save="true" val="list"/>
         <number cid="0" id="2" name="Player_Health" save="true" value="0.0"/>
+        <list cid="3" id="13" name="laserPistolStats" save="true" val="list"/>
         <number cid="0" id="1" name="Credits" save="true" value="0.0"/>
         <number cid="1" id="4" name="BackgroundMscOn" save="true" value="1.0"/>
-        <list cid="0" id="0" name="Player's guns" save="true" val="list">
-            <number order="0" value="2.0"/>
-            <number order="1" value="0.0"/>
-            <number order="2" value="0.0"/>
-            <number order="3" value="0.0"/>
-            <number order="4" value="0.0"/>
-            <number order="5" value="0.0"/>
-            <number order="6" value="0.0"/>
-            <number order="7" value="0.0"/>
-        </list>
         <number cid="2" id="5" name="CreditsNeeded" save="true" value="0.0"/>
+        <number cid="4" id="19" name="gameLevel" save="true" value="11.0"/>
+        <number cid="0" id="17" name="gunDirection" save="true" value="0.0"/>
+        <list cid="3" id="9" name="clawStats" save="true" val="list"/>
+        <list cid="3" id="10" name="revolverStats" save="true" val="list"/>
+        <list cid="3" id="16" name="laserRifleStats" save="true" val="list"/>
+        <list cid="3" id="11" name="shotgunStats" save="true" val="list"/>
+        <list cid="0" id="0" name="Player's guns" save="true" val="list"/>
         <number cid="2" id="7" name="GunListLoc" save="true" value="0.0"/>
+        <list cid="3" id="12" name="pistolStats" save="true" val="list"/>
+        <bool cid="0" id="18" name="curDirIsRight" save="true" value="true"/>
         <number cid="1" id="3" name="SoundEffectsOn" save="true" value="1.0"/>
+        <list cid="3" id="14" name="scytheStats" save="true" val="list"/>
     </attributes>
     <collisions>
         <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
@@ -197,7 +200,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,0,34,35,338,351,352,353,354,355,356,357,358,205,232,233,359,362,364,365,366,407,409,410,413" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,137,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,424,0,34,35,338,351,352,353,354,355,356,357,358,205,232,233,359,362,364,365,366,407,409,410,413,417,418,419,420,421" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
