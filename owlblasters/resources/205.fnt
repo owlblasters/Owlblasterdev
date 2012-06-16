@@ -1,5 +1,5 @@
 #
-#Thu Jun 07 13:46:08 EDT 2012
+#Fri Jun 15 20:25:04 EDT 2012
 monospace=false
 monospace.numerals=false
 style=bold
@@ -15,4 +15,4 @@ shadow.blur=4
 gradient.color=\#ff0066
 stroke.size=2
 antialias=true
-size=50
+size=45

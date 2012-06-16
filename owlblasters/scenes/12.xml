@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="245" extheight="576" extwidth="480" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="512" id="12" name="Options Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="416">
+<scene depth="1" desc="" eventsnippetid="245" extheight="544" extwidth="384" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="480" id="12" name="Options Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="320">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
@@ -12,7 +12,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="true" group="3" id="369" name="varButton 1" sx="1.0" sy="1.0" x="210" y="160" z="0">
+        <actor a="0.0" aid="1" c="true" group="3" id="369" name="varButton 1" sx="1.0" sy="1.0" x="189" y="164" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -24,7 +24,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="2" c="true" group="3" id="369" name="varButton 2" sx="1.0" sy="1.0" x="90" y="160" z="0">
+        <actor a="0.0" aid="2" c="true" group="3" id="369" name="varButton 2" sx="1.0" sy="1.0" x="33" y="154" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -36,7 +36,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="3" c="true" group="3" id="369" name="varButton 3" sx="1.0" sy="1.0" x="210" y="300" z="0">
+        <actor a="0.0" aid="3" c="true" group="3" id="369" name="varButton 3" sx="1.0" sy="1.0" x="189" y="250" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -48,7 +48,7 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="4" c="true" group="3" id="369" name="varButton 4" sx="1.0" sy="1.0" x="90" y="300" z="0">
+        <actor a="0.0" aid="4" c="true" group="3" id="369" name="varButton 4" sx="1.0" sy="1.0" x="41" y="253" z="0">
             <snippets>
                 <s enabled="true" id="247">
                     <prop id="1" list="0" val="false"/>
@@ -61,7 +61,7 @@
             </snippets>
         </actor>
         <actor a="0.0" aid="5" c="false" group="3" id="234" name="ShotGun Icon 5" sx="1.0" sy="1.0" x="594" y="72" z="0"/>
-        <actor a="0.0" aid="6" c="true" group="3" id="202" name="SceneButton 6" sx="0.75" sy="0.75" x="145" y="400" z="0">
+        <actor a="0.0" aid="6" c="true" group="3" id="202" name="SceneButton 6" sx="0.75" sy="0.75" x="111" y="340" z="0">
             <snippets>
                 <s enabled="true" id="117">
                     <prop id="1" list="0" val="false"/>

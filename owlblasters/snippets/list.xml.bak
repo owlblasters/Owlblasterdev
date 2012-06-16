@@ -405,9 +405,7 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_60" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="38" language="" name="ActorEvents_60" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_37_37_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="37" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>

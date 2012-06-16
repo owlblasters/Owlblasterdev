@@ -73,7 +73,7 @@
                                 <get-game-val-12 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="0"/>
                             </get-item-number>
-                            <int id="1" val="350"/>
+                            <int id="1" val="300"/>
                             <int id="2" val="125"/>
                         </draw-text>
                         <draw-text comment="false" x="29" y="432">
@@ -81,7 +81,7 @@
                                 <get-game-val-12 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </get-item-number>
-                            <int id="1" val="350"/>
+                            <int id="1" val="300"/>
                             <int id="2" val="150"/>
                         </draw-text>
                         <draw-text comment="false" x="29" y="462">
@@ -89,7 +89,7 @@
                                 <get-game-val-12 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="2"/>
                             </get-item-number>
-                            <int id="1" val="350"/>
+                            <int id="1" val="300"/>
                             <int id="2" val="175"/>
                         </draw-text>
                         <repeat comment="false" x="29" y="492">
@@ -103,11 +103,11 @@
                                         <int id="0" val="120"/>
                                         <times comment="false" id="1" x="0" y="0">
                                             <loopindex comment="false" id="0" x="0" y="0"/>
-                                            <int id="1" val="11"/>
+                                            <int id="1" val="6"/>
                                         </times>
                                     </plus>
                                     <int id="2" val="130"/>
-                                    <int id="3" val="10"/>
+                                    <int id="3" val="5"/>
                                     <int id="4" val="20"/>
                                 </drawfill-rect>
                             </group>
@@ -127,11 +127,11 @@
                                         <int id="0" val="120"/>
                                         <times comment="false" id="1" x="0" y="0">
                                             <loopindex comment="false" id="0" x="0" y="0"/>
-                                            <int id="1" val="11"/>
+                                            <int id="1" val="6"/>
                                         </times>
                                     </plus>
                                     <int id="2" val="155"/>
-                                    <int id="3" val="10"/>
+                                    <int id="3" val="5"/>
                                     <int id="4" val="20"/>
                                 </drawfill-rect>
                             </group>
@@ -151,11 +151,11 @@
                                         <int id="0" val="120"/>
                                         <times comment="false" id="1" x="0" y="0">
                                             <loopindex comment="false" id="0" x="0" y="0"/>
-                                            <int id="1" val="11"/>
+                                            <int id="1" val="6"/>
                                         </times>
                                     </plus>
                                     <int id="2" val="180"/>
-                                    <int id="3" val="10"/>
+                                    <int id="3" val="5"/>
                                     <int id="4" val="20"/>
                                 </drawfill-rect>
                             </group>
@@ -217,7 +217,7 @@
                                 <get-game-val-9 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="0"/>
                             </get-item-number>
-                            <int id="1" val="350"/>
+                            <int id="1" val="300"/>
                             <int id="2" val="125"/>
                         </draw-text>
                         <draw-text comment="false" x="29" y="1078">
@@ -225,7 +225,7 @@
                                 <get-game-val-9 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </get-item-number>
-                            <int id="1" val="350"/>
+                            <int id="1" val="300"/>
                             <int id="2" val="150"/>
                         </draw-text>
                         <draw-text comment="false" x="29" y="1108">
@@ -233,7 +233,7 @@
                                 <get-game-val-9 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="2"/>
                             </get-item-number>
-                            <int id="1" val="350"/>
+                            <int id="1" val="300"/>
                             <int id="2" val="175"/>
                         </draw-text>
                         <repeat comment="false" x="29" y="1138">

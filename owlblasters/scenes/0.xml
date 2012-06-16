@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="280" extheight="576" extwidth="448" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="20.0" height="512" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="384">
+<scene depth="1" desc="" eventsnippetid="280" extheight="544" extwidth="384" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="20.0" height="480" id="0" name="First Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="320">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
@@ -12,13 +12,9 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="42" c="false" group="3" id="372" name="Right Tree Side 42" sx="1.0" sy="1.0" x="352" y="-4" z="0"/>
-        <actor a="0.0" aid="43" c="false" group="3" id="372" name="Right Tree Side 43" sx="1.0" sy="1.0" x="351" y="229" z="0"/>
         <actor a="0.0" aid="40" c="false" group="3" id="160" name="Left Tree Side 40" sx="1.0" sy="1.0" x="-101" y="-4" z="0"/>
         <actor a="0.0" aid="41" c="false" group="3" id="160" name="Left Tree Side 41" sx="1.0" sy="1.0" x="-102" y="228" z="0"/>
-        <actor a="0.0" aid="46" c="false" group="3" id="160" name="Left Tree Side 46" sx="1.0" sy="1.0" x="-104" y="462" z="0"/>
         <actor a="0.0" aid="47" c="false" group="0" id="32" name="Jumper 47" sx="1.0" sy="1.0" x="126" y="0" z="0"/>
-        <actor a="0.0" aid="45" c="false" group="3" id="372" name="Right Tree Side 45" sx="1.0" sy="1.0" x="350" y="462" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="114">
