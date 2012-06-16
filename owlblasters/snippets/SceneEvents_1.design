@@ -112,7 +112,7 @@
                         <insert-list comment="false" x="37" y="537">
                             <get-game-val-12 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="1"/>
+                            <int id="2" val="3"/>
                         </insert-list>
                         <insert-list comment="false" x="37" y="562">
                             <get-game-val-12 comment="false" id="0" x="0" y="0"/>
@@ -244,9 +244,9 @@
         </init>
     </group>
     <group eventID="2" id="-1">
-        <get-game-val-15 comment="false" x="619" y="322"/>
-        <get-game-val-15 comment="false" x="603" y="388"/>
         <get-game-val-15 comment="false" x="598" y="369"/>
+        <get-game-val-15 comment="false" x="603" y="388"/>
+        <get-game-val-15 comment="false" x="619" y="322"/>
     </group>
     <group eventID="3" id="0">
         <event-mouse-press-release comment="false" x="15" y="15">
