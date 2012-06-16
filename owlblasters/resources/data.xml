@@ -140,7 +140,6 @@
         <blank name="Attribute" order="2" type="TEXT"/>
         <blank name="Index" order="3" type="NUMBER"/>
     </custom-block>
-    <font alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz" atlasID="0" desc="Angry Birds font" height="39" id="366" name="Angry Birds" offsets="0|0|0|,22|0|22,46|0|46,66|0|66,91|0|91,115|0|115,138|0|138,165|0|165,189|0|189,203|0|203,228|0|228,252|0|252,270|0|270,297|0|297,320|0|320,348|0|348,371|0|371,399|0|399,423|0|423,443|0|443,464|0|464,489|0|489,512|0|512,544|0|544,577|0|577,605|0|605,628|0|628,650|0|650,669|0|669,693|0|693,710|0|710,731|0|731,745|0|745,768|0|768,792|0|792,812|0|812,837|0|837,861|0|861,885|0|885,910|0|910,934|0|934,948|0|948,973|0|973,997|0|997,1016|0|1016,1047|0|1047,1072|0|1072,1100|0|1100,1124|0|1124,1152|0|1152,1175|0|1175,1196|0|1196,1218|0|1218,1242|0|1242,1266|0|1266,1299|0|1299,1331|0|1331,1360|0|1360" oid="-1" rowHeight="39" shared="false"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="64" fixedrot="true" fric="0.5" gid="6" id="92" ignoreg="false" inertia="1.5" ldamp="0.501" lw="false" mass="1.0" name="Angry Blue Owl" oid="-1" pausable="true" rest="0.1" shared="false" sprite="93" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="65">
@@ -178,11 +177,11 @@
                 <prop id="13" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="224">
-                <prop id="1" list="0" val="1"/>
+            <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="15">
+            <s enabled="true" id="224">
+                <prop id="1" list="0" val="1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -213,9 +212,6 @@
                 <prop id="13" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="226">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="62">
                 <prop id="1" list="0" val="32"/>
                 <prop id="2" list="0" val="32"/>
@@ -230,6 +226,9 @@
                 <prop id="11" list="0" val="10.0"/>
                 <prop id="12" list="0" val="false"/>
                 <prop id="13" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="226">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="224">
@@ -547,8 +546,8 @@
                 <prop id="10" list="0" val="Animation 0"/>
                 <prop id="11" list="0" val="0.0"/>
                 <prop id="12" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="Animation 1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
@@ -575,10 +574,10 @@
         </snippets>
     </actor>
     <music desc="" id="411" loop="true" name="Click" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <background atlasID="0" desc="" durations="100" dx="-2.0" dy="-0.0" height="384" id="351" name="Cloud 2a" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <background atlasID="0" desc="" durations="100" dx="-2.0" dy="-0.0" height="384" id="352" name="Cloud 3a" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <background atlasID="0" desc="" durations="100" dx="-10.0" dy="-0.0" height="384" id="353" name="Cloud 4a" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-20.0" height="1024" id="35" name="Cloudy Sky" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="8" desc="" durations="100" dx="-2.0" dy="-0.0" height="384" id="351" name="Cloud 2a" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <background atlasID="7" desc="" durations="100" dx="-2.0" dy="-0.0" height="384" id="352" name="Cloud 3a" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <background atlasID="6" desc="" durations="100" dx="-10.0" dy="-0.0" height="384" id="353" name="Cloud 4a" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <background atlasID="5" desc="" durations="100" dx="-0.0" dy="-20.0" height="1024" id="35" name="Cloudy Sky" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="80" id="417" name="Comica BD" offsets="0|0|0|,6|0|6,14|0|14,25|0|25,41|0|41,55|0|55,68|0|68,85|0|85,91|0|91,102|0|102,112|0|112,126|0|126,139|0|139,146|0|146,156|0|156,163|0|163,176|0|176,201|0|201,219|0|219,241|0|241,260|0|260,282|0|282,304|0|304,324|0|324,345|0|345,365|0|365,386|0|386,393|0|393,400|0|400,413|0|413,427|0|427,441|0|441,457|0|457,478|0|478,501|0|501,523|0|523,540|0|540,562|0|562,581|0|581,601|0|601,624|0|624,645|0|645,656|0|656,674|0|674,696|0|696,713|0|713,739|0|739,758|0|758,781|0|781,801|0|801,827|0|827,847|0|847,865|0|865,886|0|886,909|0|909,928|0|928,957|0|957,982|0|982,1002|0|1002,1024|0|1024,1036|0|1036,1050|0|1050,1062|0|1062,1073|0|1073,1093|0|1093,1101|0|1101,1115|0|1115,1132|0|1132,1147|0|1147,1165|0|1165,1181|0|1181,1195|0|1195,1209|0|1209,1227|0|1227,1236|0|1236,1249|0|1249,1267|0|1267,1276|0|1276,1298|0|1298,1314|0|1314,1329|0|1329,1346|0|1346,1362|0|1362,1377|0|1377,1390|0|1390,1404|0|1404,1420|0|1420,1432|0|1432,1452|0|1452,1469|0|1469,1485|0|1485,1502|0|1502,1515|0|1515,1523|0|1523,1535|0|1535,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1550|0|1550,1556|0|1556,1564|0|1564,1578|0|1578,1592|0|1592,1606|0|1606,1620|0|1620,1624|0|1624,1638|0|1638,1648|0|1648,1664|0|1664,1678|0|1678,1702|0|1702,1716|0|1716,1716|0|1716,1735|0|1735,1735|0|1735,1749|0|1749,1763|0|1763,1777|0|1777,1791|0|1791,1801|0|1801,1815|0|1815,1829|0|1829,1837|0|1837,1843|0|1843,1857|0|1857,1871|0|1871,1895|0|1895,1909|0|1909,1923|0|1923,1937|0|1937,1953|0|1953,1976|0|1976,1999|0|1999,2022|0|2022,2045|0|2045,2068|0|2068,2091|0|2091,2105|0|2105,2123|0|2123,2143|0|2143,2163|0|2163,2182|0|2182,2201|0|2201,2216|0|2216,2231|0|2231,2244|0|2244,2256|0|2256,2270|0|2270,2289|0|2289,2312|0|2312,2335|0|2335,2358|0|2358,2381|0|2381,2404|0|2404,2414|0|2414,2428|0|2428,2451|0|2451,2474|0|2474,2497|0|2497,2520|0|2520,2540|0|2540,2554|0|2554,2568|0|2568,2582|0|2582,2598|0|2598,2615|0|2615,2629|0|2629,2643|0|2643,2657|0|2657,2671|0|2671,2686|0|2686,2702|0|2702,2718|0|2718,2735|0|2735,2751|0|2751,2760|0|2760,2772|0|2772,2785|0|2785,2795|0|2795,2809|0|2809,2826|0|2826,2841|0|2841,2856|0|2856,0|40|2871,15|40|2886,30|40|2901,42|40|2913,56|40|2927,72|40|2943,88|40|2959,104|40|2975,120|40|2991,136|40|3007,150|40|3021,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,166|40|3037,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,175|40|3046,189|40|3060,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,203|40|3074,217|40|3088,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,231|40|3102,245|40|3116,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,259|40|3130,279|40|3150,279|40|3150,279|40|3150,279|40|3150,279|40|3150,301|40|3172" oid="-1" rowHeight="40" shared="false"/>
     <custom-block blocktag="custom-201" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;damage&quot;, ~);" desc="Inflicts the given amount of damage." global="false" gui="inflict %1 damage on %0" id="201" message="damage" name="damage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
@@ -742,7 +741,6 @@
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="236" id="362" name="Firey" offsets="0|0|0|,11|0|11,20|0|20,38|0|38,64|0|64,87|0|87,126|0|126,163|0|163,173|0|173,190|0|190,207|0|207,228|0|228,257|0|257,268|0|268,285|0|285,295|0|295,312|0|312,336|0|336,352|0|352,376|0|376,398|0|398,423|0|423,445|0|445,468|0|468,492|0|492,514|0|514,538|0|538,548|0|548,559|0|559,588|0|588,617|0|617,646|0|646,667|0|667,710|0|710,746|0|746,778|0|778,810|0|810,845|0|845,876|0|876,904|0|904,939|0|939,975|0|975,992|0|992,1014|0|1014,1051|0|1051,1082|0|1082,1125|0|1125,1162|0|1162,1196|0|1196,1224|0|1224,1258|0|1258,1293|0|1293,1318|0|1318,1348|0|1348,1384|0|1384,1420|0|1420,1466|0|1466,1502|0|1502,1538|0|1538,1569|0|1569,1584|0|1584,1601|0|1601,1616|0|1616,1640|0|1640,1668|0|1668,1680|0|1680,1703|0|1703,1729|0|1729,1751|0|1751,1777|0|1777,1799|0|1799,1822|0|1822,1847|0|1847,1874|0|1874,1889|0|1889,1906|0|1906,1933|0|1933,1948|0|1948,1987|0|1987,2014|0|2014,2038|0|2038,2064|0|2064,2090|0|2090,2110|0|2110,2128|0|2128,2145|0|2145,2172|0|2172,2198|0|2198,2235|0|2235,2261|0|2261,2288|0|2288,2312|0|2312,2329|0|2329,2336|0|2336,2353|0|2353,2381|0|2381,2404|0|2404,2427|0|2427,2450|0|2450,2461|0|2461,2486|0|2486,2505|0|2505,2532|0|2532,2553|0|2553,2574|0|2574,2592|0|2592,2619|0|2619,2643|0|2643,2657|0|2657,2684|0|2684,2707|0|2707,2730|0|2730,2753|0|2753,2776|0|2776,2786|0|2786,2797|0|2797,2817|0|2817,2838|0|2838,2861|0|2861,0|59|2879,25|59|2904,42|59|2921,69|59|2948,87|59|2966,101|59|2980,128|59|3007,151|59|3030,174|59|3053,201|59|3080,212|59|3091,221|59|3100,243|59|3122,268|59|3147,294|59|3173,321|59|3200,328|59|3207,349|59|3228,366|59|3245,402|59|3281,420|59|3299,444|59|3323,473|59|3352,490|59|3369,526|59|3405,554|59|3433,572|59|3451,600|59|3479,617|59|3496,632|59|3511,643|59|3522,668|59|3547,694|59|3573,703|59|3582,714|59|3593,726|59|3605,744|59|3623,768|59|3647,802|59|3681,836|59|3715,873|59|3752,894|59|3773,930|59|3809,966|59|3845,1002|59|3881,1038|59|3917,1074|59|3953,1110|59|3989,1154|59|4033,1186|59|4065,1217|59|4096,1248|59|4127,1279|59|4158,1310|59|4189,1327|59|4206,1344|59|4223,1362|59|4241,1380|59|4259,1415|59|4294,1452|59|4331,1486|59|4365,1520|59|4399,1554|59|4433,1588|59|4467,1622|59|4501,1645|59|4524,1679|59|4558,1715|59|4594,1751|59|4630,1787|59|4666,1823|59|4702,1859|59|4738,1887|59|4766,1912|59|4791,1935|59|4814,1958|59|4837,1981|59|4860,2004|59|4883,2027|59|4906,2050|59|4929,2082|59|4961,2104|59|4983,2126|59|5005,2148|59|5027,2170|59|5049,2192|59|5071,2207|59|5086,2222|59|5101,2239|59|5118,2256|59|5135,2280|59|5159,2307|59|5186,2331|59|5210,2355|59|5234,2379|59|5258,2403|59|5282,2427|59|5306,2456|59|5335,2481|59|5360,2508|59|5387,2535|59|5414,2562|59|5441,2589|59|5468,2616|59|5495,2642|59|5521,2669|59|5548,2705|59|5584,2728|59|5607,2764|59|5643,2787|59|5666,2823|59|5702,2846|59|5725,0|118|5757,22|118|5779,54|118|5811,76|118|5833,108|118|5865,130|118|5887,162|118|5919,184|118|5941,219|118|5976,251|118|6008,286|118|6043,312|118|6069,343|118|6100,365|118|6122,396|118|6153,418|118|6175,449|118|6206,471|118|6228,502|118|6259,524|118|6281,555|118|6312,577|118|6334,612|118|6369,637|118|6394,672|118|6429,697|118|6454,732|118|6489,757|118|6514,792|118|6549,817|118|6574,853|118|6610,880|118|6637,916|118|6673,943|118|6700,962|118|6719,981|118|6738,1000|118|6757,1019|118|6776,1036|118|6793,1053|118|6810,1070|118|6827,1085|118|6842,1102|118|6859,1117|118|6874,1153|118|6910,1178|118|6935,1200|118|6957,1221|118|6978,1258|118|7015,1285|118|7042,1312|118|7069,1343|118|7100,1358|118|7115,1389|118|7146,1404|118|7161,1435|118|7192,1456|118|7213,1487|118|7244,1506|118|7263,1537|118|7294,1554|118|7311,1591|118|7348,1618|118|7375,1655|118|7412,1682|118|7439,1719|118|7476,1746|118|7503,1777|118|7534,1811|118|7568,1835|118|7592,1869|118|7626,1893|118|7650,1927|118|7684,1951|118|7708,1985|118|7742,2009|118|7766,2051|118|7808,2085|118|7842,2120|118|7877,2140|118|7897,2175|118|7932,2195|118|7952,2230|118|7987,2250|118|8007,2275|118|8032,2293|118|8050,2318|118|8075,2336|118|8093,2361|118|8118,2379|118|8136,2404|118|8161,2422|118|8179,2452|118|8209,2469|118|8226,2499|118|8256,2522|118|8279,2552|118|8309,2569|118|8326,2605|118|8362,2632|118|8389,2668|118|8425,2695|118|8452,2731|118|8488,2758|118|8515,2794|118|8551,2821|118|8578,0|177|8614,27|177|8641,63|177|8677,90|177|8704,136|177|8750,173|177|8787,209|177|8823,236|177|8850,272|177|8886,303|177|8917,327|177|8941,358|177|8972,382|177|8996,413|177|9027,437|177|9051" oid="-1" rowHeight="59" shared="false"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-100.0" height="220" id="34" name="First Background" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="461" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-144" blocktype="ACTION" code="~.say(&quot;Flicker On Damage&quot;, &quot;Flicker&quot;);" desc="" global="false" gui="Flicker Image for %0" id="144" message="Flicker" name="Flicker" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -826,7 +824,7 @@
     </custom-block>
     <custom-block blocktag="custom-39" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetXOffset&quot;)))" desc="" global="false" gui="Get Score Drawing X Offset" id="39" message="GetXOffset" name="GetXOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
     <custom-block blocktag="custom-40" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetYOffset&quot;)))" desc="" global="false" gui="Get Score Drawing Y Offset" id="40" message="GetYOffset" name="GetYOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
-    <background atlasID="0" desc="Gives a doodle-like feel to a scene." durations="100" dx="5.0" dy="5.0" height="796" id="354" name="Graph Paper" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="2" desc="Gives a doodle-like feel to a scene." durations="100" dx="5.0" dy="5.0" height="796" id="354" name="Graph Paper" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="232" fixedrot="false" fric="0.2" gid="3" id="336" ignoreg="false" inertia="1.0" ldamp="0.0" lw="true" mass="1.0" name="Gun" oid="-1" pausable="true" rest="0.0" shared="false" sprite="337" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="282">
@@ -839,8 +837,8 @@
                 <prop id="10" list="0" val="Animation 0"/>
                 <prop id="11" list="0" val="20"/>
                 <prop id="12" list="0" val="30"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="Animation 1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="211">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -913,18 +911,6 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="amount" order="1" type="NUMBER"/>
     </custom-block>
-    <sprite atlasID="0" default="0" desc="" height="18" id="138" name="Health Bar" shared="false" width="108">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="0" loop="true" name="0" numframes="1" originx="54" originy="9" width="108"/>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="1" loop="true" name="1" numframes="1" originx="54" originy="9" width="108"/>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="2" loop="true" name="2" numframes="1" originx="54" originy="9" width="108"/>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="3" loop="true" name="3" numframes="1" originx="54" originy="9" width="108"/>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="4" loop="true" name="4" numframes="1" originx="54" originy="9" width="108"/>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="5" loop="true" name="5" numframes="1" originx="54" originy="9" width="108"/>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="18" id="6" loop="true" name="6" numframes="1" originx="54" originy="9" width="108"/>
-    </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="91" fixedrot="true" fric="0.2" gid="3" id="137" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Health Bar" oid="-1" pausable="true" rest="0.0" shared="false" sprite="138" static="false" touchable="true">
-        <snippets/>
-    </actor>
     <custom-block blocktag="custom-143" blocktype="ACTION" code="~.say(&quot;Lives Manager&quot;, &quot;IncrementLives&quot;, ~);" desc="" global="false" gui="Add %1 Lives to %0" id="143" message="IncrementLives" name="IncrementLives" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Lives" order="1" type="NUMBER"/>
@@ -1005,8 +991,8 @@
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
-                <prop id="15" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="false"/>
             </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -1015,14 +1001,14 @@
     </actor>
     <music desc="" id="57" loop="true" name="Jump" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="1" desc="" height="64" id="33" name="Jumper" shared="false" width="124">
-        <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
+        <anim across="4" atlasID="0" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,41,16,73,16,73,64,41,64" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
-            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
+            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="3" loop="true" name="walk-r" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -1036,6 +1022,10 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="16" fixedrot="true" fric="0.5" gid="0" id="32" ignoreg="true" inertia="0.01" ldamp="0.499" lw="false" mass="5.0" name="Jumper" oid="19264" pausable="true" rest="0.1" shared="true" sprite="33" static="false" touchable="true">
         <snippets>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="20">
                 <prop id="1" list="0" val="10000000"/>
                 <prop id="2" list="0" val="10000000"/>
@@ -1065,10 +1055,6 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0"/>
             </s>
-            <s enabled="true" id="65">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="112">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="1"/>
@@ -1084,11 +1070,7 @@
                 <prop id="13" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="283">
-                <prop id="1" list="0" val=""/>
-                <prop id="2" list="0" val="236"/>
-                <prop id="3" list="0" val=""/>
-                <prop id="4" list="0" val="0"/>
+            <s enabled="true" id="93">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="42">
@@ -1104,10 +1086,14 @@
                 <prop id="41" list="0" val="idle-l"/>
                 <prop id="46" list="0" val="false"/>
                 <prop id="44" list="0" val="jump-r"/>
-                <prop id="45" list="0" val="true"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="45" list="0" val="true"/>
             </s>
-            <s enabled="true" id="93">
+            <s enabled="true" id="283">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="236"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="281">
@@ -1201,12 +1187,11 @@
     <custom-block blocktag="custom-24" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeVulnerable&quot;);" desc="" global="false" gui="make %0 not invincible" id="24" message="makeVulnerable" name="makeVulnerable" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="0" name="Mario Forest" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-17" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;MaxWalkSpeed&quot;, ~);" desc="" global="false" gui="For %0 Set Max Walk Speed To %1" id="17" message="MaxWalkSpeed" name="MaxWalkSpeed" oid="-1" return="VOID" shared="false" snippetID="11">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="MaxSpeed" order="1" type="NUMBER"/>
     </custom-block>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="10.0" height="128" id="338" name="Metalic" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="128" xpf="1.0" ypf="1.0"/>
+    <background atlasID="1" desc="" durations="100" dx="-0.0" dy="10.0" height="128" id="338" name="Metalic" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="128" xpf="1.0" ypf="1.0"/>
     <music desc="A sound for when you collect a minor item, like a coin.&lt;br&gt;This was created with SFXR." id="228" loop="true" name="Minor Item Collected" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-180" blocktype="NORMAL" code="Number((~.say(&quot;Damage Type Modifier&quot;, &quot;ModifyDamage&quot;, ~,~)))" desc="Modify the received damage of a specific type for the actor." global="false" gui="Modify damage %1 of type %2 using %0 resistance" id="180" message="ModifyDamage" name="ModifyDamage" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
@@ -1238,7 +1223,6 @@
         <blank name="Status to Increase" order="1" type="TEXT"/>
         <blank name="Bonus" order="2" type="NUMBER"/>
     </custom-block>
-    <background atlasID="0" desc="" durations="100,100,100,100,100,100,100,100,100,100,100,100," dx="-0.0" dy="-5.0" height="400" id="355" name="Nyan" numframes="12" oid="-1" repeats="true" resized="false" shared="false" width="400" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="257" fixedrot="false" fric="0.2" gid="3" id="374" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Option Button" oid="-1" pausable="true" rest="0.0" shared="false" sprite="375" static="false" touchable="true">
         <snippets/>
     </actor>
@@ -1549,7 +1533,7 @@
             </s>
         </snippets>
     </actor>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="475" id="356" name="sonic b g 5" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="650" xpf="1.0" ypf="1.0"/>
+    <background atlasID="3" desc="" durations="100" dx="-0.0" dy="-0.0" height="475" id="356" name="sonic b g 5" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="650" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-179" blocktype="ACTION" code="scripts.Design_116_116_Energy.SpendEnergy(~,~);" desc="Spend energy of the given actor." global="true" gui="Use %1 energy for %0" id="179" message="SpendEnergy" name="SpendEnergy" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="EnergyActor" order="0" type="ACTOR"/>
         <blank name="EnergyAmmount" order="1" type="NUMBER"/>
@@ -1563,7 +1547,7 @@
         <blank name="EnergyAmmount" order="1" type="NUMBER"/>
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="26" id="410" name="Square" offsets="0|0|0|,6|0|6,12|0|12,20|0|20,34|0|34,48|0|48,67|0|67,81|0|81,86|0|86,93|0|93,100|0|100,107|0|107,118|0|118,124|0|124,133|0|133,139|0|139,151|0|151,165|0|165,171|0|171,185|0|185,199|0|199,213|0|213,227|0|227,241|0|241,255|0|255,269|0|269,283|0|283,289|0|289,295|0|295,306|0|306,317|0|317,328|0|328,342|0|342,356|0|356,370|0|370,384|0|384,398|0|398,412|0|412,426|0|426,440|0|440,454|0|454,468|0|468,474|0|474,488|0|488,502|0|502,516|0|516,532|0|532,546|0|546,560|0|560,574|0|574,588|0|588,602|0|602,616|0|616,630|0|630,644|0|644,658|0|658,677|0|677,691|0|691,705|0|705,719|0|719,726|0|726,738|0|738,745|0|745,759|0|759,772|0|772,777|0|777,791|0|791,805|0|805,819|0|819,833|0|833,847|0|847,861|0|861,875|0|875,889|0|889,895|0|895,909|0|909,923|0|923,937|0|937,953|0|953,967|0|967,981|0|981,995|0|995,1009|0|1009,1023|0|1023,1037|0|1037,1051|0|1051,1065|0|1065,1079|0|1079,1098|0|1098,1112|0|1112,1126|0|1126,1140|0|1140,1149|0|1149,1153|0|1153,1162|0|1162,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1173|0|1173,1179|0|1179,1185|0|1185,1199|0|1199,1213|0|1213,1225|0|1225,1239|0|1239,1243|0|1243,1257|0|1257,1268|0|1268,1288|0|1288,1296|0|1296,1306|0|1306,1317|0|1317,1326|0|1326,1345|0|1345,1354|0|1354,1362|0|1362,1373|0|1373,1381|0|1381,1389|0|1389,1394|0|1394,1408|0|1408,1421|0|1421,1427|0|1427,1432|0|1432,1436|0|1436,1444|0|1444,1454|0|1454,1471|0|1471,1489|0|1489,1507|0|1507,1521|0|1521,1535|0|1535,1549|0|1549,1563|0|1563,1577|0|1577,1591|0|1591,1605|0|1605,1628|0|1628,1642|0|1642,1656|0|1656,1670|0|1670,1684|0|1684,1698|0|1698,1704|0|1704,1710|0|1710,1717|0|1717,1728|0|1728,1744|0|1744,1758|0|1758,1772|0|1772,1786|0|1786,1800|0|1800,1814|0|1814,1828|0|1828,1839|0|1839,1855|0|1855,1869|0|1869,1883|0|1883,1897|0|1897,1911|0|1911,1925|0|1925,1939|0|1939,1967|0|1967,1981|0|1981,1995|0|1995,2009|0|2009,2023|0|2023,2037|0|2037,2051|0|2051,2074|0|2074,2088|0|2088,2102|0|2102,2116|0|2116,2130|0|2130,2144|0|2144,2150|0|2150,2156|0|2156,2163|0|2163,2174|0|2174,2190|0|2190,2204|0|2204,2218|0|2218,2232|0|2232,2246|0|2246,2260|0|2260,2274|0|2274,2285|0|2285,2301|0|2301,2315|0|2315,2329|0|2329,2343|0|2343,2357|0|2357,2371|0|2371,2385|0|2385,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399,2399|0|2399" oid="-1" rowHeight="26" shared="false"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="496" id="358" name="Stars" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="705" xpf="1.0" ypf="1.0"/>
+    <background atlasID="4" desc="" durations="100" dx="-0.0" dy="-0.0" height="496" id="358" name="Stars" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="705" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="0" desc="" height="32" id="335" name="Sword" shared="false" width="32">
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" width="32">
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
