@@ -404,8 +404,11 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_60" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="38" language="" name="ActorEvents_60" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="2" desc="" dropdown="" fullname="DMG_1" hidden="false" id="1" name="_DMG1" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_37_37_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="37" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <number default="0.0" desc="Amount of damage to inflct." dropdown="" fullname="Damage Given" hidden="false" id="1" name="damage" order="0"/>
@@ -1472,10 +1475,11 @@
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
         <blocks>
             <receiver blockID="426" id="1"/>
+            <receiver blockID="426" id="2"/>
+            <receiver blockID="427" id="3"/>
         </blocks>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="set the damage Given" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_208_208_InflictsDamage" desc="Allows this actor to damage another actor through a collision." description="Allows this actor to damage another actor through a collision." design="true" drawOrder="0" id="208" language="" name="Inflicts Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">

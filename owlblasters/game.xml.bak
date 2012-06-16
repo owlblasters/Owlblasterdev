@@ -129,12 +129,11 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
-        <cgroup g1="4" g2="6"/>
+        <cgroup g1="0" g2="5"/>
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="0" g2="6"/>
         <cgroup g1="1" g2="3"/>
-        <cgroup g1="1" g2="0"/>
-        <cgroup g1="5" g2="0"/>
-        <cgroup g1="6" g2="0"/>
-        <cgroup g1="3" g2="0"/>
+        <cgroup g1="4" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
