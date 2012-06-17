@@ -39,7 +39,8 @@ float damage;
 
 -(void)load
 {
-	            /* @"Damage is specified by an attribute, which the Health snippet asks for." */
+	            damage = [self asNumber:[mActor getActorValue:@"DMG"]];
+        /* @"Damage is specified by an attribute, which the Health snippet asks for." */
 
 } 
 

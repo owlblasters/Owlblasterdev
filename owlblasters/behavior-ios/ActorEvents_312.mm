@@ -30,6 +30,8 @@
 	@public
 		NSString* tempHolder;
 		
+float _velocitydirection;
+
 }
 @end
 
@@ -37,7 +39,18 @@
 
 -(void)load
 {
-	
+	            _velocitydirection = 90;
+    [self doPeriodically:1000 * .035 task:[self createRunnable:^(Runnable* parent, Script* theScript){
+ActorEvents_312* self = (ActorEvents_312*) theScript;
+        _velocitydirection = (_velocitydirection + 9);
+        [mActor setVelocityAtAngle:_velocitydirection withSpeed:30];
+        if((_velocitydirection >= 270))
+{
+
+}
+
+}]];
+
 } 
 
 
