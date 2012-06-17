@@ -129,11 +129,12 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
-        <cgroup g1="3" g2="0"/>
-        <cgroup g1="6" g2="4"/>
-        <cgroup g1="6" g2="0"/>
         <cgroup g1="5" g2="0"/>
+        <cgroup g1="6" g2="0"/>
+        <cgroup g1="6" g2="4"/>
         <cgroup g1="1" g2="0"/>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="0" g2="3"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -160,7 +161,7 @@
         <list cid="3" id="15" name="grenadeLauncherStats" save="true" val="list"/>
         <number cid="0" id="2" name="Player_Health" save="true" value="0.0"/>
         <list cid="3" id="13" name="laserPistolStats" save="true" val="list"/>
-        <number cid="0" id="1" name="Credits" save="true" value="0.0"/>
+        <number cid="0" id="1" name="Credits" save="true" value="5000.0"/>
         <number cid="1" id="4" name="BackgroundMscOn" save="true" value="1.0"/>
         <number cid="2" id="5" name="CreditsNeeded" save="true" value="0.0"/>
         <number cid="4" id="19" name="gameLevel" save="true" value="11.0"/>
@@ -200,7 +201,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,424,357,205,232,233,359,362,364,365,366,407,409,410,413,417,418,419,420,421,33-0" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,424,357,205,232,233,359,362,364,365,407,409,410,413,417,418,419,420,421,33-0" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="338" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="354" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="356" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

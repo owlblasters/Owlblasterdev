@@ -129,11 +129,12 @@
         <group desc="" id="7" name="broken branches"/>
     </groups>
     <cgroups>
-        <cgroup g1="3" g2="0"/>
-        <cgroup g1="6" g2="4"/>
-        <cgroup g1="6" g2="0"/>
         <cgroup g1="5" g2="0"/>
+        <cgroup g1="6" g2="0"/>
+        <cgroup g1="6" g2="4"/>
         <cgroup g1="1" g2="0"/>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="0" g2="3"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -160,7 +161,7 @@
         <list cid="3" id="15" name="grenadeLauncherStats" save="true" val="list"/>
         <number cid="0" id="2" name="Player_Health" save="true" value="0.0"/>
         <list cid="3" id="13" name="laserPistolStats" save="true" val="list"/>
-        <number cid="0" id="1" name="Credits" save="true" value="0.0"/>
+        <number cid="0" id="1" name="Credits" save="true" value="5000.0"/>
         <number cid="1" id="4" name="BackgroundMscOn" save="true" value="1.0"/>
         <number cid="2" id="5" name="CreditsNeeded" save="true" value="0.0"/>
         <number cid="4" id="19" name="gameLevel" save="true" value="11.0"/>

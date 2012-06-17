@@ -1,2 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="3" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-209-1 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-209-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="9"/>
+                    </plus>
+                </set-val-209-1>
+                <setvel comment="false" x="26" y="70">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-209-1 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="30"/>
+                </setvel>
+                <if comment="false" x="26" y="102">
+                    <group eventID="3" id="-1"/>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-209-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="270"/>
+                    </moreeq>
+                </if>
+            </group>
+            <int id="0" val=".035"/>
+        </event-periodic>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-209-1 comment="false" x="26" y="40">
+                    <int id="0" val="90"/>
+                </set-val-209-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>
