@@ -127,14 +127,15 @@
         <group desc="collides with player only" id="5" name="branch-like objects"/>
         <group desc="" id="6" name="Owls"/>
         <group desc="" id="7" name="broken branches"/>
+        <group desc="collides with nothing" id="8" name="guns"/>
     </groups>
     <cgroups>
-        <cgroup g1="5" g2="0"/>
-        <cgroup g1="6" g2="4"/>
-        <cgroup g1="6" g2="0"/>
         <cgroup g1="1" g2="0"/>
         <cgroup g1="1" g2="3"/>
         <cgroup g1="0" g2="3"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="0" g2="5"/>
+        <cgroup g1="4" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -201,14 +202,14 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,424,205,232,233,359,362,364,365,407,409,410,413,417,418,419,420,421,33-0" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="1" members="338" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="2" members="354" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="3" members="352,353" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="4" members="356,358" name="Atlas 5" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="5" members="35" name="Atlas 6" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="6" members="351,357" name="Atlas 7" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="7" members="294-0,313-0,387-1" name="Atlas 8" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="0" members="32,60,64,92,122,124,127,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,424,205,232,233,359,362,364,365,407,409,410,413,417,418,419,420,421,33-0" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="1" members="338" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="2" members="354" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="3" members="352,353" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="4" members="356,358" name="Atlas 5" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="5" members="35" name="Atlas 6" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="6" members="351,357" name="Atlas 7" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="7" members="294-0,313-0,387-1" name="Atlas 8" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="8" members="" name="Atlas 9" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="9" members="" name="Atlas 10" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="10" members="" name="Atlas 11" pvr="false" resize="0" start="true" target="0"/>

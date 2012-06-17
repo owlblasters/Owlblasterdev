@@ -146,7 +146,7 @@
                     <group eventID="2" id="-1">
                         <if comment="false" x="42" y="577">
                             <group eventID="1" id="-1">
-                                <create-recycled-actor comment="false" x="53" y="620">
+                                <create-actor3 comment="false" x="53" y="620">
                                     <ACTORTYPE eid="312" id="0"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
@@ -163,8 +163,13 @@
                                         <int id="1" val="0"/>
                                     </plus>
                                     <int id="3" val="0"/>
-                                </create-recycled-actor>
-                                <set-game-val-17 comment="false" x="53" y="665">
+                                </create-actor3>
+                                <actor-set-prop comment="false" x="53" y="665">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="dir"/>
+                                    <int id="2" val="-1"/>
+                                </actor-set-prop>
+                                <set-game-val-17 comment="false" x="53" y="692">
                                     <to-degreesradians comment="false" id="0" x="0" y="0">
                                         <int id="0" val="0"/>
                                         <plus comment="false" id="1" x="0" y="0">
@@ -192,9 +197,9 @@
                                 </eq>
                             </or>
                         </if>
-                        <else comment="false" x="42" y="725">
+                        <else comment="false" x="42" y="752">
                             <group eventID="1" id="-1">
-                                <create-recycled-actor comment="false" x="53" y="745">
+                                <create-actor3 comment="false" x="53" y="772">
                                     <ACTORTYPE eid="312" id="0"/>
                                     <get-xy comment="false" id="1" x="0" y="0">
                                         <ACTOR eid="this" id="0"/>
@@ -208,8 +213,13 @@
                                         <int id="1" val="0"/>
                                     </plus>
                                     <int id="3" val="0"/>
-                                </create-recycled-actor>
-                                <set-game-val-17 comment="false" x="53" y="790">
+                                </create-actor3>
+                                <actor-set-prop comment="false" x="53" y="817">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="dir"/>
+                                    <int id="2" val="1"/>
+                                </actor-set-prop>
+                                <set-game-val-17 comment="false" x="53" y="844">
                                     <to-degreesradians comment="false" id="0" x="0" y="0">
                                         <int id="0" val="0"/>
                                         <atan2 comment="false" id="1" x="0" y="0">
@@ -229,10 +239,10 @@
                         </get-item-number>
                     </eq>
                 </else-if>
-                <comment-short comment="false" x="31" y="857">
+                <comment-short comment="false" x="31" y="911">
                     <int id="0" val="check if the weapon is a melee weapon, if it isnt fire the bullet"/>
                 </comment-short>
-                <comment-short comment="false" x="31" y="877">
+                <comment-short comment="false" x="31" y="931">
                     <int id="0" val="This checks if the gun is the claw, if do the claw&amp;#039;s attack"/>
                 </comment-short>
             </group>
@@ -243,6 +253,36 @@
         <comment-long comment="false" x="576" y="-4">
             <int id="0" val=""/>
         </comment-long>
+    </group>
+    <group eventID="2" id="2">
+        <create-recycled-actor comment="false" x="107" y="1026">
+            <ACTORTYPE eid="312" id="0"/>
+            <int id="1" val=""/>
+            <plus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="3"/>
+                </get-xy>
+                <int id="1" val="0"/>
+            </plus>
+            <int id="3" val="0"/>
+        </create-recycled-actor>
+    </group>
+    <group eventID="2" id="4">
+        <actor-set-prop comment="false" x="85" y="1166">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="dir"/>
+            <int id="2" val="1"/>
+        </actor-set-prop>
+        <set-game-val-17 comment="false" x="85" y="1193">
+            <to-degreesradians comment="false" id="0" x="0" y="0">
+                <int id="0" val="0"/>
+                <atan2 comment="false" id="1" x="0" y="0">
+                    <get-val-281-2 comment="false" id="0" x="0" y="0"/>
+                    <get-val-281-1 comment="false" id="1" x="0" y="0"/>
+                </atan2>
+            </to-degreesradians>
+        </set-game-val-17>
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
