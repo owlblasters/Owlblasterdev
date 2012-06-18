@@ -244,9 +244,9 @@
         </init>
     </group>
     <group eventID="2" id="-1">
-        <get-game-val-15 comment="false" x="619" y="322"/>
-        <get-game-val-15 comment="false" x="603" y="388"/>
         <get-game-val-15 comment="false" x="598" y="369"/>
+        <get-game-val-15 comment="false" x="603" y="388"/>
+        <get-game-val-15 comment="false" x="619" y="322"/>
     </group>
     <group eventID="3" id="0">
         <event-mouse-press-release comment="false" x="15" y="15">

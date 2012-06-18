@@ -286,11 +286,11 @@
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
-        <event-device-touch comment="false" x="20" y="16">
+        <event-device-touch comment="false" x="0" y="0">
             <group eventID="2" id="-1">
-                <if comment="false" x="31" y="43">
+                <if comment="false" x="11" y="27">
                     <group eventID="2" id="-1">
-                        <play-sound4 comment="false" x="42" y="73">
+                        <play-sound4 comment="false" x="22" y="57">
                             <int id="0" val="0"/>
                             <SOUND eid="339" id="1"/>
                         </play-sound4>
@@ -300,7 +300,7 @@
                         <int id="1" val="1"/>
                     </eq>
                 </if>
-                <set-val-281-1 comment="false" x="31" y="112">
+                <set-val-281-1 comment="false" x="11" y="96">
                     <minus comment="false" id="0" x="0" y="0">
                         <touch-drag-release comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -312,7 +312,7 @@
                         </get-xy>
                     </minus>
                 </set-val-281-1>
-                <set-val-281-2 comment="false" x="31" y="150">
+                <set-val-281-2 comment="false" x="11" y="134">
                     <minus comment="false" id="0" x="0" y="0">
                         <touch-drag-release comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -324,11 +324,11 @@
                         </get-xy>
                     </minus>
                 </set-val-281-2>
-                <if comment="false" x="31" y="188">
+                <if comment="false" x="11" y="172">
                     <group eventID="2" id="-1">
-                        <if comment="false" x="42" y="228">
+                        <if comment="false" x="22" y="212">
                             <group eventID="1" id="-1">
-                                <create-recycled-actor comment="false" x="53" y="271">
+                                <create-recycled-actor comment="false" x="33" y="255">
                                     <ACTORTYPE eid="60" id="0"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
@@ -346,7 +346,7 @@
                                     </plus>
                                     <int id="3" val="0"/>
                                 </create-recycled-actor>
-                                <set-game-val-17 comment="false" x="53" y="316">
+                                <set-game-val-17 comment="false" x="33" y="300">
                                     <to-degreesradians comment="false" id="0" x="0" y="0">
                                         <int id="0" val="0"/>
                                         <plus comment="false" id="1" x="0" y="0">
@@ -374,9 +374,9 @@
                                 </eq>
                             </or>
                         </if>
-                        <else comment="false" x="42" y="376">
+                        <else comment="false" x="22" y="360">
                             <group eventID="1" id="-1">
-                                <create-recycled-actor comment="false" x="53" y="396">
+                                <create-recycled-actor comment="false" x="33" y="380">
                                     <ACTORTYPE eid="60" id="0"/>
                                     <get-xy comment="false" id="1" x="0" y="0">
                                         <ACTOR eid="this" id="0"/>
@@ -391,7 +391,7 @@
                                     </plus>
                                     <int id="3" val="0"/>
                                 </create-recycled-actor>
-                                <set-game-val-17 comment="false" x="53" y="441">
+                                <set-game-val-17 comment="false" x="33" y="425">
                                     <to-degreesradians comment="false" id="0" x="0" y="0">
                                         <int id="0" val="0"/>
                                         <atan2 comment="false" id="1" x="0" y="0">
@@ -402,7 +402,7 @@
                                 </set-game-val-17>
                             </group>
                         </else>
-                        <push-shove comment="false" x="42" y="496">
+                        <push-shove comment="false" x="22" y="480">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <get-val-281-1 comment="false" id="2" x="0" y="0"/>
@@ -427,11 +427,11 @@
                         </noteq>
                     </and>
                 </if>
-                <else-if comment="false" x="31" y="540">
+                <else-if comment="false" x="11" y="524">
                     <group eventID="2" id="-1">
-                        <if comment="false" x="42" y="575">
+                        <if comment="false" x="22" y="559">
                             <group eventID="1" id="-1">
-                                <create-actor3 comment="false" x="53" y="618">
+                                <create-actor3 comment="false" x="33" y="602">
                                     <ACTORTYPE eid="312" id="0"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
@@ -449,12 +449,12 @@
                                     </plus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <actor-set-prop comment="false" x="53" y="663">
+                                <actor-set-prop comment="false" x="33" y="647">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="dir"/>
                                     <int id="2" val="-1"/>
                                 </actor-set-prop>
-                                <set-game-val-17 comment="false" x="53" y="690">
+                                <set-game-val-17 comment="false" x="33" y="674">
                                     <to-degreesradians comment="false" id="0" x="0" y="0">
                                         <int id="0" val="0"/>
                                         <plus comment="false" id="1" x="0" y="0">
@@ -482,9 +482,9 @@
                                 </eq>
                             </or>
                         </if>
-                        <else comment="false" x="42" y="750">
+                        <else comment="false" x="22" y="734">
                             <group eventID="1" id="-1">
-                                <create-actor3 comment="false" x="53" y="770">
+                                <create-actor3 comment="false" x="33" y="754">
                                     <ACTORTYPE eid="312" id="0"/>
                                     <get-xy comment="false" id="1" x="0" y="0">
                                         <ACTOR eid="this" id="0"/>
@@ -499,12 +499,12 @@
                                     </plus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <actor-set-prop comment="false" x="53" y="815">
+                                <actor-set-prop comment="false" x="33" y="799">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="dir"/>
                                     <int id="2" val="1"/>
                                 </actor-set-prop>
-                                <set-game-val-17 comment="false" x="53" y="842">
+                                <set-game-val-17 comment="false" x="33" y="826">
                                     <to-degreesradians comment="false" id="0" x="0" y="0">
                                         <int id="0" val="0"/>
                                         <atan2 comment="false" id="1" x="0" y="0">
