@@ -44,7 +44,7 @@
                         <if comment="false" x="42" y="230">
                             <group eventID="1" id="-1">
                                 <create-recycled-actor comment="false" x="53" y="273">
-                                    <ACTORTYPE eid="122" id="0"/>
+                                    <ACTORTYPE eid="60" id="0"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
                                             <ACTOR eid="this" id="0"/>
@@ -92,7 +92,7 @@
                         <else comment="false" x="42" y="378">
                             <group eventID="1" id="-1">
                                 <create-recycled-actor comment="false" x="53" y="398">
-                                    <ACTORTYPE eid="122" id="0"/>
+                                    <ACTORTYPE eid="60" id="0"/>
                                     <get-xy comment="false" id="1" x="0" y="0">
                                         <ACTOR eid="this" id="0"/>
                                         <int id="1" val="2"/>
