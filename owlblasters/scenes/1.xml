@@ -3,6 +3,7 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
+    <color-bg blue="255" green="255" red="255"/>
     <backgrounds>
         <ref id="35"/>
     </backgrounds>

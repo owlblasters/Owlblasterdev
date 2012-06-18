@@ -8,12 +8,12 @@
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="Owl"/>
-                    <int id="1" val="120"/>
+                    <int id="1" val="80"/>
                     <int id="2" val="25"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
                     <int id="0" val="Blasters"/>
-                    <int id="1" val="60"/>
+                    <int id="1" val="10"/>
                     <int id="2" val="75"/>
                 </draw-text>
                 <set-font-new comment="false" x="26" y="107">
@@ -21,7 +21,7 @@
                 </set-font-new>
                 <draw-text comment="false" x="26" y="134">
                     <int id="0" val="Beta"/>
-                    <int id="1" val="75"/>
+                    <int id="1" val="40"/>
                     <int id="2" val="150"/>
                 </draw-text>
                 <set-font-new comment="false" x="26" y="154">
@@ -31,7 +31,7 @@
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="37" y="201">
                             <int id="0" val="Tap to Begin"/>
-                            <int id="1" val="80"/>
+                            <int id="1" val="30"/>
                             <int id="2" val="400"/>
                         </draw-text>
                     </group>
@@ -40,7 +40,7 @@
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="37" y="253">
                             <int id="0" val="Click to Begin"/>
-                            <int id="1" val="80"/>
+                            <int id="1" val="30"/>
                             <int id="2" val="400"/>
                         </draw-text>
                     </group>
