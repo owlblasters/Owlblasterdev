@@ -9,7 +9,7 @@
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="Controls"/>
                     <int id="1" val="50"/>
-                    <int id="2" val="50"/>
+                    <int id="2" val="5"/>
                 </draw-text>
                 <set-font-new comment="false" x="26" y="87">
                     <FONT eid="418" id="0"/>
@@ -17,48 +17,58 @@
                 <do-ios comment="false" x="26" y="114">
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="37" y="134">
-                            <int id="0" val="Tap in a Direction To Shoot"/>
+                            <int id="0" val="Tap in a Direction"/>
                             <int id="1" val="5"/>
-                            <int id="2" val="100"/>
+                            <int id="2" val="50"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="154">
-                            <int id="0" val="Tilt to Move"/>
+                            <int id="0" val="To Shoot"/>
                             <int id="1" val="5"/>
-                            <int id="2" val="130"/>
+                            <int id="2" val="80"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="174">
+                            <int id="0" val="Tilt to Move"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="110"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="194">
                             <int id="0" val="Tap on Self to Bomb"/>
                             <int id="1" val="5"/>
-                            <int id="2" val="160"/>
+                            <int id="2" val="140"/>
                         </draw-text>
                     </group>
                 </do-ios>
-                <do-flash comment="false" x="26" y="206">
+                <do-flash comment="false" x="26" y="226">
                     <group eventID="1" id="-1">
-                        <draw-text comment="false" x="37" y="226">
-                            <int id="0" val="Click in a Direction To Shoot"/>
-                            <int id="1" val="5"/>
-                            <int id="2" val="100"/>
-                        </draw-text>
                         <draw-text comment="false" x="37" y="246">
-                            <int id="0" val="Left and Right Arrow"/>
+                            <int id="0" val="Click in a Direction "/>
                             <int id="1" val="5"/>
-                            <int id="2" val="130"/>
+                            <int id="2" val="50"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="266">
-                            <int id="0" val="Keys to Move"/>
+                            <int id="0" val="To Shoot"/>
                             <int id="1" val="5"/>
-                            <int id="2" val="160"/>
+                            <int id="2" val="80"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="286">
-                            <int id="0" val="Click on Self"/>
+                            <int id="0" val="Left and Right Arrow"/>
                             <int id="1" val="5"/>
-                            <int id="2" val="190"/>
+                            <int id="2" val="110"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="306">
+                            <int id="0" val="Keys to Move"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="140"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="326">
+                            <int id="0" val="Click on Self"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="170"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="346">
                             <int id="0" val="to Bomb"/>
                             <int id="1" val="5"/>
-                            <int id="2" val="220"/>
+                            <int id="2" val="200"/>
                         </draw-text>
                     </group>
                 </do-flash>

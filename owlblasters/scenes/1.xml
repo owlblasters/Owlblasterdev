@@ -3,7 +3,6 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <grad-bg b1="255" b2="255" g1="0" g2="255" r1="0" r2="255"/>
     <backgrounds>
         <ref id="35"/>
     </backgrounds>

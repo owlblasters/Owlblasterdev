@@ -568,24 +568,6 @@
             <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_60_60_SimpleMinimap" desc="Displays a simple minimap of the scene and the player." description="Displays a simple minimap of the scene and the player." design="true" drawOrder="0" id="60" language="" name="Simple Minimap" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <actor default="" desc="The actor to display on the minimap (usually the player)." dropdown="" fullname="Player" hidden="false" id="1" name="_Player" order="0"/>
-        <number default="75" desc="The width of the minimap, in pixels." dropdown="" fullname="Width" hidden="false" id="2" name="_Width" order="1"/>
-        <number default="50" desc="The height of the minimap, in pixels." dropdown="" fullname="Height" hidden="false" id="3" name="_Height" order="2"/>
-        <number default="10" desc="The horizontal coordinate of the minimap, relative to the top-left corner of the screen." dropdown="" fullname="X" hidden="false" id="4" name="_X" order="3"/>
-        <number default="10" desc="The vertical coordinate of the minimap, relative to the top-left corner of the screen." dropdown="" fullname="Y" hidden="false" id="5" name="_Y" order="4"/>
-        <number default="50" desc="The opacity of the minimap." dropdown="" fullname="Opacity" hidden="false" id="6" name="_Opacity" order="5"/>
-        <color default="51,51,51,255" desc="The color of the minimap" dropdown="" fullname="Map Color" hidden="false" id="7" name="_MapColor" order="6"/>
-        <color default="255,0,0,255" desc="The color of the player in the minimap." dropdown="" fullname="Player Color" hidden="false" id="8" name="_PlayerColor" order="7"/>
-        <number default="0" desc="HIDDEN" dropdown="" fullname="Player X" hidden="true" id="9" name="_PlayerX" order="8"/>
-        <number default="0" desc="HIDDEN" dropdown="" fullname="Player Y" hidden="true" id="10" name="_PlayerY" order="9"/>
-        <number default="3" desc="The size, in pixels, of circle that represents the player on the minimap." dropdown="" fullname="Player Size" hidden="false" id="11" name="_PlayerSize" order="10"/>
-        <blocks/>
-        <events>
-            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_92" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="64" language="" name="ActorEvents_92" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
@@ -754,18 +736,6 @@
             <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_111_111_DisplayHealth" desc="" description="" design="true" drawOrder="0" id="111" language="" name="Display Health" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <actortype default="" desc="Name the animations according to how much health they represent." dropdown="" fullname="Health Actor Type" hidden="false" id="1" name="_HealthActorType" order="0"/>
-        <actor default="" desc="" dropdown="" fullname="Player" hidden="true" id="3" name="_Player" order="2"/>
-        <actor default="" desc="" dropdown="" fullname="Health Actor" hidden="true" id="4" name="_HealthActor" order="3"/>
-        <number default="0" desc="" dropdown="" fullname="X Position" hidden="false" id="5" name="_XPosition" order="4"/>
-        <number default="0" desc="" dropdown="" fullname="Y Position" hidden="false" id="6" name="_YPosition" order="5"/>
-        <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="108" language="" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events>
@@ -833,18 +803,6 @@
             <event displayName="Touch Actor" enabled="true" id="6" name="event-device-touch-actor" order="6" repeats="true"/>
             <event displayName="Touch Actor" enabled="true" id="7" name="event-device-touch-actor" order="7" repeats="true"/>
             <event displayName="Created" enabled="true" id="8" name="init" order="8" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_116_116_HealthMonitorHUDv2" desc="Displays the health of the chosen actor in the top left corner. Use whenever you want to have the scene &quot;know&quot; the health of a particular actor. Designed to work with the Lives Counter and Lives Detector Behaviors." description="Displays the health of the chosen actor in the top left corner. Use whenever you want to have the scene &quot;know&quot; the health of a particular actor. Designed to work with the Lives Counter and Lives Detector Behaviors." design="true" drawOrder="0" id="116" language="" name="Health Monitor HUD v2" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <number default="0" desc="" dropdown="" fullname="cachedHealth" hidden="true" id="1" name="cachedHealth" order="2"/>
-        <number default="0" desc="" dropdown="" fullname="maxHealth" hidden="true" id="2" name="maxHealth" order="1"/>
-        <actor default="" desc="Pick the actor whose health you want to monitor." dropdown="" fullname="Actor to Monitor" hidden="true" id="3" name="actor" order="0"/>
-        <font default="" desc="The font to use." dropdown="" fullname="Font to Use" hidden="false" id="4" name="FonttoUse" order="3"/>
-        <actortype default="" desc="This should the the ship/Actor you want to the player to control." dropdown="" fullname="Player Actor" hidden="false" id="5" name="_PlayerActor" order="4"/>
-        <blocks/>
-        <events>
-            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_115_115_SwitchSceneonClickorTouch" desc="Switch scene when the user clicks or touches the screen." description="Switch scene when the user clicks or touches the screen." design="true" drawOrder="0" id="115" language="" name="Switch Scene on Click or Touch" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
@@ -1731,10 +1689,6 @@
             <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_404" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="279" language="" name="ActorEvents_404" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_278_278_LabelforiOS" desc="iOS only for now. Attach to a blank actor with a transparent animation." description="iOS only for now. Attach to a blank actor with a transparent animation." design="true" drawOrder="0" id="278" language="" name="Label for iOS" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <font default="" desc="" dropdown="" fullname="Font to Use" hidden="false" id="1" name="_someFont" order="1"/>
         <text default="" desc="" dropdown="" fullname="Initial Text" hidden="false" id="2" name="_someText" order="2"/>
@@ -1846,10 +1800,6 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_424" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="284" language="" name="ActorEvents_424" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_376" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="258" language="" name="ActorEvents_376" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>

@@ -237,9 +237,9 @@
                 <scene-change-new comment="false" x="26" y="42">
                     <SCENE eid="6" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="1"/>
+                    <int id="2" val=".25"/>
                     <int id="3" val="0"/>
-                    <int id="4" val="1"/>
+                    <int id="4" val=".25"/>
                 </scene-change-new>
             </group>
             <int id="0" val="0"/>
@@ -252,9 +252,9 @@
                 <scene-change-new comment="false" x="11" y="50">
                     <SCENE eid="6" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="1"/>
+                    <int id="2" val=".25"/>
                     <int id="3" val="0"/>
-                    <int id="4" val="1"/>
+                    <int id="4" val=".25"/>
                 </scene-change-new>
             </group>
             <int id="0" val="0"/>

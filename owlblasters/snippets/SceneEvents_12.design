@@ -22,6 +22,16 @@
             </group>
         </draw>
     </group>
+    <group eventID="1" id="1">
+        <do-ios comment="false" x="50" y="209">
+            <group eventID="1" id="-1"/>
+        </do-ios>
+    </group>
+    <group eventID="1" id="2">
+        <do-flash comment="false" x="281" y="252">
+            <group eventID="1" id="-1"/>
+        </do-flash>
+    </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">

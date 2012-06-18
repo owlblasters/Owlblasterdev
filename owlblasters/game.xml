@@ -43,7 +43,6 @@
         </group>
         <group desc="" id="3" name="GUI" type="snippet">
             <r id="65"/>
-            <r id="60"/>
         </group>
         <group desc="" id="4" name="Health" type="snippet">
             <r id="141"/>
@@ -75,7 +74,6 @@
             <r id="164"/>
             <r id="224"/>
             <r id="186"/>
-            <r id="116"/>
             <r id="189"/>
             <r id="112"/>
             <r id="183"/>
@@ -114,9 +112,7 @@
         </group>
         <group desc="" id="8" name="Saving" type="snippet"/>
         <group desc="" id="9" name="Stats" type="snippet"/>
-        <group desc="" id="10" name="Drawing" type="snippet">
-            <r id="111"/>
-        </group>
+        <group desc="" id="10" name="Drawing" type="snippet"/>
     </folders>
     <packs>
         <pack desc="" id="0" name="Jetpack" oid="-1" resources="" snippets="19,20"/>
@@ -132,10 +128,10 @@
     <cgroups>
         <cgroup g1="1" g2="0"/>
         <cgroup g1="1" g2="3"/>
-        <cgroup g1="0" g2="3"/>
         <cgroup g1="0" g2="6"/>
+        <cgroup g1="0" g2="3"/>
         <cgroup g1="0" g2="5"/>
-        <cgroup g1="4" g2="6"/>
+        <cgroup g1="6" g2="4"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -202,25 +198,25 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="false" id="0" members="32,60,64,92,122,124,127,160,202,206,219,234,236,238,252,257,262,271,280,293,312,334,336,349,360,369,372,374,376,378,380,382,384,386,388,390,392,394,396,404,424,205,232,233,359,362,364,365,407,409,410,413,417,418,419,420,421,33-0" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="1" members="338" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="2" members="354" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="3" members="352,353" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="4" members="356,358" name="Atlas 5" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="5" members="35" name="Atlas 6" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="6" members="351,357" name="Atlas 7" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="7" members="294-0,313-0,387-1" name="Atlas 8" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="8" members="" name="Atlas 9" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,160,202,206,234,236,238,252,257,262,271,280,293,312,334,336,360,369,372,374,378,380,382,384,386,388,390,392,396,33-0,203-1,370-1,375-1" name="Main Actors for Main Scenes" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="1" members="349,424,93-0,128-1,161-0,207-0,235-0,237-0,239-0,272-0,281-0,335-0,337-0,350-0,373-0,425-0" name="Actors for Fall Scene" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="2" members="35" name="Sky Background 1" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="3" members="394,379-1,383-1,385-1,387-1,389-1,391-1,393-1,395-0,395-1,397-1" name="Gun Shop" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="4" members="219,61-0,253-0,258-0,263-0,294-0,313-0" name="Bullets" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="5" members="232,359,365,420" name="Fonts" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="6" members="407,409,410,413,417,418,421" name="Fonts 2" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="7" members="205,233,362,364,419" name="Fonts 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="8" members="" name="Fonts 4" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="9" members="" name="Atlas 10" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="10" members="" name="Atlas 11" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="11" members="" name="Atlas 12" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="12" members="" name="Atlas 13" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="13" members="" name="Atlas 14" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="14" members="" name="Atlas 15" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="15" members="" name="Atlas 16" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="17" members="" name="Atlas 18" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="16" members="" name="Atlas 17" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="19" members="" name="Atlas 20" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="14" members="351,352" name="Backgrounds 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="15" members="353,357" name="Backgrounds 4" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="17" members="356,358" name="Backgrounds 5" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="16" members="338" name="Backgrounds 6" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="19" members="354" name="Backgrounds 7" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="18" members="" name="Atlas 19" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="21" members="" name="Atlas 22" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="20" members="" name="Atlas 21" pvr="false" resize="0" start="true" target="0"/>
@@ -233,7 +229,7 @@
         <atlas dirty="true" id="29" members="" name="Atlas 30" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="28" members="" name="Atlas 29" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="31" members="" name="Atlas 32" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="30" members="" name="Atlas 31" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="30" members="" name="What" pvr="false" resize="0" start="true" target="0"/>
     </atlases>
     <libraries/>
 </game>

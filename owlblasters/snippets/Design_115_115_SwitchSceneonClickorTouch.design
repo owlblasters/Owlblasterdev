@@ -1,3 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups>    <group eventID="2" id="0">        <event-mouse-press-release comment="false" x="15" y="15">            <group eventID="2" id="-1">                <if comment="false" x="26" y="42">                    <group eventID="1" id="-1">                        <scene-change-new comment="false" x="37" y="80">                            <SCENE eid="var" id="0" vid="2"/>                            <int id="1" val="0"/>                            <get-val-115-5 comment="false" id="2" x="0" y="0"/>                            <int id="3" val="0"/>                            <get-val-115-6 comment="false" id="4" x="0" y="0"/>                        </scene-change-new>                    </group>                    <and comment="false" id="0" x="0" y="0">                        <value comment="false" id="0" x="0" y="0">                            <int id="0" val="2"/>                            <int id="1" val="0"/>                        </value>                        <not comment="false" id="1" x="0" y="0">                            <is-transitioning comment="false" id="0" x="0" y="0"/>                        </not>                    </and>                </if>            </group>            <int id="0" val="0"/>        </event-mouse-press-release>    </group>    <group eventID="2" id="-1"/>    <group eventID="3" id="0">        <event-device-touch comment="false" x="15" y="15">            <group eventID="3" id="-1">                <if comment="false" x="26" y="42">                    <group eventID="1" id="-1">                        <scene-change-new comment="false" x="37" y="80">                            <SCENE eid="var" id="0" vid="2"/>                            <int id="1" val="0"/>                            <get-val-115-5 comment="false" id="2" x="0" y="0"/>                            <int id="3" val="0"/>                            <get-val-115-6 comment="false" id="4" x="0" y="0"/>                        </scene-change-new>                    </group>                    <and comment="false" id="0" x="0" y="0">                        <value comment="false" id="0" x="0" y="0">                            <int id="0" val="2"/>                            <int id="1" val="0"/>                        </value>                        <not comment="false" id="1" x="0" y="0">                            <is-transitioning comment="false" id="0" x="0" y="0"/>                        </not>                    </and>                </if>            </group>            <int id="0" val="0"/>        </event-device-touch>    </group>    <group eventID="3" id="-1"/>
+<groups>
+    <group eventID="2" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <scene-change-new comment="false" x="37" y="80">
+                            <SCENE eid="var" id="0" vid="2"/>
+                            <int id="1" val="0"/>
+                            <get-val-115-5 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                            <get-val-115-6 comment="false" id="4" x="0" y="0"/>
+                        </scene-change-new>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <is-transitioning comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-device-touch comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <scene-change-new comment="false" x="37" y="80">
+                            <SCENE eid="var" id="0" vid="2"/>
+                            <int id="1" val="0"/>
+                            <get-val-115-5 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                            <get-val-115-6 comment="false" id="4" x="0" y="0"/>
+                        </scene-change-new>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <is-transitioning comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-device-touch>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
