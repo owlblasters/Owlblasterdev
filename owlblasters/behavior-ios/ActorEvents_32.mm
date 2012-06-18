@@ -59,26 +59,10 @@ float _yoffset;
 
 -(void)load
 {
-	     
-    [self addTouchPressedListener:^(NSMutableArray* list, Script* theScript){
+	    [self addWhenUpdatedListener:nil func:^(NSMutableArray* list, Script* theScript){
 ActorEvents_32* self = (ActorEvents_32*) theScript;
-        if([self sameAs:[NSNumber numberWithFloat:[[self getGameAttribute:@"SoundEffectsOn"] floatValue]] two:[NSNumber numberWithFloat:1]])
-{
-            [self playSound:!ERROR!];
-}
-
-        if(([self sameAs:[mActor getAnimation] two:@"jump-l"] || [self sameAs:[mActor getAnimation] two:@"idle-l"]))
-{
-            [self createRecycledActor:[self getActorType:60] x:([mActor getXCenter] - 40) y:([mActor getYCenter] + 0) layerConst:FRONT];
-            [[self getLastCreatedActor] applyImpulse:([self getTouchX] - [mActor getXCenter]) dirY:([self getTouchY] - [mActor getYCenter]) withForce:40];
-}
-
-        else
-{
-            [self createRecycledActor:[self getActorType:60] x:[mActor getXCenter] y:([mActor getYCenter] + 0) layerConst:FRONT];
-            [[self getLastCreatedActor] applyImpulse:([self getTouchX] - [mActor getXCenter]) dirY:([self getTouchY] - [mActor getYCenter]) withForce:40];
-}
-
+        [mActor setXVelocity:([Game game].accelX * -70)];
+        [mActor setYVelocity:([Game game].accelX * -70)];
 }];
 
 } 

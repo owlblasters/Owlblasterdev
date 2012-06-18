@@ -89,8 +89,8 @@
                     <prop id="41" list="0" val="idle-l"/>
                     <prop id="46" list="0" val="false"/>
                     <prop id="44" list="0" val="jump-r"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="45" list="0" val="true"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
                 <s enabled="true" id="283">
                     <prop id="1" list="0" val=""/>

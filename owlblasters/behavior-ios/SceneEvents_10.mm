@@ -96,7 +96,7 @@ SceneEvents_10* self = (SceneEvents_10*) theScript;
      
     [self addTouchPressedListener:^(NSMutableArray* list, Script* theScript){
 SceneEvents_10* self = (SceneEvents_10*) theScript;
-        [self switchScene:6 leave:[self createFadeOut:((1000*1)) color:0] enter:[self createFadeIn:((1000*1)) color:0]];
+        [self switchScene:6 leave:[self createFadeOut:((1000*.25)) color:0] enter:[self createFadeIn:((1000*.25)) color:0]];
 }];
 
 } 

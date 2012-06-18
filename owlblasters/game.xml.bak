@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="30" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="MK74PANUP3.com.owlblasterdev.owlblaster" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
+<game accelFramerate="30" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.owlblasterdev.owlblaster" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
     <folders>
         <group desc="" id="0" name="Actions" type="snippet">
             <r id="1"/>
@@ -127,9 +127,10 @@
     </groups>
     <cgroups>
         <cgroup g1="3" g2="0"/>
-        <cgroup g1="4" g2="6"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="6" g2="4"/>
+        <cgroup g1="6" g2="0"/>
         <cgroup g1="0" g2="5"/>
-        <cgroup g1="0" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -154,7 +155,7 @@
     <props/>
     <attributes>
         <list cid="3" id="15" name="grenadeLauncherStats" save="true" val="list"/>
-        <number cid="0" id="20" name="PlayerMoveSpeed" save="true" value="0"/>
+        <number cid="0" id="20" name="PlayerMoveSpeed" save="true" value="0.0"/>
         <number cid="0" id="2" name="Player_Health" save="true" value="0.0"/>
         <list cid="3" id="13" name="laserPistolStats" save="true" val="list"/>
         <number cid="0" id="1" name="Credits" save="true" value="5000.0"/>
@@ -197,25 +198,25 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,160,202,206,234,236,238,252,257,262,271,280,293,312,334,336,360,369,372,374,378,380,382,384,386,388,390,392,396,33-0,203-1,370-1,375-1" name="Main Actors for Main Scenes" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="1" members="349,424,93-0,128-1,161-0,207-0,235-0,237-0,239-0,272-0,281-0,335-0,337-0,350-0,373-0,425-0" name="Actors for Fall Scene" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="2" members="35" name="Sky Background 1" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="3" members="394,379-1,383-1,385-1,387-1,389-1,391-1,393-1,395-0,395-1,397-1" name="Gun Shop" pvr="false" resize="0" start="false" target="0"/>
-        <atlas dirty="true" id="4" members="219,61-0,253-0,258-0,263-0,294-0,313-0" name="Bullets" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="5" members="232,359,365,420" name="Fonts" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="6" members="407,409,410,413,417,418,421" name="Fonts 2" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="7" members="205,233,362,364,419" name="Fonts 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="0" members="32,60,64,92,122,124,127,160,202,206,234,236,238,252,257,262,271,280,293,312,334,336,360,369,372,374,378,380,382,384,386,388,390,392,396,33-0,203-1,370-1,375-1" name="Main Actors for Main Scenes" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="1" members="349,424,93-0,128-1,161-0,207-0,235-0,237-0,239-0,272-0,281-0,335-0,337-0,350-0,373-0,425-0" name="Actors for Fall Scene" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="2" members="35" name="Sky Background 1" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="3" members="394,379-1,383-1,385-1,387-1,389-1,391-1,393-1,395-0,395-1,397-1" name="Gun Shop" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="4" members="219,61-0,253-0,258-0,263-0,294-0,313-0" name="Bullets" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="5" members="" name="Fonts" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="6" members="" name="Fonts 2" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="7" members="" name="Fonts 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="8" members="" name="Fonts 4" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="9" members="" name="Atlas 10" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="10" members="" name="Atlas 11" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="11" members="" name="Atlas 12" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="12" members="" name="Atlas 13" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="13" members="" name="Atlas 14" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="14" members="351,352" name="Backgrounds 3" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="15" members="353,357" name="Backgrounds 4" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="17" members="356,358" name="Backgrounds 5" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="16" members="338" name="Backgrounds 6" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="true" id="19" members="354" name="Backgrounds 7" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="14" members="351,352" name="Backgrounds 3" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="15" members="353,357" name="Backgrounds 4" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="17" members="356,358" name="Backgrounds 5" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="16" members="338" name="Backgrounds 6" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="19" members="354" name="Backgrounds 7" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="18" members="" name="Atlas 19" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="21" members="" name="Atlas 22" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="20" members="" name="Atlas 21" pvr="false" resize="0" start="true" target="0"/>

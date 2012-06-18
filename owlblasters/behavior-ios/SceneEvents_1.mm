@@ -86,12 +86,12 @@
     [self addWhenDrawingListener:nil func:^(SPRenderSupport* g, int x, int y, BOOL screen, NSMutableArray* list, Script* theScript){
 SceneEvents_1* self = (SceneEvents_1*) theScript;
         [[Game game] setFont:[ self getFont:413] size:1];
-        [[Game game] drawString:@"Owl" x:120 y:25];
-        [[Game game] drawString:@"Blasters" x:60 y:75];
+        [[Game game] drawString:@"Owl" x:80 y:25];
+        [[Game game] drawString:@"Blasters" x:10 y:75];
         [[Game game] setFont:[ self getFont:232] size:1];
-        [[Game game] drawString:@"Beta" x:75 y:150];
+        [[Game game] drawString:@"Beta" x:40 y:150];
         [[Game game] setFont:[ self getFont:420] size:1];
-                    [[Game game] drawString:@"Tap to Begin" x:80 y:400];
+                    [[Game game] drawString:@"Tap to Begin" x:30 y:400];
          
 }];
      

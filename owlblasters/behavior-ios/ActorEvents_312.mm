@@ -32,6 +32,10 @@
 		
 float _velocitydirection;
 
+float _lastsfor;
+
+float _repeattime;
+
 }
 @end
 
@@ -40,15 +44,16 @@ float _velocitydirection;
 -(void)load
 {
 	            _velocitydirection = 90;
-    [self doPeriodically:1000 * .035 task:[self createRunnable:^(Runnable* parent, Script* theScript){
+        [mActor setActorValue:@"dir" value:[NSNumber numberWithFloat:0]];
+    [self doPeriodically:1000 * _repeattime task:[self createRunnable:^(Runnable* parent, Script* theScript){
 ActorEvents_312* self = (ActorEvents_312*) theScript;
-        _velocitydirection = (_velocitydirection + 9);
-        [mActor setVelocityAtAngle:_velocitydirection withSpeed:30];
-        if((_velocitydirection >= 270))
-{
-
-}
-
+        _velocitydirection = (_velocitydirection + ((180 / (_lastsfor / _repeattime)) * [self asNumber:[mActor getActorValue:@"dir"]]));
+        [mActor setVelocityAtAngle:_velocitydirection withSpeed:40];
+        [mActor setXVelocity:([mActor getXVelocity] + [[self getGameAttribute:@"PlayerMoveSpeed"] floatValue])];
+}]];
+    [self doLater:1000 * _lastsfor task:[self createRunnable:^(Runnable* parent, Script* theScript){
+ActorEvents_312* self = (ActorEvents_312*) theScript;
+        [self recycleActor:mActor];
 }]];
 
 } 

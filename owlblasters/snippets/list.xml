@@ -206,6 +206,7 @@
         <events>
             <event displayName="fire" enabled="true" id="1" name="event-mouse-press-release" order="1" repeats="true"/>
             <event displayName="fire" enabled="true" id="2" name="event-device-touch" order="2" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_19_19_JetpackFollowPlayer" desc="Attach this to your jetpack Actor (not the player)" description="Attach this to your jetpack Actor (not the player)" design="true" drawOrder="0" id="19" language="" name="Jetpack Follow Player" oid="-1" package="" scenespecific="false" shared="false" type="actor">

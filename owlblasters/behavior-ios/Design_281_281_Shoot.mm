@@ -49,19 +49,43 @@ Design_281_281_Shoot* self = (Design_281_281_Shoot*) theScript;
             [self playSound:[self getSound:339]];
 }
 
-        if(([self sameAs:[mActor getAnimation] two:@"jump-l"] || [self sameAs:[mActor getAnimation] two:@"idle-l"]))
+        _xoffset = ([self getTouchX] - [mActor getXCenter]);
+        _yoffset = ([self getTouchX] - [mActor getYCenter]);
+        if((![self sameAs:[NSNumber numberWithFloat:2] two:[NSNumber numberWithFloat:[[(NSMutableArray*) ([self getGameAttribute:@"Player's guns"]) objectAtIndex:1] floatValue]]] && ![self sameAs:[NSNumber numberWithFloat:2] two:[NSNumber numberWithFloat:[[(NSMutableArray*) ([self getGameAttribute:@"Player's guns"]) objectAtIndex:6] floatValue]]]))
 {
-            [self createRecycledActor:[self getActorType:60] x:([mActor getXCenter] - 40) y:([mActor getYCenter] + 0) layerConst:FRONT];
+            if(([self sameAs:[mActor getAnimation] two:@"jump-l"] || [self sameAs:[mActor getAnimation] two:@"idle-l"]))
+{
+                [self createRecycledActor:[self getActorType:60] x:([mActor getXCenter] + -40) y:([mActor getYCenter] + 0) layerConst:FRONT];
+                [self setGameAttribute:@"gunDirection" value:[NSNumber numberWithFloat:SP_R2D((atan2(_yoffset, _xoffset) + 135))]];
 }
 
-        else
+            else
 {
-            [self createRecycledActor:[self getActorType:60] x:[mActor getXCenter] y:([mActor getYCenter] + 0) layerConst:FRONT];
-            _xoffset = ([self getTouchX] - [mActor getXCenter]);
-            _yoffset = ([self getTouchX] - [mActor getYCenter]);
+                [self createRecycledActor:[self getActorType:60] x:[mActor getXCenter] y:([mActor getYCenter] + 0) layerConst:FRONT];
+                [self setGameAttribute:@"gunDirection" value:[NSNumber numberWithFloat:SP_R2D(atan2(_yoffset, _xoffset))]];
 }
 
-        [[self getLastCreatedActor] applyImpulse:([self getTouchX] - [mActor getXCenter]) dirY:([self getTouchY] - [mActor getYCenter]) withForce:40];
+            [[self getLastCreatedActor] applyImpulse:_xoffset dirY:_yoffset withForce:5];
+}
+
+        else if([self sameAs:[NSNumber numberWithFloat:2] two:[NSNumber numberWithFloat:[[(NSMutableArray*) ([self getGameAttribute:@"Player's guns"]) objectAtIndex:1] floatValue]]])
+{
+            if(([self sameAs:[mActor getAnimation] two:@"jump-l"] || [self sameAs:[mActor getAnimation] two:@"idle-l"]))
+{
+                [self createActor:[self getActorType:312] x:([mActor getXCenter] + -40) y:([mActor getYCenter] + 0) layerConst:FRONT];
+                [[self getLastCreatedActor] setActorValue:@"dir" value:[NSNumber numberWithFloat:-1]];
+                [self setGameAttribute:@"gunDirection" value:[NSNumber numberWithFloat:SP_R2D((atan2(_yoffset, _xoffset) + 135))]];
+}
+
+            else
+{
+                [self createActor:[self getActorType:312] x:[mActor getXCenter] y:([mActor getYCenter] + 0) layerConst:FRONT];
+                [[self getLastCreatedActor] setActorValue:@"dir" value:[NSNumber numberWithFloat:1]];
+                [self setGameAttribute:@"gunDirection" value:[NSNumber numberWithFloat:SP_R2D(atan2(_yoffset, _xoffset))]];
+}
+
+}
+
 }];
 
 } 

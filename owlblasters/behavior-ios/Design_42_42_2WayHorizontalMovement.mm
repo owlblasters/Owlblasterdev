@@ -74,6 +74,7 @@ Design_42_42_2WayHorizontalMovement* self = (Design_42_42_2WayHorizontalMovement
 }
 
             [mActor setXVelocity:(_MoveX * _Speed)];
+            [self setGameAttribute:@"PlayerMoveSpeed" value:[NSNumber numberWithFloat:[mActor getXVelocity]]];
             if(_PreventVerticalMovement)
 {
                 [mActor setYPosition:_StartY];

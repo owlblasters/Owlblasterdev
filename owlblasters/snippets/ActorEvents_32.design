@@ -7,9 +7,9 @@
         </event-mouse-press-release>
     </group>
     <group eventID="1" id="1">
-        <if comment="false" x="85" y="139">
+        <if comment="false" x="32" y="120">
             <group eventID="1" id="-1">
-                <play-sound4 comment="false" x="96" y="169">
+                <play-sound4 comment="false" x="43" y="150">
                     <int id="0" val="0"/>
                     <SOUND eid="339" id="1"/>
                 </play-sound4>
@@ -19,9 +19,9 @@
                 <int id="1" val="1"/>
             </eq>
         </if>
-        <if comment="false" x="85" y="208">
+        <if comment="false" x="32" y="189">
             <group eventID="1" id="-1">
-                <create-recycled-actor comment="false" x="96" y="251">
+                <create-recycled-actor comment="false" x="43" y="232">
                     <ACTORTYPE eid="60" id="0"/>
                     <plus comment="false" id="1" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
@@ -55,9 +55,9 @@
                 </eq>
             </or>
         </if>
-        <else comment="false" x="85" y="308">
+        <else comment="false" x="32" y="289">
             <group eventID="1" id="-1">
-                <create-recycled-actor comment="false" x="96" y="328">
+                <create-recycled-actor comment="false" x="43" y="309">
                     <ACTORTYPE eid="60" id="0"/>
                     <get-xy comment="false" id="1" x="0" y="0">
                         <ACTOR eid="this" id="0"/>
@@ -74,7 +74,7 @@
                 </create-recycled-actor>
             </group>
         </else>
-        <set-val-16-10 comment="false" x="85" y="385">
+        <set-val-16-10 comment="false" x="32" y="366">
             <minus comment="false" id="0" x="0" y="0">
                 <mousexy comment="false" id="0" x="0" y="0">
                     <int id="0" val="0"/>
@@ -86,7 +86,7 @@
                 </get-xy>
             </minus>
         </set-val-16-10>
-        <set-val-16-11 comment="false" x="85" y="423">
+        <set-val-16-11 comment="false" x="32" y="404">
             <minus comment="false" id="0" x="0" y="0">
                 <mousexy comment="false" id="0" x="0" y="0">
                     <int id="0" val="0"/>
@@ -98,7 +98,7 @@
                 </get-xy>
             </minus>
         </set-val-16-11>
-        <push-shove comment="false" x="85" y="461">
+        <push-shove comment="false" x="32" y="442">
             <ACTOR eid="lastcreated" id="0"/>
             <int id="1" val="1"/>
             <get-val-16-10 comment="false" id="2" x="0" y="0"/>
@@ -233,4 +233,31 @@
         </else>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <accelerometer comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </accelerometer>
+                        <int id="1" val="-70"/>
+                    </times>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="85">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <accelerometer comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </accelerometer>
+                        <int id="1" val="-70"/>
+                    </times>
+                </set-dxy>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
