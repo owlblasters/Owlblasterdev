@@ -28,6 +28,17 @@
                     <get-val-209-1 comment="false" id="1" x="0" y="0"/>
                     <int id="2" val="40"/>
                 </setvel>
+                <set-dxy comment="false" x="26" y="125">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <get-game-val-20 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-dxy>
             </group>
             <get-val-209-3 comment="false" id="0" x="0" y="0"/>
         </event-periodic>

@@ -34,14 +34,20 @@
                                 <get-val-42-11 comment="false" id="1" x="0" y="0"/>
                             </times>
                         </set-dxy>
-                        <if comment="false" x="37" y="190">
+                        <set-game-val-20 comment="false" x="37" y="190">
+                            <get-dxy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-dxy>
+                        </set-game-val-20>
+                        <if comment="false" x="37" y="223">
                             <group eventID="3" id="-1">
-                                <set-xy comment="false" x="48" y="215">
+                                <set-xy comment="false" x="48" y="248">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="1"/>
                                     <get-val-42-40 comment="false" id="2" x="0" y="0"/>
                                 </set-xy>
-                                <set-dxy comment="false" x="48" y="247">
+                                <set-dxy comment="false" x="48" y="280">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="0"/>
@@ -49,9 +55,9 @@
                             </group>
                             <get-val-42-39 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <if comment="false" x="37" y="286">
+                        <if comment="false" x="37" y="319">
                             <group eventID="3" id="-1">
-                                <setav comment="false" x="48" y="321">
+                                <setav comment="false" x="48" y="354">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="0"/>
                                 </setav>
@@ -64,18 +70,18 @@
                                 </noteq>
                             </and>
                         </if>
-                        <set-val-42-37 comment="false" x="37" y="360">
+                        <set-val-42-37 comment="false" x="37" y="393">
                             <int id="0" val="0"/>
                         </set-val-42-37>
-                        <if comment="false" x="37" y="380">
+                        <if comment="false" x="37" y="413">
                             <group eventID="3" id="-1">
-                                <if comment="false" x="48" y="405">
+                                <if comment="false" x="48" y="438">
                                     <group eventID="3" id="-1">
-                                        <if comment="false" x="59" y="443">
+                                        <if comment="false" x="59" y="476">
                                             <group eventID="3" id="-1">
-                                                <if comment="false" x="70" y="481">
+                                                <if comment="false" x="70" y="514">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="514">
+                                                        <setanim comment="false" x="81" y="547">
                                                             <ACTOR eid="this" id="0"/>
                                                             <get-val-42-41 comment="false" id="1" x="0" y="0"/>
                                                         </setanim>
@@ -93,11 +99,11 @@
                                                 <get-val-42-42 comment="false" id="1" x="0" y="0"/>
                                             </eq>
                                         </if>
-                                        <else-if comment="false" x="59" y="570">
+                                        <else-if comment="false" x="59" y="603">
                                             <group eventID="3" id="-1">
-                                                <if comment="false" x="70" y="608">
+                                                <if comment="false" x="70" y="641">
                                                     <group eventID="3" id="-1">
-                                                        <setanim comment="false" x="81" y="641">
+                                                        <setanim comment="false" x="81" y="674">
                                                             <ACTOR eid="this" id="0"/>
                                                             <get-val-42-43 comment="false" id="1" x="0" y="0"/>
                                                         </setanim>
@@ -124,11 +130,11 @@
                                         <int id="1" val="0"/>
                                     </eq>
                                 </if>
-                                <else-if comment="false" x="48" y="709">
+                                <else-if comment="false" x="48" y="742">
                                     <group eventID="3" id="-1">
-                                        <if comment="false" x="59" y="747">
+                                        <if comment="false" x="59" y="780">
                                             <group eventID="3" id="-1">
-                                                <setanim comment="false" x="70" y="780">
+                                                <setanim comment="false" x="70" y="813">
                                                     <ACTOR eid="this" id="0"/>
                                                     <get-val-42-42 comment="false" id="1" x="0" y="0"/>
                                                 </setanim>
@@ -147,11 +153,11 @@
                                         <int id="1" val="0"/>
                                     </less>
                                 </else-if>
-                                <else-if comment="false" x="48" y="836">
+                                <else-if comment="false" x="48" y="869">
                                     <group eventID="3" id="-1">
-                                        <if comment="false" x="59" y="874">
+                                        <if comment="false" x="59" y="907">
                                             <group eventID="3" id="-1">
-                                                <setanim comment="false" x="70" y="907">
+                                                <setanim comment="false" x="70" y="940">
                                                     <ACTOR eid="this" id="0"/>
                                                     <get-val-42-44 comment="false" id="1" x="0" y="0"/>
                                                 </setanim>
