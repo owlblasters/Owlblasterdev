@@ -11,4 +11,42 @@
         </init>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-device-touch comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <do-flash comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <scene-change-through comment="false" x="37" y="62">
+                            <SCENE eid="1" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="2"/>
+                        </scene-change-through>
+                    </group>
+                </do-flash>
+            </group>
+            <int id="0" val="0"/>
+        </event-device-touch>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1"/>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="160" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="0"/>
+                    <int id="1" val="20"/>
+                    <int id="2" val="10"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>
