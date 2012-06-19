@@ -103,8 +103,8 @@
         <animation default="" desc="" dropdown="" fullname="Idle Right Animation" hidden="false" id="10" name="_IdleRightAnimation" order="9"/>
         <number default="0.0" desc="" dropdown="" fullname="Left X Offset" hidden="false" id="11" name="_LeftXOffset" order="10"/>
         <number default="0.0" desc="" dropdown="" fullname="Left Y Offset" hidden="false" id="12" name="_LeftYOffset" order="11"/>
-        <animation default="" desc="" dropdown="" fullname="Idle Left Animation" hidden="false" id="15" name="_IdleLeftAnimation" order="14"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <animation default="" desc="" dropdown="" fullname="Idle Left Animation" hidden="false" id="15" name="_IdleLeftAnimation" order="14"/>
         <blocks>
             <receiver blockID="423" id="1"/>
         </blocks>
@@ -151,17 +151,13 @@
             <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_285_285_OurInflictDamage" desc="" description="" design="true" drawOrder="0" id="285" language="" name="OurInflictDamage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="" dropdown="" fullname="damage" hidden="false" id="1" name="_damage" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_252" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="135" language="" name="ActorEvents_252" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_424" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="284" language="" name="ActorEvents_424" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="false" class="scripts.Design_285_285_OurInflictDamage" desc="" description="" design="true" drawOrder="0" id="285" language="" name="OurInflictDamage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="" dropdown="" fullname="damage" hidden="false" id="1" name="_damage" order="1"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events/>
     </snippet>
@@ -172,11 +168,7 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_378" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="259" language="" name="ActorEvents_378" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
-        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
-        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
-        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
+    <snippet attachedevent="true" class="scripts.ActorEvents_424" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="284" language="" name="ActorEvents_424" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
@@ -199,7 +191,11 @@
             <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_19" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="256" language="" name="SceneEvents_19" oid="-1" package="scripts." sceneid="19" scenespecific="true" shared="false" type="scene">
+    <snippet attachedevent="true" class="scripts.ActorEvents_378" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="259" language="" name="ActorEvents_378" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="0"/>
+        <text default="Play Game_Default" desc="" dropdown="" fullname="Text_Description" hidden="false" id="2" name="_TextDescription" order="1"/>
+        <text default="" desc="Text Second Row" dropdown="" fullname="Text Second row" hidden="false" id="3" name="_TextSecondrow" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="changeto" hidden="false" id="4" name="_changeto" order="3"/>
         <blocks/>
         <events/>
     </snippet>
@@ -218,14 +214,18 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
         <blocks>
             <receiver blockID="46" id="1"/>
         </blocks>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_374" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="257" language="" name="ActorEvents_374" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.SceneEvents_19" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="256" language="" name="SceneEvents_19" oid="-1" package="scripts." sceneid="19" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_262" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="155" language="" name="ActorEvents_262" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
@@ -244,8 +244,8 @@
         <number default="0" desc="" dropdown="" fullname="Right Y Offset" hidden="false" id="12" name="_RightYOffset" order="13"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Active?" hidden="true" id="13" name="_JetpackActive" order="14"/>
         <boolean default="false" desc="Select this option if the jetpack will be spawned externally." dropdown="" fullname="Spawned Externally?" hidden="false" id="14" name="_SpawnedExternally" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Jetpack Sputtering?" hidden="true" id="15" name="_JetpackSputtering" order="15"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks>
             <receiver blockID="45" id="1"/>
         </blocks>
@@ -259,8 +259,20 @@
             <event displayName="JetsEmpty" enabled="true" id="7" name="event-custom" order="7" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_262" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="155" language="" name="ActorEvents_262" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.ActorEvents_374" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="257" language="" name="ActorEvents_374" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_157_157_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="157" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
+        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
+        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="266" id="1"/>
+        </blocks>
         <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_20_20_Jetpack" desc="Add a jetpack to your Actor and tweak its attributes." description="Add a jetpack to your Actor and tweak its attributes." design="true" drawOrder="0" id="20" language="" name="Jetpack" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -298,18 +310,6 @@
             <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
             <event displayName="SetPlayerAnimation" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_157_157_InflictsCollisionDamage" desc="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." description="Attach this Behavior to any Actor that will inflict damage upon another Actor that comes into contact with it.  The &quot;other&quot; Actor should have the &quot;Health Manager&quot; Behavior for this to work properly." design="true" drawOrder="0" id="157" language="" name="Inflicts Collision Damage" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" desc="Damage to inflict when the other Actor collides with the top." dropdown="" fullname="Top Damage Amount" hidden="false" id="1" name="_TopDamageAmount" order="1"/>
-        <number default="1" desc="Damage to inflict when the other Actor collides with the bottom." dropdown="" fullname="Bottom Damage Amount" hidden="false" id="2" name="_BottomDamageAmount" order="2"/>
-        <number default="1" desc="Damage to inflict when the other Actor collides with the right." dropdown="" fullname="Right Damage Amount" hidden="false" id="3" name="_RightDamageAmount" order="3"/>
-        <number default="1" desc="Damage to inflict when the other Actor collides with the left." dropdown="" fullname="Left Damage Amount" hidden="false" id="4" name="_LeftDamageAmount" order="4"/>
-        <list default="list" desc="Only inflict damage on these Actor Groups.  Leave blank to inflict damage on any Actor Group." dropdown="" fullname="Damage Actor Groups" hidden="false" id="5" name="_DamageActorGroups" order="5"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks>
-            <receiver blockID="266" id="1"/>
-        </blocks>
-        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_263_263_weaponoptionchange" desc="" description="" design="true" drawOrder="0" id="263" language="" name="weaponoption_change" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -474,8 +474,8 @@
         <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="41" name="_LeftAnimationIdle" order="10"/>
         <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="46" name="_StopTurning" order="8"/>
         <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="44" name="_RightAnimation" order="13"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="45" name="_UseAnimations" order="9"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
@@ -566,16 +566,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_88_88_PickUpWeapons" desc="" description="" design="true" drawOrder="0" id="88" language="" name="PickUpWeapons" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <sound default="" desc="" dropdown="" fullname="sound" hidden="false" id="1" name="_sound" order="1"/>
-        <number default="0" desc="" dropdown="" fullname="number" hidden="false" id="2" name="_number" order="2"/>
-        <number default="0" desc="" dropdown="" fullname="Sword" hidden="false" id="3" name="_Sword" order="3"/>
-        <number default="0" desc="" dropdown="" fullname="Gun" hidden="false" id="4" name="_Gun" order="4"/>
-        <number default="0" desc="" dropdown="" fullname="Weapons" hidden="false" id="5" name="_Weapons" order="5"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_312" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="209" language="" name="ActorEvents_312" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <number default="90.0" desc="" dropdown="" fullname="velocity_direction" hidden="false" id="1" name="_velocitydirection" order="0"/>
         <number default="0.6" desc="" dropdown="" fullname="lasts for" hidden="false" id="2" name="_lastsfor" order="1"/>
@@ -586,6 +576,16 @@
             <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
             <event displayName="After N secs" enabled="true" id="5" name="event-delay" order="5" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_88_88_PickUpWeapons" desc="" description="" design="true" drawOrder="0" id="88" language="" name="PickUpWeapons" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <sound default="" desc="" dropdown="" fullname="sound" hidden="false" id="1" name="_sound" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="number" hidden="false" id="2" name="_number" order="2"/>
+        <number default="0" desc="" dropdown="" fullname="Sword" hidden="false" id="3" name="_Sword" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="Gun" hidden="false" id="4" name="_Gun" order="4"/>
+        <number default="0" desc="" dropdown="" fullname="Weapons" hidden="false" id="5" name="_Weapons" order="5"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_8" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="239" language="" name="SceneEvents_8" oid="-1" package="scripts." sceneid="8" scenespecific="true" shared="false" type="scene">
         <blocks/>
@@ -621,16 +621,16 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_334" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_334" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_160" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="110" language="" name="ActorEvents_160" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_334" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="231" language="" name="ActorEvents_334" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="108" language="" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" scenespecific="true" shared="false" type="scene">
         <blocks/>
@@ -641,19 +641,15 @@
             <event displayName="Touch" enabled="true" id="4" name="event-device-touch" order="4" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_18" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="254" language="" name="SceneEvents_18" oid="-1" package="scripts." sceneid="18" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_206" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="119" language="" name="ActorEvents_206" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_18" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="254" language="" name="SceneEvents_18" oid="-1" package="scripts." sceneid="18" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_202" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="118" language="" name="ActorEvents_202" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_372" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="255" language="" name="ActorEvents_372" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
@@ -661,6 +657,14 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_202" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="118" language="" name="ActorEvents_202" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_16" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="252" language="" name="SceneEvents_16" oid="-1" package="scripts." sceneid="16" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_117_117_SceneChange" desc="" description="" design="true" drawOrder="0" id="117" language="" name="Scene_Change" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <boolean default="false" desc="" dropdown="" fullname="ispressed" hidden="false" id="1" name="_ispressed" order="1"/>
@@ -680,10 +684,6 @@
             <event displayName="Created" enabled="true" id="8" name="init" order="8" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_16" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="252" language="" name="SceneEvents_16" oid="-1" package="scripts." sceneid="16" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_17" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="253" language="" name="SceneEvents_17" oid="-1" package="scripts." sceneid="17" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
@@ -693,6 +693,10 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_15" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="251" language="" name="SceneEvents_15" oid="-1" package="scripts." sceneid="15" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_369" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="249" language="" name="ActorEvents_369" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
@@ -734,10 +738,6 @@
             <event displayName="healSelf" enabled="true" id="12" name="event-custom" order="12" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_369" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="249" language="" name="ActorEvents_369" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_13" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="246" language="" name="SceneEvents_13" oid="-1" package="scripts." sceneid="13" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
@@ -764,10 +764,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_238" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="124" language="" name="ActorEvents_238" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_12" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="245" language="" name="SceneEvents_12" oid="-1" package="scripts." sceneid="12" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events>
@@ -775,11 +771,11 @@
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_236" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="123" language="" name="ActorEvents_236" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.ActorEvents_238" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="124" language="" name="ActorEvents_238" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_234" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="122" language="" name="ActorEvents_234" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.ActorEvents_236" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="123" language="" name="ActorEvents_236" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
@@ -787,7 +783,7 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_219" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="121" language="" name="ActorEvents_219" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.ActorEvents_234" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="122" language="" name="ActorEvents_234" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
@@ -797,13 +793,9 @@
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_120_120_TakeBranchDamage" desc="" description="" design="true" drawOrder="0" id="120" language="" name="Take_Branch_Damage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <number default="1" desc="" dropdown="" fullname="Damage_Taken" hidden="false" id="1" name="_DamageTaken" order="1"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+    <snippet attachedevent="true" class="scripts.ActorEvents_219" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="121" language="" name="ActorEvents_219" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Actor - Group" enabled="true" id="2" name="event-collide-actortogroup" order="2" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_10" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="241" language="" name="SceneEvents_10" oid="-1" package="scripts." sceneid="10" scenespecific="true" shared="false" type="scene">
         <number default="0.0" desc="Y coordinate moving" dropdown="" fullname="Y" hidden="false" id="1" name="_Y" order="0"/>
@@ -815,6 +807,14 @@
             <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="3" repeats="true"/>
             <event displayName="Click" enabled="true" id="5" name="event-mouse-press-release" order="5" repeats="true"/>
             <event displayName="Touch" enabled="true" id="6" name="event-device-touch" order="6" repeats="false"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_120_120_TakeBranchDamage" desc="" description="" design="true" drawOrder="0" id="120" language="" name="Take_Branch_Damage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <number default="1" desc="" dropdown="" fullname="Damage_Taken" hidden="false" id="1" name="_DamageTaken" order="1"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Group" enabled="true" id="2" name="event-collide-actortogroup" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>
