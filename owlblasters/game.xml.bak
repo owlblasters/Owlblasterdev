@@ -12,11 +12,11 @@
         <group desc="collides with nothing" id="8" name="guns"/>
     </groups>
     <cgroups>
-        <cgroup g1="3" g2="0"/>
-        <cgroup g1="5" g2="0"/>
-        <cgroup g1="1" g2="0"/>
         <cgroup g1="6" g2="4"/>
         <cgroup g1="6" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="0" g2="5"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -84,8 +84,8 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="false" id="0" members="32,60,64,92,122,124,127,160,202,206,234,236,238,252,257,262,271,280,293,312,334,336,360,369,372,374,378,380,382,384,386,388,390,392,396,33-0,203-1,370-1,375-1" name="Main Actors for Main Scenes" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="1" members="349,424,93-0,128-1,161-0,207-0,235-0,237-0,239-0,272-0,281-0,335-0,337-0,350-0,373-0,425-0" name="Actors for Fall Scene" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="32,60,64,92,122,124,127,160,202,206,234,236,238,252,257,262,271,280,293,312,334,336,360,369,372,374,378,380,382,384,386,388,390,392,396,33-0,203-1,370-1,375-1" name="Main Actors for Main Scenes" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="1" members="349,424,93-0,128-1,161-0,207-0,235-0,237-0,239-0,272-0,281-0,335-0,337-0,350-0,373-0,425-0" name="Actors for Fall Scene" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="2" members="35" name="Sky Background 1" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="3" members="394,379-1,383-1,385-1,387-1,389-1,391-1,393-1,395-0,395-1,397-1" name="Gun Shop" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="4" members="219,61-0,253-0,258-0,263-0,294-0,313-0" name="Bullets" pvr="false" resize="0" start="true" target="0"/>
