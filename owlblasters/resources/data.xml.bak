@@ -180,10 +180,6 @@
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="224">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="45" id="93" name="Angry Blue Owl" shared="false" width="65">
@@ -228,13 +224,6 @@
                 <prop id="13" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="226">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="224">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <sprite atlasID="1" default="0" desc="" height="46" id="425" name="Angry Green Owl" shared="false" width="71">
@@ -244,9 +233,6 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="1" bodytype="2" continuous="true" desc="" eventsnippetid="233" fixedrot="true" fric="0.2" gid="3" id="349" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Angry Red Owl" oid="-1" pausable="true" rest="0.0" shared="false" sprite="350" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="137">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="65">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -282,10 +268,6 @@
                 <prop id="13" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="224">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <sprite atlasID="1" default="0" desc="" height="46" id="350" name="Angry Red Owl" shared="false" width="73">
@@ -293,12 +275,12 @@
             <poly data="4,0,0,73,0,73,46,0,46" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <custom-block blocktag="custom-296" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="296" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="196">
+    <custom-block blocktag="custom-296" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="296" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-269" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="269" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="159">
+    <custom-block blocktag="custom-269" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="269" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
@@ -308,17 +290,17 @@
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-284" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="284" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="169">
+    <custom-block blocktag="custom-284" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="284" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-278" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="278" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="165">
+    <custom-block blocktag="custom-278" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="278" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-275" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="275" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="163">
+    <custom-block blocktag="custom-275" blocktype="ACTION" code="~.say(&quot;Inflicts Collision Damage&quot;, &quot;ApplyDamage&quot;, ~,~);" desc="Apply a certain amount of damage to the specified Actor." global="false" gui="Apply %1 Damage to Actor %2" id="275" message="ApplyDamage" name="ApplyDamage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
         <blank name="Target" order="2" type="ACTOR"/>
@@ -337,7 +319,7 @@
     <custom-block blocktag="custom-73" blocktype="NORMAL" code="((scripts.Design_44_44_Inventory.AsArray(~)) as Array)" desc="Returns the value as a list." global="true" gui="%0 as list" id="73" message="AsArray" name="AsArray" oid="-1" return="LIST" shared="false" snippetID="-1">
         <blank name="Value" order="0" type="OBJECT"/>
     </custom-block>
-    <custom-block blocktag="custom-16" blocktype="NORMAL" code="Boolean((~.say(&quot;Walking&quot;, &quot;AtMaxWalkingSpeed&quot;)))" desc="" global="false" gui="%0 At Max Walking Speed" id="16" message="AtMaxWalkingSpeed" name="AtMaxWalkingSpeed" oid="-1" return="BOOLEAN" shared="false" snippetID="11">
+    <custom-block blocktag="custom-16" blocktype="NORMAL" code="Boolean((~.say(&quot;Walking&quot;, &quot;AtMaxWalkingSpeed&quot;)))" desc="" global="false" gui="%0 At Max Walking Speed" id="16" message="AtMaxWalkingSpeed" name="AtMaxWalkingSpeed" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="5" desc="" height="68" id="420" name="Avengeance mightiest avenger" offsets="0|0|0|,6|0|6,20|0|20,37|0|37,60|0|60,77|0|77,100|0|100,124|0|124,134|0|134,157|0|157,180|0|180,203|0|203,226|0|226,235|0|235,247|0|247,256|0|256,279|0|279,301|0|301,315|0|315,336|0|336,357|0|357,379|0|379,400|0|400,420|0|420,441|0|441,462|0|462,482|0|482,494|0|494,506|0|506,529|0|529,552|0|552,575|0|575,597|0|597,624|0|624,645|0|645,668|0|668,690|0|690,713|0|713,735|0|735,757|0|757,781|0|781,806|0|806,820|0|820,844|0|844,870|0|870,887|0|887,916|0|916,941|0|941,964|0|964,988|0|988,1013|0|1013,1037|0|1037,1058|0|1058,1077|0|1077,1101|0|1101,1121|0|1121,1150|0|1150,1176|0|1176,1196|0|1196,1218|0|1218,1241|0|1241,1264|0|1264,1287|0|1287,1310|0|1310,1326|0|1326,1349|0|1349,1370|0|1370,1393|0|1393,1415|0|1415,1438|0|1438,1460|0|1460,1482|0|1482,1506|0|1506,1531|0|1531,1545|0|1545,1568|0|1568,1594|0|1594,1611|0|1611,1640|0|1640,1665|0|1665,1688|0|1688,1712|0|1712,1737|0|1737,1761|0|1761,1782|0|1782,1801|0|1801,1825|0|1825,1845|0|1845,1874|0|1874,1900|0|1900,1920|0|1920,1945|0|1945,1968|0|1968,1991|0|1991,2014|0|2014,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2037|0|2037,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2060|0|2060,2083|0|2083,2083|0|2083,2099|0|2099,2113|0|2113,2128|0|2128,2151|0|2151,2174|0|2174,2197|0|2197,2220|0|2220,2243|0|2243,2266|0|2266,2290|0|2290,2313|0|2313,2336|0|2336,2359|0|2359,2382|0|2382,2407|0|2407,2430|0|2430,2453|0|2453,2476|0|2476,2499|0|2499,2522|0|2522,2545|0|2545,2568|0|2568,2591|0|2591,2599|0|2599,2622|0|2622,2645|0|2645,2668|0|2668,2691|0|2691,2714|0|2714,2737|0|2737,2760|0|2760,2781|0|2781,2804|0|2804,2827|0|2827,2850|0|2850,0|34|2873,23|34|2896,46|34|2919,69|34|2942,92|34|2965,115|34|2988,138|34|3011,161|34|3034,184|34|3057,207|34|3080,230|34|3103,253|34|3126,276|34|3149,299|34|3172,322|34|3195,345|34|3218,368|34|3241,391|34|3264,414|34|3287,437|34|3310,460|34|3333,483|34|3356,506|34|3379,529|34|3402,552|34|3425,575|34|3448,598|34|3471,621|34|3494,644|34|3517,667|34|3540,690|34|3563,713|34|3586,736|34|3609,759|34|3632,782|34|3655,805|34|3678,828|34|3701,851|34|3724,874|34|3747,897|34|3770,920|34|3793,943|34|3816,966|34|3839,989|34|3862,1012|34|3885,1035|34|3908,1058|34|3931,1081|34|3954,1104|34|3977,1127|34|4000,1150|34|4023,1173|34|4046,1196|34|4069,1219|34|4092,1242|34|4115,1265|34|4138,1288|34|4161,1311|34|4184,1334|34|4207,1357|34|4230,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1380|34|4253,1403|34|4276,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1426|34|4299,1449|34|4322,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1472|34|4345,1495|34|4368,1495|34|4368,1495|34|4368,1495|34|4368,1495|34|4368,1518|34|4391" oid="-1" rowHeight="34" shared="false"/>
@@ -395,23 +377,10 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="177" fixedrot="true" fric="0.2" gid="0" id="293" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Bullet3" oid="-1" pausable="true" rest="0.0" shared="false" sprite="294" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="175">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="176">
-                <prop id="1" list="0" val="5"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="209" fixedrot="true" fric="0.2" gid="5" id="312" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Bullet4" oid="-1" pausable="true" rest="0.0" shared="false" sprite="313" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="37">
-                <prop id="1" list="0" val="4"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="36" id="389" name="Button" shared="false" width="52">
         <anim across="1" atlasID="-1" down="1" durations="100" height="36" id="0" loop="true" name="Up" numframes="1" originx="52" originy="36" width="52">
@@ -549,9 +518,6 @@
                 <prop id="15" list="0" val="Animation 1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="211">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="237" name="Claw" shared="false" width="32">
@@ -594,7 +560,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-133" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Damage&quot;, ~);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="133" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-133" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Damage&quot;, ~);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="133" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
@@ -636,7 +602,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Lives" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-42" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;DecrementScore&quot;, ~);" desc="" global="false" gui="Decrement Score By %0" id="42" message="DecrementScore" name="DecrementScore" oid="-1" return="VOID" shared="false" snippetID="17">
+    <custom-block blocktag="custom-42" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;DecrementScore&quot;, ~);" desc="" global="false" gui="Decrement Score By %0" id="42" message="DecrementScore" name="DecrementScore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Amount" order="0" type="NUMBER"/>
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="6" desc="" height="32" id="418" name="Destroy" offsets="0|0|0|,6|0|6,16|0|16,31|0|31,59|0|59,78|0|78,100|0|100,127|0|127,134|0|134,146|0|146,158|0|158,158|0|158,176|0|176,186|0|186,201|0|201,211|0|211,232|0|232,247|0|247,260|0|260,280|0|280,298|0|298,314|0|314,331|0|331,347|0|347,364|0|364,383|0|383,399|0|399,409|0|409,419|0|419,436|0|436,452|0|452,469|0|469,489|0|489,489|0|489,505|0|505,523|0|523,538|0|538,554|0|554,567|0|567,582|0|582,598|0|598,614|0|614,624|0|624,640|0|640,657|0|657,673|0|673,694|0|694,714|0|714,732|0|732,748|0|748,767|0|767,785|0|785,801|0|801,817|0|817,834|0|834,852|0|852,878|0|878,899|0|899,922|0|922,943|0|943,943|0|943,964|0|964,964|0|964,964|0|964,984|0|984,984|0|984,1001|0|1001,1018|0|1018,1032|0|1032,1049|0|1049,1064|0|1064,1078|0|1078,1093|0|1093,1109|0|1109,1119|0|1119,1135|0|1135,1152|0|1152,1169|0|1169,1189|0|1189,1206|0|1206,1219|0|1219,1235|0|1235,1254|0|1254,1272|0|1272,1292|0|1292,1308|0|1308,1324|0|1324,1342|0|1342,1367|0|1367,1389|0|1389,1413|0|1413,1434|0|1434,1453|0|1453,1453|0|1453,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472,1472|0|1472" oid="-1" rowHeight="32" shared="false"/>
@@ -647,43 +613,13 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="151" fixedrot="true" fric="0.2" gid="0" id="257" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.01" name="Enemy Bullet2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="258" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="148">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="149">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="150">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="155" fixedrot="true" fric="0.2" gid="0" id="262" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.01" name="Enemy Bullet3" oid="-1" pausable="true" rest="0.0" shared="false" sprite="263" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="152">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="153">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="154">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="38" fixedrot="true" fric="0.2" gid="0" id="60" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Enemy Bullet4" oid="-1" pausable="true" rest="0.0" shared="false" sprite="61" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="34">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="227">
-                <prop id="1" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="264" fixedrot="false" fric="0.2" gid="3" id="382" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="EquipButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="383" static="false" touchable="true">
         <snippets>
@@ -707,8 +643,6 @@
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
         <blank name="ItemName" order="1" type="TEXT"/>
     </custom-block>
-    <music desc="" id="58" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <music desc="" id="56" loop="true" name="Explode Player" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music desc="" id="231" loop="true" name="Explosion" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="64" id="281" name="Explosion 1" shared="false" width="64">
         <anim across="13" atlasID="1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100" height="64" id="0" loop="true" name="exployellow" numframes="13" originx="32" originy="32" width="832">
@@ -716,14 +650,7 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="161" fixedrot="true" fric="0.2" gid="0" id="271" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Explosion 2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="272" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="160">
-                <prop id="1" list="0" val=".3"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="64" id="272" name="Explosion 2" shared="false" width="64">
         <anim across="7" atlasID="1" down="1" durations="100,100,100,100,100,100,100" height="64" id="0" loop="true" name="Boom2" numframes="7" originx="32" originy="32" width="448">
@@ -731,16 +658,9 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="167" fixedrot="true" fric="0.2" gid="0" id="280" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="explosion yellow" oid="-1" pausable="true" rest="0.0" shared="false" sprite="281" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="166">
-                <prop id="1" list="0" val=".3"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
-    <custom-block blocktag="custom-156" blocktype="ACTION" code="sayToScene(&quot;Intro Title&quot;, &quot;FireShell&quot;, ~);" desc="" global="false" gui="fire shell" id="156" message="FireShell" name="FireShell" oid="-1" return="VOID" shared="false" snippetID="109">
+    <custom-block blocktag="custom-156" blocktype="ACTION" code="sayToScene(&quot;Intro Title&quot;, &quot;FireShell&quot;, ~);" desc="" global="false" gui="fire shell" id="156" message="FireShell" name="FireShell" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="7" desc="" height="236" id="362" name="Firey" offsets="0|0|0|,11|0|11,20|0|20,38|0|38,64|0|64,87|0|87,126|0|126,163|0|163,173|0|173,190|0|190,207|0|207,228|0|228,257|0|257,268|0|268,285|0|285,295|0|295,312|0|312,336|0|336,352|0|352,376|0|376,398|0|398,423|0|423,445|0|445,468|0|468,492|0|492,514|0|514,538|0|538,548|0|548,559|0|559,588|0|588,617|0|617,646|0|646,667|0|667,710|0|710,746|0|746,778|0|778,810|0|810,845|0|845,876|0|876,904|0|904,939|0|939,975|0|975,992|0|992,1014|0|1014,1051|0|1051,1082|0|1082,1125|0|1125,1162|0|1162,1196|0|1196,1224|0|1224,1258|0|1258,1293|0|1293,1318|0|1318,1348|0|1348,1384|0|1384,1420|0|1420,1466|0|1466,1502|0|1502,1538|0|1538,1569|0|1569,1584|0|1584,1601|0|1601,1616|0|1616,1640|0|1640,1668|0|1668,1680|0|1680,1703|0|1703,1729|0|1729,1751|0|1751,1777|0|1777,1799|0|1799,1822|0|1822,1847|0|1847,1874|0|1874,1889|0|1889,1906|0|1906,1933|0|1933,1948|0|1948,1987|0|1987,2014|0|2014,2038|0|2038,2064|0|2064,2090|0|2090,2110|0|2110,2128|0|2128,2145|0|2145,2172|0|2172,2198|0|2198,2235|0|2235,2261|0|2261,2288|0|2288,2312|0|2312,2329|0|2329,2336|0|2336,2353|0|2353,2381|0|2381,2404|0|2404,2427|0|2427,2450|0|2450,2461|0|2461,2486|0|2486,2505|0|2505,2532|0|2532,2553|0|2553,2574|0|2574,2592|0|2592,2619|0|2619,2643|0|2643,2657|0|2657,2684|0|2684,2707|0|2707,2730|0|2730,2753|0|2753,2776|0|2776,2786|0|2786,2797|0|2797,2817|0|2817,2838|0|2838,2861|0|2861,0|59|2879,25|59|2904,42|59|2921,69|59|2948,87|59|2966,101|59|2980,128|59|3007,151|59|3030,174|59|3053,201|59|3080,212|59|3091,221|59|3100,243|59|3122,268|59|3147,294|59|3173,321|59|3200,328|59|3207,349|59|3228,366|59|3245,402|59|3281,420|59|3299,444|59|3323,473|59|3352,490|59|3369,526|59|3405,554|59|3433,572|59|3451,600|59|3479,617|59|3496,632|59|3511,643|59|3522,668|59|3547,694|59|3573,703|59|3582,714|59|3593,726|59|3605,744|59|3623,768|59|3647,802|59|3681,836|59|3715,873|59|3752,894|59|3773,930|59|3809,966|59|3845,1002|59|3881,1038|59|3917,1074|59|3953,1110|59|3989,1154|59|4033,1186|59|4065,1217|59|4096,1248|59|4127,1279|59|4158,1310|59|4189,1327|59|4206,1344|59|4223,1362|59|4241,1380|59|4259,1415|59|4294,1452|59|4331,1486|59|4365,1520|59|4399,1554|59|4433,1588|59|4467,1622|59|4501,1645|59|4524,1679|59|4558,1715|59|4594,1751|59|4630,1787|59|4666,1823|59|4702,1859|59|4738,1887|59|4766,1912|59|4791,1935|59|4814,1958|59|4837,1981|59|4860,2004|59|4883,2027|59|4906,2050|59|4929,2082|59|4961,2104|59|4983,2126|59|5005,2148|59|5027,2170|59|5049,2192|59|5071,2207|59|5086,2222|59|5101,2239|59|5118,2256|59|5135,2280|59|5159,2307|59|5186,2331|59|5210,2355|59|5234,2379|59|5258,2403|59|5282,2427|59|5306,2456|59|5335,2481|59|5360,2508|59|5387,2535|59|5414,2562|59|5441,2589|59|5468,2616|59|5495,2642|59|5521,2669|59|5548,2705|59|5584,2728|59|5607,2764|59|5643,2787|59|5666,2823|59|5702,2846|59|5725,0|118|5757,22|118|5779,54|118|5811,76|118|5833,108|118|5865,130|118|5887,162|118|5919,184|118|5941,219|118|5976,251|118|6008,286|118|6043,312|118|6069,343|118|6100,365|118|6122,396|118|6153,418|118|6175,449|118|6206,471|118|6228,502|118|6259,524|118|6281,555|118|6312,577|118|6334,612|118|6369,637|118|6394,672|118|6429,697|118|6454,732|118|6489,757|118|6514,792|118|6549,817|118|6574,853|118|6610,880|118|6637,916|118|6673,943|118|6700,962|118|6719,981|118|6738,1000|118|6757,1019|118|6776,1036|118|6793,1053|118|6810,1070|118|6827,1085|118|6842,1102|118|6859,1117|118|6874,1153|118|6910,1178|118|6935,1200|118|6957,1221|118|6978,1258|118|7015,1285|118|7042,1312|118|7069,1343|118|7100,1358|118|7115,1389|118|7146,1404|118|7161,1435|118|7192,1456|118|7213,1487|118|7244,1506|118|7263,1537|118|7294,1554|118|7311,1591|118|7348,1618|118|7375,1655|118|7412,1682|118|7439,1719|118|7476,1746|118|7503,1777|118|7534,1811|118|7568,1835|118|7592,1869|118|7626,1893|118|7650,1927|118|7684,1951|118|7708,1985|118|7742,2009|118|7766,2051|118|7808,2085|118|7842,2120|118|7877,2140|118|7897,2175|118|7932,2195|118|7952,2230|118|7987,2250|118|8007,2275|118|8032,2293|118|8050,2318|118|8075,2336|118|8093,2361|118|8118,2379|118|8136,2404|118|8161,2422|118|8179,2452|118|8209,2469|118|8226,2499|118|8256,2522|118|8279,2552|118|8309,2569|118|8326,2605|118|8362,2632|118|8389,2668|118|8425,2695|118|8452,2731|118|8488,2758|118|8515,2794|118|8551,2821|118|8578,0|177|8614,27|177|8641,63|177|8677,90|177|8704,136|177|8750,173|177|8787,209|177|8823,236|177|8850,272|177|8886,303|177|8917,327|177|8941,358|177|8972,382|177|8996,413|177|9027,437|177|9051" oid="-1" rowHeight="59" shared="false"/>
@@ -751,7 +671,7 @@
     <custom-block blocktag="custom-153" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="153" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-131" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="131" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-131" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="131" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <music desc="" id="224" loop="true" name="General RPG Major Boss Battle" oid="15676" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
@@ -772,10 +692,10 @@
     <custom-block blocktag="custom-148" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetCurrentHealth&quot;)))" desc="" global="false" gui="Current Health for %0" id="148" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-136" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetCurrentHealth&quot;)))" desc="" global="false" gui="Current Health for %0" id="136" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="NUMBER" shared="false" snippetID="90">
+    <custom-block blocktag="custom-136" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetCurrentHealth&quot;)))" desc="" global="false" gui="Current Health for %0" id="136" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-44" blocktype="NORMAL" code="((sayToScene(&quot;Score Manager&quot;, &quot;GetFont&quot;)) as Font)" desc="Get the font used. Use for if you are setting up labels to retain consistency across Flash and other platforms." global="false" gui="Get Font" id="44" message="GetFont" name="GetFont" oid="-1" return="FONT" shared="false" snippetID="17"/>
+    <custom-block blocktag="custom-44" blocktype="NORMAL" code="((sayToScene(&quot;Score Manager&quot;, &quot;GetFont&quot;)) as Font)" desc="Get the font used. Use for if you are setting up labels to retain consistency across Flash and other platforms." global="false" gui="Get Font" id="44" message="GetFont" name="GetFont" oid="-1" return="FONT" shared="false" snippetID="-1"/>
     <custom-block blocktag="custom-198" blocktype="NORMAL" code="Number((~.say(&quot;Health&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="198" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -791,7 +711,7 @@
     <custom-block blocktag="custom-146" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="146" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-134" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="134" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="90">
+    <custom-block blocktag="custom-134" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="134" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-174" blocktype="NORMAL" code="String((scripts.Design_115_115_Inventory.GetItematIndex(~,~)))" desc="Returns the item at the given index for the actor." global="true" gui="Get item at index %1 from the inventory of %0" id="174" message="GetItematIndex" name="GetItematIndex" oid="-1" return="TEXT" shared="false" snippetID="-1">
@@ -809,24 +729,24 @@
     <custom-block blocktag="custom-147" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetMaxHealth&quot;)))" desc="" global="false" gui="Maximum Health For %0" id="147" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-135" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetMaxHealth&quot;)))" desc="" global="false" gui="Maximum Health For %0" id="135" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="NUMBER" shared="false" snippetID="90">
+    <custom-block blocktag="custom-135" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetMaxHealth&quot;)))" desc="" global="false" gui="Maximum Health For %0" id="135" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-19" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetMaxWalkSpeed&quot;)))" desc="" global="false" gui="Get Max Walk Speed for %0" id="19" message="GetMaxWalkSpeed" name="GetMaxWalkSpeed" oid="-1" return="NUMBER" shared="false" snippetID="11">
+    <custom-block blocktag="custom-19" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetMaxWalkSpeed&quot;)))" desc="" global="false" gui="Get Max Walk Speed for %0" id="19" message="GetMaxWalkSpeed" name="GetMaxWalkSpeed" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-141" blocktype="NORMAL" code="Number((~.say(&quot;Lives Manager&quot;, &quot;GetRemainingLives&quot;)))" desc="" global="false" gui="Remaining Lives for %0" id="141" message="GetRemainingLives" name="GetRemainingLives" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-36" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetScore&quot;)))" desc="" global="false" gui="Get Current Score" id="36" message="GetScore" name="GetScore" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
+    <custom-block blocktag="custom-36" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetScore&quot;)))" desc="" global="false" gui="Get Current Score" id="36" message="GetScore" name="GetScore" oid="-1" return="NUMBER" shared="false" snippetID="-1"/>
     <custom-block blocktag="custom-416" blocktype="NORMAL" code="Number((sayToScene(&quot;SceneEvents_0&quot;, &quot;getTheWidthOfActortype&quot;, ~)))" desc="get the width of an actortype" global="false" gui="get the width of %0" id="416" message="getTheWidthOfActortype" name="getTheWidthOfActortype" oid="-1" return="NUMBER" shared="false" snippetID="280">
         <blank name="actortype" order="0" type="ACTORTYPE"/>
     </custom-block>
-    <custom-block blocktag="custom-20" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetWalkAccel&quot;)))" desc="" global="false" gui="Get Walk Accel for %0" id="20" message="GetWalkAccel" name="GetWalkAccel" oid="-1" return="NUMBER" shared="false" snippetID="11">
+    <custom-block blocktag="custom-20" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetWalkAccel&quot;)))" desc="" global="false" gui="Get Walk Accel for %0" id="20" message="GetWalkAccel" name="GetWalkAccel" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-39" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetXOffset&quot;)))" desc="" global="false" gui="Get Score Drawing X Offset" id="39" message="GetXOffset" name="GetXOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
-    <custom-block blocktag="custom-40" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetYOffset&quot;)))" desc="" global="false" gui="Get Score Drawing Y Offset" id="40" message="GetYOffset" name="GetYOffset" oid="-1" return="NUMBER" shared="false" snippetID="17"/>
+    <custom-block blocktag="custom-39" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetXOffset&quot;)))" desc="" global="false" gui="Get Score Drawing X Offset" id="39" message="GetXOffset" name="GetXOffset" oid="-1" return="NUMBER" shared="false" snippetID="-1"/>
+    <custom-block blocktag="custom-40" blocktype="NORMAL" code="Number((sayToScene(&quot;Score Manager&quot;, &quot;GetYOffset&quot;)))" desc="" global="false" gui="Get Score Drawing Y Offset" id="40" message="GetYOffset" name="GetYOffset" oid="-1" return="NUMBER" shared="false" snippetID="-1"/>
     <background atlasID="19" desc="Gives a doodle-like feel to a scene." durations="100" dx="5.0" dy="5.0" height="796" id="354" name="Graph Paper" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="232" fixedrot="false" fric="0.2" gid="3" id="336" ignoreg="true" inertia="1.0" ldamp="0.0" lw="true" mass="1.0" name="Gun" oid="-1" pausable="true" rest="0.0" shared="false" sprite="337" static="false" touchable="true">
         <snippets>
@@ -843,9 +763,6 @@
                 <prop id="15" list="0" val="Animation 1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="211">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="337" name="Gun" shared="false" width="32">
@@ -858,16 +775,7 @@
     </sprite>
     <music desc="" id="339" loop="true" name="Gun Fire" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="0" continuous="false" desc="" eventsnippetid="231" fixedrot="false" fric="0.2" gid="6" id="334" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Gun2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="335" static="true" touchable="true">
-        <snippets>
-            <s enabled="true" id="230">
-                <prop id="1" list="0" val="-1"/>
-                <prop id="2" list="0" val="2"/>
-                <prop id="3" list="0" val="1"/>
-                <prop id="4" list="0" val="0"/>
-                <prop id="5" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <music desc="A happy theme.&lt;br&gt;http://creativecommons.org/licenses/by-nc-nd/3.0/ &lt;br&gt;&lt;br&gt;Music composed, produced and published by MetalRenard Music.&lt;br&gt; http://metalrenardmusic.com &lt;br&gt;http://facebook.com/metalrenardmusic" id="227" loop="true" name="Happy Theme" oid="24441" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-196" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;heal&quot;, ~);" desc="Restores given amount of HP." global="false" gui="heal %0 by %1 health" id="196" message="heal" name="heal" oid="-1" return="VOID" shared="false" snippetID="-1">
@@ -882,7 +790,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-132" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Heal&quot;, ~);" desc="Adds a specific amount of health to the Actor." global="false" gui="Heal %0 By %1" id="132" message="Heal" name="Heal" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-132" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Heal&quot;, ~);" desc="Adds a specific amount of health to the Actor." global="false" gui="Heal %0 By %1" id="132" message="Heal" name="Heal" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
@@ -898,7 +806,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Lives" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-41" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;IncrementScore&quot;, ~);" desc="" global="false" gui="Increment Score By %0" id="41" message="IncrementScore" name="IncrementScore" oid="-1" return="VOID" shared="false" snippetID="17">
+    <custom-block blocktag="custom-41" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;IncrementScore&quot;, ~);" desc="" global="false" gui="Increment Score By %0" id="41" message="IncrementScore" name="IncrementScore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Amount" order="0" type="NUMBER"/>
     </custom-block>
     <custom-block blocktag="custom-173" blocktype="NORMAL" code="Number((scripts.Design_115_115_Inventory.IndexofItem(~,~)))" desc="Returns the index of an item in the list." global="true" gui="Index of %0 in list %1" id="173" message="IndexofItem" name="IndexofItem" oid="-1" return="NUMBER" shared="false" snippetID="-1">
@@ -913,9 +821,9 @@
         <blank name="ItemName" order="0" type="OBJECT"/>
         <blank name="List" order="1" type="LIST"/>
     </custom-block>
-    <custom-block blocktag="custom-157" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreX&quot;)))" desc="The center-x position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre X" id="157" message="IntroTitleCentreX" name="IntroTitleCentreX" oid="-1" return="NUMBER" shared="false" snippetID="109"/>
-    <custom-block blocktag="custom-158" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreY&quot;)))" desc="The center-y position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre Y" id="158" message="IntroTitleCentreY" name="IntroTitleCentreY" oid="-1" return="NUMBER" shared="false" snippetID="109"/>
-    <custom-block blocktag="custom-159" blocktype="NORMAL" code="String((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleText&quot;)))" desc="The text, whether custom or simply the current scene's name, that is being used in the intro title." global="false" gui="Intro Title Text" id="159" message="IntroTitleText" name="IntroTitleText" oid="-1" return="TEXT" shared="false" snippetID="109"/>
+    <custom-block blocktag="custom-157" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreX&quot;)))" desc="The center-x position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre X" id="157" message="IntroTitleCentreX" name="IntroTitleCentreX" oid="-1" return="NUMBER" shared="false" snippetID="-1"/>
+    <custom-block blocktag="custom-158" blocktype="NORMAL" code="Number((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleCentreY&quot;)))" desc="The center-y position of the intro title. Use this to determine where to place the label." global="false" gui="Intro Title Centre Y" id="158" message="IntroTitleCentreY" name="IntroTitleCentreY" oid="-1" return="NUMBER" shared="false" snippetID="-1"/>
+    <custom-block blocktag="custom-159" blocktype="NORMAL" code="String((sayToScene(&quot;Intro Title&quot;, &quot;IntroTitleText&quot;)))" desc="The text, whether custom or simply the current scene's name, that is being used in the intro title." global="false" gui="Intro Title Text" id="159" message="IntroTitleText" name="IntroTitleText" oid="-1" return="TEXT" shared="false" snippetID="-1"/>
     <custom-block blocktag="custom-172" blocktype="NORMAL" code="Boolean((scripts.Design_115_115_Inventory.InventoryFull(~)))" desc="Returns true if the inventory of the given actor is full." global="true" gui="Inventory of %0 is full" id="172" message="InventoryFull" name="InventoryFull" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="InventoryOwner" order="0" type="ACTOR"/>
     </custom-block>
@@ -982,7 +890,6 @@
             </s>
         </snippets>
     </actor>
-    <music desc="" id="57" loop="true" name="Jump" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="1" desc="" height="64" id="33" name="Jumper" shared="false" width="124">
         <anim across="4" atlasID="0" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,41,16,73,16,73,64,41,64" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -1053,9 +960,6 @@
                 <prop id="13" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="93">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="42">
                 <prop id="34" list="0" val="right"/>
                 <prop id="33" list="0" val="left"/>
@@ -1084,9 +988,6 @@
                 <prop id="2" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="30">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
         </snippets>
     </actor>
     <custom-block blocktag="custom-403" blocktype="ACTION" code="~.say(&quot;Label for iOS&quot;, &quot;labelWidth&quot;, ~);" desc="" global="false" gui="set label width for %0 to %1" id="403" message="labelWidth" name="labelWidth" oid="-1" return="VOID" shared="false" snippetID="278">
@@ -1112,18 +1013,12 @@
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="110" fixedrot="true" fric="0.5" gid="3" id="160" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Left Tree Side" oid="-1" pausable="true" rest="0.17" shared="false" sprite="161" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="160">
-                <prop id="1" list="0" val="5"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-18" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;LimitSpeed&quot;, ~);" desc="" global="false" gui="Set Limit Speed for %0 to %1" id="18" message="LimitSpeed" name="LimitSpeed" oid="-1" return="VOID" shared="false" snippetID="11">
+    <custom-block blocktag="custom-18" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;LimitSpeed&quot;, ~);" desc="" global="false" gui="Set Limit Speed for %0 to %1" id="18" message="LimitSpeed" name="LimitSpeed" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Limit" order="1" type="BOOLEAN"/>
     </custom-block>
@@ -1141,7 +1036,7 @@
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-3" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;LoopAnim&quot;, ~,~);" desc="" global="false" gui="Loop %1 for %0 Using %2" id="3" message="LoopAnim" name="LoopAnim" oid="-1" return="VOID" shared="false" snippetID="2">
+    <custom-block blocktag="custom-3" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;LoopAnim&quot;, ~,~);" desc="" global="false" gui="Loop %1 for %0 Using %2" id="3" message="LoopAnim" name="LoopAnim" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Animation" order="1" type="ANIMATION"/>
         <blank name="Category" order="2" type="TEXT"/>
@@ -1170,7 +1065,7 @@
     <custom-block blocktag="custom-24" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeVulnerable&quot;);" desc="" global="false" gui="make %0 not invincible" id="24" message="makeVulnerable" name="makeVulnerable" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-17" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;MaxWalkSpeed&quot;, ~);" desc="" global="false" gui="For %0 Set Max Walk Speed To %1" id="17" message="MaxWalkSpeed" name="MaxWalkSpeed" oid="-1" return="VOID" shared="false" snippetID="11">
+    <custom-block blocktag="custom-17" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;MaxWalkSpeed&quot;, ~);" desc="" global="false" gui="For %0 Set Max Walk Speed To %1" id="17" message="MaxWalkSpeed" name="MaxWalkSpeed" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="MaxSpeed" order="1" type="NUMBER"/>
     </custom-block>
@@ -1230,11 +1125,11 @@
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;PlayOnce&quot;, ~);" desc="" global="false" gui="Play %1 Once for %0" id="4" message="PlayOnce" name="PlayOnce" oid="-1" return="VOID" shared="false" snippetID="2">
+    <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;PlayOnce&quot;, ~);" desc="" global="false" gui="Play %1 Once for %0" id="4" message="PlayOnce" name="PlayOnce" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Animation" order="1" type="ANIMATION"/>
     </custom-block>
-    <custom-block blocktag="custom-15" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;PreventWalk&quot;, ~);" desc="" global="false" gui="Set Prevent Walk for %0 to %1" id="15" message="PreventWalk" name="PreventWalk" oid="-1" return="VOID" shared="false" snippetID="11">
+    <custom-block blocktag="custom-15" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;PreventWalk&quot;, ~);" desc="" global="false" gui="Set Prevent Walk for %0 to %1" id="15" message="PreventWalk" name="PreventWalk" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
@@ -1366,12 +1261,6 @@
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="255" fixedrot="true" fric="0.2" gid="3" id="372" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Right Tree Side" oid="-1" pausable="true" rest="0.0" shared="false" sprite="373" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="160">
-                <prop id="1" list="0" val="5"/>
-                <prop id="2" list="0" val="false"/>
-                <prop id="3" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -1419,7 +1308,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Take Damage" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-38" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetDrawOffset&quot;, ~,~);" desc="" global="false" gui="Set Score Drawing Offset to X %0 Y %1" id="38" message="SetDrawOffset" name="SetDrawOffset" oid="-1" return="VOID" shared="false" snippetID="17">
+    <custom-block blocktag="custom-38" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetDrawOffset&quot;, ~,~);" desc="" global="false" gui="Set Score Drawing Offset to X %0 Y %1" id="38" message="SetDrawOffset" name="SetDrawOffset" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Horizontal" order="0" type="NUMBER"/>
         <blank name="Vertical" order="1" type="NUMBER"/>
     </custom-block>
@@ -1435,7 +1324,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-130" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetHealth&quot;, ~);" desc="" global="false" gui="Set Health For %0 To %1" id="130" message="SetHealth" name="SetHealth" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-130" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetHealth&quot;, ~);" desc="" global="false" gui="Set Health For %0 To %1" id="130" message="SetHealth" name="SetHealth" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
@@ -1451,7 +1340,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Status" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-129" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetInvincibility&quot;, ~);" desc="" global="false" gui="Set Invincibility For %0 to %1" id="129" message="SetInvincibility" name="SetInvincibility" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-129" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetInvincibility&quot;, ~);" desc="" global="false" gui="Set Invincibility For %0 to %1" id="129" message="SetInvincibility" name="SetInvincibility" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Status" order="1" type="BOOLEAN"/>
     </custom-block>
@@ -1463,10 +1352,10 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="text" order="1" type="TEXT"/>
     </custom-block>
-    <custom-block blocktag="custom-37" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetScore&quot;, ~);" desc="" global="false" gui="Set Current Score To %0" id="37" message="SetScore" name="SetScore" oid="-1" return="VOID" shared="false" snippetID="17">
+    <custom-block blocktag="custom-37" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetScore&quot;, ~);" desc="" global="false" gui="Set Current Score To %0" id="37" message="SetScore" name="SetScore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Score" order="0" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-43" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetScoreFont&quot;, ~);" desc="" global="false" gui="Set Score Font To %0" id="43" message="SetScoreFont" name="SetScoreFont" oid="-1" return="VOID" shared="false" snippetID="17">
+    <custom-block blocktag="custom-43" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;SetScoreFont&quot;, ~);" desc="" global="false" gui="Set Score Font To %0" id="43" message="SetScoreFont" name="SetScoreFont" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Font" order="0" type="FONT"/>
     </custom-block>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="6" desc="" height="19" id="421" name="SF Comic Script Outline" offsets="0|0|0|,4|0|4,10|0|10,17|0|17,25|0|25,37|0|37,49|0|49,63|0|63,68|0|68,77|0|77,87|0|87,96|0|96,104|0|104,109|0|109,117|0|117,122|0|122,133|0|133,144|0|144,153|0|153,165|0|165,177|0|177,190|0|190,202|0|202,213|0|213,225|0|225,236|0|236,248|0|248,254|0|254,261|0|261,269|0|269,277|0|277,284|0|284,294|0|294,305|0|305,316|0|316,329|0|329,341|0|341,353|0|353,365|0|365,377|0|377,389|0|389,402|0|402,413|0|413,426|0|426,439|0|439,448|0|448,464|0|464,477|0|477,489|0|489,502|0|502,514|0|514,526|0|526,537|0|537,548|0|548,561|0|561,572|0|572,587|0|587,600|0|600,611|0|611,625|0|625,636|0|636,641|0|641,652|0|652,660|0|660,669|0|669,675|0|675,685|0|685,696|0|696,706|0|706,716|0|716,726|0|726,736|0|736,746|0|746,757|0|757,763|0|763,773|0|773,784|0|784,791|0|791,804|0|804,815|0|815,825|0|825,836|0|836,846|0|846,857|0|857,866|0|866,875|0|875,886|0|886,896|0|896,909|0|909,920|0|920,930|0|930,941|0|941,951|0|951,960|0|960,971|0|971,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,980|0|980,984|0|984,990|0|990,1000|0|1000,1000|0|1000,1011|0|1011,1024|0|1024,1033|0|1033,1033|0|1033,1041|0|1041,1052|0|1052,1052|0|1052,1064|0|1064,1064|0|1064,1072|0|1072,1083|0|1083,1092|0|1092,1098|0|1098,1107|0|1107,1107|0|1107,1107|0|1107,1113|0|1113,1113|0|1113,1128|0|1128,1133|0|1133,1133|0|1133,1133|0|1133,1133|0|1133,1144|0|1144,1144|0|1144,1144|0|1144,1144|0|1144,1153|0|1153,1164|0|1164,1178|0|1178,1190|0|1190,1203|0|1203,1215|0|1215,1227|0|1227,1245|0|1245,1245|0|1245,1257|0|1257,1269|0|1269,1281|0|1281,1293|0|1293,1304|0|1304,1315|0|1315,1326|0|1326,1337|0|1337,1337|0|1337,1351|0|1351,1363|0|1363,1375|0|1375,1387|0|1387,1399|0|1399,1411|0|1411,1420|0|1420,1434|0|1434,1447|0|1447,1460|0|1460,1473|0|1473,1486|0|1486,1497|0|1497,1510|0|1510,1524|0|1524,1533|0|1533,1545|0|1545,1557|0|1557,1569|0|1569,1581|0|1581,1592|0|1592,1607|0|1607,1607|0|1607,1617|0|1617,1628|0|1628,1638|0|1638,1649|0|1649,1657|0|1657,1665|0|1665,1674|0|1674,1683|0|1683,1683|0|1683,1695|0|1695,1706|0|1706,1717|0|1717,1728|0|1728,1739|0|1739,1750|0|1750,1757|0|1757,1769|0|1769,1780|0|1780,1791|0|1791,1802|0|1802,1813|0|1813,1823|0|1823,1833|0|1833,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1843|0|1843,1863|0|1863,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1879|0|1879,1891|0|1891,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1902|0|1902,1913|0|1913,1913|0|1913,1913|0|1913,1913|0|1913,1913|0|1913,1927|0|1927" oid="-1" rowHeight="19" shared="false"/>
@@ -1481,18 +1370,7 @@
         <anim across="2" atlasID="-1" down="1" durations="100,100" height="64" id="1" loop="false" name="Left" numframes="2" originx="48" originy="32" width="192"/>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="135" fixedrot="true" fric="0.2" gid="0" id="252" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Shotgun Bullet" oid="-1" pausable="true" rest="0.0" shared="false" sprite="253" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="133">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="132">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="134">
-                <prop id="1" list="0" val="2"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="Icon for a game _item_&#10;Size: 24x24" eventsnippetid="122" fixedrot="false" fric="0.2" gid="3" id="234" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="ShotGun Icon" oid="-1" pausable="true" rest="0.0" shared="false" sprite="235" static="true" touchable="true">
         <snippets/>
@@ -1557,27 +1435,7 @@
     <music desc="" id="341" loop="true" name="Test Sound" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music desc="A happy theme, suitable to be used as title screen music.&lt;br&gt;http://creativecommons.org/licenses/by-nc-nd/3.0/ &lt;br&gt;&lt;br&gt;Music composed, produced and published by MetalRenard Music.&lt;br&gt; http://metalrenardmusic.com &lt;br&gt;http://facebook.com/metalrenardmusic" id="155" loop="true" name="Title Theme Happy" oid="24447" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="119" fixedrot="false" fric="0.2" gid="5" id="206" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="tree branch" oid="-1" pausable="true" rest="0.0" shared="false" sprite="207" static="false" touchable="true">
-        <snippets>
-            <s enabled="true" id="37">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="242">
-                <prop id="17" list="0" val="10.0"/>
-                <prop id="23" list="0" val="2"/>
-                <prop id="22" list="0" val="360"/>
-                <prop id="25" list="0" val="5.0"/>
-                <prop id="24" list="0" val="360.0"/>
-                <prop id="27" list="0" val="0.0"/>
-                <prop id="26" list="0" val="false"/>
-                <prop id="29" list="0" val="271"/>
-                <prop id="28" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="225">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="22" id="207" name="tree branch" shared="false" width="242">
         <anim across="1" atlasID="1" down="1" durations="100" height="22" id="0" loop="true" name="Animation 0" numframes="1" originx="121" originy="11" width="242">
@@ -1611,7 +1469,7 @@
             </s>
         </snippets>
     </actor>
-    <custom-block blocktag="custom-14" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;WalkAccel&quot;, ~);" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="14" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="11">
+    <custom-block blocktag="custom-14" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;WalkAccel&quot;, ~);" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="14" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Accel" order="1" type="NUMBER"/>
     </custom-block>
