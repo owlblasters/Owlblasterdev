@@ -8,7 +8,7 @@
         <blank name="actortype" order="1" type="ACTORTYPE"/>
     </custom-block>
     <custom-block blocktag="custom-217" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;&quot;);" desc="" global="false" gui="Missing" id="217" message="" name="" oid="-1" return="VOID" shared="false" snippetID="-1"/>
-    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="5" desc="" height="20" id="359" name="28 Days Later" offsets="0|0|0|,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,25|0|25,25|0|25,25|0|25,25|0|25,25|0|25,25|0|25,34|0|34,39|0|39,48|0|48,57|0|57,66|0|66,76|0|76,86|0|86,97|0|97,107|0|107,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,116|0|116,128|0|128,138|0|138,148|0|148,158|0|158,166|0|166,175|0|175,184|0|184,194|0|194,198|0|198,207|0|207,218|0|218,228|0|228,241|0|241,252|0|252,262|0|262,272|0|272,283|0|283,293|0|293,303|0|303,312|0|312,322|0|322,334|0|334,349|0|349,363|0|363,376|0|376,386|0|386,386|0|386,386|0|386,386|0|386,386|0|386,386|0|386,386|0|386,397|0|397,406|0|406,415|0|415,424|0|424,432|0|432,440|0|440,449|0|449,459|0|459,463|0|463,472|0|472,482|0|482,491|0|491,503|0|503,513|0|513,522|0|522,531|0|531,541|0|541,551|0|551,560|0|560,568|0|568,577|0|577,588|0|588,601|0|601,613|0|613,624|0|624" oid="-1" rowHeight="20" shared="false"/>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="5" desc="" height="22" id="359" name="28 Days Later" offsets="0|0|0|,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,5|0|5,26|0|26,26|0|26,26|0|26,26|0|26,26|0|26,26|0|26,36|0|36,41|0|41,51|0|51,61|0|61,70|0|70,80|0|80,91|0|91,101|0|101,112|0|112,122|0|122,122|0|122,122|0|122,122|0|122,122|0|122,122|0|122,122|0|122,122|0|122,135|0|135,145|0|145,155|0|155,165|0|165,174|0|174,183|0|183,193|0|193,204|0|204,209|0|209,219|0|219,230|0|230,240|0|240,253|0|253,264|0|264,274|0|274,284|0|284,295|0|295,306|0|306,316|0|316,325|0|325,336|0|336,349|0|349,364|0|364,378|0|378,391|0|391,401|0|401,401|0|401,401|0|401,401|0|401,401|0|401,401|0|401,401|0|401,413|0|413,422|0|422,431|0|431,440|0|440,448|0|448,457|0|457,466|0|466,476|0|476,480|0|480,489|0|489,500|0|500,510|0|510,523|0|523,534|0|534,544|0|544,554|0|554,565|0|565,575|0|575,584|0|584,593|0|593,603|0|603,615|0|615,629|0|629,642|0|642,654|0|654" oid="-1" rowHeight="22" shared="false"/>
     <sprite atlasID="0" default="0" desc="" height="48" id="123" name="a" shared="false" width="48">
         <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="24" width="48">
             <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -515,8 +515,8 @@
                 <prop id="10" list="0" val="Animation 0"/>
                 <prop id="11" list="0" val="0"/>
                 <prop id="12" list="0" val="30"/>
-                <prop id="15" list="0" val="Animation 1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="Animation 1"/>
             </s>
         </snippets>
     </actor>
@@ -760,8 +760,8 @@
                 <prop id="10" list="0" val="Animation 0"/>
                 <prop id="11" list="0" val="20"/>
                 <prop id="12" list="0" val="30"/>
-                <prop id="15" list="0" val="Animation 1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="Animation 1"/>
             </s>
         </snippets>
     </actor>
@@ -882,8 +882,8 @@
                 <prop id="12" list="0" val="0"/>
                 <prop id="13" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="15">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -894,11 +894,11 @@
         <anim across="4" atlasID="0" down="1" durations="150,150,150,150" height="64" id="0" loop="true" name="idle-l" numframes="4" originx="62" originy="32" width="496">
             <poly data="4,41,16,73,16,73,64,41,64" density="0.1" fric="0.2" gid="0" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
-            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
-        </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="16" loop="true" name="walk-l" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" atlasID="-1" down="1" durations="150,150,150,150" height="64" id="1" loop="true" name="idle-r" numframes="4" originx="62" originy="32" width="496">
+            <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="2" name="Box" rest="0.0" sensor="false"/>
         </anim>
         <anim across="9" atlasID="-1" down="1" durations="70,70,70,70,70,70,70,70,70" height="64" id="3" loop="true" name="walk-r" numframes="9" originx="62" originy="32" width="1116">
             <poly data="4,42,16,74,16,74,64,42,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
@@ -912,10 +912,6 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="16" fixedrot="true" fric="0.5" gid="0" id="32" ignoreg="true" inertia="0.01" ldamp="0.499" lw="false" mass="5.0" name="Jumper" oid="19264" pausable="true" rest="0.1" shared="true" sprite="33" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="65">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="20">
                 <prop id="1" list="0" val="10000000"/>
                 <prop id="2" list="0" val="10000000"/>
@@ -945,6 +941,10 @@
                 <prop id="26" list="0" val="64"/>
                 <prop id="28" list="0" val="0"/>
             </s>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="112">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="1"/>
@@ -960,6 +960,13 @@
                 <prop id="13" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="283">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="236"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="42">
                 <prop id="34" list="0" val="right"/>
                 <prop id="33" list="0" val="left"/>
@@ -973,14 +980,7 @@
                 <prop id="41" list="0" val="idle-l"/>
                 <prop id="46" list="0" val="false"/>
                 <prop id="44" list="0" val="jump-r"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="45" list="0" val="true"/>
-            </s>
-            <s enabled="true" id="283">
-                <prop id="1" list="0" val=""/>
-                <prop id="2" list="0" val="236"/>
-                <prop id="3" list="0" val=""/>
-                <prop id="4" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="281">
