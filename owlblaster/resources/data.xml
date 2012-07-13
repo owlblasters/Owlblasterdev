@@ -199,7 +199,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-133" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Damage&quot;, ~);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="133" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-133" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Damage&quot;, ~);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="133" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
@@ -263,7 +263,7 @@
     <custom-block blocktag="custom-153" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="153" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-131" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="131" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-131" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="131" message="FullRestore" name="FullRestore" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-250" blocktype="NORMAL" code="Number((scripts.Design_146_146_Inventory.GetAmountofItem(~,~)))" desc="Returns the amount of an item in the actor's inventory." global="true" gui="Get amount of %1 in the inventory of %0" id="250" message="GetAmountofItem" name="GetAmountofItem" oid="-1" return="NUMBER" shared="false" snippetID="-1">
@@ -284,7 +284,7 @@
     <custom-block blocktag="custom-148" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetCurrentHealth&quot;)))" desc="" global="false" gui="Current Health for %0" id="148" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-136" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetCurrentHealth&quot;)))" desc="" global="false" gui="Current Health for %0" id="136" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="NUMBER" shared="false" snippetID="90">
+    <custom-block blocktag="custom-136" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetCurrentHealth&quot;)))" desc="" global="false" gui="Current Health for %0" id="136" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-44" blocktype="NORMAL" code="((sayToScene(&quot;Score Manager&quot;, &quot;GetFont&quot;)) as Font)" desc="Get the font used. Use for if you are setting up labels to retain consistency across Flash and other platforms." global="false" gui="Get Font" id="44" message="GetFont" name="GetFont" oid="-1" return="FONT" shared="false" snippetID="17"/>
@@ -297,7 +297,7 @@
     <custom-block blocktag="custom-146" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="146" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-134" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="134" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="90">
+    <custom-block blocktag="custom-134" blocktype="NORMAL" code="Boolean((~.say(&quot;Health Manager&quot;, &quot;GetInvincibility&quot;)))" desc="" global="false" gui="%0 Is Invincible?" id="134" message="GetInvincibility" name="GetInvincibility" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-247" blocktype="NORMAL" code="String((scripts.Design_146_146_Inventory.GetItematIndex(~,~)))" desc="Returns the item at the given index for the actor." global="true" gui="Get item at index %1 from the inventory of %0" id="247" message="GetItematIndex" name="GetItematIndex" oid="-1" return="TEXT" shared="false" snippetID="-1">
@@ -315,7 +315,7 @@
     <custom-block blocktag="custom-147" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetMaxHealth&quot;)))" desc="" global="false" gui="Maximum Health For %0" id="147" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <custom-block blocktag="custom-135" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetMaxHealth&quot;)))" desc="" global="false" gui="Maximum Health For %0" id="135" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="NUMBER" shared="false" snippetID="90">
+    <custom-block blocktag="custom-135" blocktype="NORMAL" code="Number((~.say(&quot;Health Manager&quot;, &quot;GetMaxHealth&quot;)))" desc="" global="false" gui="Maximum Health For %0" id="135" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-213" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetMaxWalkSpeed&quot;)))" desc="" global="false" gui="Get Max Walk Speed for %0" id="213" message="GetMaxWalkSpeed" name="GetMaxWalkSpeed" oid="-1" return="NUMBER" shared="false" snippetID="-1">
@@ -346,7 +346,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-132" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Heal&quot;, ~);" desc="Adds a specific amount of health to the Actor." global="false" gui="Heal %0 By %1" id="132" message="Heal" name="Heal" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-132" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;Heal&quot;, ~);" desc="Adds a specific amount of health to the Actor." global="false" gui="Heal %0 By %1" id="132" message="Heal" name="Heal" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
@@ -705,7 +705,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <custom-block blocktag="custom-130" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetHealth&quot;, ~);" desc="" global="false" gui="Set Health For %0 To %1" id="130" message="SetHealth" name="SetHealth" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-130" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetHealth&quot;, ~);" desc="" global="false" gui="Set Health For %0 To %1" id="130" message="SetHealth" name="SetHealth" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
@@ -721,7 +721,7 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Status" order="1" type="BOOLEAN"/>
     </custom-block>
-    <custom-block blocktag="custom-129" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetInvincibility&quot;, ~);" desc="" global="false" gui="Set Invincibility For %0 to %1" id="129" message="SetInvincibility" name="SetInvincibility" oid="-1" return="VOID" shared="false" snippetID="90">
+    <custom-block blocktag="custom-129" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;SetInvincibility&quot;, ~);" desc="" global="false" gui="Set Invincibility For %0 to %1" id="129" message="SetInvincibility" name="SetInvincibility" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Status" order="1" type="BOOLEAN"/>
     </custom-block>

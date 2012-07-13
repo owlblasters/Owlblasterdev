@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <actor-set-prop comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="DMG"/>
+                    <get-item-number comment="false" id="2" x="0" y="0">
+                        <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </get-item-number>
+                </actor-set-prop>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-actor-screen comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <recycle comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                </recycle>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="0"/>
+        </event-actor-screen>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

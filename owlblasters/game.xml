@@ -1,8 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="30" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.owlblastersdev.owlblasters" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
-    <folders/>
+<game accelFramerate="30" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.owlblasterdev.owlblaster" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="1" defaultFramerate="60" desc="" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
+    <folders>
+        <group desc="" id="0" name="Actions" type="snippet">
+            <r id="1"/>
+            <r id="272"/>
+            <r id="18"/>
+            <r id="23"/>
+            <r id="160"/>
+            <r id="63"/>
+            <r id="28"/>
+        </group>
+        <group desc="" id="1" name="Other" type="snippet">
+            <r id="2"/>
+            <r id="4"/>
+            <r id="140"/>
+            <r id="128"/>
+            <r id="133"/>
+            <r id="226"/>
+            <r id="194"/>
+            <r id="15"/>
+            <r id="220"/>
+            <r id="153"/>
+            <r id="223"/>
+            <r id="185"/>
+            <r id="191"/>
+            <r id="217"/>
+            <r id="188"/>
+            <r id="179"/>
+            <r id="24"/>
+            <r id="214"/>
+            <r id="182"/>
+            <r id="61"/>
+            <r id="211"/>
+        </group>
+        <group desc="" id="2" name="Motion" type="snippet">
+            <r id="5"/>
+            <r id="6"/>
+            <r id="8"/>
+            <r id="10"/>
+            <r id="11"/>
+            <r id="30"/>
+        </group>
+        <group desc="" id="3" name="GUI" type="snippet">
+            <r id="65"/>
+        </group>
+        <group desc="" id="4" name="Health" type="snippet">
+            <r id="141"/>
+            <r id="129"/>
+            <r id="9"/>
+            <r id="192"/>
+            <r id="195"/>
+            <r id="14"/>
+            <r id="134"/>
+            <r id="221"/>
+            <r id="154"/>
+            <r id="156"/>
+            <r id="157"/>
+            <r id="158"/>
+            <r id="218"/>
+            <r id="159"/>
+            <r id="212"/>
+            <r id="27"/>
+            <r id="215"/>
+            <r id="31"/>
+            <r id="35"/>
+            <r id="169"/>
+            <r id="168"/>
+            <r id="37"/>
+            <r id="163"/>
+            <r id="162"/>
+            <r id="227"/>
+            <r id="165"/>
+            <r id="164"/>
+            <r id="224"/>
+            <r id="186"/>
+            <r id="189"/>
+            <r id="112"/>
+            <r id="183"/>
+            <r id="180"/>
+        </group>
+        <group desc="" id="5" name="Eye Candy" type="snippet">
+            <r id="12"/>
+        </group>
+        <group desc="" id="6" name="Collisions" type="snippet">
+            <r id="34"/>
+            <r id="139"/>
+            <r id="230"/>
+            <r id="229"/>
+            <r id="193"/>
+            <r id="132"/>
+            <r id="225"/>
+            <r id="152"/>
+            <r id="187"/>
+            <r id="222"/>
+            <r id="87"/>
+            <r id="184"/>
+            <r id="190"/>
+            <r id="216"/>
+            <r id="219"/>
+            <r id="178"/>
+            <r id="25"/>
+            <r id="127"/>
+            <r id="126"/>
+            <r id="213"/>
+            <r id="210"/>
+            <r id="181"/>
+        </group>
+        <group desc="" id="7" name="AI" type="snippet">
+            <r id="29"/>
+            <r id="62"/>
+            <r id="286"/>
+        </group>
+        <group desc="" id="8" name="Saving" type="snippet"/>
+        <group desc="" id="9" name="Stats" type="snippet"/>
+        <group desc="" id="10" name="Drawing" type="snippet"/>
+    </folders>
     <packs>
         <pack desc="" id="0" name="Jetpack" oid="-1" resources="" snippets="19,20"/>
+        <pack desc="" id="1" name="Shooter pack" oid="-1" resources="58,57,56" snippets="34,35,23,37,25,24,27,29,28,31,30"/>
     </packs>
     <groups>
         <group desc="" id="4" name="Projectiles"/>
@@ -12,11 +127,12 @@
         <group desc="collides with nothing" id="8" name="guns"/>
     </groups>
     <cgroups>
-        <cgroup g1="6" g2="4"/>
-        <cgroup g1="6" g2="0"/>
-        <cgroup g1="3" g2="0"/>
         <cgroup g1="1" g2="0"/>
-        <cgroup g1="0" g2="5"/>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="5" g2="0"/>
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="4" g2="6"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38"/>
@@ -44,7 +160,7 @@
         <number cid="0" id="20" name="PlayerMoveSpeed" save="true" value="0.0"/>
         <number cid="0" id="2" name="Player_Health" save="true" value="0.0"/>
         <list cid="3" id="13" name="laserPistolStats" save="true" val="list"/>
-        <number cid="0" id="1" name="Credits" save="true" value="5000.0"/>
+        <number cid="0" id="1" name="Credits" save="true" value="1.0E7"/>
         <number cid="1" id="4" name="BackgroundMscOn" save="true" value="1.0"/>
         <number cid="2" id="5" name="CreditsNeeded" save="true" value="0.0"/>
         <number cid="4" id="19" name="gameLevel" save="true" value="11.0"/>
@@ -88,7 +204,7 @@
         <atlas dirty="true" id="1" members="349,424,93-0,128-1,161-0,207-0,235-0,237-0,239-0,272-0,281-0,335-0,337-0,350-0,373-0,425-0" name="Actors for Fall Scene" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="2" members="35" name="Sky Background 1" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="3" members="394,379-1,383-1,385-1,387-1,389-1,391-1,393-1,395-0,395-1,397-1" name="Gun Shop" pvr="false" resize="0" start="true" target="0"/>
-        <atlas dirty="false" id="4" members="219,61-0,253-0,258-0,263-0,294-0,313-0" name="Bullets" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="4" members="219,61-0,253-0,258-0,263-0,294-0,313-0" name="Bullets" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="5" members="232,359,365,420" name="Fonts" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="6" members="407,409,410,413,417,418,421" name="Fonts 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="false" id="7" members="205,233,362,364,419" name="Fonts 3" pvr="false" resize="0" start="true" target="0"/>

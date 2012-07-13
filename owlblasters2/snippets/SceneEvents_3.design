@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="4" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="4" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="70">
+                            <ACTORTYPE eid="136" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="430"/>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </randint>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="109">
+                    <group eventID="4" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="129">
+                            <ACTORTYPE eid="136" id="0"/>
+                            <int id="1" val="200"/>
+                            <int id="2" val="430"/>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="3"/>
+        </event-periodic>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-periodic comment="false" x="21" y="22">
+            <group eventID="5" id="-1">
+                <if comment="false" x="32" y="67">
+                    <group eventID="5" id="-1">
+                        <set-val-31-3 comment="false" x="43" y="97">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <mod comment="false" id="1" x="0" y="0">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="12"/>
+                                </mod>
+                            </randint>
+                        </set-val-31-3>
+                        <if comment="false" x="43" y="132">
+                            <group eventID="5" id="-1">
+                                <create-recycled-actor comment="false" x="54" y="162">
+                                    <ACTORTYPE eid="15" id="0"/>
+                                    <randint comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="320"/>
+                                        <int id="1" val="0"/>
+                                    </randint>
+                                    <int id="2" val="480"/>
+                                    <int id="3" val="0"/>
+                                </create-recycled-actor>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-31-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </lesseq>
+                        </if>
+                        <else-if comment="false" x="43" y="206">
+                            <group eventID="5" id="-1">
+                                <create-recycled-actor comment="false" x="54" y="236">
+                                    <ACTORTYPE eid="112" id="0"/>
+                                    <randint comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="320"/>
+                                        <int id="1" val="0"/>
+                                    </randint>
+                                    <int id="2" val="480"/>
+                                    <int id="3" val="0"/>
+                                </create-recycled-actor>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-31-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="7"/>
+                            </lesseq>
+                        </else-if>
+                        <else-if comment="false" x="43" y="280">
+                            <group eventID="5" id="-1">
+                                <create-recycled-actor comment="false" x="54" y="310">
+                                    <ACTORTYPE eid="17" id="0"/>
+                                    <randint comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="320"/>
+                                        <int id="1" val="0"/>
+                                    </randint>
+                                    <int id="2" val="480"/>
+                                    <int id="3" val="0"/>
+                                </create-recycled-actor>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-31-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="11"/>
+                            </lesseq>
+                        </else-if>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </noteq>
+                </if>
+                <repeat comment="false" x="32" y="366">
+                    <group eventID="5" id="-1">
+                        <dolater comment="false" x="43" y="391">
+                            <group eventID="5" id="-1">
+                                <set-val-31-3 comment="false" x="54" y="428">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <mod comment="false" id="1" x="0" y="0">
+                                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="12"/>
+                                        </mod>
+                                    </randint>
+                                </set-val-31-3>
+                                <if comment="false" x="54" y="463">
+                                    <group eventID="5" id="-1">
+                                        <create-recycled-actor comment="false" x="65" y="493">
+                                            <ACTORTYPE eid="15" id="0"/>
+                                            <randint comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="320"/>
+                                                <int id="1" val="0"/>
+                                            </randint>
+                                            <int id="2" val="480"/>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-val-31-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </lesseq>
+                                </if>
+                                <else-if comment="false" x="54" y="537">
+                                    <group eventID="5" id="-1">
+                                        <create-recycled-actor comment="false" x="65" y="567">
+                                            <ACTORTYPE eid="112" id="0"/>
+                                            <randint comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="320"/>
+                                                <int id="1" val="0"/>
+                                            </randint>
+                                            <int id="2" val="480"/>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-val-31-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="7"/>
+                                    </lesseq>
+                                </else-if>
+                                <else-if comment="false" x="54" y="611">
+                                    <group eventID="5" id="-1">
+                                        <create-recycled-actor comment="false" x="65" y="641">
+                                            <ACTORTYPE eid="17" id="0"/>
+                                            <randint comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="320"/>
+                                                <int id="1" val="0"/>
+                                            </randint>
+                                            <int id="2" val="480"/>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-val-31-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="11"/>
+                                    </lesseq>
+                                </else-if>
+                            </group>
+                            <times comment="false" id="0" x="0" y="0">
+                                <loopindex comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val=".2"/>
+                            </times>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <get-val-31-2 comment="false" id="0" x="0" y="0"/>
+                </repeat>
+                <set-val-31-2 comment="false" x="32" y="709">
+                    <int id="0" val="0"/>
+                </set-val-31-2>
+            </group>
+            <minus comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+                <div comment="false" id="1" x="0" y="0">
+                    <mod comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="12"/>
+                    </mod>
+                    <int id="1" val="8"/>
+                </div>
+            </minus>
+        </event-periodic>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="6" id="-1">
+                        <play-sound4 comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <SOUND eid="86" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <create-recycled-actor comment="false" x="26" y="109">
+                    <ACTORTYPE eid="110" id="0"/>
+                    <int id="1" val="280"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <create-recycled-actor comment="false" x="26" y="136">
+                    <ACTORTYPE eid="108" id="0"/>
+                    <int id="1" val="-95"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <create-recycled-actor comment="false" x="26" y="163">
+                    <ACTORTYPE eid="110" id="0"/>
+                    <int id="1" val="280"/>
+                    <int id="2" val="200"/>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <create-recycled-actor comment="false" x="26" y="190">
+                    <ACTORTYPE eid="108" id="0"/>
+                    <int id="1" val="-95"/>
+                    <int id="2" val="200"/>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <save-game comment="false" x="26" y="217">
+                    <group eventID="6" id="-1"/>
+                </save-game>
+            </group>
+        </init>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-31-1 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <get-val-31-1 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-val-31-1>
+                <if comment="false" x="26" y="70">
+                    <group eventID="7" id="-1">
+                        <set-val-31-2 comment="false" x="37" y="100">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-val-31-2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </less>
+                </if>
+                <if comment="false" x="26" y="142">
+                    <group eventID="7" id="-1">
+                        <set-val-31-2 comment="false" x="37" y="172">
+                            <int id="0" val="5"/>
+                        </set-val-31-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="204">
+                    <group eventID="7" id="-1">
+                        <set-val-31-2 comment="false" x="37" y="239">
+                            <int id="0" val="4"/>
+                        </set-val-31-2>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="4"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="5"/>
+                        </eq>
+                    </or>
+                </if>
+                <if comment="false" x="26" y="271">
+                    <group eventID="7" id="-1">
+                        <set-val-31-2 comment="false" x="37" y="301">
+                            <int id="0" val="8"/>
+                        </set-val-31-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-31-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="10"/>
+        </event-periodic>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <create-recycled-actor comment="false" x="26" y="40">
+                    <ACTORTYPE eid="110" id="0"/>
+                    <int id="1" val="280"/>
+                    <int id="2" val="480"/>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <create-recycled-actor comment="false" x="26" y="67">
+                    <ACTORTYPE eid="108" id="0"/>
+                    <int id="1" val="-95"/>
+                    <int id="2" val="480"/>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+            </group>
+            <int id="0" val="1"/>
+        </event-periodic>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <stop-sounds comment="false" x="26" y="40"/>
+                <scene-change-new comment="false" x="26" y="60">
+                    <SCENE eid="1" id="0"/>
+                    <int id="1" val="4"/>
+                    <int id="2" val=".3"/>
+                    <int id="3" val="4"/>
+                    <int id="4" val=".3"/>
+                </scene-change-new>
+            </group>
+            <int id="0" val="69"/>
+        </event-delay>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <save-game comment="false" x="26" y="40">
+                    <group eventID="10" id="-1"/>
+                </save-game>
+            </group>
+            <int id="0" val="10"/>
+        </event-periodic>
+    </group>
+    <group eventID="10" id="-1"/>
+</groups>

@@ -257,21 +257,42 @@
                         <int id="1" val="Inflicts Damage"/>
                     </has-snippet>
                 </if>
-                <else comment="false" x="26" y="382">
+                <else-if comment="false" x="26" y="382">
+                    <group eventID="11" id="-1">
+                        <set-val-112-2 comment="false" x="37" y="425">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <actor-get-prop comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                    <int id="1" val="DMG"/>
+                                </actor-get-prop>
+                            </as-number>
+                        </set-val-112-2>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcollided" id="0"/>
+                                <int id="1" val="DMG"/>
+                            </actor-get-prop>
+                        </as-number>
+                        <int id="1" val="0"/>
+                    </more>
+                </else-if>
+                <else comment="false" x="26" y="475">
                     <group eventID="-1" id="-1">
-                        <set-val-112-2 comment="false" x="37" y="402">
+                        <set-val-112-2 comment="false" x="37" y="495">
                             <get-val-112-1 comment="false" id="0" x="0" y="0"/>
                         </set-val-112-2>
                     </group>
                 </else>
-                <set-val-112-7 comment="false" x="26" y="439">
+                <set-val-112-7 comment="false" x="26" y="532">
                     <ACTOR eid="lastcollided" id="0"/>
                 </set-val-112-7>
-                <if comment="false" x="26" y="466">
+                <if comment="false" x="26" y="559">
                     <group eventID="-1" id="-1">
-                        <dolater comment="false" x="37" y="496">
+                        <dolater comment="false" x="37" y="589">
                             <group eventID="-1" id="-1">
-                                <clear comment="false" x="48" y="528">
+                                <clear comment="false" x="48" y="621">
                                     <int id="0" val="7"/>
                                 </clear>
                             </group>
@@ -284,30 +305,30 @@
                         <int id="1" val="0"/>
                     </more>
                 </if>
-                <if comment="false" x="26" y="579">
+                <if comment="false" x="26" y="672">
                     <group eventID="-1" id="-1">
-                        <incdec comment="false" x="37" y="614">
+                        <incdec comment="false" x="37" y="707">
                             <int id="0" val="4"/>
                             <int id="1" val="1"/>
                             <get-val-112-2 comment="false" id="2" x="0" y="0"/>
                         </incdec>
-                        <set-val-112-13 comment="false" x="37" y="646">
+                        <set-val-112-13 comment="false" x="37" y="739">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-112-13>
-                        <apply-filter comment="false" x="37" y="671">
+                        <apply-filter comment="false" x="37" y="764">
                             <ACTOR eid="this" id="0"/>
                             <filter-negative comment="false" id="1" x="0" y="0"/>
                         </apply-filter>
-                        <shout comment="false" x="37" y="703">
+                        <shout comment="false" x="37" y="796">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="tookDamage"/>
                         </shout>
-                        <dolater comment="false" x="37" y="730">
+                        <dolater comment="false" x="37" y="823">
                             <group eventID="-1" id="-1">
-                                <set-val-112-13 comment="false" x="48" y="757">
+                                <set-val-112-13 comment="false" x="48" y="850">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-112-13>
-                                <clear-filter comment="false" x="48" y="782">
+                                <clear-filter comment="false" x="48" y="875">
                                     <ACTOR eid="this" id="0"/>
                                 </clear-filter>
                             </group>
@@ -325,14 +346,14 @@
                         </not>
                     </and>
                 </if>
-                <if comment="false" x="26" y="833">
+                <if comment="false" x="26" y="926">
                     <group eventID="-1" id="-1">
-                        <set-val-112-10 comment="false" x="37" y="863">
+                        <set-val-112-10 comment="false" x="37" y="956">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-112-10>
-                        <dolater comment="false" x="37" y="888">
+                        <dolater comment="false" x="37" y="981">
                             <group eventID="-1" id="-1">
-                                <set-val-112-10 comment="false" x="48" y="920">
+                                <set-val-112-10 comment="false" x="48" y="1013">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-112-10>
                             </group>

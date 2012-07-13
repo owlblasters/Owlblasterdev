@@ -1,0 +1,17 @@
+#
+#Sun Jun 24 01:17:26 EDT 2012
+monospace=false
+monospace.numerals=false
+style=plain
+tracking=0
+color=\#000000
+shadow.y=0
+family=28 Days Later.ttf
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=2
+shadow.blur=0
+gradient.color=\#ff0000
+stroke.size=0
+antialias=true
+size=20

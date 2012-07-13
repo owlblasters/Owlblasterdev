@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<receiver-2-66 comment="false" x="15" y="1207">
+            <group id="-1">
+<set-val-23-9 comment="false" x="26" y="1237">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-23-9>
+</group>
+            <get-byobval-213-25-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-2-66>
+</group>
+<group id="1">
+<step comment="false" x="15" y="93">
+<group id="-1">
+<actor-set-prop comment="false" x="26" y="118">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="hitPoints"/>
+<get-val-23-4 comment="false" id="2" x="0" y="0"/>
+</actor-set-prop>
+</group>
+</step>
+</group>
+<group id="2">
+<receive-message comment="false" x="15" y="1290">
+<group id="-1">
+<if comment="false" x="26" y="1315">
+<group id="-1">
+<shout comment="false" x="37" y="1345">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="healthDepleted"/>
+</shout>
+<if comment="false" x="37" y="1372">
+<group id="-1">
+<die comment="false" x="48" y="1397">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<get-val-23-8 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-val-23-4 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</lesseq>
+</if>
+</group>
+<int id="0" val="tookDamage"/>
+</receive-message>
+</group>
+<group id="3">
+<receiver-4-66 comment="false" x="15" y="1476">
+            <group id="-1">
+<increment comment="false" x="26" y="1506">
+<int id="0" val="4"/>
+<get-byobval-213-28-1 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-23-4 comment="false" x="26" y="1538">
+                    <min comment="false" id="0" x="0" y="0">
+<get-byobval-213-31-1 comment="false" id="0" x="0" y="0"/>
+<get-val-23-5 comment="false" id="1" x="0" y="0"/>
+</min>
+                </set-val-23-4>
+<set-val-23-4 comment="false" x="26" y="1568">
+                    <max comment="false" id="0" x="0" y="0">
+<get-byobval-213-31-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</max>
+                </set-val-23-4>
+</group>
+            <get-byobval-213-28-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-213-28-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-4-66>
+</group>
+<group id="4">
+<draw comment="false" x="15" y="1134">
+<group id="-1"/>
+</draw>
+</group>
+<group id="5">
+<stop comment="false" x="551" y="292"/>
+</group>
+<group id="6">
+<receiver-3-66 comment="false" x="15" y="1626">
+            <group id="-1">
+<set-val-23-4 comment="false" x="26" y="1656">
+                    <get-val-23-5 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-4>
+</group>
+            <get-byobval-213-27-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-3-66>
+</group>
+<group id="7">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<set-val-23-4 comment="false" x="26" y="40">
+                    <get-val-23-6 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-4>
+</group>
+</init>
+</group>
+<group id="8">
+<receiver-6-66 comment="false" x="15" y="1709">
+            <group id="-1">
+<return comment="false" x="26" y="1739">
+<get-val-23-4 comment="false" id="0" x="0" y="0"/>
+</return>
+</group>
+            <get-byobval-213-30-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-66>
+</group>
+<group id="9">
+<receiver-5-66 comment="false" x="15" y="1792">
+            <group id="-1">
+<set-val-23-2 comment="false" x="26" y="1822">
+                    <get-byobval-213-29-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-2>
+<decrement comment="false" x="26" y="1847">
+<int id="0" val="4"/>
+<get-val-23-2 comment="false" id="1" x="0" y="0"/>
+</decrement>
+<say-this comment="false" x="26" y="1879">
+<int id="0" val="tookDamage"/>
+</say-this>
+</group>
+            <get-byobval-213-29-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-213-29-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-66>
+</group>
+<group id="10">
+<receiver-1-66 comment="false" x="15" y="1927">
+            <group id="-1">
+<set-val-23-9 comment="false" x="26" y="1957">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-23-9>
+</group>
+            <get-byobval-213-26-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-66>
+</group>
+<group id="11">
+<receiver-7-66 comment="false" x="15" y="2010">
+            <group id="-1">
+<set-val-23-4 comment="false" x="26" y="2040">
+                    <min comment="false" id="0" x="0" y="0">
+<get-byobval-213-31-1 comment="false" id="0" x="0" y="0"/>
+<get-val-23-5 comment="false" id="1" x="0" y="0"/>
+</min>
+                </set-val-23-4>
+<set-val-23-4 comment="false" x="26" y="2070">
+                    <max comment="false" id="0" x="0" y="0">
+<get-byobval-213-31-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</max>
+                </set-val-23-4>
+</group>
+            <get-byobval-213-31-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-213-31-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-66>
+</group>
+<group id="12">
+<collide comment="false" x="15" y="178">
+<group id="-1">
+<if comment="false" x="26" y="203">
+<group id="-1">
+<stop comment="false" x="37" y="228"/>
+</group>
+<get-val-23-10 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="260">
+<group id="-1"/>
+<collision-tile comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+</collision-tile>
+</if>
+<if comment="false" x="26" y="325">
+<group id="-1">
+<stop comment="false" x="37" y="350"/>
+</group>
+<get-val-23-9 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="382">
+<group id="-1">
+<stop comment="false" x="37" y="425"/>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="7"/>
+</hasvalue>
+<eq2 comment="false" id="1" x="0" y="0">
+<get-val-23-7 comment="false" id="0" x="0" y="0"/>
+<actor comment="false" id="1" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+</actor>
+</eq2>
+</and>
+</if>
+<if comment="false" x="26" y="457">
+<group id="-1">
+<set-val-23-2 comment="false" x="37" y="490">
+                            <as-number comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Inflicts Damage"/>
+<int id="2" val="damage"/>
+</get-attribute>
+</as-number>
+                        </set-val-23-2>
+</group>
+<has-snippet comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcollided" id="0"/>
+<int id="1" val="Inflicts Damage"/>
+</has-snippet>
+</if>
+<else comment="false" x="26" y="540">
+<group id="-1">
+<set-val-23-2 comment="false" x="37" y="560">
+                            <get-val-23-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-2>
+</group>
+</else>
+<set-val-23-7 comment="false" x="26" y="597">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </set-val-23-7>
+<if comment="false" x="26" y="624">
+<group id="-1">
+<dolater comment="false" x="37" y="654">
+<group id="-1">
+<clear comment="false" x="48" y="679">
+<int id="0" val="7"/>
+</clear>
+</group>
+<get-val-23-12 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-23-12 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="730">
+<group id="-1">
+<decrement comment="false" x="37" y="765">
+<int id="0" val="4"/>
+<get-val-23-2 comment="false" id="1" x="0" y="0"/>
+</decrement>
+<set-val-23-13 comment="false" x="37" y="797">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-13>
+<apply-filter comment="false" x="37" y="822">
+<ACTOR eid="this" id="0"/>
+<filter-negative comment="false" id="1" x="0" y="0"/>
+</apply-filter>
+<shout comment="false" x="37" y="854">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="tookDamage"/>
+</shout>
+<dolater comment="false" x="37" y="881">
+<group id="-1">
+<set-val-23-13 comment="false" x="48" y="901">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-23-13>
+<clear-filter comment="false" x="48" y="926">
+<ACTOR eid="this" id="0"/>
+</clear-filter>
+</group>
+<int id="0" val="0.2"/>
+</dolater>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<more comment="false" id="0" x="0" y="0">
+<get-val-23-2 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+<not comment="false" id="1" x="0" y="0">
+<get-val-23-13 comment="false" id="0" x="0" y="0"/>
+</not>
+</and>
+</if>
+<if comment="false" x="26" y="977">
+<group id="-1">
+<set-val-23-10 comment="false" x="37" y="1007">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-10>
+<dolater comment="false" x="37" y="1032">
+<group id="-1">
+<set-val-23-10 comment="false" x="48" y="1057">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-23-10>
+</group>
+<get-val-23-11 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-23-11 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+</if>
+</group>
+</collide>
+</group>
+<group id="13">
+<receive-message comment="false" x="15" y="2128">
+<group id="-1">
+<custom-60 comment="false" x="26" y="2153">
+                    <ACTOR eid="this" id="0"/>
+                </custom-60>
+</group>
+<int id="0" val="healSelf"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

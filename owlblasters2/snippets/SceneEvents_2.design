@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="23" y="23">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="34" y="48">
+                    <FONT eid="170" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="34" y="75">
+                    <int id="0" val="Controls"/>
+                    <int id="1" val="65"/>
+                    <int id="2" val="5"/>
+                </draw-text>
+                <set-font-new comment="false" x="34" y="95">
+                    <FONT eid="173" id="0"/>
+                </set-font-new>
+                <do-ios comment="false" x="34" y="122">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="45" y="142">
+                            <int id="0" val="Tap in Direction"/>
+                            <int id="1" val="25"/>
+                            <int id="2" val="60"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="162">
+                            <int id="0" val="To Shoot"/>
+                            <int id="1" val="50"/>
+                            <int id="2" val="90"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="182">
+                            <int id="0" val="Tilt to Move"/>
+                            <int id="1" val="40"/>
+                            <int id="2" val="120"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="202">
+                            <int id="0" val="Tap on Self"/>
+                            <int id="1" val="40"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="222">
+                            <int id="0" val="To Bomb"/>
+                            <int id="1" val="60"/>
+                            <int id="2" val="180"/>
+                        </draw-text>
+                    </group>
+                </do-ios>
+                <do-flash comment="false" x="34" y="254">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="45" y="274">
+                            <int id="0" val="Click in a Direction"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="50"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="294">
+                            <int id="0" val="To Shoot"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="75"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="314">
+                            <int id="0" val="Left and Right Arrow"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="334">
+                            <int id="0" val="Keys to Move"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="125"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="354">
+                            <int id="0" val="CLick on Self"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="150"/>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="374">
+                            <int id="0" val="To Bomb"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="175"/>
+                        </draw-text>
+                    </group>
+                </do-flash>
+                <set-font-new comment="false" x="34" y="406">
+                    <FONT eid="172" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="34" y="433">
+                    <int id="0" val="1/3"/>
+                    <int id="1" val="130"/>
+                    <int id="2" val="420"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <load-unload-atlas comment="false" x="26" y="40">
+                    <int id="0" val="1"/>
+                    <int id="1" val="1"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="67">
+                    <int id="0" val="1"/>
+                    <int id="1" val="2"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="94">
+                    <int id="0" val="1"/>
+                    <int id="1" val="3"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="121">
+                    <int id="0" val="1"/>
+                    <int id="1" val="4"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="148">
+                    <int id="0" val="1"/>
+                    <int id="1" val="7"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="175">
+                    <int id="0" val="1"/>
+                    <int id="1" val="8"/>
+                </load-unload-atlas>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

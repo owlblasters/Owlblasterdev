@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="170" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="Menu"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="20"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <save-game comment="false" x="26" y="40">
+                    <group eventID="2" id="-1"/>
+                </save-game>
+                <set-volume comment="false" x="26" y="97">
+                    <int id="0" val="50"/>
+                </set-volume>
+                <play-sound4 comment="false" x="26" y="117">
+                    <int id="0" val="0"/>
+                    <SOUND eid="182" id="1"/>
+                </play-sound4>
+                <load-unload-atlas comment="false" x="26" y="144">
+                    <int id="0" val="1"/>
+                    <int id="1" val="1"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="171">
+                    <int id="0" val="1"/>
+                    <int id="1" val="2"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="198">
+                    <int id="0" val="1"/>
+                    <int id="1" val="3"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="225">
+                    <int id="0" val="1"/>
+                    <int id="1" val="4"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="252">
+                    <int id="0" val="1"/>
+                    <int id="1" val="7"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="279">
+                    <int id="0" val="1"/>
+                    <int id="1" val="8"/>
+                </load-unload-atlas>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

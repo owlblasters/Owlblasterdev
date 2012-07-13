@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <set-val-34-1 comment="false" x="26" y="69">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-34-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <if comment="false" x="26" y="69">
+                    <group eventID="2" id="-1">
+                        <set-val-34-1 comment="false" x="37" y="94">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-34-1>
+                        <set-game-att comment="false" x="37" y="119">
+                            <get-val-34-4 comment="false" id="0" x="0" y="0"/>
+                            <get-val-34-5 comment="false" id="1" x="0" y="0"/>
+                        </set-game-att>
+                    </group>
+                    <get-val-34-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <play-sound4 comment="false" x="37" y="72">
+                            <int id="0" val="0"/>
+                            <SOUND eid="144" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <setanim comment="false" x="26" y="111">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Pressed"/>
+                </setanim>
+                <set-val-34-1 comment="false" x="26" y="138">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-34-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="26" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <get-val-34-2 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="10"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="92">
+                    <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="30"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <play-sound4 comment="false" x="37" y="72">
+                            <int id="0" val="0"/>
+                            <SOUND eid="144" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <setanim comment="false" x="26" y="111">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Pressed"/>
+                </setanim>
+                <set-val-34-1 comment="false" x="26" y="138">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-34-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <if comment="false" x="26" y="69">
+                    <group eventID="2" id="-1">
+                        <set-val-34-1 comment="false" x="37" y="94">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-34-1>
+                        <set-game-att comment="false" x="37" y="119">
+                            <get-val-34-4 comment="false" id="0" x="0" y="0"/>
+                            <get-val-34-5 comment="false" id="1" x="0" y="0"/>
+                        </set-game-att>
+                    </group>
+                    <get-val-34-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-device-touch-actor comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <setanim comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Up"/>
+                </setanim>
+                <set-val-34-1 comment="false" x="26" y="69">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-34-1>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-device-touch-actor>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

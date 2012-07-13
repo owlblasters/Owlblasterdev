@@ -3,7 +3,7 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <color-bg blue="255" green="255" red="255"/>
+    <color-bg blue="255" green="255" red="0"/>
     <backgrounds>
         <ref id="35"/>
     </backgrounds>
@@ -16,6 +16,12 @@
         <actor a="0.0" aid="41" c="false" group="3" id="160" name="Left Tree Side 41" sx="1.0" sy="1.0" x="-102" y="228" z="0"/>
         <actor a="0.0" aid="47" c="false" group="0" id="32" name="Jumper 47" sx="1.0" sy="1.0" x="126" y="0" z="0"/>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="114">
+            <prop id="1" list="0" val="47"/>
+            <prop id="2" list="0" val="1"/>
+            <prop id="3" list="0" val="1"/>
+        </s>
+    </snippets>
     <terrain/>
 </scene>

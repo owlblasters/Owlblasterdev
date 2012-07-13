@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="63" extheight="544" extwidth="384" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="480" id="5" name="Credits" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="320">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <grad-bg b1="255" b2="255" g1="255" g2="255" r1="0" r2="255"/>
+    <backgrounds>
+        <ref id="158"/>
+    </backgrounds>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors/>
+    <snippets/>
+    <terrain/>
+</scene>

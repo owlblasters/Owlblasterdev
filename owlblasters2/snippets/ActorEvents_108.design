@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="-20"/>
+                </set-dxy>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <recycle comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </recycle>
+            </group>
+            <int id="0" val="4"/>
+        </event-delay>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

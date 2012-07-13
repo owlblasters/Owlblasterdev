@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="170" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="Owl"/>
+                    <int id="1" val="70"/>
+                    <int id="2" val="115"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="Blasters"/>
+                    <int id="1" val="60"/>
+                    <int id="2" val="150"/>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="107">
+                    <FONT eid="20" id="0"/>
+                </set-font-new>
+                <do-ios comment="false" x="26" y="134">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="154">
+                            <int id="0" val="Tap to Begin"/>
+                            <int id="1" val="50"/>
+                            <int id="2" val="430"/>
+                        </draw-text>
+                    </group>
+                </do-ios>
+                <do-flash comment="false" x="26" y="186">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="206">
+                            <int id="0" val="Click to Begin"/>
+                            <int id="1" val="30"/>
+                            <int id="2" val="430"/>
+                        </draw-text>
+                    </group>
+                </do-flash>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <fade-sounds comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <int id="1" val="1"/>
+                </fade-sounds>
+                <play-sound4 comment="false" x="26" y="67">
+                    <int id="0" val="0"/>
+                    <SOUND eid="171" id="1"/>
+                </play-sound4>
+                <play-sound4 comment="false" x="26" y="94">
+                    <int id="0" val="0"/>
+                    <SOUND eid="147" id="1"/>
+                </play-sound4>
+                <play-sound4 comment="false" x="26" y="121">
+                    <int id="0" val="0"/>
+                    <SOUND eid="149" id="1"/>
+                </play-sound4>
+                <play-sound4 comment="false" x="26" y="148">
+                    <int id="0" val="0"/>
+                    <SOUND eid="152" id="1"/>
+                </play-sound4>
+                <load-unload-atlas comment="false" x="26" y="175">
+                    <int id="0" val="1"/>
+                    <int id="1" val="1"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="202">
+                    <int id="0" val="1"/>
+                    <int id="1" val="2"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="229">
+                    <int id="0" val="1"/>
+                    <int id="1" val="3"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="256">
+                    <int id="0" val="1"/>
+                    <int id="1" val="4"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="283">
+                    <int id="0" val="1"/>
+                    <int id="1" val="7"/>
+                </load-unload-atlas>
+                <load-unload-atlas comment="false" x="26" y="310">
+                    <int id="0" val="1"/>
+                    <int id="1" val="8"/>
+                </load-unload-atlas>
+                <load-game comment="false" x="26" y="337">
+                    <group eventID="2" id="-1"/>
+                </load-game>
+                <if comment="false" x="26" y="394">
+                    <group eventID="2" id="-1">
+                        <insert-list comment="false" x="37" y="429">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="2"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="454">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="479">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="504">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="3"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="529">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="4"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="554">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="5"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="579">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="6"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="604">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="7"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <comment-long comment="false" x="37" y="629">
+                            <int id="0" val="initialize the individual gun stats&#10;0: dmg, 1: rate, 2: penatration"/>
+                        </comment-long>
+                        <insert-list comment="false" x="37" y="709">
+                            <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="3"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="734">
+                            <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="759">
+                            <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="784">
+                            <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="4"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="809">
+                            <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="4"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="834">
+                            <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="20"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="859">
+                            <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="6"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="884">
+                            <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="909">
+                            <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="1"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="934">
+                            <get-game-val-18 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="3"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="959">
+                            <get-game-val-18 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="984">
+                            <get-game-val-18 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1009">
+                            <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="10"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1034">
+                            <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1059">
+                            <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="1"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1084">
+                            <get-game-val-17 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="10"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1109">
+                            <get-game-val-17 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="4"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1134">
+                            <get-game-val-17 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="20"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1159">
+                            <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="15"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1184">
+                            <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="5"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1209">
+                            <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="2"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1234">
+                            <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="15"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1259">
+                            <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="5"/>
+                        </insert-list>
+                        <insert-list comment="false" x="37" y="1284">
+                            <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="2"/>
+                        </insert-list>
+                        <save-game comment="false" x="37" y="1309">
+                            <group eventID="2" id="-1"/>
+                        </save-game>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <length-list comment="false" id="0" x="0" y="0">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                        </length-list>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <stop-sounds comment="false" x="26" y="42"/>
+                <if comment="false" x="26" y="62">
+                    <group eventID="4" id="-1">
+                        <set-game-val-19 comment="false" x="37" y="87">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-19>
+                        <scene-change-new comment="false" x="37" y="112">
+                            <SCENE eid="20" id="0"/>
+                            <int id="1" val="3"/>
+                            <int id="2" val=".25"/>
+                            <int id="3" val="5"/>
+                            <int id="4" val=".25"/>
+                        </scene-change-new>
+                    </group>
+                    <get-game-val-19 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="151">
+                    <group eventID="4" id="-1">
+                        <scene-change-new comment="false" x="37" y="181">
+                            <SCENE eid="1" id="0"/>
+                            <int id="1" val="3"/>
+                            <int id="2" val=".25"/>
+                            <int id="3" val="5"/>
+                            <int id="4" val=".25"/>
+                        </scene-change-new>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-game-val-19 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-device-touch comment="false" x="6" y="49">
+            <group eventID="4" id="-1">
+                <stop-sounds comment="false" x="17" y="76"/>
+                <if comment="false" x="17" y="96">
+                    <group eventID="4" id="-1">
+                        <set-game-val-19 comment="false" x="28" y="121">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-19>
+                        <scene-change-new comment="false" x="28" y="146">
+                            <SCENE eid="20" id="0"/>
+                            <int id="1" val="3"/>
+                            <int id="2" val=".25"/>
+                            <int id="3" val="5"/>
+                            <int id="4" val=".25"/>
+                        </scene-change-new>
+                    </group>
+                    <get-game-val-19 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="17" y="185">
+                    <group eventID="4" id="-1">
+                        <scene-change-new comment="false" x="28" y="215">
+                            <SCENE eid="1" id="0"/>
+                            <int id="1" val="3"/>
+                            <int id="2" val=".25"/>
+                            <int id="3" val="5"/>
+                            <int id="4" val=".25"/>
+                        </scene-change-new>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-game-val-19 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-device-touch>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-periodic comment="false" x="14" y="69">
+            <group eventID="5" id="-1">
+                <set-val-2-1 comment="false" x="25" y="99">
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="5"/>
+                    </randint>
+                </set-val-2-1>
+                <if comment="false" x="25" y="124">
+                    <group eventID="5" id="-1">
+                        <play-sound4 comment="false" x="36" y="154">
+                            <int id="0" val="0"/>
+                            <SOUND eid="147" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="25" y="193">
+                    <group eventID="5" id="-1">
+                        <play-sound4 comment="false" x="36" y="223">
+                            <int id="0" val="0"/>
+                            <SOUND eid="148" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <if comment="false" x="25" y="262">
+                    <group eventID="5" id="-1">
+                        <play-sound4 comment="false" x="36" y="292">
+                            <int id="0" val="0"/>
+                            <SOUND eid="149" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+                <if comment="false" x="25" y="331">
+                    <group eventID="5" id="-1">
+                        <play-sound4 comment="false" x="36" y="361">
+                            <int id="0" val="0"/>
+                            <SOUND eid="150" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </if>
+                <if comment="false" x="25" y="400">
+                    <group eventID="5" id="-1">
+                        <play-sound4 comment="false" x="36" y="430">
+                            <int id="0" val="0"/>
+                            <SOUND eid="151" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </if>
+                <if comment="false" x="25" y="469">
+                    <group eventID="5" id="-1">
+                        <play-sound4 comment="false" x="36" y="499">
+                            <int id="0" val="0"/>
+                            <SOUND eid="152" id="1"/>
+                        </play-sound4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="5"/>
+                    </eq>
+                </if>
+            </group>
+            <randint comment="false" id="0" x="0" y="0">
+                <int id="0" val="2"/>
+                <int id="1" val="4"/>
+            </randint>
+        </event-periodic>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

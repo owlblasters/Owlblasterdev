@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenes>
+    <scene desc="" format="1.0" id="0" name="Title Scene"/>
+    <scene desc="" format="1.0" id="1" name="Menu"/>
+    <scene desc="" format="1.0" id="2" name="Instructions 1"/>
+    <scene desc="" format="1.0" id="3" name="Endless Dive"/>
+    <scene desc="" format="1.0" id="4" name="Options Scene"/>
+    <scene desc="" format="1.0" id="5" name="Credits"/>
+    <scene desc="" format="1.0" id="6" name="Gun Select Scene"/>
+    <scene desc="" format="1.0" id="7" name="Pistol Upgrade Scene"/>
+    <scene desc="" format="1.0" id="8" name="Claw Upgrade Scene"/>
+    <scene desc="" format="1.0" id="9" name="Revolver Upgrade Scene"/>
+    <scene desc="" format="1.0" id="10" name="Shotgun Upgrade Scene"/>
+    <scene desc="" format="1.0" id="11" name="Laser Pistol Upgrade Scene"/>
+    <scene desc="" format="1.0" id="12" name="Scythe Upgrade Scene"/>
+    <scene desc="" format="1.0" id="13" name="Laser Rifle Upgrade Scene"/>
+    <scene desc="" format="1.0" id="14" name="Thumper Upgrade Scene"/>
+    <scene desc="" format="1.0" id="15" name="Character Upgrade Scene"/>
+    <scene desc="" format="1.0" id="17" name="Respawn Scene"/>
+    <scene desc="" format="1.0" id="16" name="Player upgrade Scene"/>
+    <scene desc="" format="1.0" id="19" name="Instructions 3"/>
+    <scene desc="" format="1.0" id="18" name="Instructions 2"/>
+    <scene desc="" format="1.0" id="20" name="Cutscene"/>
+</scenes>

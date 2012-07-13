@@ -1,0 +1,18 @@
+#
+#Sun Jun 24 01:17:27 EDT 2012
+monospace=false
+monospace.numerals=false
+style=plain
+tracking=0
+stroke.color=\#00ff00
+color=\#ff6600
+shadow.y=0
+family=Bobbleboddy.ttf
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=16
+shadow.blur=0
+gradient.color=\#0000ff
+stroke.size=2
+antialias=true
+size=50

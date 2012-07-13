@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receiver-2-66 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-23-9 comment="false" x="26" y="45">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-23-9>
+            </group>
+            <get-byobval-23-25-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-2-66>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <actor-set-prop comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="hitPoints"/>
+                    <get-val-23-4 comment="false" id="2" x="0" y="0"/>
+                </actor-set-prop>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <shout comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="healthDepleted"/>
+                        </shout>
+                        <if comment="false" x="37" y="97">
+                            <group eventID="-1" id="-1">
+                                <die comment="false" x="48" y="122">
+                                    <ACTOR eid="this" id="0"/>
+                                </die>
+                            </group>
+                            <get-val-23-8 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-23-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+            <int id="0" val="tookDamage"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-4-64 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <incdec comment="false" x="26" y="45">
+                    <int id="0" val="4"/>
+                    <int id="1" val="0"/>
+                    <get-byobval-23-28-1 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <set-val-23-4 comment="false" x="26" y="77">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-byobval-23-31-1 comment="false" id="1" x="0" y="0"/>
+                        <get-val-23-5 comment="false" id="2" x="0" y="0"/>
+                    </minmax>
+                </set-val-23-4>
+                <set-val-23-4 comment="false" x="26" y="115">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <get-byobval-23-31-1 comment="false" id="1" x="0" y="0"/>
+                        <int id="2" val="0"/>
+                    </minmax>
+                </set-val-23-4>
+            </group>
+            <get-byobval-23-28-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-23-28-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-4-64>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-3-60 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-23-4 comment="false" x="26" y="45">
+                    <get-val-23-5 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-4>
+            </group>
+            <get-byobval-23-27-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-3-60>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-23-4 comment="false" x="26" y="40">
+                    <get-val-23-6 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-6-62 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <get-val-23-4 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-23-30-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-62>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-5-65 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-23-2 comment="false" x="26" y="45">
+                    <get-byobval-23-29-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-2>
+                <incdec comment="false" x="26" y="70">
+                    <int id="0" val="4"/>
+                    <int id="1" val="1"/>
+                    <get-val-23-2 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <say-this comment="false" x="26" y="102">
+                    <int id="0" val="tookDamage"/>
+                </say-this>
+            </group>
+            <get-byobval-23-29-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-23-29-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-65>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <receiver-1-61 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-23-9 comment="false" x="26" y="45">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-23-9>
+            </group>
+            <get-byobval-23-26-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-61>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <receiver-7-63 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-23-4 comment="false" x="26" y="45">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-byobval-23-31-1 comment="false" id="1" x="0" y="0"/>
+                        <get-val-23-5 comment="false" id="2" x="0" y="0"/>
+                    </minmax>
+                </set-val-23-4>
+                <set-val-23-4 comment="false" x="26" y="83">
+                    <minmax comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <get-byobval-23-31-1 comment="false" id="1" x="0" y="0"/>
+                        <int id="2" val="0"/>
+                    </minmax>
+                </set-val-23-4>
+            </group>
+            <get-byobval-23-31-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-23-31-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-63>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="70"/>
+                    </group>
+                    <get-val-23-10 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="102">
+                    <group eventID="-1" id="-1"/>
+                    <collision-type comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="2"/>
+                    </collision-type>
+                </if>
+                <if comment="false" x="26" y="167">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="192"/>
+                    </group>
+                    <get-val-23-9 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="224">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="267"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="7"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <eq2 comment="false" id="1" x="0" y="0">
+                            <get-val-23-7 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcollided" id="0"/>
+                            </actor>
+                        </eq2>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="299">
+                    <group eventID="-1" id="-1">
+                        <set-val-23-2 comment="false" x="37" y="332">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                    <int id="1" val="Inflicts Damage"/>
+                                    <int id="2" val="damage"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-23-2>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcollided" id="0"/>
+                        <int id="1" val="Inflicts Damage"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="382">
+                    <group eventID="-1" id="-1">
+                        <set-val-23-2 comment="false" x="37" y="402">
+                            <get-val-23-1 comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-2>
+                    </group>
+                </else>
+                <set-val-23-7 comment="false" x="26" y="439">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </set-val-23-7>
+                <if comment="false" x="26" y="466">
+                    <group eventID="-1" id="-1">
+                        <dolater comment="false" x="37" y="496">
+                            <group eventID="-1" id="-1">
+                                <clear comment="false" x="48" y="528">
+                                    <int id="0" val="7"/>
+                                </clear>
+                            </group>
+                            <get-val-23-12 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-23-12 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+                <if comment="false" x="26" y="579">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="614">
+                            <int id="0" val="4"/>
+                            <int id="1" val="1"/>
+                            <get-val-23-2 comment="false" id="2" x="0" y="0"/>
+                        </incdec>
+                        <set-val-23-13 comment="false" x="37" y="646">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-13>
+                        <apply-filter comment="false" x="37" y="671">
+                            <ACTOR eid="this" id="0"/>
+                            <filter-negative comment="false" id="1" x="0" y="0"/>
+                        </apply-filter>
+                        <shout comment="false" x="37" y="703">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="tookDamage"/>
+                        </shout>
+                        <dolater comment="false" x="37" y="730">
+                            <group eventID="-1" id="-1">
+                                <set-val-23-13 comment="false" x="48" y="757">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-23-13>
+                                <clear-filter comment="false" x="48" y="782">
+                                    <ACTOR eid="this" id="0"/>
+                                </clear-filter>
+                            </group>
+                            <int id="0" val="0.2"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <more comment="false" id="0" x="0" y="0">
+                            <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </more>
+                        <not comment="false" id="1" x="0" y="0">
+                            <get-val-23-13 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="833">
+                    <group eventID="-1" id="-1">
+                        <set-val-23-10 comment="false" x="37" y="863">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-10>
+                        <dolater comment="false" x="37" y="888">
+                            <group eventID="-1" id="-1">
+                                <set-val-23-10 comment="false" x="48" y="920">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-23-10>
+                            </group>
+                            <get-val-23-11 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-23-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <custom-60 comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </custom-60>
+            </group>
+            <int id="0" val="healSelf"/>
+        </receive-message>
+    </group>
+    <group eventID="12" id="-1"/>
+</groups>

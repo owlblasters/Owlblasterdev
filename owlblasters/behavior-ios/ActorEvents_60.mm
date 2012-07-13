@@ -40,6 +40,14 @@ float _DMG1;
 -(void)load
 {
 	            [mActor setActorValue:@"DMG" value:[NSNumber numberWithFloat:[[(NSMutableArray*) ([self getGameAttribute:@"pistolStats"]) objectAtIndex:0] floatValue]]];
+    [self doLater:1000 * 5 task:[self createRunnable:^(Runnable* parent, Script* theScript){
+ActorEvents_60* self = (ActorEvents_60*) theScript;
+        if([Actor isAlive:mActor])
+{
+            [mActor die];
+}
+
+}]];
 
 } 
 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-color comment="false" x="37" y="65">
+                            <color b="0" g="0" id="0" r="0"/>
+                        </set-color>
+                        <set-alpha comment="false" x="37" y="92">
+                            <int id="0" val="50"/>
+                        </set-alpha>
+                        <set-blend comment="false" x="37" y="112">
+                            <int id="0" val="8"/>
+                        </set-blend>
+                        <drawfill-rect comment="false" x="37" y="139">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <screen-wh comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <screen-wh comment="false" id="4" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                        </drawfill-rect>
+                    </group>
+                    <is-paused comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-alpha comment="false" x="26" y="191">
+                    <int id="0" val="0"/>
+                </set-alpha>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-device-touch comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <pause-unpause comment="false" x="26" y="42">
+                    <int id="0" val="1"/>
+                </pause-unpause>
+            </group>
+            <int id="0" val="0"/>
+        </event-device-touch>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

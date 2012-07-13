@@ -1,0 +1,17 @@
+#
+#Sun Jun 24 01:17:26 EDT 2012
+monospace=true
+monospace.numerals=false
+style=plain
+tracking=0
+stroke.color=\#00ff00
+color=\#000000
+shadow.y=0
+family=BiusTitel.ttf
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=0
+shadow.blur=0
+stroke.size=1
+antialias=true
+size=28

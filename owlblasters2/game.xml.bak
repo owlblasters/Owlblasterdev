@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<game accelFramerate="25" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-16777216" barBackgroundColor="-16777216" barColor="-16777216" barHeight="18" barLocation="1" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="290" borderColor="-16777216" borderThickness="2" bundleID="com.owlblastersdev.owlblasters" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="0" defaultFramerate="60" desc="&#10;" deviceOS="4.3" engine="0" format="2.0" gameid="-1" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="owlblasters2" ngID="" ngKey="" orientation="0" preloaderstyle="0" products="" projectType="mobile" scale="1.0" showAds="false" simulatorOS="4.3" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="true" width="320">
+    <folders>
+        <group desc="" id="0" name="Owls" type="actor">
+            <r id="17"/>
+            <r id="112"/>
+            <r id="15"/>
+        </group>
+        <group desc="" id="1" name="Weapons" type="actor">
+            <r id="32"/>
+            <r id="126"/>
+            <r id="128"/>
+            <r id="130"/>
+            <r id="124"/>
+            <r id="166"/>
+            <r id="132"/>
+            <r id="134"/>
+        </group>
+        <group desc="" id="2" name="Bullets" type="actor">
+            <r id="118"/>
+            <r id="116"/>
+            <r id="114"/>
+            <r id="78"/>
+            <r id="122"/>
+            <r id="120"/>
+        </group>
+        <group desc="" id="3" name="Branches etc" type="actor">
+            <r id="34"/>
+            <r id="136"/>
+            <r id="138"/>
+            <r id="110"/>
+            <r id="108"/>
+        </group>
+        <group desc="" id="4" name="Gun Shop" type="actor">
+            <r id="0"/>
+            <r id="102"/>
+            <r id="100"/>
+            <r id="98"/>
+            <r id="80"/>
+            <r id="142"/>
+            <r id="76"/>
+            <r id="106"/>
+            <r id="104"/>
+        </group>
+        <group desc="" id="5" name="Cutscene" type="actor">
+            <r id="178"/>
+            <r id="180"/>
+        </group>
+    </folders>
+    <packs>
+        <pack desc="" id="0" name="Jetpack" oid="-1" resources="72" snippets="27,28"/>
+    </packs>
+    <groups>
+        <group desc="" id="4" name="Projectiles"/>
+        <group desc="" id="5" name="Branch-like objects"/>
+        <group desc="" id="6" name="Owls"/>
+        <group desc="" id="7" name="broken branches"/>
+        <group desc="" id="8" name="guns"/>
+    </groups>
+    <cgroups>
+        <cgroup g1="6" g2="4"/>
+        <cgroup g1="6" g2="0"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="5" g2="0"/>
+    </cgroups>
+    <input>
+        <key id="0" keyname="UP" name="up" vk="38"/>
+        <key id="1" keyname="DOWN" name="down" vk="40"/>
+        <key id="2" keyname="LEFT" name="left" vk="37"/>
+        <key id="3" keyname="RIGHT" name="right" vk="39"/>
+        <key id="4" keyname="Z" name="action1" vk="90"/>
+        <key id="5" keyname="X" name="action2" vk="88"/>
+        <key id="6" keyname="ENTER" name="enter" vk="10"/>
+    </input>
+    <attcats>
+        <cat id="0" name="CURRENTLEVEL"/>
+        <cat id="1" name="GUNSHOP"/>
+        <cat id="2" name="PLAYER STUFF"/>
+        <cat id="3" name="Sound variables"/>
+        <cat id="4" name="Weapon Stats"/>
+        <cat id="-1" name="Default"/>
+    </attcats>
+    <props/>
+    <attributes>
+        <list cid="4" id="12" name="grenadeLauncherStats" save="true" val="list"/>
+        <list cid="4" id="13" name="laserPistolStats" save="true" val="list"/>
+        <number cid="2" id="7" name="Player_Health" save="true" value="0.0"/>
+        <number cid="2" id="8" name="PlayerMoveSpeed" save="true" value="0.0"/>
+        <number cid="2" id="3" name="Credits" save="true" value="0.0"/>
+        <number cid="3" id="9" name="BackgroundMscOn" save="true" value="1.0"/>
+        <number cid="1" id="1" name="CreditsNeeded" save="true" value="0.0"/>
+        <number cid="2" id="5" name="gunDirection" save="true" value="0.0"/>
+        <list cid="4" id="11" name="clawStats" save="true" val="list"/>
+        <list cid="4" id="16" name="revolverStats" save="true" val="list"/>
+        <bool cid="-1" id="19" name="First" save="true" value="true"/>
+        <list cid="4" id="18" name="shotgunStats" save="true" val="list"/>
+        <list cid="4" id="14" name="laserRifleStats" save="true" val="list"/>
+        <list cid="2" id="6" name="Player's guns" save="true" val="list"/>
+        <number cid="1" id="2" name="GunListLoc" save="true" value="0.0"/>
+        <list cid="4" id="15" name="pistolStats" save="true" val="list"/>
+        <bool cid="2" id="4" name="curDirIsRight" save="true" value="true"/>
+        <number cid="3" id="10" name="SoundEffectsOn" save="true" value="1.0"/>
+        <number cid="0" id="0" name="GameLevel" save="true" value="11.0"/>
+        <list cid="4" id="17" name="scytheStats" save="true" val="list"/>
+    </attributes>
+    <collisions>
+        <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="2" name="Tri 45R" pts="0.0,0.0#0.0,1.0#1.0,1.0"/>
+        <poly id="3" name="Tri 45L" pts="1.0,0.0#0.0,1.0#1.0,1.0"/>
+        <poly id="4" name="Tri 45R Inv" pts="0.0,0.0#0.0,1.0#1.0,0.0"/>
+        <poly id="5" name="Tri 45L Inv" pts="0.0,0.0#1.0,1.0#1.0,0.0"/>
+        <poly id="6" name="Tri 30R" pts="0.0,1.0#1.0,1.0#1.0,0.5"/>
+        <poly id="7" name="Tri 30L" pts="0.0,0.5#0.0,1.0#1.0,1.0"/>
+        <poly id="8" name="Tri 30-2R" pts="0.0,0.5#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="9" name="Tri 30-2L" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.5"/>
+        <poly id="10" name="Tri 30R Inv" pts="0.0,0.0#1.0,0.5#1.0,0.0"/>
+        <poly id="11" name="Tri 30L Inv" pts="0.0,0.0#0.0,0.5#1.0,0.0"/>
+        <poly id="12" name="Tri 30-2R Inv" pts="0.0,0.0#0.0,0.5#1.0,1.0#1.0,0.0"/>
+        <poly id="13" name="Tri 30-2L Inv" pts="0.0,0.0#0.0,1.0#1.0,0.5#1.0,0.0"/>
+        <poly id="14" name="Tri 60R" pts="0.5,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="15" name="Tri 60L" pts="0.0,0.0#0.0,1.0#0.5,1.0"/>
+        <poly id="17" name="Tri 60-2L" pts="0.0,0.0#0.0,1.0#1.0,1.0#0.5,0.0"/>
+        <poly id="16" name="Tri 60-2R" pts="0.5,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
+        <poly id="19" name="Tri 60L Inv" pts="0.0,0.0#0.0,1.0#0.5,0.0"/>
+        <poly id="18" name="Tri 60R Inv" pts="0.5,0.0#1.0,1.0#1.0,0.0"/>
+        <poly id="21" name="Tri 60-2L Inv" pts="0.0,0.0#0.0,1.0#0.5,1.0#1.0,0.0"/>
+        <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
+    </collisions>
+    <atlases>
+        <atlas dirty="false" id="0" members="36,69,72,74,166,174,176,180" name="Main Actors for Main Scene" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="1" members="15,17,34,108,110,112,136,138,178" name="Actors for Fall Scene" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="2" members="" name="?" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="3" members="0,76,80,98,100,102,104,106,142" name="Gun Shop" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="4" members="32,78,114,116,118,120,122,124,126,128,130,132,134" name="Weapons" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="5" members="20,23,26,170,172,173" name="Fonts" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="6" members="158,159,165,169" name="Menu Backgrounds" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="false" id="7" members="" name="Fall Backgrounds 1" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="8" members="9,27,28,29,30,31" name="Fall Backgrounds 2" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="9" members="" name="Atlas 9" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="10" members="" name="Atlas 10" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="11" members="" name="Atlas 11" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="12" members="" name="Atlas 12" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="13" members="" name="Atlas 13" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="14" members="" name="Atlas 14" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="15" members="" name="Atlas 15" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="17" members="" name="Atlas 17" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="16" members="" name="Atlas 16" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="19" members="" name="Atlas 19" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="false" id="18" members="" name="Atlas 18" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="21" members="" name="Atlas 22" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="20" members="" name="Atlas 21" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="23" members="" name="Atlas 24" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="22" members="" name="Atlas 23" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="25" members="" name="Atlas 26" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="24" members="" name="Atlas 25" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="27" members="" name="Atlas 28" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="26" members="" name="Atlas 27" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="29" members="" name="Atlas 30" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="28" members="" name="Atlas 29" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="31" members="" name="Atlas 32" pvr="false" resize="0" start="false" target="0"/>
+        <atlas dirty="true" id="30" members="" name="Atlas 31" pvr="false" resize="0" start="false" target="0"/>
+    </atlases>
+    <libraries/>
+</game>

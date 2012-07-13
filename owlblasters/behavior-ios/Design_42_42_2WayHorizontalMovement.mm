@@ -68,6 +68,71 @@ BOOL _UseAnimations;
 Design_42_42_2WayHorizontalMovement* self = (Design_42_42_2WayHorizontalMovement*) theScript;
          
 }];
+    [self addWhenUpdatedListener:nil func:^(NSMutableArray* list, Script* theScript){
+Design_42_42_2WayHorizontalMovement* self = (Design_42_42_2WayHorizontalMovement*) theScript;
+                    if([Actor isAlive:mActor])
+{
+                [mActor setXVelocity:([Game game].accelX * _Speed)];
+                [self setGameAttribute:@"PlayerMoveSpeed" value:[NSNumber numberWithFloat:[mActor getXVelocity]]];
+                if(_PreventVerticalMovement)
+{
+                    [mActor setYPosition:_StartY];
+                    [mActor setYVelocity:0];
+}
+
+                if((_StopTurning && ![self sameAs:[NSNumber numberWithFloat:_MoveX] two:[NSNumber numberWithFloat:0]]))
+{
+                    [mActor setAngularVelocity:SP_D2R(0)];
+}
+
+                _MoveX = 0;
+                if(_UseAnimations)
+{
+                    if([self sameAs:[NSNumber numberWithFloat:[mActor getXVelocity]] two:[NSNumber numberWithFloat:0]])
+{
+                        if([self sameAs:[mActor getAnimation] two:_LeftAnimation])
+{
+                            if((_LeftAnimationIdle != nil))
+{
+                                [mActor setAnimation:_LeftAnimationIdle];
+}
+
+}
+
+                        else if([self sameAs:[mActor getAnimation] two:_RightAnimation])
+{
+                            if((_RightAnimationIdle != nil))
+{
+                                [mActor setAnimation:_RightAnimationIdle];
+}
+
+}
+
+}
+
+                    else if(([mActor getXVelocity] < 0))
+{
+                        if((_LeftAnimation != nil))
+{
+                            [mActor setAnimation:_LeftAnimation];
+}
+
+}
+
+                    else if(([mActor getXVelocity] > 0))
+{
+                        if((_RightAnimation != nil))
+{
+                            [mActor setAnimation:_RightAnimation];
+}
+
+}
+
+}
+
+}
+
+}];
 
 } 
 

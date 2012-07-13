@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<if comment="false" x="26" y="40">
+<group id="-1">
+<create-actor3 comment="false" x="37" y="65">
+<ACTORTYPE eid="var" id="0" vid="26"/>
+<getx comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<gety comment="false" id="2" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<int id="3" val="0"/>
+</create-actor3>
+<set-val-28-27 comment="false" x="37" y="105">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-28-27>
+<custom-438 comment="false" x="37" y="132">
+<ACTOR eid="var" id="0" vid="27"/>
+<ACTOR eid="this" id="1"/>
+</custom-438>
+</group>
+<get-val-28-25 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="199">
+<group id="-1">
+<if comment="false" x="26" y="224">
+<group id="-1">
+<set-val-28-22 comment="false" x="37" y="257">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-28-22>
+<if comment="false" x="37" y="282">
+<group id="-1">
+<comment-short comment="false" x="48" y="312">
+<int id="0" val="Jetpack key is down, and we have fuel - so fire boosters as long as we&amp;#039;re not past max speed. "/>
+</comment-short>
+<if comment="false" x="48" y="332">
+<group id="-1">
+<push-shove2 comment="false" x="59" y="375">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="1"/>
+<get-val-28-17 comment="false" id="2" x="0" y="0"/>
+<get-val-28-4 comment="false" id="3" x="0" y="0"/>
+</push-shove2>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<less comment="false" id="0" x="0" y="0">
+<getdy comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdy>
+<neg comment="false" id="1" x="0" y="0">
+<get-val-28-5 comment="false" id="0" x="0" y="0"/>
+</neg>
+</less>
+</not>
+</if>
+<if comment="false" x="48" y="419">
+<group id="-1">
+<say comment="false" x="59" y="452">
+<ACTOR eid="var" id="0" vid="27"/>
+<int id="1" val="Jetpack Follow Player"/>
+<int id="2" val="JetsActive"/>
+</say>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="27"/>
+</hasvalue>
+</if>
+<comment-short comment="false" x="48" y="491">
+<int id="0" val="Use up some fuel"/>
+</comment-short>
+<decrement comment="false" x="48" y="511">
+<int id="0" val="1"/>
+<get-val-28-3 comment="false" id="1" x="0" y="0"/>
+</decrement>
+<comment-short comment="false" x="48" y="543">
+<int id="0" val="Set the animation of the player"/>
+</comment-short>
+<say-this comment="false" x="48" y="563">
+<int id="0" val="SetPlayerAnimation"/>
+</say-this>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-28-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+</if>
+<else comment="false" x="37" y="595">
+<group id="-1">
+<push-shove2 comment="false" x="48" y="615">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="1"/>
+<get-val-28-17 comment="false" id="2" x="0" y="0"/>
+<get-val-28-28 comment="false" id="3" x="0" y="0"/>
+</push-shove2>
+<say comment="false" x="48" y="647">
+<ACTOR eid="var" id="0" vid="27"/>
+<int id="1" val="Jetpack Follow Player"/>
+<int id="2" val="JetsEmpty"/>
+</say>
+</group>
+</else>
+</group>
+<keydown2new comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<CONTROL eid="var" id="1" vid="18"/>
+</keydown2new>
+</if>
+<else comment="false" x="26" y="698">
+<group id="-1">
+<set-val-28-22 comment="false" x="37" y="718">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-28-22>
+<if comment="false" x="37" y="743">
+<group id="-1">
+<say comment="false" x="48" y="776">
+<ACTOR eid="var" id="0" vid="27"/>
+<int id="1" val="Jetpack Follow Player"/>
+<int id="2" val="JetsIdle"/>
+</say>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="27"/>
+</hasvalue>
+</if>
+<comment-short comment="false" x="37" y="815">
+<int id="0" val="If we need fuel, replenish it now"/>
+</comment-short>
+<if comment="false" x="37" y="835">
+<group id="-1">
+<increment comment="false" x="48" y="865">
+<int id="0" val="1"/>
+<get-val-28-13 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-28-1 comment="false" id="0" x="0" y="0"/>
+<get-val-28-2 comment="false" id="1" x="0" y="0"/>
+</less>
+</if>
+<comment-short comment="false" x="37" y="909">
+<int id="0" val="If we were using the jetpack, clear it out so another animation can play"/>
+</comment-short>
+<if comment="false" x="37" y="929">
+<group id="-1">
+<custom-436 comment="false" x="48" y="967">
+<ACTOR eid="this" id="0"/>
+</custom-436>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<custom-437 comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</custom-437>
+<int id="1" val="Jetpack"/>
+</eq>
+</if>
+</group>
+</else>
+<comment-short comment="false" x="26" y="1018">
+<int id="0" val="Update our fuel percentage so we can display the fuel bar"/>
+</comment-short>
+<set-val-28-12 comment="false" x="26" y="1038">
+                    <div comment="false" id="0" x="0" y="0">
+<get-val-28-1 comment="false" id="0" x="0" y="0"/>
+<get-val-28-2 comment="false" id="1" x="0" y="0"/>
+</div>
+                </set-val-28-12>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="1091">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="1164">
+<group id="-1">
+<set-color comment="false" x="26" y="1189">
+<color b="0" g="0" id="0" r="0"/>
+</set-color>
+<comment-short comment="false" x="26" y="1209">
+<int id="0" val="Draw the main outline in black"/>
+</comment-short>
+<fill-rect comment="false" x="26" y="1229">
+<get-val-28-14 comment="false" id="0" x="0" y="0"/>
+<get-val-28-15 comment="false" id="1" x="0" y="0"/>
+<get-val-28-6 comment="false" id="2" x="0" y="0"/>
+<get-val-28-7 comment="false" id="3" x="0" y="0"/>
+</fill-rect>
+<comment-short comment="false" x="26" y="1254">
+<int id="0" val="Now determine the color of the fuel bar based on the amount of remaining fuel. "/>
+</comment-short>
+<if comment="false" x="26" y="1274">
+<group id="-1">
+<set-color2 comment="false" x="37" y="1304">
+<int id="0" val="8"/>
+</set-color2>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-28-12 comment="false" id="0" x="0" y="0"/>
+<int id="1" val=".75"/>
+</more>
+</if>
+<else-if comment="false" x="26" y="1343">
+<group id="-1">
+<set-color2 comment="false" x="37" y="1373">
+<int id="0" val="9"/>
+</set-color2>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-28-12 comment="false" id="0" x="0" y="0"/>
+<int id="1" val=".50"/>
+</more>
+</else-if>
+<else-if comment="false" x="26" y="1412">
+<group id="-1">
+<set-color2 comment="false" x="37" y="1442">
+<int id="0" val="10"/>
+</set-color2>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-28-12 comment="false" id="0" x="0" y="0"/>
+<int id="1" val=".25"/>
+</more>
+</else-if>
+<else comment="false" x="26" y="1481">
+<group id="-1">
+<set-color2 comment="false" x="37" y="1501">
+<int id="0" val="11"/>
+</set-color2>
+</group>
+</else>
+<comment-short comment="false" x="26" y="1540">
+<int id="0" val="Draw the remaining fuel bar based on Horizontal or Vertical orientation"/>
+</comment-short>
+<if comment="false" x="26" y="1560">
+<group id="-1">
+<fill-rect comment="false" x="37" y="1590">
+<plus comment="false" id="0" x="0" y="0">
+<get-val-28-14 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</plus>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-28-15 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</plus>
+<minus comment="false" id="2" x="0" y="0">
+<roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<times comment="false" id="1" x="0" y="0">
+<get-val-28-6 comment="false" id="0" x="0" y="0"/>
+<get-val-28-12 comment="false" id="1" x="0" y="0"/>
+</times>
+</roundnew>
+<int id="1" val="2"/>
+</minus>
+<minus comment="false" id="3" x="0" y="0">
+<get-val-28-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</minus>
+</fill-rect>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-28-16 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="H"/>
+</eq>
+</if>
+<else comment="false" x="26" y="1650">
+<group id="-1">
+<fill-rect comment="false" x="37" y="1670">
+<plus comment="false" id="0" x="0" y="0">
+<get-val-28-14 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</plus>
+<plus comment="false" id="1" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<get-val-28-15 comment="false" id="0" x="0" y="0"/>
+<roundnew comment="false" id="1" x="0" y="0">
+<int id="0" val="0"/>
+<times comment="false" id="1" x="0" y="0">
+<get-val-28-7 comment="false" id="0" x="0" y="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<int id="0" val="1"/>
+<get-val-28-12 comment="false" id="1" x="0" y="0"/>
+</minus>
+</times>
+</roundnew>
+</plus>
+<int id="1" val="1"/>
+</plus>
+<minus comment="false" id="2" x="0" y="0">
+<get-val-28-6 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</minus>
+<minus comment="false" id="3" x="0" y="0">
+<roundnew comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<times comment="false" id="1" x="0" y="0">
+<get-val-28-7 comment="false" id="0" x="0" y="0"/>
+<get-val-28-12 comment="false" id="1" x="0" y="0"/>
+</times>
+</roundnew>
+<int id="1" val="2"/>
+</minus>
+</fill-rect>
+</group>
+</else>
+</group>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="1768">
+<group id="-1">
+<if comment="false" x="26" y="1793">
+<group id="-1">
+<if comment="false" x="37" y="1818">
+<group id="-1">
+<custom-332 comment="false" x="48" y="1856">
+<ACTOR eid="this" id="0"/>
+<get-val-28-23 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="Jetpack"/>
+</custom-332>
+</group>
+<as-boolean comment="false" id="0" x="0" y="0">
+<actor-get-prop comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="Facing Right?"/>
+</actor-get-prop>
+</as-boolean>
+</if>
+<else comment="false" x="37" y="1900">
+<group id="-1">
+<custom-332 comment="false" x="48" y="1920">
+<ACTOR eid="this" id="0"/>
+<get-val-28-24 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="Jetpack"/>
+</custom-332>
+</group>
+</else>
+</group>
+<get-val-28-21 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+<int id="0" val="SetPlayerAnimation"/>
+</receive-message>
+</group>
+<group id="5"/>
+<group id="6"/>
+<group id="-1"/>
+</groups>

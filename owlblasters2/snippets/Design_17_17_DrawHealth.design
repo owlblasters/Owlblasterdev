@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="88">
+                            <group eventID="-1" id="-1">
+                                <set-val-17-1 comment="false" x="48" y="118">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-17-1>
+                                <set-color comment="false" x="48" y="143">
+                                    <color b="255" g="255" id="0" r="255"/>
+                                </set-color>
+                                <dolater comment="false" x="48" y="170">
+                                    <group eventID="-1" id="-1">
+                                        <set-color comment="false" x="59" y="197">
+                                            <color b="51" g="0" id="0" r="255"/>
+                                        </set-color>
+                                        <dolater comment="false" x="59" y="224">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-17-1 comment="false" x="70" y="251">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-17-1>
+                                            </group>
+                                            <int id="0" val=".2"/>
+                                            <ACTOR eid="this" id="2"/>
+                                        </dolater>
+                                    </group>
+                                    <int id="0" val=".2"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-17-1 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="hitPoints"/>
+                            </actor-get-prop>
+                        </as-number>
+                        <div comment="false" id="1" x="0" y="0">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <actor-get-prop comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="maxHealth"/>
+                                </actor-get-prop>
+                            </as-number>
+                            <int id="1" val="3"/>
+                        </div>
+                    </lesseq>
+                </if>
+                <else comment="false" x="26" y="324">
+                    <group eventID="-1" id="-1"/>
+                </else>
+                <set-stroke-color comment="false" x="26" y="376">
+                    <color b="0" g="0" id="0" r="0"/>
+                </set-stroke-color>
+                <set-thickness comment="false" x="26" y="403">
+                    <int id="0" val="2"/>
+                </set-thickness>
+                <set-color comment="false" x="26" y="423">
+                    <color b="51" g="0" id="0" r="255"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="450">
+                    <int id="0" val="0"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="30"/>
+                    <int id="4" val="5"/>
+                </drawfill-rect>
+                <set-color comment="false" x="26" y="477">
+                    <color b="0" g="255" id="0" r="0"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="504">
+                    <int id="0" val="1"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="0"/>
+                    <times comment="false" id="3" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <div comment="false" id="0" x="0" y="0">
+                                <actor-get-prop comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="hitPoints"/>
+                                </actor-get-prop>
+                                <actor-get-prop comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="hitPoints"/>
+                                </actor-get-prop>
+                            </div>
+                        </as-number>
+                        <int id="1" val="30"/>
+                    </times>
+                    <int id="4" val="5"/>
+                </drawfill-rect>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
